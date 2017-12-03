@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		DA9088991FD4C45600C1208A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA9088971FD4C45600C1208A /* Info.plist */; };
 		DA90889A1FD4C45600C1208A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DA9088981FD4C45600C1208A /* README.md */; };
+		DA90889C1FD4C4AF00C1208A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DA90889B1FD4C4AF00C1208A /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA9088821FD4C38E00C1208A /* habanero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = habanero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9088971FD4C45600C1208A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA9088981FD4C45600C1208A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DA90889B1FD4C4AF00C1208A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 		DA9088791FD4C38E00C1208A = {
 			isa = PBXGroup;
 			children = (
+				DA90889B1FD4C4AF00C1208A /* LICENSE */,
 				DA9088971FD4C45600C1208A /* Info.plist */,
 				DA9088981FD4C45600C1208A /* README.md */,
 				DA9088831FD4C38E00C1208A /* Products */,
@@ -104,6 +107,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA90889C1FD4C4AF00C1208A /* LICENSE in Resources */,
 				DA90889A1FD4C45600C1208A /* README.md in Resources */,
 				DA9088991FD4C45600C1208A /* Info.plist in Resources */,
 			);
