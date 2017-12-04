@@ -1,6 +1,6 @@
 import Foundation
 
-final class Home:Mode<ArchHome>
+final class Home:Model<ArchHome>
 {
     
 }

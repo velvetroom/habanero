@@ -1,6 +1,6 @@
 protocol Arch
 {
-    associatedtype V
     associatedtype M
+    associatedtype V
     associatedtype C
 }

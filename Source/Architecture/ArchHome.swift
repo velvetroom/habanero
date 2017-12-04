@@ -1,6 +1,6 @@
 struct ArchHome:Arch
 {
-    typealias V = VHome
-    typealias M = MHome
-    typealias C = CHome
+    typealias M = Home
+    typealias V = ViewHome
+    typealias C = ControllerHome
 }
