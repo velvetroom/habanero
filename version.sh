@@ -1,8 +1,11 @@
 #!/bin/bash
 
-git=$(sh /etc/profile; which git)
-number_of_commits=$("$git" rev-list HEAD --count)
-git_release_version=$("$git" describe --tags --always --abbrev=0)
+build=$(git rev-list HEAD --count)
+version=$(agvtool what-marketing-version -terse1)
+version_major_minor=${version%.*}
+version_major=${version_major_minor%.*}
+version_minor=${version_major_minor##*.}
+new_version="$version_major.$version_minor.$build"
 
-echo $git_release_version
-
+agvtool new-version -all $build
+agvtool new-marketing-version $new_version
