@@ -1,6 +1,6 @@
 import UIKit
 
-class VCollection<A, Cell:UICollectionViewCell>:
+class ViewCollection<A, Cell:UICollectionViewCell>:
     View<A>,
     UICollectionViewDelegate,
     UICollectionViewDataSource,
@@ -13,7 +13,7 @@ class VCollection<A, Cell:UICollectionViewCell>:
     {
         super.init(controller:controller)
         
-        let flow:VCollectionFlow = VCollectionFlow()
+        let flow:ViewCollectionFlow = ViewCollectionFlow()
         
         let collectionView:UICollectionView = UICollectionView(
             frame:CGRect.zero,

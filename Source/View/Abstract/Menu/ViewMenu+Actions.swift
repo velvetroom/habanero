@@ -1,12 +1,12 @@
 import UIKit
 
-extension VMenu
+extension ViewMenu
 {
     //MARK: internal
     
-    func modelAtIndex(index:IndexPath) -> MMenuItemProtocol
+    func modelAtIndex(index:IndexPath) -> MenuItemProtocol
     {
-        let item:MMenuItemProtocol = controller.menu.items[index.item]
+        let item:MenuItemProtocol = controller.menu.items[index.item]
         
         return item
     }

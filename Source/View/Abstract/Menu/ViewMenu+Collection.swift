@@ -1,6 +1,6 @@
 import UIKit
 
-extension VMenu:
+extension ViewMenu:
     UICollectionViewDelegate,
     UICollectionViewDataSource,
     UICollectionViewDelegateFlowLayout
@@ -27,9 +27,9 @@ extension VMenu:
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(
-            VMenuCell.self,
+            ViewMenuCell.self,
             forCellWithReuseIdentifier:
-            VMenuCell.reusableIdentifier)
+            ViewMenuCell.reusableIdentifier)
         self.collectionView = collectionView
         
         addSubview(collectionView)
@@ -83,12 +83,12 @@ extension VMenu:
         _ collectionView:UICollectionView,
         cellForItemAt indexPath:IndexPath) -> UICollectionViewCell
     {
-        let item:MMenuItemProtocol = modelAtIndex(index:indexPath)
+        let item:MenuItemProtocol = modelAtIndex(index:indexPath)
         
-        let cell:VMenuCell = collectionView.dequeueReusableCell(
+        let cell:ViewMenuCell = collectionView.dequeueReusableCell(
             withReuseIdentifier:
-            VMenuCell.reusableIdentifier,
-            for:indexPath) as! VMenuCell
+            ViewMenuCell.reusableIdentifier,
+            for:indexPath) as! ViewMenuCell
         
         cell.config(model:item)
         
@@ -99,8 +99,8 @@ extension VMenu:
         _ collectionView:UICollectionView,
         shouldSelectItemAt indexPath:IndexPath) -> Bool
     {
-        let item:MMenuItemProtocol = modelAtIndex(index:indexPath)
-        let order:MMenu.Order = item.order
+        let item:MenuItemProtocol = modelAtIndex(index:indexPath)
+        let order:Menu.Order = item.order
         
         if order == controller.menu.selected
         {
@@ -116,7 +116,7 @@ extension VMenu:
     {
         collectionView.isUserInteractionEnabled = false
         
-        let item:MMenuItemProtocol = modelAtIndex(index:indexPath)
+        let item:MenuItemProtocol = modelAtIndex(index:indexPath)
         controller.menuSelected(item:item)
         
         let deadline:DispatchTime = DispatchTime.now() + ViewMain.Constants.deselectTime

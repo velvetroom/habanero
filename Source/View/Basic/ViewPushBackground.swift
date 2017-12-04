@@ -1,6 +1,6 @@
 import UIKit
 
-final class VPushBackground:UIView
+final class ViewPushBackground:UIView
 {
     init()
     {

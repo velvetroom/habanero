@@ -1,6 +1,6 @@
 import UIKit
 
-final class VSpinner:UIImageView
+final class ViewSpinner:UIImageView
 {
     init()
     {

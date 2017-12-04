@@ -1,16 +1,16 @@
 import Foundation
 
-final class MMenu
+final class Menu
 {
-    var selected:MMenu.Order
-    let items:[MMenuItemProtocol]
-    private let itemsMap:[MMenu.Order:MMenuItemProtocol]
+    var selected:Menu.Order
+    let items:[MenuItemProtocol]
+    private let itemsMap:[Menu.Order:MenuItemProtocol]
     
-    var selectedItem:MMenuItemProtocol?
+    var selectedItem:MenuItemProtocol?
     {
         get
         {
-            let selected:MMenuItemProtocol? = itemsMap[self.selected]
+            let selected:MenuItemProtocol? = itemsMap[self.selected]
             
             return selected
         }
@@ -18,8 +18,8 @@ final class MMenu
     
     init()
     {
-        selected = MMenu.Constants.initialSelected
-        items = MMenu.factoryItems()
-        itemsMap = MMenu.factoryItemsMap(items:items)
+        selected = Menu.Constants.initialSelected
+        items = Menu.factoryItems()
+        itemsMap = Menu.factoryItemsMap(items:items)
     }
 }

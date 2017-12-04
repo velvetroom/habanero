@@ -1,6 +1,6 @@
 import UIKit
 
-extension VMenu
+extension ViewMenu
 {
     //MARK: private
     
@@ -10,7 +10,7 @@ extension VMenu
             item:index,
             section:0)
         
-        let item:MMenuItemProtocol = modelAtIndex(index:indexPath)
+        let item:MenuItemProtocol = modelAtIndex(index:indexPath)
         
         collectionView.selectItem(
             at:indexPath,
@@ -22,7 +22,7 @@ extension VMenu
     
     //MARK: internal
     
-    func synthSelect(order:MMenu.Order)
+    func synthSelect(order:Menu.Order)
     {
         let totalItems:Int = collectionView.numberOfItems(
             inSection:0)

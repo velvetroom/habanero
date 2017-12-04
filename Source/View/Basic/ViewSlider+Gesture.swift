@@ -1,6 +1,6 @@
 import UIKit
 
-extension VSlider:UIGestureRecognizerDelegate
+extension ViewSlider:UIGestureRecognizerDelegate
 {
     //MARK: selectors
     

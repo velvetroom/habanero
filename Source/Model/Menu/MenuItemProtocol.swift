@@ -1,8 +1,8 @@
 import UIKit
 
-protocol MMenuItemProtocol
+protocol MenuItemProtocol
 {
-    var order:MMenu.Order { get }
+    var order:Menu.Order { get }
     var icon:UIImage { get }
     var controllerType:UIViewController.Type { get }
 }

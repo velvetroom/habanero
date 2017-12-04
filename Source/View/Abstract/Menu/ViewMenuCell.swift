@@ -1,6 +1,6 @@
 import UIKit
 
-final class VMenuCell:UICollectionViewCell
+final class ViewMenuCell:UICollectionViewCell
 {
     private weak var imageView:UIImageView!
     
@@ -61,7 +61,7 @@ final class VMenuCell:UICollectionViewCell
     
     //MARK: internal
     
-    func config(model:MMenuItemProtocol)
+    func config(model:MenuItemProtocol)
     {
         imageView.image = model.icon.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
         hover()

@@ -1,6 +1,6 @@
 import UIKit
 
-final class VCollectionFlow:UICollectionViewFlowLayout
+final class ViewCollectionFlow:UICollectionViewFlowLayout
 {
     override init()
     {

@@ -1,18 +1,18 @@
 import UIKit
 
-final class VAlert:UIView
+final class ViewAlert:UIView
 {
     private weak var layoutTop:NSLayoutConstraint!
     private weak var timer:Timer?
     
     class func messageFail(message:String)
     {
-        VAlert.message(message:message, color:UIColor.colourFail)
+        ViewAlert.message(message:message, color:UIColor.colourFail)
     }
     
     class func messageSuccess(message:String)
     {
-        VAlert.message(message:message, color:UIColor.colourSuccess)
+        ViewAlert.message(message:message, color:UIColor.colourSuccess)
     }
     
     private class func message(message:String, color:UIColor)
@@ -25,7 +25,7 @@ final class VAlert:UIView
     
     private class func asyncMessage(message:String, color:UIColor)
     {
-        let alert:VAlert = VAlert(
+        let alert:ViewAlert = ViewAlert(
             message:message,
             color:color)
         
@@ -35,13 +35,13 @@ final class VAlert:UIView
         alert.layoutTop = NSLayoutConstraint.topToTop(
             view:alert,
             toView:rootView,
-            constant:-VAlert.Constants.height)
+            constant:-ViewAlert.Constants.height)
         NSLayoutConstraint.equalsHorizontal(
             view:alert,
             toView:rootView)
         NSLayoutConstraint.height(
             view:alert,
-            constant:VAlert.Constants.height)
+            constant:ViewAlert.Constants.height)
         
         rootView.layoutIfNeeded()
         alert.animate(open:true)
@@ -57,7 +57,7 @@ final class VAlert:UIView
         let label:UILabel = UILabel()
         label.isUserInteractionEnabled = false
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.medium(size:VAlert.Constants.fontSize)
+        label.font = UIFont.medium(size:ViewAlert.Constants.fontSize)
         label.textColor = UIColor.white
         label.textAlignment = NSTextAlignment.center
         label.numberOfLines = 0
@@ -78,14 +78,14 @@ final class VAlert:UIView
         NSLayoutConstraint.topToTop(
             view:label,
             toView:self,
-            constant:VAlert.Constants.labelTop)
+            constant:ViewAlert.Constants.labelTop)
         NSLayoutConstraint.bottomToBottom(
             view:label,
             toView:self)
         NSLayoutConstraint.equalsHorizontal(
             view:label,
             toView:self,
-            margin:VAlert.Constants.labelMargin)
+            margin:ViewAlert.Constants.labelMargin)
     }
     
     //MARK: selectors
@@ -110,7 +110,7 @@ final class VAlert:UIView
     private func scheduleTimer()
     {
         self.timer = Timer.scheduledTimer(
-            timeInterval:VAlert.Constants.timeOut,
+            timeInterval:ViewAlert.Constants.timeOut,
             target:self,
             selector:#selector(selectorAlertTimeOut(sender:)),
             userInfo:nil,
@@ -125,10 +125,10 @@ final class VAlert:UIView
         }
         else
         {
-            layoutTop.constant = -VAlert.Constants.height
+            layoutTop.constant = -ViewAlert.Constants.height
         }
         
-        UIView.animate(withDuration:VAlert.Constants.animationDuration,
+        UIView.animate(withDuration:ViewAlert.Constants.animationDuration,
             animations:
         { [weak self] in
             

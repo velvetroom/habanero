@@ -1,6 +1,6 @@
 import UIKit
 
-extension VGradient
+extension ViewGradient
 {
     struct Constants
     {

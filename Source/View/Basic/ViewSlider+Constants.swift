@@ -1,6 +1,6 @@
 import UIKit
 
-extension VSlider
+extension ViewSlider
 {
     struct Constants
     {

@@ -1,15 +1,15 @@
 import UIKit
 
-final class VSlider:UIView
+final class ViewSlider:UIView
 {
     typealias Router = (
-        (VSlider) ->
+        (ViewSlider) ->
         (UIPanGestureRecognizer) -> ())
     
     var panInitialWidth:CGFloat?
     var percentUsed:CGFloat
     private(set) weak var viewBase:UIView!
-    private(set) weak var viewBar:VSliderBar!
+    private(set) weak var viewBar:ViewSliderBar!
     private(set) weak var layoutBarWidth:NSLayoutConstraint!
     private(set) var sliderChange:((CGFloat) -> ())?
     private(set) var slidingFinished:(() -> ())?
@@ -55,7 +55,7 @@ final class VSlider:UIView
         viewBase.layer.borderColor = UIColor(white:0, alpha:0.2).cgColor
         self.viewBase = viewBase
         
-        let viewBar:VSliderBar = VSliderBar()
+        let viewBar:ViewSliderBar = ViewSliderBar()
         self.viewBar = viewBar
         
         viewBase.addSubview(viewBar)
@@ -67,7 +67,7 @@ final class VSlider:UIView
         NSLayoutConstraint.equalsHorizontal(
             view:viewBase,
             toView:self,
-            margin:VSlider.Constants.horizontalMargin)
+            margin:ViewSlider.Constants.horizontalMargin)
         
         NSLayoutConstraint.equalsVertical(
             view:viewBar,

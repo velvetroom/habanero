@@ -1,6 +1,6 @@
 import UIKit
 
-final class VMenu:UIView
+final class ViewMenu:UIView
 {
     weak var collectionView:UICollectionView!
     private(set) weak var controller:ControllerParent!

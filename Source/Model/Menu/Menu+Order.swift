@@ -1,13 +1,9 @@
 import Foundation
 
-extension MMenu
+extension Menu
 {
     enum Order:Int
     {
-        case settings
-        case store
         case home
-        case create
-        case plans
     }
 }

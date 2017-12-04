@@ -1,9 +1,9 @@
 import Foundation
 
-extension MMenu
+extension Menu
 {
     struct Constants
     {
-        static let initialSelected:MMenu.Order = MMenu.Order.home
+        static let initialSelected:Menu.Order = Menu.Order.home
     }
 }

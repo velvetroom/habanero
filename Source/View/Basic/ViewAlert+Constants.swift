@@ -1,6 +1,6 @@
 import UIKit
 
-extension VAlert
+extension ViewAlert
 {
     struct Constants
     {

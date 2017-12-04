@@ -1,8 +1,8 @@
 import UIKit
 
-struct MMenuItemHome:MMenuItemProtocol
+struct MenuItemHome:MenuItemProtocol
 {
-    let order:MMenu.Order = MMenu.Order.home
-    let icon:UIImage = #imageLiteral(resourceName: "assetMenuHome")
+    let order:Menu.Order = Menu.Order.home
+    let icon:UIImage = UIImage()
     let controllerType:UIViewController.Type = CHome.self
 }

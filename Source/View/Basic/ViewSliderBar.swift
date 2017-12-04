@@ -1,6 +1,6 @@
 import UIKit
 
-final class VSliderBar:UIView
+final class ViewSliderBar:UIView
 {
     init()
     {
