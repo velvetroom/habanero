@@ -164,10 +164,19 @@
 		DA9089001FD4C65F00C1208A /* VAlert+Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VAlert+Constants.swift"; sourceTree = "<group>"; };
 		DA9089011FD4C65F00C1208A /* VAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VAlert.swift; sourceTree = "<group>"; };
 		DA9089021FD4C65F00C1208A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA9089531FD4CB4D00C1208A /* velvetHabanero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = velvetHabanero.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA9089651FD4CBE400C1208A /* velvetInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = velvetInfo.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DA90887F1FD4C38E00C1208A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA9089501FD4CB4D00C1208A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -193,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				DA9088821FD4C38E00C1208A /* habanero.app */,
+				DA9089531FD4CB4D00C1208A /* velvetHabanero.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -226,6 +236,7 @@
 				DA9088D11FD4C65F00C1208A /* Model */,
 				DA9088E01FD4C65F00C1208A /* View */,
 				DA9089021FD4C65F00C1208A /* Info.plist */,
+				DA9089651FD4CBE400C1208A /* velvetInfo.plist */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -466,6 +477,23 @@
 			productReference = DA9088821FD4C38E00C1208A /* habanero.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DA9089521FD4CB4D00C1208A /* velvetHabanero */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA9089621FD4CB4D00C1208A /* Build configuration list for PBXNativeTarget "velvetHabanero" */;
+			buildPhases = (
+				DA90894F1FD4CB4D00C1208A /* Sources */,
+				DA9089501FD4CB4D00C1208A /* Frameworks */,
+				DA9089511FD4CB4D00C1208A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = velvetHabanero;
+			productName = velvetHabanero;
+			productReference = DA9089531FD4CB4D00C1208A /* velvetHabanero.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -480,6 +508,10 @@
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
+					DA9089521FD4CB4D00C1208A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = DA90887D1FD4C38E00C1208A /* Build configuration list for PBXProject "habanero" */;
@@ -488,6 +520,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = DA9088791FD4C38E00C1208A;
 			productRefGroup = DA9088831FD4C38E00C1208A /* Products */;
@@ -495,6 +528,7 @@
 			projectRoot = "";
 			targets = (
 				DA9088811FD4C38E00C1208A /* habanero */,
+				DA9089521FD4CB4D00C1208A /* velvetHabanero */,
 			);
 		};
 /* End PBXProject section */
@@ -509,6 +543,13 @@
 				DA9089061FD4C65F00C1208A /* LocalizableView.strings in Resources */,
 				DA9089041FD4C65F00C1208A /* LocalizableModel.strings in Resources */,
 				DA9089051FD4C65F00C1208A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA9089511FD4CB4D00C1208A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,6 +630,13 @@
 				DA90890E1FD4C65F00C1208A /* ExtensionCGImage.swift in Sources */,
 				DA90894C1FD4C66000C1208A /* VAlert+Constants.swift in Sources */,
 				DA90891B1FD4C66000C1208A /* ExtensionUICollectionReusableView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA90894F1FD4CB4D00C1208A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -767,6 +815,40 @@
 			};
 			name = Release;
 		};
+		DA9089631FD4CB4D00C1208A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AMWG3RLHN;
+				INFOPLIST_FILE = velvetHabanero/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iturbide.velvetHabanero;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA9089641FD4CB4D00C1208A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AMWG3RLHN;
+				INFOPLIST_FILE = velvetHabanero/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iturbide.velvetHabanero;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -784,6 +866,15 @@
 			buildConfigurations = (
 				DA9088951FD4C38E00C1208A /* Debug */,
 				DA9088961FD4C38E00C1208A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA9089621FD4CB4D00C1208A /* Build configuration list for PBXNativeTarget "velvetHabanero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA9089631FD4CB4D00C1208A /* Debug */,
+				DA9089641FD4CB4D00C1208A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
