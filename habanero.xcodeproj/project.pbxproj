@@ -547,6 +547,7 @@
 				DA90894F1FD4CB4D00C1208A /* Sources */,
 				DA9089501FD4CB4D00C1208A /* Frameworks */,
 				DA9089511FD4CB4D00C1208A /* Resources */,
+				DADC4DA21FD4D3D200CF8EB8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -621,6 +622,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DADC4DA21FD4D3D200CF8EB8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "agvtool next-version all\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA90887E1FD4C38E00C1208A /* Sources */ = {
