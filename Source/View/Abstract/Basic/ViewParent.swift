@@ -8,7 +8,7 @@ final class ViewParent:UIView
     
     weak var panRecognizer:UIPanGestureRecognizer!
     private(set) weak var controller:ControllerParent!
-    private(set) weak var viewMenu:VMenu!
+    private(set) weak var viewMenu:ViewMenu!
     var panningX:CGFloat?
     
     init(controller:ControllerParent)
@@ -18,7 +18,7 @@ final class ViewParent:UIView
         backgroundColor = UIColor.white
         self.controller = controller
         
-        let viewMenu:VMenu = VMenu(controller:controller)
+        let viewMenu:ViewMenu = ViewMenu(controller:controller)
         self.viewMenu = viewMenu
         
         addSubview(viewMenu)

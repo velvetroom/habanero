@@ -8,7 +8,7 @@ class ViewMain:UIView, ViewProtocol
     weak var layoutRight:NSLayoutConstraint!
     weak var layoutTop:NSLayoutConstraint!
     weak var layoutBottom:NSLayoutConstraint!
-    weak var pushBackground:VPushBackground?
+    weak var pushBackground:ViewPushBackground?
     
     required init(controller:UIViewController)
     {

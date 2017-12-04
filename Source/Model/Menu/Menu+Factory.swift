@@ -1,35 +1,27 @@
 import Foundation
 
-extension MMenu
+extension Menu
 {
     //MARK: private
     
-    private class func factoryItemsList() -> [MMenuItemProtocol]
+    private class func factoryItemsList() -> [MenuItemProtocol]
     {
-        let itemHome:MMenuItemHome = MMenuItemHome()
-        let itemCreate:MMenuItemCreate = MMenuItemCreate()
-        let itemPlans:MMenuItemPlans = MMenuItemPlans()
-        let itemSettings:MMenuItemSettings = MMenuItemSettings()
-        let itemStore:MMenuItemStore = MMenuItemStore()
+        let itemHome:MenuItemHome = MenuItemHome()
         
-        let map:[MMenuItemProtocol] = [
-            itemHome,
-            itemCreate,
-            itemPlans,
-            itemSettings,
-            itemStore]
+        let map:[MenuItemProtocol] = [
+            itemHome]
         
         return map
     }
     
     //MARK: internal
     
-    class func factoryItems() -> [MMenuItemProtocol]
+    class func factoryItems() -> [MenuItemProtocol]
     {
-        var items:[MMenuItemProtocol] = factoryItemsList()
+        var items:[MenuItemProtocol] = factoryItemsList()
         
         items.sort
-        { (itemA:MMenuItemProtocol, itemB:MMenuItemProtocol) -> Bool in
+        { (itemA:MenuItemProtocol, itemB:MenuItemProtocol) -> Bool in
             
             return itemA.order.rawValue < itemB.order.rawValue
         }
@@ -37,11 +29,11 @@ extension MMenu
         return items
     }
     
-    class func factoryItemsMap(items:[MMenuItemProtocol]) -> [MMenu.Order:MMenuItemProtocol]
+    class func factoryItemsMap(items:[MenuItemProtocol]) -> [Menu.Order:MenuItemProtocol]
     {
-        var map:[MMenu.Order:MMenuItemProtocol] = [:]
+        var map:[Menu.Order:MenuItemProtocol] = [:]
         
-        for item:MMenuItemProtocol in items
+        for item:MenuItemProtocol in items
         {
             map[item.order] = item
         }
