@@ -4,10 +4,10 @@ extension ControllerParent
 {
     //MARK: private
     
-    private func factoryDirection(item:MMenuItemProtocol) ->  ControllerTransition.Horizontal
+    private func factoryDirection(item:MenuItemProtocol) ->  ControllerTransition.Horizontal
     {
-        let order:MMenu.Order = item.order
-        let current:MMenu.Order = menu.selected
+        let order:Menu.Order = item.order
+        let current:Menu.Order = menu.selected
         let direction:ControllerTransition.Horizontal
         
         if order.rawValue > current.rawValue
@@ -28,7 +28,7 @@ extension ControllerParent
     {
         guard
             
-            let item:MMenuItemProtocol = menu.selectedItem
+            let item:MenuItemProtocol = menu.selectedItem
         
         else
         {
@@ -40,7 +40,7 @@ extension ControllerParent
         return controller
     }
     
-    func menuSelected(item:MMenuItemProtocol)
+    func menuSelected(item:MenuItemProtocol)
     {
         let direction:ControllerTransition.Horizontal = factoryDirection(item:item)
         menu.selected = item.order

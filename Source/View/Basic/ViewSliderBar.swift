@@ -10,15 +10,15 @@ final class ViewSliderBar:UIView
         translatesAutoresizingMaskIntoConstraints = false
         isUserInteractionEnabled = false
         
-        let border:VBorder = VBorder(colour:UIColor(white:0, alpha:0.2))
+        let border:ViewBorder = ViewBorder(colour:UIColor(white:0, alpha:0.2))
         
-        let blur:VBlur = VBlur.light()
+        let blur:ViewBlur = ViewBlur.light()
         blur.alpha = 1
         
         let colorStart:UIColor = UIColor(white:1, alpha:0.1)
         let colorEnd:UIColor = UIColor.white
         
-        let viewGradient:VGradient = VGradient.horizontal(
+        let viewGradient:ViewGradient = ViewGradient.horizontal(
             colourLeft:colorStart,
             colourRight:colorEnd)
         

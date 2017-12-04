@@ -50,7 +50,7 @@ final class ViewSlider:UIView
         viewBase.clipsToBounds = true
         viewBase.backgroundColor = UIColor(white:0.95, alpha:1)
         viewBase.translatesAutoresizingMaskIntoConstraints = false
-        viewBase.layer.cornerRadius = VSlider.Constants.cornerRadius
+        viewBase.layer.cornerRadius = ViewSlider.Constants.cornerRadius
         viewBase.layer.borderWidth = ViewMain.Constants.borderWidth
         viewBase.layer.borderColor = UIColor(white:0, alpha:0.2).cgColor
         self.viewBase = viewBase

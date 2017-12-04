@@ -9,7 +9,7 @@ extension ViewSlider:UIGestureRecognizerDelegate
     {
         guard
         
-            let router:Router = VSlider.Constants.routerMap[gesture.state]
+            let router:Router = ViewSlider.Constants.routerMap[gesture.state]
         
         else
         {

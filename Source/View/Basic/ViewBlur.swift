@@ -2,26 +2,26 @@ import UIKit
 
 final class ViewBlur:UIVisualEffectView
 {
-    class func light() -> VBlur
+    class func light() -> ViewBlur
     {
         let style:UIBlurEffectStyle = UIBlurEffectStyle.light
-        let blur:VBlur = VBlur(style:style)
+        let blur:ViewBlur = ViewBlur(style:style)
         
         return blur
     }
     
-    class func extraLight() -> VBlur
+    class func extraLight() -> ViewBlur
     {
         let style:UIBlurEffectStyle = UIBlurEffectStyle.extraLight
-        let blur:VBlur = VBlur(style:style)
+        let blur:ViewBlur = ViewBlur(style:style)
         
         return blur
     }
     
-    class func dark() -> VBlur
+    class func dark() -> ViewBlur
     {
         let style:UIBlurEffectStyle = UIBlurEffectStyle.dark
-        let blur:VBlur = VBlur(style:style)
+        let blur:ViewBlur = ViewBlur(style:style)
         
         return blur
     }

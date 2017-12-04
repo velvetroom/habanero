@@ -100,7 +100,7 @@ extension ViewParent
     {
         if background
         {
-            let pushBackground:VPushBackground = VPushBackground()
+            let pushBackground:ViewPushBackground = ViewPushBackground()
             newView.pushBackground = pushBackground
             
             addSubview(pushBackground)

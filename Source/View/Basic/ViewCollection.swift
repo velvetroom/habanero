@@ -149,7 +149,7 @@ class ViewCollection<A, Cell:UICollectionViewCell>:
     {
         guard
             
-            let flow:VCollectionFlow = collectionView.collectionViewLayout as? VCollectionFlow
+            let flow:ViewCollectionFlow = collectionView.collectionViewLayout as? ViewCollectionFlow
             
         else
         {
@@ -166,7 +166,7 @@ class ViewCollection<A, Cell:UICollectionViewCell>:
     {
         guard
             
-            let flow:VCollectionFlow = collectionView.collectionViewLayout as? VCollectionFlow
+            let flow:ViewCollectionFlow = collectionView.collectionViewLayout as? ViewCollectionFlow
             
         else
         {

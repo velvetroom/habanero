@@ -59,13 +59,13 @@ final class ViewGradient:UIView
             colourBottom.cgColor]
         
         let locations:[NSNumber] = [
-            VGradient.Constants.locationStart,
-            VGradient.Constants.locationEnd]
+            ViewGradient.Constants.locationStart,
+            ViewGradient.Constants.locationEnd]
         
         let startPoint:CGPoint = CGPoint(x:0.5, y:0)
         let endPoint:CGPoint = CGPoint(x:0.5, y:1)
         
-        let gradient:VGradient = VGradient(
+        let gradient:ViewGradient = ViewGradient(
             colours:colours,
             locations:locations,
             startPoint:startPoint,
