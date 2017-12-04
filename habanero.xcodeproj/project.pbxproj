@@ -82,6 +82,83 @@
 		DA90894B1FD4C66000C1208A /* VCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088FF1FD4C65F00C1208A /* VCollection.swift */; };
 		DA90894C1FD4C66000C1208A /* VAlert+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9089001FD4C65F00C1208A /* VAlert+Constants.swift */; };
 		DA90894D1FD4C66000C1208A /* VAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9089011FD4C65F00C1208A /* VAlert.swift */; };
+		DA9089661FD4CDFA00C1208A /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088AB1FD4C65F00C1208A /* Database.swift */; };
+		DA9089671FD4CDFC00C1208A /* Database+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088AC1FD4C65F00C1208A /* Database+Factory.swift */; };
+		DA9089681FD4CDFF00C1208A /* Database+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088AD1FD4C65F00C1208A /* Database+Constants.swift */; };
+		DA90896B1FD4CE1400C1208A /* habanero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA9089691FD4CE1400C1208A /* habanero.xcdatamodeld */; };
+		DA90896C1FD4CE1400C1208A /* habanero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA9089691FD4CE1400C1208A /* habanero.xcdatamodeld */; };
+		DA90896D1FD4CE1C00C1208A /* ExtensionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088B11FD4C65F00C1208A /* ExtensionDictionary.swift */; };
+		DA90896E1FD4CE1E00C1208A /* ExtensionNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088B21FD4C65F00C1208A /* ExtensionNotification.swift */; };
+		DA90896F1FD4CE2200C1208A /* ExtensionUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088B31FD4C65F00C1208A /* ExtensionUIColor.swift */; };
+		DA9089701FD4CE2200C1208A /* ExtensionCGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088B41FD4C65F00C1208A /* ExtensionCGImage.swift */; };
+		DA9089711FD4CE2200C1208A /* ExtensionMKPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088B51FD4C65F00C1208A /* ExtensionMKPolyline.swift */; };
+		DA9089721FD4CE2200C1208A /* ExtensionString+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088B61FD4C65F00C1208A /* ExtensionString+Constants.swift */; };
+		DA9089731FD4CE2200C1208A /* ExtensionFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088B71FD4C65F00C1208A /* ExtensionFileManager.swift */; };
+		DA9089741FD4CE2200C1208A /* ExtensionURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088B81FD4C65F00C1208A /* ExtensionURLResponse.swift */; };
+		DA9089751FD4CE2200C1208A /* ExtensionMKAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088B91FD4C65F00C1208A /* ExtensionMKAnnotationView.swift */; };
+		DA9089761FD4CE2200C1208A /* ExtensionNSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088BA1FD4C65F00C1208A /* ExtensionNSLayoutConstraint.swift */; };
+		DA9089771FD4CE2200C1208A /* ExtensionUIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088BB1FD4C65F00C1208A /* ExtensionUIFont.swift */; };
+		DA9089781FD4CE2200C1208A /* ExtensionUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088BC1FD4C65F00C1208A /* ExtensionUIImage.swift */; };
+		DA9089791FD4CE2200C1208A /* ExtensionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088BD1FD4C65F00C1208A /* ExtensionData.swift */; };
+		DA90897A1FD4CE2200C1208A /* ExtensionNSManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088BE1FD4C65F00C1208A /* ExtensionNSManagedObject.swift */; };
+		DA90897B1FD4CE2200C1208A /* ExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088BF1FD4C65F00C1208A /* ExtensionString.swift */; };
+		DA90897C1FD4CE2200C1208A /* ExtensionUIFont+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088C01FD4C65F00C1208A /* ExtensionUIFont+Constants.swift */; };
+		DA90897D1FD4CE2200C1208A /* ExtensionUICollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088C11FD4C65F00C1208A /* ExtensionUICollectionReusableView.swift */; };
+		DA90897E1FD4CE2200C1208A /* ExtensionURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088C21FD4C65F00C1208A /* ExtensionURL.swift */; };
+		DA90897F1FD4CE2E00C1208A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088CA1FD4C65F00C1208A /* AppDelegate.swift */; };
+		DA9089801FD4CE2E00C1208A /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088C51FD4C65F00C1208A /* Controller.swift */; };
+		DA9089811FD4CE2E00C1208A /* ControllerParent+Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088C61FD4C65F00C1208A /* ControllerParent+Orientation.swift */; };
+		DA9089821FD4CE2E00C1208A /* ControllerParent+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088C71FD4C65F00C1208A /* ControllerParent+Constants.swift */; };
+		DA9089831FD4CE2E00C1208A /* ControllerParent+Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088C81FD4C65F00C1208A /* ControllerParent+Menu.swift */; };
+		DA9089841FD4CE2E00C1208A /* ControllerParent+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088C91FD4C65F00C1208A /* ControllerParent+Transitions.swift */; };
+		DA9089851FD4CE2E00C1208A /* ControllerTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088CB1FD4C65F00C1208A /* ControllerTransition.swift */; };
+		DA9089861FD4CE2E00C1208A /* ControllerParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088CC1FD4C65F00C1208A /* ControllerParent.swift */; };
+		DA9089871FD4CE3300C1208A /* Arch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088CF1FD4C65F00C1208A /* Arch.swift */; };
+		DA9089881FD4CE3300C1208A /* ArchHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088D01FD4C65F00C1208A /* ArchHome.swift */; };
+		DA9089891FD4CE3700C1208A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088D31FD4C65F00C1208A /* Model.swift */; };
+		DA90898A1FD4CE3E00C1208A /* MMenu+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088D61FD4C65F00C1208A /* MMenu+Constants.swift */; };
+		DA90898B1FD4CE3E00C1208A /* MMenu+Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088D71FD4C65F00C1208A /* MMenu+Order.swift */; };
+		DA90898C1FD4CE3E00C1208A /* MMenuItemHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088D81FD4C65F00C1208A /* MMenuItemHome.swift */; };
+		DA90898D1FD4CE3E00C1208A /* MMenuItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088D91FD4C65F00C1208A /* MMenuItemStore.swift */; };
+		DA90898E1FD4CE3E00C1208A /* MMenuItemSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088DA1FD4C65F00C1208A /* MMenuItemSettings.swift */; };
+		DA90898F1FD4CE3E00C1208A /* MMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088DB1FD4C65F00C1208A /* MMenu.swift */; };
+		DA9089901FD4CE3E00C1208A /* MMenuItemCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088DC1FD4C65F00C1208A /* MMenuItemCreate.swift */; };
+		DA9089911FD4CE3E00C1208A /* MMenu+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088DD1FD4C65F00C1208A /* MMenu+Factory.swift */; };
+		DA9089921FD4CE3E00C1208A /* MMenuItemPlans.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088DE1FD4C65F00C1208A /* MMenuItemPlans.swift */; };
+		DA9089931FD4CE3E00C1208A /* MMenuItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088DF1FD4C65F00C1208A /* MMenuItemProtocol.swift */; };
+		DA9089941FD4CE4700C1208A /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088E31FD4C65F00C1208A /* View.swift */; };
+		DA9089951FD4CE4700C1208A /* ViewParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088E41FD4C65F00C1208A /* ViewParent.swift */; };
+		DA9089961FD4CE4700C1208A /* ViewMain+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088E51FD4C65F00C1208A /* ViewMain+Constants.swift */; };
+		DA9089971FD4CE4700C1208A /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088E61FD4C65F00C1208A /* ViewProtocol.swift */; };
+		DA9089981FD4CE4700C1208A /* ViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088E71FD4C65F00C1208A /* ViewMain.swift */; };
+		DA9089991FD4CE4700C1208A /* ViewParent+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088E81FD4C65F00C1208A /* ViewParent+Transitions.swift */; };
+		DA90899A1FD4CE4700C1208A /* ViewParent+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088E91FD4C65F00C1208A /* ViewParent+Constants.swift */; };
+		DA90899B1FD4CE4700C1208A /* ViewParent+Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088EA1FD4C65F00C1208A /* ViewParent+Gesture.swift */; };
+		DA90899C1FD4CE4C00C1208A /* VMenu+Synth.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088EC1FD4C65F00C1208A /* VMenu+Synth.swift */; };
+		DA90899D1FD4CE4C00C1208A /* VMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088ED1FD4C65F00C1208A /* VMenuCell.swift */; };
+		DA90899E1FD4CE4C00C1208A /* VMenu+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088EE1FD4C65F00C1208A /* VMenu+Collection.swift */; };
+		DA90899F1FD4CE4C00C1208A /* VMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088EF1FD4C65F00C1208A /* VMenu.swift */; };
+		DA9089A01FD4CE4C00C1208A /* VMenu+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088F01FD4C65F00C1208A /* VMenu+Actions.swift */; };
+		DA9089A11FD4CE5300C1208A /* VBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088F31FD4C65F00C1208A /* VBorder.swift */; };
+		DA9089A21FD4CE5300C1208A /* VSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088F41FD4C65F00C1208A /* VSpinner.swift */; };
+		DA9089A31FD4CE5300C1208A /* VGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088F51FD4C65F00C1208A /* VGradient.swift */; };
+		DA9089A41FD4CE5300C1208A /* VSlider+Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088F61FD4C65F00C1208A /* VSlider+Gesture.swift */; };
+		DA9089A51FD4CE5300C1208A /* VSliderBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088F71FD4C65F00C1208A /* VSliderBar.swift */; };
+		DA9089A61FD4CE5300C1208A /* VSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088F81FD4C65F00C1208A /* VSlider.swift */; };
+		DA9089A71FD4CE5300C1208A /* VGradient+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088F91FD4C65F00C1208A /* VGradient+Constants.swift */; };
+		DA9089A81FD4CE5300C1208A /* VSpinner+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088FA1FD4C65F00C1208A /* VSpinner+Constants.swift */; };
+		DA9089A91FD4CE5300C1208A /* VBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088FB1FD4C65F00C1208A /* VBlur.swift */; };
+		DA9089AA1FD4CE5300C1208A /* VCollectionFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088FC1FD4C65F00C1208A /* VCollectionFlow.swift */; };
+		DA9089AB1FD4CE5300C1208A /* VPushBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088FD1FD4C65F00C1208A /* VPushBackground.swift */; };
+		DA9089AC1FD4CE5300C1208A /* VSlider+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088FE1FD4C65F00C1208A /* VSlider+Constants.swift */; };
+		DA9089AD1FD4CE5300C1208A /* VCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088FF1FD4C65F00C1208A /* VCollection.swift */; };
+		DA9089AE1FD4CE5300C1208A /* VAlert+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9089001FD4C65F00C1208A /* VAlert+Constants.swift */; };
+		DA9089AF1FD4CE5300C1208A /* VAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9089011FD4C65F00C1208A /* VAlert.swift */; };
+		DA9089B01FD4CE5800C1208A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA90889E1FD4C65F00C1208A /* LaunchScreen.storyboard */; };
+		DA9089B11FD4CE5F00C1208A /* LocalizableModel.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A01FD4C65F00C1208A /* LocalizableModel.strings */; };
+		DA9089B21FD4CE5F00C1208A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A21FD4C65F00C1208A /* InfoPlist.strings */; };
+		DA9089B31FD4CE5F00C1208A /* LocalizableView.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A41FD4C65F00C1208A /* LocalizableView.strings */; };
+		DA9089B41FD4CE5F00C1208A /* LocalizableController.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A61FD4C65F00C1208A /* LocalizableController.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -166,6 +243,7 @@
 		DA9089021FD4C65F00C1208A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA9089531FD4CB4D00C1208A /* velvetHabanero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = velvetHabanero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9089651FD4CBE400C1208A /* velvetInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = velvetInfo.plist; sourceTree = "<group>"; };
+		DA90896A1FD4CE1400C1208A /* habanero.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = habanero.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +342,7 @@
 		DA9088AE1FD4C65F00C1208A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DA9089691FD4CE1400C1208A /* habanero.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -549,6 +628,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA9089B41FD4CE5F00C1208A /* LocalizableController.strings in Resources */,
+				DA9089B31FD4CE5F00C1208A /* LocalizableView.strings in Resources */,
+				DA9089B01FD4CE5800C1208A /* LaunchScreen.storyboard in Resources */,
+				DA9089B21FD4CE5F00C1208A /* InfoPlist.strings in Resources */,
+				DA9089B11FD4CE5F00C1208A /* LocalizableModel.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,6 +658,7 @@
 				DA90892C1FD4C66000C1208A /* MMenuItemSettings.swift in Sources */,
 				DA9089081FD4C65F00C1208A /* Database.swift in Sources */,
 				DA9089441FD4C66000C1208A /* VSlider.swift in Sources */,
+				DA90896B1FD4CE1400C1208A /* habanero.xcdatamodeld in Sources */,
 				DA9089381FD4C66000C1208A /* ViewParent+Constants.swift in Sources */,
 				DA90892E1FD4C66000C1208A /* MMenuItemCreate.swift in Sources */,
 				DA90892A1FD4C66000C1208A /* MMenuItemHome.swift in Sources */,
@@ -636,6 +721,77 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA90898A1FD4CE3E00C1208A /* MMenu+Constants.swift in Sources */,
+				DA9089AE1FD4CE5300C1208A /* VAlert+Constants.swift in Sources */,
+				DA90899D1FD4CE4C00C1208A /* VMenuCell.swift in Sources */,
+				DA9089871FD4CE3300C1208A /* Arch.swift in Sources */,
+				DA9089791FD4CE2200C1208A /* ExtensionData.swift in Sources */,
+				DA9089911FD4CE3E00C1208A /* MMenu+Factory.swift in Sources */,
+				DA90897A1FD4CE2200C1208A /* ExtensionNSManagedObject.swift in Sources */,
+				DA9089721FD4CE2200C1208A /* ExtensionString+Constants.swift in Sources */,
+				DA90896D1FD4CE1C00C1208A /* ExtensionDictionary.swift in Sources */,
+				DA9089AD1FD4CE5300C1208A /* VCollection.swift in Sources */,
+				DA9089951FD4CE4700C1208A /* ViewParent.swift in Sources */,
+				DA9089841FD4CE2E00C1208A /* ControllerParent+Transitions.swift in Sources */,
+				DA9089981FD4CE4700C1208A /* ViewMain.swift in Sources */,
+				DA90899A1FD4CE4700C1208A /* ViewParent+Constants.swift in Sources */,
+				DA90897C1FD4CE2200C1208A /* ExtensionUIFont+Constants.swift in Sources */,
+				DA9089A01FD4CE4C00C1208A /* VMenu+Actions.swift in Sources */,
+				DA90899C1FD4CE4C00C1208A /* VMenu+Synth.swift in Sources */,
+				DA9089681FD4CDFF00C1208A /* Database+Constants.swift in Sources */,
+				DA9089A81FD4CE5300C1208A /* VSpinner+Constants.swift in Sources */,
+				DA90898B1FD4CE3E00C1208A /* MMenu+Order.swift in Sources */,
+				DA90898D1FD4CE3E00C1208A /* MMenuItemStore.swift in Sources */,
+				DA9089A21FD4CE5300C1208A /* VSpinner.swift in Sources */,
+				DA9089851FD4CE2E00C1208A /* ControllerTransition.swift in Sources */,
+				DA9089A71FD4CE5300C1208A /* VGradient+Constants.swift in Sources */,
+				DA90896E1FD4CE1E00C1208A /* ExtensionNotification.swift in Sources */,
+				DA9089741FD4CE2200C1208A /* ExtensionURLResponse.swift in Sources */,
+				DA9089811FD4CE2E00C1208A /* ControllerParent+Orientation.swift in Sources */,
+				DA9089A61FD4CE5300C1208A /* VSlider.swift in Sources */,
+				DA90897B1FD4CE2200C1208A /* ExtensionString.swift in Sources */,
+				DA9089AF1FD4CE5300C1208A /* VAlert.swift in Sources */,
+				DA9089AC1FD4CE5300C1208A /* VSlider+Constants.swift in Sources */,
+				DA9089711FD4CE2200C1208A /* ExtensionMKPolyline.swift in Sources */,
+				DA9089A31FD4CE5300C1208A /* VGradient.swift in Sources */,
+				DA9089771FD4CE2200C1208A /* ExtensionUIFont.swift in Sources */,
+				DA9089AA1FD4CE5300C1208A /* VCollectionFlow.swift in Sources */,
+				DA9089731FD4CE2200C1208A /* ExtensionFileManager.swift in Sources */,
+				DA9089941FD4CE4700C1208A /* View.swift in Sources */,
+				DA90899F1FD4CE4C00C1208A /* VMenu.swift in Sources */,
+				DA9089881FD4CE3300C1208A /* ArchHome.swift in Sources */,
+				DA9089AB1FD4CE5300C1208A /* VPushBackground.swift in Sources */,
+				DA9089701FD4CE2200C1208A /* ExtensionCGImage.swift in Sources */,
+				DA9089921FD4CE3E00C1208A /* MMenuItemPlans.swift in Sources */,
+				DA90899E1FD4CE4C00C1208A /* VMenu+Collection.swift in Sources */,
+				DA9089751FD4CE2200C1208A /* ExtensionMKAnnotationView.swift in Sources */,
+				DA90896C1FD4CE1400C1208A /* habanero.xcdatamodeld in Sources */,
+				DA9089A91FD4CE5300C1208A /* VBlur.swift in Sources */,
+				DA9089801FD4CE2E00C1208A /* Controller.swift in Sources */,
+				DA9089861FD4CE2E00C1208A /* ControllerParent.swift in Sources */,
+				DA9089661FD4CDFA00C1208A /* Database.swift in Sources */,
+				DA9089A41FD4CE5300C1208A /* VSlider+Gesture.swift in Sources */,
+				DA90896F1FD4CE2200C1208A /* ExtensionUIColor.swift in Sources */,
+				DA90899B1FD4CE4700C1208A /* ViewParent+Gesture.swift in Sources */,
+				DA9089671FD4CDFC00C1208A /* Database+Factory.swift in Sources */,
+				DA9089931FD4CE3E00C1208A /* MMenuItemProtocol.swift in Sources */,
+				DA9089821FD4CE2E00C1208A /* ControllerParent+Constants.swift in Sources */,
+				DA9089A11FD4CE5300C1208A /* VBorder.swift in Sources */,
+				DA90898C1FD4CE3E00C1208A /* MMenuItemHome.swift in Sources */,
+				DA9089961FD4CE4700C1208A /* ViewMain+Constants.swift in Sources */,
+				DA9089761FD4CE2200C1208A /* ExtensionNSLayoutConstraint.swift in Sources */,
+				DA9089781FD4CE2200C1208A /* ExtensionUIImage.swift in Sources */,
+				DA90898E1FD4CE3E00C1208A /* MMenuItemSettings.swift in Sources */,
+				DA9089991FD4CE4700C1208A /* ViewParent+Transitions.swift in Sources */,
+				DA90897D1FD4CE2200C1208A /* ExtensionUICollectionReusableView.swift in Sources */,
+				DA9089831FD4CE2E00C1208A /* ControllerParent+Menu.swift in Sources */,
+				DA90898F1FD4CE3E00C1208A /* MMenu.swift in Sources */,
+				DA9089971FD4CE4700C1208A /* ViewProtocol.swift in Sources */,
+				DA9089A51FD4CE5300C1208A /* VSliderBar.swift in Sources */,
+				DA9089891FD4CE3700C1208A /* Model.swift in Sources */,
+				DA9089901FD4CE3E00C1208A /* MMenuItemCreate.swift in Sources */,
+				DA90897E1FD4CE2200C1208A /* ExtensionURL.swift in Sources */,
+				DA90897F1FD4CE2E00C1208A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -875,6 +1031,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DA9089691FD4CE1400C1208A /* habanero.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DA90896A1FD4CE1400C1208A /* habanero.xcdatamodel */,
+			);
+			currentVersion = DA90896A1FD4CE1400C1208A /* habanero.xcdatamodel */;
+			path = habanero.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DA90887A1FD4C38E00C1208A /* Project object */;
 }
