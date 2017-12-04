@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA90889A1FD4C45600C1208A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DA9088981FD4C45600C1208A /* README.md */; };
-		DA90889C1FD4C4AF00C1208A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DA90889B1FD4C4AF00C1208A /* LICENSE */; };
 		DA9089031FD4C65F00C1208A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA90889E1FD4C65F00C1208A /* LaunchScreen.storyboard */; };
 		DA9089041FD4C65F00C1208A /* LocalizableModel.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A01FD4C65F00C1208A /* LocalizableModel.strings */; };
 		DA9089051FD4C65F00C1208A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A21FD4C65F00C1208A /* InfoPlist.strings */; };
@@ -84,7 +82,6 @@
 		DA90894B1FD4C66000C1208A /* VCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088FF1FD4C65F00C1208A /* VCollection.swift */; };
 		DA90894C1FD4C66000C1208A /* VAlert+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9089001FD4C65F00C1208A /* VAlert+Constants.swift */; };
 		DA90894D1FD4C66000C1208A /* VAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9089011FD4C65F00C1208A /* VAlert.swift */; };
-		DA90894E1FD4C66000C1208A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA9089021FD4C65F00C1208A /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -304,12 +301,12 @@
 		DA9088C41FD4C65F00C1208A /* Abstract */ = {
 			isa = PBXGroup;
 			children = (
+				DA9088CA1FD4C65F00C1208A /* AppDelegate.swift */,
 				DA9088C51FD4C65F00C1208A /* Controller.swift */,
 				DA9088C61FD4C65F00C1208A /* ControllerParent+Orientation.swift */,
 				DA9088C71FD4C65F00C1208A /* ControllerParent+Constants.swift */,
 				DA9088C81FD4C65F00C1208A /* ControllerParent+Menu.swift */,
 				DA9088C91FD4C65F00C1208A /* ControllerParent+Transitions.swift */,
-				DA9088CA1FD4C65F00C1208A /* AppDelegate.swift */,
 				DA9088CB1FD4C65F00C1208A /* ControllerTransition.swift */,
 				DA9088CC1FD4C65F00C1208A /* ControllerParent.swift */,
 			);
@@ -491,7 +488,6 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = DA9088791FD4C38E00C1208A;
 			productRefGroup = DA9088831FD4C38E00C1208A /* Products */;
@@ -508,12 +504,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA90894E1FD4C66000C1208A /* Info.plist in Resources */,
 				DA9089031FD4C65F00C1208A /* LaunchScreen.storyboard in Resources */,
-				DA90889C1FD4C4AF00C1208A /* LICENSE in Resources */,
 				DA9089071FD4C65F00C1208A /* LocalizableController.strings in Resources */,
 				DA9089061FD4C65F00C1208A /* LocalizableView.strings in Resources */,
-				DA90889A1FD4C45600C1208A /* README.md in Resources */,
 				DA9089041FD4C65F00C1208A /* LocalizableModel.strings in Resources */,
 				DA9089051FD4C65F00C1208A /* InfoPlist.strings in Resources */,
 			);
@@ -645,7 +638,7 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -685,11 +678,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -702,7 +696,7 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -736,9 +730,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -747,10 +742,9 @@
 		DA9088951FD4C38E00C1208A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
-				INFOPLIST_FILE = habanero/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iturbide.habanero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -762,10 +756,9 @@
 		DA9088961FD4C38E00C1208A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
-				INFOPLIST_FILE = habanero/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iturbide.habanero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
