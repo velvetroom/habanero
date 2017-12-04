@@ -17,6 +17,8 @@
 		DA1AFCFE1FD4D0F2002F6FA1 /* ViewMenu+Synth.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AFCF51FD4D0F2002F6FA1 /* ViewMenu+Synth.swift */; };
 		DA1AFCFF1FD4D0F2002F6FA1 /* ViewMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AFCF61FD4D0F2002F6FA1 /* ViewMenuCell.swift */; };
 		DA1AFD001FD4D0F2002F6FA1 /* ViewMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AFCF61FD4D0F2002F6FA1 /* ViewMenuCell.swift */; };
+		DA5A97CC1FD605E1006223BA /* MenuItemGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A97CB1FD605E1006223BA /* MenuItemGeneric.swift */; };
+		DA5A97CD1FD6061B006223BA /* MenuItemGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A97CB1FD605E1006223BA /* MenuItemGeneric.swift */; };
 		DA70AFBF1FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
 		DA70AFC01FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
 		DA70AFC21FD5AA980016B0DC /* ControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */; };
@@ -167,6 +169,7 @@
 		DA1AFCF41FD4D0F2002F6FA1 /* ViewMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMenu.swift; sourceTree = "<group>"; };
 		DA1AFCF51FD4D0F2002F6FA1 /* ViewMenu+Synth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewMenu+Synth.swift"; sourceTree = "<group>"; };
 		DA1AFCF61FD4D0F2002F6FA1 /* ViewMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMenuCell.swift; sourceTree = "<group>"; };
+		DA5A97CB1FD605E1006223BA /* MenuItemGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemGeneric.swift; sourceTree = "<group>"; };
 		DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHome.swift; sourceTree = "<group>"; };
 		DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerHome.swift; sourceTree = "<group>"; };
 		DA70AFC41FD5AABF0016B0DC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -410,12 +413,12 @@
 			children = (
 				DA9088CA1FD4C65F00C1208A /* AppDelegate.swift */,
 				DA9088C51FD4C65F00C1208A /* Controller.swift */,
+				DA9088CC1FD4C65F00C1208A /* ControllerParent.swift */,
 				DA9088C61FD4C65F00C1208A /* ControllerParent+Orientation.swift */,
 				DA9088C71FD4C65F00C1208A /* ControllerParent+Constants.swift */,
 				DA9088C81FD4C65F00C1208A /* ControllerParent+Menu.swift */,
 				DA9088C91FD4C65F00C1208A /* ControllerParent+Transitions.swift */,
 				DA9088CB1FD4C65F00C1208A /* ControllerTransition.swift */,
-				DA9088CC1FD4C65F00C1208A /* ControllerParent.swift */,
 			);
 			path = Abstract;
 			sourceTree = "<group>";
@@ -466,12 +469,13 @@
 		DA9088D51FD4C65F00C1208A /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				DA9088DB1FD4C65F00C1208A /* Menu.swift */,
 				DA9088D61FD4C65F00C1208A /* Menu+Constants.swift */,
 				DA9088D71FD4C65F00C1208A /* Menu+Order.swift */,
-				DA9088D81FD4C65F00C1208A /* MenuItemHome.swift */,
-				DA9088DB1FD4C65F00C1208A /* Menu.swift */,
 				DA9088DD1FD4C65F00C1208A /* Menu+Factory.swift */,
+				DA5A97CB1FD605E1006223BA /* MenuItemGeneric.swift */,
 				DA9088DF1FD4C65F00C1208A /* MenuItemProtocol.swift */,
+				DA9088D81FD4C65F00C1208A /* MenuItemHome.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -683,6 +687,7 @@
 				DA9089361FD4C66000C1208A /* ViewMain.swift in Sources */,
 				DA9089131FD4C65F00C1208A /* ExtensionMKAnnotationView.swift in Sources */,
 				DA9089121FD4C65F00C1208A /* ExtensionURLResponse.swift in Sources */,
+				DA5A97CC1FD605E1006223BA /* MenuItemGeneric.swift in Sources */,
 				DA9089371FD4C66000C1208A /* ViewParent+Transitions.swift in Sources */,
 				DA9089291FD4C66000C1208A /* Menu+Order.swift in Sources */,
 				DA9089151FD4C65F00C1208A /* ExtensionUIFont.swift in Sources */,
@@ -760,6 +765,7 @@
 				DA9089711FD4CE2200C1208A /* ExtensionMKPolyline.swift in Sources */,
 				DA9089A31FD4CE5300C1208A /* ViewGradient.swift in Sources */,
 				DA9089771FD4CE2200C1208A /* ExtensionUIFont.swift in Sources */,
+				DA5A97CD1FD6061B006223BA /* MenuItemGeneric.swift in Sources */,
 				DA9089AA1FD4CE5300C1208A /* ViewCollectionFlow.swift in Sources */,
 				DA9089731FD4CE2200C1208A /* ExtensionFileManager.swift in Sources */,
 				DA9089941FD4CE4700C1208A /* View.swift in Sources */,
@@ -868,7 +874,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 30;
+				CURRENT_PROJECT_VERSION = 31;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -928,7 +934,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 30;
+				CURRENT_PROJECT_VERSION = 31;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
