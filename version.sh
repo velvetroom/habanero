@@ -1,14 +1,28 @@
 #!/bin/bash
 
+sleep 1
 build=$(git rev-list HEAD --count)
 version=$(agvtool what-marketing-version -terse1)
-version_major_minor=${version%.*}
-version_major=${version_major_minor%.*}
 
-if [[ $version_major_minor == *"."* ]]; then
-   version_minor=${version_major_minor##*.}
+if [[ $version == *"."* ]]; then
+
+    version_major_minor=${version%.*}
+    version_major=${version_major_minor%.*}
+
+    if [[ $version_major_minor == *"."* ]]; then
+
+        version_minor=${version_major_minor##*.}
+
+    else
+
+        version_minor="0"
+    fi
+
 else
-   version_minor="0"
+
+    version_major="1"
+    version_minor="0"
+
 fi
 
 new_version="$version_major.$version_minor.$build"
