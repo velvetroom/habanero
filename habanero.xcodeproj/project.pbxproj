@@ -159,7 +159,7 @@
 		DA1AFCF41FD4D0F2002F6FA1 /* ViewMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMenu.swift; sourceTree = "<group>"; };
 		DA1AFCF51FD4D0F2002F6FA1 /* ViewMenu+Synth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewMenu+Synth.swift"; sourceTree = "<group>"; };
 		DA1AFCF61FD4D0F2002F6FA1 /* ViewMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMenuCell.swift; sourceTree = "<group>"; };
-		DA9088821FD4C38E00C1208A /* habanero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = habanero.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA9088821FD4C38E00C1208A /* user.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = user.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9088981FD4C45600C1208A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DA90889B1FD4C4AF00C1208A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		DA90889E1FD4C65F00C1208A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -228,9 +228,9 @@
 		DA9088FF1FD4C65F00C1208A /* ViewCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCollection.swift; sourceTree = "<group>"; };
 		DA9089001FD4C65F00C1208A /* ViewAlert+Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewAlert+Constants.swift"; sourceTree = "<group>"; };
 		DA9089011FD4C65F00C1208A /* ViewAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAlert.swift; sourceTree = "<group>"; };
-		DA9089021FD4C65F00C1208A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA9089531FD4CB4D00C1208A /* velvetHabanero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = velvetHabanero.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA9089651FD4CBE400C1208A /* velvetInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = velvetInfo.plist; sourceTree = "<group>"; };
+		DA9089021FD4C65F00C1208A /* userInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = userInfo.plist; sourceTree = "<group>"; };
+		DA9089531FD4CB4D00C1208A /* admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = admin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA9089651FD4CBE400C1208A /* adminInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = adminInfo.plist; sourceTree = "<group>"; };
 		DA90896A1FD4CE1400C1208A /* habanero.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = habanero.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -279,8 +279,8 @@
 		DA9088831FD4C38E00C1208A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DA9088821FD4C38E00C1208A /* habanero.app */,
-				DA9089531FD4CB4D00C1208A /* velvetHabanero.app */,
+				DA9088821FD4C38E00C1208A /* user.app */,
+				DA9089531FD4CB4D00C1208A /* admin.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -313,8 +313,8 @@
 				DA9088CE1FD4C65F00C1208A /* Architecture */,
 				DA9088D11FD4C65F00C1208A /* Model */,
 				DA9088E01FD4C65F00C1208A /* View */,
-				DA9089021FD4C65F00C1208A /* Info.plist */,
-				DA9089651FD4CBE400C1208A /* velvetInfo.plist */,
+				DA9089021FD4C65F00C1208A /* userInfo.plist */,
+				DA9089651FD4CBE400C1208A /* adminInfo.plist */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -523,9 +523,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DA9088811FD4C38E00C1208A /* habanero */ = {
+		DA9088811FD4C38E00C1208A /* user */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA9088941FD4C38E00C1208A /* Build configuration list for PBXNativeTarget "habanero" */;
+			buildConfigurationList = DA9088941FD4C38E00C1208A /* Build configuration list for PBXNativeTarget "user" */;
 			buildPhases = (
 				DA90887E1FD4C38E00C1208A /* Sources */,
 				DA90887F1FD4C38E00C1208A /* Frameworks */,
@@ -535,14 +535,14 @@
 			);
 			dependencies = (
 			);
-			name = habanero;
+			name = user;
 			productName = habanero;
-			productReference = DA9088821FD4C38E00C1208A /* habanero.app */;
+			productReference = DA9088821FD4C38E00C1208A /* user.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DA9089521FD4CB4D00C1208A /* velvetHabanero */ = {
+		DA9089521FD4CB4D00C1208A /* admin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA9089621FD4CB4D00C1208A /* Build configuration list for PBXNativeTarget "velvetHabanero" */;
+			buildConfigurationList = DA9089621FD4CB4D00C1208A /* Build configuration list for PBXNativeTarget "admin" */;
 			buildPhases = (
 				DA90894F1FD4CB4D00C1208A /* Sources */,
 				DA9089501FD4CB4D00C1208A /* Frameworks */,
@@ -553,9 +553,9 @@
 			);
 			dependencies = (
 			);
-			name = velvetHabanero;
+			name = admin;
 			productName = velvetHabanero;
-			productReference = DA9089531FD4CB4D00C1208A /* velvetHabanero.app */;
+			productReference = DA9089531FD4CB4D00C1208A /* admin.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -590,8 +590,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DA9088811FD4C38E00C1208A /* habanero */,
-				DA9089521FD4CB4D00C1208A /* velvetHabanero */,
+				DA9088811FD4C38E00C1208A /* user */,
+				DA9089521FD4CB4D00C1208A /* admin */,
 			);
 		};
 /* End PBXProject section */
@@ -944,7 +944,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/userInfo.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iturbide.habanero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -958,7 +958,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/userInfo.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iturbide.habanero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -973,7 +973,7 @@
 				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
-				INFOPLIST_FILE = "$(SRCROOT)/Source/velvetInfo.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/adminInfo.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "iturbide.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -988,7 +988,7 @@
 				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
-				INFOPLIST_FILE = "$(SRCROOT)/Source/velvetInfo.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/adminInfo.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "iturbide.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1009,7 +1009,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA9088941FD4C38E00C1208A /* Build configuration list for PBXNativeTarget "habanero" */ = {
+		DA9088941FD4C38E00C1208A /* Build configuration list for PBXNativeTarget "user" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA9088951FD4C38E00C1208A /* Debug */,
@@ -1018,7 +1018,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA9089621FD4CB4D00C1208A /* Build configuration list for PBXNativeTarget "velvetHabanero" */ = {
+		DA9089621FD4CB4D00C1208A /* Build configuration list for PBXNativeTarget "admin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA9089631FD4CB4D00C1208A /* Debug */,
