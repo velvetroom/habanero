@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA1AFCF71FD4D0F2002F6FA1 /* ViewMenu+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AFCF21FD4D0F2002F6FA1 /* ViewMenu+Actions.swift */; };
+		DA1AFCF81FD4D0F2002F6FA1 /* ViewMenu+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AFCF21FD4D0F2002F6FA1 /* ViewMenu+Actions.swift */; };
+		DA1AFCF91FD4D0F2002F6FA1 /* ViewMenu+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AFCF31FD4D0F2002F6FA1 /* ViewMenu+Collection.swift */; };
+		DA1AFCFA1FD4D0F2002F6FA1 /* ViewMenu+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AFCF31FD4D0F2002F6FA1 /* ViewMenu+Collection.swift */; };
+		DA1AFCFB1FD4D0F2002F6FA1 /* ViewMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AFCF41FD4D0F2002F6FA1 /* ViewMenu.swift */; };
+		DA1AFCFC1FD4D0F2002F6FA1 /* ViewMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AFCF41FD4D0F2002F6FA1 /* ViewMenu.swift */; };
+		DA1AFCFD1FD4D0F2002F6FA1 /* ViewMenu+Synth.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AFCF51FD4D0F2002F6FA1 /* ViewMenu+Synth.swift */; };
+		DA1AFCFE1FD4D0F2002F6FA1 /* ViewMenu+Synth.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AFCF51FD4D0F2002F6FA1 /* ViewMenu+Synth.swift */; };
+		DA1AFCFF1FD4D0F2002F6FA1 /* ViewMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AFCF61FD4D0F2002F6FA1 /* ViewMenuCell.swift */; };
+		DA1AFD001FD4D0F2002F6FA1 /* ViewMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AFCF61FD4D0F2002F6FA1 /* ViewMenuCell.swift */; };
 		DA9089031FD4C65F00C1208A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA90889E1FD4C65F00C1208A /* LaunchScreen.storyboard */; };
 		DA9089041FD4C65F00C1208A /* LocalizableModel.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A01FD4C65F00C1208A /* LocalizableModel.strings */; };
 		DA9089051FD4C65F00C1208A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A21FD4C65F00C1208A /* InfoPlist.strings */; };
@@ -62,11 +72,6 @@
 		DA9089371FD4C66000C1208A /* ViewParent+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088E81FD4C65F00C1208A /* ViewParent+Transitions.swift */; };
 		DA9089381FD4C66000C1208A /* ViewParent+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088E91FD4C65F00C1208A /* ViewParent+Constants.swift */; };
 		DA9089391FD4C66000C1208A /* ViewParent+Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088EA1FD4C65F00C1208A /* ViewParent+Gesture.swift */; };
-		DA90893A1FD4C66000C1208A /* VMenu+Synth.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088EC1FD4C65F00C1208A /* VMenu+Synth.swift */; };
-		DA90893B1FD4C66000C1208A /* VMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088ED1FD4C65F00C1208A /* VMenuCell.swift */; };
-		DA90893C1FD4C66000C1208A /* VMenu+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088EE1FD4C65F00C1208A /* VMenu+Collection.swift */; };
-		DA90893D1FD4C66000C1208A /* VMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088EF1FD4C65F00C1208A /* VMenu.swift */; };
-		DA90893E1FD4C66000C1208A /* VMenu+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088F01FD4C65F00C1208A /* VMenu+Actions.swift */; };
 		DA90893F1FD4C66000C1208A /* VBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088F31FD4C65F00C1208A /* VBorder.swift */; };
 		DA9089401FD4C66000C1208A /* VSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088F41FD4C65F00C1208A /* VSpinner.swift */; };
 		DA9089411FD4C66000C1208A /* VGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088F51FD4C65F00C1208A /* VGradient.swift */; };
@@ -134,11 +139,6 @@
 		DA9089991FD4CE4700C1208A /* ViewParent+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088E81FD4C65F00C1208A /* ViewParent+Transitions.swift */; };
 		DA90899A1FD4CE4700C1208A /* ViewParent+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088E91FD4C65F00C1208A /* ViewParent+Constants.swift */; };
 		DA90899B1FD4CE4700C1208A /* ViewParent+Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088EA1FD4C65F00C1208A /* ViewParent+Gesture.swift */; };
-		DA90899C1FD4CE4C00C1208A /* VMenu+Synth.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088EC1FD4C65F00C1208A /* VMenu+Synth.swift */; };
-		DA90899D1FD4CE4C00C1208A /* VMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088ED1FD4C65F00C1208A /* VMenuCell.swift */; };
-		DA90899E1FD4CE4C00C1208A /* VMenu+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088EE1FD4C65F00C1208A /* VMenu+Collection.swift */; };
-		DA90899F1FD4CE4C00C1208A /* VMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088EF1FD4C65F00C1208A /* VMenu.swift */; };
-		DA9089A01FD4CE4C00C1208A /* VMenu+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088F01FD4C65F00C1208A /* VMenu+Actions.swift */; };
 		DA9089A11FD4CE5300C1208A /* VBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088F31FD4C65F00C1208A /* VBorder.swift */; };
 		DA9089A21FD4CE5300C1208A /* VSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088F41FD4C65F00C1208A /* VSpinner.swift */; };
 		DA9089A31FD4CE5300C1208A /* VGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088F51FD4C65F00C1208A /* VGradient.swift */; };
@@ -162,6 +162,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA1AFCF21FD4D0F2002F6FA1 /* ViewMenu+Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewMenu+Actions.swift"; sourceTree = "<group>"; };
+		DA1AFCF31FD4D0F2002F6FA1 /* ViewMenu+Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewMenu+Collection.swift"; sourceTree = "<group>"; };
+		DA1AFCF41FD4D0F2002F6FA1 /* ViewMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMenu.swift; sourceTree = "<group>"; };
+		DA1AFCF51FD4D0F2002F6FA1 /* ViewMenu+Synth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewMenu+Synth.swift"; sourceTree = "<group>"; };
+		DA1AFCF61FD4D0F2002F6FA1 /* ViewMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMenuCell.swift; sourceTree = "<group>"; };
 		DA9088821FD4C38E00C1208A /* habanero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = habanero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9088981FD4C45600C1208A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DA90889B1FD4C4AF00C1208A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -220,11 +225,6 @@
 		DA9088E81FD4C65F00C1208A /* ViewParent+Transitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewParent+Transitions.swift"; sourceTree = "<group>"; };
 		DA9088E91FD4C65F00C1208A /* ViewParent+Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewParent+Constants.swift"; sourceTree = "<group>"; };
 		DA9088EA1FD4C65F00C1208A /* ViewParent+Gesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewParent+Gesture.swift"; sourceTree = "<group>"; };
-		DA9088EC1FD4C65F00C1208A /* VMenu+Synth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VMenu+Synth.swift"; sourceTree = "<group>"; };
-		DA9088ED1FD4C65F00C1208A /* VMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMenuCell.swift; sourceTree = "<group>"; };
-		DA9088EE1FD4C65F00C1208A /* VMenu+Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VMenu+Collection.swift"; sourceTree = "<group>"; };
-		DA9088EF1FD4C65F00C1208A /* VMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMenu.swift; sourceTree = "<group>"; };
-		DA9088F01FD4C65F00C1208A /* VMenu+Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VMenu+Actions.swift"; sourceTree = "<group>"; };
 		DA9088F31FD4C65F00C1208A /* VBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VBorder.swift; sourceTree = "<group>"; };
 		DA9088F41FD4C65F00C1208A /* VSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSpinner.swift; sourceTree = "<group>"; };
 		DA9088F51FD4C65F00C1208A /* VGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGradient.swift; sourceTree = "<group>"; };
@@ -264,6 +264,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA1AFCF11FD4D0F2002F6FA1 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				DA1AFCF21FD4D0F2002F6FA1 /* ViewMenu+Actions.swift */,
+				DA1AFCF31FD4D0F2002F6FA1 /* ViewMenu+Collection.swift */,
+				DA1AFCF41FD4D0F2002F6FA1 /* ViewMenu.swift */,
+				DA1AFCF51FD4D0F2002F6FA1 /* ViewMenu+Synth.swift */,
+				DA1AFCF61FD4D0F2002F6FA1 /* ViewMenuCell.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
 		DA9088791FD4C38E00C1208A = {
 			isa = PBXGroup;
 			children = (
@@ -475,7 +487,7 @@
 			isa = PBXGroup;
 			children = (
 				DA9088E21FD4C65F00C1208A /* Basic */,
-				DA9088EB1FD4C65F00C1208A /* Generic */,
+				DA1AFCF11FD4D0F2002F6FA1 /* Menu */,
 			);
 			path = Abstract;
 			sourceTree = "<group>";
@@ -493,18 +505,6 @@
 				DA9088EA1FD4C65F00C1208A /* ViewParent+Gesture.swift */,
 			);
 			path = Basic;
-			sourceTree = "<group>";
-		};
-		DA9088EB1FD4C65F00C1208A /* Generic */ = {
-			isa = PBXGroup;
-			children = (
-				DA9088EC1FD4C65F00C1208A /* VMenu+Synth.swift */,
-				DA9088ED1FD4C65F00C1208A /* VMenuCell.swift */,
-				DA9088EE1FD4C65F00C1208A /* VMenu+Collection.swift */,
-				DA9088EF1FD4C65F00C1208A /* VMenu.swift */,
-				DA9088F01FD4C65F00C1208A /* VMenu+Actions.swift */,
-			);
-			path = Generic;
 			sourceTree = "<group>";
 		};
 		DA9088F11FD4C65F00C1208A /* Home */ = {
@@ -650,10 +650,10 @@
 				DA90894A1FD4C66000C1208A /* VSlider+Constants.swift in Sources */,
 				DA9089451FD4C66000C1208A /* VGradient+Constants.swift in Sources */,
 				DA90891F1FD4C66000C1208A /* ControllerParent+Constants.swift in Sources */,
-				DA90893E1FD4C66000C1208A /* VMenu+Actions.swift in Sources */,
 				DA9089401FD4C66000C1208A /* VSpinner.swift in Sources */,
 				DA90890A1FD4C65F00C1208A /* Database+Constants.swift in Sources */,
 				DA9089231FD4C66000C1208A /* ControllerTransition.swift in Sources */,
+				DA1AFCF71FD4D0F2002F6FA1 /* ViewMenu+Actions.swift in Sources */,
 				DA90891E1FD4C66000C1208A /* ControllerParent+Orientation.swift in Sources */,
 				DA90892C1FD4C66000C1208A /* MenuItemSettings.swift in Sources */,
 				DA9089081FD4C65F00C1208A /* Database.swift in Sources */,
@@ -662,7 +662,9 @@
 				DA9089381FD4C66000C1208A /* ViewParent+Constants.swift in Sources */,
 				DA90892E1FD4C66000C1208A /* MenuItemCreate.swift in Sources */,
 				DA90892A1FD4C66000C1208A /* MenuItemHome.swift in Sources */,
+				DA1AFCFB1FD4D0F2002F6FA1 /* ViewMenu.swift in Sources */,
 				DA9089471FD4C66000C1208A /* VBlur.swift in Sources */,
+				DA1AFCFF1FD4D0F2002F6FA1 /* ViewMenuCell.swift in Sources */,
 				DA9089261FD4C66000C1208A /* ArchHome.swift in Sources */,
 				DA9089321FD4C66000C1208A /* View.swift in Sources */,
 				DA90894D1FD4C66000C1208A /* VAlert.swift in Sources */,
@@ -692,20 +694,18 @@
 				DA90893F1FD4C66000C1208A /* VBorder.swift in Sources */,
 				DA9089351FD4C66000C1208A /* ViewProtocol.swift in Sources */,
 				DA9089421FD4C66000C1208A /* VSlider+Gesture.swift in Sources */,
-				DA90893C1FD4C66000C1208A /* VMenu+Collection.swift in Sources */,
 				DA9089461FD4C66000C1208A /* VSpinner+Constants.swift in Sources */,
 				DA9089271FD4C66000C1208A /* Model.swift in Sources */,
 				DA90894B1FD4C66000C1208A /* VCollection.swift in Sources */,
 				DA9089341FD4C66000C1208A /* ViewMain+Constants.swift in Sources */,
-				DA90893D1FD4C66000C1208A /* VMenu.swift in Sources */,
 				DA90891A1FD4C66000C1208A /* ExtensionUIFont+Constants.swift in Sources */,
 				DA9089221FD4C66000C1208A /* AppDelegate.swift in Sources */,
+				DA1AFCF91FD4D0F2002F6FA1 /* ViewMenu+Collection.swift in Sources */,
 				DA90892D1FD4C66000C1208A /* Menu.swift in Sources */,
-				DA90893A1FD4C66000C1208A /* VMenu+Synth.swift in Sources */,
+				DA1AFCFD1FD4D0F2002F6FA1 /* ViewMenu+Synth.swift in Sources */,
 				DA90892B1FD4C66000C1208A /* MenuItemStore.swift in Sources */,
 				DA9089391FD4C66000C1208A /* ViewParent+Gesture.swift in Sources */,
 				DA9089191FD4C66000C1208A /* ExtensionString.swift in Sources */,
-				DA90893B1FD4C66000C1208A /* VMenuCell.swift in Sources */,
 				DA9089251FD4C66000C1208A /* Arch.swift in Sources */,
 				DA9089491FD4C66000C1208A /* VPushBackground.swift in Sources */,
 				DA90892F1FD4C66000C1208A /* Menu+Factory.swift in Sources */,
@@ -723,7 +723,6 @@
 			files = (
 				DA90898A1FD4CE3E00C1208A /* Menu+Constants.swift in Sources */,
 				DA9089AE1FD4CE5300C1208A /* VAlert+Constants.swift in Sources */,
-				DA90899D1FD4CE4C00C1208A /* VMenuCell.swift in Sources */,
 				DA9089871FD4CE3300C1208A /* Arch.swift in Sources */,
 				DA9089791FD4CE2200C1208A /* ExtensionData.swift in Sources */,
 				DA9089911FD4CE3E00C1208A /* Menu+Factory.swift in Sources */,
@@ -732,17 +731,18 @@
 				DA90896D1FD4CE1C00C1208A /* ExtensionDictionary.swift in Sources */,
 				DA9089AD1FD4CE5300C1208A /* VCollection.swift in Sources */,
 				DA9089951FD4CE4700C1208A /* ViewParent.swift in Sources */,
+				DA1AFCF81FD4D0F2002F6FA1 /* ViewMenu+Actions.swift in Sources */,
 				DA9089841FD4CE2E00C1208A /* ControllerParent+Transitions.swift in Sources */,
 				DA9089981FD4CE4700C1208A /* ViewMain.swift in Sources */,
 				DA90899A1FD4CE4700C1208A /* ViewParent+Constants.swift in Sources */,
 				DA90897C1FD4CE2200C1208A /* ExtensionUIFont+Constants.swift in Sources */,
-				DA9089A01FD4CE4C00C1208A /* VMenu+Actions.swift in Sources */,
-				DA90899C1FD4CE4C00C1208A /* VMenu+Synth.swift in Sources */,
 				DA9089681FD4CDFF00C1208A /* Database+Constants.swift in Sources */,
 				DA9089A81FD4CE5300C1208A /* VSpinner+Constants.swift in Sources */,
 				DA90898B1FD4CE3E00C1208A /* Menu+Order.swift in Sources */,
 				DA90898D1FD4CE3E00C1208A /* MenuItemStore.swift in Sources */,
+				DA1AFCFC1FD4D0F2002F6FA1 /* ViewMenu.swift in Sources */,
 				DA9089A21FD4CE5300C1208A /* VSpinner.swift in Sources */,
+				DA1AFD001FD4D0F2002F6FA1 /* ViewMenuCell.swift in Sources */,
 				DA9089851FD4CE2E00C1208A /* ControllerTransition.swift in Sources */,
 				DA9089A71FD4CE5300C1208A /* VGradient+Constants.swift in Sources */,
 				DA90896E1FD4CE1E00C1208A /* ExtensionNotification.swift in Sources */,
@@ -758,12 +758,10 @@
 				DA9089AA1FD4CE5300C1208A /* VCollectionFlow.swift in Sources */,
 				DA9089731FD4CE2200C1208A /* ExtensionFileManager.swift in Sources */,
 				DA9089941FD4CE4700C1208A /* View.swift in Sources */,
-				DA90899F1FD4CE4C00C1208A /* VMenu.swift in Sources */,
 				DA9089881FD4CE3300C1208A /* ArchHome.swift in Sources */,
 				DA9089AB1FD4CE5300C1208A /* VPushBackground.swift in Sources */,
 				DA9089701FD4CE2200C1208A /* ExtensionCGImage.swift in Sources */,
 				DA9089921FD4CE3E00C1208A /* MenuItemPlans.swift in Sources */,
-				DA90899E1FD4CE4C00C1208A /* VMenu+Collection.swift in Sources */,
 				DA9089751FD4CE2200C1208A /* ExtensionMKAnnotationView.swift in Sources */,
 				DA90896C1FD4CE1400C1208A /* habanero.xcdatamodeld in Sources */,
 				DA9089A91FD4CE5300C1208A /* VBlur.swift in Sources */,
@@ -780,7 +778,9 @@
 				DA90898C1FD4CE3E00C1208A /* MenuItemHome.swift in Sources */,
 				DA9089961FD4CE4700C1208A /* ViewMain+Constants.swift in Sources */,
 				DA9089761FD4CE2200C1208A /* ExtensionNSLayoutConstraint.swift in Sources */,
+				DA1AFCFA1FD4D0F2002F6FA1 /* ViewMenu+Collection.swift in Sources */,
 				DA9089781FD4CE2200C1208A /* ExtensionUIImage.swift in Sources */,
+				DA1AFCFE1FD4D0F2002F6FA1 /* ViewMenu+Synth.swift in Sources */,
 				DA90898E1FD4CE3E00C1208A /* MenuItemSettings.swift in Sources */,
 				DA9089991FD4CE4700C1208A /* ViewParent+Transitions.swift in Sources */,
 				DA90897D1FD4CE2200C1208A /* ExtensionUICollectionReusableView.swift in Sources */,
