@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewCollection<A, Cell:UICollectionViewCell>:
+class ViewCollection<A, Cell:UICollectionViewCell, Flow:UICollectionViewFlowLayout>:
     View<A>,
     UICollectionViewDelegate,
     UICollectionViewDataSource,
@@ -8,12 +8,13 @@ class ViewCollection<A, Cell:UICollectionViewCell>:
     where A.C:Controller<A>
 {
     private(set) weak var collectionView:UICollectionView!
+    private(set) weak var flow:Flow!
     
     required init(controller:A.C)
     {
         super.init(controller:controller)
         
-        let flow:ViewCollectionFlow = ViewCollectionFlow()
+        let flow:Flow = Flow()
         
         let collectionView:UICollectionView = UICollectionView(
             frame:CGRect.zero,
@@ -26,6 +27,7 @@ class ViewCollection<A, Cell:UICollectionViewCell>:
         collectionView.delegate = self
         collectionView.dataSource = self
         self.collectionView = collectionView
+        self.flow = flow
         
         if #available(iOS 11.0, *)
         {
@@ -113,15 +115,6 @@ class ViewCollection<A, Cell:UICollectionViewCell>:
         layout collectionViewLayout:UICollectionViewLayout,
         insetForSectionAt section:Int) -> UIEdgeInsets
     {
-        guard
-        
-            let flow:ViewCollectionFlow = collectionView.collectionViewLayout as? ViewCollectionFlow
-        
-        else
-        {
-            return UIEdgeInsets.zero
-        }
-        
         return flow.sectionInset
     }
     
@@ -130,15 +123,6 @@ class ViewCollection<A, Cell:UICollectionViewCell>:
         layout collectionViewLayout:UICollectionViewLayout,
         referenceSizeForHeaderInSection section:Int) -> CGSize
     {
-        guard
-            
-            let flow:ViewCollectionFlow = collectionView.collectionViewLayout as? ViewCollectionFlow
-            
-        else
-        {
-            return CGSize.zero
-        }
-        
         return flow.headerReferenceSize
     }
     
@@ -147,15 +131,6 @@ class ViewCollection<A, Cell:UICollectionViewCell>:
         layout collectionViewLayout:UICollectionViewLayout,
         referenceSizeForFooterInSection section:Int) -> CGSize
     {
-        guard
-            
-            let flow:ViewCollectionFlow = collectionView.collectionViewLayout as? ViewCollectionFlow
-            
-        else
-        {
-            return CGSize.zero
-        }
-        
         return flow.footerReferenceSize
     }
     
@@ -164,15 +139,6 @@ class ViewCollection<A, Cell:UICollectionViewCell>:
         layout collectionViewLayout:UICollectionViewLayout,
         sizeForItemAt indexPath:IndexPath) -> CGSize
     {
-        guard
-            
-            let flow:ViewCollectionFlow = collectionView.collectionViewLayout as? ViewCollectionFlow
-            
-        else
-        {
-            return CGSize.zero
-        }
-        
         return flow.itemSize
     }
     
