@@ -11,6 +11,8 @@
 		DA3F0EB21FD7480A00593B83 /* menu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3F0EB01FD7480000593B83 /* menu.xcassets */; };
 		DA3F0EB41FD74C5F00593B83 /* Menu+FactoryUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0EB31FD74C5F00593B83 /* Menu+FactoryUser.swift */; };
 		DA3F0EB61FD74C8700593B83 /* Menu+FactoryAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0EB51FD74C8700593B83 /* Menu+FactoryAdmin.swift */; };
+		DA3F0EB81FD74FC400593B83 /* MenuItemNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0EB71FD74FC400593B83 /* MenuItemNew.swift */; };
+		DA3F0EBB1FD7505E00593B83 /* Menu+OrderUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0EB91FD7505A00593B83 /* Menu+OrderUser.swift */; };
 		DA5A97CC1FD605E1006223BA /* MenuItemGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A97CB1FD605E1006223BA /* MenuItemGeneric.swift */; };
 		DA5A97CD1FD6061B006223BA /* MenuItemGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A97CB1FD605E1006223BA /* MenuItemGeneric.swift */; };
 		DA70AFBF1FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
@@ -181,6 +183,8 @@
 		DA3F0EB01FD7480000593B83 /* menu.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = menu.xcassets; sourceTree = "<group>"; };
 		DA3F0EB31FD74C5F00593B83 /* Menu+FactoryUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+FactoryUser.swift"; sourceTree = "<group>"; };
 		DA3F0EB51FD74C8700593B83 /* Menu+FactoryAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+FactoryAdmin.swift"; sourceTree = "<group>"; };
+		DA3F0EB71FD74FC400593B83 /* MenuItemNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemNew.swift; sourceTree = "<group>"; };
+		DA3F0EB91FD7505A00593B83 /* Menu+OrderUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+OrderUser.swift"; sourceTree = "<group>"; };
 		DA5A97CB1FD605E1006223BA /* MenuItemGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemGeneric.swift; sourceTree = "<group>"; };
 		DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHome.swift; sourceTree = "<group>"; };
 		DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerHome.swift; sourceTree = "<group>"; };
@@ -512,6 +516,7 @@
 				DA9088DB1FD4C65F00C1208A /* Menu.swift */,
 				DA9088D61FD4C65F00C1208A /* Menu+Constants.swift */,
 				DA9088D71FD4C65F00C1208A /* Menu+Order.swift */,
+				DA3F0EB91FD7505A00593B83 /* Menu+OrderUser.swift */,
 				DA9088DD1FD4C65F00C1208A /* Menu+Factory.swift */,
 				DA3F0EB31FD74C5F00593B83 /* Menu+FactoryUser.swift */,
 				DA3F0EB51FD74C8700593B83 /* Menu+FactoryAdmin.swift */,
@@ -520,6 +525,7 @@
 				DA992D751FD61E7300A6CFEF /* MenuItemGenericProtocol.swift */,
 				DA992D761FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift */,
 				DA9088D81FD4C65F00C1208A /* MenuItemHome.swift */,
+				DA3F0EB71FD74FC400593B83 /* MenuItemNew.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -715,6 +721,7 @@
 			files = (
 				DA91EB1A1FD62C1F0063560D /* ViewSlider.swift in Sources */,
 				DA70AFC21FD5AA980016B0DC /* ControllerHome.swift in Sources */,
+				DA3F0EBB1FD7505E00593B83 /* Menu+OrderUser.swift in Sources */,
 				DA91EB0C1FD62C1F0063560D /* ViewSliderBar.swift in Sources */,
 				DA9089281FD4C66000C1208A /* Menu+Constants.swift in Sources */,
 				DA91EB1E1FD62C1F0063560D /* ViewGradient+Constants.swift in Sources */,
@@ -853,6 +860,7 @@
 				DA9089931FD4CE3E00C1208A /* MenuItemProtocol.swift in Sources */,
 				DA9089821FD4CE2E00C1208A /* ControllerParent+Constants.swift in Sources */,
 				DA90898C1FD4CE3E00C1208A /* MenuItemHome.swift in Sources */,
+				DA3F0EB81FD74FC400593B83 /* MenuItemNew.swift in Sources */,
 				DA9089761FD4CE2200C1208A /* ExtensionNSLayoutConstraint.swift in Sources */,
 				DA3F0EB61FD74C8700593B83 /* Menu+FactoryAdmin.swift in Sources */,
 				DA91EB0B1FD62C1F0063560D /* ViewCollectionFlow.swift in Sources */,
