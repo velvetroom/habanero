@@ -1,6 +1,6 @@
 import UIKit
 
-protocol ViewTransitionableProtocol:Any
+protocol ViewTransitionableProtocol:class
 {
     weak var layoutLeft:NSLayoutConstraint! { get set }
     weak var layoutRight:NSLayoutConstraint! { get set }

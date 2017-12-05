@@ -10,8 +10,8 @@ extension ControllerParent
             
             let view:ViewParent = self.view as? ViewParent,
             let currentController:UIViewController = childViewControllers.last,
-            let newView:ViewProtocol = controller.view as? ViewProtocol,
-            let currentView:ViewProtocol = currentController.view as? ViewProtocol
+            let newView:ViewTransitionableProtocol = controller.view as? ViewTransitionableProtocol,
+            let currentView:ViewTransitionableProtocol = currentController.view as? ViewTransitionableProtocol
             
         else
         {
@@ -55,7 +55,7 @@ extension ControllerParent
         guard
             
             let view:ViewParent = self.view as? ViewParent,
-            let newView:ViewProtocol = controller.view as? ViewProtocol
+            let newView:ViewTransitionableProtocol = controller.view as? ViewTransitionableProtocol
             
         else
         {
@@ -76,7 +76,7 @@ extension ControllerParent
             
             let view:ViewParent = self.view as? ViewParent,
             let currentController:UIViewController = childViewControllers.last,
-            let newView:ViewProtocol = controller.view as? ViewProtocol
+            let newView:ViewTransitionableProtocol = controller.view as? ViewTransitionableProtocol
             
         else
         {
@@ -116,7 +116,7 @@ extension ControllerParent
             
             let view:ViewParent = self.view as? ViewParent,
             let currentController:UIViewController = childViewControllers.last,
-            let newView:ViewProtocol = controller.view as? ViewProtocol
+            let newView:ViewTransitionableProtocol = controller.view as? ViewTransitionableProtocol
             
         else
         {
@@ -146,7 +146,7 @@ extension ControllerParent
             
             let view:ViewParent = self.view as? ViewParent,
             let currentController:UIViewController = childViewControllers.last,
-            let newView:ViewProtocol = controller.view as? ViewProtocol
+            let newView:ViewTransitionableProtocol = controller.view as? ViewTransitionableProtocol
             
         else
         {
@@ -229,7 +229,7 @@ extension ControllerParent
             guard
                 
                 let view:ViewParent = self.view as? ViewParent,
-                let currentView:ViewProtocol = currentController.view as? ViewProtocol
+                let currentView:ViewTransitionableProtocol = currentController.view as? ViewTransitionableProtocol
                 
             else
             {
@@ -267,7 +267,7 @@ extension ControllerParent
             
             guard
                 
-                let removeView:ViewProtocol = removeController.view as? ViewProtocol
+                let removeView:ViewTransitionableProtocol = removeController.view as? ViewTransitionableProtocol
                 
             else
             {

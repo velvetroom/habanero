@@ -2,7 +2,7 @@ import UIKit
 
 extension ViewParent
 {
-    func mainView(view:ViewProtocol)
+    func mainView(view:ViewTransitionableProtocol)
     {
         guard
             
@@ -30,8 +30,8 @@ extension ViewParent
     }
     
     func slide(
-        currentView:ViewProtocol,
-        newView:ViewProtocol,
+        currentView:ViewTransitionableProtocol,
+        newView:ViewTransitionableProtocol,
         left:CGFloat,
         completion:@escaping(() -> ()))
     {
@@ -92,7 +92,7 @@ extension ViewParent
     }
     
     func push(
-        newView:ViewProtocol,
+        newView:ViewTransitionableProtocol,
         left:CGFloat,
         top:CGFloat,
         background:Bool,
@@ -175,7 +175,7 @@ extension ViewParent
     }
     
     func animateOver(
-        newView:ViewProtocol,
+        newView:ViewTransitionableProtocol,
         completion:@escaping(() -> ()))
     {
         guard
@@ -213,7 +213,7 @@ extension ViewParent
         }
     }
     
-    func centreOver(newView:ViewProtocol)
+    func centreOver(newView:ViewTransitionableProtocol)
     {
         guard
             
@@ -243,7 +243,7 @@ extension ViewParent
     }
     
     func pop(
-        currentView:ViewProtocol,
+        currentView:ViewTransitionableProtocol,
         left:CGFloat,
         top:CGFloat,
         completion:@escaping(() -> ()))

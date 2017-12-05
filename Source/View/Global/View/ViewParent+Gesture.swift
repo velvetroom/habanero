@@ -57,7 +57,7 @@ extension ViewParent:UIGestureRecognizerDelegate
         
         guard
             
-            let topView:ViewProtocol = subviews.last as? ViewProtocol
+            let topView:ViewTransitionableProtocol = subviews.last as? ViewTransitionableProtocol
             
         else
         {
@@ -160,15 +160,15 @@ extension ViewParent:UIGestureRecognizerDelegate
     {
         guard
             
-            let view:ViewProtocol = subviews.last as? ViewProtocol
+            let view:ViewTransitionableProtocol = subviews.last as? ViewTransitionableProtocol
             
         else
         {
             return false
         }
         
-        let panBack:Bool = view.panBack
+        let shouldPanBack:Bool = view.shouldPanBack
         
-        return panBack
+        return shouldPanBack
     }
 }
