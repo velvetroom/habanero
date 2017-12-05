@@ -2,18 +2,6 @@ import Foundation
 
 extension Menu
 {
-    //MARK: private
-    
-    private class func factoryItemsList() -> [MenuItemProtocol]
-    {
-        let itemHome:MenuItemHome = MenuItemHome()
-        
-        let map:[MenuItemProtocol] = [
-            itemHome]
-        
-        return map
-    }
-    
     //MARK: internal
     
     class func factoryItems() -> [MenuItemProtocol]
