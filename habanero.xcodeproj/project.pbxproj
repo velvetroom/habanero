@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA3F0EB11FD7480000593B83 /* menu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3F0EB01FD7480000593B83 /* menu.xcassets */; };
+		DA3F0EB21FD7480A00593B83 /* menu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3F0EB01FD7480000593B83 /* menu.xcassets */; };
 		DA5A97CC1FD605E1006223BA /* MenuItemGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A97CB1FD605E1006223BA /* MenuItemGeneric.swift */; };
 		DA5A97CD1FD6061B006223BA /* MenuItemGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A97CB1FD605E1006223BA /* MenuItemGeneric.swift */; };
 		DA70AFBF1FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
@@ -174,6 +176,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA3F0EB01FD7480000593B83 /* menu.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = menu.xcassets; sourceTree = "<group>"; };
 		DA5A97CB1FD605E1006223BA /* MenuItemGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemGeneric.swift; sourceTree = "<group>"; };
 		DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHome.swift; sourceTree = "<group>"; };
 		DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerHome.swift; sourceTree = "<group>"; };
@@ -338,6 +341,7 @@
 			children = (
 				DA90889E1FD4C65F00C1208A /* LaunchScreen.storyboard */,
 				DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */,
+				DA3F0EB01FD7480000593B83 /* menu.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -501,14 +505,14 @@
 		DA9088D51FD4C65F00C1208A /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				DA992D751FD61E7300A6CFEF /* MenuItemGenericProtocol.swift */,
-				DA992D761FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift */,
 				DA9088DB1FD4C65F00C1208A /* Menu.swift */,
 				DA9088D61FD4C65F00C1208A /* Menu+Constants.swift */,
 				DA9088D71FD4C65F00C1208A /* Menu+Order.swift */,
 				DA9088DD1FD4C65F00C1208A /* Menu+Factory.swift */,
 				DA5A97CB1FD605E1006223BA /* MenuItemGeneric.swift */,
 				DA9088DF1FD4C65F00C1208A /* MenuItemProtocol.swift */,
+				DA992D751FD61E7300A6CFEF /* MenuItemGenericProtocol.swift */,
+				DA992D761FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift */,
 				DA9088D81FD4C65F00C1208A /* MenuItemHome.swift */,
 			);
 			path = Menu;
@@ -673,6 +677,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA9089031FD4C65F00C1208A /* LaunchScreen.storyboard in Resources */,
+				DA3F0EB11FD7480000593B83 /* menu.xcassets in Resources */,
 				DA9089071FD4C65F00C1208A /* LocalizableController.strings in Resources */,
 				DA9089061FD4C65F00C1208A /* LocalizableView.strings in Resources */,
 				DA753DAB1FD5EBC8007E5BC5 /* generic.xcassets in Resources */,
@@ -686,6 +691,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA9089B41FD4CE5F00C1208A /* LocalizableController.strings in Resources */,
+				DA3F0EB21FD7480A00593B83 /* menu.xcassets in Resources */,
 				DA9089B31FD4CE5F00C1208A /* LocalizableView.strings in Resources */,
 				DA9089B01FD4CE5800C1208A /* LaunchScreen.storyboard in Resources */,
 				DA753DAC1FD5EBC8007E5BC5 /* generic.xcassets in Resources */,
