@@ -1,8 +1,9 @@
 import UIKit
 
-struct MenuItemHome:MenuItemProtocol
+struct MenuItemHome:MenuItemGenericProtocol
 {
+    typealias A = ArchHome
+    
     let order:Menu.Order = Menu.Order.home
     let icon:UIImage = #imageLiteral(resourceName: "assetMenuHome")
-    let controllerType:UIViewController.Type = ControllerHome.self
 }
