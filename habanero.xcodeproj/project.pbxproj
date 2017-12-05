@@ -161,6 +161,8 @@
 		DA91EB1F1FD62C1F0063560D /* ViewGradient+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA91EAE71FD62C1F0063560D /* ViewGradient+Constants.swift */; };
 		DA91EB211FD62C7D0063560D /* ViewTransitionableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA91EB201FD62C7D0063560D /* ViewTransitionableProtocol.swift */; };
 		DA91EB221FD62C7D0063560D /* ViewTransitionableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA91EB201FD62C7D0063560D /* ViewTransitionableProtocol.swift */; };
+		DA91EB241FD62D700063560D /* ViewControllableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA91EB231FD62D700063560D /* ViewControllableProtocol.swift */; };
+		DA91EB251FD62D700063560D /* ViewControllableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA91EB231FD62D700063560D /* ViewControllableProtocol.swift */; };
 		DA992D771FD61E7300A6CFEF /* MenuItemGenericProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA992D751FD61E7300A6CFEF /* MenuItemGenericProtocol.swift */; };
 		DA992D781FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA992D761FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift */; };
 		DA992D791FD61ED700A6CFEF /* MenuItemGenericProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA992D751FD61E7300A6CFEF /* MenuItemGenericProtocol.swift */; };
@@ -253,6 +255,7 @@
 		DA91EAE61FD62C1F0063560D /* ViewSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSpinner.swift; sourceTree = "<group>"; };
 		DA91EAE71FD62C1F0063560D /* ViewGradient+Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewGradient+Constants.swift"; sourceTree = "<group>"; };
 		DA91EB201FD62C7D0063560D /* ViewTransitionableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTransitionableProtocol.swift; sourceTree = "<group>"; };
+		DA91EB231FD62D700063560D /* ViewControllableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllableProtocol.swift; sourceTree = "<group>"; };
 		DA992D751FD61E7300A6CFEF /* MenuItemGenericProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemGenericProtocol.swift; sourceTree = "<group>"; };
 		DA992D761FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MenuItemGenericProtocol+Default.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -521,11 +524,12 @@
 				DA91EAD01FD62C1F0063560D /* View.swift */,
 				DA91EAD41FD62C1F0063560D /* ViewMain.swift */,
 				DA91EAD21FD62C1F0063560D /* ViewMain+Constants.swift */,
-				DA91EB201FD62C7D0063560D /* ViewTransitionableProtocol.swift */,
 				DA91EAD11FD62C1F0063560D /* ViewParent.swift */,
 				DA91EAD51FD62C1F0063560D /* ViewParent+Transitions.swift */,
 				DA91EAD61FD62C1F0063560D /* ViewParent+Constants.swift */,
 				DA91EAD71FD62C1F0063560D /* ViewParent+Gesture.swift */,
+				DA91EB201FD62C7D0063560D /* ViewTransitionableProtocol.swift */,
+				DA91EB231FD62D700063560D /* ViewControllableProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -712,6 +716,7 @@
 				DA91EB1C1FD62C1F0063560D /* ViewSpinner.swift in Sources */,
 				DA91EB0E1FD62C1F0063560D /* ViewBlur.swift in Sources */,
 				DA9089201FD4C66000C1208A /* ControllerParent+Menu.swift in Sources */,
+				DA91EB241FD62D700063560D /* ViewControllableProtocol.swift in Sources */,
 				DA90891C1FD4C66000C1208A /* ExtensionURL.swift in Sources */,
 				DA9089091FD4C65F00C1208A /* Database+Factory.swift in Sources */,
 				DA9089271FD4C66000C1208A /* Model.swift in Sources */,
@@ -792,6 +797,7 @@
 				DA91EB1D1FD62C1F0063560D /* ViewSpinner.swift in Sources */,
 				DA91EB0F1FD62C1F0063560D /* ViewBlur.swift in Sources */,
 				DA9089671FD4CDFC00C1208A /* Database+Factory.swift in Sources */,
+				DA91EB251FD62D700063560D /* ViewControllableProtocol.swift in Sources */,
 				DA9089931FD4CE3E00C1208A /* MenuItemProtocol.swift in Sources */,
 				DA9089821FD4CE2E00C1208A /* ControllerParent+Constants.swift in Sources */,
 				DA90898C1FD4CE3E00C1208A /* MenuItemHome.swift in Sources */,
