@@ -33,27 +33,6 @@
 		DA9089051FD4C65F00C1208A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A21FD4C65F00C1208A /* InfoPlist.strings */; };
 		DA9089061FD4C65F00C1208A /* LocalizableView.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A41FD4C65F00C1208A /* LocalizableView.strings */; };
 		DA9089071FD4C65F00C1208A /* LocalizableController.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A61FD4C65F00C1208A /* LocalizableController.strings */; };
-		DA9089081FD4C65F00C1208A /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088AB1FD4C65F00C1208A /* Database.swift */; };
-		DA9089091FD4C65F00C1208A /* Database+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088AC1FD4C65F00C1208A /* Database+Factory.swift */; };
-		DA90890A1FD4C65F00C1208A /* Database+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088AD1FD4C65F00C1208A /* Database+Constants.swift */; };
-		DA90890B1FD4C65F00C1208A /* ExtensionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088B11FD4C65F00C1208A /* ExtensionDictionary.swift */; };
-		DA90890C1FD4C65F00C1208A /* ExtensionNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088B21FD4C65F00C1208A /* ExtensionNotification.swift */; };
-		DA90890D1FD4C65F00C1208A /* ExtensionUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088B31FD4C65F00C1208A /* ExtensionUIColor.swift */; };
-		DA90890E1FD4C65F00C1208A /* ExtensionCGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088B41FD4C65F00C1208A /* ExtensionCGImage.swift */; };
-		DA90890F1FD4C65F00C1208A /* ExtensionMKPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088B51FD4C65F00C1208A /* ExtensionMKPolyline.swift */; };
-		DA9089101FD4C65F00C1208A /* ExtensionString+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088B61FD4C65F00C1208A /* ExtensionString+Constants.swift */; };
-		DA9089111FD4C65F00C1208A /* ExtensionFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088B71FD4C65F00C1208A /* ExtensionFileManager.swift */; };
-		DA9089121FD4C65F00C1208A /* ExtensionURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088B81FD4C65F00C1208A /* ExtensionURLResponse.swift */; };
-		DA9089131FD4C65F00C1208A /* ExtensionMKAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088B91FD4C65F00C1208A /* ExtensionMKAnnotationView.swift */; };
-		DA9089141FD4C65F00C1208A /* ExtensionNSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088BA1FD4C65F00C1208A /* ExtensionNSLayoutConstraint.swift */; };
-		DA9089151FD4C65F00C1208A /* ExtensionUIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088BB1FD4C65F00C1208A /* ExtensionUIFont.swift */; };
-		DA9089161FD4C65F00C1208A /* ExtensionUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088BC1FD4C65F00C1208A /* ExtensionUIImage.swift */; };
-		DA9089171FD4C66000C1208A /* ExtensionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088BD1FD4C65F00C1208A /* ExtensionData.swift */; };
-		DA9089181FD4C66000C1208A /* ExtensionNSManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088BE1FD4C65F00C1208A /* ExtensionNSManagedObject.swift */; };
-		DA9089191FD4C66000C1208A /* ExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088BF1FD4C65F00C1208A /* ExtensionString.swift */; };
-		DA90891A1FD4C66000C1208A /* ExtensionUIFont+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088C01FD4C65F00C1208A /* ExtensionUIFont+Constants.swift */; };
-		DA90891B1FD4C66000C1208A /* ExtensionUICollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088C11FD4C65F00C1208A /* ExtensionUICollectionReusableView.swift */; };
-		DA90891C1FD4C66000C1208A /* ExtensionURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088C21FD4C65F00C1208A /* ExtensionURL.swift */; };
 		DA90891D1FD4C66000C1208A /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088C51FD4C65F00C1208A /* Controller.swift */; };
 		DA90891E1FD4C66000C1208A /* ControllerParent+Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088C61FD4C65F00C1208A /* ControllerParent+Orientation.swift */; };
 		DA90891F1FD4C66000C1208A /* ControllerParent+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088C71FD4C65F00C1208A /* ControllerParent+Constants.swift */; };
@@ -70,29 +49,6 @@
 		DA90892D1FD4C66000C1208A /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088DB1FD4C65F00C1208A /* Menu.swift */; };
 		DA90892F1FD4C66000C1208A /* Menu+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088DD1FD4C65F00C1208A /* Menu+Factory.swift */; };
 		DA9089311FD4C66000C1208A /* MenuItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088DF1FD4C65F00C1208A /* MenuItemProtocol.swift */; };
-		DA9089661FD4CDFA00C1208A /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088AB1FD4C65F00C1208A /* Database.swift */; };
-		DA9089671FD4CDFC00C1208A /* Database+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088AC1FD4C65F00C1208A /* Database+Factory.swift */; };
-		DA9089681FD4CDFF00C1208A /* Database+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088AD1FD4C65F00C1208A /* Database+Constants.swift */; };
-		DA90896B1FD4CE1400C1208A /* habanero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA9089691FD4CE1400C1208A /* habanero.xcdatamodeld */; };
-		DA90896C1FD4CE1400C1208A /* habanero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA9089691FD4CE1400C1208A /* habanero.xcdatamodeld */; };
-		DA90896D1FD4CE1C00C1208A /* ExtensionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088B11FD4C65F00C1208A /* ExtensionDictionary.swift */; };
-		DA90896E1FD4CE1E00C1208A /* ExtensionNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088B21FD4C65F00C1208A /* ExtensionNotification.swift */; };
-		DA90896F1FD4CE2200C1208A /* ExtensionUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088B31FD4C65F00C1208A /* ExtensionUIColor.swift */; };
-		DA9089701FD4CE2200C1208A /* ExtensionCGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088B41FD4C65F00C1208A /* ExtensionCGImage.swift */; };
-		DA9089711FD4CE2200C1208A /* ExtensionMKPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088B51FD4C65F00C1208A /* ExtensionMKPolyline.swift */; };
-		DA9089721FD4CE2200C1208A /* ExtensionString+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088B61FD4C65F00C1208A /* ExtensionString+Constants.swift */; };
-		DA9089731FD4CE2200C1208A /* ExtensionFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088B71FD4C65F00C1208A /* ExtensionFileManager.swift */; };
-		DA9089741FD4CE2200C1208A /* ExtensionURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088B81FD4C65F00C1208A /* ExtensionURLResponse.swift */; };
-		DA9089751FD4CE2200C1208A /* ExtensionMKAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088B91FD4C65F00C1208A /* ExtensionMKAnnotationView.swift */; };
-		DA9089761FD4CE2200C1208A /* ExtensionNSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088BA1FD4C65F00C1208A /* ExtensionNSLayoutConstraint.swift */; };
-		DA9089771FD4CE2200C1208A /* ExtensionUIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088BB1FD4C65F00C1208A /* ExtensionUIFont.swift */; };
-		DA9089781FD4CE2200C1208A /* ExtensionUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088BC1FD4C65F00C1208A /* ExtensionUIImage.swift */; };
-		DA9089791FD4CE2200C1208A /* ExtensionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088BD1FD4C65F00C1208A /* ExtensionData.swift */; };
-		DA90897A1FD4CE2200C1208A /* ExtensionNSManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088BE1FD4C65F00C1208A /* ExtensionNSManagedObject.swift */; };
-		DA90897B1FD4CE2200C1208A /* ExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088BF1FD4C65F00C1208A /* ExtensionString.swift */; };
-		DA90897C1FD4CE2200C1208A /* ExtensionUIFont+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088C01FD4C65F00C1208A /* ExtensionUIFont+Constants.swift */; };
-		DA90897D1FD4CE2200C1208A /* ExtensionUICollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088C11FD4C65F00C1208A /* ExtensionUICollectionReusableView.swift */; };
-		DA90897E1FD4CE2200C1208A /* ExtensionURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088C21FD4C65F00C1208A /* ExtensionURL.swift */; };
 		DA90897F1FD4CE2E00C1208A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088CA1FD4C65F00C1208A /* AppDelegate.swift */; };
 		DA9089801FD4CE2E00C1208A /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088C51FD4C65F00C1208A /* Controller.swift */; };
 		DA9089811FD4CE2E00C1208A /* ControllerParent+Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088C61FD4C65F00C1208A /* ControllerParent+Orientation.swift */; };
@@ -176,6 +132,44 @@
 		DA992D781FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA992D761FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift */; };
 		DA992D791FD61ED700A6CFEF /* MenuItemGenericProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA992D751FD61E7300A6CFEF /* MenuItemGenericProtocol.swift */; };
 		DA992D7A1FD61EE500A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA992D761FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift */; };
+		DACF55071FD7656F00069701 /* habanero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DACF55051FD7656E00069701 /* habanero.xcdatamodeld */; };
+		DACF55081FD7656F00069701 /* habanero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DACF55051FD7656E00069701 /* habanero.xcdatamodeld */; };
+		DACF552B1FD7661E00069701 /* ExtensionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55191FD7661E00069701 /* ExtensionDictionary.swift */; };
+		DACF552C1FD7661E00069701 /* ExtensionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55191FD7661E00069701 /* ExtensionDictionary.swift */; };
+		DACF552D1FD7661E00069701 /* ExtensionNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF551A1FD7661E00069701 /* ExtensionNotification.swift */; };
+		DACF552E1FD7661E00069701 /* ExtensionNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF551A1FD7661E00069701 /* ExtensionNotification.swift */; };
+		DACF552F1FD7661E00069701 /* ExtensionUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF551B1FD7661E00069701 /* ExtensionUIColor.swift */; };
+		DACF55301FD7661E00069701 /* ExtensionUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF551B1FD7661E00069701 /* ExtensionUIColor.swift */; };
+		DACF55311FD7661E00069701 /* ExtensionCGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF551C1FD7661E00069701 /* ExtensionCGImage.swift */; };
+		DACF55321FD7661E00069701 /* ExtensionCGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF551C1FD7661E00069701 /* ExtensionCGImage.swift */; };
+		DACF55331FD7661E00069701 /* ExtensionMKPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF551D1FD7661E00069701 /* ExtensionMKPolyline.swift */; };
+		DACF55341FD7661E00069701 /* ExtensionMKPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF551D1FD7661E00069701 /* ExtensionMKPolyline.swift */; };
+		DACF55351FD7661E00069701 /* ExtensionString+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF551E1FD7661E00069701 /* ExtensionString+Constants.swift */; };
+		DACF55361FD7661E00069701 /* ExtensionString+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF551E1FD7661E00069701 /* ExtensionString+Constants.swift */; };
+		DACF55371FD7661E00069701 /* ExtensionFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF551F1FD7661E00069701 /* ExtensionFileManager.swift */; };
+		DACF55381FD7661E00069701 /* ExtensionFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF551F1FD7661E00069701 /* ExtensionFileManager.swift */; };
+		DACF55391FD7661E00069701 /* ExtensionURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55201FD7661E00069701 /* ExtensionURLResponse.swift */; };
+		DACF553A1FD7661E00069701 /* ExtensionURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55201FD7661E00069701 /* ExtensionURLResponse.swift */; };
+		DACF553B1FD7661E00069701 /* ExtensionMKAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55211FD7661E00069701 /* ExtensionMKAnnotationView.swift */; };
+		DACF553C1FD7661E00069701 /* ExtensionMKAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55211FD7661E00069701 /* ExtensionMKAnnotationView.swift */; };
+		DACF553D1FD7661E00069701 /* ExtensionNSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55221FD7661E00069701 /* ExtensionNSLayoutConstraint.swift */; };
+		DACF553E1FD7661E00069701 /* ExtensionNSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55221FD7661E00069701 /* ExtensionNSLayoutConstraint.swift */; };
+		DACF553F1FD7661E00069701 /* ExtensionUIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55231FD7661E00069701 /* ExtensionUIFont.swift */; };
+		DACF55401FD7661E00069701 /* ExtensionUIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55231FD7661E00069701 /* ExtensionUIFont.swift */; };
+		DACF55411FD7661E00069701 /* ExtensionUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55241FD7661E00069701 /* ExtensionUIImage.swift */; };
+		DACF55421FD7661E00069701 /* ExtensionUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55241FD7661E00069701 /* ExtensionUIImage.swift */; };
+		DACF55431FD7661E00069701 /* ExtensionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55251FD7661E00069701 /* ExtensionData.swift */; };
+		DACF55441FD7661E00069701 /* ExtensionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55251FD7661E00069701 /* ExtensionData.swift */; };
+		DACF55451FD7661E00069701 /* ExtensionNSManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55261FD7661E00069701 /* ExtensionNSManagedObject.swift */; };
+		DACF55461FD7661E00069701 /* ExtensionNSManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55261FD7661E00069701 /* ExtensionNSManagedObject.swift */; };
+		DACF55471FD7661E00069701 /* ExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55271FD7661E00069701 /* ExtensionString.swift */; };
+		DACF55481FD7661E00069701 /* ExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55271FD7661E00069701 /* ExtensionString.swift */; };
+		DACF55491FD7661E00069701 /* ExtensionUIFont+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55281FD7661E00069701 /* ExtensionUIFont+Constants.swift */; };
+		DACF554A1FD7661E00069701 /* ExtensionUIFont+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55281FD7661E00069701 /* ExtensionUIFont+Constants.swift */; };
+		DACF554B1FD7661E00069701 /* ExtensionUICollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55291FD7661E00069701 /* ExtensionUICollectionReusableView.swift */; };
+		DACF554C1FD7661E00069701 /* ExtensionUICollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55291FD7661E00069701 /* ExtensionUICollectionReusableView.swift */; };
+		DACF554D1FD7661E00069701 /* ExtensionURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF552A1FD7661E00069701 /* ExtensionURL.swift */; };
+		DACF554E1FD7661E00069701 /* ExtensionURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF552A1FD7661E00069701 /* ExtensionURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -191,7 +185,6 @@
 		DA70AFC41FD5AABF0016B0DC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		DA753DA91FD5EB96007E5BC5 /* Design */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Design; sourceTree = "<group>"; };
 		DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = generic.xcassets; sourceTree = "<group>"; };
-		DA795D301FD5F00B00ABD191 /* version.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = version.sh; sourceTree = "<group>"; };
 		DA84C0EE1FD73F59008959EA /* ArchNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNew.swift; sourceTree = "<group>"; };
 		DA84C0F11FD73FCD008959EA /* ControllerNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerNew.swift; sourceTree = "<group>"; };
 		DA84C0F41FD74009008959EA /* New.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New.swift; sourceTree = "<group>"; };
@@ -204,27 +197,6 @@
 		DA9088A31FD4C65F00C1208A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DA9088A51FD4C65F00C1208A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalizableView.strings; sourceTree = "<group>"; };
 		DA9088A71FD4C65F00C1208A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalizableController.strings; sourceTree = "<group>"; };
-		DA9088AB1FD4C65F00C1208A /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
-		DA9088AC1FD4C65F00C1208A /* Database+Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database+Factory.swift"; sourceTree = "<group>"; };
-		DA9088AD1FD4C65F00C1208A /* Database+Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database+Constants.swift"; sourceTree = "<group>"; };
-		DA9088B11FD4C65F00C1208A /* ExtensionDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDictionary.swift; sourceTree = "<group>"; };
-		DA9088B21FD4C65F00C1208A /* ExtensionNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionNotification.swift; sourceTree = "<group>"; };
-		DA9088B31FD4C65F00C1208A /* ExtensionUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUIColor.swift; sourceTree = "<group>"; };
-		DA9088B41FD4C65F00C1208A /* ExtensionCGImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionCGImage.swift; sourceTree = "<group>"; };
-		DA9088B51FD4C65F00C1208A /* ExtensionMKPolyline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionMKPolyline.swift; sourceTree = "<group>"; };
-		DA9088B61FD4C65F00C1208A /* ExtensionString+Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExtensionString+Constants.swift"; sourceTree = "<group>"; };
-		DA9088B71FD4C65F00C1208A /* ExtensionFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionFileManager.swift; sourceTree = "<group>"; };
-		DA9088B81FD4C65F00C1208A /* ExtensionURLResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionURLResponse.swift; sourceTree = "<group>"; };
-		DA9088B91FD4C65F00C1208A /* ExtensionMKAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionMKAnnotationView.swift; sourceTree = "<group>"; };
-		DA9088BA1FD4C65F00C1208A /* ExtensionNSLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionNSLayoutConstraint.swift; sourceTree = "<group>"; };
-		DA9088BB1FD4C65F00C1208A /* ExtensionUIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUIFont.swift; sourceTree = "<group>"; };
-		DA9088BC1FD4C65F00C1208A /* ExtensionUIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUIImage.swift; sourceTree = "<group>"; };
-		DA9088BD1FD4C65F00C1208A /* ExtensionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionData.swift; sourceTree = "<group>"; };
-		DA9088BE1FD4C65F00C1208A /* ExtensionNSManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionNSManagedObject.swift; sourceTree = "<group>"; };
-		DA9088BF1FD4C65F00C1208A /* ExtensionString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionString.swift; sourceTree = "<group>"; };
-		DA9088C01FD4C65F00C1208A /* ExtensionUIFont+Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExtensionUIFont+Constants.swift"; sourceTree = "<group>"; };
-		DA9088C11FD4C65F00C1208A /* ExtensionUICollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUICollectionReusableView.swift; sourceTree = "<group>"; };
-		DA9088C21FD4C65F00C1208A /* ExtensionURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionURL.swift; sourceTree = "<group>"; };
 		DA9088C51FD4C65F00C1208A /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		DA9088C61FD4C65F00C1208A /* ControllerParent+Orientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ControllerParent+Orientation.swift"; sourceTree = "<group>"; };
 		DA9088C71FD4C65F00C1208A /* ControllerParent+Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ControllerParent+Constants.swift"; sourceTree = "<group>"; };
@@ -241,10 +213,7 @@
 		DA9088DB1FD4C65F00C1208A /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		DA9088DD1FD4C65F00C1208A /* Menu+Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Menu+Factory.swift"; sourceTree = "<group>"; };
 		DA9088DF1FD4C65F00C1208A /* MenuItemProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemProtocol.swift; sourceTree = "<group>"; };
-		DA9089021FD4C65F00C1208A /* userInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = userInfo.plist; sourceTree = "<group>"; };
 		DA9089531FD4CB4D00C1208A /* admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = admin.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA9089651FD4CBE400C1208A /* adminInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = adminInfo.plist; sourceTree = "<group>"; };
-		DA90896A1FD4CE1400C1208A /* habanero.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = habanero.xcdatamodel; sourceTree = "<group>"; };
 		DA91EACA1FD62C1F0063560D /* ViewMenu+Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewMenu+Actions.swift"; sourceTree = "<group>"; };
 		DA91EACB1FD62C1F0063560D /* ViewMenu+Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewMenu+Collection.swift"; sourceTree = "<group>"; };
 		DA91EACC1FD62C1F0063560D /* ViewMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMenu.swift; sourceTree = "<group>"; };
@@ -276,6 +245,28 @@
 		DA91EB261FD630E80063560D /* ViewGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewGlobal.swift; sourceTree = "<group>"; };
 		DA992D751FD61E7300A6CFEF /* MenuItemGenericProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemGenericProtocol.swift; sourceTree = "<group>"; };
 		DA992D761FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MenuItemGenericProtocol+Default.swift"; sourceTree = "<group>"; };
+		DACF55061FD7656E00069701 /* habanero.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = habanero.xcdatamodel; sourceTree = "<group>"; };
+		DACF550A1FD7658500069701 /* userInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = userInfo.plist; sourceTree = "<group>"; };
+		DACF550B1FD7658500069701 /* adminInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = adminInfo.plist; sourceTree = "<group>"; };
+		DACF55141FD765C700069701 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
+		DACF55191FD7661E00069701 /* ExtensionDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDictionary.swift; sourceTree = "<group>"; };
+		DACF551A1FD7661E00069701 /* ExtensionNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionNotification.swift; sourceTree = "<group>"; };
+		DACF551B1FD7661E00069701 /* ExtensionUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUIColor.swift; sourceTree = "<group>"; };
+		DACF551C1FD7661E00069701 /* ExtensionCGImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionCGImage.swift; sourceTree = "<group>"; };
+		DACF551D1FD7661E00069701 /* ExtensionMKPolyline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionMKPolyline.swift; sourceTree = "<group>"; };
+		DACF551E1FD7661E00069701 /* ExtensionString+Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExtensionString+Constants.swift"; sourceTree = "<group>"; };
+		DACF551F1FD7661E00069701 /* ExtensionFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionFileManager.swift; sourceTree = "<group>"; };
+		DACF55201FD7661E00069701 /* ExtensionURLResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionURLResponse.swift; sourceTree = "<group>"; };
+		DACF55211FD7661E00069701 /* ExtensionMKAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionMKAnnotationView.swift; sourceTree = "<group>"; };
+		DACF55221FD7661E00069701 /* ExtensionNSLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionNSLayoutConstraint.swift; sourceTree = "<group>"; };
+		DACF55231FD7661E00069701 /* ExtensionUIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUIFont.swift; sourceTree = "<group>"; };
+		DACF55241FD7661E00069701 /* ExtensionUIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUIImage.swift; sourceTree = "<group>"; };
+		DACF55251FD7661E00069701 /* ExtensionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionData.swift; sourceTree = "<group>"; };
+		DACF55261FD7661E00069701 /* ExtensionNSManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionNSManagedObject.swift; sourceTree = "<group>"; };
+		DACF55271FD7661E00069701 /* ExtensionString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionString.swift; sourceTree = "<group>"; };
+		DACF55281FD7661E00069701 /* ExtensionUIFont+Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExtensionUIFont+Constants.swift"; sourceTree = "<group>"; };
+		DACF55291FD7661E00069701 /* ExtensionUICollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUICollectionReusableView.swift; sourceTree = "<group>"; };
+		DACF552A1FD7661E00069701 /* ExtensionURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionURL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -324,10 +315,12 @@
 			isa = PBXGroup;
 			children = (
 				DA9088A81FD4C65F00C1208A /* Source */,
+				DACF55041FD7656E00069701 /* Coredata */,
 				DA90889D1FD4C65F00C1208A /* Assets */,
 				DA90889F1FD4C65F00C1208A /* Resources */,
+				DACF55091FD7658500069701 /* Info */,
+				DACF55141FD765C700069701 /* Scripts */,
 				DA753DA91FD5EB96007E5BC5 /* Design */,
-				DA795D301FD5F00B00ABD191 /* version.sh */,
 				DA90889B1FD4C4AF00C1208A /* LICENSE */,
 				DA9088981FD4C45600C1208A /* README.md */,
 				DA9088831FD4C38E00C1208A /* Products */,
@@ -371,72 +364,9 @@
 				DA9088C31FD4C65F00C1208A /* Controller */,
 				DA9088D11FD4C65F00C1208A /* Model */,
 				DA9088E01FD4C65F00C1208A /* View */,
-				DA9088A91FD4C65F00C1208A /* CoreData */,
-				DA9088B01FD4C65F00C1208A /* GenericExtensions */,
-				DA9089021FD4C65F00C1208A /* userInfo.plist */,
-				DA9089651FD4CBE400C1208A /* adminInfo.plist */,
+				DACF55181FD7661E00069701 /* Extensions */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		DA9088A91FD4C65F00C1208A /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				DA9088AA1FD4C65F00C1208A /* Manager */,
-				DA9088AE1FD4C65F00C1208A /* Model */,
-				DA9088AF1FD4C65F00C1208A /* Entities */,
-			);
-			path = CoreData;
-			sourceTree = "<group>";
-		};
-		DA9088AA1FD4C65F00C1208A /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				DA9088AB1FD4C65F00C1208A /* Database.swift */,
-				DA9088AC1FD4C65F00C1208A /* Database+Factory.swift */,
-				DA9088AD1FD4C65F00C1208A /* Database+Constants.swift */,
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
-		DA9088AE1FD4C65F00C1208A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				DA9089691FD4CE1400C1208A /* habanero.xcdatamodeld */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		DA9088AF1FD4C65F00C1208A /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Entities;
-			sourceTree = "<group>";
-		};
-		DA9088B01FD4C65F00C1208A /* GenericExtensions */ = {
-			isa = PBXGroup;
-			children = (
-				DA9088B11FD4C65F00C1208A /* ExtensionDictionary.swift */,
-				DA9088B21FD4C65F00C1208A /* ExtensionNotification.swift */,
-				DA9088B31FD4C65F00C1208A /* ExtensionUIColor.swift */,
-				DA9088B41FD4C65F00C1208A /* ExtensionCGImage.swift */,
-				DA9088B51FD4C65F00C1208A /* ExtensionMKPolyline.swift */,
-				DA9088B61FD4C65F00C1208A /* ExtensionString+Constants.swift */,
-				DA9088B71FD4C65F00C1208A /* ExtensionFileManager.swift */,
-				DA9088B81FD4C65F00C1208A /* ExtensionURLResponse.swift */,
-				DA9088B91FD4C65F00C1208A /* ExtensionMKAnnotationView.swift */,
-				DA9088BA1FD4C65F00C1208A /* ExtensionNSLayoutConstraint.swift */,
-				DA9088BB1FD4C65F00C1208A /* ExtensionUIFont.swift */,
-				DA9088BC1FD4C65F00C1208A /* ExtensionUIImage.swift */,
-				DA9088BD1FD4C65F00C1208A /* ExtensionData.swift */,
-				DA9088BE1FD4C65F00C1208A /* ExtensionNSManagedObject.swift */,
-				DA9088BF1FD4C65F00C1208A /* ExtensionString.swift */,
-				DA9088C01FD4C65F00C1208A /* ExtensionUIFont+Constants.swift */,
-				DA9088C11FD4C65F00C1208A /* ExtensionUICollectionReusableView.swift */,
-				DA9088C21FD4C65F00C1208A /* ExtensionURL.swift */,
-			);
-			path = GenericExtensions;
 			sourceTree = "<group>";
 		};
 		DA9088C31FD4C65F00C1208A /* Controller */ = {
@@ -607,6 +537,48 @@
 			path = Generic;
 			sourceTree = "<group>";
 		};
+		DACF55041FD7656E00069701 /* Coredata */ = {
+			isa = PBXGroup;
+			children = (
+				DACF55051FD7656E00069701 /* habanero.xcdatamodeld */,
+			);
+			path = Coredata;
+			sourceTree = "<group>";
+		};
+		DACF55091FD7658500069701 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				DACF550A1FD7658500069701 /* userInfo.plist */,
+				DACF550B1FD7658500069701 /* adminInfo.plist */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		DACF55181FD7661E00069701 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DACF55191FD7661E00069701 /* ExtensionDictionary.swift */,
+				DACF551A1FD7661E00069701 /* ExtensionNotification.swift */,
+				DACF551B1FD7661E00069701 /* ExtensionUIColor.swift */,
+				DACF551C1FD7661E00069701 /* ExtensionCGImage.swift */,
+				DACF551D1FD7661E00069701 /* ExtensionMKPolyline.swift */,
+				DACF551E1FD7661E00069701 /* ExtensionString+Constants.swift */,
+				DACF551F1FD7661E00069701 /* ExtensionFileManager.swift */,
+				DACF55201FD7661E00069701 /* ExtensionURLResponse.swift */,
+				DACF55211FD7661E00069701 /* ExtensionMKAnnotationView.swift */,
+				DACF55221FD7661E00069701 /* ExtensionNSLayoutConstraint.swift */,
+				DACF55231FD7661E00069701 /* ExtensionUIFont.swift */,
+				DACF55241FD7661E00069701 /* ExtensionUIImage.swift */,
+				DACF55251FD7661E00069701 /* ExtensionData.swift */,
+				DACF55261FD7661E00069701 /* ExtensionNSManagedObject.swift */,
+				DACF55271FD7661E00069701 /* ExtensionString.swift */,
+				DACF55281FD7661E00069701 /* ExtensionUIFont+Constants.swift */,
+				DACF55291FD7661E00069701 /* ExtensionUICollectionReusableView.swift */,
+				DACF552A1FD7661E00069701 /* ExtensionURL.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -718,25 +690,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DACF554B1FD7661E00069701 /* ExtensionUICollectionReusableView.swift in Sources */,
 				DA91EB1A1FD62C1F0063560D /* ViewSlider.swift in Sources */,
 				DA70AFC21FD5AA980016B0DC /* ControllerHome.swift in Sources */,
+				DACF552D1FD7661E00069701 /* ExtensionNotification.swift in Sources */,
 				DA3F0EBB1FD7505E00593B83 /* Menu+OrderUser.swift in Sources */,
 				DA91EB0C1FD62C1F0063560D /* ViewSliderBar.swift in Sources */,
 				DA9089281FD4C66000C1208A /* Menu+Constants.swift in Sources */,
 				DA91EB1E1FD62C1F0063560D /* ViewGradient+Constants.swift in Sources */,
-				DA90890C1FD4C65F00C1208A /* ExtensionNotification.swift in Sources */,
-				DA90890D1FD4C65F00C1208A /* ExtensionUIColor.swift in Sources */,
+				DACF552F1FD7661E00069701 /* ExtensionUIColor.swift in Sources */,
+				DACF55471FD7661E00069701 /* ExtensionString.swift in Sources */,
 				DA91EB001FD62C1F0063560D /* ViewParent+Gesture.swift in Sources */,
 				DA91EAF41FD62C1F0063560D /* ViewParent.swift in Sources */,
+				DACF55351FD7661E00069701 /* ExtensionString+Constants.swift in Sources */,
+				DACF554D1FD7661E00069701 /* ExtensionURL.swift in Sources */,
+				DACF55451FD7661E00069701 /* ExtensionNSManagedObject.swift in Sources */,
 				DA91EAFC1FD62C1F0063560D /* ViewParent+Transitions.swift in Sources */,
 				DA90891F1FD4C66000C1208A /* ControllerParent+Constants.swift in Sources */,
 				DA91EB101FD62C1F0063560D /* ViewSlider+Gesture.swift in Sources */,
 				DA91EB081FD62C1F0063560D /* ViewPushBackground.swift in Sources */,
-				DA90890A1FD4C65F00C1208A /* Database+Constants.swift in Sources */,
 				DA9089231FD4C66000C1208A /* ControllerTransition.swift in Sources */,
+				DACF55331FD7661E00069701 /* ExtensionMKPolyline.swift in Sources */,
 				DA90891E1FD4C66000C1208A /* ControllerParent+Orientation.swift in Sources */,
-				DA9089081FD4C65F00C1208A /* Database.swift in Sources */,
-				DA90896B1FD4CE1400C1208A /* habanero.xcdatamodeld in Sources */,
 				DA992D781FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */,
 				DA91EB021FD62C1F0063560D /* ViewAlert+Constants.swift in Sources */,
 				DA90892A1FD4C66000C1208A /* MenuItemHome.swift in Sources */,
@@ -746,53 +721,47 @@
 				DA91EB211FD62C7D0063560D /* ViewTransitionableProtocol.swift in Sources */,
 				DA91EB121FD62C1F0063560D /* ViewSpinner+Constants.swift in Sources */,
 				DA9089261FD4C66000C1208A /* ArchHome.swift in Sources */,
-				DA9089101FD4C65F00C1208A /* ExtensionString+Constants.swift in Sources */,
 				DA91EAEE1FD62C1F0063560D /* ViewMenu+Synth.swift in Sources */,
-				DA9089171FD4C66000C1208A /* ExtensionData.swift in Sources */,
-				DA9089141FD4C65F00C1208A /* ExtensionNSLayoutConstraint.swift in Sources */,
-				DA9089161FD4C65F00C1208A /* ExtensionUIImage.swift in Sources */,
-				DA9089131FD4C65F00C1208A /* ExtensionMKAnnotationView.swift in Sources */,
 				DA91EB041FD62C1F0063560D /* ViewCollection.swift in Sources */,
-				DA9089121FD4C65F00C1208A /* ExtensionURLResponse.swift in Sources */,
+				DACF552B1FD7661E00069701 /* ExtensionDictionary.swift in Sources */,
 				DA5A97CC1FD605E1006223BA /* MenuItemGeneric.swift in Sources */,
+				DACF553F1FD7661E00069701 /* ExtensionUIFont.swift in Sources */,
 				DA91EAFE1FD62C1F0063560D /* ViewParent+Constants.swift in Sources */,
 				DA91EB181FD62C1F0063560D /* ViewBorder.swift in Sources */,
-				DA9089151FD4C65F00C1208A /* ExtensionUIFont.swift in Sources */,
 				DA9089311FD4C66000C1208A /* MenuItemProtocol.swift in Sources */,
 				DA91EAEC1FD62C1F0063560D /* ViewMenu.swift in Sources */,
 				DA9089241FD4C66000C1208A /* ControllerParent.swift in Sources */,
-				DA9089181FD4C66000C1208A /* ExtensionNSManagedObject.swift in Sources */,
-				DA9089111FD4C65F00C1208A /* ExtensionFileManager.swift in Sources */,
 				DA90891D1FD4C66000C1208A /* Controller.swift in Sources */,
 				DA91EB141FD62C1F0063560D /* ViewGradient.swift in Sources */,
 				DA9089211FD4C66000C1208A /* ControllerParent+Transitions.swift in Sources */,
 				DA91EB1C1FD62C1F0063560D /* ViewSpinner.swift in Sources */,
 				DA91EB0E1FD62C1F0063560D /* ViewBlur.swift in Sources */,
+				DACF553B1FD7661E00069701 /* ExtensionMKAnnotationView.swift in Sources */,
+				DACF55311FD7661E00069701 /* ExtensionCGImage.swift in Sources */,
+				DACF55371FD7661E00069701 /* ExtensionFileManager.swift in Sources */,
 				DA9089201FD4C66000C1208A /* ControllerParent+Menu.swift in Sources */,
 				DA91EB241FD62D700063560D /* ViewControllableProtocol.swift in Sources */,
-				DA90891C1FD4C66000C1208A /* ExtensionURL.swift in Sources */,
-				DA9089091FD4C65F00C1208A /* Database+Factory.swift in Sources */,
 				DA9089271FD4C66000C1208A /* Model.swift in Sources */,
-				DA90891A1FD4C66000C1208A /* ExtensionUIFont+Constants.swift in Sources */,
 				DA91EB0A1FD62C1F0063560D /* ViewCollectionFlow.swift in Sources */,
 				DA91EB161FD62C1F0063560D /* ViewSlider+Constants.swift in Sources */,
 				DA91EAF21FD62C1F0063560D /* View.swift in Sources */,
+				DACF55411FD7661E00069701 /* ExtensionUIImage.swift in Sources */,
+				DACF55491FD7661E00069701 /* ExtensionUIFont+Constants.swift in Sources */,
 				DA9089221FD4C66000C1208A /* AppDelegate.swift in Sources */,
 				DA90892D1FD4C66000C1208A /* Menu.swift in Sources */,
-				DA9089191FD4C66000C1208A /* ExtensionString.swift in Sources */,
 				DA9089251FD4C66000C1208A /* Arch.swift in Sources */,
 				DA91EAEA1FD62C1F0063560D /* ViewMenu+Collection.swift in Sources */,
 				DA91EB061FD62C1F0063560D /* ViewAlert.swift in Sources */,
+				DACF553D1FD7661E00069701 /* ExtensionNSLayoutConstraint.swift in Sources */,
 				DA70AFC51FD5AABF0016B0DC /* Home.swift in Sources */,
 				DA91EB271FD630E80063560D /* ViewGlobal.swift in Sources */,
+				DACF55071FD7656F00069701 /* habanero.xcdatamodeld in Sources */,
+				DACF55431FD7661E00069701 /* ExtensionData.swift in Sources */,
 				DA90892F1FD4C66000C1208A /* Menu+Factory.swift in Sources */,
-				DA90890F1FD4C65F00C1208A /* ExtensionMKPolyline.swift in Sources */,
 				DA3F0EB41FD74C5F00593B83 /* Menu+FactoryUser.swift in Sources */,
-				DA90890B1FD4C65F00C1208A /* ExtensionDictionary.swift in Sources */,
 				DA91EAFA1FD62C1F0063560D /* ViewMain.swift in Sources */,
-				DA90890E1FD4C65F00C1208A /* ExtensionCGImage.swift in Sources */,
+				DACF55391FD7661E00069701 /* ExtensionURLResponse.swift in Sources */,
 				DA70AFBF1FD5A8B10016B0DC /* ViewHome.swift in Sources */,
-				DA90891B1FD4C66000C1208A /* ExtensionUICollectionReusableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -801,71 +770,65 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA91EB1B1FD62C1F0063560D /* ViewSlider.swift in Sources */,
+				DACF553C1FD7661E00069701 /* ExtensionMKAnnotationView.swift in Sources */,
 				DA70AFC31FD5AA980016B0DC /* ControllerHome.swift in Sources */,
 				DA91EB0D1FD62C1F0063560D /* ViewSliderBar.swift in Sources */,
 				DA90898A1FD4CE3E00C1208A /* Menu+Constants.swift in Sources */,
 				DA84C0F21FD73FCD008959EA /* ControllerNew.swift in Sources */,
 				DA91EB1F1FD62C1F0063560D /* ViewGradient+Constants.swift in Sources */,
 				DA9089871FD4CE3300C1208A /* Arch.swift in Sources */,
-				DA9089791FD4CE2200C1208A /* ExtensionData.swift in Sources */,
 				DA91EB011FD62C1F0063560D /* ViewParent+Gesture.swift in Sources */,
 				DA3F0EBD1FD7509500593B83 /* Menu+OrderAdmin.swift in Sources */,
 				DA91EAF51FD62C1F0063560D /* ViewParent.swift in Sources */,
+				DACF55421FD7661E00069701 /* ExtensionUIImage.swift in Sources */,
+				DACF55361FD7661E00069701 /* ExtensionString+Constants.swift in Sources */,
 				DA91EAFD1FD62C1F0063560D /* ViewParent+Transitions.swift in Sources */,
+				DACF55481FD7661E00069701 /* ExtensionString.swift in Sources */,
 				DA84C0EF1FD73F59008959EA /* ArchNew.swift in Sources */,
 				DA9089911FD4CE3E00C1208A /* Menu+Factory.swift in Sources */,
 				DA91EB111FD62C1F0063560D /* ViewSlider+Gesture.swift in Sources */,
 				DA91EB091FD62C1F0063560D /* ViewPushBackground.swift in Sources */,
-				DA90897A1FD4CE2200C1208A /* ExtensionNSManagedObject.swift in Sources */,
-				DA9089721FD4CE2200C1208A /* ExtensionString+Constants.swift in Sources */,
-				DA90896D1FD4CE1C00C1208A /* ExtensionDictionary.swift in Sources */,
 				DA9089841FD4CE2E00C1208A /* ControllerParent+Transitions.swift in Sources */,
-				DA90897C1FD4CE2200C1208A /* ExtensionUIFont+Constants.swift in Sources */,
-				DA9089681FD4CDFF00C1208A /* Database+Constants.swift in Sources */,
 				DA91EB031FD62C1F0063560D /* ViewAlert+Constants.swift in Sources */,
 				DA9089851FD4CE2E00C1208A /* ControllerTransition.swift in Sources */,
+				DACF55441FD7661E00069701 /* ExtensionData.swift in Sources */,
 				DA91EAF11FD62C1F0063560D /* ViewMenuCell.swift in Sources */,
 				DA91EAE91FD62C1F0063560D /* ViewMenu+Actions.swift in Sources */,
 				DA91EB221FD62C7D0063560D /* ViewTransitionableProtocol.swift in Sources */,
+				DACF55341FD7661E00069701 /* ExtensionMKPolyline.swift in Sources */,
+				DACF55301FD7661E00069701 /* ExtensionUIColor.swift in Sources */,
 				DA91EB131FD62C1F0063560D /* ViewSpinner+Constants.swift in Sources */,
-				DA90896E1FD4CE1E00C1208A /* ExtensionNotification.swift in Sources */,
-				DA9089741FD4CE2200C1208A /* ExtensionURLResponse.swift in Sources */,
 				DA91EAEF1FD62C1F0063560D /* ViewMenu+Synth.swift in Sources */,
+				DACF55461FD7661E00069701 /* ExtensionNSManagedObject.swift in Sources */,
 				DA9089811FD4CE2E00C1208A /* ControllerParent+Orientation.swift in Sources */,
-				DA90897B1FD4CE2200C1208A /* ExtensionString.swift in Sources */,
-				DA9089711FD4CE2200C1208A /* ExtensionMKPolyline.swift in Sources */,
-				DA9089771FD4CE2200C1208A /* ExtensionUIFont.swift in Sources */,
 				DA91EB051FD62C1F0063560D /* ViewCollection.swift in Sources */,
 				DA5A97CD1FD6061B006223BA /* MenuItemGeneric.swift in Sources */,
-				DA9089731FD4CE2200C1208A /* ExtensionFileManager.swift in Sources */,
+				DACF55321FD7661E00069701 /* ExtensionCGImage.swift in Sources */,
 				DA91EAFF1FD62C1F0063560D /* ViewParent+Constants.swift in Sources */,
 				DA91EB191FD62C1F0063560D /* ViewBorder.swift in Sources */,
 				DA9089881FD4CE3300C1208A /* ArchHome.swift in Sources */,
-				DA9089701FD4CE2200C1208A /* ExtensionCGImage.swift in Sources */,
-				DA9089751FD4CE2200C1208A /* ExtensionMKAnnotationView.swift in Sources */,
 				DA91EAED1FD62C1F0063560D /* ViewMenu.swift in Sources */,
-				DA90896C1FD4CE1400C1208A /* habanero.xcdatamodeld in Sources */,
+				DACF554C1FD7661E00069701 /* ExtensionUICollectionReusableView.swift in Sources */,
 				DA9089801FD4CE2E00C1208A /* Controller.swift in Sources */,
+				DACF55401FD7661E00069701 /* ExtensionUIFont.swift in Sources */,
 				DA9089861FD4CE2E00C1208A /* ControllerParent.swift in Sources */,
-				DA9089661FD4CDFA00C1208A /* Database.swift in Sources */,
 				DA91EB151FD62C1F0063560D /* ViewGradient.swift in Sources */,
 				DA84C0F51FD74009008959EA /* New.swift in Sources */,
-				DA90896F1FD4CE2200C1208A /* ExtensionUIColor.swift in Sources */,
 				DA91EB1D1FD62C1F0063560D /* ViewSpinner.swift in Sources */,
+				DACF552C1FD7661E00069701 /* ExtensionDictionary.swift in Sources */,
 				DA91EB0F1FD62C1F0063560D /* ViewBlur.swift in Sources */,
-				DA9089671FD4CDFC00C1208A /* Database+Factory.swift in Sources */,
 				DA91EB251FD62D700063560D /* ViewControllableProtocol.swift in Sources */,
 				DA9089931FD4CE3E00C1208A /* MenuItemProtocol.swift in Sources */,
 				DA9089821FD4CE2E00C1208A /* ControllerParent+Constants.swift in Sources */,
+				DACF552E1FD7661E00069701 /* ExtensionNotification.swift in Sources */,
 				DA90898C1FD4CE3E00C1208A /* MenuItemHome.swift in Sources */,
 				DA3F0EB81FD74FC400593B83 /* MenuItemNew.swift in Sources */,
-				DA9089761FD4CE2200C1208A /* ExtensionNSLayoutConstraint.swift in Sources */,
 				DA3F0EB61FD74C8700593B83 /* Menu+FactoryAdmin.swift in Sources */,
 				DA91EB0B1FD62C1F0063560D /* ViewCollectionFlow.swift in Sources */,
+				DACF55381FD7661E00069701 /* ExtensionFileManager.swift in Sources */,
 				DA91EB171FD62C1F0063560D /* ViewSlider+Constants.swift in Sources */,
 				DA91EAF31FD62C1F0063560D /* View.swift in Sources */,
-				DA9089781FD4CE2200C1208A /* ExtensionUIImage.swift in Sources */,
-				DA90897D1FD4CE2200C1208A /* ExtensionUICollectionReusableView.swift in Sources */,
+				DACF553E1FD7661E00069701 /* ExtensionNSLayoutConstraint.swift in Sources */,
 				DA992D7A1FD61EE500A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */,
 				DA9089831FD4CE2E00C1208A /* ControllerParent+Menu.swift in Sources */,
 				DA91EAEB1FD62C1F0063560D /* ViewMenu+Collection.swift in Sources */,
@@ -875,11 +838,14 @@
 				DA91EB281FD630E80063560D /* ViewGlobal.swift in Sources */,
 				DA90898F1FD4CE3E00C1208A /* Menu.swift in Sources */,
 				DA992D791FD61ED700A6CFEF /* MenuItemGenericProtocol.swift in Sources */,
+				DACF553A1FD7661E00069701 /* ExtensionURLResponse.swift in Sources */,
 				DA9089891FD4CE3700C1208A /* Model.swift in Sources */,
 				DA91EAFB1FD62C1F0063560D /* ViewMain.swift in Sources */,
+				DACF55081FD7656F00069701 /* habanero.xcdatamodeld in Sources */,
 				DA70AFC01FD5A8B10016B0DC /* ViewHome.swift in Sources */,
-				DA90897E1FD4CE2200C1208A /* ExtensionURL.swift in Sources */,
 				DA90897F1FD4CE2E00C1208A /* AppDelegate.swift in Sources */,
+				DACF554A1FD7661E00069701 /* ExtensionUIFont+Constants.swift in Sources */,
+				DACF554E1FD7661E00069701 /* ExtensionURL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1039,7 +1005,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
-				INFOPLIST_FILE = Source/userInfo.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info/userInfo.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iturbide.habanero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1053,7 +1019,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
-				INFOPLIST_FILE = Source/userInfo.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info/userInfo.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iturbide.habanero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1068,7 +1034,7 @@
 				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
-				INFOPLIST_FILE = Source/adminInfo.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info/adminInfo.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "iturbide.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1083,7 +1049,7 @@
 				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
-				INFOPLIST_FILE = Source/adminInfo.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info/adminInfo.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "iturbide.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1125,12 +1091,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		DA9089691FD4CE1400C1208A /* habanero.xcdatamodeld */ = {
+		DACF55051FD7656E00069701 /* habanero.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				DA90896A1FD4CE1400C1208A /* habanero.xcdatamodel */,
+				DACF55061FD7656E00069701 /* habanero.xcdatamodel */,
 			);
-			currentVersion = DA90896A1FD4CE1400C1208A /* habanero.xcdatamodel */;
+			currentVersion = DACF55061FD7656E00069701 /* habanero.xcdatamodel */;
 			path = habanero.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
