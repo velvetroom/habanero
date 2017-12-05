@@ -18,6 +18,7 @@
 		DA753DAB1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA753DAC1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA84C0EF1FD73F59008959EA /* ArchNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C0EE1FD73F59008959EA /* ArchNew.swift */; };
+		DA84C0F21FD73FCD008959EA /* ControllerNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C0F11FD73FCD008959EA /* ControllerNew.swift */; };
 		DA9089031FD4C65F00C1208A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA90889E1FD4C65F00C1208A /* LaunchScreen.storyboard */; };
 		DA9089041FD4C65F00C1208A /* LocalizableModel.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A01FD4C65F00C1208A /* LocalizableModel.strings */; };
 		DA9089051FD4C65F00C1208A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A21FD4C65F00C1208A /* InfoPlist.strings */; };
@@ -179,6 +180,7 @@
 		DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = generic.xcassets; sourceTree = "<group>"; };
 		DA795D301FD5F00B00ABD191 /* version.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = version.sh; sourceTree = "<group>"; };
 		DA84C0EE1FD73F59008959EA /* ArchNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNew.swift; sourceTree = "<group>"; };
+		DA84C0F11FD73FCD008959EA /* ControllerNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerNew.swift; sourceTree = "<group>"; };
 		DA9088821FD4C38E00C1208A /* user.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = user.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9088981FD4C45600C1208A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DA90889B1FD4C4AF00C1208A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -280,6 +282,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA84C0F01FD73FC5008959EA /* New */ = {
+			isa = PBXGroup;
+			children = (
+				DA84C0F11FD73FCD008959EA /* ControllerNew.swift */,
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
 		DA9088791FD4C38E00C1208A = {
 			isa = PBXGroup;
 			children = (
@@ -403,6 +413,7 @@
 			children = (
 				DA9088C41FD4C65F00C1208A /* Abstract */,
 				DA9088CD1FD4C65F00C1208A /* Home */,
+				DA84C0F01FD73FC5008959EA /* New */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -753,6 +764,7 @@
 				DA70AFC31FD5AA980016B0DC /* ControllerHome.swift in Sources */,
 				DA91EB0D1FD62C1F0063560D /* ViewSliderBar.swift in Sources */,
 				DA90898A1FD4CE3E00C1208A /* Menu+Constants.swift in Sources */,
+				DA84C0F21FD73FCD008959EA /* ControllerNew.swift in Sources */,
 				DA91EB1F1FD62C1F0063560D /* ViewGradient+Constants.swift in Sources */,
 				DA9089871FD4CE3300C1208A /* Arch.swift in Sources */,
 				DA9089791FD4CE2200C1208A /* ExtensionData.swift in Sources */,
