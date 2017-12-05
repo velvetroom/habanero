@@ -2,11 +2,27 @@ import Foundation
 
 extension Menu
 {
+    //MARK: private
+    
+    private class func instanceItems() -> [MenuItemProtocol]
+    {
+        let itemsListType:[MenuItemProtocol.Type] = self.itemsListType
+        var items:[MenuItemProtocol] = []
+        
+        for itemType:MenuItemProtocol.Type in itemsListType
+        {
+            let item:MenuItemProtocol = itemType.init()
+            items.append(item)
+        }
+        
+        return items
+    }
+    
     //MARK: internal
     
     class func factoryItems() -> [MenuItemProtocol]
     {
-        var items:[MenuItemProtocol] = factoryItemsList()
+        var items:[MenuItemProtocol] = instanceItems()
         
         items.sort
         { (itemA:MenuItemProtocol, itemB:MenuItemProtocol) -> Bool in
