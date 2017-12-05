@@ -14,6 +14,8 @@
 		DA3F0EB81FD74FC400593B83 /* MenuItemNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0EB71FD74FC400593B83 /* MenuItemNew.swift */; };
 		DA3F0EBB1FD7505E00593B83 /* Menu+OrderUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0EB91FD7505A00593B83 /* Menu+OrderUser.swift */; };
 		DA3F0EBD1FD7509500593B83 /* Menu+OrderAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0EBC1FD7509500593B83 /* Menu+OrderAdmin.swift */; };
+		DA3F0EBF1FD753EB00593B83 /* colours.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3F0EBE1FD753EB00593B83 /* colours.xcassets */; };
+		DA3F0EC01FD753EB00593B83 /* colours.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3F0EBE1FD753EB00593B83 /* colours.xcassets */; };
 		DA5A97CC1FD605E1006223BA /* MenuItemGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A97CB1FD605E1006223BA /* MenuItemGeneric.swift */; };
 		DA5A97CD1FD6061B006223BA /* MenuItemGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A97CB1FD605E1006223BA /* MenuItemGeneric.swift */; };
 		DA70AFBF1FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
@@ -185,6 +187,7 @@
 		DA3F0EB71FD74FC400593B83 /* MenuItemNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemNew.swift; sourceTree = "<group>"; };
 		DA3F0EB91FD7505A00593B83 /* Menu+OrderUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+OrderUser.swift"; sourceTree = "<group>"; };
 		DA3F0EBC1FD7509500593B83 /* Menu+OrderAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+OrderAdmin.swift"; sourceTree = "<group>"; };
+		DA3F0EBE1FD753EB00593B83 /* colours.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = colours.xcassets; sourceTree = "<group>"; };
 		DA5A97CB1FD605E1006223BA /* MenuItemGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemGeneric.swift; sourceTree = "<group>"; };
 		DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHome.swift; sourceTree = "<group>"; };
 		DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerHome.swift; sourceTree = "<group>"; };
@@ -349,6 +352,7 @@
 				DA90889E1FD4C65F00C1208A /* LaunchScreen.storyboard */,
 				DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */,
 				DA3F0EB01FD7480000593B83 /* menu.xcassets */,
+				DA3F0EBE1FD753EB00593B83 /* colours.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -690,6 +694,7 @@
 				DA9089031FD4C65F00C1208A /* LaunchScreen.storyboard in Resources */,
 				DA3F0EB11FD7480000593B83 /* menu.xcassets in Resources */,
 				DA9089071FD4C65F00C1208A /* LocalizableController.strings in Resources */,
+				DA3F0EBF1FD753EB00593B83 /* colours.xcassets in Resources */,
 				DA9089061FD4C65F00C1208A /* LocalizableView.strings in Resources */,
 				DA753DAB1FD5EBC8007E5BC5 /* generic.xcassets in Resources */,
 				DA9089041FD4C65F00C1208A /* LocalizableModel.strings in Resources */,
@@ -704,6 +709,7 @@
 				DA9089B41FD4CE5F00C1208A /* LocalizableController.strings in Resources */,
 				DA3F0EB21FD7480A00593B83 /* menu.xcassets in Resources */,
 				DA9089B31FD4CE5F00C1208A /* LocalizableView.strings in Resources */,
+				DA3F0EC01FD753EB00593B83 /* colours.xcassets in Resources */,
 				DA9089B01FD4CE5800C1208A /* LaunchScreen.storyboard in Resources */,
 				DA753DAC1FD5EBC8007E5BC5 /* generic.xcassets in Resources */,
 				DA9089B21FD4CE5F00C1208A /* InfoPlist.strings in Resources */,
