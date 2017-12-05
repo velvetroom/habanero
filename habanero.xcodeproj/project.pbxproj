@@ -66,7 +66,6 @@
 		DA9089261FD4C66000C1208A /* ArchHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088D01FD4C65F00C1208A /* ArchHome.swift */; };
 		DA9089271FD4C66000C1208A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088D31FD4C65F00C1208A /* Model.swift */; };
 		DA9089281FD4C66000C1208A /* Menu+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088D61FD4C65F00C1208A /* Menu+Constants.swift */; };
-		DA9089291FD4C66000C1208A /* Menu+Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088D71FD4C65F00C1208A /* Menu+Order.swift */; };
 		DA90892A1FD4C66000C1208A /* MenuItemHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088D81FD4C65F00C1208A /* MenuItemHome.swift */; };
 		DA90892D1FD4C66000C1208A /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088DB1FD4C65F00C1208A /* Menu.swift */; };
 		DA90892F1FD4C66000C1208A /* Menu+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088DD1FD4C65F00C1208A /* Menu+Factory.swift */; };
@@ -106,7 +105,6 @@
 		DA9089881FD4CE3300C1208A /* ArchHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088D01FD4C65F00C1208A /* ArchHome.swift */; };
 		DA9089891FD4CE3700C1208A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088D31FD4C65F00C1208A /* Model.swift */; };
 		DA90898A1FD4CE3E00C1208A /* Menu+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088D61FD4C65F00C1208A /* Menu+Constants.swift */; };
-		DA90898B1FD4CE3E00C1208A /* Menu+Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088D71FD4C65F00C1208A /* Menu+Order.swift */; };
 		DA90898C1FD4CE3E00C1208A /* MenuItemHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088D81FD4C65F00C1208A /* MenuItemHome.swift */; };
 		DA90898F1FD4CE3E00C1208A /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088DB1FD4C65F00C1208A /* Menu.swift */; };
 		DA9089911FD4CE3E00C1208A /* Menu+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9088DD1FD4C65F00C1208A /* Menu+Factory.swift */; };
@@ -239,7 +237,6 @@
 		DA9088D01FD4C65F00C1208A /* ArchHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchHome.swift; sourceTree = "<group>"; };
 		DA9088D31FD4C65F00C1208A /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		DA9088D61FD4C65F00C1208A /* Menu+Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Menu+Constants.swift"; sourceTree = "<group>"; };
-		DA9088D71FD4C65F00C1208A /* Menu+Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Menu+Order.swift"; sourceTree = "<group>"; };
 		DA9088D81FD4C65F00C1208A /* MenuItemHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemHome.swift; sourceTree = "<group>"; };
 		DA9088DB1FD4C65F00C1208A /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		DA9088DD1FD4C65F00C1208A /* Menu+Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Menu+Factory.swift"; sourceTree = "<group>"; };
@@ -517,7 +514,6 @@
 			children = (
 				DA9088DB1FD4C65F00C1208A /* Menu.swift */,
 				DA9088D61FD4C65F00C1208A /* Menu+Constants.swift */,
-				DA9088D71FD4C65F00C1208A /* Menu+Order.swift */,
 				DA3F0EB91FD7505A00593B83 /* Menu+OrderUser.swift */,
 				DA3F0EBC1FD7509500593B83 /* Menu+OrderAdmin.swift */,
 				DA9088DD1FD4C65F00C1208A /* Menu+Factory.swift */,
@@ -761,7 +757,6 @@
 				DA5A97CC1FD605E1006223BA /* MenuItemGeneric.swift in Sources */,
 				DA91EAFE1FD62C1F0063560D /* ViewParent+Constants.swift in Sources */,
 				DA91EB181FD62C1F0063560D /* ViewBorder.swift in Sources */,
-				DA9089291FD4C66000C1208A /* Menu+Order.swift in Sources */,
 				DA9089151FD4C65F00C1208A /* ExtensionUIFont.swift in Sources */,
 				DA9089311FD4C66000C1208A /* MenuItemProtocol.swift in Sources */,
 				DA91EAEC1FD62C1F0063560D /* ViewMenu.swift in Sources */,
@@ -828,7 +823,6 @@
 				DA90897C1FD4CE2200C1208A /* ExtensionUIFont+Constants.swift in Sources */,
 				DA9089681FD4CDFF00C1208A /* Database+Constants.swift in Sources */,
 				DA91EB031FD62C1F0063560D /* ViewAlert+Constants.swift in Sources */,
-				DA90898B1FD4CE3E00C1208A /* Menu+Order.swift in Sources */,
 				DA9089851FD4CE2E00C1208A /* ControllerTransition.swift in Sources */,
 				DA91EAF11FD62C1F0063560D /* ViewMenuCell.swift in Sources */,
 				DA91EAE91FD62C1F0063560D /* ViewMenu+Actions.swift in Sources */,
