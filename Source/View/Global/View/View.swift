@@ -1,7 +1,8 @@
 import UIKit
 
-class View<A>:UIView where A.C:Controller<A>
+class View<A>:UIView, ViewControllableProtocol where A.C:Controller<A>
 {
+    typealias C = A.C
     private(set) weak var controller:A.C!
     
     required init(controller:A.C)

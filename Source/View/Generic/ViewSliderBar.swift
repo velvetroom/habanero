@@ -39,7 +39,7 @@ final class ViewSliderBar:UIView
             toView:self)
         NSLayoutConstraint.width(
             view:border,
-            constant:ViewMain.Constants.borderWidth)
+            constant:ViewGlobal.Constants.borderWidth)
         NSLayoutConstraint.rightToRight(
             view:border,
             toView:self)

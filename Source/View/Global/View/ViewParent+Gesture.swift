@@ -35,7 +35,7 @@ extension ViewParent:UIGestureRecognizerDelegate
         
         guard
             
-            let topView:ViewMain = subviews.last as? ViewMain
+            let topView:ViewTransitionableProtocol = subviews.last as? ViewTransitionableProtocol
             
         else
         {
@@ -66,7 +66,7 @@ extension ViewParent:UIGestureRecognizerDelegate
         
         topView.layoutLeft.constant = 0
         
-        UIView.animate(withDuration:ViewMain.Constants.animationDuration)
+        UIView.animate(withDuration:ViewGlobal.Constants.animationDuration)
         {
             self.layoutIfNeeded()
         }

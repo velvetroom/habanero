@@ -59,8 +59,19 @@ class Controller<A>:UIViewController where A.M:Model<A>
     
     override func loadView()
     {
-        let view:A.V = A.V(controller:self)
-        model.view = view
+        guard
+            
+            let controller:A.V.C = self as? A.V.C
+        
+        else
+        {
+            return
+        }
+        
+        let genericView:A.V = A.V(controller:controller)
+        model.view = genericView
+        
+        let view:UIView? = genericView as? UIView
         self.view = view
     }
     

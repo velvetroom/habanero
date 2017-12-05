@@ -1,8 +1,7 @@
 import UIKit
 
-class ViewMain:UIView, ViewTransitionableProtocol
+class ViewMain<A>:View<A>, ViewTransitionableProtocol where A.C:Controller<A>
 {
-    private(set) weak var controller:UIViewController!
     private(set) var shouldPanBack:Bool = false
     weak var layoutLeft:NSLayoutConstraint!
     weak var layoutRight:NSLayoutConstraint!
@@ -10,13 +9,10 @@ class ViewMain:UIView, ViewTransitionableProtocol
     weak var layoutBottom:NSLayoutConstraint!
     weak var pushBackground:ViewPushBackground?
     
-    required init(controller:UIViewController)
+    required init(controller:A.C)
     {
-        super.init(frame:CGRect.zero)
-        clipsToBounds = true
+        super.init(controller:controller)
         backgroundColor = UIColor.white
-        translatesAutoresizingMaskIntoConstraints = false
-        self.controller = controller
     }
     
     required init?(coder:NSCoder)

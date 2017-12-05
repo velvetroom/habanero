@@ -1,6 +1,6 @@
 import Foundation
 
-class Model<A:Arch> where A.V:ViewMain
+class Model<A:Arch>
 {
     weak var view:A.V?
     

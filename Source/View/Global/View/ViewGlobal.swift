@@ -1,6 +1,6 @@
 import UIKit
 
-extension ViewMain
+struct ViewGlobal
 {
     struct Constants
     {

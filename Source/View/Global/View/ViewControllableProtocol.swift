@@ -1,8 +1,10 @@
 import UIKit
 
-protocol ViewControllableProtocol
+protocol ViewControllableProtocol:class
 {
-    associatedtype A where A.C:Controller<A>
+    associatedtype C:UIViewController
     
-    init(controller:Controller<A>)
+    weak var controller:C! { get }
+    
+    init(controller:C)
 }

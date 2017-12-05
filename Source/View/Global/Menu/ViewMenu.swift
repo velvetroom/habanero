@@ -23,7 +23,7 @@ final class ViewMenu:UIView
             toView:self)
         NSLayoutConstraint.height(
             view:border,
-            constant:ViewMain.Constants.borderWidth)
+            constant:ViewGlobal.Constants.borderWidth)
         NSLayoutConstraint.equalsHorizontal(
             view:border,
             toView:self)
