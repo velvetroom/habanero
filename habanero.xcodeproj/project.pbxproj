@@ -182,6 +182,7 @@
 		DACF554C1FD7661E00069701 /* ExtensionUICollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55291FD7661E00069701 /* ExtensionUICollectionReusableView.swift */; };
 		DACF554D1FD7661E00069701 /* ExtensionURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF552A1FD7661E00069701 /* ExtensionURL.swift */; };
 		DACF554E1FD7661E00069701 /* ExtensionURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF552A1FD7661E00069701 /* ExtensionURL.swift */; };
+		DAF949F21FD8B47D001BA32E /* ViewNewBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F11FD8B47D001BA32E /* ViewNewBar+Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -289,6 +290,7 @@
 		DACF55281FD7661E00069701 /* ExtensionUIFont+Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExtensionUIFont+Constants.swift"; sourceTree = "<group>"; };
 		DACF55291FD7661E00069701 /* ExtensionUICollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUICollectionReusableView.swift; sourceTree = "<group>"; };
 		DACF552A1FD7661E00069701 /* ExtensionURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionURL.swift; sourceTree = "<group>"; };
+		DAF949F11FD8B47D001BA32E /* ViewNewBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewBar+Constants.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,6 +342,7 @@
 				DA84C0F71FD7403D008959EA /* ViewNew.swift */,
 				DA177BEA1FD7758F003B3836 /* ViewNew+Factory.swift */,
 				DA177BF01FD77874003B3836 /* ViewNewBar.swift */,
+				DAF949F11FD8B47D001BA32E /* ViewNewBar+Constants.swift */,
 				DA177BEC1FD77713003B3836 /* ViewNewList.swift */,
 				DA177C031FD784AF003B3836 /* ViewNewList+Constants.swift */,
 				DA177C011FD784A3003B3836 /* ViewNewList+Config.swift */,
@@ -866,6 +869,7 @@
 				DA91EB0F1FD62C1F0063560D /* ViewBlur.swift in Sources */,
 				DA91EB251FD62D700063560D /* ViewControllableProtocol.swift in Sources */,
 				DA9089931FD4CE3E00C1208A /* MenuItemProtocol.swift in Sources */,
+				DAF949F21FD8B47D001BA32E /* ViewNewBar+Constants.swift in Sources */,
 				DA9089821FD4CE2E00C1208A /* ControllerParent+Constants.swift in Sources */,
 				DACF552E1FD7661E00069701 /* ExtensionNotification.swift in Sources */,
 				DA90898C1FD4CE3E00C1208A /* MenuItemHome.swift in Sources */,
