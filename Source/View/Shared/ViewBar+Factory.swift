@@ -17,8 +17,8 @@ extension ViewBar
         labelTitle.textColor = UIColor.colourBackgroundDark
         self.labelTitle = labelTitle
         
-        addSubview(viewBorder)
-        addSubview(labelTitle)
+        self.addSubview(viewBorder)
+        self.addSubview(labelTitle)
         
         NSLayoutConstraint.height(
             view:viewBorder,

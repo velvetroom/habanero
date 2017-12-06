@@ -11,8 +11,8 @@ extension ViewNew
         let viewList:ViewNewList = ViewNewList(controller:controller)
         self.viewList = viewList
         
-        addSubview(viewList)
-        addSubview(viewBar)
+        self.addSubview(viewList)
+        self.addSubview(viewBar)
         
         NSLayoutConstraint.topToTop(
             view:viewBar,

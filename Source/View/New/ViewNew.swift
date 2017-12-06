@@ -7,9 +7,9 @@ final class ViewNew:ViewMain<ArchNew>
     required init(controller:ControllerNew)
     {
         super.init(controller:controller)
-        backgroundColor = UIColor.colourBackgroundGray
+        self.backgroundColor = UIColor.colourBackgroundGray
         
-        factoryViews()
+        self.factoryViews()
     }
     
     required init?(coder:NSCoder)

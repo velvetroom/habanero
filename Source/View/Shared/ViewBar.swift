@@ -7,10 +7,10 @@ class ViewBar<A>:View<A> where A.C:Controller<A>
     required init(controller:A.C)
     {
         super.init(controller:controller)
-        isUserInteractionEnabled = false
-        backgroundColor = UIColor.white
+        self.isUserInteractionEnabled = false
+        self.backgroundColor = UIColor.white
         
-        factoryViews()
+        self.factoryViews()
     }
     
     required init?(coder:NSCoder)

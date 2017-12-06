@@ -6,7 +6,7 @@ final class ViewNewBar:ViewBar<ArchNew>
     {
         super.init(controller:controller)
         
-        labelTitle.text = String.localizedView(key:"ViewNewBar_labelTitle")
+        self.labelTitle.text = String.localizedView(key:"ViewNewBar_labelTitle")
     }
     
     required init?(coder:NSCoder)

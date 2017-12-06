@@ -5,9 +5,9 @@ final class ViewNewListHeader:UICollectionReusableView
     override init(frame:CGRect)
     {
         super.init(frame:frame)
-        clipsToBounds = true
-        backgroundColor = UIColor.clear
-        isUserInteractionEnabled = false
+        self.clipsToBounds = true
+        self.backgroundColor = UIColor.clear
+        self.isUserInteractionEnabled = false
         
         let labelTitle:UILabel = UILabel()
         labelTitle.isUserInteractionEnabled = false
@@ -17,7 +17,7 @@ final class ViewNewListHeader:UICollectionReusableView
         labelTitle.textColor = UIColor(white:0, alpha:0.5)
         labelTitle.text = String.localizedView(key:"ViewNewListHeader_labelTitle")
         
-        addSubview(labelTitle)
+        self.addSubview(labelTitle)
         
         NSLayoutConstraint.bottomToBottom(
             view:labelTitle,
