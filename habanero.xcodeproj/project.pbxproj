@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DA177BEB1FD7758F003B3836 /* ViewNew+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA177BEA1FD7758F003B3836 /* ViewNew+Factory.swift */; };
+		DA177BED1FD77713003B3836 /* ViewNewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA177BEC1FD77713003B3836 /* ViewNewList.swift */; };
 		DA3F0EB11FD7480000593B83 /* menu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3F0EB01FD7480000593B83 /* menu.xcassets */; };
 		DA3F0EB21FD7480A00593B83 /* menu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3F0EB01FD7480000593B83 /* menu.xcassets */; };
 		DA3F0EB41FD74C5F00593B83 /* Menu+FactoryUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0EB31FD74C5F00593B83 /* Menu+FactoryUser.swift */; };
@@ -175,6 +176,7 @@
 
 /* Begin PBXFileReference section */
 		DA177BEA1FD7758F003B3836 /* ViewNew+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNew+Factory.swift"; sourceTree = "<group>"; };
+		DA177BEC1FD77713003B3836 /* ViewNewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewList.swift; sourceTree = "<group>"; };
 		DA3F0EB01FD7480000593B83 /* menu.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = menu.xcassets; sourceTree = "<group>"; };
 		DA3F0EB31FD74C5F00593B83 /* Menu+FactoryUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+FactoryUser.swift"; sourceTree = "<group>"; };
 		DA3F0EB51FD74C8700593B83 /* Menu+FactoryAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+FactoryAdmin.swift"; sourceTree = "<group>"; };
@@ -310,6 +312,7 @@
 			children = (
 				DA84C0F71FD7403D008959EA /* ViewNew.swift */,
 				DA177BEA1FD7758F003B3836 /* ViewNew+Factory.swift */,
+				DA177BEC1FD77713003B3836 /* ViewNewList.swift */,
 			);
 			path = New;
 			sourceTree = "<group>";
@@ -847,6 +850,7 @@
 				DA91EAFB1FD62C1F0063560D /* ViewMain.swift in Sources */,
 				DACF55081FD7656F00069701 /* habanero.xcdatamodeld in Sources */,
 				DA70AFC01FD5A8B10016B0DC /* ViewHome.swift in Sources */,
+				DA177BED1FD77713003B3836 /* ViewNewList.swift in Sources */,
 				DA90897F1FD4CE2E00C1208A /* AppDelegate.swift in Sources */,
 				DACF554A1FD7661E00069701 /* ExtensionUIFont+Constants.swift in Sources */,
 				DACF554E1FD7661E00069701 /* ExtensionURL.swift in Sources */,
