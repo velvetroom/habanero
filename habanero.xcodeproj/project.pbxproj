@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA177BEB1FD7758F003B3836 /* ViewNew+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA177BEA1FD7758F003B3836 /* ViewNew+Factory.swift */; };
 		DA3F0EB11FD7480000593B83 /* menu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3F0EB01FD7480000593B83 /* menu.xcassets */; };
 		DA3F0EB21FD7480A00593B83 /* menu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3F0EB01FD7480000593B83 /* menu.xcassets */; };
 		DA3F0EB41FD74C5F00593B83 /* Menu+FactoryUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0EB31FD74C5F00593B83 /* Menu+FactoryUser.swift */; };
@@ -173,6 +174,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA177BEA1FD7758F003B3836 /* ViewNew+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNew+Factory.swift"; sourceTree = "<group>"; };
 		DA3F0EB01FD7480000593B83 /* menu.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = menu.xcassets; sourceTree = "<group>"; };
 		DA3F0EB31FD74C5F00593B83 /* Menu+FactoryUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+FactoryUser.swift"; sourceTree = "<group>"; };
 		DA3F0EB51FD74C8700593B83 /* Menu+FactoryAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+FactoryAdmin.swift"; sourceTree = "<group>"; };
@@ -307,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				DA84C0F71FD7403D008959EA /* ViewNew.swift */,
+				DA177BEA1FD7758F003B3836 /* ViewNew+Factory.swift */,
 			);
 			path = New;
 			sourceTree = "<group>";
@@ -785,6 +788,7 @@
 				DA91EAFD1FD62C1F0063560D /* ViewParent+Transitions.swift in Sources */,
 				DACF55481FD7661E00069701 /* ExtensionString.swift in Sources */,
 				DA84C0EF1FD73F59008959EA /* ArchNew.swift in Sources */,
+				DA177BEB1FD7758F003B3836 /* ViewNew+Factory.swift in Sources */,
 				DA9089911FD4CE3E00C1208A /* Menu+Factory.swift in Sources */,
 				DA91EB111FD62C1F0063560D /* ViewSlider+Gesture.swift in Sources */,
 				DA91EB091FD62C1F0063560D /* ViewPushBackground.swift in Sources */,
