@@ -13,4 +13,16 @@ final class ViewNewList:ViewCollection<ArchNew,  ViewNewListCell, ViewCollection
     {
         return nil
     }
+    
+    override func collectionView(
+        _ collectionView:UICollectionView,
+        viewForSupplementaryElementOfKind kind:String,
+        at indexPath:IndexPath) -> UICollectionReusableView
+    {
+        let header:ViewNewListHeader = self.reusableAtIndex(
+            kind:kind,
+            indexPath:indexPath)
+        
+        return header
+    }
 }
