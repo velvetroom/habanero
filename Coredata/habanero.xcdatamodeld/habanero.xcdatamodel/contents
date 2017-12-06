@@ -2,10 +2,50 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13533" systemVersion="17B1003" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Build" representedClassName="Build" syncable="YES" codeGenerationType="class">
         <attribute name="created" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="duration" attributeType="Date" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="syncstamp" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="title" optional="YES" syncable="YES"/>
+        <attribute name="title" attributeType="String" syncable="YES"/>
+        <relationship name="ingredients" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="BuildIngredient" inverseName="build" inverseEntity="BuildIngredient" syncable="YES"/>
+        <relationship name="steps" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="BuildStep" inverseName="build" inverseEntity="BuildStep" syncable="YES"/>
     </entity>
+    <entity name="BuildIngredient" representedClassName="BuildIngredient" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="cloudId" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="build" maxCount="1" deletionRule="Nullify" destinationEntity="Build" inverseName="ingredients" inverseEntity="Build" syncable="YES"/>
+    </entity>
+    <entity name="BuildIngredientCups" representedClassName="BuildIngredientCups" parentEntity="BuildIngredient" syncable="YES" codeGenerationType="class">
+        <attribute name="cups" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="BuildIngredientGrams" representedClassName="BuildIngredientGrams" parentEntity="BuildIngredient" syncable="YES" codeGenerationType="class">
+        <attribute name="grams" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="BuildIngredientMililitres" representedClassName="BuildIngredientMililitres" parentEntity="BuildIngredient" syncable="YES" codeGenerationType="class">
+        <attribute name="mililitres" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="BuildIngredientQuantity" representedClassName="BuildIngredientQuantity" parentEntity="BuildIngredient" syncable="YES" codeGenerationType="class">
+        <attribute name="quantity" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="BuildIngredientSpoons" representedClassName="BuildIngredientSpoons" parentEntity="BuildIngredient" syncable="YES" codeGenerationType="class">
+        <attribute name="spoons" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="BuildStep" representedClassName="BuildStep" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="text" attributeType="String" syncable="YES"/>
+        <relationship name="build" maxCount="1" deletionRule="Nullify" destinationEntity="Build" inverseName="steps" inverseEntity="Build" syncable="YES"/>
+    </entity>
+    <entity name="BuildStepImage" representedClassName="BuildStepImage" parentEntity="BuildStep" syncable="YES" codeGenerationType="class">
+        <attribute name="imageURL" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="BuildStepText" representedClassName="BuildStepText" parentEntity="BuildStep" syncable="YES" codeGenerationType="class"/>
     <elements>
-        <element name="Build" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Build" positionX="-63" positionY="-18" width="128" height="135"/>
+        <element name="BuildStep" positionX="-63" positionY="9" width="128" height="75"/>
+        <element name="BuildIngredient" positionX="-54" positionY="18" width="128" height="90"/>
+        <element name="BuildIngredientQuantity" positionX="-36" positionY="36" width="128" height="60"/>
+        <element name="BuildIngredientGrams" positionX="-18" positionY="45" width="128" height="60"/>
+        <element name="BuildIngredientMililitres" positionX="0" positionY="54" width="128" height="60"/>
+        <element name="BuildIngredientSpoons" positionX="18" positionY="72" width="128" height="60"/>
+        <element name="BuildIngredientCups" positionX="36" positionY="90" width="128" height="60"/>
+        <element name="BuildStepText" positionX="-18" positionY="45" width="128" height="45"/>
+        <element name="BuildStepImage" positionX="-9" positionY="54" width="128" height="60"/>
     </elements>
 </model>
