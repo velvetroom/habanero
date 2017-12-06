@@ -5,13 +5,13 @@ final class ViewSpinner:UIImageView
     init()
     {
         super.init(frame:CGRect.zero)
-        isUserInteractionEnabled = false
-        translatesAutoresizingMaskIntoConstraints = false
-        clipsToBounds = true
-        animationDuration = ViewSpinner.Constants.animationDuration
-        animationImages = ViewSpinner.Constants.images
-        contentMode = UIViewContentMode.center
-        startAnimating()
+        self.isUserInteractionEnabled = false
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.clipsToBounds = true
+        self.animationDuration = ViewSpinner.Constants.animationDuration
+        self.animationImages = ViewSpinner.Constants.images
+        self.contentMode = UIViewContentMode.center
+        self.startAnimating()
     }
     
     required init?(coder:NSCoder)

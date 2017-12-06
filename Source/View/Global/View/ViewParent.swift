@@ -14,14 +14,14 @@ final class ViewParent:UIView
     init(controller:ControllerParent)
     {
         super.init(frame:CGRect.zero)
-        clipsToBounds = true
-        backgroundColor = UIColor.white
+        self.clipsToBounds = true
+        self.backgroundColor = UIColor.white
         self.controller = controller
         
         let viewMenu:ViewMenu = ViewMenu(controller:controller)
         self.viewMenu = viewMenu
         
-        addSubview(viewMenu)
+        self.addSubview(viewMenu)
         
         NSLayoutConstraint.bottomToBottom(
             view:viewMenu,
@@ -33,7 +33,7 @@ final class ViewParent:UIView
             view:viewMenu,
             toView:self)
         
-        factoryGesture()
+        self.factoryGesture()
     }
     
     required init?(coder:NSCoder)

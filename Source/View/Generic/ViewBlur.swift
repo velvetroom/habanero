@@ -31,9 +31,9 @@ final class ViewBlur:UIVisualEffectView
         let visualEffect:UIBlurEffect = UIBlurEffect(style:style)
         
         super.init(effect:visualEffect)
-        isUserInteractionEnabled = false
-        translatesAutoresizingMaskIntoConstraints = false
-        clipsToBounds = true
+        self.isUserInteractionEnabled = false
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.clipsToBounds = true
     }
     
     required init?(coder:NSCoder)

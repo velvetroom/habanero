@@ -7,8 +7,8 @@ final class ControllerParent:UIViewController
     
     init()
     {
-        menu = Menu()
-        orientation = UIInterfaceOrientationMask.portrait
+        self.menu = Menu()
+        self.orientation = UIInterfaceOrientationMask.portrait
         super.init(nibName:nil, bundle:nil)
     }
     
@@ -30,12 +30,12 @@ final class ControllerParent:UIViewController
             return
         }
         
-        mainController(controller:controller)
+        self.mainController(controller:controller)
     }
     
     override func loadView()
     {
         let viewParent:ViewParent = ViewParent(controller:self)
-        view = viewParent
+        self.view = viewParent
     }
 }

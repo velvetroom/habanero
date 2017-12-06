@@ -10,7 +10,7 @@ final class Menu
     {
         get
         {
-            let selected:MenuItemProtocol? = itemsMap[self.selected]
+            let selected:MenuItemProtocol? = self.itemsMap[self.selected]
             
             return selected
         }
@@ -18,8 +18,8 @@ final class Menu
     
     init()
     {
-        selected = Menu.Constants.initialSelected
-        items = Menu.factoryItems()
-        itemsMap = Menu.factoryItemsMap(items:items)
+        self.selected = Menu.Constants.initialSelected
+        self.items = Menu.factoryItems()
+        self.itemsMap = Menu.factoryItemsMap(items:items)
     }
 }

@@ -5,12 +5,12 @@ final class ViewCollectionFlow:UICollectionViewFlowLayout
     override init()
     {
         super.init()
-        headerReferenceSize = CGSize.zero
-        footerReferenceSize = CGSize.zero
-        minimumLineSpacing = 0
-        minimumInteritemSpacing = 0
-        sectionInset = UIEdgeInsets.zero
-        scrollDirection = UICollectionViewScrollDirection.vertical
+        self.headerReferenceSize = CGSize.zero
+        self.footerReferenceSize = CGSize.zero
+        self.minimumLineSpacing = 0
+        self.minimumInteritemSpacing = 0
+        self.sectionInset = UIEdgeInsets.zero
+        self.scrollDirection = UICollectionViewScrollDirection.vertical
     }
     
     required init?(coder:NSCoder)

@@ -12,7 +12,7 @@ class ViewMain<A>:View<A>, ViewTransitionableProtocol where A.C:Controller<A>
     required init(controller:A.C)
     {
         super.init(controller:controller)
-        backgroundColor = UIColor.white
+        self.backgroundColor = UIColor.white
     }
     
     required init?(coder:NSCoder)

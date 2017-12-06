@@ -7,8 +7,8 @@ final class ViewMenuCell:UICollectionViewCell
     override init(frame:CGRect)
     {
         super.init(frame:frame)
-        clipsToBounds = true
-        backgroundColor = UIColor.clear
+        self.clipsToBounds = true
+        self.backgroundColor = UIColor.clear
         
         let imageView:UIImageView = UIImageView()
         imageView.isUserInteractionEnabled = false
@@ -17,7 +17,7 @@ final class ViewMenuCell:UICollectionViewCell
         imageView.translatesAutoresizingMaskIntoConstraints = false
         self.imageView = imageView
         
-        addSubview(imageView)
+        self.addSubview(imageView)
         
         NSLayoutConstraint.equals(
             view:imageView,
@@ -33,7 +33,7 @@ final class ViewMenuCell:UICollectionViewCell
     {
         didSet
         {
-            hover()
+            self.hover()
         }
     }
     
@@ -41,7 +41,7 @@ final class ViewMenuCell:UICollectionViewCell
     {
         didSet
         {
-            hover()
+            self.hover()
         }
     }
     
@@ -49,13 +49,13 @@ final class ViewMenuCell:UICollectionViewCell
     
     private func hover()
     {
-        if isSelected || isHighlighted
+        if self.isSelected || self.isHighlighted
         {
-            imageView.tintColor = UIColor.colourBackgroundDark
+            self.imageView.tintColor = UIColor.colourBackgroundDark
         }
         else
         {
-            imageView.tintColor = UIColor.colourBackgroundDark.withAlphaComponent(0.2)
+            self.imageView.tintColor = UIColor.colourBackgroundDark.withAlphaComponent(0.2)
         }
     }
     
@@ -63,7 +63,7 @@ final class ViewMenuCell:UICollectionViewCell
     
     func config(model:MenuItemProtocol)
     {
-        imageView.image = model.icon.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
-        hover()
+        self.imageView.image = model.icon.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+        self.hover()
     }
 }

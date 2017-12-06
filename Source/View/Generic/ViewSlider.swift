@@ -22,13 +22,13 @@ final class ViewSlider:UIView
         self.percentUsed = percentUsed
         
         super.init(frame:CGRect.zero)
-        clipsToBounds = true
-        backgroundColor = UIColor.clear
-        translatesAutoresizingMaskIntoConstraints = false
+        self.clipsToBounds = true
+        self.backgroundColor = UIColor.clear
+        self.translatesAutoresizingMaskIntoConstraints = false
         self.sliderChange = sliderChange
         self.slidingFinished = slidingFinished
         
-        factoryViews()
+        self.factoryViews()
     }
     
     required init?(coder:NSCoder)
@@ -39,7 +39,7 @@ final class ViewSlider:UIView
     override func layoutSubviews()
     {
         super.layoutSubviews()
-        layoutSlider()
+        self.layoutSlider()
     }
     
     //MARK: private
@@ -59,7 +59,7 @@ final class ViewSlider:UIView
         self.viewBar = viewBar
         
         viewBase.addSubview(viewBar)
-        addSubview(viewBase)
+        self.addSubview(viewBase)
         
         NSLayoutConstraint.equalsVertical(
             view:viewBase,
@@ -80,14 +80,14 @@ final class ViewSlider:UIView
         
         let gesture:UIPanGestureRecognizer = factoryGestureRecognizer()
         
-        addGestureRecognizer(gesture)
+        self.addGestureRecognizer(gesture)
     }
     
     private func layoutSlider()
     {
         let width:CGFloat = viewBase.bounds.maxX
         let percentWidth:CGFloat = percentUsed * width
-        layoutBarWidth.constant = percentWidth
+        self.layoutBarWidth.constant = percentWidth
     }
     
     //MARK: internal
@@ -95,6 +95,6 @@ final class ViewSlider:UIView
     func changeSlider(percentUsed:CGFloat)
     {
         self.percentUsed = percentUsed
-        layoutSlider()
+        self.layoutSlider()
     }
 }

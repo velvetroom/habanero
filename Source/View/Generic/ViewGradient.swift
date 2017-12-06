@@ -81,10 +81,10 @@ final class ViewGradient:UIView
         endPoint:CGPoint)
     {
         super.init(frame:CGRect.zero)
-        clipsToBounds = true
-        backgroundColor = UIColor.clear
-        translatesAutoresizingMaskIntoConstraints = false
-        isUserInteractionEnabled = false
+        self.clipsToBounds = true
+        self.backgroundColor = UIColor.clear
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.isUserInteractionEnabled = false
         
         guard
             

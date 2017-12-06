@@ -9,14 +9,14 @@ final class ViewMenu:UIView
     init(controller:ControllerParent)
     {
         super.init(frame:CGRect.zero)
-        clipsToBounds = true
-        backgroundColor = UIColor.white
-        translatesAutoresizingMaskIntoConstraints = false
+        self.clipsToBounds = true
+        self.backgroundColor = UIColor.white
+        self.translatesAutoresizingMaskIntoConstraints = false
         self.controller = controller
         
         let border:ViewBorder = ViewBorder(colour:UIColor.colourBackgroundDark.withAlphaComponent(0.4))
         
-        addSubview(border)
+        self.addSubview(border)
         
         NSLayoutConstraint.topToTop(
             view:border,
@@ -28,7 +28,7 @@ final class ViewMenu:UIView
             view:border,
             toView:self)
         
-        factoryCollection()
+        self.factoryCollection()
     }
     
     required init?(coder:NSCoder)

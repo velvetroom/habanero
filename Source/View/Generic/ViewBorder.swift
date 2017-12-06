@@ -5,10 +5,10 @@ final class ViewBorder:UIView
     init(colour:UIColor)
     {
         super.init(frame:CGRect.zero)
-        clipsToBounds = true
-        isUserInteractionEnabled = false
-        translatesAutoresizingMaskIntoConstraints = false
-        backgroundColor = colour
+        self.clipsToBounds = true
+        self.isUserInteractionEnabled = false
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.backgroundColor = colour
     }
     
     required init?(coder:NSCoder)

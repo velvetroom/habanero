@@ -23,7 +23,7 @@ class Controller<A>:UIViewController where A.M:Model<A>
     
     init()
     {
-        model = A.M()
+        self.model = A.M()
         
         super.init(nibName:nil, bundle:nil)
     }
@@ -69,7 +69,7 @@ class Controller<A>:UIViewController where A.M:Model<A>
         }
         
         let genericView:A.V = A.V(controller:controller)
-        model.view = genericView
+        self.model.view = genericView
         
         let view:UIView? = genericView as? UIView
         self.view = view
@@ -79,22 +79,22 @@ class Controller<A>:UIViewController where A.M:Model<A>
     {
         super.viewWillAppear(animated)
         
-        parent?.setNeedsStatusBarAppearanceUpdate()
+        self.parent?.setNeedsStatusBarAppearanceUpdate()
     }
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        edgesForExtendedLayout = UIRectEdge()
-        extendedLayoutIncludesOpaqueBars = false
+        self.edgesForExtendedLayout = UIRectEdge()
+        self.extendedLayoutIncludesOpaqueBars = false
         
         if #available(iOS 11.0, *)
         {
-            additionalSafeAreaInsets = UIEdgeInsets.zero
+            self.additionalSafeAreaInsets = UIEdgeInsets.zero
         }
         else
         {
-            automaticallyAdjustsScrollViewInsets = false
+            self.automaticallyAdjustsScrollViewInsets = false
         }
     }
 }

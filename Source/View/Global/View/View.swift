@@ -8,9 +8,9 @@ class View<A>:UIView, ViewControllableProtocol where A.C:Controller<A>
     required init(controller:A.C)
     {
         super.init(frame:CGRect.zero)
-        clipsToBounds = true
-        backgroundColor = UIColor.clear
-        translatesAutoresizingMaskIntoConstraints = false
+        self.clipsToBounds = true
+        self.backgroundColor = UIColor.clear
+        self.translatesAutoresizingMaskIntoConstraints = false
         self.controller = controller
     }
     

@@ -34,13 +34,13 @@ class ViewCollection<A, Cell:UICollectionViewCell, Flow:UICollectionViewFlowLayo
             collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentBehavior.never
         }
         
-        addSubview(collectionView)
+        self.addSubview(collectionView)
         
         NSLayoutConstraint.equals(
             view:collectionView,
             toView:self)
         
-        registerCell(cell:Cell.self)
+        self.registerCell(cell:Cell.self)
     }
     
     required init?(coder:NSCoder)
@@ -52,14 +52,14 @@ class ViewCollection<A, Cell:UICollectionViewCell, Flow:UICollectionViewFlowLayo
     
     final func registerCell(cell:Cell.Type)
     {
-        collectionView.register(
+        self.collectionView.register(
             cell,
             forCellWithReuseIdentifier:cell.reusableIdentifier)
     }
     
     final func registerFooter(footer:UICollectionReusableView.Type)
     {
-        collectionView.register(
+        self.collectionView.register(
             footer,
             forSupplementaryViewOfKind:UICollectionElementKindSectionFooter,
             withReuseIdentifier:footer.reusableIdentifier)
@@ -67,7 +67,7 @@ class ViewCollection<A, Cell:UICollectionViewCell, Flow:UICollectionViewFlowLayo
     
     final func registerHeader(header:UICollectionReusableView.Type)
     {
-        collectionView.register(
+        self.collectionView.register(
             header,
             forSupplementaryViewOfKind:UICollectionElementKindSectionHeader,
             withReuseIdentifier:header.reusableIdentifier)
@@ -77,7 +77,7 @@ class ViewCollection<A, Cell:UICollectionViewCell, Flow:UICollectionViewFlowLayo
         indexPath:IndexPath,
         reusableIdentifier:String = P.reusableIdentifier) -> P
     {
-        let cell:P = collectionView.dequeueReusableCell(
+        let cell:P = self.collectionView.dequeueReusableCell(
             withReuseIdentifier:reusableIdentifier,
             for:indexPath) as! P
         
@@ -88,7 +88,7 @@ class ViewCollection<A, Cell:UICollectionViewCell, Flow:UICollectionViewFlowLayo
         kind:String,
         indexPath:IndexPath) -> P
     {
-        let reusable:P = collectionView.dequeueReusableSupplementaryView(
+        let reusable:P = self.collectionView.dequeueReusableSupplementaryView(
             ofKind:kind,
             withReuseIdentifier:P.reusableIdentifier,
             for:indexPath) as! P
@@ -115,7 +115,7 @@ class ViewCollection<A, Cell:UICollectionViewCell, Flow:UICollectionViewFlowLayo
         layout collectionViewLayout:UICollectionViewLayout,
         insetForSectionAt section:Int) -> UIEdgeInsets
     {
-        return flow.sectionInset
+        return self.flow.sectionInset
     }
     
     func collectionView(
@@ -123,7 +123,7 @@ class ViewCollection<A, Cell:UICollectionViewCell, Flow:UICollectionViewFlowLayo
         layout collectionViewLayout:UICollectionViewLayout,
         referenceSizeForHeaderInSection section:Int) -> CGSize
     {
-        return flow.headerReferenceSize
+        return self.flow.headerReferenceSize
     }
     
     func collectionView(
@@ -131,7 +131,7 @@ class ViewCollection<A, Cell:UICollectionViewCell, Flow:UICollectionViewFlowLayo
         layout collectionViewLayout:UICollectionViewLayout,
         referenceSizeForFooterInSection section:Int) -> CGSize
     {
-        return flow.footerReferenceSize
+        return self.flow.footerReferenceSize
     }
     
     func collectionView(
@@ -139,7 +139,7 @@ class ViewCollection<A, Cell:UICollectionViewCell, Flow:UICollectionViewFlowLayo
         layout collectionViewLayout:UICollectionViewLayout,
         sizeForItemAt indexPath:IndexPath) -> CGSize
     {
-        return flow.itemSize
+        return self.flow.itemSize
     }
     
     func numberOfSections(in collectionView:UICollectionView) -> Int
@@ -159,7 +159,7 @@ class ViewCollection<A, Cell:UICollectionViewCell, Flow:UICollectionViewFlowLayo
         viewForSupplementaryElementOfKind kind:String,
         at indexPath:IndexPath) -> UICollectionReusableView
     {
-        let reusable:UICollectionReusableView = reusableAtIndex(
+        let reusable:UICollectionReusableView = self.reusableAtIndex(
             kind:kind,
             indexPath:indexPath)
         
@@ -170,7 +170,7 @@ class ViewCollection<A, Cell:UICollectionViewCell, Flow:UICollectionViewFlowLayo
         _ collectionView:UICollectionView,
         cellForItemAt indexPath:IndexPath) -> UICollectionViewCell
     {
-        let cell:Cell = cellAtIndex(indexPath:indexPath)
+        let cell:Cell = self.cellAtIndex(indexPath:indexPath)
         
         return cell
     }
@@ -193,7 +193,7 @@ class ViewCollection<A, Cell:UICollectionViewCell, Flow:UICollectionViewFlowLayo
         _ collectionView:UICollectionView,
         didSelectItemAt indexPath:IndexPath)
     {
-        collectionView.isUserInteractionEnabled = false
+        self.collectionView.isUserInteractionEnabled = false
         
         let deadline:DispatchTime = DispatchTime.now() + ViewGlobal.Constants.deselectTime
         DispatchQueue.main.asyncAfter(deadline:deadline)

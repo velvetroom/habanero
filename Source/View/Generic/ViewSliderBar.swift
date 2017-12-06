@@ -5,10 +5,10 @@ final class ViewSliderBar:UIView
     init()
     {
         super.init(frame:CGRect.zero)
-        clipsToBounds = true
-        backgroundColor = UIColor.clear
-        translatesAutoresizingMaskIntoConstraints = false
-        isUserInteractionEnabled = false
+        self.clipsToBounds = true
+        self.backgroundColor = UIColor.clear
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.isUserInteractionEnabled = false
         
         let border:ViewBorder = ViewBorder(colour:UIColor(white:0, alpha:0.2))
         
@@ -22,9 +22,9 @@ final class ViewSliderBar:UIView
             colourLeft:colorStart,
             colourRight:colorEnd)
         
-        addSubview(viewGradient)
-        addSubview(blur)
-        addSubview(border)
+        self.addSubview(viewGradient)
+        self.addSubview(blur)
+        self.addSubview(border)
         
         NSLayoutConstraint.equals(
             view:viewGradient,

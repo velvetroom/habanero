@@ -19,7 +19,7 @@ final class ViewAlert:UIView
     {
         DispatchQueue.main.async
         {
-            asyncMessage(message:message, color:color)
+            ViewAlert.asyncMessage(message:message, color:color)
         }
     }
     
@@ -50,9 +50,9 @@ final class ViewAlert:UIView
     private convenience init(message:String, color:UIColor)
     {
         self.init()
-        clipsToBounds = true
-        backgroundColor = color
-        translatesAutoresizingMaskIntoConstraints = false
+        self.clipsToBounds = true
+        self.backgroundColor = color
+        self.translatesAutoresizingMaskIntoConstraints = false
         
         let label:UILabel = UILabel()
         label.isUserInteractionEnabled = false
@@ -72,8 +72,8 @@ final class ViewAlert:UIView
             action:#selector(selectorActionButton(sender:)),
             for:UIControlEvents.touchUpInside)
         
-        addSubview(label)
-        addSubview(button)
+        self.addSubview(label)
+        self.addSubview(button)
         
         NSLayoutConstraint.topToTop(
             view:label,
@@ -94,15 +94,15 @@ final class ViewAlert:UIView
     private func selectorActionButton(sender button:UIButton)
     {
         button.isUserInteractionEnabled = false
-        timer?.invalidate()
-        selectorAlertTimeOut(sender:timer)
+        self.timer?.invalidate()
+        self.selectorAlertTimeOut(sender:timer)
     }
     
     @objc
     private func selectorAlertTimeOut(sender timer:Timer?)
     {
         timer?.invalidate()
-        animate(open:false)
+        self.animate(open:false)
     }
     
     //MARK: private
@@ -121,11 +121,11 @@ final class ViewAlert:UIView
     {
         if open
         {
-            layoutTop.constant = 0
+            self.layoutTop.constant = 0
         }
         else
         {
-            layoutTop.constant = -ViewAlert.Constants.height
+            self.layoutTop.constant = -ViewAlert.Constants.height
         }
         
         UIView.animate(withDuration:ViewAlert.Constants.animationDuration,
