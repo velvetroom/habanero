@@ -9,7 +9,7 @@ extension ControllerParent
         guard
             
             let view:ViewParent = self.view as? ViewParent,
-            let currentController:UIViewController = childViewControllers.last,
+            let currentController:UIViewController = self.childViewControllers.last,
             let newView:ViewTransitionableProtocol = controller.view as? ViewTransitionableProtocol,
             let currentView:ViewTransitionableProtocol = currentController.view as? ViewTransitionableProtocol
             
@@ -20,7 +20,7 @@ extension ControllerParent
         
         currentController.removeFromParentViewController()
         
-        addChildViewController(controller)
+        self.addChildViewController(controller)
         controller.beginAppearanceTransition(true, animated:true)
         currentController.beginAppearanceTransition(false, animated:true)
         
@@ -40,17 +40,17 @@ extension ControllerParent
         horizontal:ControllerTransition.Horizontal,
         controller:UIViewController)
     {
-        let viewWidth:CGFloat = -view.bounds.maxX
+        let viewWidth:CGFloat = -self.view.bounds.maxX
         let left:CGFloat = viewWidth * horizontal.rawValue
         
-        slide(
+        self.slide(
             controller:controller,
             left:left)
     }
     
     func mainController(controller:UIViewController)
     {
-        addChildViewController(controller)
+        self.addChildViewController(controller)
         
         guard
             
@@ -75,7 +75,7 @@ extension ControllerParent
         guard
             
             let view:ViewParent = self.view as? ViewParent,
-            let currentController:UIViewController = childViewControllers.last,
+            let currentController:UIViewController = self.childViewControllers.last,
             let newView:ViewTransitionableProtocol = controller.view as? ViewTransitionableProtocol
             
         else
@@ -88,7 +88,7 @@ extension ControllerParent
         let left:CGFloat = width * horizontal.rawValue
         let top:CGFloat = height * vertical.rawValue
         
-        addChildViewController(controller)
+        self.addChildViewController(controller)
         
         controller.beginAppearanceTransition(
             true,
@@ -115,7 +115,7 @@ extension ControllerParent
         guard
             
             let view:ViewParent = self.view as? ViewParent,
-            let currentController:UIViewController = childViewControllers.last,
+            let currentController:UIViewController = self.childViewControllers.last,
             let newView:ViewTransitionableProtocol = controller.view as? ViewTransitionableProtocol
             
         else
@@ -123,7 +123,7 @@ extension ControllerParent
             return
         }
         
-        addChildViewController(controller)
+        self.addChildViewController(controller)
         
         controller.beginAppearanceTransition(
             true,
@@ -145,7 +145,7 @@ extension ControllerParent
         guard
             
             let view:ViewParent = self.view as? ViewParent,
-            let currentController:UIViewController = childViewControllers.last,
+            let currentController:UIViewController = self.childViewControllers.last,
             let newView:ViewTransitionableProtocol = controller.view as? ViewTransitionableProtocol
             
         else
@@ -153,7 +153,7 @@ extension ControllerParent
             return
         }
         
-        addChildViewController(controller)
+        self.addChildViewController(controller)
         
         controller.beginAppearanceTransition(
             true,
@@ -171,13 +171,13 @@ extension ControllerParent
     
     func removeBetweenFirstAndLast()
     {
-        var controllers:Int = childViewControllers.count - 1
+        var controllers:Int = self.childViewControllers.count - 1
         
         while controllers > 1
         {
             controllers -= 1
             
-            let controller:UIViewController = childViewControllers[controllers]
+            let controller:UIViewController = self.childViewControllers[controllers]
             
             controller.beginAppearanceTransition(
                 false,
@@ -191,13 +191,13 @@ extension ControllerParent
     
     func removeAllButLast()
     {
-        var controllers:Int = childViewControllers.count - 1
+        var controllers:Int = self.childViewControllers.count - 1
         
         while controllers > 0
         {
             controllers -= 1
             
-            let controller:UIViewController = childViewControllers[controllers]
+            let controller:UIViewController = self.childViewControllers[controllers]
             
             controller.beginAppearanceTransition(
                 false,
@@ -214,16 +214,16 @@ extension ControllerParent
         vertical:ControllerTransition.Vertical = ControllerTransition.Vertical.none,
         completion:(() -> ())? = nil)
     {
-        let width:CGFloat = view.bounds.maxX
-        let height:CGFloat = view.bounds.maxY
+        let width:CGFloat = self.view.bounds.maxX
+        let height:CGFloat = self.view.bounds.maxY
         let left:CGFloat = width * horizontal.rawValue
         let top:CGFloat = height * vertical.rawValue
-        let controllers:Int = childViewControllers.count
+        let controllers:Int = self.childViewControllers.count
         
         if controllers > 1
         {
-            let currentController:UIViewController = childViewControllers[controllers - 1]
-            let previousController:UIViewController = childViewControllers[controllers - 2]
+            let currentController:UIViewController = self.childViewControllers[controllers - 1]
+            let previousController:UIViewController = self.childViewControllers[controllers - 2]
             currentController.removeFromParentViewController()
             
             guard
@@ -259,11 +259,11 @@ extension ControllerParent
     
     func popSilent(removeIndex:Int)
     {
-        let controllers:Int = childViewControllers.count
+        let controllers:Int = self.childViewControllers.count
         
         if controllers > removeIndex
         {
-            let removeController:UIViewController = childViewControllers[removeIndex]
+            let removeController:UIViewController = self.childViewControllers[removeIndex]
             
             guard
                 
@@ -285,7 +285,7 @@ extension ControllerParent
         guard
             
             let view:ViewParent = self.view as? ViewParent,
-            let currentController:UIViewController = childViewControllers.last
+            let currentController:UIViewController = self.childViewControllers.last
             
         else
         {
@@ -296,7 +296,7 @@ extension ControllerParent
         
         guard
             
-            let previousController:UIViewController = childViewControllers.last
+            let previousController:UIViewController = self.childViewControllers.last
             
         else
         {

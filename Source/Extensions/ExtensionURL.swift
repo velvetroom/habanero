@@ -11,7 +11,7 @@ extension URL
         
         do
         {
-            try setResourceValues(resourceValues)
+            try self.setResourceValues(resourceValues)
         }
         catch
         {

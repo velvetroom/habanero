@@ -8,12 +8,12 @@ extension FileManager
     {
         get
         {
-            let path:String = appDirectory.path
+            let path:String = self.appDirectory.path
             let attributes:[FileAttributeKey:Any]
             
             do
             {
-                try attributes = attributesOfFileSystem(forPath:path)
+                try attributes = self.attributesOfFileSystem(forPath:path)
             }
             catch
             {
@@ -27,11 +27,11 @@ extension FileManager
     private func sizeOfItems(url:URL) -> UInt64
     {
         var size:UInt64 = 0
-        let contents:[URL] = urlsInDirectory(url:url)
+        let contents:[URL] = self.urlsInDirectory(url:url)
         
         for url:URL in contents
         {
-            let itemSize:UInt64 = sizeAt(url:url)
+            let itemSize:UInt64 = self.sizeAt(url:url)
             size += itemSize
         }
         
@@ -44,7 +44,7 @@ extension FileManager
         
         do
         {
-            try attributes = attributesOfItem(atPath:url.path)
+            try attributes = self.attributesOfItem(atPath:url.path)
         }
         catch
         {
@@ -85,7 +85,7 @@ extension FileManager
     {
         guard
         
-            let objectSystemSize:NSNumber = systemAttributes?[FileAttributeKey.systemSize] as? NSNumber
+            let objectSystemSize:NSNumber = self.systemAttributes?[FileAttributeKey.systemSize] as? NSNumber
         
         else
         {
@@ -101,7 +101,7 @@ extension FileManager
     {
         guard
             
-            let objectSystemSize:NSNumber = systemAttributes?[FileAttributeKey.systemFreeSize] as? NSNumber
+            let objectSystemSize:NSNumber = self.systemAttributes?[FileAttributeKey.systemFreeSize] as? NSNumber
             
         else
         {
@@ -119,14 +119,14 @@ extension FileManager
         
         guard
             
-            fileExists(atPath:url.path, isDirectory:&isDirectory)
+            self.fileExists(atPath:url.path, isDirectory:&isDirectory)
             
         else
         {
             return 0
         }
         
-        var size:UInt64 = sizeOfItem(url:url)
+        var size:UInt64 = self.sizeOfItem(url:url)
         
         guard
             
@@ -137,7 +137,7 @@ extension FileManager
             return size
         }
         
-        let itemsSize:UInt64 = sizeOfItems(url:url)
+        let itemsSize:UInt64 = self.sizeOfItems(url:url)
         size += itemsSize
         
         return size
@@ -150,7 +150,7 @@ extension FileManager
         
         do
         {
-            try contents = contentsOfDirectory(atPath:url.path)
+            try contents = self.contentsOfDirectory(atPath:url.path)
         }
         catch
         {

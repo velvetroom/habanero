@@ -22,7 +22,7 @@ extension Menu
     
     class func factoryItems() -> [MenuItemProtocol]
     {
-        var items:[MenuItemProtocol] = instanceItems()
+        var items:[MenuItemProtocol] = self.instanceItems()
         
         items.sort
         { (itemA:MenuItemProtocol, itemB:MenuItemProtocol) -> Bool in

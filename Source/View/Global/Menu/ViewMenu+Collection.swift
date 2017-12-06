@@ -32,13 +32,13 @@ extension ViewMenu:
             ViewMenuCell.reusableIdentifier)
         self.collectionView = collectionView
         
-        addSubview(collectionView)
+        self.addSubview(collectionView)
         
         NSLayoutConstraint.equals(
             view:collectionView,
             toView:self)
         
-        selectCurrent()
+        self.selectCurrent()
     }
     
     //MARK: collectionViewDelegate
@@ -54,7 +54,7 @@ extension ViewMenu:
         
         else
         {
-            let countCells:CGFloat = CGFloat(controller.menu.items.count)
+            let countCells:CGFloat = CGFloat(self.controller.menu.items.count)
             let width:CGFloat = collectionView.bounds.width
             let widthPerCell:CGFloat = width / countCells
             let height:CGFloat = collectionView.bounds.height
@@ -74,7 +74,7 @@ extension ViewMenu:
         _ collectionView:UICollectionView,
         numberOfItemsInSection section:Int) -> Int
     {
-        let count:Int = controller.menu.items.count
+        let count:Int = self.controller.menu.items.count
         
         return count
     }
@@ -83,7 +83,7 @@ extension ViewMenu:
         _ collectionView:UICollectionView,
         cellForItemAt indexPath:IndexPath) -> UICollectionViewCell
     {
-        let item:MenuItemProtocol = modelAtIndex(index:indexPath)
+        let item:MenuItemProtocol = self.modelAtIndex(index:indexPath)
         
         let cell:ViewMenuCell = collectionView.dequeueReusableCell(
             withReuseIdentifier:
@@ -99,10 +99,10 @@ extension ViewMenu:
         _ collectionView:UICollectionView,
         shouldSelectItemAt indexPath:IndexPath) -> Bool
     {
-        let item:MenuItemProtocol = modelAtIndex(index:indexPath)
+        let item:MenuItemProtocol = self.modelAtIndex(index:indexPath)
         let order:Menu.Order = item.order
         
-        if order == controller.menu.selected
+        if order == self.controller.menu.selected
         {
             return false
         }
@@ -116,8 +116,8 @@ extension ViewMenu:
     {
         collectionView.isUserInteractionEnabled = false
         
-        let item:MenuItemProtocol = modelAtIndex(index:indexPath)
-        controller.menuSelected(item:item)
+        let item:MenuItemProtocol = self.modelAtIndex(index:indexPath)
+        self.controller.menuSelected(item:item)
         
         let deadline:DispatchTime = DispatchTime.now() + ViewGlobal.Constants.deselectTime
         DispatchQueue.main.asyncAfter(deadline:deadline)

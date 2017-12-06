@@ -25,7 +25,7 @@ extension ViewSlider:UIGestureRecognizerDelegate
         newWidth:CGFloat,
         totalWidth:CGFloat)
     {
-        layoutBarWidth.constant = newWidth
+        self.layoutBarWidth.constant = newWidth
         let percentUsed:CGFloat = newWidth / totalWidth
         self.percentUsed = percentUsed
         
@@ -42,7 +42,7 @@ extension ViewSlider:UIGestureRecognizerDelegate
     {
         let gesture:UIPanGestureRecognizer = UIPanGestureRecognizer(
             target:self,
-            action:#selector(selectorPanning(sender:)))
+            action:#selector(self.selectorPanning(sender:)))
         
         gesture.delegate = self
         
@@ -51,12 +51,12 @@ extension ViewSlider:UIGestureRecognizerDelegate
     
     func gestureBegan(gesture:UIPanGestureRecognizer)
     {
-        panInitialWidth = layoutBarWidth.constant
+        self.panInitialWidth = self.layoutBarWidth.constant
     }
     
     func gestureChanged(gesture:UIPanGestureRecognizer)
     {
-        let totalWidth:CGFloat = viewBase.bounds.maxX
+        let totalWidth:CGFloat = self.viewBase.bounds.maxX
         
         guard
             
@@ -80,15 +80,15 @@ extension ViewSlider:UIGestureRecognizerDelegate
             newWidth = totalWidth
         }
         
-        updateBar(
+        self.updateBar(
             newWidth:newWidth,
             totalWidth:totalWidth)
     }
     
     func gestureEnded(gesture:UIPanGestureRecognizer)
     {
-        panInitialWidth = nil
-        slidingFinished?()
+        self.panInitialWidth = nil
+        self.slidingFinished?()
     }
     
     //MARK: gestureRecognizer delegate

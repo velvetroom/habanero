@@ -19,7 +19,7 @@ extension Data
         
         do
         {
-            try write(
+            try self.write(
                 to:fileUrl,
                 options:Data.WritingOptions.atomicWrite)
         }
@@ -39,7 +39,7 @@ extension Data
             start:&value,
             count:1)
         
-        append(buffer)
+        self.append(buffer)
     }
     
     func arrayFromBytes<T>(elements:Int) -> [T]?
@@ -49,7 +49,7 @@ extension Data
         
         guard
             
-            count >= expectedSize
+            self.count >= expectedSize
         
         else
         {
@@ -75,7 +75,7 @@ extension Data
     {
         guard
         
-            let array:[T] = arrayFromBytes(elements:1),
+            let array:[T] = self.arrayFromBytes(elements:1),
             let value:T = array.first
         
         else
@@ -91,23 +91,23 @@ extension Data
         endNotIncluding:Int) -> Data
     {
         let range:Range<Data.Index> = Range<Data.Index>(start ..< endNotIncluding)
-        let sliced:Data = subdata(in:range)
+        let sliced:Data = self.subdata(in:range)
         
         return sliced
     }
     
     func subdata(start:Int) -> Data
     {
-        let sliced:Data = subdata(
+        let sliced:Data = self.subdata(
             start:start,
-            endNotIncluding:count)
+            endNotIncluding:self.count)
         
         return sliced
     }
     
     func subdata(endNotIncluding:Int) -> Data
     {
-        let sliced:Data = subdata(
+        let sliced:Data = self.subdata(
             start:0,
             endNotIncluding:endNotIncluding)
         

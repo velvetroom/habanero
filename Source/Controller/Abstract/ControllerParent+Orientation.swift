@@ -6,7 +6,7 @@ extension ControllerParent
     {
         guard
             
-            let controller:UIViewController = childViewControllers.last
+            let controller:UIViewController = self.childViewControllers.last
             
         else
         {
@@ -20,7 +20,7 @@ extension ControllerParent
     {
         guard
             
-            let controller:UIViewController = childViewControllers.last
+            let controller:UIViewController = self.childViewControllers.last
             
         else
         {
@@ -34,7 +34,7 @@ extension ControllerParent
     {
         get
         {
-            return orientation
+            return self.orientation
         }
     }
     

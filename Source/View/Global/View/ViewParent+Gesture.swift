@@ -35,7 +35,7 @@ extension ViewParent:UIGestureRecognizerDelegate
         
         guard
             
-            let topView:ViewTransitionableProtocol = subviews.last as? ViewTransitionableProtocol
+            let topView:ViewTransitionableProtocol = self.subviews.last as? ViewTransitionableProtocol
             
         else
         {
@@ -47,17 +47,17 @@ extension ViewParent:UIGestureRecognizerDelegate
     
     private func gesturePop()
     {
-        panRecognizer.isEnabled = true
-        controller.pop(horizontal:ControllerTransition.Horizontal.right)
+        self.panRecognizer.isEnabled = true
+        self.controller.pop(horizontal:ControllerTransition.Horizontal.right)
     }
     
     private func gestureRestore()
     {
-        panRecognizer.isEnabled = true
+        self.panRecognizer.isEnabled = true
         
         guard
             
-            let topView:ViewTransitionableProtocol = subviews.last as? ViewTransitionableProtocol
+            let topView:ViewTransitionableProtocol = self.subviews.last as? ViewTransitionableProtocol
             
         else
         {
@@ -78,12 +78,12 @@ extension ViewParent:UIGestureRecognizerDelegate
     {
         let panRecognizer:UIPanGestureRecognizer = UIPanGestureRecognizer(
             target:self,
-            action:#selector(selectorPanRecognized(sender:)))
+            action:#selector(self.selectorPanRecognized(sender:)))
         
         panRecognizer.delegate = self
         self.panRecognizer = panRecognizer
         
-        addGestureRecognizer(panRecognizer)
+        self.addGestureRecognizer(panRecognizer)
     }
     
     func gestureStateBegan(
@@ -117,7 +117,7 @@ extension ViewParent:UIGestureRecognizerDelegate
             
         else
         {
-            panRecognizer.isEnabled = false
+            self.panRecognizer.isEnabled = false
             
             return
         }
@@ -144,11 +144,11 @@ extension ViewParent:UIGestureRecognizerDelegate
         
         if deltaX > ViewParent.Constants.panningMinXDelta
         {
-            gesturePop()
+            self.gesturePop()
         }
         else
         {
-            gestureRestore()
+            self.gestureRestore()
         }
         
         self.panningX = nil
@@ -160,7 +160,7 @@ extension ViewParent:UIGestureRecognizerDelegate
     {
         guard
             
-            let view:ViewTransitionableProtocol = subviews.last as? ViewTransitionableProtocol
+            let view:ViewTransitionableProtocol = self.subviews.last as? ViewTransitionableProtocol
             
         else
         {

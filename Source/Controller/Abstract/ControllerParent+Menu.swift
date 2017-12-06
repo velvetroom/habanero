@@ -7,7 +7,7 @@ extension ControllerParent
     private func factoryDirection(item:MenuItemProtocol) ->  ControllerTransition.Horizontal
     {
         let order:Menu.Order = item.order
-        let current:Menu.Order = menu.selected
+        let current:Menu.Order = self.menu.selected
         let direction:ControllerTransition.Horizontal
         
         if order.rawValue > current.rawValue
@@ -28,7 +28,7 @@ extension ControllerParent
     {
         guard
             
-            let item:MenuItemProtocol = menu.selectedItem
+            let item:MenuItemProtocol = self.menu.selectedItem
         
         else
         {
@@ -42,19 +42,19 @@ extension ControllerParent
     
     func menuSelected(item:MenuItemProtocol)
     {
-        let direction:ControllerTransition.Horizontal = factoryDirection(item:item)
-        menu.selected = item.order
+        let direction:ControllerTransition.Horizontal = self.factoryDirection(item:item)
+        self.menu.selected = item.order
         
         guard
             
-            let controller:UIViewController = factorySelectedController()
+            let controller:UIViewController = self.factorySelectedController()
         
         else
         {
             return
         }
         
-        slideTo(
+        self.slideTo(
             horizontal:direction,
             controller:controller)
     }

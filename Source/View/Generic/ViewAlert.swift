@@ -69,7 +69,7 @@ final class ViewAlert:UIView
         button.backgroundColor = UIColor.clear
         button.addTarget(
             self,
-            action:#selector(selectorActionButton(sender:)),
+            action:#selector(self.selectorActionButton(sender:)),
             for:UIControlEvents.touchUpInside)
         
         self.addSubview(label)
@@ -112,7 +112,7 @@ final class ViewAlert:UIView
         self.timer = Timer.scheduledTimer(
             timeInterval:ViewAlert.Constants.timeOut,
             target:self,
-            selector:#selector(selectorAlertTimeOut(sender:)),
+            selector:#selector(self.selectorAlertTimeOut(sender:)),
             userInfo:nil,
             repeats:false)
     }

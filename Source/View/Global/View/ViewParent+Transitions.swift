@@ -13,7 +13,7 @@ extension ViewParent
             return
         }
         
-        insertSubview(ui, belowSubview:viewMenu)
+        self.insertSubview(ui, belowSubview:viewMenu)
         
         view.layoutTop = NSLayoutConstraint.topToTop(
             view:ui,
@@ -45,7 +45,7 @@ extension ViewParent
             return
         }
         
-        insertSubview(newUi, belowSubview:viewMenu)
+        self.insertSubview(newUi, belowSubview:viewMenu)
         
         newView.layoutTop = NSLayoutConstraint.topToTop(
             view:newUi,
@@ -62,7 +62,7 @@ extension ViewParent
             toView:self,
             constant:-left)
         
-        layoutIfNeeded()
+        self.layoutIfNeeded()
         
         if left >= 0
         {
@@ -103,7 +103,7 @@ extension ViewParent
             let pushBackground:ViewPushBackground = ViewPushBackground()
             newView.pushBackground = pushBackground
             
-            addSubview(pushBackground)
+            self.addSubview(pushBackground)
             
             NSLayoutConstraint.equals(
                 view:pushBackground,
@@ -119,7 +119,7 @@ extension ViewParent
             return
         }
         
-        addSubview(newUi)
+        self.addSubview(newUi)
         
         newView.layoutTop = NSLayoutConstraint.topToTop(
             view:newUi,
@@ -138,7 +138,7 @@ extension ViewParent
             toView:self,
             constant:left)
         
-        layoutIfNeeded()
+        self.layoutIfNeeded()
         
         if top >= 0
         {
@@ -188,7 +188,7 @@ extension ViewParent
         }
         
         newUi.alpha = 0
-        addSubview(newUi)
+        self.addSubview(newUi)
         
         newView.layoutTop = NSLayoutConstraint.topToTop(
             view:newUi,
@@ -203,7 +203,7 @@ extension ViewParent
             view:newUi,
             toView:self)
         
-        layoutIfNeeded()
+        self.layoutIfNeeded()
         completion()
         
         UIView.animate(withDuration:ViewGlobal.Constants.animationDuration)
@@ -224,7 +224,7 @@ extension ViewParent
             return
         }
         
-        addSubview(newUi)
+        self.addSubview(newUi)
         
         newView.layoutTop = NSLayoutConstraint.topToTop(
             view:newUi,
@@ -239,7 +239,7 @@ extension ViewParent
             view:newUi,
             toView:self)
         
-        layoutIfNeeded()
+        self.layoutIfNeeded()
     }
     
     func pop(
