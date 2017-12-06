@@ -1,6 +1,6 @@
 import UIKit
 
-final class ViewBar<A>:View<A> where A.C:Controller<A>
+class ViewBar<A>:View<A> where A.C:Controller<A>
 {
     weak var labelTitle:UILabel!
     
