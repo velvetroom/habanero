@@ -19,7 +19,7 @@ extension ViewNew
             toView:self)
         NSLayoutConstraint.height(
             view:viewBar,
-            constant:ViewGlobal.Constants.contentTop)
+            constant:ViewGlobal.Constants.barHeight)
         NSLayoutConstraint.equalsHorizontal(
             view:viewBar,
             toView:self)

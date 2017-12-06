@@ -6,6 +6,8 @@ extension ViewBar
     
     func factoryViews()
     {
+        let viewBorder:ViewBorder = ViewBorder(colour:UIColor(white:0, alpha:0.2))
+        
         let labelTitle:UILabel = UILabel()
         labelTitle.translatesAutoresizingMaskIntoConstraints = false
         labelTitle.backgroundColor = UIColor.clear
@@ -15,7 +17,18 @@ extension ViewBar
         labelTitle.textColor = UIColor.colourBackgroundDark
         self.labelTitle = labelTitle
         
+        addSubview(viewBorder)
         addSubview(labelTitle)
+        
+        NSLayoutConstraint.height(
+            view:viewBorder,
+            constant:ViewGlobal.Constants.borderWidth)
+        NSLayoutConstraint.bottomToBottom(
+            view:viewBorder,
+            toView:self)
+        NSLayoutConstraint.equalsHorizontal(
+            view:viewBorder,
+            toView:self)
         
         NSLayoutConstraint.topToTop(
             view:labelTitle,
