@@ -6,7 +6,7 @@ final class ViewNewBar:ViewBar<ArchNew>
     {
         super.init(controller:controller)
         
-        factoryBarViews()
+        self.factoryBarViews()
     }
     
     required init?(coder:NSCoder)
@@ -29,20 +29,24 @@ final class ViewNewBar:ViewBar<ArchNew>
         buttonAdd.setTitle(
             String.localizedView(key:"ViewNewBar_buttonAdd"),
             for:UIControlState())
-        
-        addSubview(buttonAdd)
+        buttonAdd.titleLabel!.font = UIFont.bold(size:ViewGlobal.Constants.barTitleFontSize)
         
         self.labelTitle.text = String.localizedView(key:"ViewNewBar_labelTitle")
+        
+        self.addSubview(buttonAdd)
         
         NSLayoutConstraint.topToTop(
             view:buttonAdd,
             toView:self,
             constant:ViewGlobal.Constants.contentTop)
-        NSLayoutConstraint.leftToLeft(
+        NSLayoutConstraint.bottomToBottom(
+            view:buttonAdd,
+            toView:self)
+        NSLayoutConstraint.rightToRight(
             view:buttonAdd,
             toView:self)
         NSLayoutConstraint.width(
             view:buttonAdd,
-            constant:0)
+            constant:ViewNewBar.Constants.buttonAddWidth)
     }
 }
