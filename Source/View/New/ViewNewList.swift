@@ -1,6 +1,6 @@
 import UIKit
 
-final class ViewNewList:ViewCollection<ArchNew,  UICollectionViewCell, ViewCollectionFlow>
+final class ViewNewList:ViewCollection<ArchNew,  ViewNewListCell, ViewCollectionFlow>
 {
     
 }
