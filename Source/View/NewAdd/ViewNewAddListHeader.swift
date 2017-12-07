@@ -46,4 +46,6 @@ final class ViewNewAddListHeader:UICollectionReusableView
         NSLayoutConstraint.widthGreaterOrEqual(
             view:labelTitle)
     }
+    
+    //MARK: internal
 }

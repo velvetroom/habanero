@@ -34,6 +34,7 @@
 		DA3F0EB81FD74FC400593B83 /* MenuItemNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0EB71FD74FC400593B83 /* MenuItemNew.swift */; };
 		DA3F0EBB1FD7505E00593B83 /* Menu+OrderUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0EB91FD7505A00593B83 /* Menu+OrderUser.swift */; };
 		DA3F0EBD1FD7509500593B83 /* Menu+OrderAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0EBC1FD7509500593B83 /* Menu+OrderAdmin.swift */; };
+		DA58C6E31FD9E0E9000E6F30 /* NewAddSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58C6E21FD9E0E9000E6F30 /* NewAddSection.swift */; };
 		DA5A97CC1FD605E1006223BA /* MenuItemGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A97CB1FD605E1006223BA /* MenuItemGeneric.swift */; };
 		DA5A97CD1FD6061B006223BA /* MenuItemGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A97CB1FD605E1006223BA /* MenuItemGeneric.swift */; };
 		DA70AFBF1FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
@@ -221,6 +222,7 @@
 		DA3F0EB71FD74FC400593B83 /* MenuItemNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemNew.swift; sourceTree = "<group>"; };
 		DA3F0EB91FD7505A00593B83 /* Menu+OrderUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+OrderUser.swift"; sourceTree = "<group>"; };
 		DA3F0EBC1FD7509500593B83 /* Menu+OrderAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+OrderAdmin.swift"; sourceTree = "<group>"; };
+		DA58C6E21FD9E0E9000E6F30 /* NewAddSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddSection.swift; sourceTree = "<group>"; };
 		DA5A97CB1FD605E1006223BA /* MenuItemGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemGeneric.swift; sourceTree = "<group>"; };
 		DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHome.swift; sourceTree = "<group>"; };
 		DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerHome.swift; sourceTree = "<group>"; };
@@ -668,6 +670,7 @@
 			isa = PBXGroup;
 			children = (
 				DAF949FB1FD8BD13001BA32E /* NewAdd.swift */,
+				DA58C6E21FD9E0E9000E6F30 /* NewAddSection.swift */,
 			);
 			path = NewAdd;
 			sourceTree = "<group>";
@@ -903,6 +906,7 @@
 				DA91EB131FD62C1F0063560D /* ViewSpinner+Constants.swift in Sources */,
 				DAF949F41FD8BC38001BA32E /* ArchNewAdd.swift in Sources */,
 				DA91EAEF1FD62C1F0063560D /* ViewMenu+Synth.swift in Sources */,
+				DA58C6E31FD9E0E9000E6F30 /* NewAddSection.swift in Sources */,
 				DA11BA101FD8FD240038F9B0 /* ViewNewAdd+Factory.swift in Sources */,
 				DACF55461FD7661E00069701 /* ExtensionNSManagedObject.swift in Sources */,
 				DA9089811FD4CE2E00C1208A /* ControllerParent+Orientation.swift in Sources */,
