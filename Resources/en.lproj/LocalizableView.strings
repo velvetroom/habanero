@@ -1,3 +1,4 @@
-ViewNewBar_labelTitle="New Recipe";
+ViewNewBar_labelTitle="New Recipes";
 ViewNewListHeader_labelTitle="Recipes in process";
 ViewNewBar_buttonAdd="Add";
+ViewNewAddBar_labelTitle="Add Recipe";
