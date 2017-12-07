@@ -13,6 +13,7 @@
 		DA11BA0C1FD8F3DD0038F9B0 /* ViewBarBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11BA0A1FD8F3DD0038F9B0 /* ViewBarBack.swift */; };
 		DA11BA0E1FD8F6E90038F9B0 /* ViewNewAddBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11BA0D1FD8F6E90038F9B0 /* ViewNewAddBar.swift */; };
 		DA11BA101FD8FD240038F9B0 /* ViewNewAdd+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11BA0F1FD8FD240038F9B0 /* ViewNewAdd+Factory.swift */; };
+		DA11BA121FD8FEEB0038F9B0 /* ViewNewAddListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11BA111FD8FEEB0038F9B0 /* ViewNewAddListHeader.swift */; };
 		DA177BEB1FD7758F003B3836 /* ViewNew+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA177BEA1FD7758F003B3836 /* ViewNew+Factory.swift */; };
 		DA177BED1FD77713003B3836 /* ViewNewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA177BEC1FD77713003B3836 /* ViewNewList.swift */; };
 		DA177BEF1FD77773003B3836 /* ViewNewListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA177BEE1FD77773003B3836 /* ViewNewListCell.swift */; };
@@ -201,6 +202,7 @@
 		DA11BA0A1FD8F3DD0038F9B0 /* ViewBarBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBarBack.swift; sourceTree = "<group>"; };
 		DA11BA0D1FD8F6E90038F9B0 /* ViewNewAddBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddBar.swift; sourceTree = "<group>"; };
 		DA11BA0F1FD8FD240038F9B0 /* ViewNewAdd+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAdd+Factory.swift"; sourceTree = "<group>"; };
+		DA11BA111FD8FEEB0038F9B0 /* ViewNewAddListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListHeader.swift; sourceTree = "<group>"; };
 		DA177BEA1FD7758F003B3836 /* ViewNew+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNew+Factory.swift"; sourceTree = "<group>"; };
 		DA177BEC1FD77713003B3836 /* ViewNewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewList.swift; sourceTree = "<group>"; };
 		DA177BEE1FD77773003B3836 /* ViewNewListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewListCell.swift; sourceTree = "<group>"; };
@@ -653,6 +655,7 @@
 				DA11BA0F1FD8FD240038F9B0 /* ViewNewAdd+Factory.swift */,
 				DA11BA0D1FD8F6E90038F9B0 /* ViewNewAddBar.swift */,
 				DA11BA061FD8F1DE0038F9B0 /* ViewNewAddList.swift */,
+				DA11BA111FD8FEEB0038F9B0 /* ViewNewAddListHeader.swift */,
 				DA11BA081FD8F2200038F9B0 /* ViewNewAddListCell.swift */,
 			);
 			path = NewAdd;
@@ -909,6 +912,7 @@
 				DA91EAED1FD62C1F0063560D /* ViewMenu.swift in Sources */,
 				DACF554C1FD7661E00069701 /* ExtensionUICollectionReusableView.swift in Sources */,
 				DA9089801FD4CE2E00C1208A /* Controller.swift in Sources */,
+				DA11BA121FD8FEEB0038F9B0 /* ViewNewAddListHeader.swift in Sources */,
 				DACF55401FD7661E00069701 /* ExtensionUIFont.swift in Sources */,
 				DA9089861FD4CE2E00C1208A /* ControllerParent.swift in Sources */,
 				DA91EB151FD62C1F0063560D /* ViewGradient.swift in Sources */,
