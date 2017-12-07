@@ -8,7 +8,7 @@ class ViewBarBack<A>:ViewBar<A> where A.C:Controller<A>
     {
         super.init(controller:controller)
         
-        factoryBackButton()
+        self.factoryBackButton()
     }
     
     required init?(coder:NSCoder)
@@ -22,10 +22,22 @@ class ViewBarBack<A>:ViewBar<A> where A.C:Controller<A>
     {
         let buttonBack:UIButton = UIButton()
         buttonBack.translatesAutoresizingMaskIntoConstraints = false
-        
+        buttonBack.setImage(
+            #imageLiteral(resourceName: "assetGenericBack").withRenderingMode(UIImageRenderingMode.alwaysOriginal),
+            for:UIControlState.normal)
+        buttonBack.setImage(
+            #imageLiteral(resourceName: "assetGenericBack").withRenderingMode(UIImageRenderingMode.alwaysTemplate),
+            for:UIControlState.highlighted)
+        buttonBack.imageView!.tintColor = UIColor.colourBackgroundGray
+        buttonBack.imageView!.clipsToBounds = true
+        buttonBack.imageView!.contentMode = UIViewContentMode.center
+        buttonBack.addTarget(
+            self,
+            action:#selector(self.selectorButtonBack(sender:)),
+            for:UIControlEvents.touchUpInside)
         self.buttonBack = buttonBack
         
-        addSubview(buttonBack)
+        self.addSubview(buttonBack)
         
         NSLayoutConstraint.topToTop(
             view:buttonBack,
