@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA11BA071FD8F1DE0038F9B0 /* ViewNewAddInfoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11BA061FD8F1DE0038F9B0 /* ViewNewAddInfoList.swift */; };
 		DA177BEB1FD7758F003B3836 /* ViewNew+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA177BEA1FD7758F003B3836 /* ViewNew+Factory.swift */; };
 		DA177BED1FD77713003B3836 /* ViewNewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA177BEC1FD77713003B3836 /* ViewNewList.swift */; };
 		DA177BEF1FD77773003B3836 /* ViewNewListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA177BEE1FD77773003B3836 /* ViewNewListCell.swift */; };
@@ -190,6 +191,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA11BA061FD8F1DE0038F9B0 /* ViewNewAddInfoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddInfoList.swift; sourceTree = "<group>"; };
 		DA177BEA1FD7758F003B3836 /* ViewNew+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNew+Factory.swift"; sourceTree = "<group>"; };
 		DA177BEC1FD77713003B3836 /* ViewNewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewList.swift; sourceTree = "<group>"; };
 		DA177BEE1FD77773003B3836 /* ViewNewListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewListCell.swift; sourceTree = "<group>"; };
@@ -638,6 +640,7 @@
 			isa = PBXGroup;
 			children = (
 				DAF949F81FD8BCC6001BA32E /* ViewNewAdd.swift */,
+				DA11BA061FD8F1DE0038F9B0 /* ViewNewAddInfoList.swift */,
 			);
 			path = NewAdd;
 			sourceTree = "<group>";
@@ -854,6 +857,7 @@
 				DA177BF51FD7792C003B3836 /* ViewBar.swift in Sources */,
 				DA91EB011FD62C1F0063560D /* ViewParent+Gesture.swift in Sources */,
 				DA3F0EBD1FD7509500593B83 /* Menu+OrderAdmin.swift in Sources */,
+				DA11BA071FD8F1DE0038F9B0 /* ViewNewAddInfoList.swift in Sources */,
 				DA91EAF51FD62C1F0063560D /* ViewParent.swift in Sources */,
 				DACF55421FD7661E00069701 /* ExtensionUIImage.swift in Sources */,
 				DACF55361FD7661E00069701 /* ExtensionString+Constants.swift in Sources */,
