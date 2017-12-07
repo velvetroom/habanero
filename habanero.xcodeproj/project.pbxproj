@@ -186,6 +186,7 @@
 		DAF949F41FD8BC38001BA32E /* ArchNewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F31FD8BC38001BA32E /* ArchNewAdd.swift */; };
 		DAF949F61FD8BC6F001BA32E /* ControllerNewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F51FD8BC6F001BA32E /* ControllerNewAdd.swift */; };
 		DAF949F91FD8BCC6001BA32E /* ViewNewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F81FD8BCC6001BA32E /* ViewNewAdd.swift */; };
+		DAF949FC1FD8BD13001BA32E /* NewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949FB1FD8BD13001BA32E /* NewAdd.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -297,6 +298,7 @@
 		DAF949F31FD8BC38001BA32E /* ArchNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNewAdd.swift; sourceTree = "<group>"; };
 		DAF949F51FD8BC6F001BA32E /* ControllerNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerNewAdd.swift; sourceTree = "<group>"; };
 		DAF949F81FD8BCC6001BA32E /* ViewNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAdd.swift; sourceTree = "<group>"; };
+		DAF949FB1FD8BD13001BA32E /* NewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAdd.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -469,6 +471,7 @@
 				DA9088D41FD4C65F00C1208A /* Home */,
 				DA9088D51FD4C65F00C1208A /* Menu */,
 				DA84C0F31FD73FF7008959EA /* New */,
+				DAF949FA1FD8BD08001BA32E /* NewAdd */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -635,6 +638,14 @@
 			isa = PBXGroup;
 			children = (
 				DAF949F81FD8BCC6001BA32E /* ViewNewAdd.swift */,
+			);
+			path = NewAdd;
+			sourceTree = "<group>";
+		};
+		DAF949FA1FD8BD08001BA32E /* NewAdd */ = {
+			isa = PBXGroup;
+			children = (
+				DAF949FB1FD8BD13001BA32E /* NewAdd.swift */,
 			);
 			path = NewAdd;
 			sourceTree = "<group>";
@@ -905,6 +916,7 @@
 				DA9089831FD4CE2E00C1208A /* ControllerParent+Menu.swift in Sources */,
 				DA91EAEB1FD62C1F0063560D /* ViewMenu+Collection.swift in Sources */,
 				DA84C0F81FD7403D008959EA /* ViewNew.swift in Sources */,
+				DAF949FC1FD8BD13001BA32E /* NewAdd.swift in Sources */,
 				DA177BEF1FD77773003B3836 /* ViewNewListCell.swift in Sources */,
 				DA91EB071FD62C1F0063560D /* ViewAlert.swift in Sources */,
 				DA70AFC61FD5AABF0016B0DC /* Home.swift in Sources */,
