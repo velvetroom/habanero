@@ -48,4 +48,9 @@ final class ViewNewAddListHeader:UICollectionReusableView
     }
     
     //MARK: internal
+    
+    func config(model:NewAddSection)
+    {
+        self.labelTitle.text = model.title
+    }
 }
