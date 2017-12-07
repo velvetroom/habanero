@@ -183,6 +183,7 @@
 		DACF554D1FD7661E00069701 /* ExtensionURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF552A1FD7661E00069701 /* ExtensionURL.swift */; };
 		DACF554E1FD7661E00069701 /* ExtensionURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF552A1FD7661E00069701 /* ExtensionURL.swift */; };
 		DAF949F21FD8B47D001BA32E /* ViewNewBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F11FD8B47D001BA32E /* ViewNewBar+Constants.swift */; };
+		DAF949F41FD8BC38001BA32E /* ArchNewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F31FD8BC38001BA32E /* ArchNewAdd.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -291,6 +292,7 @@
 		DACF55291FD7661E00069701 /* ExtensionUICollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUICollectionReusableView.swift; sourceTree = "<group>"; };
 		DACF552A1FD7661E00069701 /* ExtensionURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionURL.swift; sourceTree = "<group>"; };
 		DAF949F11FD8B47D001BA32E /* ViewNewBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewBar+Constants.swift"; sourceTree = "<group>"; };
+		DAF949F31FD8BC38001BA32E /* ArchNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNewAdd.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -450,6 +452,7 @@
 				DA9088CF1FD4C65F00C1208A /* Arch.swift */,
 				DA9088D01FD4C65F00C1208A /* ArchHome.swift */,
 				DA84C0EE1FD73F59008959EA /* ArchNew.swift */,
+				DAF949F31FD8BC38001BA32E /* ArchNewAdd.swift */,
 			);
 			path = Architecture;
 			sourceTree = "<group>";
@@ -847,6 +850,7 @@
 				DA177BF11FD77874003B3836 /* ViewNewBar.swift in Sources */,
 				DACF55301FD7661E00069701 /* ExtensionUIColor.swift in Sources */,
 				DA91EB131FD62C1F0063560D /* ViewSpinner+Constants.swift in Sources */,
+				DAF949F41FD8BC38001BA32E /* ArchNewAdd.swift in Sources */,
 				DA91EAEF1FD62C1F0063560D /* ViewMenu+Synth.swift in Sources */,
 				DACF55461FD7661E00069701 /* ExtensionNSManagedObject.swift in Sources */,
 				DA9089811FD4CE2E00C1208A /* ControllerParent+Orientation.swift in Sources */,
