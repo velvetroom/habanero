@@ -10,11 +10,6 @@ final class ViewNewAddList:ViewCollection<ArchNewAdd, ViewNewListCell, ViewColle
         self.registerHeader(header:ViewNewAddListHeader.self)
         self.flow.minimumLineSpacing = ViewGlobal.Constants.interCellSpace
         self.flow.minimumInteritemSpacing = ViewGlobal.Constants.interCellSpace
-        self.flow.sectionInset = UIEdgeInsets(
-            top:0,
-            left:0,
-            bottom:ViewGlobal.Constants.menuHeight,
-            right:0)
     }
     
     required init?(coder:NSCoder)

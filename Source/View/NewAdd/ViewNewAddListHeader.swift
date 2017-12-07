@@ -27,7 +27,7 @@ final class ViewNewAddListHeader:UICollectionReusableView
         labelTitle.isUserInteractionEnabled = false
         labelTitle.translatesAutoresizingMaskIntoConstraints = false
         labelTitle.backgroundColor = UIColor.clear
-        labelTitle.textColor = UIColor(white:0, alpha:0.5)
+        labelTitle.textColor = UIColor(white:0, alpha:0.6)
         labelTitle.font = UIFont.regular(size:ViewGlobal.Constants.barTitleFontSize)
         self.labelTitle = labelTitle
         

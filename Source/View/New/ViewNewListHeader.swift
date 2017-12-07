@@ -14,7 +14,7 @@ final class ViewNewListHeader:UICollectionReusableView
         labelTitle.translatesAutoresizingMaskIntoConstraints = false
         labelTitle.backgroundColor = UIColor.clear
         labelTitle.font = UIFont.regular(size:ViewNewListHeader.Constants.titleFontSize)
-        labelTitle.textColor = UIColor(white:0, alpha:0.5)
+        labelTitle.textColor = UIColor(white:0, alpha:0.6)
         labelTitle.text = String.localizedView(key:"ViewNewListHeader_labelTitle")
         
         self.addSubview(labelTitle)
