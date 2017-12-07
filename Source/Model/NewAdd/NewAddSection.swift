@@ -4,5 +4,5 @@ struct NewAddSection
 {
     let title:String
     let headerHeight:CGFloat
-    let items:[Any]
+    let items:[NewAddSectionItemProtocol]
 }
