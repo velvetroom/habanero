@@ -184,6 +184,7 @@
 		DACF554E1FD7661E00069701 /* ExtensionURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF552A1FD7661E00069701 /* ExtensionURL.swift */; };
 		DAF949F21FD8B47D001BA32E /* ViewNewBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F11FD8B47D001BA32E /* ViewNewBar+Constants.swift */; };
 		DAF949F41FD8BC38001BA32E /* ArchNewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F31FD8BC38001BA32E /* ArchNewAdd.swift */; };
+		DAF949F61FD8BC6F001BA32E /* ControllerNewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F51FD8BC6F001BA32E /* ControllerNewAdd.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -293,6 +294,7 @@
 		DACF552A1FD7661E00069701 /* ExtensionURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionURL.swift; sourceTree = "<group>"; };
 		DAF949F11FD8B47D001BA32E /* ViewNewBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewBar+Constants.swift"; sourceTree = "<group>"; };
 		DAF949F31FD8BC38001BA32E /* ArchNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNewAdd.swift; sourceTree = "<group>"; };
+		DAF949F51FD8BC6F001BA32E /* ControllerNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerNewAdd.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -326,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				DA84C0F11FD73FCD008959EA /* ControllerNew.swift */,
+				DAF949F51FD8BC6F001BA32E /* ControllerNewAdd.swift */,
 			);
 			path = New;
 			sourceTree = "<group>";
@@ -825,6 +828,7 @@
 				DA84C0F21FD73FCD008959EA /* ControllerNew.swift in Sources */,
 				DA91EB1F1FD62C1F0063560D /* ViewGradient+Constants.swift in Sources */,
 				DA9089871FD4CE3300C1208A /* Arch.swift in Sources */,
+				DAF949F61FD8BC6F001BA32E /* ControllerNewAdd.swift in Sources */,
 				DA177BF51FD7792C003B3836 /* ViewBar.swift in Sources */,
 				DA91EB011FD62C1F0063560D /* ViewParent+Gesture.swift in Sources */,
 				DA3F0EBD1FD7509500593B83 /* Menu+OrderAdmin.swift in Sources */,
