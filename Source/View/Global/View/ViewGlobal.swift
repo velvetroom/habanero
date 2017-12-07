@@ -6,6 +6,7 @@ struct ViewGlobal
     {
         static let barHeight:CGFloat = 64
         static let barTitleFontSize:CGFloat = 14
+        static let barBackWidth:CGFloat = 70
         static let menuHeight:CGFloat = 50
         static let contentTop:CGFloat = 20
         static let borderWidth:CGFloat = 1
