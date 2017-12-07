@@ -185,6 +185,7 @@
 		DAF949F21FD8B47D001BA32E /* ViewNewBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F11FD8B47D001BA32E /* ViewNewBar+Constants.swift */; };
 		DAF949F41FD8BC38001BA32E /* ArchNewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F31FD8BC38001BA32E /* ArchNewAdd.swift */; };
 		DAF949F61FD8BC6F001BA32E /* ControllerNewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F51FD8BC6F001BA32E /* ControllerNewAdd.swift */; };
+		DAF949F91FD8BCC6001BA32E /* ViewNewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F81FD8BCC6001BA32E /* ViewNewAdd.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -295,6 +296,7 @@
 		DAF949F11FD8B47D001BA32E /* ViewNewBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewBar+Constants.swift"; sourceTree = "<group>"; };
 		DAF949F31FD8BC38001BA32E /* ArchNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNewAdd.swift; sourceTree = "<group>"; };
 		DAF949F51FD8BC6F001BA32E /* ControllerNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerNewAdd.swift; sourceTree = "<group>"; };
+		DAF949F81FD8BCC6001BA32E /* ViewNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAdd.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -515,6 +517,7 @@
 				DA177BF21FD77915003B3836 /* Shared */,
 				DA9088F11FD4C65F00C1208A /* Home */,
 				DA84C0F61FD7402F008959EA /* New */,
+				DAF949F71FD8BCB2001BA32E /* NewAdd */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -626,6 +629,14 @@
 				DACF552A1FD7661E00069701 /* ExtensionURL.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DAF949F71FD8BCB2001BA32E /* NewAdd */ = {
+			isa = PBXGroup;
+			children = (
+				DAF949F81FD8BCC6001BA32E /* ViewNewAdd.swift */,
+			);
+			path = NewAdd;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -902,6 +913,7 @@
 				DA992D791FD61ED700A6CFEF /* MenuItemGenericProtocol.swift in Sources */,
 				DACF553A1FD7661E00069701 /* ExtensionURLResponse.swift in Sources */,
 				DA9089891FD4CE3700C1208A /* Model.swift in Sources */,
+				DAF949F91FD8BCC6001BA32E /* ViewNewAdd.swift in Sources */,
 				DA91EAFB1FD62C1F0063560D /* ViewMain.swift in Sources */,
 				DACF55081FD7656F00069701 /* habanero.xcdatamodeld in Sources */,
 				DA177C041FD784AF003B3836 /* ViewNewList+Constants.swift in Sources */,
