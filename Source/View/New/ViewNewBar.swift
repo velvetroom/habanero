@@ -14,6 +14,14 @@ final class ViewNewBar:ViewBar<ArchNew>
         return nil
     }
     
+    //MARK: selectors
+    
+    @objc
+    private func selectorButtonAdd(sender button:UIButton)
+    {
+        self.controller.transitionToNewAdd()
+    }
+    
     //MARK: private
     
     private func factoryBarViews()
@@ -30,6 +38,10 @@ final class ViewNewBar:ViewBar<ArchNew>
             String.localizedView(key:"ViewNewBar_buttonAdd"),
             for:UIControlState())
         buttonAdd.titleLabel!.font = UIFont.bold(size:ViewGlobal.Constants.barTitleFontSize)
+        buttonAdd.addTarget(
+            self,
+            action:#selector(self.selectorButtonAdd(sender:)),
+            for:UIControlEvents.touchUpInside)
         
         self.labelTitle.text = String.localizedView(key:"ViewNewBar_labelTitle")
         
