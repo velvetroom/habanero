@@ -2,6 +2,8 @@ import UIKit
 
 final class ViewNewAdd:ViewMain<ArchNewAdd>
 {
+    weak var viewList:ViewNewAddList!
+    
     override var shouldPanBack:Bool
     {
         get
