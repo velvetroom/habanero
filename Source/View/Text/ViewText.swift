@@ -3,7 +3,7 @@ import UIKit
 final class ViewText:ViewMain<ArchText>
 {
     weak var viewInput:ViewTextInput!
-    weak var layoutInputBottom:NSLayoutConstraint!
+    weak var layoutBarBottom:NSLayoutConstraint!
     
     required init(controller:ControllerText)
     {
@@ -58,7 +58,7 @@ final class ViewText:ViewMain<ArchText>
             keyboardHeight = 0
         }
         
-        self.layoutInputBottom.constant = -keyboardHeight
+        self.layoutBarBottom.constant = -keyboardHeight
         
         UIView.animate(withDuration:animationDuration.doubleValue)
         { [weak self] in

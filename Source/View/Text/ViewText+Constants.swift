@@ -4,6 +4,6 @@ extension ViewText
 {
     struct Constants
     {
-        
+        static let barHeight:CGFloat = 50
     }
 }
