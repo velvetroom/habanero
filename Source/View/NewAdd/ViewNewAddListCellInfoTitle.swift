@@ -2,6 +2,7 @@ import UIKit
 
 final class ViewNewAddListCellInfoTitle:ViewNewAddListCell
 {
+    private weak var button:UIButton!
     private weak var labelContent:UILabel!
     
     override func factoryViews()
@@ -12,8 +13,17 @@ final class ViewNewAddListCellInfoTitle:ViewNewAddListCell
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(
             self,
-            action:#selector(self.selectorButton(sender:)),
+            action:#selector(self.selectorButtonTouch(sender:)),
             for:UIControlEvents.touchUpInside)
+        button.addTarget(
+            self,
+            action:#selector(self.selectorButtonHighlighted(sender:)),
+            for:UIControlEvents.touchDown)
+        button.addTarget(
+            self,
+            action:#selector(self.selectorButtonReleased(sender:)),
+            for:UIControlEvents.touchUpOutside)
+        self.button = button
         
         let labelTitle:UILabel = UILabel()
         labelTitle.isUserInteractionEnabled = false
@@ -48,8 +58,33 @@ final class ViewNewAddListCellInfoTitle:ViewNewAddListCell
     //MARK: selectors
     
     @objc
-    private func selectorButton(sender button:UIButton)
+    private func selectorButtonTouch(sender button:UIButton)
     {
+        self.showReleased()
         self.controller?.editInfoTitle()
+    }
+    
+    @objc
+    private func selectorButtonHighlighted(sender button:UIButton)
+    {
+        self.showHighlighted()
+    }
+    
+    @objc
+    private func selectorButtonReleased(sender button:UIButton)
+    {
+        self.showReleased()
+    }
+    
+    //MARK: private
+    
+    private func showHighlighted()
+    {
+        self.button.backgroundColor = UIColor(white:1, alpha:0.9)
+    }
+    
+    private func showReleased()
+    {
+        self.button.backgroundColor = UIColor.clear
     }
 }
