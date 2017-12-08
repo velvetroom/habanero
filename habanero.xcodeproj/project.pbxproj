@@ -199,6 +199,8 @@
 		DAA333DB1FDB17EA002D766C /* Database+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333D61FDB17EA002D766C /* Database+Constants.swift */; };
 		DAA333DC1FDB17EA002D766C /* Database+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333D61FDB17EA002D766C /* Database+Constants.swift */; };
 		DAA333DE1FDB1D81002D766C /* New+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333DD1FDB1D81002D766C /* New+Create.swift */; };
+		DAA333E01FDB2694002D766C /* NewAdd+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333DF1FDB2694002D766C /* NewAdd+Load.swift */; };
+		DAA333E21FDB29D8002D766C /* NewAdd+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333E11FDB29D8002D766C /* NewAdd+Info.swift */; };
 		DACF55071FD7656F00069701 /* habanero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DACF55051FD7656E00069701 /* habanero.xcdatamodeld */; };
 		DACF55081FD7656F00069701 /* habanero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DACF55051FD7656E00069701 /* habanero.xcdatamodeld */; };
 		DACF552B1FD7661E00069701 /* ExtensionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55191FD7661E00069701 /* ExtensionDictionary.swift */; };
@@ -368,6 +370,8 @@
 		DAA333D51FDB17EA002D766C /* Database+Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database+Factory.swift"; sourceTree = "<group>"; };
 		DAA333D61FDB17EA002D766C /* Database+Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database+Constants.swift"; sourceTree = "<group>"; };
 		DAA333DD1FDB1D81002D766C /* New+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "New+Create.swift"; sourceTree = "<group>"; };
+		DAA333DF1FDB2694002D766C /* NewAdd+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Load.swift"; sourceTree = "<group>"; };
+		DAA333E11FDB29D8002D766C /* NewAdd+Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Info.swift"; sourceTree = "<group>"; };
 		DACF55061FD7656E00069701 /* habanero.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = habanero.xcdatamodel; sourceTree = "<group>"; };
 		DACF550A1FD7658500069701 /* userInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = userInfo.plist; sourceTree = "<group>"; };
 		DACF550B1FD7658500069701 /* adminInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = adminInfo.plist; sourceTree = "<group>"; };
@@ -807,8 +811,10 @@
 			isa = PBXGroup;
 			children = (
 				DAF949FB1FD8BD13001BA32E /* NewAdd.swift */,
-				DA58C6E61FD9E216000E6F30 /* NewAdd+Factory.swift */,
 				DA58C6E81FD9EAFB000E6F30 /* NewAdd+Constants.swift */,
+				DA58C6E61FD9E216000E6F30 /* NewAdd+Factory.swift */,
+				DAA333DF1FDB2694002D766C /* NewAdd+Load.swift */,
+				DAA333E11FDB29D8002D766C /* NewAdd+Info.swift */,
 				DA71D6721FDA44E2003A33E1 /* NewAddSectionProtocol.swift */,
 				DA58C6E41FD9E12A000E6F30 /* NewAddSectionItemProtocol.swift */,
 				DA71D6761FDA4539003A33E1 /* NewAddSectionInfo.swift */,
@@ -1037,6 +1043,7 @@
 				DA91EB1F1FD62C1F0063560D /* ViewGradient+Constants.swift in Sources */,
 				DA9089871FD4CE3300C1208A /* Arch.swift in Sources */,
 				DA71D68D1FDA6262003A33E1 /* ControllerNewAdd+Info.swift in Sources */,
+				DAA333E21FDB29D8002D766C /* NewAdd+Info.swift in Sources */,
 				DAF949F61FD8BC6F001BA32E /* ControllerNewAdd.swift in Sources */,
 				DA177BF51FD7792C003B3836 /* ViewBar.swift in Sources */,
 				DA91EB011FD62C1F0063560D /* ViewParent+Gesture.swift in Sources */,
@@ -1119,6 +1126,7 @@
 				DA71D69C1FDA65AB003A33E1 /* ViewText.swift in Sources */,
 				DA3F0EB81FD74FC400593B83 /* MenuItemNew.swift in Sources */,
 				DA177C021FD784A3003B3836 /* ViewNewList+Config.swift in Sources */,
+				DAA333E01FDB2694002D766C /* NewAdd+Load.swift in Sources */,
 				DAA333DE1FDB1D81002D766C /* New+Create.swift in Sources */,
 				DA3F0EB61FD74C8700593B83 /* Menu+FactoryAdmin.swift in Sources */,
 				DA177C001FD78361003B3836 /* ViewNewListHeader+Constants.swift in Sources */,

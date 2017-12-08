@@ -6,20 +6,20 @@ struct NewAddSectionInfo:NewAddSectionProtocol
     let footerReusableIdentifier:String
     let headerHeight:CGFloat
     let items:[NewAddSectionItemProtocol]
-    
-    init()
+
+    init(build:Build)
     {
         self.title = String.localizedModel(key:"NewAdd_infoSectionTitle")
         self.footerReusableIdentifier = ViewNewAddListFooterInfo.reusableIdentifier
         self.headerHeight = NewAdd.Constants.headerInfoHeight
-        self.items = NewAddSectionInfo.factoryItems()
+        self.items = NewAddSectionInfo.factoryItems(build:build)
     }
     
     //MARK: private
     
-    private static func factoryItems() -> [NewAddSectionItemProtocol]
+    private static func factoryItems(build:Build) -> [NewAddSectionItemProtocol]
     {
-        let itemTitle:NewAddSectionItemInfoTitle = NewAddSectionItemInfoTitle(title:nil)
+        let itemTitle:NewAddSectionItemInfoTitle = NewAddSectionItemInfoTitle(title:build.title)
         
         let items:[NewAddSectionItemProtocol] = [
             itemTitle]

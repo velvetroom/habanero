@@ -52,10 +52,21 @@ extension ControllerNewAdd
     
     func editInfoTitle()
     {
-        let controller:ControllerText = ControllerText(text:"")
+        let title:String
+        
+        if let currentTitle:String = self.model.build?.title
+        {
+            title = currentTitle
+        }
+        else
+        {
+            title = String()
+        }
+        
+        let controller:ControllerText = ControllerText(text:title)
         { [weak self] (text:String) in
             
-            print(text)
+            self?.model.editTitle(title:text)
         }
         
         self.parentController?.push(

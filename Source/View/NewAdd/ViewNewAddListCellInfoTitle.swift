@@ -33,6 +33,15 @@ final class ViewNewAddListCellInfoTitle:ViewNewAddListCell
         labelTitle.textColor = UIColor.colourBackgroundDark
         labelTitle.text = String.localizedView(key:"ViewNewAddListCellInfoTitle_labelTitle")
         
+        let labelContent:UILabel = UILabel()
+        labelContent.isUserInteractionEnabled = false
+        labelContent.translatesAutoresizingMaskIntoConstraints = false
+        labelContent.backgroundColor = UIColor.clear
+        labelContent.font = UIFont.regular(size:ViewNewAddListCellInfoTitle.Constants.contentFontSize)
+        labelContent.textColor = UIColor(white:0, alpha:0.6)
+        labelTitle.numberOfLines = 0
+        self.labelContent = labelContent
+        
         self.addSubview(labelTitle)
         self.addSubview(button)
         
@@ -53,6 +62,36 @@ final class ViewNewAddListCellInfoTitle:ViewNewAddListCell
         NSLayoutConstraint.equals(
             view:button,
             toView:self)
+        
+        NSLayoutConstraint.topToBottom(
+            view:labelContent,
+            toView:self)
+        NSLayoutConstraint.heightGreaterOrEqual(
+            view:labelContent)
+        NSLayoutConstraint.leftToLeft(
+            view:labelContent,
+            toView:self,
+            constant:ViewNewAddList.Constants.marginHorizontal)
+        NSLayoutConstraint.rightToRight(
+            view:labelContent,
+            toView:self,
+            constant:-ViewNewAddList.Constants.marginHorizontal)
+    }
+    
+    override func config(
+        controller:ControllerNewAdd,
+        model:NewAddSectionItemProtocol)
+    {
+        guard
+            
+            let model:NewAddSectionItemInfoTitle = model as? NewAddSectionItemInfoTitle
+        
+        else
+        {
+            return
+        }
+        
+        self.labelContent.text = model.title
     }
     
     //MARK: selectors

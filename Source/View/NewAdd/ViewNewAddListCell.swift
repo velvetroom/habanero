@@ -21,6 +21,8 @@ class ViewNewAddListCell:UICollectionViewCell
     
     //MARK: internal
     
+    func factoryViews() { }
+    
     func config(
         controller:ControllerNewAdd,
         model:NewAddSectionItemProtocol)
@@ -28,6 +30,4 @@ class ViewNewAddListCell:UICollectionViewCell
         self.controller = controller
         self.model = model
     }
-    
-    func factoryViews() { }
 }

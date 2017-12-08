@@ -6,4 +6,6 @@ protocol NewAddSectionProtocol
     var footerReusableIdentifier:String  { get }
     var headerHeight:CGFloat  { get }
     var items:[NewAddSectionItemProtocol]  { get }
+    
+    init(build:Build)
 }

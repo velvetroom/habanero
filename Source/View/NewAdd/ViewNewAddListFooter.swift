@@ -20,10 +20,10 @@ class ViewNewAddListFooter:UICollectionReusableView
     
     //MARK: internal
     
+    func factoryViews() { }
+    
     func config(controller:ControllerNewAdd)
     {
         self.controller = controller
     }
-    
-    func factoryViews() { }
 }

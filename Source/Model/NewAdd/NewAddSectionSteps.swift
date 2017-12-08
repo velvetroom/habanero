@@ -7,7 +7,7 @@ struct NewAddSectionSteps:NewAddSectionProtocol
     let headerHeight:CGFloat
     let items:[NewAddSectionItemProtocol]
     
-    init()
+    init(build:Build)
     {
         self.title = String.localizedModel(key:"NewAdd_stepsSectionTitle")
         self.footerReusableIdentifier = ViewNewAddListFooterSteps.reusableIdentifier

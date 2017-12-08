@@ -17,6 +17,24 @@ final class ControllerNewAdd:Controller<ArchNewAdd>
         return nil
     }
     
+    override func viewDidAppear(_ animated:Bool)
+    {
+        super.viewDidAppear(animated)
+        
+        self.model.load
+        { [weak self] in
+            
+            self?.updateSections()
+        }
+    }
+    
+    //MARK: private
+    
+    private func updateSections()
+    {
+        self.viewMain.viewList.collectionView.reloadData()
+    }
+    
     //MARK: internal
     
     func transitionBack()
