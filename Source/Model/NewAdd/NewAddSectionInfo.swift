@@ -20,9 +20,11 @@ struct NewAddSectionInfo:NewAddSectionProtocol
     private static func factoryItems(build:Build) -> [NewAddSectionItemProtocol]
     {
         let itemTitle:NewAddSectionItemInfoTitle = NewAddSectionItemInfoTitle(title:build.title)
+        let itemDuration:NewAddSectionItemInfoDuration = NewAddSectionItemInfoDuration(duration:build.duration)
         
         let items:[NewAddSectionItemProtocol] = [
-            itemTitle]
+            itemTitle,
+            itemDuration]
         
         return items
     }

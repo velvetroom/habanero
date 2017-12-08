@@ -13,6 +13,7 @@ extension ViewNewAddList
         self.registerFooter(footer:ViewNewAddListFooterIngredients.self)
         self.registerFooter(footer:ViewNewAddListFooterSteps.self)
         self.registerCell(cell:ViewNewAddListCellInfoTitle.self)
+        self.registerCell(cell:ViewNewAddListCellInfoDuration.self)
         
         self.flow.minimumLineSpacing = ViewGlobal.Constants.interCellSpace
         self.flow.minimumInteritemSpacing = ViewGlobal.Constants.interCellSpace
