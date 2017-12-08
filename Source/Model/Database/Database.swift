@@ -5,7 +5,7 @@ final class Database
 {
     let managedObjectContext:NSManagedObjectContext
     
-    init?(bundle:Bundle?)
+    init?(bundle:Bundle)
     {
         guard
             
@@ -23,9 +23,9 @@ final class Database
     
     func save(completion:@escaping(() -> ()))
     {
-        if managedObjectContext.hasChanges
+        if self.managedObjectContext.hasChanges
         {
-            managedObjectContext.perform
+            self.managedObjectContext.perform
             {
                 do
                 {
@@ -49,7 +49,7 @@ final class Database
     
     func create<T:NSManagedObject>(completion:@escaping((T) -> ()))
     {
-        managedObjectContext.perform
+        self.managedObjectContext.perform
         {
             guard
                 
@@ -81,7 +81,7 @@ final class Database
             predicate:predicate,
             sorters:sorters)
         
-        managedObjectContext.perform
+        self.managedObjectContext.perform
         {
             let data:[NSManagedObject]
             
@@ -109,7 +109,7 @@ final class Database
     
     func delete(data:NSManagedObject, completion:(() -> ())?)
     {
-        managedObjectContext.perform
+        self.managedObjectContext.perform
         {
             self.managedObjectContext.delete(data)
             completion?()

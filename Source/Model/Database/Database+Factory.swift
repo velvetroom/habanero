@@ -23,10 +23,10 @@ extension Database
     }
     
     private class func factoryCoordinator(
-        bundle:Bundle?,
+        bundle:Bundle,
         managedObjectModel:NSManagedObjectModel) -> NSPersistentStoreCoordinator?
     {
-        let url:URL = factoryCoordinatorUrl(bundle:bundle)
+        let url:URL = Database.factoryCoordinatorUrl(bundle:bundle)
         let persistentStoreCoordinator:NSPersistentStoreCoordinator = NSPersistentStoreCoordinator(
             managedObjectModel:managedObjectModel)
         
@@ -46,21 +46,11 @@ extension Database
         return persistentStoreCoordinator
     }
     
-    private class func factoryCoordinatorUrl(bundle:Bundle?) -> URL
+    private class func factoryCoordinatorUrl(bundle:Bundle) -> URL
     {
-        let storeBundle:Bundle
         let bundleIdentifier:String
         
-        if let bundle:Bundle = bundle
-        {
-            storeBundle = bundle
-        }
-        else
-        {
-            storeBundle = Bundle.main
-        }
-        
-        if let identifier:String = storeBundle.bundleIdentifier
+        if let identifier:String = bundle.bundleIdentifier
         {
             bundleIdentifier = identifier
         }
@@ -82,12 +72,12 @@ extension Database
     
     //MARK: internal
     
-    class func factoryContext(bundle:Bundle?) -> NSManagedObjectContext?
+    class func factoryContext(bundle:Bundle) -> NSManagedObjectContext?
     {
         guard
             
-            let managedObjectModel:NSManagedObjectModel = factoryModel(),
-            let persistentStoreCoordinator:NSPersistentStoreCoordinator = factoryCoordinator(
+            let managedObjectModel:NSManagedObjectModel = Database.factoryModel(),
+            let persistentStoreCoordinator:NSPersistentStoreCoordinator = Database.factoryCoordinator(
                 bundle:bundle,
                 managedObjectModel:managedObjectModel)
             
@@ -97,8 +87,7 @@ extension Database
         }
         
         let managedObjectContext:NSManagedObjectContext = NSManagedObjectContext(
-            concurrencyType:
-            NSManagedObjectContextConcurrencyType.privateQueueConcurrencyType)
+            concurrencyType:NSManagedObjectContextConcurrencyType.privateQueueConcurrencyType)
         managedObjectContext.persistentStoreCoordinator = persistentStoreCoordinator
         managedObjectContext.mergePolicy = NSMergePolicy(
             merge:NSMergePolicyType.mergeByPropertyStoreTrumpMergePolicyType)
