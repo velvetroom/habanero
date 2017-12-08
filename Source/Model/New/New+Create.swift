@@ -10,9 +10,22 @@ extension New
         { [weak self] (build:Build) in
             
             self?.database?.save
-            {
-                completion(build)
+            { [weak self] in
+                
+                self?.buildCreated(
+                    build:build,
+                    completion:completion)
             }
+        }
+    }
+    
+    private func buildCreated(
+        build:Build,
+        completion:@escaping((Build) -> ()))
+    {
+        DispatchQueue.main.async
+        {
+            completion(build)
         }
     }
     

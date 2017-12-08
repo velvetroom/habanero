@@ -6,9 +6,9 @@ extension NewAdd
     
     class func factorySections(build:Build) -> [NewAddSectionProtocol]
     {
-        let infoSection:NewAddSectionProtocol = NewAddSectionInfo(build:build)
-        let ingredientsSection:NewAddSectionProtocol = NewAddSectionIngredients(build:build)
-        let stepsSection:NewAddSectionProtocol = NewAddSectionSteps(build:build)
+        let infoSection:NewAddSectionInfo = NewAddSectionInfo(build:build)
+        let ingredientsSection:NewAddSectionIngredients = NewAddSectionIngredients(build:build)
+        let stepsSection:NewAddSectionSteps = NewAddSectionSteps(build:build)
         
         let sections:[NewAddSectionProtocol] = [
             infoSection,

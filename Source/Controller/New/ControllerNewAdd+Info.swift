@@ -52,15 +52,13 @@ extension ControllerNewAdd
     
     func editInfoTitle()
     {
-        let title:String
+        guard
+            
+            let title:String = self.model.build?.title
         
-        if let currentTitle:String = self.model.build?.title
-        {
-            title = currentTitle
-        }
         else
         {
-            title = String()
+            return
         }
         
         let controller:ControllerText = ControllerText(text:title)

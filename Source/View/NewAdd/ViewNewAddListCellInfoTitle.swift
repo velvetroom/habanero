@@ -22,7 +22,9 @@ final class ViewNewAddListCellInfoTitle:ViewNewAddListCell
         button.addTarget(
             self,
             action:#selector(self.selectorButtonReleased(sender:)),
-            for:UIControlEvents.touchUpOutside)
+            for:UIControlEvents([
+                UIControlEvents.touchCancel,
+                UIControlEvents.touchUpOutside]))
         self.button = button
         
         let labelTitle:UILabel = UILabel()
@@ -38,11 +40,12 @@ final class ViewNewAddListCellInfoTitle:ViewNewAddListCell
         labelContent.translatesAutoresizingMaskIntoConstraints = false
         labelContent.backgroundColor = UIColor.clear
         labelContent.font = UIFont.regular(size:ViewNewAddListCellInfoTitle.Constants.contentFontSize)
-        labelContent.textColor = UIColor(white:0, alpha:0.6)
-        labelTitle.numberOfLines = 0
+        labelContent.textColor = UIColor(white:0, alpha:0.5)
+        labelContent.numberOfLines = 0
         self.labelContent = labelContent
         
         self.addSubview(labelTitle)
+        self.addSubview(labelContent)
         self.addSubview(button)
         
         NSLayoutConstraint.topToTop(
@@ -65,7 +68,7 @@ final class ViewNewAddListCellInfoTitle:ViewNewAddListCell
         
         NSLayoutConstraint.topToBottom(
             view:labelContent,
-            toView:self)
+            toView:labelTitle)
         NSLayoutConstraint.heightGreaterOrEqual(
             view:labelContent)
         NSLayoutConstraint.leftToLeft(
@@ -82,6 +85,10 @@ final class ViewNewAddListCellInfoTitle:ViewNewAddListCell
         controller:ControllerNewAdd,
         model:NewAddSectionItemProtocol)
     {
+        super.config(
+            controller:controller,
+            model:model)
+        
         guard
             
             let model:NewAddSectionItemInfoTitle = model as? NewAddSectionItemInfoTitle
