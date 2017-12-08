@@ -4,7 +4,7 @@ extension New
 {
     //MARK: private
     
-    private func asyncLoad()
+    private func asyncLoad(completion:@escaping(() -> ()))
     {
         guard
             
@@ -13,6 +13,26 @@ extension New
         else
         {
             return
+        }
+        
+        database.fetch
+        { [weak self] (builds:[Build]) in
+            
+            self?.buildLoaded(
+                builds:builds,
+                completion:completion)
+        }
+    }
+    
+    private func buildLoaded(
+        builds:[Build],
+        completion:@escaping(() -> ()))
+    {
+        DispatchQueue.main.async
+        { [weak self] in
+            
+            self?.builds = builds
+            completion()
         }
     }
     
@@ -35,12 +55,12 @@ extension New
     
     //MARK: internal
     
-    func load()
+    func load(completion:@escaping(() -> ()))
     {
         DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
         { [weak self] in
             
-            self?.asyncLoad()
+            self?.asyncLoad(completion:completion)
         }
     }
 }
