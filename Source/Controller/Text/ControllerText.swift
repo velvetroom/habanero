@@ -21,26 +21,16 @@ final class ControllerText:Controller<ArchText>, UITextViewDelegate
     {
         super.viewDidAppear(animated)
         
-        guard
-            
-            let viewInput:ViewTextInput = self.model.view?.viewInput
-        
-        else
-        {
-            return
-        }
-        
-        viewInput.delegate = self
-        viewInput.becomeFirstResponder()
+        self.viewMain.viewInput.delegate = self
+        self.viewMain.viewInput.becomeFirstResponder()
     }
     
     //MARK: internal
     
     func doneEditing()
     {
-        self.model.view?.viewInput.resignFirstResponder()
+        self.viewMain.viewInput.resignFirstResponder()
         self.model.sendCompletion()
-        
         self.parentController?.pop(vertical:ControllerTransition.Vertical.bottom)
     }
     
