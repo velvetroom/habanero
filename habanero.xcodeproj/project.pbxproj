@@ -206,6 +206,7 @@
 		DAA333DE1FDB1D81002D766C /* New+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333DD1FDB1D81002D766C /* New+Create.swift */; };
 		DAA333E01FDB2694002D766C /* NewAdd+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333DF1FDB2694002D766C /* NewAdd+Load.swift */; };
 		DAA333E21FDB29D8002D766C /* NewAdd+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333E11FDB29D8002D766C /* NewAdd+Info.swift */; };
+		DACF22131FDB5C3400D6B192 /* BuildDurationMinutes.plist in Resources */ = {isa = PBXBuildFile; fileRef = DACF22121FDB5C3400D6B192 /* BuildDurationMinutes.plist */; };
 		DACF55071FD7656F00069701 /* habanero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DACF55051FD7656E00069701 /* habanero.xcdatamodeld */; };
 		DACF55081FD7656F00069701 /* habanero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DACF55051FD7656E00069701 /* habanero.xcdatamodeld */; };
 		DACF552B1FD7661E00069701 /* ExtensionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55191FD7661E00069701 /* ExtensionDictionary.swift */; };
@@ -383,6 +384,7 @@
 		DAA333DD1FDB1D81002D766C /* New+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "New+Create.swift"; sourceTree = "<group>"; };
 		DAA333DF1FDB2694002D766C /* NewAdd+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Load.swift"; sourceTree = "<group>"; };
 		DAA333E11FDB29D8002D766C /* NewAdd+Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Info.swift"; sourceTree = "<group>"; };
+		DACF22121FDB5C3400D6B192 /* BuildDurationMinutes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = BuildDurationMinutes.plist; sourceTree = "<group>"; };
 		DACF55061FD7656E00069701 /* habanero.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = habanero.xcdatamodel; sourceTree = "<group>"; };
 		DACF550A1FD7658500069701 /* userInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = userInfo.plist; sourceTree = "<group>"; };
 		DACF550B1FD7658500069701 /* adminInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = adminInfo.plist; sourceTree = "<group>"; };
@@ -559,6 +561,7 @@
 				DA9088A21FD4C65F00C1208A /* InfoPlist.strings */,
 				DA9088A41FD4C65F00C1208A /* LocalizableView.strings */,
 				DA9088A61FD4C65F00C1208A /* LocalizableController.strings */,
+				DACF22121FDB5C3400D6B192 /* BuildDurationMinutes.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -945,6 +948,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA9089B41FD4CE5F00C1208A /* LocalizableController.strings in Resources */,
+				DACF22131FDB5C3400D6B192 /* BuildDurationMinutes.plist in Resources */,
 				DA3F0EB21FD7480A00593B83 /* menu.xcassets in Resources */,
 				DA9089B31FD4CE5F00C1208A /* LocalizableView.strings in Resources */,
 				DA9089B01FD4CE5800C1208A /* LaunchScreen.storyboard in Resources */,
