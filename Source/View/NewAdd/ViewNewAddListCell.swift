@@ -1,6 +1,6 @@
 import UIKit
 
-final class ViewNewAddListCell:UICollectionViewCell
+class ViewNewAddListCell:UICollectionViewCell
 {
     
 }
