@@ -1,6 +1,6 @@
-import Foundation
+import UIKit
 
-final class ControllerText:Controller<ArchText>
+final class ControllerText:Controller<ArchText>, UITextViewDelegate
 {
     init(
         text:String,
@@ -20,7 +20,18 @@ final class ControllerText:Controller<ArchText>
     override func viewDidAppear(_ animated:Bool)
     {
         super.viewDidAppear(animated)
-        self.model.view?.viewInput.becomeFirstResponder()
+        
+        guard
+            
+            let viewInput:ViewTextInput = self.model.view?.viewInput
+        
+        else
+        {
+            return
+        }
+        
+        viewInput.delegate = self
+        viewInput.becomeFirstResponder()
     }
     
     //MARK: internal
@@ -31,5 +42,12 @@ final class ControllerText:Controller<ArchText>
         self.model.sendCompletion()
         
         self.parentController?.pop(vertical:ControllerTransition.Vertical.bottom)
+    }
+    
+    //MARK: textView delegate
+    
+    func textViewDidEndEditing(_ textView:UITextView)
+    {
+        self.model.text = textView.text
     }
 }
