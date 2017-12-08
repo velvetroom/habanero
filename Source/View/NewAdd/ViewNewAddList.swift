@@ -22,7 +22,7 @@ final class ViewNewAddList:ViewCollection<ArchNewAdd, ViewNewListCell, ViewColle
         layout collectionViewLayout:UICollectionViewLayout,
         referenceSizeForHeaderInSection section:Int) -> CGSize
     {
-        let section:NewAddSection = self.controller.model.sections[section]
+        let section:NewAddSectionProtocol = self.controller.model.sections[section]
         let size:CGSize = CGSize(
             width:0,
             height:section.headerHeight)
@@ -51,7 +51,7 @@ final class ViewNewAddList:ViewCollection<ArchNewAdd, ViewNewListCell, ViewColle
         viewForSupplementaryElementOfKind kind:String,
         at indexPath:IndexPath) -> UICollectionReusableView
     {
-        let section:NewAddSection = self.controller.model.sections[indexPath.section]
+        let section:NewAddSectionProtocol = self.controller.model.sections[indexPath.section]
         let header:ViewNewAddListHeader = self.reusableAtIndex(
             kind:kind,
             indexPath:indexPath)

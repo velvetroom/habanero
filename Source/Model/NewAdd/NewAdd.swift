@@ -2,7 +2,7 @@ import Foundation
 
 final class NewAdd:Model<ArchNewAdd>
 {
-    let sections:[NewAddSection]
+    let sections:[NewAddSectionProtocol]
     
     required init()
     {
