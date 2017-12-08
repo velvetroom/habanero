@@ -67,6 +67,8 @@
 		DA71D6941FDA63FD003A33E1 /* ControllerText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6921FDA63FD003A33E1 /* ControllerText.swift */; };
 		DA71D6971FDA657E003A33E1 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6961FDA657E003A33E1 /* Text.swift */; };
 		DA71D6981FDA657E003A33E1 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6961FDA657E003A33E1 /* Text.swift */; };
+		DA71D69B1FDA65AB003A33E1 /* ViewText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D69A1FDA65AB003A33E1 /* ViewText.swift */; };
+		DA71D69C1FDA65AB003A33E1 /* ViewText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D69A1FDA65AB003A33E1 /* ViewText.swift */; };
 		DA753DAB1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA753DAC1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA84C0EF1FD73F59008959EA /* ArchNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C0EE1FD73F59008959EA /* ArchNew.swift */; };
@@ -272,6 +274,7 @@
 		DA71D68E1FDA633E003A33E1 /* ArchText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchText.swift; sourceTree = "<group>"; };
 		DA71D6921FDA63FD003A33E1 /* ControllerText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerText.swift; sourceTree = "<group>"; };
 		DA71D6961FDA657E003A33E1 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		DA71D69A1FDA65AB003A33E1 /* ViewText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewText.swift; sourceTree = "<group>"; };
 		DA753DA91FD5EB96007E5BC5 /* Design */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Design; sourceTree = "<group>"; };
 		DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = generic.xcassets; sourceTree = "<group>"; };
 		DA84C0EE1FD73F59008959EA /* ArchNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNew.swift; sourceTree = "<group>"; };
@@ -403,6 +406,14 @@
 			isa = PBXGroup;
 			children = (
 				DA71D6961FDA657E003A33E1 /* Text.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		DA71D6991FDA659B003A33E1 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				DA71D69A1FDA65AB003A33E1 /* ViewText.swift */,
 			);
 			path = Text;
 			sourceTree = "<group>";
@@ -604,6 +615,7 @@
 				DA9088F11FD4C65F00C1208A /* Home */,
 				DA84C0F61FD7402F008959EA /* New */,
 				DAF949F71FD8BCB2001BA32E /* NewAdd */,
+				DA71D6991FDA659B003A33E1 /* Text */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -905,6 +917,7 @@
 				DA71D6971FDA657E003A33E1 /* Text.swift in Sources */,
 				DA91EB041FD62C1F0063560D /* ViewCollection.swift in Sources */,
 				DACF552B1FD7661E00069701 /* ExtensionDictionary.swift in Sources */,
+				DA71D69B1FDA65AB003A33E1 /* ViewText.swift in Sources */,
 				DA5A97CC1FD605E1006223BA /* MenuItemGeneric.swift in Sources */,
 				DACF553F1FD7661E00069701 /* ExtensionUIFont.swift in Sources */,
 				DA91EAFE1FD62C1F0063560D /* ViewParent+Constants.swift in Sources */,
@@ -1036,6 +1049,7 @@
 				DACF552E1FD7661E00069701 /* ExtensionNotification.swift in Sources */,
 				DA90898C1FD4CE3E00C1208A /* MenuItemHome.swift in Sources */,
 				DA11BA141FD8FFE30038F9B0 /* ViewNewAddListHeader+Constants.swift in Sources */,
+				DA71D69C1FDA65AB003A33E1 /* ViewText.swift in Sources */,
 				DA3F0EB81FD74FC400593B83 /* MenuItemNew.swift in Sources */,
 				DA177C021FD784A3003B3836 /* ViewNewList+Config.swift in Sources */,
 				DA3F0EB61FD74C8700593B83 /* Menu+FactoryAdmin.swift in Sources */,
