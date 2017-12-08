@@ -40,6 +40,7 @@
 		DA5A97CC1FD605E1006223BA /* MenuItemGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A97CB1FD605E1006223BA /* MenuItemGeneric.swift */; };
 		DA5A97CD1FD6061B006223BA /* MenuItemGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A97CB1FD605E1006223BA /* MenuItemGeneric.swift */; };
 		DA5D69801FDB521400429F5D /* Build+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D697F1FDB521400429F5D /* Build+Constants.swift */; };
+		DA5D71C41FDB566D00429F5D /* ViewNewAddListCellInfoDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D71C31FDB566D00429F5D /* ViewNewAddListCellInfoDuration.swift */; };
 		DA70AFBF1FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
 		DA70AFC01FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
 		DA70AFC21FD5AA980016B0DC /* ControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */; };
@@ -278,6 +279,7 @@
 		DA5A97CB1FD605E1006223BA /* MenuItemGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemGeneric.swift; sourceTree = "<group>"; };
 		DA5D697F1FDB521400429F5D /* Build+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Build+Constants.swift"; sourceTree = "<group>"; };
 		DA5D71C21FDB52DE00429F5D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		DA5D71C31FDB566D00429F5D /* ViewNewAddListCellInfoDuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellInfoDuration.swift; sourceTree = "<group>"; };
 		DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHome.swift; sourceTree = "<group>"; };
 		DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerHome.swift; sourceTree = "<group>"; };
 		DA70AFC41FD5AABF0016B0DC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -819,6 +821,7 @@
 				DA11BA081FD8F2200038F9B0 /* ViewNewAddListCell.swift */,
 				DA71D6861FDA58E3003A33E1 /* ViewNewAddListCellInfoTitle.swift */,
 				DA71D68A1FDA5D37003A33E1 /* ViewNewAddListCellInfoTitle+Constants.swift */,
+				DA5D71C31FDB566D00429F5D /* ViewNewAddListCellInfoDuration.swift */,
 			);
 			path = NewAdd;
 			sourceTree = "<group>";
@@ -1136,6 +1139,7 @@
 				DAA333DC1FDB17EA002D766C /* Database+Constants.swift in Sources */,
 				DA9089931FD4CE3E00C1208A /* MenuItemProtocol.swift in Sources */,
 				DAF949F21FD8B47D001BA32E /* ViewNewBar+Constants.swift in Sources */,
+				DA5D71C41FDB566D00429F5D /* ViewNewAddListCellInfoDuration.swift in Sources */,
 				DA9089821FD4CE2E00C1208A /* ControllerParent+Constants.swift in Sources */,
 				DACF552E1FD7661E00069701 /* ExtensionNotification.swift in Sources */,
 				DA90898C1FD4CE3E00C1208A /* MenuItemHome.swift in Sources */,
