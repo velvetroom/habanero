@@ -1,6 +1,6 @@
 import UIKit
 
-final class ViewNewAddListFooterIngredients:UICollectionReusableView
+final class ViewNewAddListFooterIngredients:ViewNewAddListFooter
 {
     
 }
