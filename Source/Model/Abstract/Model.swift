@@ -2,7 +2,7 @@ import Foundation
 
 class Model<A:Arch>
 {
-    weak var view:A.V?
+    weak var controller:A.V.C?
     
     required init() { }
 }
