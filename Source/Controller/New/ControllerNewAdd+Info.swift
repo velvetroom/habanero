@@ -49,4 +49,9 @@ extension ControllerNewAdd
             animated:true,
             completion:nil)
     }
+    
+    func editInfoTitle()
+    {
+        
+    }
 }

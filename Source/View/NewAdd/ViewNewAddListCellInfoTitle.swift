@@ -50,6 +50,6 @@ final class ViewNewAddListCellInfoTitle:ViewNewAddListCell
     @objc
     private func selectorButton(sender button:UIButton)
     {
-        
+        self.controller?.editInfoTitle()
     }
 }
