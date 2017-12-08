@@ -4,6 +4,8 @@ final class ViewNewAddListFooterInfo:ViewNewAddListFooter
 {
     override func factoryViews()
     {
+        super.factoryViews()
+        
         let buttonDelete:UIButton = UIButton()
         buttonDelete.translatesAutoresizingMaskIntoConstraints = false
         buttonDelete.setTitleColor(

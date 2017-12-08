@@ -42,7 +42,7 @@ final class ViewNewAddListHeader:UICollectionReusableView
         NSLayoutConstraint.leftToLeft(
             view:labelTitle,
             toView:self,
-            constant:ViewNewAddListHeader.Constants.titleLeft)
+            constant:ViewNewAddList.Constants.marginHorizontal)
         NSLayoutConstraint.widthGreaterOrEqual(
             view:labelTitle)
     }

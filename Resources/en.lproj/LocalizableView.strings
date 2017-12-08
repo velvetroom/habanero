@@ -3,3 +3,4 @@ ViewNewListHeader_labelTitle="Recipes in process";
 ViewNewBar_buttonAdd="Add";
 ViewNewAddBar_labelTitle="Add Recipe";
 ViewNewAddListFooterInfo_buttonDelete="Delete";
+ViewNewAddListCellInfoTitle_labelTitle="Name";
