@@ -86,11 +86,12 @@ class ViewCollection<A, Cell:UICollectionViewCell, Flow:UICollectionViewFlowLayo
     
     final func reusableAtIndex<P:UICollectionReusableView>(
         kind:String,
-        indexPath:IndexPath) -> P
+        indexPath:IndexPath,
+        reusableIdentifier:String = P.reusableIdentifier) -> P
     {
         let reusable:P = self.collectionView.dequeueReusableSupplementaryView(
             ofKind:kind,
-            withReuseIdentifier:P.reusableIdentifier,
+            withReuseIdentifier:reusableIdentifier,
             for:indexPath) as! P
         
         return reusable
