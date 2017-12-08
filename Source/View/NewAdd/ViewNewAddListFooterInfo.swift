@@ -16,6 +16,10 @@ final class ViewNewAddListFooterInfo:ViewNewAddListFooter
             String.localizedView(key:"ViewNewAddListFooterInfo_buttonDelete"),
             for:UIControlState())
         buttonDelete.titleLabel!.font = UIFont.medium(size:ViewNewAddListFooterInfo.Constants.buttonFontSize)
+        buttonDelete.addTarget(
+            self,
+            action:#selector(self.selectorButtonDelete(sender:)),
+            for:UIControlEvents.touchUpInside)
 
         self.addSubview(buttonDelete)
         
@@ -28,5 +32,13 @@ final class ViewNewAddListFooterInfo:ViewNewAddListFooter
         NSLayoutConstraint.width(
             view:buttonDelete,
             constant:ViewNewAddListFooterInfo.Constants.buttonWidth)
+    }
+    
+    //MARK: selectors
+    
+    @objc
+    private func selectorButtonDelete(sender button:UIButton)
+    {
+        self.controller?.alertConfirmDelete()
     }
 }
