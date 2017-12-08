@@ -207,6 +207,7 @@
 		DAA333E01FDB2694002D766C /* NewAdd+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333DF1FDB2694002D766C /* NewAdd+Load.swift */; };
 		DAA333E21FDB29D8002D766C /* NewAdd+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333E11FDB29D8002D766C /* NewAdd+Info.swift */; };
 		DACF22131FDB5C3400D6B192 /* BuildDurationMinutes.plist in Resources */ = {isa = PBXBuildFile; fileRef = DACF22121FDB5C3400D6B192 /* BuildDurationMinutes.plist */; };
+		DACF22151FDB5D8A00D6B192 /* NewAddSectionItemInfoDuration+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF22141FDB5D8A00D6B192 /* NewAddSectionItemInfoDuration+Constants.swift */; };
 		DACF55071FD7656F00069701 /* habanero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DACF55051FD7656E00069701 /* habanero.xcdatamodeld */; };
 		DACF55081FD7656F00069701 /* habanero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DACF55051FD7656E00069701 /* habanero.xcdatamodeld */; };
 		DACF552B1FD7661E00069701 /* ExtensionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55191FD7661E00069701 /* ExtensionDictionary.swift */; };
@@ -385,6 +386,7 @@
 		DAA333DF1FDB2694002D766C /* NewAdd+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Load.swift"; sourceTree = "<group>"; };
 		DAA333E11FDB29D8002D766C /* NewAdd+Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Info.swift"; sourceTree = "<group>"; };
 		DACF22121FDB5C3400D6B192 /* BuildDurationMinutes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = BuildDurationMinutes.plist; sourceTree = "<group>"; };
+		DACF22141FDB5D8A00D6B192 /* NewAddSectionItemInfoDuration+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddSectionItemInfoDuration+Constants.swift"; sourceTree = "<group>"; };
 		DACF55061FD7656E00069701 /* habanero.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = habanero.xcdatamodel; sourceTree = "<group>"; };
 		DACF550A1FD7658500069701 /* userInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = userInfo.plist; sourceTree = "<group>"; };
 		DACF550B1FD7658500069701 /* adminInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = adminInfo.plist; sourceTree = "<group>"; };
@@ -849,6 +851,7 @@
 				DA71D67A1FDA4661003A33E1 /* NewAddSectionSteps.swift */,
 				DA71D6881FDA5985003A33E1 /* NewAddSectionItemInfoTitle.swift */,
 				DA5D71C71FDB56E200429F5D /* NewAddSectionItemInfoDuration.swift */,
+				DACF22141FDB5D8A00D6B192 /* NewAddSectionItemInfoDuration+Constants.swift */,
 			);
 			path = NewAdd;
 			sourceTree = "<group>";
@@ -1079,6 +1082,7 @@
 				DA91EB011FD62C1F0063560D /* ViewParent+Gesture.swift in Sources */,
 				DAA333DA1FDB17EA002D766C /* Database+Factory.swift in Sources */,
 				DA3F0EBD1FD7509500593B83 /* Menu+OrderAdmin.swift in Sources */,
+				DACF22151FDB5D8A00D6B192 /* NewAddSectionItemInfoDuration+Constants.swift in Sources */,
 				DA11BA071FD8F1DE0038F9B0 /* ViewNewAddList.swift in Sources */,
 				DA91EAF51FD62C1F0063560D /* ViewParent.swift in Sources */,
 				DACF55421FD7661E00069701 /* ExtensionUIImage.swift in Sources */,
