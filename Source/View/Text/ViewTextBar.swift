@@ -39,6 +39,10 @@ final class ViewTextBar:View<ArchText>
             UIColor(white:1, alpha:0.2),
             for:UIControlState.highlighted)
         button.titleLabel!.font = UIFont.bold(size:ViewTextBar.Constants.buttonFontSize)
+        button.addTarget(
+            self,
+            action:#selector(self.selectorButton(sender:)),
+            for:UIControlEvents.touchUpInside)
         
         self.addSubview(button)
         

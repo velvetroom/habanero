@@ -29,6 +29,11 @@ final class ViewTextInput:UITextView
             left:ViewTextInput.Constants.insetsHorizontal,
             bottom:0,
             right:ViewTextInput.Constants.insetsHorizontal)
+        
+        if #available(iOS 11.0, *)
+        {
+            self.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentBehavior.never
+        }
     }
     
     required init?(coder:NSCoder)

@@ -30,8 +30,6 @@ final class ControllerText:Controller<ArchText>
         self.model.view?.viewInput.resignFirstResponder()
         self.model.sendCompletion()
         
-        self.parent?.dismiss(
-            animated:true,
-            completion:nil)
+        self.parentController?.pop(vertical:ControllerTransition.Vertical.bottom)
     }
 }
