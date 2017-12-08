@@ -191,6 +191,13 @@
 		DA992D781FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA992D761FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift */; };
 		DA992D791FD61ED700A6CFEF /* MenuItemGenericProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA992D751FD61E7300A6CFEF /* MenuItemGenericProtocol.swift */; };
 		DA992D7A1FD61EE500A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA992D761FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift */; };
+		DAA333D21FDB1453002D766C /* New+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333D11FDB1453002D766C /* New+Load.swift */; };
+		DAA333D71FDB17EA002D766C /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333D41FDB17EA002D766C /* Database.swift */; };
+		DAA333D81FDB17EA002D766C /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333D41FDB17EA002D766C /* Database.swift */; };
+		DAA333D91FDB17EA002D766C /* Database+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333D51FDB17EA002D766C /* Database+Factory.swift */; };
+		DAA333DA1FDB17EA002D766C /* Database+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333D51FDB17EA002D766C /* Database+Factory.swift */; };
+		DAA333DB1FDB17EA002D766C /* Database+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333D61FDB17EA002D766C /* Database+Constants.swift */; };
+		DAA333DC1FDB17EA002D766C /* Database+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333D61FDB17EA002D766C /* Database+Constants.swift */; };
 		DACF55071FD7656F00069701 /* habanero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DACF55051FD7656E00069701 /* habanero.xcdatamodeld */; };
 		DACF55081FD7656F00069701 /* habanero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DACF55051FD7656E00069701 /* habanero.xcdatamodeld */; };
 		DACF552B1FD7661E00069701 /* ExtensionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55191FD7661E00069701 /* ExtensionDictionary.swift */; };
@@ -355,6 +362,10 @@
 		DA91EB261FD630E80063560D /* ViewGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewGlobal.swift; sourceTree = "<group>"; };
 		DA992D751FD61E7300A6CFEF /* MenuItemGenericProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemGenericProtocol.swift; sourceTree = "<group>"; };
 		DA992D761FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MenuItemGenericProtocol+Default.swift"; sourceTree = "<group>"; };
+		DAA333D11FDB1453002D766C /* New+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "New+Load.swift"; sourceTree = "<group>"; };
+		DAA333D41FDB17EA002D766C /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		DAA333D51FDB17EA002D766C /* Database+Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database+Factory.swift"; sourceTree = "<group>"; };
+		DAA333D61FDB17EA002D766C /* Database+Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database+Constants.swift"; sourceTree = "<group>"; };
 		DACF55061FD7656E00069701 /* habanero.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = habanero.xcdatamodel; sourceTree = "<group>"; };
 		DACF550A1FD7658500069701 /* userInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = userInfo.plist; sourceTree = "<group>"; };
 		DACF550B1FD7658500069701 /* adminInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = adminInfo.plist; sourceTree = "<group>"; };
@@ -456,6 +467,7 @@
 			isa = PBXGroup;
 			children = (
 				DA84C0F41FD74009008959EA /* New.swift */,
+				DAA333D11FDB1453002D766C /* New+Load.swift */,
 			);
 			path = New;
 			sourceTree = "<group>";
@@ -585,6 +597,7 @@
 			isa = PBXGroup;
 			children = (
 				DA9088D21FD4C65F00C1208A /* Abstract */,
+				DAA333D31FDB17EA002D766C /* Database */,
 				DA9088D41FD4C65F00C1208A /* Home */,
 				DA9088D51FD4C65F00C1208A /* Menu */,
 				DA84C0F31FD73FF7008959EA /* New */,
@@ -709,6 +722,16 @@
 				DA91EAE71FD62C1F0063560D /* ViewGradient+Constants.swift */,
 			);
 			path = Generic;
+			sourceTree = "<group>";
+		};
+		DAA333D31FDB17EA002D766C /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				DAA333D41FDB17EA002D766C /* Database.swift */,
+				DAA333D51FDB17EA002D766C /* Database+Factory.swift */,
+				DAA333D61FDB17EA002D766C /* Database+Constants.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 		DACF55041FD7656E00069701 /* Coredata */ = {
@@ -915,6 +938,7 @@
 				DA91EB1E1FD62C1F0063560D /* ViewGradient+Constants.swift in Sources */,
 				DACF552F1FD7661E00069701 /* ExtensionUIColor.swift in Sources */,
 				DACF55471FD7661E00069701 /* ExtensionString.swift in Sources */,
+				DAA333D91FDB17EA002D766C /* Database+Factory.swift in Sources */,
 				DA91EB001FD62C1F0063560D /* ViewParent+Gesture.swift in Sources */,
 				DA91EAF41FD62C1F0063560D /* ViewParent.swift in Sources */,
 				DACF55351FD7661E00069701 /* ExtensionString+Constants.swift in Sources */,
@@ -943,6 +967,7 @@
 				DA71D6A41FDA7107003A33E1 /* ViewText+Constants.swift in Sources */,
 				DA71D6971FDA657E003A33E1 /* Text.swift in Sources */,
 				DA91EB041FD62C1F0063560D /* ViewCollection.swift in Sources */,
+				DAA333DB1FDB17EA002D766C /* Database+Constants.swift in Sources */,
 				DACF552B1FD7661E00069701 /* ExtensionDictionary.swift in Sources */,
 				DA71D69B1FDA65AB003A33E1 /* ViewText.swift in Sources */,
 				DA5A97CC1FD605E1006223BA /* MenuItemGeneric.swift in Sources */,
@@ -972,6 +997,7 @@
 				DA9089221FD4C66000C1208A /* AppDelegate.swift in Sources */,
 				DA90892D1FD4C66000C1208A /* Menu.swift in Sources */,
 				DA9089251FD4C66000C1208A /* Arch.swift in Sources */,
+				DAA333D71FDB17EA002D766C /* Database.swift in Sources */,
 				DA91EAEA1FD62C1F0063560D /* ViewMenu+Collection.swift in Sources */,
 				DA91EB061FD62C1F0063560D /* ViewAlert.swift in Sources */,
 				DACF553D1FD7661E00069701 /* ExtensionNSLayoutConstraint.swift in Sources */,
@@ -1011,6 +1037,7 @@
 				DAF949F61FD8BC6F001BA32E /* ControllerNewAdd.swift in Sources */,
 				DA177BF51FD7792C003B3836 /* ViewBar.swift in Sources */,
 				DA91EB011FD62C1F0063560D /* ViewParent+Gesture.swift in Sources */,
+				DAA333DA1FDB17EA002D766C /* Database+Factory.swift in Sources */,
 				DA3F0EBD1FD7509500593B83 /* Menu+OrderAdmin.swift in Sources */,
 				DA11BA071FD8F1DE0038F9B0 /* ViewNewAddList.swift in Sources */,
 				DA91EAF51FD62C1F0063560D /* ViewParent.swift in Sources */,
@@ -1079,6 +1106,7 @@
 				DACF552C1FD7661E00069701 /* ExtensionDictionary.swift in Sources */,
 				DA91EB0F1FD62C1F0063560D /* ViewBlur.swift in Sources */,
 				DA91EB251FD62D700063560D /* ViewControllableProtocol.swift in Sources */,
+				DAA333DC1FDB17EA002D766C /* Database+Constants.swift in Sources */,
 				DA9089931FD4CE3E00C1208A /* MenuItemProtocol.swift in Sources */,
 				DAF949F21FD8B47D001BA32E /* ViewNewBar+Constants.swift in Sources */,
 				DA9089821FD4CE2E00C1208A /* ControllerParent+Constants.swift in Sources */,
@@ -1102,6 +1130,7 @@
 				DA11BA0C1FD8F3DD0038F9B0 /* ViewBarBack.swift in Sources */,
 				DA71D6981FDA657E003A33E1 /* Text.swift in Sources */,
 				DA9089831FD4CE2E00C1208A /* ControllerParent+Menu.swift in Sources */,
+				DAA333D21FDB1453002D766C /* New+Load.swift in Sources */,
 				DA91EAEB1FD62C1F0063560D /* ViewMenu+Collection.swift in Sources */,
 				DA84C0F81FD7403D008959EA /* ViewNew.swift in Sources */,
 				DAF949FC1FD8BD13001BA32E /* NewAdd.swift in Sources */,
@@ -1123,6 +1152,7 @@
 				DA177BED1FD77713003B3836 /* ViewNewList.swift in Sources */,
 				DA90897F1FD4CE2E00C1208A /* AppDelegate.swift in Sources */,
 				DACF554A1FD7661E00069701 /* ExtensionUIFont+Constants.swift in Sources */,
+				DAA333D81FDB17EA002D766C /* Database.swift in Sources */,
 				DACF554E1FD7661E00069701 /* ExtensionURL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
