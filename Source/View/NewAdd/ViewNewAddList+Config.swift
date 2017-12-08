@@ -15,5 +15,8 @@ extension ViewNewAddList
         
         self.flow.minimumLineSpacing = ViewGlobal.Constants.interCellSpace
         self.flow.minimumInteritemSpacing = ViewGlobal.Constants.interCellSpace
+        self.flow.footerReferenceSize = CGSize(
+            width:0,
+            height:ViewNewAddList.Constants.footerHeight)
     }
 }
