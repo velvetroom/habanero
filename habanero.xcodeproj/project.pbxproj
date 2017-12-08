@@ -65,6 +65,8 @@
 		DA71D6901FDA633E003A33E1 /* ArchText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D68E1FDA633E003A33E1 /* ArchText.swift */; };
 		DA71D6931FDA63FD003A33E1 /* ControllerText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6921FDA63FD003A33E1 /* ControllerText.swift */; };
 		DA71D6941FDA63FD003A33E1 /* ControllerText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6921FDA63FD003A33E1 /* ControllerText.swift */; };
+		DA71D6971FDA657E003A33E1 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6961FDA657E003A33E1 /* Text.swift */; };
+		DA71D6981FDA657E003A33E1 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6961FDA657E003A33E1 /* Text.swift */; };
 		DA753DAB1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA753DAC1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA84C0EF1FD73F59008959EA /* ArchNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C0EE1FD73F59008959EA /* ArchNew.swift */; };
@@ -269,6 +271,7 @@
 		DA71D68C1FDA6262003A33E1 /* ControllerNewAdd+Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerNewAdd+Info.swift"; sourceTree = "<group>"; };
 		DA71D68E1FDA633E003A33E1 /* ArchText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchText.swift; sourceTree = "<group>"; };
 		DA71D6921FDA63FD003A33E1 /* ControllerText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerText.swift; sourceTree = "<group>"; };
+		DA71D6961FDA657E003A33E1 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		DA753DA91FD5EB96007E5BC5 /* Design */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Design; sourceTree = "<group>"; };
 		DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = generic.xcassets; sourceTree = "<group>"; };
 		DA84C0EE1FD73F59008959EA /* ArchNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNew.swift; sourceTree = "<group>"; };
@@ -392,6 +395,14 @@
 			isa = PBXGroup;
 			children = (
 				DA71D6921FDA63FD003A33E1 /* ControllerText.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		DA71D6951FDA6452003A33E1 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				DA71D6961FDA657E003A33E1 /* Text.swift */,
 			);
 			path = Text;
 			sourceTree = "<group>";
@@ -543,6 +554,7 @@
 				DA9088D51FD4C65F00C1208A /* Menu */,
 				DA84C0F31FD73FF7008959EA /* New */,
 				DAF949FA1FD8BD08001BA32E /* NewAdd */,
+				DA71D6951FDA6452003A33E1 /* Text */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -890,6 +902,7 @@
 				DA71D6931FDA63FD003A33E1 /* ControllerText.swift in Sources */,
 				DA9089261FD4C66000C1208A /* ArchHome.swift in Sources */,
 				DA91EAEE1FD62C1F0063560D /* ViewMenu+Synth.swift in Sources */,
+				DA71D6971FDA657E003A33E1 /* Text.swift in Sources */,
 				DA91EB041FD62C1F0063560D /* ViewCollection.swift in Sources */,
 				DACF552B1FD7661E00069701 /* ExtensionDictionary.swift in Sources */,
 				DA5A97CC1FD605E1006223BA /* MenuItemGeneric.swift in Sources */,
@@ -1037,6 +1050,7 @@
 				DACF553E1FD7661E00069701 /* ExtensionNSLayoutConstraint.swift in Sources */,
 				DA992D7A1FD61EE500A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */,
 				DA11BA0C1FD8F3DD0038F9B0 /* ViewBarBack.swift in Sources */,
+				DA71D6981FDA657E003A33E1 /* Text.swift in Sources */,
 				DA9089831FD4CE2E00C1208A /* ControllerParent+Menu.swift in Sources */,
 				DA91EAEB1FD62C1F0063560D /* ViewMenu+Collection.swift in Sources */,
 				DA84C0F81FD7403D008959EA /* ViewNew.swift in Sources */,
