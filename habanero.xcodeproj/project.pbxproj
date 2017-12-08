@@ -63,6 +63,8 @@
 		DA71D68D1FDA6262003A33E1 /* ControllerNewAdd+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D68C1FDA6262003A33E1 /* ControllerNewAdd+Info.swift */; };
 		DA71D68F1FDA633E003A33E1 /* ArchText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D68E1FDA633E003A33E1 /* ArchText.swift */; };
 		DA71D6901FDA633E003A33E1 /* ArchText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D68E1FDA633E003A33E1 /* ArchText.swift */; };
+		DA71D6931FDA63FD003A33E1 /* ControllerText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6921FDA63FD003A33E1 /* ControllerText.swift */; };
+		DA71D6941FDA63FD003A33E1 /* ControllerText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6921FDA63FD003A33E1 /* ControllerText.swift */; };
 		DA753DAB1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA753DAC1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA84C0EF1FD73F59008959EA /* ArchNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C0EE1FD73F59008959EA /* ArchNew.swift */; };
@@ -266,6 +268,7 @@
 		DA71D68A1FDA5D37003A33E1 /* ViewNewAddListCellInfoTitle+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddListCellInfoTitle+Constants.swift"; sourceTree = "<group>"; };
 		DA71D68C1FDA6262003A33E1 /* ControllerNewAdd+Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerNewAdd+Info.swift"; sourceTree = "<group>"; };
 		DA71D68E1FDA633E003A33E1 /* ArchText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchText.swift; sourceTree = "<group>"; };
+		DA71D6921FDA63FD003A33E1 /* ControllerText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerText.swift; sourceTree = "<group>"; };
 		DA753DA91FD5EB96007E5BC5 /* Design */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Design; sourceTree = "<group>"; };
 		DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = generic.xcassets; sourceTree = "<group>"; };
 		DA84C0EE1FD73F59008959EA /* ArchNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNew.swift; sourceTree = "<group>"; };
@@ -385,6 +388,14 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		DA71D6911FDA63F1003A33E1 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				DA71D6921FDA63FD003A33E1 /* ControllerText.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
 		DA84C0F01FD73FC5008959EA /* New */ = {
 			isa = PBXGroup;
 			children = (
@@ -484,6 +495,7 @@
 				DA9088C41FD4C65F00C1208A /* Abstract */,
 				DA9088CD1FD4C65F00C1208A /* Home */,
 				DA84C0F01FD73FC5008959EA /* New */,
+				DA71D6911FDA63F1003A33E1 /* Text */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -875,6 +887,7 @@
 				DA91EAE81FD62C1F0063560D /* ViewMenu+Actions.swift in Sources */,
 				DA91EB211FD62C7D0063560D /* ViewTransitionableProtocol.swift in Sources */,
 				DA91EB121FD62C1F0063560D /* ViewSpinner+Constants.swift in Sources */,
+				DA71D6931FDA63FD003A33E1 /* ControllerText.swift in Sources */,
 				DA9089261FD4C66000C1208A /* ArchHome.swift in Sources */,
 				DA91EAEE1FD62C1F0063560D /* ViewMenu+Synth.swift in Sources */,
 				DA91EB041FD62C1F0063560D /* ViewCollection.swift in Sources */,
@@ -975,6 +988,7 @@
 				DA71D6871FDA58E3003A33E1 /* ViewNewAddListCellInfoTitle.swift in Sources */,
 				DA91EB131FD62C1F0063560D /* ViewSpinner+Constants.swift in Sources */,
 				DA71D6791FDA4613003A33E1 /* NewAddSectionIngredients.swift in Sources */,
+				DA71D6941FDA63FD003A33E1 /* ControllerText.swift in Sources */,
 				DAF949F41FD8BC38001BA32E /* ArchNewAdd.swift in Sources */,
 				DA91EAEF1FD62C1F0063560D /* ViewMenu+Synth.swift in Sources */,
 				DA11BA101FD8FD240038F9B0 /* ViewNewAdd+Factory.swift in Sources */,
