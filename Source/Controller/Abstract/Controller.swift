@@ -3,6 +3,7 @@ import UIKit
 class Controller<A>:UIViewController where A.M:Model<A>
 {
     let model:A.M
+    private(set) weak var viewMain:A.V!
     
     var parentController:ControllerParent?
     {
@@ -69,7 +70,7 @@ class Controller<A>:UIViewController where A.M:Model<A>
         }
         
         let genericView:A.V = A.V(controller:controller)
-        self.model.view = genericView
+        self.viewMain = genericView
         
         let view:UIView? = genericView as? UIView
         self.view = view
