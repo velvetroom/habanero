@@ -19,7 +19,7 @@ final class ViewNewBar:ViewBar<ArchNew>
     @objc
     private func selectorButtonAdd(sender button:UIButton)
     {
-        self.controller.transitionToNewAdd()
+        self.controller.createBuildAndTransitionToNewAdd()
     }
     
     //MARK: private
