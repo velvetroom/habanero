@@ -4,6 +4,14 @@ extension ViewNewAddList
 {
     //MARK: internal
     
+    func modelAtIndex(index:IndexPath) -> NewAddSectionItemProtocol
+    {
+        let section:NewAddSectionProtocol = self.sectionAtIndex(section:index.section)
+        let item:NewAddSectionItemProtocol = section.items[index.item]
+        
+        return item
+    }
+    
     func sectionAtIndex(section:Int) -> NewAddSectionProtocol
     {
         let section:NewAddSectionProtocol = self.controller.model.sections[section]

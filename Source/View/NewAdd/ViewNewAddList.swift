@@ -63,4 +63,21 @@ final class ViewNewAddList:ViewCollection<ArchNewAdd, ViewNewListCell, ViewColle
         
         return reusable
     }
+    
+    override func collectionView(
+        _ collectionView:UICollectionView,
+        cellForItemAt indexPath:IndexPath) -> UICollectionViewCell
+    {
+        let item:NewAddSectionItemProtocol = self.modelAtIndex(index:indexPath)
+        
+        let cell:ViewNewAddListCell = self.cellAtIndex(
+            indexPath:indexPath,
+            reusableIdentifier:item.reusableIdentifier)
+        
+        cell.config(
+            controller:self.controller,
+            model:item)
+        
+        return cell
+    }
 }
