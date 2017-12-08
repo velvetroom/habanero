@@ -73,6 +73,8 @@
 		DA71D69F1FDA6B13003A33E1 /* ViewTextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D69D1FDA6B13003A33E1 /* ViewTextInput.swift */; };
 		DA71D6A11FDA6C1A003A33E1 /* ViewTextInput+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6A01FDA6C1A003A33E1 /* ViewTextInput+Constants.swift */; };
 		DA71D6A21FDA6C1A003A33E1 /* ViewTextInput+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6A01FDA6C1A003A33E1 /* ViewTextInput+Constants.swift */; };
+		DA71D6A41FDA7107003A33E1 /* ViewText+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6A31FDA7107003A33E1 /* ViewText+Constants.swift */; };
+		DA71D6A51FDA7107003A33E1 /* ViewText+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6A31FDA7107003A33E1 /* ViewText+Constants.swift */; };
 		DA753DAB1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA753DAC1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA84C0EF1FD73F59008959EA /* ArchNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C0EE1FD73F59008959EA /* ArchNew.swift */; };
@@ -281,6 +283,7 @@
 		DA71D69A1FDA65AB003A33E1 /* ViewText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewText.swift; sourceTree = "<group>"; };
 		DA71D69D1FDA6B13003A33E1 /* ViewTextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTextInput.swift; sourceTree = "<group>"; };
 		DA71D6A01FDA6C1A003A33E1 /* ViewTextInput+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewTextInput+Constants.swift"; sourceTree = "<group>"; };
+		DA71D6A31FDA7107003A33E1 /* ViewText+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewText+Constants.swift"; sourceTree = "<group>"; };
 		DA753DA91FD5EB96007E5BC5 /* Design */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Design; sourceTree = "<group>"; };
 		DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = generic.xcassets; sourceTree = "<group>"; };
 		DA84C0EE1FD73F59008959EA /* ArchNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNew.swift; sourceTree = "<group>"; };
@@ -420,6 +423,7 @@
 			isa = PBXGroup;
 			children = (
 				DA71D69A1FDA65AB003A33E1 /* ViewText.swift */,
+				DA71D6A31FDA7107003A33E1 /* ViewText+Constants.swift */,
 				DA71D69D1FDA6B13003A33E1 /* ViewTextInput.swift */,
 				DA71D6A01FDA6C1A003A33E1 /* ViewTextInput+Constants.swift */,
 			);
@@ -923,6 +927,7 @@
 				DA71D6931FDA63FD003A33E1 /* ControllerText.swift in Sources */,
 				DA9089261FD4C66000C1208A /* ArchHome.swift in Sources */,
 				DA91EAEE1FD62C1F0063560D /* ViewMenu+Synth.swift in Sources */,
+				DA71D6A41FDA7107003A33E1 /* ViewText+Constants.swift in Sources */,
 				DA71D6971FDA657E003A33E1 /* Text.swift in Sources */,
 				DA91EB041FD62C1F0063560D /* ViewCollection.swift in Sources */,
 				DACF552B1FD7661E00069701 /* ExtensionDictionary.swift in Sources */,
@@ -1045,6 +1050,7 @@
 				DACF554C1FD7661E00069701 /* ExtensionUICollectionReusableView.swift in Sources */,
 				DA9089801FD4CE2E00C1208A /* Controller.swift in Sources */,
 				DA11BA121FD8FEEB0038F9B0 /* ViewNewAddListHeader.swift in Sources */,
+				DA71D6A51FDA7107003A33E1 /* ViewText+Constants.swift in Sources */,
 				DACF55401FD7661E00069701 /* ExtensionUIFont.swift in Sources */,
 				DA9089861FD4CE2E00C1208A /* ControllerParent.swift in Sources */,
 				DA91EB151FD62C1F0063560D /* ViewGradient.swift in Sources */,

@@ -2,8 +2,8 @@ import UIKit
 
 final class ViewText:ViewMain<ArchText>
 {
-    private(set) weak var viewInput:ViewTextInput!
-    private weak var layoutInputBottom:NSLayoutConstraint!
+    weak var viewInput:ViewTextInput!
+    weak var layoutInputBottom:NSLayoutConstraint!
     
     required init(controller:ControllerText)
     {
