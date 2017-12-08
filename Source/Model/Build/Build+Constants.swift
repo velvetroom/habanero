@@ -4,6 +4,6 @@ extension Build
 {
     struct Constants
     {
-        static let defaultDuration:TimeInterval = 5
+        static let defaultDuration:TimeInterval = 0
     }
 }
