@@ -11,4 +11,11 @@ final class Text:Model<ArchText>
         
         super.init()
     }
+    
+    //MARK: internal
+    
+    func sendCompletion()
+    {
+        self.completion?(self.text)
+    }
 }

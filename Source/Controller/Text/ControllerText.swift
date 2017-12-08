@@ -20,16 +20,18 @@ final class ControllerText:Controller<ArchText>
     override func viewDidAppear(_ animated:Bool)
     {
         super.viewDidAppear(animated)
+        self.model.view?.viewInput.becomeFirstResponder()
+    }
+    
+    //MARK: internal
+    
+    func doneEditing()
+    {
+        self.model.view?.viewInput.resignFirstResponder()
+        self.model.sendCompletion()
         
-        guard
-        
-            let view:ViewText = self.view as? ViewText
-        
-        else
-        {
-            return
-        }
-        
-        view.viewInput.becomeFirstResponder()
+        self.parent?.dismiss(
+            animated:true,
+            completion:nil)
     }
 }
