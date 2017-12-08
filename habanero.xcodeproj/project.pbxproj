@@ -69,6 +69,10 @@
 		DA71D6981FDA657E003A33E1 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6961FDA657E003A33E1 /* Text.swift */; };
 		DA71D69B1FDA65AB003A33E1 /* ViewText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D69A1FDA65AB003A33E1 /* ViewText.swift */; };
 		DA71D69C1FDA65AB003A33E1 /* ViewText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D69A1FDA65AB003A33E1 /* ViewText.swift */; };
+		DA71D69E1FDA6B13003A33E1 /* ViewTextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D69D1FDA6B13003A33E1 /* ViewTextInput.swift */; };
+		DA71D69F1FDA6B13003A33E1 /* ViewTextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D69D1FDA6B13003A33E1 /* ViewTextInput.swift */; };
+		DA71D6A11FDA6C1A003A33E1 /* ViewTextInput+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6A01FDA6C1A003A33E1 /* ViewTextInput+Constants.swift */; };
+		DA71D6A21FDA6C1A003A33E1 /* ViewTextInput+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6A01FDA6C1A003A33E1 /* ViewTextInput+Constants.swift */; };
 		DA753DAB1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA753DAC1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA84C0EF1FD73F59008959EA /* ArchNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C0EE1FD73F59008959EA /* ArchNew.swift */; };
@@ -275,6 +279,8 @@
 		DA71D6921FDA63FD003A33E1 /* ControllerText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerText.swift; sourceTree = "<group>"; };
 		DA71D6961FDA657E003A33E1 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		DA71D69A1FDA65AB003A33E1 /* ViewText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewText.swift; sourceTree = "<group>"; };
+		DA71D69D1FDA6B13003A33E1 /* ViewTextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTextInput.swift; sourceTree = "<group>"; };
+		DA71D6A01FDA6C1A003A33E1 /* ViewTextInput+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewTextInput+Constants.swift"; sourceTree = "<group>"; };
 		DA753DA91FD5EB96007E5BC5 /* Design */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Design; sourceTree = "<group>"; };
 		DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = generic.xcassets; sourceTree = "<group>"; };
 		DA84C0EE1FD73F59008959EA /* ArchNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNew.swift; sourceTree = "<group>"; };
@@ -414,6 +420,8 @@
 			isa = PBXGroup;
 			children = (
 				DA71D69A1FDA65AB003A33E1 /* ViewText.swift */,
+				DA71D69D1FDA6B13003A33E1 /* ViewTextInput.swift */,
+				DA71D6A01FDA6C1A003A33E1 /* ViewTextInput+Constants.swift */,
 			);
 			path = Text;
 			sourceTree = "<group>";
@@ -894,6 +902,7 @@
 				DA91EB001FD62C1F0063560D /* ViewParent+Gesture.swift in Sources */,
 				DA91EAF41FD62C1F0063560D /* ViewParent.swift in Sources */,
 				DACF55351FD7661E00069701 /* ExtensionString+Constants.swift in Sources */,
+				DA71D69E1FDA6B13003A33E1 /* ViewTextInput.swift in Sources */,
 				DACF554D1FD7661E00069701 /* ExtensionURL.swift in Sources */,
 				DACF55451FD7661E00069701 /* ExtensionNSManagedObject.swift in Sources */,
 				DA91EAFC1FD62C1F0063560D /* ViewParent+Transitions.swift in Sources */,
@@ -952,6 +961,7 @@
 				DA91EB271FD630E80063560D /* ViewGlobal.swift in Sources */,
 				DACF55071FD7656F00069701 /* habanero.xcdatamodeld in Sources */,
 				DACF55431FD7661E00069701 /* ExtensionData.swift in Sources */,
+				DA71D6A11FDA6C1A003A33E1 /* ViewTextInput+Constants.swift in Sources */,
 				DA90892F1FD4C66000C1208A /* Menu+Factory.swift in Sources */,
 				DA3F0EB41FD74C5F00593B83 /* Menu+FactoryUser.swift in Sources */,
 				DA91EAFA1FD62C1F0063560D /* ViewMain.swift in Sources */,
@@ -994,6 +1004,7 @@
 				DA71D66D1FDA43EF003A33E1 /* ViewNewAddListFooterInfo.swift in Sources */,
 				DA9089911FD4CE3E00C1208A /* Menu+Factory.swift in Sources */,
 				DA71D67B1FDA4661003A33E1 /* NewAddSectionSteps.swift in Sources */,
+				DA71D6A21FDA6C1A003A33E1 /* ViewTextInput+Constants.swift in Sources */,
 				DA91EB111FD62C1F0063560D /* ViewSlider+Gesture.swift in Sources */,
 				DA91EB091FD62C1F0063560D /* ViewPushBackground.swift in Sources */,
 				DA9089841FD4CE2E00C1208A /* ControllerParent+Transitions.swift in Sources */,
@@ -1007,6 +1018,7 @@
 				DA91EAF11FD62C1F0063560D /* ViewMenuCell.swift in Sources */,
 				DA91EAE91FD62C1F0063560D /* ViewMenu+Actions.swift in Sources */,
 				DA58C6E91FD9EAFB000E6F30 /* NewAdd+Constants.swift in Sources */,
+				DA71D69F1FDA6B13003A33E1 /* ViewTextInput.swift in Sources */,
 				DA91EB221FD62C7D0063560D /* ViewTransitionableProtocol.swift in Sources */,
 				DACF55341FD7661E00069701 /* ExtensionMKPolyline.swift in Sources */,
 				DA177BF11FD77874003B3836 /* ViewNewBar.swift in Sources */,
