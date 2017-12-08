@@ -6,10 +6,7 @@ final class ViewNewAddList:ViewCollection<ArchNewAdd, ViewNewListCell, ViewColle
     {
         super.init(controller:controller)
         
-        self.collectionView.alwaysBounceVertical = true
-        self.registerHeader(header:ViewNewAddListHeader.self)
-        self.flow.minimumLineSpacing = ViewGlobal.Constants.interCellSpace
-        self.flow.minimumInteritemSpacing = ViewGlobal.Constants.interCellSpace
+        self.config()
     }
     
     required init?(coder:NSCoder)
