@@ -8,6 +8,13 @@ final class ViewNewAddListCellInfoTitle:ViewNewAddListCell
     {
         super.factoryViews()
         
+        let button:UIButton = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(
+            self,
+            action:#selector(self.selectorButton(sender:)),
+            for:UIControlEvents.touchUpInside)
+        
         let labelTitle:UILabel = UILabel()
         labelTitle.isUserInteractionEnabled = false
         labelTitle.translatesAutoresizingMaskIntoConstraints = false
@@ -17,6 +24,7 @@ final class ViewNewAddListCellInfoTitle:ViewNewAddListCell
         labelTitle.text = String.localizedView(key:"ViewNewAddListCellInfoTitle_labelTitle")
         
         self.addSubview(labelTitle)
+        self.addSubview(button)
         
         NSLayoutConstraint.topToTop(
             view:labelTitle,
@@ -31,5 +39,17 @@ final class ViewNewAddListCellInfoTitle:ViewNewAddListCell
             constant:ViewNewAddList.Constants.marginHorizontal)
         NSLayoutConstraint.widthGreaterOrEqual(
             view:labelTitle)
+        
+        NSLayoutConstraint.equals(
+            view:button,
+            toView:self)
+    }
+    
+    //MARK: selectors
+    
+    @objc
+    private func selectorButton(sender button:UIButton)
+    {
+        
     }
 }
