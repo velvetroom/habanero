@@ -20,7 +20,7 @@ final class ViewTextBar:View<ArchText>
     @objc
     private func selectorButton(sender button:UIButton)
     {
-        self.controller.model.view?.viewInput.resignFirstResponder()
+        self.controller.doneEditing()
     }
     
     //MARK: private

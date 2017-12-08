@@ -52,6 +52,14 @@ extension ControllerNewAdd
     
     func editInfoTitle()
     {
+        let controller:ControllerText = ControllerText(text:"")
+        { [weak self] (text:String) in
+            
+            print(text)
+        }
         
+        self.parentController?.push(
+            controller:controller,
+            vertical:ControllerTransition.Vertical.bottom)
     }
 }
