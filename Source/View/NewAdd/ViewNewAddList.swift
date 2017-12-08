@@ -28,6 +28,21 @@ final class ViewNewAddList:ViewCollection<ArchNewAdd, ViewNewAddListCell, ViewCo
         return size
     }
     
+    override func collectionView(
+        _ collectionView:UICollectionView,
+        layout collectionViewLayout:UICollectionViewLayout,
+        sizeForItemAt indexPath:IndexPath) -> CGSize
+    {
+        let item:NewAddSectionItemProtocol = self.modelAtIndex(index:indexPath)
+        let width:CGFloat = collectionView.bounds.width
+        
+        let size:CGSize = CGSize(
+            width:width,
+            height:item.cellHeight)
+        
+        return size
+    }
+    
     override func numberOfSections(in collectionView:UICollectionView) -> Int
     {
         let count:Int = self.controller.model.sections.count
