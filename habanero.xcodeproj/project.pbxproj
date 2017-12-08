@@ -58,6 +58,7 @@
 		DA71D6831FDA50C4003A33E1 /* ViewNewAddList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6821FDA50C4003A33E1 /* ViewNewAddList+Constants.swift */; };
 		DA71D6851FDA518E003A33E1 /* ViewNewAddList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6841FDA518E003A33E1 /* ViewNewAddList+Actions.swift */; };
 		DA71D6871FDA58E3003A33E1 /* ViewNewAddListCellInfoTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6861FDA58E3003A33E1 /* ViewNewAddListCellInfoTitle.swift */; };
+		DA71D6891FDA5985003A33E1 /* NewAddSectionItemInfoTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6881FDA5985003A33E1 /* NewAddSectionItemInfoTitle.swift */; };
 		DA753DAB1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA753DAC1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA84C0EF1FD73F59008959EA /* ArchNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C0EE1FD73F59008959EA /* ArchNew.swift */; };
@@ -257,6 +258,7 @@
 		DA71D6821FDA50C4003A33E1 /* ViewNewAddList+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddList+Constants.swift"; sourceTree = "<group>"; };
 		DA71D6841FDA518E003A33E1 /* ViewNewAddList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddList+Actions.swift"; sourceTree = "<group>"; };
 		DA71D6861FDA58E3003A33E1 /* ViewNewAddListCellInfoTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellInfoTitle.swift; sourceTree = "<group>"; };
+		DA71D6881FDA5985003A33E1 /* NewAddSectionItemInfoTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddSectionItemInfoTitle.swift; sourceTree = "<group>"; };
 		DA753DA91FD5EB96007E5BC5 /* Design */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Design; sourceTree = "<group>"; };
 		DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = generic.xcassets; sourceTree = "<group>"; };
 		DA84C0EE1FD73F59008959EA /* ArchNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNew.swift; sourceTree = "<group>"; };
@@ -716,6 +718,7 @@
 				DA71D6761FDA4539003A33E1 /* NewAddSectionInfo.swift */,
 				DA71D6781FDA4613003A33E1 /* NewAddSectionIngredients.swift */,
 				DA71D67A1FDA4661003A33E1 /* NewAddSectionSteps.swift */,
+				DA71D6881FDA5985003A33E1 /* NewAddSectionItemInfoTitle.swift */,
 			);
 			path = NewAdd;
 			sourceTree = "<group>";
@@ -913,6 +916,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA71D6891FDA5985003A33E1 /* NewAddSectionItemInfoTitle.swift in Sources */,
 				DA71D6771FDA4539003A33E1 /* NewAddSectionInfo.swift in Sources */,
 				DA91EB1B1FD62C1F0063560D /* ViewSlider.swift in Sources */,
 				DACF553C1FD7661E00069701 /* ExtensionMKAnnotationView.swift in Sources */,
