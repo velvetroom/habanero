@@ -71,7 +71,6 @@ class Controller<A>:UIViewController where A.M:Model<A>
         
         let genericView:A.V = A.V(controller:controller)
         self.viewMain = genericView
-        self.model.controller = controller
         
         let view:UIView? = genericView as? UIView
         self.view = view
