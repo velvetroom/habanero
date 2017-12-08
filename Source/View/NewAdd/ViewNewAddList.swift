@@ -19,10 +19,11 @@ final class ViewNewAddList:ViewCollection<ArchNewAdd, ViewNewListCell, ViewColle
         layout collectionViewLayout:UICollectionViewLayout,
         referenceSizeForHeaderInSection section:Int) -> CGSize
     {
-        let section:NewAddSectionProtocol = self.controller.model.sections[section]
+        let sectionModel:NewAddSectionProtocol = self.sectionAtIndex(section:section)
+        
         let size:CGSize = CGSize(
             width:0,
-            height:section.headerHeight)
+            height:sectionModel.headerHeight)
         
         return size
     }
@@ -38,7 +39,8 @@ final class ViewNewAddList:ViewCollection<ArchNewAdd, ViewNewListCell, ViewColle
         _ collectionView:UICollectionView,
         numberOfItemsInSection section:Int) -> Int
     {
-        let count:Int = self.controller.model.sections[section].items.count
+        let sectionModel:NewAddSectionProtocol = self.sectionAtIndex(section:section)
+        let count:Int = sectionModel.items.count
         
         return count
     }
@@ -48,12 +50,17 @@ final class ViewNewAddList:ViewCollection<ArchNewAdd, ViewNewListCell, ViewColle
         viewForSupplementaryElementOfKind kind:String,
         at indexPath:IndexPath) -> UICollectionReusableView
     {
-        let section:NewAddSectionProtocol = self.controller.model.sections[indexPath.section]
-        let header:ViewNewAddListHeader = self.reusableAtIndex(
-            kind:kind,
-            indexPath:indexPath)
-        header.config(model:section)
+        let reusable:UICollectionReusableView
         
-        return header
+        if kind == UICollectionElementKindSectionHeader
+        {
+            reusable = self.dequeueHeaderAtIndex(index:indexPath)
+        }
+        else
+        {
+            reusable = self.dequeueFooterAtIndex(index:indexPath)
+        }
+        
+        return reusable
     }
 }
