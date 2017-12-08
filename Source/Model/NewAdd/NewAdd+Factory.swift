@@ -42,13 +42,13 @@ extension NewAdd
     
     //MARK: internal
     
-    class func factorySections() -> [NewAddSection]
+    class func factorySections() -> [NewAddSectionProtocol]
     {
-        let infoSection:NewAddSection = NewAdd.factoryInfoSection()
-        let ingredientsSection:NewAddSection = NewAdd.factoryIngredientsSection()
-        let stepsSection:NewAddSection = NewAdd.factoryStepsSection()
+        let infoSection:NewAddSectionProtocol = NewAddSectionInfo()
+        let ingredientsSection:NewAddSectionProtocol = NewAdd.factoryIngredientsSection()
+        let stepsSection:NewAddSectionProtocol = NewAdd.factoryStepsSection()
         
-        let sections:[NewAddSection] = [
+        let sections:[NewAddSectionProtocol] = [
             infoSection,
             ingredientsSection,
             stepsSection]
