@@ -10,6 +10,12 @@ final class ViewText:ViewMain<ArchText>
         super.init(controller:controller)
         
         self.factoryViews()
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector:#selector(self.notifiedKeyboardChanged(sender:)),
+            name:NSNotification.Name.UIKeyboardWillChangeFrame,
+            object:nil)
     }
     
     required init?(coder:NSCoder)
