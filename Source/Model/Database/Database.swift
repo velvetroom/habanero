@@ -21,7 +21,7 @@ final class Database
     
     //MARK: internal
     
-    func save(completion:@escaping(() -> ()))
+    func save(completion:(() -> ())?)
     {
         if self.managedObjectContext.hasChanges
         {
@@ -38,12 +38,12 @@ final class Database
                     return
                 }
                 
-                completion()
+                completion?()
             }
         }
         else
         {
-            completion()
+            completion?()
         }
     }
     
