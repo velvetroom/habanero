@@ -60,24 +60,4 @@ final class ViewText:ViewMain<ArchText>
             self?.layoutIfNeeded()
         }
     }
-    
-    //MARK: private
-    
-    private func factoryViews()
-    {
-        let viewInput:ViewTextInput = ViewTextInput()
-        self.viewInput = viewInput
-        
-        self.addSubview(viewInput)
-        
-        NSLayoutConstraint.topToTop(
-            view:viewInput,
-            toView:self)
-        layoutInputBottom = NSLayoutConstraint.bottomToBottom(
-            view:viewInput,
-            toView:self)
-        NSLayoutConstraint.equalsHorizontal(
-            view:viewInput,
-            toView:self)
-    }
 }
