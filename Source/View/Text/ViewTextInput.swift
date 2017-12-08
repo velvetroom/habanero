@@ -27,7 +27,7 @@ final class ViewTextInput:UITextView
         self.textContainerInset = UIEdgeInsets(
             top:ViewTextInput.Constants.insetsTop,
             left:ViewTextInput.Constants.insetsHorizontal,
-            bottom:0,
+            bottom:ViewTextInput.Constants.insetsBottom,
             right:ViewTextInput.Constants.insetsHorizontal)
         
         if #available(iOS 11.0, *)

@@ -1,6 +1,6 @@
 import UIKit
 
-final class ViewText:ViewMain<ArchText>
+final class ViewText:ViewMain<ArchText>, UITextViewDelegate
 {
     weak var viewInput:ViewTextInput!
     weak var layoutBarBottom:NSLayoutConstraint!
@@ -10,6 +10,7 @@ final class ViewText:ViewMain<ArchText>
         super.init(controller:controller)
         
         self.factoryViews()
+        self.viewInput.delegate = self
         
         NotificationCenter.default.addObserver(
             self,
@@ -65,5 +66,12 @@ final class ViewText:ViewMain<ArchText>
             
             self?.layoutIfNeeded()
         }
+    }
+    
+    //MARK: textView delegate
+    
+    func textViewDidEndEditing(_ textView:UITextView)
+    {
+        self.controller.model.text = textView.text
     }
 }
