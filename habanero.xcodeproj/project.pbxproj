@@ -215,6 +215,8 @@
 		DACEB3A61FDC9F560089B3FE /* ViewCollectionReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACEB3A41FDC9F560089B3FE /* ViewCollectionReusable.swift */; };
 		DACEB3A81FDCAA370089B3FE /* ViewNewListCell+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACEB3A71FDCAA370089B3FE /* ViewNewListCell+Constants.swift */; };
 		DACEB3AA1FDCAC0B0089B3FE /* ViewNewListCell+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACEB3A91FDCAC0B0089B3FE /* ViewNewListCell+Config.swift */; };
+		DACEB3AC1FDCAE700089B3FE /* ViewNewListCellSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACEB3AB1FDCAE700089B3FE /* ViewNewListCellSteps.swift */; };
+		DACEB3AE1FDCAF4F0089B3FE /* new.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DACEB3AD1FDCAF4F0089B3FE /* new.xcassets */; };
 		DACF22131FDB5C3400D6B192 /* BuildDurationMinutes.plist in Resources */ = {isa = PBXBuildFile; fileRef = DACF22121FDB5C3400D6B192 /* BuildDurationMinutes.plist */; };
 		DACF22151FDB5D8A00D6B192 /* NewAddSectionItemInfoDuration+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF22141FDB5D8A00D6B192 /* NewAddSectionItemInfoDuration+Constants.swift */; };
 		DACF22171FDB673A00D6B192 /* ViewFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF22161FDB673A00D6B192 /* ViewFormat.swift */; };
@@ -407,6 +409,8 @@
 		DACEB3A41FDC9F560089B3FE /* ViewCollectionReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCollectionReusable.swift; sourceTree = "<group>"; };
 		DACEB3A71FDCAA370089B3FE /* ViewNewListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewListCell+Constants.swift"; sourceTree = "<group>"; };
 		DACEB3A91FDCAC0B0089B3FE /* ViewNewListCell+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewListCell+Config.swift"; sourceTree = "<group>"; };
+		DACEB3AB1FDCAE700089B3FE /* ViewNewListCellSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewListCellSteps.swift; sourceTree = "<group>"; };
+		DACEB3AD1FDCAF4F0089B3FE /* new.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = new.xcassets; sourceTree = "<group>"; };
 		DACF22121FDB5C3400D6B192 /* BuildDurationMinutes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = BuildDurationMinutes.plist; sourceTree = "<group>"; };
 		DACF22141FDB5D8A00D6B192 /* NewAddSectionItemInfoDuration+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddSectionItemInfoDuration+Constants.swift"; sourceTree = "<group>"; };
 		DACF22161FDB673A00D6B192 /* ViewFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFormat.swift; sourceTree = "<group>"; };
@@ -540,6 +544,7 @@
 				DA177BEE1FD77773003B3836 /* ViewNewListCell.swift */,
 				DACEB3A71FDCAA370089B3FE /* ViewNewListCell+Constants.swift */,
 				DACEB3A91FDCAC0B0089B3FE /* ViewNewListCell+Config.swift */,
+				DACEB3AB1FDCAE700089B3FE /* ViewNewListCellSteps.swift */,
 			);
 			path = New;
 			sourceTree = "<group>";
@@ -585,6 +590,7 @@
 				DA90889E1FD4C65F00C1208A /* LaunchScreen.storyboard */,
 				DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */,
 				DA3F0EB01FD7480000593B83 /* menu.xcassets */,
+				DACEB3AD1FDCAF4F0089B3FE /* new.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -992,6 +998,7 @@
 				DA9089B01FD4CE5800C1208A /* LaunchScreen.storyboard in Resources */,
 				DA753DAC1FD5EBC8007E5BC5 /* generic.xcassets in Resources */,
 				DA9089B21FD4CE5F00C1208A /* InfoPlist.strings in Resources */,
+				DACEB3AE1FDCAF4F0089B3FE /* new.xcassets in Resources */,
 				DA9089B11FD4CE5F00C1208A /* LocalizableModel.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1148,6 +1155,7 @@
 				DA91EB111FD62C1F0063560D /* ViewSlider+Gesture.swift in Sources */,
 				DA91EB091FD62C1F0063560D /* ViewPushBackground.swift in Sources */,
 				DA5D71C81FDB56E200429F5D /* NewAddSectionItemInfoDuration.swift in Sources */,
+				DACEB3AC1FDCAE700089B3FE /* ViewNewListCellSteps.swift in Sources */,
 				DA9089841FD4CE2E00C1208A /* ControllerParent+Transitions.swift in Sources */,
 				DA91EB031FD62C1F0063560D /* ViewAlert+Constants.swift in Sources */,
 				DA71D67D1FDA4B91003A33E1 /* ViewNewAddListFooterInfo+Constants.swift in Sources */,
