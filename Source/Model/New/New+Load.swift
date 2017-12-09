@@ -28,10 +28,11 @@ extension New
         builds:[Build],
         completion:@escaping(() -> ()))
     {
+        self?.builds = builds
+        
         DispatchQueue.main.async
         { [weak self] in
             
-            self?.builds = builds
             completion()
         }
     }
