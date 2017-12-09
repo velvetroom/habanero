@@ -103,11 +103,15 @@ final class ViewNewAddListCellInfoTitle:ViewNewAddListCell
     
     override func showHighlighted()
     {
+        super.showHighlighted()
+        
         self.button.backgroundColor = UIColor(white:1, alpha:0.9)
     }
     
     override func showReleased()
     {
+        super.showReleased()
+        
         self.button.backgroundColor = UIColor.clear
     }
     

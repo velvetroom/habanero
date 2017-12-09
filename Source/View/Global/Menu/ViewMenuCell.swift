@@ -4,9 +4,9 @@ final class ViewMenuCell:ViewCollectionCell
 {
     private weak var imageView:UIImageView!
     
-    override init(frame:CGRect)
+    override func factoryViews()
     {
-        super.init(frame:frame)
+        super.factoryViews()
         
         let imageView:UIImageView = UIImageView()
         imageView.isUserInteractionEnabled = false
@@ -22,18 +22,17 @@ final class ViewMenuCell:ViewCollectionCell
             toView:self)
     }
     
-    required init?(coder:NSCoder)
-    {
-        return nil
-    }
-    
     override func showHighlighted()
     {
+        super.showHighlighted()
+        
         self.imageView.tintColor = UIColor.colourBackgroundDark
     }
     
     override func showReleased()
     {
+        super.showReleased()
+        
         self.imageView.tintColor = UIColor.colourBackgroundDark.withAlphaComponent(0.2)
     }
     

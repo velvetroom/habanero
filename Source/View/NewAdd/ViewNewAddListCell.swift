@@ -4,22 +4,14 @@ class ViewNewAddListCell:ViewCollectionCell
 {
     private(set) weak var controller:ControllerNewAdd?
     
-    override init(frame:CGRect)
+    override func factoryViews()
     {
-        super.init(frame:frame)
-        self.backgroundColor = UIColor.white
+        super.factoryViews()
         
-        self.factoryViews()
-    }
-    
-    required init?(coder:NSCoder)
-    {
-        return nil
+        self.backgroundColor = UIColor.white
     }
     
     //MARK: internal
-    
-    func factoryViews() { }
     
     func config(
         controller:ControllerNewAdd,

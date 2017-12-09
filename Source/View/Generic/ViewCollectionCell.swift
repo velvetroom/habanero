@@ -7,6 +7,8 @@ class ViewCollectionCell:UICollectionViewCell
         super.init(frame:frame)
         self.clipsToBounds = true
         self.backgroundColor = UIColor.clear
+        
+        self.factoryViews()
     }
     
     required init?(coder:NSCoder)
@@ -43,6 +45,8 @@ class ViewCollectionCell:UICollectionViewCell
             self.showReleased()
         }
     }
+    
+    func factoryViews() { }
     
     func showReleased() { }
     
