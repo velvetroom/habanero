@@ -27,11 +27,17 @@ struct NewAddSectionItemInfoDuration:NewAddSectionItemProtocol
                 withExtension:nil),
             let minutesArray:NSArray = NSArray(
                 contentsOf:minutesURL),
-            let minutes:[TimeInterval] = minutesArray as? [TimeInterval]
+            var minutes:[TimeInterval] = minutesArray as? [TimeInterval]
             
         else
         {
             return []
+        }
+        
+        minutes.sort
+        { (minuteA:TimeInterval, minuteB:TimeInterval) -> Bool in
+            
+            return minuteA < minuteB
         }
         
         return minutes
