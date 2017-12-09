@@ -2,13 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-    <integer>15</integer>
-    <integer>30</integer>
-    <integer>45</integer>
-    <integer>60</integer>
-    <integer>90</integer>
-    <integer>120</integer>
-    <integer>180</integer>
-    <integer>240</integer>
+	<real>15</real>
+	<real>30</real>
+	<real>45</real>
+	<real>60</real>
+	<real>90</real>
+	<real>120</real>
+	<real>180</real>
+	<real>240</real>
 </array>
 </plist>

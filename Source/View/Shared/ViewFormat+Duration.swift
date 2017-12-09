@@ -6,7 +6,8 @@ extension ViewFormat
     
     private static func factoryMinutes(duration:TimeInterval) -> String?
     {
-        let number:NSNumber = duration as NSNumber
+        let minutes:TimeInterval = duration / ViewFormat.Constants.Duration.secondsPerMinute
+        let number:NSNumber = minutes as NSNumber
         let numberFormatter:NumberFormatter = ViewFormat.factoryFormatter(decimals:0)
         
         let minutesString:String? = numberFormatter.string(from:number)
@@ -16,7 +17,7 @@ extension ViewFormat
     
     private static func factoryHours(duration:TimeInterval) -> String?
     {
-        let hours:TimeInterval = duration / ViewFormat.Constants.Duration.minutesPerHour
+        let hours:TimeInterval = duration / ViewFormat.Constants.Duration.secondsPerHour
         let number:NSNumber = hours as NSNumber
         let numberFormatter:NumberFormatter = ViewFormat.factoryFormatter(
             decimals:ViewFormat.Constants.Duration.decimalsPerHour)
@@ -32,7 +33,7 @@ extension ViewFormat
     {
         let durationString:String?
         
-        if duration > ViewFormat.Constants.Duration.minutesPerHour
+        if duration > ViewFormat.Constants.Duration.secondsPerHour
         {
             durationString = ViewFormat.factoryHours(duration:duration)
         }

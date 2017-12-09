@@ -11,7 +11,8 @@ extension ViewFormat
         
         struct Duration
         {
-            static let minutesPerHour:TimeInterval = 60
+            static let secondsPerHour:TimeInterval = 3600
+            static let secondsPerMinute:TimeInterval = 60
             static let decimalsPerHour:Int = 1
         }
     }

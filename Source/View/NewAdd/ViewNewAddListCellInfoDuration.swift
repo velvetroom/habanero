@@ -74,7 +74,7 @@ final class ViewNewAddListCellInfoDuration:ViewNewAddListCell
     {
         guard
         
-            let minutesList:[Int] = self.model?.minutes
+            let minutesList:[TimeInterval] = self.model?.minutes,
             minutesList.count > value
         
         else
@@ -82,6 +82,8 @@ final class ViewNewAddListCellInfoDuration:ViewNewAddListCell
             return
         }
         
-        let minutes:Int = minutesList[value]
+        let minutes:TimeInterval = minutesList[value]
+        let seconds:TimeInterval = minutes * ViewFormat.Constants.Duration.secondsPerMinute
+        let duration:String? = ViewFormat.factoryDuration(duration:seconds)
     }
 }

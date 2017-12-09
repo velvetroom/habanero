@@ -5,7 +5,7 @@ struct NewAddSectionItemInfoDuration:NewAddSectionItemProtocol
     let reusableIdentifier:String = ViewNewAddListCellInfoDuration.reusableIdentifier
     let cellHeight:CGFloat = NewAdd.Constants.cellDurationTitleHeight
     let duration:TimeInterval
-    let minutes:[Int]
+    let minutes:[TimeInterval]
     
     init(duration:TimeInterval)
     {
@@ -15,7 +15,7 @@ struct NewAddSectionItemInfoDuration:NewAddSectionItemProtocol
     
     //MARK: private
     
-    private static func factoryMinutes() -> [Int]
+    private static func factoryMinutes() -> [TimeInterval]
     {
         guard
             
@@ -24,7 +24,7 @@ struct NewAddSectionItemInfoDuration:NewAddSectionItemProtocol
                 withExtension:nil),
             let minutesArray:NSArray = NSArray(
                 contentsOf:minutesURL),
-            let minutes:[Int] = minutesArray as? [Int]
+            let minutes:[TimeInterval] = minutesArray as? [TimeInterval]
             
         else
         {
