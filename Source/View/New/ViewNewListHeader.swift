@@ -1,12 +1,11 @@
 import UIKit
 
-final class ViewNewListHeader:UICollectionReusableView
+final class ViewNewListHeader:ViewCollectionReusable
 {
-    override init(frame:CGRect)
+    override func factoryViews()
     {
-        super.init(frame:frame)
-        self.clipsToBounds = true
-        self.backgroundColor = UIColor.clear
+        super.factoryViews()
+        
         self.isUserInteractionEnabled = false
         
         let labelTitle:UILabel = UILabel()
@@ -31,10 +30,5 @@ final class ViewNewListHeader:UICollectionReusableView
             constant:ViewNewListHeader.Constants.titleLeft)
         NSLayoutConstraint.widthGreaterOrEqual(
             view:labelTitle)
-    }
-    
-    required init?(coder:NSCoder)
-    {
-        return nil
     }
 }

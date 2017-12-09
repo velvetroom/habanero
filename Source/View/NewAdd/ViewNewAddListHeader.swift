@@ -1,28 +1,15 @@
 import UIKit
 
-final class ViewNewAddListHeader:UICollectionReusableView
+final class ViewNewAddListHeader:ViewCollectionReusable
 {
     private weak var labelTitle:UILabel!
-    
-    override init(frame:CGRect)
+
+    override func factoryViews()
     {
-        super.init(frame:frame)
-        self.clipsToBounds = true
-        self.backgroundColor = UIColor.clear
+        super.factoryViews()
+        
         self.isUserInteractionEnabled = false
         
-        self.factoryViews()
-    }
-    
-    required init?(coder:NSCoder)
-    {
-        return nil
-    }
-    
-    //MARK: private
-    
-    private func factoryViews()
-    {
         let labelTitle:UILabel = UILabel()
         labelTitle.isUserInteractionEnabled = false
         labelTitle.translatesAutoresizingMaskIntoConstraints = false

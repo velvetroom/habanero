@@ -65,7 +65,7 @@ final class ViewNewAddList:ViewCollection<ArchNewAdd, ViewNewAddListCell, ViewCo
         viewForSupplementaryElementOfKind kind:String,
         at indexPath:IndexPath) -> UICollectionReusableView
     {
-        let reusable:UICollectionReusableView
+        let reusable:ViewCollectionReusable
         
         if kind == UICollectionElementKindSectionHeader
         {

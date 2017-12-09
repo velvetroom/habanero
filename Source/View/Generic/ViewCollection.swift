@@ -57,7 +57,7 @@ class ViewCollection<A, Cell:ViewCollectionCell, Flow:UICollectionViewFlowLayout
             forCellWithReuseIdentifier:cell.reusableIdentifier)
     }
     
-    final func registerFooter(footer:UICollectionReusableView.Type)
+    final func registerFooter(footer:ViewCollectionReusable.Type)
     {
         self.collectionView.register(
             footer,
@@ -65,7 +65,7 @@ class ViewCollection<A, Cell:ViewCollectionCell, Flow:UICollectionViewFlowLayout
             withReuseIdentifier:footer.reusableIdentifier)
     }
     
-    final func registerHeader(header:UICollectionReusableView.Type)
+    final func registerHeader(header:ViewCollectionReusable.Type)
     {
         self.collectionView.register(
             header,
@@ -84,7 +84,7 @@ class ViewCollection<A, Cell:ViewCollectionCell, Flow:UICollectionViewFlowLayout
         return cell
     }
     
-    final func reusableAtIndex<P:UICollectionReusableView>(
+    final func reusableAtIndex<P:ViewCollectionReusable>(
         kind:String,
         indexPath:IndexPath,
         reusableIdentifier:String = P.reusableIdentifier) -> P
@@ -160,7 +160,7 @@ class ViewCollection<A, Cell:ViewCollectionCell, Flow:UICollectionViewFlowLayout
         viewForSupplementaryElementOfKind kind:String,
         at indexPath:IndexPath) -> UICollectionReusableView
     {
-        let reusable:UICollectionReusableView = self.reusableAtIndex(
+        let reusable:ViewCollectionReusable = self.reusableAtIndex(
             kind:kind,
             indexPath:indexPath)
         

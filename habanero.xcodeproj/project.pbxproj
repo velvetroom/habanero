@@ -211,6 +211,8 @@
 		DACEB39D1FDC98820089B3FE /* ViewNewList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACEB39C1FDC98820089B3FE /* ViewNewList+Actions.swift */; };
 		DACEB3A21FDC9C890089B3FE /* ViewCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACEB3A11FDC9C890089B3FE /* ViewCollectionCell.swift */; };
 		DACEB3A31FDC9C890089B3FE /* ViewCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACEB3A11FDC9C890089B3FE /* ViewCollectionCell.swift */; };
+		DACEB3A51FDC9F560089B3FE /* ViewCollectionReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACEB3A41FDC9F560089B3FE /* ViewCollectionReusable.swift */; };
+		DACEB3A61FDC9F560089B3FE /* ViewCollectionReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACEB3A41FDC9F560089B3FE /* ViewCollectionReusable.swift */; };
 		DACF22131FDB5C3400D6B192 /* BuildDurationMinutes.plist in Resources */ = {isa = PBXBuildFile; fileRef = DACF22121FDB5C3400D6B192 /* BuildDurationMinutes.plist */; };
 		DACF22151FDB5D8A00D6B192 /* NewAddSectionItemInfoDuration+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF22141FDB5D8A00D6B192 /* NewAddSectionItemInfoDuration+Constants.swift */; };
 		DACF22171FDB673A00D6B192 /* ViewFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF22161FDB673A00D6B192 /* ViewFormat.swift */; };
@@ -400,6 +402,7 @@
 		DACEB39A1FDC96190089B3FE /* NewItem+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewItem+Factory.swift"; sourceTree = "<group>"; };
 		DACEB39C1FDC98820089B3FE /* ViewNewList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewList+Actions.swift"; sourceTree = "<group>"; };
 		DACEB3A11FDC9C890089B3FE /* ViewCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCollectionCell.swift; sourceTree = "<group>"; };
+		DACEB3A41FDC9F560089B3FE /* ViewCollectionReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCollectionReusable.swift; sourceTree = "<group>"; };
 		DACF22121FDB5C3400D6B192 /* BuildDurationMinutes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = BuildDurationMinutes.plist; sourceTree = "<group>"; };
 		DACF22141FDB5D8A00D6B192 /* NewAddSectionItemInfoDuration+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddSectionItemInfoDuration+Constants.swift"; sourceTree = "<group>"; };
 		DACF22161FDB673A00D6B192 /* ViewFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFormat.swift; sourceTree = "<group>"; };
@@ -766,6 +769,7 @@
 				DA91EAD91FD62C1F0063560D /* ViewAlert+Constants.swift */,
 				DA91EADA1FD62C1F0063560D /* ViewCollection.swift */,
 				DACEB3A11FDC9C890089B3FE /* ViewCollectionCell.swift */,
+				DACEB3A41FDC9F560089B3FE /* ViewCollectionReusable.swift */,
 				DA91EADB1FD62C1F0063560D /* ViewAlert.swift */,
 				DA91EADC1FD62C1F0063560D /* ViewPushBackground.swift */,
 				DA91EADD1FD62C1F0063560D /* ViewCollectionFlow.swift */,
@@ -1036,6 +1040,7 @@
 				DA91EB041FD62C1F0063560D /* ViewCollection.swift in Sources */,
 				DAA333DB1FDB17EA002D766C /* Database+Constants.swift in Sources */,
 				DACF22171FDB673A00D6B192 /* ViewFormat.swift in Sources */,
+				DACEB3A51FDC9F560089B3FE /* ViewCollectionReusable.swift in Sources */,
 				DACF552B1FD7661E00069701 /* ExtensionDictionary.swift in Sources */,
 				DA71D69B1FDA65AB003A33E1 /* ViewText.swift in Sources */,
 				DA5A97CC1FD605E1006223BA /* MenuItemGeneric.swift in Sources */,
@@ -1142,6 +1147,7 @@
 				DA9089851FD4CE2E00C1208A /* ControllerTransition.swift in Sources */,
 				DA71D66F1FDA44A2003A33E1 /* ViewNewAddListFooterIngredients.swift in Sources */,
 				DA177BFE1FD7832B003B3836 /* ViewNewListHeader.swift in Sources */,
+				DACEB3A61FDC9F560089B3FE /* ViewCollectionReusable.swift in Sources */,
 				DACF55441FD7661E00069701 /* ExtensionData.swift in Sources */,
 				DA91EAF11FD62C1F0063560D /* ViewMenuCell.swift in Sources */,
 				DA91EAE91FD62C1F0063560D /* ViewMenu+Actions.swift in Sources */,
