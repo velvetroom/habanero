@@ -28,11 +28,10 @@ extension New
         builds:[Build],
         completion:@escaping(() -> ()))
     {
-        self?.builds = builds
+        self.items = NewItem.factoryItems(builds:builds)
         
         DispatchQueue.main.async
-        { [weak self] in
-            
+        {   
             completion()
         }
     }

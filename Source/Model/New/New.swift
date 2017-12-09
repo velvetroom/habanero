@@ -3,11 +3,11 @@ import Foundation
 final class New:Model<ArchNew>
 {
     var database:Database?
-    var builds:[Build]
+    var items:[NewItem]
     
     required init()
     {
-        self.builds = []
+        self.items = []
         
         super.init()
     }
