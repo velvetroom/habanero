@@ -1,14 +1,12 @@
 import UIKit
 
-final class ViewMenuCell:UICollectionViewCell
+final class ViewMenuCell:ViewCollectionCell
 {
     private weak var imageView:UIImageView!
     
     override init(frame:CGRect)
     {
         super.init(frame:frame)
-        self.clipsToBounds = true
-        self.backgroundColor = UIColor.clear
         
         let imageView:UIImageView = UIImageView()
         imageView.isUserInteractionEnabled = false
@@ -29,34 +27,14 @@ final class ViewMenuCell:UICollectionViewCell
         return nil
     }
     
-    override var isSelected:Bool
+    override func showHighlighted()
     {
-        didSet
-        {
-            self.hover()
-        }
+        self.imageView.tintColor = UIColor.colourBackgroundDark
     }
     
-    override var isHighlighted:Bool
+    override func showReleased()
     {
-        didSet
-        {
-            self.hover()
-        }
-    }
-    
-    //MARK: private
-    
-    private func hover()
-    {
-        if self.isSelected || self.isHighlighted
-        {
-            self.imageView.tintColor = UIColor.colourBackgroundDark
-        }
-        else
-        {
-            self.imageView.tintColor = UIColor.colourBackgroundDark.withAlphaComponent(0.2)
-        }
+        self.imageView.tintColor = UIColor.colourBackgroundDark.withAlphaComponent(0.2)
     }
     
     //MARK: internal
@@ -64,6 +42,6 @@ final class ViewMenuCell:UICollectionViewCell
     func config(model:MenuItemProtocol)
     {
         self.imageView.image = model.icon.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
-        self.hover()
+        self.showState()
     }
 }

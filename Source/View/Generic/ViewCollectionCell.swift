@@ -2,6 +2,18 @@ import UIKit
 
 class ViewCollectionCell:UICollectionViewCell
 {
+    override init(frame:CGRect)
+    {
+        super.init(frame:frame)
+        self.clipsToBounds = true
+        self.backgroundColor = UIColor.clear
+    }
+    
+    required init?(coder:NSCoder)
+    {
+        return nil
+    }
+    
     override var isSelected:Bool
     {
         didSet
@@ -18,9 +30,9 @@ class ViewCollectionCell:UICollectionViewCell
         }
     }
     
-    //MARK: private
+    //MARK: internal
     
-    private func showState()
+    final func showState()
     {
         if self.isSelected || self.isHighlighted
         {
@@ -31,8 +43,6 @@ class ViewCollectionCell:UICollectionViewCell
             self.showReleased()
         }
     }
-    
-    //MARK: internal
     
     func showReleased() { }
     

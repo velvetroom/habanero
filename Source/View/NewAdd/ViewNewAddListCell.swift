@@ -1,13 +1,12 @@
 import UIKit
 
-class ViewNewAddListCell:UICollectionViewCell
+class ViewNewAddListCell:ViewCollectionCell
 {
     private(set) weak var controller:ControllerNewAdd?
     
     override init(frame:CGRect)
     {
         super.init(frame:frame)
-        self.clipsToBounds = true
         self.backgroundColor = UIColor.white
         
         self.factoryViews()

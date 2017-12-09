@@ -101,6 +101,16 @@ final class ViewNewAddListCellInfoTitle:ViewNewAddListCell
         self.labelContent.text = model.title
     }
     
+    override func showHighlighted()
+    {
+        self.button.backgroundColor = UIColor(white:1, alpha:0.9)
+    }
+    
+    override func showReleased()
+    {
+        self.button.backgroundColor = UIColor.clear
+    }
+    
     //MARK: selectors
     
     @objc
@@ -120,17 +130,5 @@ final class ViewNewAddListCellInfoTitle:ViewNewAddListCell
     private func selectorButtonReleased(sender button:UIButton)
     {
         self.showReleased()
-    }
-    
-    //MARK: private
-    
-    private func showHighlighted()
-    {
-        self.button.backgroundColor = UIColor(white:1, alpha:0.9)
-    }
-    
-    private func showReleased()
-    {
-        self.button.backgroundColor = UIColor.clear
     }
 }

@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewCollection<A, Cell:UICollectionViewCell, Flow:UICollectionViewFlowLayout>:
+class ViewCollection<A, Cell:ViewCollectionCell, Flow:UICollectionViewFlowLayout>:
     View<A>,
     UICollectionViewDelegate,
     UICollectionViewDataSource,
@@ -73,7 +73,7 @@ class ViewCollection<A, Cell:UICollectionViewCell, Flow:UICollectionViewFlowLayo
             withReuseIdentifier:header.reusableIdentifier)
     }
     
-    final func cellAtIndex<P:UICollectionViewCell>(
+    final func cellAtIndex<P:ViewCollectionCell>(
         indexPath:IndexPath,
         reusableIdentifier:String = P.reusableIdentifier) -> P
     {
