@@ -110,7 +110,22 @@ final class ViewNewAddListCellInfoDuration:ViewNewAddListCell
         
         let minutes:TimeInterval = minutesList[value]
         let seconds:TimeInterval = minutes * ViewFormat.Constants.Duration.secondsPerMinute
-        let duration:String? = ViewFormat.factoryDuration(duration:seconds)
+        
+        guard
+            
+            let duration:String = ViewFormat.factoryDuration(duration:seconds)
+        
+        else
+        {
+            return
+        }
+        
         self.labelDuration.text = duration
+        self.saveNewDuration(duration:seconds)
+    }
+    
+    private func saveNewDuration(duration:TimeInterval)
+    {
+        self.controller?.durationEdited(duration:duration)
     }
 }

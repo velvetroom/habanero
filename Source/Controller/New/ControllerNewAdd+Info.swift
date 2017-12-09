@@ -71,4 +71,9 @@ extension ControllerNewAdd
             controller:controller,
             vertical:ControllerTransition.Vertical.bottom)
     }
+    
+    func durationEdited(duration:TimeInterval)
+    {
+        self.model.durationEdited(duration:duration)
+    }
 }
