@@ -213,6 +213,8 @@
 		DACEB3A31FDC9C890089B3FE /* ViewCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACEB3A11FDC9C890089B3FE /* ViewCollectionCell.swift */; };
 		DACEB3A51FDC9F560089B3FE /* ViewCollectionReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACEB3A41FDC9F560089B3FE /* ViewCollectionReusable.swift */; };
 		DACEB3A61FDC9F560089B3FE /* ViewCollectionReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACEB3A41FDC9F560089B3FE /* ViewCollectionReusable.swift */; };
+		DACEB3A81FDCAA370089B3FE /* ViewNewListCell+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACEB3A71FDCAA370089B3FE /* ViewNewListCell+Constants.swift */; };
+		DACEB3AA1FDCAC0B0089B3FE /* ViewNewListCell+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACEB3A91FDCAC0B0089B3FE /* ViewNewListCell+Config.swift */; };
 		DACF22131FDB5C3400D6B192 /* BuildDurationMinutes.plist in Resources */ = {isa = PBXBuildFile; fileRef = DACF22121FDB5C3400D6B192 /* BuildDurationMinutes.plist */; };
 		DACF22151FDB5D8A00D6B192 /* NewAddSectionItemInfoDuration+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF22141FDB5D8A00D6B192 /* NewAddSectionItemInfoDuration+Constants.swift */; };
 		DACF22171FDB673A00D6B192 /* ViewFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF22161FDB673A00D6B192 /* ViewFormat.swift */; };
@@ -403,6 +405,8 @@
 		DACEB39C1FDC98820089B3FE /* ViewNewList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewList+Actions.swift"; sourceTree = "<group>"; };
 		DACEB3A11FDC9C890089B3FE /* ViewCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCollectionCell.swift; sourceTree = "<group>"; };
 		DACEB3A41FDC9F560089B3FE /* ViewCollectionReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCollectionReusable.swift; sourceTree = "<group>"; };
+		DACEB3A71FDCAA370089B3FE /* ViewNewListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewListCell+Constants.swift"; sourceTree = "<group>"; };
+		DACEB3A91FDCAC0B0089B3FE /* ViewNewListCell+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewListCell+Config.swift"; sourceTree = "<group>"; };
 		DACF22121FDB5C3400D6B192 /* BuildDurationMinutes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = BuildDurationMinutes.plist; sourceTree = "<group>"; };
 		DACF22141FDB5D8A00D6B192 /* NewAddSectionItemInfoDuration+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddSectionItemInfoDuration+Constants.swift"; sourceTree = "<group>"; };
 		DACF22161FDB673A00D6B192 /* ViewFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFormat.swift; sourceTree = "<group>"; };
@@ -534,6 +538,8 @@
 				DA177BFC1FD7832B003B3836 /* ViewNewListHeader.swift */,
 				DA177BFF1FD78361003B3836 /* ViewNewListHeader+Constants.swift */,
 				DA177BEE1FD77773003B3836 /* ViewNewListCell.swift */,
+				DACEB3A71FDCAA370089B3FE /* ViewNewListCell+Constants.swift */,
+				DACEB3A91FDCAC0B0089B3FE /* ViewNewListCell+Config.swift */,
 			);
 			path = New;
 			sourceTree = "<group>";
@@ -1111,6 +1117,7 @@
 				DACEB39B1FDC96190089B3FE /* NewItem+Factory.swift in Sources */,
 				DA90898A1FD4CE3E00C1208A /* Menu+Constants.swift in Sources */,
 				DACEB3991FDC95480089B3FE /* NewItem.swift in Sources */,
+				DACEB3AA1FDCAC0B0089B3FE /* ViewNewListCell+Config.swift in Sources */,
 				DA84C0F21FD73FCD008959EA /* ControllerNew.swift in Sources */,
 				DA91EB1F1FD62C1F0063560D /* ViewGradient+Constants.swift in Sources */,
 				DA9089871FD4CE3300C1208A /* Arch.swift in Sources */,
@@ -1127,6 +1134,7 @@
 				DACF55421FD7661E00069701 /* ExtensionUIImage.swift in Sources */,
 				DACF55361FD7661E00069701 /* ExtensionString+Constants.swift in Sources */,
 				DA91EAFD1FD62C1F0063560D /* ViewParent+Transitions.swift in Sources */,
+				DACEB3A81FDCAA370089B3FE /* ViewNewListCell+Constants.swift in Sources */,
 				DACEB39D1FDC98820089B3FE /* ViewNewList+Actions.swift in Sources */,
 				DA11BA0E1FD8F6E90038F9B0 /* ViewNewAddBar.swift in Sources */,
 				DACF55481FD7661E00069701 /* ExtensionString.swift in Sources */,
