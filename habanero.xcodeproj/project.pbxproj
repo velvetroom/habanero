@@ -210,6 +210,10 @@
 		DACF22151FDB5D8A00D6B192 /* NewAddSectionItemInfoDuration+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF22141FDB5D8A00D6B192 /* NewAddSectionItemInfoDuration+Constants.swift */; };
 		DACF22171FDB673A00D6B192 /* ViewFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF22161FDB673A00D6B192 /* ViewFormat.swift */; };
 		DACF22181FDB673A00D6B192 /* ViewFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF22161FDB673A00D6B192 /* ViewFormat.swift */; };
+		DACF221A1FDB676800D6B192 /* ViewFormat+Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF22191FDB676800D6B192 /* ViewFormat+Duration.swift */; };
+		DACF221B1FDB676800D6B192 /* ViewFormat+Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF22191FDB676800D6B192 /* ViewFormat+Duration.swift */; };
+		DACF221D1FDB68BA00D6B192 /* ViewFormat+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF221C1FDB68BA00D6B192 /* ViewFormat+Constants.swift */; };
+		DACF221E1FDB68BA00D6B192 /* ViewFormat+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF221C1FDB68BA00D6B192 /* ViewFormat+Constants.swift */; };
 		DACF55071FD7656F00069701 /* habanero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DACF55051FD7656E00069701 /* habanero.xcdatamodeld */; };
 		DACF55081FD7656F00069701 /* habanero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DACF55051FD7656E00069701 /* habanero.xcdatamodeld */; };
 		DACF552B1FD7661E00069701 /* ExtensionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55191FD7661E00069701 /* ExtensionDictionary.swift */; };
@@ -390,6 +394,8 @@
 		DACF22121FDB5C3400D6B192 /* BuildDurationMinutes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = BuildDurationMinutes.plist; sourceTree = "<group>"; };
 		DACF22141FDB5D8A00D6B192 /* NewAddSectionItemInfoDuration+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddSectionItemInfoDuration+Constants.swift"; sourceTree = "<group>"; };
 		DACF22161FDB673A00D6B192 /* ViewFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFormat.swift; sourceTree = "<group>"; };
+		DACF22191FDB676800D6B192 /* ViewFormat+Duration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewFormat+Duration.swift"; sourceTree = "<group>"; };
+		DACF221C1FDB68BA00D6B192 /* ViewFormat+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewFormat+Constants.swift"; sourceTree = "<group>"; };
 		DACF55061FD7656E00069701 /* habanero.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = habanero.xcdatamodel; sourceTree = "<group>"; };
 		DACF550A1FD7658500069701 /* userInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = userInfo.plist; sourceTree = "<group>"; };
 		DACF550B1FD7658500069701 /* adminInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = adminInfo.plist; sourceTree = "<group>"; };
@@ -444,6 +450,8 @@
 				DA177BF61FD77B2E003B3836 /* ViewBar+Factory.swift */,
 				DA11BA0A1FD8F3DD0038F9B0 /* ViewBarBack.swift */,
 				DACF22161FDB673A00D6B192 /* ViewFormat.swift */,
+				DACF221C1FDB68BA00D6B192 /* ViewFormat+Constants.swift */,
+				DACF22191FDB676800D6B192 /* ViewFormat+Duration.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -984,6 +992,7 @@
 				DACF552F1FD7661E00069701 /* ExtensionUIColor.swift in Sources */,
 				DACF55471FD7661E00069701 /* ExtensionString.swift in Sources */,
 				DAA333D91FDB17EA002D766C /* Database+Factory.swift in Sources */,
+				DACF221D1FDB68BA00D6B192 /* ViewFormat+Constants.swift in Sources */,
 				DA91EB001FD62C1F0063560D /* ViewParent+Gesture.swift in Sources */,
 				DA91EAF41FD62C1F0063560D /* ViewParent.swift in Sources */,
 				DACF55351FD7661E00069701 /* ExtensionString+Constants.swift in Sources */,
@@ -1051,6 +1060,7 @@
 				DA91EB271FD630E80063560D /* ViewGlobal.swift in Sources */,
 				DACF55071FD7656F00069701 /* habanero.xcdatamodeld in Sources */,
 				DA71D6AA1FDA74D8003A33E1 /* ViewTextBar.swift in Sources */,
+				DACF221A1FDB676800D6B192 /* ViewFormat+Duration.swift in Sources */,
 				DACF55431FD7661E00069701 /* ExtensionData.swift in Sources */,
 				DA71D6A11FDA6C1A003A33E1 /* ViewTextInput+Constants.swift in Sources */,
 				DA90892F1FD4C66000C1208A /* Menu+Factory.swift in Sources */,
@@ -1069,9 +1079,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA71D6891FDA5985003A33E1 /* NewAddSectionItemInfoTitle.swift in Sources */,
+				DACF221E1FDB68BA00D6B192 /* ViewFormat+Constants.swift in Sources */,
 				DA5D69801FDB521400429F5D /* Build+Constants.swift in Sources */,
 				DA71D6771FDA4539003A33E1 /* NewAddSectionInfo.swift in Sources */,
 				DA91EB1B1FD62C1F0063560D /* ViewSlider.swift in Sources */,
+				DACF221B1FDB676800D6B192 /* ViewFormat+Duration.swift in Sources */,
 				DACF553C1FD7661E00069701 /* ExtensionMKAnnotationView.swift in Sources */,
 				DA70AFC31FD5AA980016B0DC /* ControllerHome.swift in Sources */,
 				DA91EB0D1FD62C1F0063560D /* ViewSliderBar.swift in Sources */,
