@@ -8,6 +8,6 @@ extension NewAdd
         static let headerIngredientsHeight:CGFloat = 70
         static let headerStepsHeight:CGFloat = 70
         static let cellInfoTitleHeight:CGFloat = 80
-        static let cellDurationTitleHeight:CGFloat = 120
+        static let cellDurationTitleHeight:CGFloat = 140
     }
 }
