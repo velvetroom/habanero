@@ -3,7 +3,6 @@ import UIKit
 class ViewNewAddListCell:UICollectionViewCell
 {
     private(set) weak var controller:ControllerNewAdd?
-    private(set) var model:NewAddSectionItemProtocol?
     
     override init(frame:CGRect)
     {
@@ -28,6 +27,5 @@ class ViewNewAddListCell:UICollectionViewCell
         model:NewAddSectionItemProtocol)
     {
         self.controller = controller
-        self.model = model
     }
 }
