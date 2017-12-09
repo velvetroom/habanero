@@ -3,6 +3,7 @@ import UIKit
 final class ViewNewAddListCellInfoDuration:ViewNewAddListCell
 {
     private weak var viewSlider:UISlider!
+    private weak var labelDuration:UILabel!
     private var model:NewAddSectionItemInfoDuration?
     
     override func factoryViews()
@@ -20,6 +21,16 @@ final class ViewNewAddListCellInfoDuration:ViewNewAddListCell
             for:UIControlEvents.valueChanged)
         self.viewSlider = viewSlider
         
+        let labelDuration:UILabel = UILabel()
+        labelDuration.translatesAutoresizingMaskIntoConstraints = false
+        labelDuration.backgroundColor = UIColor.clear
+        labelDuration.isUserInteractionEnabled = false
+        labelDuration.textAlignment = NSTextAlignment.center
+        labelDuration.font = UIFont.regular(size:ViewNewAddListCellInfoDuration.Constants.durationFontSize)
+        labelDuration.textColor = UIColor.colourBackgroundDark
+        self.labelDuration = labelDuration
+        
+        self.addSubview(labelDuration)
         self.addSubview(viewSlider)
         
         NSLayoutConstraint.topToTop(
@@ -33,6 +44,16 @@ final class ViewNewAddListCellInfoDuration:ViewNewAddListCell
             view:viewSlider,
             toView:self,
             margin:ViewNewAddList.Constants.marginHorizontal)
+        
+        NSLayoutConstraint.topToTop(
+            view:labelDuration,
+            toView:self)
+        NSLayoutConstraint.height(
+            view:labelDuration,
+            constant:ViewNewAddListCellInfoDuration.Constants.durationHeight)
+        NSLayoutConstraint.equalsHorizontal(
+            view:labelDuration,
+            toView:self)
     }
     
     override func config(
@@ -85,5 +106,6 @@ final class ViewNewAddListCellInfoDuration:ViewNewAddListCell
         let minutes:TimeInterval = minutesList[value]
         let seconds:TimeInterval = minutes * ViewFormat.Constants.Duration.secondsPerMinute
         let duration:String? = ViewFormat.factoryDuration(duration:seconds)
+        self.labelDuration.text = duration
     }
 }

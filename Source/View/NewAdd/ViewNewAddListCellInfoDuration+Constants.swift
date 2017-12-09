@@ -6,5 +6,7 @@ extension ViewNewAddListCellInfoDuration
     {
         static let sliderTop:CGFloat = 50
         static let sliderHeight:CGFloat = 60
+        static let durationHeight:CGFloat = 40
+        static let durationFontSize:CGFloat = 18
     }
 }
