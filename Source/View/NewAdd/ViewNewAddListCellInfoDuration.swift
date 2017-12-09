@@ -74,8 +74,13 @@ final class ViewNewAddListCellInfoDuration:ViewNewAddListCell
         }
         
         let maxValue:Float = Float(model.minutes.count - 1)
+        let currentValue:Float = Float(model.minuteSelected)
+        
         self.viewSlider.maximumValue = maxValue
+        self.viewSlider.value = currentValue
         self.model = model
+        
+        self.sliderUpdated(value:model.minuteSelected)
     }
     
     //MARK: selectors

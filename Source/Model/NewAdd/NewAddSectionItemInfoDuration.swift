@@ -4,13 +4,16 @@ struct NewAddSectionItemInfoDuration:NewAddSectionItemProtocol
 {
     let reusableIdentifier:String = ViewNewAddListCellInfoDuration.reusableIdentifier
     let cellHeight:CGFloat = NewAdd.Constants.cellDurationTitleHeight
-    let duration:TimeInterval
+    let minuteSelected:Int
     let minutes:[TimeInterval]
     
     init(duration:TimeInterval)
     {
-        self.duration = duration
         self.minutes = NewAddSectionItemInfoDuration.factoryMinutes()
+        
+        self.minuteSelected = NewAddSectionItemInfoDuration.factoryMinuteSelected(
+            duration:duration,
+            minutes:self.minutes)
     }
     
     //MARK: private
@@ -32,5 +35,31 @@ struct NewAddSectionItemInfoDuration:NewAddSectionItemProtocol
         }
         
         return minutes
+    }
+    
+    private static func factoryMinuteSelected(
+        duration:TimeInterval,
+        minutes:[TimeInterval]) -> Int
+    {
+        let minute:TimeInterval = duration / ViewFormat.Constants.Duration.secondsPerMinute
+        var selected:Int = 0
+        
+        for indexedMinute:TimeInterval in minutes
+        {
+            guard
+            
+                indexedMinute >= minute
+            
+            else
+            {
+                selected += 1
+                
+                continue
+            }
+            
+            break
+        }
+        
+        return selected
     }
 }
