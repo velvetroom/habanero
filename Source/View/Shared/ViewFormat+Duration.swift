@@ -9,6 +9,7 @@ extension ViewFormat
         let minutes:TimeInterval = duration / ViewFormat.Constants.Duration.secondsPerMinute
         let number:NSNumber = minutes as NSNumber
         let numberFormatter:NumberFormatter = ViewFormat.factoryFormatter(decimals:0)
+        numberFormatter.positiveSuffix = String.localizedView(key:"ViewFormat_durationMinutes")
         
         let minutesString:String? = numberFormatter.string(from:number)
         
@@ -21,6 +22,7 @@ extension ViewFormat
         let number:NSNumber = hours as NSNumber
         let numberFormatter:NumberFormatter = ViewFormat.factoryFormatter(
             decimals:ViewFormat.Constants.Duration.decimalsPerHour)
+        numberFormatter.positiveSuffix = String.localizedView(key:"ViewFormat_durationHours")
         
         let hoursString:String? = numberFormatter.string(from:number)
         

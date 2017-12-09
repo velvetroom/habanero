@@ -5,3 +5,5 @@ ViewNewAddBar_labelTitle="Add Recipe";
 ViewNewAddListFooterInfo_buttonDelete="Delete";
 ViewNewAddListCellInfoTitle_labelTitle="Name";
 ViewTextBar_button="Done";
+ViewFormat_durationMinutes=" minutes";
+ViewFormat_durationHours=" hours";
