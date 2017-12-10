@@ -49,8 +49,6 @@
 		DA6BF0D41FDDFBFC0027C167 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6BF0D21FDDFBFC0027C167 /* Analytics.swift */; };
 		DA6BF0D91FDDFDDC0027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0D81FDDFDDC0027C167 /* GoogleService-Info.plist */; };
 		DA6BF0DB1FDDFDE60027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */; };
-		DA6BF0DD1FDDFE430027C167 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0DC1FDDFE430027C167 /* Info.plist */; };
-		DA6BF0DF1FDDFE4E0027C167 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0DE1FDDFE4E0027C167 /* Info.plist */; };
 		DA70AFBF1FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
 		DA70AFC01FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
 		DA70AFC21FD5AA980016B0DC /* ControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */; };
@@ -1042,7 +1040,6 @@
 			files = (
 				DA9089031FD4C65F00C1208A /* LaunchScreen.storyboard in Resources */,
 				DA6BF0D91FDDFDDC0027C167 /* GoogleService-Info.plist in Resources */,
-				DA6BF0DD1FDDFE430027C167 /* Info.plist in Resources */,
 				DA3F0EB11FD7480000593B83 /* menu.xcassets in Resources */,
 				DA9089071FD4C65F00C1208A /* LocalizableController.strings in Resources */,
 				DA9089061FD4C65F00C1208A /* LocalizableView.strings in Resources */,
@@ -1064,7 +1061,6 @@
 				DA753DAC1FD5EBC8007E5BC5 /* generic.xcassets in Resources */,
 				DA9089B21FD4CE5F00C1208A /* InfoPlist.strings in Resources */,
 				DA6BF0DB1FDDFDE60027C167 /* GoogleService-Info.plist in Resources */,
-				DA6BF0DF1FDDFE4E0027C167 /* Info.plist in Resources */,
 				DACEB3AE1FDCAF4F0089B3FE /* new.xcassets in Resources */,
 				DA9089B11FD4CE5F00C1208A /* LocalizableModel.strings in Resources */,
 			);
@@ -1611,7 +1607,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
-				INFOPLIST_FILE = "$(SRCROOT)/Info/userInfo.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info/user/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iturbide.habanero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1626,7 +1622,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
-				INFOPLIST_FILE = "$(SRCROOT)/Info/userInfo.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info/user/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iturbide.habanero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1642,7 +1638,7 @@
 				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
-				INFOPLIST_FILE = "$(SRCROOT)/Info/adminInfo.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info/admin/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iturbide.habanero.admin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1658,7 +1654,7 @@
 				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
-				INFOPLIST_FILE = "$(SRCROOT)/Info/adminInfo.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info/admin/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iturbide.habanero.admin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
