@@ -71,4 +71,12 @@ final class ViewNewList:ViewCollection<ArchNew,  ViewNewListCell, ViewCollection
         
         return cell
     }
+    
+    override func collectionView(
+        _ collectionView:UICollectionView,
+        didSelectItemAt indexPath:IndexPath)
+    {
+        let item:NewItem = self.modelAtIndex(index:indexPath)
+        self.controller.transitionToNewAdd(build:item.build)
+    }
 }
