@@ -17,7 +17,7 @@ extension ViewNewList
         self.flow.sectionInset = UIEdgeInsets(
             top:0,
             left:0,
-            bottom:ViewGlobal.Constants.menuHeight,
+            bottom:ViewGlobal.Constants.menuHeight + ViewNewList.Constants.collectionBottom,
             right:0)
     }
 }

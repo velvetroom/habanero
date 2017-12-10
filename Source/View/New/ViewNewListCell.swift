@@ -15,7 +15,7 @@ final class ViewNewListCell:ViewCollectionCell
         
         self.attributesDuration = [
             NSAttributedStringKey.font:UIFont.regular(size:ViewNewListCell.Constants.durationFontSize),
-            NSAttributedStringKey.foregroundColor:UIColor(white:0, alpha:0.6)]
+            NSAttributedStringKey.foregroundColor:UIColor(white:0, alpha:0.5)]
         
         super.init(frame:frame)
     }
@@ -28,8 +28,6 @@ final class ViewNewListCell:ViewCollectionCell
     override func factoryViews()
     {
         super.factoryViews()
-        
-        self.backgroundColor = UIColor.white
         
         let labelInfo:UILabel = UILabel()
         labelInfo.isUserInteractionEnabled = false
@@ -73,13 +71,13 @@ final class ViewNewListCell:ViewCollectionCell
     {
         super.showReleased()
         
-        self.alpha = 1
+        self.backgroundColor = UIColor.white
     }
     
     override func showHighlighted()
     {
         super.showHighlighted()
         
-        self.alpha = 0.3
+        self.backgroundColor = UIColor.colourSuccess.withAlphaComponent(0.4)
     }
 }
