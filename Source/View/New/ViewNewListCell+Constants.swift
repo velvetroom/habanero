@@ -8,6 +8,6 @@ extension ViewNewListCell
         static let durationFontSize:CGFloat = 12
         static let infoLeft:CGFloat = 20
         static let infoTop:CGFloat = 10
-        static let stepsSize:CGFloat = 50
+        static let stepsWidth:CGFloat = 60
     }
 }

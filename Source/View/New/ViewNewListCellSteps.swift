@@ -26,14 +26,32 @@ final class ViewNewListCellSteps:UIView
         let image:UIImageView = UIImageView()
         image.isUserInteractionEnabled = false
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.contentMode = UIViewContentMode.bottomRight
+        image.contentMode = UIViewContentMode.center
         image.clipsToBounds = true
         image.image = #imageLiteral(resourceName: "assetNewSteps")
         
+        let label:UILabel = UILabel()
+        label.isUserInteractionEnabled = false
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.backgroundColor = UIColor.clear
+        label.textAlignment = NSTextAlignment.center
+        label.font = UIFont.bold(size:ViewNewListCellSteps.Constants.fontSize)
+        label.textColor = UIColor.colourSuccess
+        self.label = label
+        
         self.addSubview(image)
+        self.addSubview(label)
         
         NSLayoutConstraint.equals(
             view:image,
             toView:self)
+    }
+    
+    //MARK: internal
+    
+    func config(model:NewItem)
+    {
+        let steps:String = String(describing:model.steps)
+        self.label.text = steps
     }
 }

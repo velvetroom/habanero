@@ -7,5 +7,6 @@ extension ViewNewListCell
     func config(model:NewItem)
     {
         self.showState()
+        self.viewSteps.config(model:model)
     }
 }

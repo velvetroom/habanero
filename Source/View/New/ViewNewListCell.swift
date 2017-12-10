@@ -58,12 +58,12 @@ final class ViewNewListCell:ViewCollectionCell
             view:labelInfo,
             toView:viewSteps)
         
-        NSLayoutConstraint.bottomToBottom(
+        NSLayoutConstraint.equalsVertical(
             view:viewSteps,
             toView:self)
-        NSLayoutConstraint.size(
+        NSLayoutConstraint.width(
             view:viewSteps,
-            constant:ViewNewListCell.Constants.stepsSize)
+            constant:ViewNewListCell.Constants.stepsWidth)
         NSLayoutConstraint.rightToRight(
             view:viewSteps,
             toView:self)
