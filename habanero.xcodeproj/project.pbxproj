@@ -49,6 +49,8 @@
 		DA6BF0D41FDDFBFC0027C167 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6BF0D21FDDFBFC0027C167 /* Analytics.swift */; };
 		DA6BF0D91FDDFDDC0027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0D81FDDFDDC0027C167 /* GoogleService-Info.plist */; };
 		DA6BF0DB1FDDFDE60027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */; };
+		DA6BF0DD1FDDFE430027C167 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0DC1FDDFE430027C167 /* Info.plist */; };
+		DA6BF0DF1FDDFE4E0027C167 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0DE1FDDFE4E0027C167 /* Info.plist */; };
 		DA70AFBF1FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
 		DA70AFC01FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
 		DA70AFC21FD5AA980016B0DC /* ControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */; };
@@ -320,6 +322,8 @@
 		DA6BF0D21FDDFBFC0027C167 /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 		DA6BF0D81FDDFDDC0027C167 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "user/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "admin/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DA6BF0DC1FDDFE430027C167 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = user/Info.plist; sourceTree = "<group>"; };
+		DA6BF0DE1FDDFE4E0027C167 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = admin/Info.plist; sourceTree = "<group>"; };
 		DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHome.swift; sourceTree = "<group>"; };
 		DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerHome.swift; sourceTree = "<group>"; };
 		DA70AFC41FD5AABF0016B0DC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -435,8 +439,6 @@
 		DACF22191FDB676800D6B192 /* ViewFormat+Duration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewFormat+Duration.swift"; sourceTree = "<group>"; };
 		DACF221C1FDB68BA00D6B192 /* ViewFormat+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewFormat+Constants.swift"; sourceTree = "<group>"; };
 		DACF55061FD7656E00069701 /* habanero.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = habanero.xcdatamodel; sourceTree = "<group>"; };
-		DACF550A1FD7658500069701 /* userInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = userInfo.plist; sourceTree = "<group>"; };
-		DACF550B1FD7658500069701 /* adminInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = adminInfo.plist; sourceTree = "<group>"; };
 		DACF55141FD765C700069701 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
 		DACF55191FD7661E00069701 /* ExtensionDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDictionary.swift; sourceTree = "<group>"; };
 		DACF551A1FD7661E00069701 /* ExtensionNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionNotification.swift; sourceTree = "<group>"; };
@@ -873,10 +875,10 @@
 		DACF55091FD7658500069701 /* Info */ = {
 			isa = PBXGroup;
 			children = (
+				DA6BF0DC1FDDFE430027C167 /* Info.plist */,
+				DA6BF0DE1FDDFE4E0027C167 /* Info.plist */,
 				DA6BF0D81FDDFDDC0027C167 /* GoogleService-Info.plist */,
 				DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */,
-				DACF550A1FD7658500069701 /* userInfo.plist */,
-				DACF550B1FD7658500069701 /* adminInfo.plist */,
 			);
 			path = Info;
 			sourceTree = "<group>";
@@ -1040,6 +1042,7 @@
 			files = (
 				DA9089031FD4C65F00C1208A /* LaunchScreen.storyboard in Resources */,
 				DA6BF0D91FDDFDDC0027C167 /* GoogleService-Info.plist in Resources */,
+				DA6BF0DD1FDDFE430027C167 /* Info.plist in Resources */,
 				DA3F0EB11FD7480000593B83 /* menu.xcassets in Resources */,
 				DA9089071FD4C65F00C1208A /* LocalizableController.strings in Resources */,
 				DA9089061FD4C65F00C1208A /* LocalizableView.strings in Resources */,
@@ -1061,6 +1064,7 @@
 				DA753DAC1FD5EBC8007E5BC5 /* generic.xcassets in Resources */,
 				DA9089B21FD4CE5F00C1208A /* InfoPlist.strings in Resources */,
 				DA6BF0DB1FDDFDE60027C167 /* GoogleService-Info.plist in Resources */,
+				DA6BF0DF1FDDFE4E0027C167 /* Info.plist in Resources */,
 				DACEB3AE1FDCAF4F0089B3FE /* new.xcassets in Resources */,
 				DA9089B11FD4CE5F00C1208A /* LocalizableModel.strings in Resources */,
 			);
