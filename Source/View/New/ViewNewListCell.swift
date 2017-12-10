@@ -2,6 +2,7 @@ import UIKit
 
 final class ViewNewListCell:ViewCollectionCell
 {
+    private(set) weak var viewSteps:ViewNewListCellSteps!
     private(set) weak var labelInfo:UILabel!
     private let attributesTitle:[NSAttributedStringKey:Any]
     private let attributesDuration:[NSAttributedStringKey:Any]
@@ -37,18 +38,35 @@ final class ViewNewListCell:ViewCollectionCell
         labelInfo.numberOfLines = 0
         self.labelInfo = labelInfo
         
+        let viewSteps:ViewNewListCellSteps = ViewNewListCellSteps()
+        self.viewSteps = viewSteps
+        
         addSubview(labelInfo)
+        addSubview(viewSteps)
         
         NSLayoutConstraint.topToTop(
             view:labelInfo,
             toView:self,
             constant:ViewNewListCell.Constants.infoTop)
+        NSLayoutConstraint.heightGreaterOrEqual(
+            view:labelInfo)
         NSLayoutConstraint.leftToLeft(
             view:labelInfo,
             toView:self,
             constant:ViewNewListCell.Constants.infoLeft)
-        NSLayoutConstraint.heightGreaterOrEqual(
-            view:labelInfo)
+        NSLayoutConstraint.rightToLeft(
+            view:labelInfo,
+            toView:viewSteps)
+        
+        NSLayoutConstraint.bottomToBottom(
+            view:viewSteps,
+            toView:self)
+        NSLayoutConstraint.size(
+            view:viewSteps,
+            constant:ViewNewListCell.Constants.stepsSize)
+        NSLayoutConstraint.rightToRight(
+            view:viewSteps,
+            toView:self)
     }
     
     override func showReleased()
