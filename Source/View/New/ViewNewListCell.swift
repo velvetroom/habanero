@@ -2,10 +2,10 @@ import UIKit
 
 final class ViewNewListCell:ViewCollectionCell
 {
+    let attributesTitle:[NSAttributedStringKey:Any]
+    let attributesDuration:[NSAttributedStringKey:Any]
     private(set) weak var viewSteps:ViewNewListCellSteps!
     private(set) weak var labelInfo:UILabel!
-    private let attributesTitle:[NSAttributedStringKey:Any]
-    private let attributesDuration:[NSAttributedStringKey:Any]
     
     override init(frame:CGRect)
     {

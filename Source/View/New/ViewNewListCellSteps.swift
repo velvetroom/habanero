@@ -45,6 +45,10 @@ final class ViewNewListCellSteps:UIView
         NSLayoutConstraint.equals(
             view:image,
             toView:self)
+        
+        NSLayoutConstraint.equals(
+            view:label,
+            toView:self)
     }
     
     //MARK: internal
