@@ -14,5 +14,10 @@ extension ViewNewList
         self.flow.headerReferenceSize = CGSize(
             width:0,
             height:ViewNewList.Constants.headerHeight)
+        self.flow.sectionInset = UIEdgeInsets(
+            top:0,
+            left:0,
+            bottom:ViewGlobal.Constants.menuHeight,
+            right:0)
     }
 }
