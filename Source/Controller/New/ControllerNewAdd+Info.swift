@@ -6,7 +6,11 @@ extension ControllerNewAdd
     
     private func deleteConfirmed()
     {
-        self.transitionBack()
+        self.model.delete
+        { [weak self] in
+            
+            self?.transitionBack()
+        }
     }
     
     //MARK: internal
