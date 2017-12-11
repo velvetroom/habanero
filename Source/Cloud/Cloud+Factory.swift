@@ -4,7 +4,7 @@ import Firebase
 extension Cloud
 {
     //MARK: internal
-    
+    /*
     class func factoryList<T:CloudListProtocol>(
         snapshot:DataSnapshot,
         parent:CloudProtocol?) -> T?
@@ -47,5 +47,5 @@ extension Cloud
             json:json)
         
         return model
-    }
+    }*/
 }

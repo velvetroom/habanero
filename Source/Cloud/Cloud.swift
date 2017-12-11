@@ -10,16 +10,31 @@ final class Cloud
         self.reference = Firestore.firestore()
     }
     
+    //MARK: private
+    
+    private func createFailed(
+        document:DocumentReference,
+        completion:@escaping((String?, Error?) -> ()))
+    {
+        document.delete
+        { (error:Error?) in
+            
+            completion(
+                nil,
+                CloudError.createFailed)
+        }
+    }
+    
     //MARK: internal
     
     func create(
         parent:CloudProtocol,
         data:[String:Any],
-        completion:@escaping((String, Error?) -> ()))
+        completion:@escaping((String?, Error?) -> ()))
     {
         let document:DocumentReference = self.reference.collection(parent.path).document()
         document.setData(data)
-        { (error:Error?) in
+        { [weak self] (error:Error?) in
             
             guard
             
@@ -27,15 +42,19 @@ final class Cloud
             
             else
             {
-                completion(document.documentID, error)
+                self?.createFailed(
+                    document:document,
+                    completion:completion)
                 
                 return
             }
             
-            completion(document.documentID, nil)
+            completion(
+                document.documentID,
+                nil)
         }
     }
-    
+    /*
     func loadList<T:CloudListProtocol>(
         parent:CloudProtocol?,
         completion:@escaping((T?) -> ()))
@@ -94,5 +113,5 @@ final class Cloud
     {
         let itemReference:DatabaseReference = self.reference.child(item.path)
         itemReference.removeValue()
-    }
+    }*/
 }
