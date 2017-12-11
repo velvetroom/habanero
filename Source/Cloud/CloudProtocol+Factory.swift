@@ -1,6 +1,6 @@
 import Foundation
 
-extension CloudListProtocol
+extension CloudProtocol
 {
     //MARK: internal
     

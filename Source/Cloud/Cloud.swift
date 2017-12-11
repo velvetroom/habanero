@@ -25,7 +25,7 @@ final class Cloud
     }
     
     func loadItem<T:CloudItemProtocol>(
-        parent:CloudListProtocol,
+        parent:CloudProtocol,
         identifier:String,
         completion:@escaping((T?) -> ()))
     {
