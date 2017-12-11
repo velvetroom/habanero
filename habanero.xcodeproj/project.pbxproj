@@ -55,6 +55,7 @@
 		DA3F0E861FDF41B30037C94D /* CloudError+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E841FDF41B30037C94D /* CloudError+Description.swift */; };
 		DA3F0E881FDF44920037C94D /* ArchNewAddIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E871FDF44920037C94D /* ArchNewAddIngredient.swift */; };
 		DA3F0E8A1FDF45350037C94D /* ControllerNewAddIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E891FDF45350037C94D /* ControllerNewAddIngredient.swift */; };
+		DA3F0E8D1FDF457D0037C94D /* NewAddIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E8C1FDF457D0037C94D /* NewAddIngredient.swift */; };
 		DA3F0EB11FD7480000593B83 /* menu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3F0EB01FD7480000593B83 /* menu.xcassets */; };
 		DA3F0EB21FD7480A00593B83 /* menu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3F0EB01FD7480000593B83 /* menu.xcassets */; };
 		DA3F0EB41FD74C5F00593B83 /* Menu+FactoryUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0EB31FD74C5F00593B83 /* Menu+FactoryUser.swift */; };
@@ -343,6 +344,7 @@
 		DA3F0E841FDF41B30037C94D /* CloudError+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudError+Description.swift"; sourceTree = "<group>"; };
 		DA3F0E871FDF44920037C94D /* ArchNewAddIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNewAddIngredient.swift; sourceTree = "<group>"; };
 		DA3F0E891FDF45350037C94D /* ControllerNewAddIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerNewAddIngredient.swift; sourceTree = "<group>"; };
+		DA3F0E8C1FDF457D0037C94D /* NewAddIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddIngredient.swift; sourceTree = "<group>"; };
 		DA3F0EB01FD7480000593B83 /* menu.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = menu.xcassets; sourceTree = "<group>"; };
 		DA3F0EB31FD74C5F00593B83 /* Menu+FactoryUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+FactoryUser.swift"; sourceTree = "<group>"; };
 		DA3F0EB51FD74C8700593B83 /* Menu+FactoryAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+FactoryAdmin.swift"; sourceTree = "<group>"; };
@@ -586,6 +588,14 @@
 			path = Ingredient;
 			sourceTree = "<group>";
 		};
+		DA3F0E8B1FDF45720037C94D /* NewAddIngredient */ = {
+			isa = PBXGroup;
+			children = (
+				DA3F0E8C1FDF457D0037C94D /* NewAddIngredient.swift */,
+			);
+			path = NewAddIngredient;
+			sourceTree = "<group>";
+		};
 		DA6BF0D11FDDFBF10027C167 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
@@ -795,6 +805,7 @@
 			isa = PBXGroup;
 			children = (
 				DA9088D21FD4C65F00C1208A /* Abstract */,
+				DA3F0E8B1FDF45720037C94D /* NewAddIngredient */,
 				DA3F0E711FDF0BB80037C94D /* Ingredient */,
 				DAA333D31FDB17EA002D766C /* Database */,
 				DA8C6E3A1FDB2F3B00C0AD69 /* Build */,
@@ -1425,6 +1436,7 @@
 				DA71D68D1FDA6262003A33E1 /* ControllerNewAdd+Info.swift in Sources */,
 				DAA333E21FDB29D8002D766C /* NewAdd+Info.swift in Sources */,
 				DAF949F61FD8BC6F001BA32E /* ControllerNewAdd.swift in Sources */,
+				DA3F0E8D1FDF457D0037C94D /* NewAddIngredient.swift in Sources */,
 				DA177BF51FD7792C003B3836 /* ViewBar.swift in Sources */,
 				DA91EB011FD62C1F0063560D /* ViewParent+Gesture.swift in Sources */,
 				DAA333DA1FDB17EA002D766C /* Database+Factory.swift in Sources */,
