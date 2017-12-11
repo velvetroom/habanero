@@ -10,7 +10,9 @@ final class Ingredient:CloudItemProtocol
     {
         get
         {
-            return []
+            let json:Any = Ingredient.factoryJson(ingredient:self)
+            
+            return json
         }
     }
     
@@ -19,6 +21,17 @@ final class Ingredient:CloudItemProtocol
         identifier:String,
         json:Any)
     {
+        guard
+            
+            let jsonMap:[String:Any] = json as? [String:Any],
+            let name:String = jsonMap[Ingredient.Keys.name] as? String
+        
+        else
+        {
+            return nil
+        }
+        
+        self.name = name
         self.parent = parent
         self.identifier = identifier
     }

@@ -47,6 +47,8 @@
 		DA3F0E7A1FDF0DA30037C94D /* CloudItemProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E781FDF0DA30037C94D /* CloudItemProtocol+Default.swift */; };
 		DA3F0E7C1FDF326A0037C94D /* Ingredient+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E7B1FDF326A0037C94D /* Ingredient+Keys.swift */; };
 		DA3F0E7D1FDF326A0037C94D /* Ingredient+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E7B1FDF326A0037C94D /* Ingredient+Keys.swift */; };
+		DA3F0E7F1FDF32D10037C94D /* Ingredient+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E7E1FDF32D10037C94D /* Ingredient+Factory.swift */; };
+		DA3F0E801FDF32D10037C94D /* Ingredient+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E7E1FDF32D10037C94D /* Ingredient+Factory.swift */; };
 		DA3F0EB11FD7480000593B83 /* menu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3F0EB01FD7480000593B83 /* menu.xcassets */; };
 		DA3F0EB21FD7480A00593B83 /* menu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3F0EB01FD7480000593B83 /* menu.xcassets */; };
 		DA3F0EB41FD74C5F00593B83 /* Menu+FactoryUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0EB31FD74C5F00593B83 /* Menu+FactoryUser.swift */; };
@@ -330,6 +332,7 @@
 		DA3F0E721FDF0BC50037C94D /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		DA3F0E781FDF0DA30037C94D /* CloudItemProtocol+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudItemProtocol+Default.swift"; sourceTree = "<group>"; };
 		DA3F0E7B1FDF326A0037C94D /* Ingredient+Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+Keys.swift"; sourceTree = "<group>"; };
+		DA3F0E7E1FDF32D10037C94D /* Ingredient+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+Factory.swift"; sourceTree = "<group>"; };
 		DA3F0EB01FD7480000593B83 /* menu.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = menu.xcassets; sourceTree = "<group>"; };
 		DA3F0EB31FD74C5F00593B83 /* Menu+FactoryUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+FactoryUser.swift"; sourceTree = "<group>"; };
 		DA3F0EB51FD74C8700593B83 /* Menu+FactoryAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+FactoryAdmin.swift"; sourceTree = "<group>"; };
@@ -566,6 +569,7 @@
 			children = (
 				DA3F0E721FDF0BC50037C94D /* Ingredient.swift */,
 				DA3F0E7B1FDF326A0037C94D /* Ingredient+Keys.swift */,
+				DA3F0E7E1FDF32D10037C94D /* Ingredient+Factory.swift */,
 			);
 			path = Ingredient;
 			sourceTree = "<group>";
@@ -1313,6 +1317,7 @@
 				DA91EB0E1FD62C1F0063560D /* ViewBlur.swift in Sources */,
 				DA11BA0B1FD8F3DD0038F9B0 /* ViewBarBack.swift in Sources */,
 				DACF553B1FD7661E00069701 /* ExtensionMKAnnotationView.swift in Sources */,
+				DA3F0E7F1FDF32D10037C94D /* Ingredient+Factory.swift in Sources */,
 				DACF55311FD7661E00069701 /* ExtensionCGImage.swift in Sources */,
 				DACF55371FD7661E00069701 /* ExtensionFileManager.swift in Sources */,
 				DA3F0E631FDF02B60037C94D /* CloudListProtocol.swift in Sources */,
@@ -1394,6 +1399,7 @@
 				DA3F0E701FDF08E30037C94D /* CloudListProtocol+Default.swift in Sources */,
 				DACF55481FD7661E00069701 /* ExtensionString.swift in Sources */,
 				DA84C0EF1FD73F59008959EA /* ArchNew.swift in Sources */,
+				DA3F0E801FDF32D10037C94D /* Ingredient+Factory.swift in Sources */,
 				DA177BEB1FD7758F003B3836 /* ViewNew+Factory.swift in Sources */,
 				DA58C6E71FD9E216000E6F30 /* NewAdd+Factory.swift in Sources */,
 				DA71D66D1FDA43EF003A33E1 /* ViewNewAddListFooterInfo.swift in Sources */,
