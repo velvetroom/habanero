@@ -41,6 +41,10 @@
 		DA3F0E6D1FDF05380037C94D /* Cloud+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E6B1FDF05380037C94D /* Cloud+Factory.swift */; };
 		DA3F0E6F1FDF08E30037C94D /* CloudListProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E6E1FDF08E30037C94D /* CloudListProtocol+Default.swift */; };
 		DA3F0E701FDF08E30037C94D /* CloudListProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E6E1FDF08E30037C94D /* CloudListProtocol+Default.swift */; };
+		DA3F0E731FDF0BC50037C94D /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E721FDF0BC50037C94D /* Ingredient.swift */; };
+		DA3F0E741FDF0BC50037C94D /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E721FDF0BC50037C94D /* Ingredient.swift */; };
+		DA3F0E791FDF0DA30037C94D /* CloudItemProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E781FDF0DA30037C94D /* CloudItemProtocol+Default.swift */; };
+		DA3F0E7A1FDF0DA30037C94D /* CloudItemProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E781FDF0DA30037C94D /* CloudItemProtocol+Default.swift */; };
 		DA3F0EB11FD7480000593B83 /* menu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3F0EB01FD7480000593B83 /* menu.xcassets */; };
 		DA3F0EB21FD7480A00593B83 /* menu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3F0EB01FD7480000593B83 /* menu.xcassets */; };
 		DA3F0EB41FD74C5F00593B83 /* Menu+FactoryUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0EB31FD74C5F00593B83 /* Menu+FactoryUser.swift */; };
@@ -321,6 +325,8 @@
 		DA3F0E681FDF04720037C94D /* CloudProtocol+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudProtocol+Factory.swift"; sourceTree = "<group>"; };
 		DA3F0E6B1FDF05380037C94D /* Cloud+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cloud+Factory.swift"; sourceTree = "<group>"; };
 		DA3F0E6E1FDF08E30037C94D /* CloudListProtocol+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudListProtocol+Default.swift"; sourceTree = "<group>"; };
+		DA3F0E721FDF0BC50037C94D /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		DA3F0E781FDF0DA30037C94D /* CloudItemProtocol+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudItemProtocol+Default.swift"; sourceTree = "<group>"; };
 		DA3F0EB01FD7480000593B83 /* menu.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = menu.xcassets; sourceTree = "<group>"; };
 		DA3F0EB31FD74C5F00593B83 /* Menu+FactoryUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+FactoryUser.swift"; sourceTree = "<group>"; };
 		DA3F0EB51FD74C8700593B83 /* Menu+FactoryAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+FactoryAdmin.swift"; sourceTree = "<group>"; };
@@ -532,6 +538,7 @@
 				DA3F0E5F1FDEFE410037C94D /* CloudProtocol.swift */,
 				DA3F0E681FDF04720037C94D /* CloudProtocol+Factory.swift */,
 				DA825C3A1FDEE88500A44CA5 /* CloudItemProtocol.swift */,
+				DA3F0E781FDF0DA30037C94D /* CloudItemProtocol+Default.swift */,
 				DA3F0E621FDF02B60037C94D /* CloudListProtocol.swift */,
 				DA3F0E6E1FDF08E30037C94D /* CloudListProtocol+Default.swift */,
 			);
@@ -549,6 +556,14 @@
 				DACF22191FDB676800D6B192 /* ViewFormat+Duration.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		DA3F0E711FDF0BB80037C94D /* Ingredient */ = {
+			isa = PBXGroup;
+			children = (
+				DA3F0E721FDF0BC50037C94D /* Ingredient.swift */,
+			);
+			path = Ingredient;
 			sourceTree = "<group>";
 		};
 		DA6BF0D11FDDFBF10027C167 /* Analytics */ = {
@@ -758,6 +773,7 @@
 			isa = PBXGroup;
 			children = (
 				DA9088D21FD4C65F00C1208A /* Abstract */,
+				DA3F0E711FDF0BB80037C94D /* Ingredient */,
 				DAA333D31FDB17EA002D766C /* Database */,
 				DA8C6E3A1FDB2F3B00C0AD69 /* Build */,
 				DA9088D41FD4C65F00C1208A /* Home */,
@@ -1299,7 +1315,9 @@
 				DA91EB241FD62D700063560D /* ViewControllableProtocol.swift in Sources */,
 				DA9089271FD4C66000C1208A /* Model.swift in Sources */,
 				DA91EB0A1FD62C1F0063560D /* ViewCollectionFlow.swift in Sources */,
+				DA3F0E791FDF0DA30037C94D /* CloudItemProtocol+Default.swift in Sources */,
 				DA91EB161FD62C1F0063560D /* ViewSlider+Constants.swift in Sources */,
+				DA3F0E731FDF0BC50037C94D /* Ingredient.swift in Sources */,
 				DA91EAF21FD62C1F0063560D /* View.swift in Sources */,
 				DACF55411FD7661E00069701 /* ExtensionUIImage.swift in Sources */,
 				DACF55491FD7661E00069701 /* ExtensionUIFont+Constants.swift in Sources */,
@@ -1390,6 +1408,7 @@
 				DA177BFE1FD7832B003B3836 /* ViewNewListHeader.swift in Sources */,
 				DA3F0E641FDF02B60037C94D /* CloudListProtocol.swift in Sources */,
 				DACEB3A61FDC9F560089B3FE /* ViewCollectionReusable.swift in Sources */,
+				DA3F0E741FDF0BC50037C94D /* Ingredient.swift in Sources */,
 				DACF55441FD7661E00069701 /* ExtensionData.swift in Sources */,
 				DA91EAF11FD62C1F0063560D /* ViewMenuCell.swift in Sources */,
 				DA91EAE91FD62C1F0063560D /* ViewMenu+Actions.swift in Sources */,
@@ -1403,6 +1422,7 @@
 				DA71D6871FDA58E3003A33E1 /* ViewNewAddListCellInfoTitle.swift in Sources */,
 				DA91EB131FD62C1F0063560D /* ViewSpinner+Constants.swift in Sources */,
 				DA71D6791FDA4613003A33E1 /* NewAddSectionIngredients.swift in Sources */,
+				DA3F0E7A1FDF0DA30037C94D /* CloudItemProtocol+Default.swift in Sources */,
 				DA71D6AE1FDA7A01003A33E1 /* ViewTextBar+Constants.swift in Sources */,
 				DA71D6941FDA63FD003A33E1 /* ControllerText.swift in Sources */,
 				DAF949F41FD8BC38001BA32E /* ArchNewAdd.swift in Sources */,
