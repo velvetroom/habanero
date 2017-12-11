@@ -1635,7 +1635,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A3BF40A8891C588AFE14AB30 /* Pods-admin.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
 				INFOPLIST_FILE = "$(SRCROOT)/Info/admin/Info.plist";
@@ -1651,7 +1650,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3425576FB5B15FBD7E0D1322 /* Pods-admin.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
 				INFOPLIST_FILE = "$(SRCROOT)/Info/admin/Info.plist";
