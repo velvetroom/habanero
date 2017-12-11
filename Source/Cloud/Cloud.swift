@@ -24,12 +24,40 @@ final class Cloud
         return childId
     }
     
+    func loadList<T:CloudListProtocol>(
+        parent:CloudProtocol?,
+        completion:@escaping((T?) -> ()))
+    {
+        let identifier:String = T.self.identifier
+        let path:String
+        
+        if let childPath:String = parent?.factoryPath(identifier:identifier)
+        {
+            path = childPath
+        }
+        else
+        {
+            path = identifier
+        }
+        
+        let itemReference:DatabaseReference = self.reference.child(path)
+        itemReference.observeSingleEvent(of:DataEventType.value)
+        { (snapshot:DataSnapshot) in
+            
+            let model:T? = Cloud.factoryList(
+                snapshot:snapshot,
+                parent:parent)
+            
+            completion(model)
+        }
+    }
+    
     func loadItem<T:CloudItemProtocol>(
         parent:CloudProtocol,
         identifier:String,
         completion:@escaping((T?) -> ()))
     {
-        let path:String = parent.factoryItemPath(identifier:identifier)
+        let path:String = parent.factoryPath(identifier:identifier)
         
         let itemReference:DatabaseReference = self.reference.child(path)
         itemReference.observeSingleEvent(of:DataEventType.value)

@@ -4,7 +4,7 @@ extension CloudProtocol
 {
     //MARK: internal
     
-    func factoryItemPath(identifier:String) -> String
+    func factoryPath(identifier:String) -> String
     {
         var path:String = self.path
         path.append("/")

@@ -2,5 +2,7 @@ import Foundation
 
 protocol CloudListProtocol:CloudProtocol
 {
-    init?(json:Any)
+    init?(
+        parent:CloudProtocol?,
+        json:Any)
 }
