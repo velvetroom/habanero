@@ -4,16 +4,11 @@ class ViewBarBack<A>:ViewBar<A> where A.C:Controller<A>
 {
     private(set) weak var buttonBack:UIButton!
     
-    required init(controller:A.C)
+    override func factoryViews()
     {
-        super.init(controller:controller)
+        super.factoryViews()
         
         self.factoryBackButton()
-    }
-    
-    required init?(coder:NSCoder)
-    {
-        return nil
     }
     
     //MARK: private

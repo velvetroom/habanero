@@ -4,16 +4,23 @@ final class ViewNewList:ViewCollection<ArchNew,  ViewNewListCell, ViewCollection
 {
     private var cellSize:CGSize?
     
-    required init(controller:ControllerNew)
+    override func factoryViews()
     {
-        super.init(controller:controller)
+        super.factoryViews()
         
-        self.config()
-    }
-    
-    required init?(coder:NSCoder)
-    {
-        return nil
+        self.collectionView.alwaysBounceVertical = true
+        self.registerHeader(header:ViewNewListHeader.self)
+        
+        self.flow.minimumLineSpacing = ViewGlobal.Constants.interCellSpace
+        self.flow.minimumInteritemSpacing = ViewGlobal.Constants.interCellSpace
+        self.flow.headerReferenceSize = CGSize(
+            width:0,
+            height:ViewNewList.Constants.headerHeight)
+        self.flow.sectionInset = UIEdgeInsets(
+            top:0,
+            left:0,
+            bottom:ViewGlobal.Constants.menuHeight + ViewNewList.Constants.collectionBottom,
+            right:0)
     }
     
     override func collectionView(

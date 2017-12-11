@@ -2,18 +2,32 @@ import UIKit
 
 final class ViewNew:ViewMain<ArchNew>
 {
-    weak var viewList:ViewNewList!
+    private(set) weak var viewList:ViewNewList!
     
-    required init(controller:ControllerNew)
+    override func factoryViews()
     {
-        super.init(controller:controller)
-        self.backgroundColor = UIColor.colourBackgroundGray
+        super.factoryViews()
         
-        self.factoryViews()
-    }
-    
-    required init?(coder:NSCoder)
-    {
-        return nil
+        let viewBar:ViewNewBar = ViewNewBar(controller:controller)
+        
+        let viewList:ViewNewList = ViewNewList(controller:controller)
+        self.viewList = viewList
+        
+        self.addSubview(viewList)
+        self.addSubview(viewBar)
+        
+        NSLayoutConstraint.topToTop(
+            view:viewBar,
+            toView:self)
+        NSLayoutConstraint.height(
+            view:viewBar,
+            constant:ViewGlobal.Constants.barHeight)
+        NSLayoutConstraint.equalsHorizontal(
+            view:viewBar,
+            toView:self)
+        
+        NSLayoutConstraint.equals(
+            view:viewList,
+            toView:self)
     }
 }

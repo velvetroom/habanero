@@ -9,14 +9,10 @@ class ViewMain<A>:View<A>, ViewTransitionableProtocol where A.C:Controller<A>
     weak var layoutBottom:NSLayoutConstraint!
     weak var pushBackground:ViewPushBackground?
     
-    required init(controller:A.C)
+    override func factoryViews()
     {
-        super.init(controller:controller)
+        super.factoryViews()
+        
         self.backgroundColor = UIColor.white
-    }
-    
-    required init?(coder:NSCoder)
-    {
-        return nil
     }
 }

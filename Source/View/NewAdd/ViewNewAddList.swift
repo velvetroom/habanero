@@ -2,16 +2,24 @@ import UIKit
 
 final class ViewNewAddList:ViewCollection<ArchNewAdd, ViewNewAddListCell, ViewCollectionFlow>
 {
-    required init(controller:ControllerNewAdd)
+    override func factoryViews()
     {
-        super.init(controller:controller)
+        super.factoryViews()
         
-        self.config()
-    }
-    
-    required init?(coder:NSCoder)
-    {
-        return nil
+        self.collectionView.alwaysBounceVertical = true
+        
+        self.registerHeader(header:ViewNewAddListHeader.self)
+        self.registerFooter(footer:ViewNewAddListFooterInfo.self)
+        self.registerFooter(footer:ViewNewAddListFooterIngredients.self)
+        self.registerFooter(footer:ViewNewAddListFooterSteps.self)
+        self.registerCell(cell:ViewNewAddListCellInfoTitle.self)
+        self.registerCell(cell:ViewNewAddListCellInfoDuration.self)
+        
+        self.flow.minimumLineSpacing = ViewGlobal.Constants.interCellSpace
+        self.flow.minimumInteritemSpacing = ViewGlobal.Constants.interCellSpace
+        self.flow.footerReferenceSize = CGSize(
+            width:0,
+            height:ViewNewAddList.Constants.footerHeight)
     }
     
     override func collectionView(

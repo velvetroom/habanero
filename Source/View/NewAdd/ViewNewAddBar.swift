@@ -2,16 +2,11 @@ import UIKit
 
 final class ViewNewAddBar:ViewBarBack<ArchNewAdd>
 {
-    required init(controller:ControllerNewAdd)
+    override func factoryViews()
     {
-        super.init(controller:controller)
+        super.factoryViews()
         
         self.labelTitle.text = String.localizedView(key:"ViewNewAddBar_labelTitle")
-    }
-    
-    required init?(coder:NSCoder)
-    {
-        return nil
     }
     
     override func selectorButtonBack(sender button:UIButton)

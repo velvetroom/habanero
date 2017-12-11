@@ -10,9 +10,9 @@ class ViewCollection<A, Cell:ViewCollectionCell, Flow:UICollectionViewFlowLayout
     private(set) weak var collectionView:UICollectionView!
     private(set) weak var flow:Flow!
     
-    required init(controller:A.C)
+    override func factoryViews()
     {
-        super.init(controller:controller)
+        super.factoryViews()
         
         let flow:Flow = Flow()
         
@@ -41,11 +41,6 @@ class ViewCollection<A, Cell:ViewCollectionCell, Flow:UICollectionViewFlowLayout
             toView:self)
         
         self.registerCell(cell:Cell.self)
-    }
-    
-    required init?(coder:NSCoder)
-    {
-        return nil
     }
     
     //MARK: internal

@@ -2,31 +2,12 @@ import UIKit
 
 final class ViewTextBar:View<ArchText>
 {
-    required init(controller:ControllerText)
+    override func factoryViews()
     {
-        super.init(controller:controller)
+        super.factoryViews()
+        
         self.backgroundColor = UIColor.colourHabanero
         
-        self.factoryViews()
-    }
-    
-    required init?(coder:NSCoder)
-    {
-        return nil
-    }
-    
-    //MARK: selectors
-    
-    @objc
-    private func selectorButton(sender button:UIButton)
-    {
-        self.controller.doneEditing()
-    }
-    
-    //MARK: private
-    
-    private func factoryViews()
-    {
         let button:UIButton = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle(
@@ -55,5 +36,13 @@ final class ViewTextBar:View<ArchText>
         NSLayoutConstraint.width(
             view:button,
             constant:ViewTextBar.Constants.buttonWidth)
+    }
+    
+    //MARK: selectors
+    
+    @objc
+    private func selectorButton(sender button:UIButton)
+    {
+        self.controller.doneEditing()
     }
 }

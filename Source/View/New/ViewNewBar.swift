@@ -2,30 +2,10 @@ import UIKit
 
 final class ViewNewBar:ViewBar<ArchNew>
 {
-    required init(controller:ControllerNew)
+    override func factoryViews()
     {
-        super.init(controller:controller)
+        super.factoryViews()
         
-        self.factoryBarViews()
-    }
-    
-    required init?(coder:NSCoder)
-    {
-        return nil
-    }
-    
-    //MARK: selectors
-    
-    @objc
-    private func selectorButtonAdd(sender button:UIButton)
-    {
-        self.controller.createBuildAndTransitionToNewAdd()
-    }
-    
-    //MARK: private
-    
-    private func factoryBarViews()
-    {
         let buttonAdd:UIButton = UIButton()
         buttonAdd.translatesAutoresizingMaskIntoConstraints = false
         buttonAdd.setTitleColor(
@@ -60,5 +40,14 @@ final class ViewNewBar:ViewBar<ArchNew>
         NSLayoutConstraint.width(
             view:buttonAdd,
             constant:ViewNewBar.Constants.buttonAddWidth)
+    }
+    
+    
+    //MARK: selectors
+    
+    @objc
+    private func selectorButtonAdd(sender button:UIButton)
+    {
+        self.controller.createBuildAndTransitionToNewAdd()
     }
 }

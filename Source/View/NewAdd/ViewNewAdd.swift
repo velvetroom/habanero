@@ -2,18 +2,32 @@ import UIKit
 
 final class ViewNewAdd:ViewMain<ArchNewAdd>
 {
-    weak var viewList:ViewNewAddList!
+    private(set) weak var viewList:ViewNewAddList!
     
-    required init(controller:ControllerNewAdd)
+    override func factoryViews()
     {
-        super.init(controller:controller)
-        self.backgroundColor = UIColor.colourBackgroundGray
+        super.factoryViews()
         
-        self.factoryViews()
-    }
-    
-    required init?(coder:NSCoder)
-    {
-        return nil
+        let viewBar:ViewNewAddBar = ViewNewAddBar(controller:controller)
+        
+        let viewList:ViewNewAddList = ViewNewAddList(controller:controller)
+        self.viewList = viewList
+        
+        self.addSubview(viewList)
+        self.addSubview(viewBar)
+        
+        NSLayoutConstraint.topToTop(
+            view:viewBar,
+            toView:self)
+        NSLayoutConstraint.height(
+            view:viewBar,
+            constant:ViewGlobal.Constants.barHeight)
+        NSLayoutConstraint.equalsHorizontal(
+            view:viewBar,
+            toView:self)
+        
+        NSLayoutConstraint.equals(
+            view:viewList,
+            toView:self)
     }
 }
