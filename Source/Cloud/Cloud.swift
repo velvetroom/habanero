@@ -1,27 +1,39 @@
 import Foundation
-import FirebaseDatabase
+import Firebase
 
 final class Cloud
 {
-    private let reference:DatabaseReference
+    private let reference:Firestore
     
     init()
     {
-        self.reference = FirebaseDatabase.Database.database().reference()
+        self.reference = Firestore.firestore()
     }
     
     //MARK: internal
     
     func create(
         parent:CloudProtocol,
-        data:Any) -> String
+        data:[String:Any],
+        completion:@escaping((String, Error?) -> ()))
     {
-        let itemReference:DatabaseReference = self.reference.child(parent.path).childByAutoId()
-        itemReference.setValue(data)
-        
-        let childId:String = itemReference.key
-        
-        return childId
+        let document:DocumentReference = self.reference.collection(parent.path).document()
+        document.setData(data)
+        { (error:Error?) in
+            
+            guard
+            
+                error == nil
+            
+            else
+            {
+                completion(document.documentID, error)
+                
+                return
+            }
+            
+            completion(document.documentID, nil)
+        }
     }
     
     func loadList<T:CloudListProtocol>(
