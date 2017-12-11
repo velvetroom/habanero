@@ -1,6 +1,6 @@
 import Foundation
 
-protocol CloudItemProtocol
+protocol CloudItemProtocol:CloudProtocol
 {
     
 }
