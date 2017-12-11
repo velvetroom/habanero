@@ -3,8 +3,8 @@ use_frameworks!
 
 def podlist
     pod 'Firebase/Core'
+    pod 'Firebase/Firestore'
     pod 'Firebase/Storage'
-    pod 'Firebase/Database'
     pod 'Fabric'
     pod 'Crashlytics'
 end
