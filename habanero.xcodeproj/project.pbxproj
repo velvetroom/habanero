@@ -51,6 +51,8 @@
 		DA3F0E801FDF32D10037C94D /* Ingredient+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E7E1FDF32D10037C94D /* Ingredient+Factory.swift */; };
 		DA3F0E821FDF417D0037C94D /* CloudError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E811FDF417D0037C94D /* CloudError.swift */; };
 		DA3F0E831FDF417D0037C94D /* CloudError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E811FDF417D0037C94D /* CloudError.swift */; };
+		DA3F0E851FDF41B30037C94D /* CloudError+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E841FDF41B30037C94D /* CloudError+Description.swift */; };
+		DA3F0E861FDF41B30037C94D /* CloudError+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E841FDF41B30037C94D /* CloudError+Description.swift */; };
 		DA3F0EB11FD7480000593B83 /* menu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3F0EB01FD7480000593B83 /* menu.xcassets */; };
 		DA3F0EB21FD7480A00593B83 /* menu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3F0EB01FD7480000593B83 /* menu.xcassets */; };
 		DA3F0EB41FD74C5F00593B83 /* Menu+FactoryUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0EB31FD74C5F00593B83 /* Menu+FactoryUser.swift */; };
@@ -336,6 +338,7 @@
 		DA3F0E7B1FDF326A0037C94D /* Ingredient+Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+Keys.swift"; sourceTree = "<group>"; };
 		DA3F0E7E1FDF32D10037C94D /* Ingredient+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+Factory.swift"; sourceTree = "<group>"; };
 		DA3F0E811FDF417D0037C94D /* CloudError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudError.swift; sourceTree = "<group>"; };
+		DA3F0E841FDF41B30037C94D /* CloudError+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudError+Description.swift"; sourceTree = "<group>"; };
 		DA3F0EB01FD7480000593B83 /* menu.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = menu.xcassets; sourceTree = "<group>"; };
 		DA3F0EB31FD74C5F00593B83 /* Menu+FactoryUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+FactoryUser.swift"; sourceTree = "<group>"; };
 		DA3F0EB51FD74C8700593B83 /* Menu+FactoryAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+FactoryAdmin.swift"; sourceTree = "<group>"; };
@@ -551,6 +554,7 @@
 				DA3F0E621FDF02B60037C94D /* CloudListProtocol.swift */,
 				DA3F0E6E1FDF08E30037C94D /* CloudListProtocol+Default.swift */,
 				DA3F0E811FDF417D0037C94D /* CloudError.swift */,
+				DA3F0E841FDF41B30037C94D /* CloudError+Description.swift */,
 			);
 			path = Cloud;
 			sourceTree = "<group>";
@@ -1365,6 +1369,7 @@
 				DACEB3A21FDC9C890089B3FE /* ViewCollectionCell.swift in Sources */,
 				DA9089251FD4C66000C1208A /* Arch.swift in Sources */,
 				DAA333D71FDB17EA002D766C /* Database.swift in Sources */,
+				DA3F0E851FDF41B30037C94D /* CloudError+Description.swift in Sources */,
 				DA91EAEA1FD62C1F0063560D /* ViewMenu+Collection.swift in Sources */,
 				DA6BF0D31FDDFBFC0027C167 /* Analytics.swift in Sources */,
 				DA91EB061FD62C1F0063560D /* ViewAlert.swift in Sources */,
@@ -1508,6 +1513,7 @@
 				DA3F0E7D1FDF326A0037C94D /* Ingredient+Keys.swift in Sources */,
 				DA9089821FD4CE2E00C1208A /* ControllerParent+Constants.swift in Sources */,
 				DACF552E1FD7661E00069701 /* ExtensionNotification.swift in Sources */,
+				DA3F0E861FDF41B30037C94D /* CloudError+Description.swift in Sources */,
 				DA90898C1FD4CE3E00C1208A /* MenuItemHome.swift in Sources */,
 				DA11BA141FD8FFE30038F9B0 /* ViewNewAddListHeader+Constants.swift in Sources */,
 				DA71D69C1FDA65AB003A33E1 /* ViewText.swift in Sources */,
