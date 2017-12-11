@@ -33,6 +33,8 @@
 		DA177C041FD784AF003B3836 /* ViewNewList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA177C031FD784AF003B3836 /* ViewNewList+Constants.swift */; };
 		DA3F0E601FDEFE410037C94D /* CloudProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E5F1FDEFE410037C94D /* CloudProtocol.swift */; };
 		DA3F0E611FDEFE410037C94D /* CloudProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E5F1FDEFE410037C94D /* CloudProtocol.swift */; };
+		DA3F0E631FDF02B60037C94D /* CloudListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E621FDF02B60037C94D /* CloudListProtocol.swift */; };
+		DA3F0E641FDF02B60037C94D /* CloudListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E621FDF02B60037C94D /* CloudListProtocol.swift */; };
 		DA3F0EB11FD7480000593B83 /* menu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3F0EB01FD7480000593B83 /* menu.xcassets */; };
 		DA3F0EB21FD7480A00593B83 /* menu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3F0EB01FD7480000593B83 /* menu.xcassets */; };
 		DA3F0EB41FD74C5F00593B83 /* Menu+FactoryUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0EB31FD74C5F00593B83 /* Menu+FactoryUser.swift */; };
@@ -309,6 +311,7 @@
 		DA177C011FD784A3003B3836 /* ViewNewList+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewList+Config.swift"; sourceTree = "<group>"; };
 		DA177C031FD784AF003B3836 /* ViewNewList+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewList+Constants.swift"; sourceTree = "<group>"; };
 		DA3F0E5F1FDEFE410037C94D /* CloudProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudProtocol.swift; sourceTree = "<group>"; };
+		DA3F0E621FDF02B60037C94D /* CloudListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudListProtocol.swift; sourceTree = "<group>"; };
 		DA3F0EB01FD7480000593B83 /* menu.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = menu.xcassets; sourceTree = "<group>"; };
 		DA3F0EB31FD74C5F00593B83 /* Menu+FactoryUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+FactoryUser.swift"; sourceTree = "<group>"; };
 		DA3F0EB51FD74C8700593B83 /* Menu+FactoryAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+FactoryAdmin.swift"; sourceTree = "<group>"; };
@@ -518,6 +521,7 @@
 				DA0529A21FDE0DE200EE5A1E /* Cloud.swift */,
 				DA3F0E5F1FDEFE410037C94D /* CloudProtocol.swift */,
 				DA825C3A1FDEE88500A44CA5 /* CloudItemProtocol.swift */,
+				DA3F0E621FDF02B60037C94D /* CloudListProtocol.swift */,
 			);
 			path = Cloud;
 			sourceTree = "<group>";
@@ -1275,6 +1279,7 @@
 				DACF553B1FD7661E00069701 /* ExtensionMKAnnotationView.swift in Sources */,
 				DACF55311FD7661E00069701 /* ExtensionCGImage.swift in Sources */,
 				DACF55371FD7661E00069701 /* ExtensionFileManager.swift in Sources */,
+				DA3F0E631FDF02B60037C94D /* CloudListProtocol.swift in Sources */,
 				DA9089201FD4C66000C1208A /* ControllerParent+Menu.swift in Sources */,
 				DA91EB241FD62D700063560D /* ViewControllableProtocol.swift in Sources */,
 				DA9089271FD4C66000C1208A /* Model.swift in Sources */,
@@ -1367,6 +1372,7 @@
 				DA9089851FD4CE2E00C1208A /* ControllerTransition.swift in Sources */,
 				DA71D66F1FDA44A2003A33E1 /* ViewNewAddListFooterIngredients.swift in Sources */,
 				DA177BFE1FD7832B003B3836 /* ViewNewListHeader.swift in Sources */,
+				DA3F0E641FDF02B60037C94D /* CloudListProtocol.swift in Sources */,
 				DACEB3A61FDC9F560089B3FE /* ViewCollectionReusable.swift in Sources */,
 				DACF55441FD7661E00069701 /* ExtensionData.swift in Sources */,
 				DA91EAF11FD62C1F0063560D /* ViewMenuCell.swift in Sources */,
