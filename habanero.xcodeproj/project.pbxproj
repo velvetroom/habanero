@@ -53,6 +53,7 @@
 		DA3F0E831FDF417D0037C94D /* CloudError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E811FDF417D0037C94D /* CloudError.swift */; };
 		DA3F0E851FDF41B30037C94D /* CloudError+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E841FDF41B30037C94D /* CloudError+Description.swift */; };
 		DA3F0E861FDF41B30037C94D /* CloudError+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E841FDF41B30037C94D /* CloudError+Description.swift */; };
+		DA3F0E881FDF44920037C94D /* ArchNewAddIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E871FDF44920037C94D /* ArchNewAddIngredient.swift */; };
 		DA3F0EB11FD7480000593B83 /* menu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3F0EB01FD7480000593B83 /* menu.xcassets */; };
 		DA3F0EB21FD7480A00593B83 /* menu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3F0EB01FD7480000593B83 /* menu.xcassets */; };
 		DA3F0EB41FD74C5F00593B83 /* Menu+FactoryUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0EB31FD74C5F00593B83 /* Menu+FactoryUser.swift */; };
@@ -339,6 +340,7 @@
 		DA3F0E7E1FDF32D10037C94D /* Ingredient+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+Factory.swift"; sourceTree = "<group>"; };
 		DA3F0E811FDF417D0037C94D /* CloudError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudError.swift; sourceTree = "<group>"; };
 		DA3F0E841FDF41B30037C94D /* CloudError+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudError+Description.swift"; sourceTree = "<group>"; };
+		DA3F0E871FDF44920037C94D /* ArchNewAddIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNewAddIngredient.swift; sourceTree = "<group>"; };
 		DA3F0EB01FD7480000593B83 /* menu.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = menu.xcassets; sourceTree = "<group>"; };
 		DA3F0EB31FD74C5F00593B83 /* Menu+FactoryUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+FactoryUser.swift"; sourceTree = "<group>"; };
 		DA3F0EB51FD74C8700593B83 /* Menu+FactoryAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+FactoryAdmin.swift"; sourceTree = "<group>"; };
@@ -780,6 +782,7 @@
 				DA9088D01FD4C65F00C1208A /* ArchHome.swift */,
 				DA84C0EE1FD73F59008959EA /* ArchNew.swift */,
 				DAF949F31FD8BC38001BA32E /* ArchNewAdd.swift */,
+				DA3F0E871FDF44920037C94D /* ArchNewAddIngredient.swift */,
 				DA71D68E1FDA633E003A33E1 /* ArchText.swift */,
 			);
 			path = Architecture;
@@ -1443,6 +1446,7 @@
 				DA71D6A21FDA6C1A003A33E1 /* ViewTextInput+Constants.swift in Sources */,
 				DA91EB111FD62C1F0063560D /* ViewSlider+Gesture.swift in Sources */,
 				DA91EB091FD62C1F0063560D /* ViewPushBackground.swift in Sources */,
+				DA3F0E881FDF44920037C94D /* ArchNewAddIngredient.swift in Sources */,
 				DA5D71C81FDB56E200429F5D /* NewAddSectionItemInfoDuration.swift in Sources */,
 				DACEB3AC1FDCAE700089B3FE /* ViewNewListCellSteps.swift in Sources */,
 				DA9089841FD4CE2E00C1208A /* ControllerParent+Transitions.swift in Sources */,
