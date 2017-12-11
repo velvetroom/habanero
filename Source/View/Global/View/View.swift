@@ -18,4 +18,8 @@ class View<A>:UIView, ViewControllableProtocol where A.C:Controller<A>
     {
         return nil
     }
+    
+    //MARK: internal
+    
+    func factoryViews() { }
 }
