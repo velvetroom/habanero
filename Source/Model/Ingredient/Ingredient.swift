@@ -4,6 +4,7 @@ final class Ingredient:CloudItemProtocol
 {
     let parent:CloudProtocol
     let identifier:String
+    let name:String
     
     var json:Any
     {
