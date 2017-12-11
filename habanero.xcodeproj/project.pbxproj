@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		43A11BCCBB0D1C292C1CEE83 /* Pods_admin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF6EEE1B276B4389C07938C /* Pods_admin.framework */; };
 		8F2E98EAEBD65E388FB5CB76 /* Pods_user.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34488D08B2947E1784847953 /* Pods_user.framework */; };
+		DA0529A31FDE0DE200EE5A1E /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0529A21FDE0DE200EE5A1E /* Cloud.swift */; };
+		DA0529A41FDE0DE200EE5A1E /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0529A21FDE0DE200EE5A1E /* Cloud.swift */; };
 		DA11BA071FD8F1DE0038F9B0 /* ViewNewAddList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11BA061FD8F1DE0038F9B0 /* ViewNewAddList.swift */; };
 		DA11BA091FD8F2200038F9B0 /* ViewNewAddListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11BA081FD8F2200038F9B0 /* ViewNewAddListCell.swift */; };
 		DA11BA0B1FD8F3DD0038F9B0 /* ViewBarBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11BA0A1FD8F3DD0038F9B0 /* ViewBarBack.swift */; };
@@ -284,6 +286,7 @@
 		34488D08B2947E1784847953 /* Pods_user.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_user.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A96C209AACB2D78CA84704A /* Pods-user.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-user.debug.xcconfig"; path = "Pods/Target Support Files/Pods-user/Pods-user.debug.xcconfig"; sourceTree = "<group>"; };
 		A3BF40A8891C588AFE14AB30 /* Pods-admin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-admin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-admin/Pods-admin.debug.xcconfig"; sourceTree = "<group>"; };
+		DA0529A21FDE0DE200EE5A1E /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
 		DA11BA061FD8F1DE0038F9B0 /* ViewNewAddList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddList.swift; sourceTree = "<group>"; };
 		DA11BA081FD8F2200038F9B0 /* ViewNewAddListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCell.swift; sourceTree = "<group>"; };
 		DA11BA0A1FD8F3DD0038F9B0 /* ViewBarBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBarBack.swift; sourceTree = "<group>"; };
@@ -503,6 +506,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DA0529A11FDE0C2400EE5A1E /* Cloud */ = {
+			isa = PBXGroup;
+			children = (
+				DA0529A21FDE0DE200EE5A1E /* Cloud.swift */,
+			);
+			path = Cloud;
+			sourceTree = "<group>";
+		};
 		DA177BF21FD77915003B3836 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
@@ -662,6 +673,7 @@
 		DA9088A81FD4C65F00C1208A /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				DA0529A11FDE0C2400EE5A1E /* Cloud */,
 				DA6BF0D11FDDFBF10027C167 /* Analytics */,
 				DA9088CE1FD4C65F00C1208A /* Architecture */,
 				DA9088C31FD4C65F00C1208A /* Controller */,
@@ -1220,6 +1232,7 @@
 				DA992D781FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */,
 				DA91EB021FD62C1F0063560D /* ViewAlert+Constants.swift in Sources */,
 				DA90892A1FD4C66000C1208A /* MenuItemHome.swift in Sources */,
+				DA0529A31FDE0DE200EE5A1E /* Cloud.swift in Sources */,
 				DA992D771FD61E7300A6CFEF /* MenuItemGenericProtocol.swift in Sources */,
 				DA91EAF01FD62C1F0063560D /* ViewMenuCell.swift in Sources */,
 				DA91EAE81FD62C1F0063560D /* ViewMenu+Actions.swift in Sources */,
@@ -1411,6 +1424,7 @@
 				DACF55381FD7661E00069701 /* ExtensionFileManager.swift in Sources */,
 				DA71D6811FDA5068003A33E1 /* ViewNewAddList+Config.swift in Sources */,
 				DA71D6711FDA44C0003A33E1 /* ViewNewAddListFooterSteps.swift in Sources */,
+				DA0529A41FDE0DE200EE5A1E /* Cloud.swift in Sources */,
 				DA91EB171FD62C1F0063560D /* ViewSlider+Constants.swift in Sources */,
 				DA71D67F1FDA4BF6003A33E1 /* ViewNewAddListFooter.swift in Sources */,
 				DA91EAF31FD62C1F0063560D /* View.swift in Sources */,
