@@ -27,7 +27,7 @@ final class Cloud
     
     private func loadFailed<T:CloudItemProtocol>(completion:((T?, Error?) -> ()))
     {
-        
+        completion(nil, CloudError.loadItemFailed)
     }
     
     //MARK: internal
@@ -73,6 +73,19 @@ final class Cloud
         
         itemReference.getDocument
         { (snapshot:DocumentSnapshot?, error:Error?) in
+            
+            guard
+                
+                error == nil
+            
+            else
+            {
+                completion(
+                    nil,
+                    CloudError.loadItemFailed)
+                
+                return nil
+            }
             
             let model:T? = Cloud.factoryItem(
                 snapshot:snapshot,

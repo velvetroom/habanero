@@ -7,7 +7,7 @@ extension CloudItemProtocol
         get
         {
             var path:String = String()
-            path.append(self.parent.path)
+            path.append(self.parentPath)
             path.append("/")
             path.append(self.identifier)
             

@@ -19,8 +19,8 @@ extension CloudError
     private static func descriptionMap() -> [CloudError:String]
     {
         let map:[CloudError:String] = [
-            CloudError.createFailed : String.localizedModel(key:"CloudError_createFailed"),
-            CloudError.loadItemFailed : String.localizedModel(key:"CloudError_loadItemFailed")]
+            CloudError.createFailed : String.localizedError(key:"CloudError_createFailed"),
+            CloudError.loadItemFailed : String.localizedError(key:"CloudError_loadItemFailed")]
         
         return map
     }

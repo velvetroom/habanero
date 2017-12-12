@@ -2,10 +2,8 @@ import Foundation
 
 protocol CloudItemProtocol:CloudProtocol
 {
-    var parent:CloudProtocol { get }
-    
     init?(
-        parent:CloudProtocol,
+        parentPath:String,
         identifier:String,
         json:[String:Any])
 }
