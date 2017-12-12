@@ -22,6 +22,7 @@ final class ControllerNewAddIngredient:Controller<ArchNewAddIngredient>
         super.viewDidLoad()
         
         self.viewMain.viewBar.searchBar.isUserInteractionEnabled = false
+        self.viewMain.viewList.isHidden = true
         
         self.model.load
         { [weak self] in
@@ -36,6 +37,7 @@ final class ControllerNewAddIngredient:Controller<ArchNewAddIngredient>
     {
         self.viewMain.viewSpinner?.stopAnimating()
         self.viewMain.viewSpinner?.removeFromSuperview()
+        self.viewMain.viewList.isHidden = false
         self.viewMain.viewBar.searchBar.isUserInteractionEnabled = true
         self.viewMain.viewBar.searchBar.becomeFirstResponder()
     }
@@ -46,5 +48,14 @@ final class ControllerNewAddIngredient:Controller<ArchNewAddIngredient>
     {
         self.viewMain.viewBar.searchBar.resignFirstResponder()
         self.parentController?.pop(horizontal:ControllerTransition.Horizontal.right)
+    }
+    
+    func searchIngredient(searching:String)
+    {
+        self.model.searchIngredient(searching:searching)
+        { [weak self] in
+            
+            self?.viewMain.viewList.collectionView.reloadData()
+        }
     }
 }

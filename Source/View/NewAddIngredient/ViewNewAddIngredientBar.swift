@@ -39,4 +39,23 @@ final class ViewNewAddIngredientBar:ViewBarBack<ArchNewAddIngredient>, UISearchB
     {
         self.controller.transitionBack()
     }
+    
+    //MARK: delegate
+    
+    func searchBarCancelButtonClicked(_ searchBar:UISearchBar)
+    {
+        searchBar.resignFirstResponder()
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar:UISearchBar)
+    {
+        searchBar.resignFirstResponder()
+    }
+    
+    func searchBar(
+        _ searchBar:UISearchBar,
+        textDidChange searchText:String)
+    {
+        self.controller.searchIngredient(searching:searchText)
+    }
 }
