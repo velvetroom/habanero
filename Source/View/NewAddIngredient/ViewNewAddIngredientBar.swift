@@ -18,7 +18,7 @@ final class ViewNewAddIngredientBar:ViewBarBack<ArchNewAddIngredient>, UISearchB
         searchBar.isUserInteractionEnabled = false
         self.searchBar = searchBar
         
-        addSubview(searchBar)
+        self.addSubview(searchBar)
         
         NSLayoutConstraint.topToTop(
             view:searchBar,

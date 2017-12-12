@@ -7,6 +7,9 @@ final class ControllerNewAddIngredient:Controller<ArchNewAddIngredient>
         database:Database)
     {
         super.init()
+        
+        self.model.build = build
+        self.model.database = database
     }
     
     required init?(coder:NSCoder)
