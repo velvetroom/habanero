@@ -22,6 +22,7 @@
 		DA16F15C1FDFADD800EB6877 /* ViewNewAddIngredientBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16F15B1FDFADD800EB6877 /* ViewNewAddIngredientBar.swift */; };
 		DA16F15E1FDFAF3100EB6877 /* ViewNewAddIngredient+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16F15D1FDFAF3100EB6877 /* ViewNewAddIngredient+Constants.swift */; };
 		DA16F1601FDFAF7C00EB6877 /* ViewNewAddIngredientBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16F15F1FDFAF7B00EB6877 /* ViewNewAddIngredientBar+Constants.swift */; };
+		DA16F1621FDFB09900EB6877 /* ViewNewAddListFooterIngredients+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16F1611FDFB09900EB6877 /* ViewNewAddListFooterIngredients+Constants.swift */; };
 		DA177BED1FD77713003B3836 /* ViewNewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA177BEC1FD77713003B3836 /* ViewNewList.swift */; };
 		DA177BEF1FD77773003B3836 /* ViewNewListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA177BEE1FD77773003B3836 /* ViewNewListCell.swift */; };
 		DA177BF11FD77874003B3836 /* ViewNewBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA177BF01FD77874003B3836 /* ViewNewBar.swift */; };
@@ -323,6 +324,7 @@
 		DA16F15B1FDFADD800EB6877 /* ViewNewAddIngredientBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddIngredientBar.swift; sourceTree = "<group>"; };
 		DA16F15D1FDFAF3100EB6877 /* ViewNewAddIngredient+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredient+Constants.swift"; sourceTree = "<group>"; };
 		DA16F15F1FDFAF7B00EB6877 /* ViewNewAddIngredientBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientBar+Constants.swift"; sourceTree = "<group>"; };
+		DA16F1611FDFB09900EB6877 /* ViewNewAddListFooterIngredients+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddListFooterIngredients+Constants.swift"; sourceTree = "<group>"; };
 		DA177BEC1FD77713003B3836 /* ViewNewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewList.swift; sourceTree = "<group>"; };
 		DA177BEE1FD77773003B3836 /* ViewNewListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewListCell.swift; sourceTree = "<group>"; };
 		DA177BF01FD77874003B3836 /* ViewNewBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewBar.swift; sourceTree = "<group>"; };
@@ -1016,6 +1018,7 @@
 				DA71D66C1FDA43EF003A33E1 /* ViewNewAddListFooterInfo.swift */,
 				DA71D67C1FDA4B91003A33E1 /* ViewNewAddListFooterInfo+Constants.swift */,
 				DA71D66E1FDA44A2003A33E1 /* ViewNewAddListFooterIngredients.swift */,
+				DA16F1611FDFB09900EB6877 /* ViewNewAddListFooterIngredients+Constants.swift */,
 				DA71D6701FDA44C0003A33E1 /* ViewNewAddListFooterSteps.swift */,
 				DA11BA081FD8F2200038F9B0 /* ViewNewAddListCell.swift */,
 				DA71D6861FDA58E3003A33E1 /* ViewNewAddListCellInfoTitle.swift */,
@@ -1503,6 +1506,7 @@
 				DAF949F41FD8BC38001BA32E /* ArchNewAdd.swift in Sources */,
 				DA91EAEF1FD62C1F0063560D /* ViewMenu+Synth.swift in Sources */,
 				DA3F0E6D1FDF05380037C94D /* Cloud+Factory.swift in Sources */,
+				DA16F1621FDFB09900EB6877 /* ViewNewAddListFooterIngredients+Constants.swift in Sources */,
 				DACEB3B01FDCB35A0089B3FE /* ViewNewListCellSteps+Constants.swift in Sources */,
 				DA71D6901FDA633E003A33E1 /* ArchText.swift in Sources */,
 				DACF55461FD7661E00069701 /* ExtensionNSManagedObject.swift in Sources */,
