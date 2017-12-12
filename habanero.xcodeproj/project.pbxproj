@@ -305,6 +305,8 @@
 		DAE7C36C1FE08C9F003190FF /* LocalizableError.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAE7C3691FE08C9F003190FF /* LocalizableError.strings */; };
 		DAE7C36E1FE093D1003190FF /* Cloud+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C36D1FE093D1003190FF /* Cloud+Load.swift */; };
 		DAE7C36F1FE093D1003190FF /* Cloud+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C36D1FE093D1003190FF /* Cloud+Load.swift */; };
+		DAE7C3711FE0971B003190FF /* CloudListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3701FE0971B003190FF /* CloudListProtocol.swift */; };
+		DAE7C3721FE0971B003190FF /* CloudListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3701FE0971B003190FF /* CloudListProtocol.swift */; };
 		DAF949F21FD8B47D001BA32E /* ViewNewBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F11FD8B47D001BA32E /* ViewNewBar+Constants.swift */; };
 		DAF949F41FD8BC38001BA32E /* ArchNewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F31FD8BC38001BA32E /* ArchNewAdd.swift */; };
 		DAF949F61FD8BC6F001BA32E /* ControllerNewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F51FD8BC6F001BA32E /* ControllerNewAdd.swift */; };
@@ -516,6 +518,7 @@
 		DAE7C3631FE0828C003190FF /* Analytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 		DAE7C36A1FE08C9F003190FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalizableError.strings; sourceTree = "<group>"; };
 		DAE7C36D1FE093D1003190FF /* Cloud+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cloud+Load.swift"; sourceTree = "<group>"; };
+		DAE7C3701FE0971B003190FF /* CloudListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudListProtocol.swift; sourceTree = "<group>"; };
 		DAF949F11FD8B47D001BA32E /* ViewNewBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewBar+Constants.swift"; sourceTree = "<group>"; };
 		DAF949F31FD8BC38001BA32E /* ArchNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNewAdd.swift; sourceTree = "<group>"; };
 		DAF949F51FD8BC6F001BA32E /* ControllerNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerNewAdd.swift; sourceTree = "<group>"; };
@@ -1008,6 +1011,7 @@
 				DAE7C3481FE08281003190FF /* Cloud.swift */,
 				DAE7C3461FE08281003190FF /* Cloud+Factory.swift */,
 				DAE7C36D1FE093D1003190FF /* Cloud+Load.swift */,
+				DAE7C3701FE0971B003190FF /* CloudListProtocol.swift */,
 				DAE7C34A1FE08281003190FF /* CloudProtocol.swift */,
 				DAE7C3441FE08281003190FF /* CloudProtocol+Default.swift */,
 				DAE7C3471FE08281003190FF /* CloudError.swift */,
@@ -1353,6 +1357,7 @@
 				DA91EB001FD62C1F0063560D /* ViewParent+Gesture.swift in Sources */,
 				DA91EAF41FD62C1F0063560D /* ViewParent.swift in Sources */,
 				DACF55351FD7661E00069701 /* ExtensionString+Constants.swift in Sources */,
+				DAE7C3711FE0971B003190FF /* CloudListProtocol.swift in Sources */,
 				DA71D69E1FDA6B13003A33E1 /* ViewTextInput.swift in Sources */,
 				DACF554D1FD7661E00069701 /* ExtensionURL.swift in Sources */,
 				DACF55451FD7661E00069701 /* ExtensionNSManagedObject.swift in Sources */,
@@ -1505,6 +1510,7 @@
 				DA71D6831FDA50C4003A33E1 /* ViewNewAddList+Constants.swift in Sources */,
 				DA9089851FD4CE2E00C1208A /* ControllerTransition.swift in Sources */,
 				DA71D66F1FDA44A2003A33E1 /* ViewNewAddListFooterIngredients.swift in Sources */,
+				DAE7C3721FE0971B003190FF /* CloudListProtocol.swift in Sources */,
 				DA177BFE1FD7832B003B3836 /* ViewNewListHeader.swift in Sources */,
 				DACEB3A61FDC9F560089B3FE /* ViewCollectionReusable.swift in Sources */,
 				DA3F0E921FDF4A300037C94D /* ViewNewAddIngredientList.swift in Sources */,

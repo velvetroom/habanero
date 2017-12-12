@@ -25,11 +25,6 @@ final class Cloud
         }
     }
     
-    private func loadFailed<T:CloudItemProtocol>(completion:((T?, Error?) -> ()))
-    {
-        completion(nil, CloudError.loadItemFailed)
-    }
-    
     //MARK: internal
     
     func create(
