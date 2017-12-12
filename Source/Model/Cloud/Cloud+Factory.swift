@@ -48,4 +48,15 @@ extension Cloud
         
         return model
     }*/
+    
+    class func factoryPath(
+        parentPath:String,
+        identifier:String) -> String
+    {
+        var path:String = parentPath
+        path.append("/")
+        path.append(identifier)
+        
+        return path
+    }
 }

@@ -25,14 +25,19 @@ final class Cloud
         }
     }
     
+    private func loadFailed<T:CloudItemProtocol>(completion:((T?, Error?) -> ()))
+    {
+        
+    }
+    
     //MARK: internal
     
     func create(
-        path:String,
+        parentPath:String,
         data:[String:Any],
         completion:@escaping((String?, Error?) -> ()))
     {
-        let document:DocumentReference = self.reference.collection(path).document()
+        let document:DocumentReference = self.reference.collection(parentPath).document()
         document.setData(data)
         { [weak self] (error:Error?) in
             
@@ -54,6 +59,30 @@ final class Cloud
                 nil)
         }
     }
+    
+    func loadItem<T:CloudItemProtocol>(
+        parentPath:String,
+        identifier:String,
+        completion:@escaping((T?, Error?) -> ()))
+    {
+        let path:String = Cloud.factoryPath(
+            parentPath:parentPath,
+            identifier:identifier)
+        
+        let itemReference:DocumentReference = self.reference.collection(parentPath).document(identifier)
+        
+        itemReference.getDocument
+        { (snapshot:DocumentSnapshot?, error:Error?) in
+            
+            let model:T? = Cloud.factoryItem(
+                snapshot:snapshot,
+                parent:parent,
+                identifier:identifier)
+            
+            completion(model)
+        }
+    }
+    
     /*
     func loadList<T:CloudListProtocol>(
         parent:CloudProtocol?,
@@ -83,25 +112,7 @@ final class Cloud
         }
     }
     
-    func loadItem<T:CloudItemProtocol>(
-        parent:CloudProtocol,
-        identifier:String,
-        completion:@escaping((T?) -> ()))
-    {
-        let path:String = parent.factoryPath(identifier:identifier)
-        
-        let itemReference:DatabaseReference = self.reference.child(path)
-        itemReference.observeSingleEvent(of:DataEventType.value)
-        { (snapshot:DataSnapshot) in
-            
-            let model:T? = Cloud.factoryItem(
-                snapshot:snapshot,
-                parent:parent,
-                identifier:identifier)
-            
-            completion(model)
-        }
-    }
+    
     
     func update(item:CloudProtocol)
     {
