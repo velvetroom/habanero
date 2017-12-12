@@ -5,6 +5,7 @@ ViewNewAddBar_labelTitle="Add Recipe";
 ViewNewAddListFooterInfo_buttonDelete="Delete";
 ViewNewAddListCellInfoTitle_labelTitle="Name";
 ViewNewAddListFooterIngredients_buttonAdd="Add ingredient";
+ViewNewAddIngredientListHeader_labelTitle="No ingredients";
 ViewTextBar_button="Done";
 ViewFormat_durationMinutes=" minutes";
 ViewFormat_durationHours=" hours";
