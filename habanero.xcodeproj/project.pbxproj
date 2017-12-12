@@ -20,6 +20,8 @@
 		DA11BA141FD8FFE30038F9B0 /* ViewNewAddListHeader+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11BA131FD8FFE30038F9B0 /* ViewNewAddListHeader+Constants.swift */; };
 		DA16F15A1FDFA78300EB6877 /* ViewNewAddIngredientListFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16F1591FDFA78300EB6877 /* ViewNewAddIngredientListFooter.swift */; };
 		DA16F15C1FDFADD800EB6877 /* ViewNewAddIngredientBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16F15B1FDFADD800EB6877 /* ViewNewAddIngredientBar.swift */; };
+		DA16F15E1FDFAF3100EB6877 /* ViewNewAddIngredient+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16F15D1FDFAF3100EB6877 /* ViewNewAddIngredient+Constants.swift */; };
+		DA16F1601FDFAF7C00EB6877 /* ViewNewAddIngredientBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16F15F1FDFAF7B00EB6877 /* ViewNewAddIngredientBar+Constants.swift */; };
 		DA177BED1FD77713003B3836 /* ViewNewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA177BEC1FD77713003B3836 /* ViewNewList.swift */; };
 		DA177BEF1FD77773003B3836 /* ViewNewListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA177BEE1FD77773003B3836 /* ViewNewListCell.swift */; };
 		DA177BF11FD77874003B3836 /* ViewNewBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA177BF01FD77874003B3836 /* ViewNewBar.swift */; };
@@ -319,6 +321,8 @@
 		DA11BA131FD8FFE30038F9B0 /* ViewNewAddListHeader+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddListHeader+Constants.swift"; sourceTree = "<group>"; };
 		DA16F1591FDFA78300EB6877 /* ViewNewAddIngredientListFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddIngredientListFooter.swift; sourceTree = "<group>"; };
 		DA16F15B1FDFADD800EB6877 /* ViewNewAddIngredientBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddIngredientBar.swift; sourceTree = "<group>"; };
+		DA16F15D1FDFAF3100EB6877 /* ViewNewAddIngredient+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredient+Constants.swift"; sourceTree = "<group>"; };
+		DA16F15F1FDFAF7B00EB6877 /* ViewNewAddIngredientBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientBar+Constants.swift"; sourceTree = "<group>"; };
 		DA177BEC1FD77713003B3836 /* ViewNewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewList.swift; sourceTree = "<group>"; };
 		DA177BEE1FD77773003B3836 /* ViewNewListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewListCell.swift; sourceTree = "<group>"; };
 		DA177BF01FD77874003B3836 /* ViewNewBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewBar.swift; sourceTree = "<group>"; };
@@ -595,7 +599,9 @@
 			isa = PBXGroup;
 			children = (
 				DA3F0E8F1FDF45C30037C94D /* ViewNewAddIngredient.swift */,
+				DA16F15D1FDFAF3100EB6877 /* ViewNewAddIngredient+Constants.swift */,
 				DA16F15B1FDFADD800EB6877 /* ViewNewAddIngredientBar.swift */,
+				DA16F15F1FDFAF7B00EB6877 /* ViewNewAddIngredientBar+Constants.swift */,
 				DA3F0E911FDF4A300037C94D /* ViewNewAddIngredientList.swift */,
 				DA3F0E931FDF4A450037C94D /* ViewNewAddIngredientListCell.swift */,
 				DA16F1591FDFA78300EB6877 /* ViewNewAddIngredientListFooter.swift */,
@@ -1478,6 +1484,7 @@
 				DA3F0E741FDF0BC50037C94D /* Ingredient.swift in Sources */,
 				DACF55441FD7661E00069701 /* ExtensionData.swift in Sources */,
 				DA91EAF11FD62C1F0063560D /* ViewMenuCell.swift in Sources */,
+				DA16F15E1FDFAF3100EB6877 /* ViewNewAddIngredient+Constants.swift in Sources */,
 				DA91EAE91FD62C1F0063560D /* ViewMenu+Actions.swift in Sources */,
 				DACF22181FDB673A00D6B192 /* ViewFormat.swift in Sources */,
 				DA58C6E91FD9EAFB000E6F30 /* NewAdd+Constants.swift in Sources */,
@@ -1565,6 +1572,7 @@
 				DA70AFC61FD5AABF0016B0DC /* Home.swift in Sources */,
 				DA3F0E901FDF45C30037C94D /* ViewNewAddIngredient.swift in Sources */,
 				DA11BA091FD8F2200038F9B0 /* ViewNewAddListCell.swift in Sources */,
+				DA16F1601FDFAF7C00EB6877 /* ViewNewAddIngredientBar+Constants.swift in Sources */,
 				DA91EB281FD630E80063560D /* ViewGlobal.swift in Sources */,
 				DA90898F1FD4CE3E00C1208A /* Menu.swift in Sources */,
 				DA992D791FD61ED700A6CFEF /* MenuItemGenericProtocol.swift in Sources */,

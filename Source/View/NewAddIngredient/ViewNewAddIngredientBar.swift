@@ -1,6 +1,6 @@
 import UIKit
 
-final class ViewNewAddIngredientBar:ViewBarBack<ArchNewAddIngredient>
+final class ViewNewAddIngredientBar:ViewBarBack<ArchNewAddIngredient>, UISearchBarDelegate
 {
     private(set) weak var searchBar:UISearchBar!
     
@@ -22,7 +22,7 @@ final class ViewNewAddIngredientBar:ViewBarBack<ArchNewAddIngredient>
         NSLayoutConstraint.topToTop(
             view:searchBar,
             toView:self,
-            constant:VCreateSearchBaseBar.Constants.barTop)
+            constant:ViewNewAddIngredientBar.Constants.barTop)
         NSLayoutConstraint.bottomToBottom(
             view:searchBar,
             toView:self)
