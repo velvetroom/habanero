@@ -15,6 +15,7 @@ final class ViewNewAddIngredientBar:ViewBarBack<ArchNewAddIngredient>, UISearchB
         searchBar.showsCancelButton = true
         searchBar.tintColor = UIColor.colourBackgroundDark
         searchBar.delegate = self
+        searchBar.isUserInteractionEnabled = false
         self.searchBar = searchBar
         
         addSubview(searchBar)

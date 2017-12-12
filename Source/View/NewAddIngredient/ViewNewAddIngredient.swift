@@ -5,6 +5,14 @@ final class ViewNewAddIngredient:ViewMain<ArchNewAddIngredient>
     private(set) weak var viewBar:ViewNewAddIngredientBar!
     private weak var viewSpinner:ViewSpinner?
     
+    override var shouldPanBack:Bool
+    {
+        get
+        {
+            return true
+        }
+    }
+    
     deinit
     {
         self.viewSpinner?.stopAnimating()
@@ -13,6 +21,8 @@ final class ViewNewAddIngredient:ViewMain<ArchNewAddIngredient>
     override func factoryViews()
     {
         super.factoryViews()
+        
+        self.backgroundColor = UIColor.colourBackgroundGray
         
         let viewSpinner:ViewSpinner = ViewSpinner()
         self.viewSpinner = viewSpinner
