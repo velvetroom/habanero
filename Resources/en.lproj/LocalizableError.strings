@@ -1,2 +1,3 @@
 CloudError_createFailed="Failed creating item in Cloud";
 CloudError_loadItemFailed="Load item failed";
+CloudError_loadItemDataFailed="Incorrect item response from server";

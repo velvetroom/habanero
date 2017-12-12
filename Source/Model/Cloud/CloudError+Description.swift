@@ -6,7 +6,6 @@ extension CloudError
     {
         get
         {
-            
             let map:[CloudError:String] = CloudError.descriptionMap()
             let localizedDescription:String? = map[self]
             
@@ -20,7 +19,8 @@ extension CloudError
     {
         let map:[CloudError:String] = [
             CloudError.createFailed : String.localizedError(key:"CloudError_createFailed"),
-            CloudError.loadItemFailed : String.localizedError(key:"CloudError_loadItemFailed")]
+            CloudError.loadItemFailed : String.localizedError(key:"CloudError_loadItemFailed"),
+            CloudError.loadItemDataFailed : String.localizedError(key:"CloudError_loadItemDataFailed")]
         
         return map
     }

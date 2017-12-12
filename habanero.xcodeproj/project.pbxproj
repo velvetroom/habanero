@@ -311,6 +311,8 @@
 		DAE7C3681FE08386003190FF /* IngredientList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3661FE08386003190FF /* IngredientList.swift */; };
 		DAE7C36B1FE08C9F003190FF /* LocalizableError.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAE7C3691FE08C9F003190FF /* LocalizableError.strings */; };
 		DAE7C36C1FE08C9F003190FF /* LocalizableError.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAE7C3691FE08C9F003190FF /* LocalizableError.strings */; };
+		DAE7C36E1FE093D1003190FF /* Cloud+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C36D1FE093D1003190FF /* Cloud+Load.swift */; };
+		DAE7C36F1FE093D1003190FF /* Cloud+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C36D1FE093D1003190FF /* Cloud+Load.swift */; };
 		DAF949F21FD8B47D001BA32E /* ViewNewBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F11FD8B47D001BA32E /* ViewNewBar+Constants.swift */; };
 		DAF949F41FD8BC38001BA32E /* ArchNewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F31FD8BC38001BA32E /* ArchNewAdd.swift */; };
 		DAF949F61FD8BC6F001BA32E /* ControllerNewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F51FD8BC6F001BA32E /* ControllerNewAdd.swift */; };
@@ -525,6 +527,7 @@
 		DAE7C3631FE0828C003190FF /* Analytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 		DAE7C3661FE08386003190FF /* IngredientList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientList.swift; sourceTree = "<group>"; };
 		DAE7C36A1FE08C9F003190FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalizableError.strings; sourceTree = "<group>"; };
+		DAE7C36D1FE093D1003190FF /* Cloud+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cloud+Load.swift"; sourceTree = "<group>"; };
 		DAF949F11FD8B47D001BA32E /* ViewNewBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewBar+Constants.swift"; sourceTree = "<group>"; };
 		DAF949F31FD8BC38001BA32E /* ArchNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNewAdd.swift; sourceTree = "<group>"; };
 		DAF949F51FD8BC6F001BA32E /* ControllerNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerNewAdd.swift; sourceTree = "<group>"; };
@@ -1017,6 +1020,7 @@
 			children = (
 				DAE7C3481FE08281003190FF /* Cloud.swift */,
 				DAE7C3461FE08281003190FF /* Cloud+Factory.swift */,
+				DAE7C36D1FE093D1003190FF /* Cloud+Load.swift */,
 				DAE7C34A1FE08281003190FF /* CloudProtocol.swift */,
 				DAE7C3441FE08281003190FF /* CloudProtocol+Default.swift */,
 				DAE7C34C1FE08281003190FF /* CloudItemProtocol.swift */,
@@ -1410,6 +1414,7 @@
 				DA90891D1FD4C66000C1208A /* Controller.swift in Sources */,
 				DA91EB141FD62C1F0063560D /* ViewGradient.swift in Sources */,
 				DA9089211FD4C66000C1208A /* ControllerParent+Transitions.swift in Sources */,
+				DAE7C36E1FE093D1003190FF /* Cloud+Load.swift in Sources */,
 				DAE7C3521FE08281003190FF /* Cloud+Factory.swift in Sources */,
 				DA91EB1C1FD62C1F0063560D /* ViewSpinner.swift in Sources */,
 				DA91EB0E1FD62C1F0063560D /* ViewBlur.swift in Sources */,
@@ -1547,6 +1552,7 @@
 				DAF949F41FD8BC38001BA32E /* ArchNewAdd.swift in Sources */,
 				DA91EAEF1FD62C1F0063560D /* ViewMenu+Synth.swift in Sources */,
 				DA16F1621FDFB09900EB6877 /* ViewNewAddListFooterIngredients+Constants.swift in Sources */,
+				DAE7C36F1FE093D1003190FF /* Cloud+Load.swift in Sources */,
 				DACEB3B01FDCB35A0089B3FE /* ViewNewListCellSteps+Constants.swift in Sources */,
 				DA71D6901FDA633E003A33E1 /* ArchText.swift in Sources */,
 				DACF55461FD7661E00069701 /* ExtensionNSManagedObject.swift in Sources */,

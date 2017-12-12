@@ -3,7 +3,7 @@ import Firebase
 
 final class Cloud
 {
-    private let reference:Firestore
+    let reference:Firestore
     
     init()
     {
@@ -60,71 +60,7 @@ final class Cloud
         }
     }
     
-    func loadItem<T:CloudItemProtocol>(
-        parentPath:String,
-        identifier:String,
-        completion:@escaping((T?, Error?) -> ()))
-    {
-        let path:String = Cloud.factoryPath(
-            parentPath:parentPath,
-            identifier:identifier)
-        
-        let itemReference:DocumentReference = self.reference.collection(parentPath).document(identifier)
-        
-        itemReference.getDocument
-        { (snapshot:DocumentSnapshot?, error:Error?) in
-            
-            guard
-                
-                error == nil
-            
-            else
-            {
-                completion(
-                    nil,
-                    CloudError.loadItemFailed)
-                
-                return
-            }
-            
-            Cloud.factoryItem(
-                snapshot:snapshot,
-                parent:parent,
-                identifier:identifier,
-                completion:completion)
-        }
-    }
-    
     /*
-    func loadList<T:CloudListProtocol>(
-        parent:CloudProtocol?,
-        completion:@escaping((T?) -> ()))
-    {
-        let identifier:String = T.self.identifier
-        let path:String
-        
-        if let childPath:String = parent?.factoryPath(identifier:identifier)
-        {
-            path = childPath
-        }
-        else
-        {
-            path = identifier
-        }
-        
-        let itemReference:DatabaseReference = self.reference.child(path)
-        itemReference.observeSingleEvent(of:DataEventType.value)
-        { (snapshot:DataSnapshot) in
-            
-            let model:T? = Cloud.factoryList(
-                snapshot:snapshot,
-                parent:parent)
-            
-            completion(model)
-        }
-    }
-    
-    
     
     func update(item:CloudProtocol)
     {
