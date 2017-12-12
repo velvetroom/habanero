@@ -33,6 +33,39 @@ extension Cloud
             nil)
     }
     
+    private func loadList<T:CloudListProtocol>(
+        querySnapshot:QuerySnapshot,
+        parentPath:String,
+        completion:((T?, Error?) -> ()))
+    {
+        var list:T = T()
+        let documents:[DocumentSnapshot] = querySnapshot.documents
+        
+        for document:DocumentSnapshot in documents
+        {
+            let identifier:String = document.documentID
+            let json:[String:Any] = document.data()
+            
+            guard
+            
+                let item:T.Item = T.Item(
+                    parentPath:parentPath,
+                    identifier:identifier,
+                    json:json)
+            
+            else
+            {
+                continue
+            }
+            
+            list.items.append(item)
+        }
+        
+        completion(
+            list,
+            nil)
+    }
+    
     //MARK: internal
     
     func loadItem<T:CloudProtocol>(
@@ -67,15 +100,36 @@ extension Cloud
     }
     
     func loadList<T:CloudListProtocol>(
-        path:String,
+        parentPath:String,
         completion:@escaping((T?, Error?) -> ()))
     {
+        let path:String = Cloud.factoryPath(
+            parentPath:parentPath,
+            identifier:T.identifier)
+        
         let listReference:CollectionReference = self.reference.collection(path)
         
         listReference.getDocuments
-        { (querySnapshot:QuerySnapshot?, error:Error?) in
+        { [weak self] (querySnapshot:QuerySnapshot?, error:Error?) in
             
-            querySnapshot.docu
+            guard
+            
+                error == nil,
+                let querySnapshot:QuerySnapshot = querySnapshot
+            
+            else
+            {
+                completion(
+                    nil,
+                    CloudError.loadListFailed)
+                
+                return
+            }
+            
+            self?.loadList(
+                querySnapshot:querySnapshot,
+                parentPath:path,
+                completion:completion)
         }
     }
 }
