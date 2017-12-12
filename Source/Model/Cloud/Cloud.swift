@@ -28,11 +28,11 @@ final class Cloud
     //MARK: internal
     
     func create(
-        parent:CloudProtocol,
+        path:String,
         data:[String:Any],
         completion:@escaping((String?, Error?) -> ()))
     {
-        let document:DocumentReference = self.reference.collection(parent.path).document()
+        let document:DocumentReference = self.reference.collection(path).document()
         document.setData(data)
         { [weak self] (error:Error?) in
             

@@ -4,7 +4,7 @@ extension NewAddIngredient
 {
     //MARK: private
     
-    func asynCreateIngredient(completion:@escaping(() -> ()))
+    func asynCreateIngredient(completion:@escaping((Ingredient?, Error?) -> ()))
     {
         let nameLength:Int = self.searching.count
         
@@ -14,17 +14,58 @@ extension NewAddIngredient
         
         else
         {
+            self.ingredientCreated(
+                ingredient:nil,
+                error:nil,
+                completion:completion)
+            
             return
         }
         
         let ingredientData:[String:Any] = Ingredient.factoryJson(name:self.searching)
         
-//        self.cloud.create(parent: <#T##CloudProtocol#>, data: <#T##[String : Any]#>, completion: <#T##((String?, Error?) -> ())##((String?, Error?) -> ())##(String?, Error?) -> ()#>)
+        self.cloud.create(
+            path:IngredientList.identifier,
+            data:ingredientData)
+        { (identifier:String?, error:Error?) in
+            
+            print("identifier: \(identifier) error: \(error)")
+            
+            guard
+            
+                let identifier:String = identifier
+            
+            else
+            {
+                self.ingredientCreated(
+                    ingredient:nil,
+                    error:error,
+                    completion:completion)
+                
+                return
+            }
+        }
+    }
+    
+    private func loadIngredient(identifier:String)
+    {
+        
+    }
+    
+    private func ingredientCreated(
+        ingredient:Ingredient?,
+        error:Error?,
+        completion:@escaping((Ingredient?, Error?) -> ()))
+    {
+        DispatchQueue.main.async
+        {
+            completion(ingredient, error)
+        }
     }
     
     //MARK: internal
     
-    func createIngredient(completion:@escaping(() -> ()))
+    func createIngredient(completion:@escaping((Ingredient?, Error?) -> ()))
     {
         DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
         { [weak self] in
