@@ -54,18 +54,4 @@ final class Cloud
                 nil)
         }
     }
-    
-    /*
-    
-    func update(item:CloudProtocol)
-    {
-        let itemReference:DatabaseReference = self.reference.child(item.path)
-        itemReference.setValue(item.json)
-    }
-    
-    func remove(item:CloudProtocol)
-    {
-        let itemReference:DatabaseReference = self.reference.child(item.path)
-        itemReference.removeValue()
-    }*/
 }

@@ -75,4 +75,10 @@ final class NewAddIngredient:Model<ArchNewAddIngredient>
                 completion:completion)
         }
     }
+    
+    func updateItems(ingredients:[Ingredient])
+    {
+        self.ingredients = ingredients
+        self.items = ingredients
+    }
 }

@@ -25,15 +25,31 @@ final class ControllerNewAddIngredient:Controller<ArchNewAddIngredient>
         self.viewMain.viewList.isHidden = true
         
         self.model.load
-        { [weak self] in
+        { [weak self] (error:Error?) in
          
-            self?.ingredientsLoaded()
+            self?.ingredientsLoaded(error:error)
         }
     }
     
     //MARK: private
     
-    private func ingredientsLoaded()
+    private func ingredientsLoaded(error:Error?)
+    {
+        guard
+        
+            let error:Error = error
+        
+        else
+        {
+            self.updateIngredients()
+            
+            return
+        }
+        
+        ViewAlert.messageFail(message:error.localizedDescription)
+    }
+    
+    private func updateIngredients()
     {
         self.viewMain.viewSpinner.stopAnimating()
         self.viewMain.viewList.isHidden = false

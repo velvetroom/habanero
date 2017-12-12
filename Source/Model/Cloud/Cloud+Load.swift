@@ -100,7 +100,7 @@ extension Cloud
     }
     
     func loadList<T:CloudListProtocol>(
-        parentPath:String,
+        parentPath:String = String(),
         completion:@escaping((T?, Error?) -> ()))
     {
         let path:String = Cloud.factoryPath(
