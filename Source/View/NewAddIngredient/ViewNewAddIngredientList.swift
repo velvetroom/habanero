@@ -104,4 +104,34 @@ final class ViewNewAddIngredientList:ViewCollection<
         
         return count
     }
+    
+    override func collectionView(
+        _ collectionView:UICollectionView,
+        viewForSupplementaryElementOfKind kind:String,
+        at indexPath:IndexPath) -> UICollectionReusableView
+    {
+        let reusable:ViewCollectionReusable
+        
+        if kind == UICollectionElementKindSectionHeader
+        {
+            reusable = self.headerAtIndex(index:indexPath)
+        }
+        else
+        {
+            reusable = self.footerAtIndex(index:indexPath)
+        }
+        
+        return reusable
+    }
+    
+    override func collectionView(
+        _ collectionView:UICollectionView,
+        cellForItemAt indexPath:IndexPath) -> UICollectionViewCell
+    {
+        let item:Ingredient = self.modelAtIndex(index:indexPath)
+        let cell:ViewNewAddIngredientListCell = self.cellAtIndex(indexPath:indexPath)
+        cell.config(model:item)
+        
+        return cell
+    }
 }

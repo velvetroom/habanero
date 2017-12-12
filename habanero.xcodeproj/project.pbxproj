@@ -307,6 +307,7 @@
 		DAE7C33A1FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3391FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift */; };
 		DAE7C33C1FE061BD003190FF /* ViewNewAddIngredientListHeader+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C33B1FE061BD003190FF /* ViewNewAddIngredientListHeader+Constants.swift */; };
 		DAE7C33E1FE063D5003190FF /* ViewNewAddIngredientListFooter+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C33D1FE063D5003190FF /* ViewNewAddIngredientListFooter+Constants.swift */; };
+		DAE7C3401FE076EC003190FF /* ViewNewAddIngredientList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C33F1FE076EC003190FF /* ViewNewAddIngredientList+Actions.swift */; };
 		DAF949F21FD8B47D001BA32E /* ViewNewBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F11FD8B47D001BA32E /* ViewNewBar+Constants.swift */; };
 		DAF949F41FD8BC38001BA32E /* ArchNewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F31FD8BC38001BA32E /* ArchNewAdd.swift */; };
 		DAF949F61FD8BC6F001BA32E /* ControllerNewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F51FD8BC6F001BA32E /* ControllerNewAdd.swift */; };
@@ -518,6 +519,7 @@
 		DAE7C3391FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientList+Constants.swift"; sourceTree = "<group>"; };
 		DAE7C33B1FE061BD003190FF /* ViewNewAddIngredientListHeader+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientListHeader+Constants.swift"; sourceTree = "<group>"; };
 		DAE7C33D1FE063D5003190FF /* ViewNewAddIngredientListFooter+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientListFooter+Constants.swift"; sourceTree = "<group>"; };
+		DAE7C33F1FE076EC003190FF /* ViewNewAddIngredientList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientList+Actions.swift"; sourceTree = "<group>"; };
 		DAF949F11FD8B47D001BA32E /* ViewNewBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewBar+Constants.swift"; sourceTree = "<group>"; };
 		DAF949F31FD8BC38001BA32E /* ArchNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNewAdd.swift; sourceTree = "<group>"; };
 		DAF949F51FD8BC6F001BA32E /* ControllerNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerNewAdd.swift; sourceTree = "<group>"; };
@@ -622,6 +624,7 @@
 				DA16F15F1FDFAF7B00EB6877 /* ViewNewAddIngredientBar+Constants.swift */,
 				DA3F0E911FDF4A300037C94D /* ViewNewAddIngredientList.swift */,
 				DAE7C3391FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift */,
+				DAE7C33F1FE076EC003190FF /* ViewNewAddIngredientList+Actions.swift */,
 				DA3F0E931FDF4A450037C94D /* ViewNewAddIngredientListCell.swift */,
 				DAE7C3371FE0605C003190FF /* ViewNewAddIngredientListHeader.swift */,
 				DAE7C33B1FE061BD003190FF /* ViewNewAddIngredientListHeader+Constants.swift */,
@@ -1523,6 +1526,7 @@
 				DA177BF11FD77874003B3836 /* ViewNewBar.swift in Sources */,
 				DACF55301FD7661E00069701 /* ExtensionUIColor.swift in Sources */,
 				DA71D6871FDA58E3003A33E1 /* ViewNewAddListCellInfoTitle.swift in Sources */,
+				DAE7C3401FE076EC003190FF /* ViewNewAddIngredientList+Actions.swift in Sources */,
 				DA16F15A1FDFA78300EB6877 /* ViewNewAddIngredientListFooter.swift in Sources */,
 				DA91EB131FD62C1F0063560D /* ViewSpinner+Constants.swift in Sources */,
 				DA71D6791FDA4613003A33E1 /* NewAddSectionIngredients.swift in Sources */,
