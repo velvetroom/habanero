@@ -58,4 +58,11 @@ final class ControllerNewAddIngredient:Controller<ArchNewAddIngredient>
             self?.viewMain.viewList.collectionView.reloadData()
         }
     }
+    
+    func createIngredient()
+    {
+        self.viewMain.viewBar.searchBar.resignFirstResponder()
+        
+        
+    }
 }
