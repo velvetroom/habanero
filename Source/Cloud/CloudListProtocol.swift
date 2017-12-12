@@ -6,5 +6,5 @@ protocol CloudListProtocol:CloudProtocol
     
     init?(
         parent:CloudProtocol?,
-        json:Any)
+        json:[String:Any])
 }

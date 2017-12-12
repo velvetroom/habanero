@@ -35,8 +35,7 @@ final class ControllerNewAddIngredient:Controller<ArchNewAddIngredient>
     
     private func ingredientsLoaded()
     {
-        self.viewMain.viewSpinner?.stopAnimating()
-        self.viewMain.viewSpinner?.removeFromSuperview()
+        self.viewMain.viewSpinner.stopAnimating()
         self.viewMain.viewList.isHidden = false
         self.viewMain.viewBar.searchBar.isUserInteractionEnabled = true
         self.viewMain.viewBar.searchBar.becomeFirstResponder()
@@ -62,7 +61,8 @@ final class ControllerNewAddIngredient:Controller<ArchNewAddIngredient>
     func createIngredient()
     {
         self.viewMain.viewBar.searchBar.resignFirstResponder()
-        
+        self.viewMain.viewSpinner.startAnimating()
+        self.viewMain.viewList.isHidden = true
         
     }
 }

@@ -4,5 +4,5 @@ protocol CloudProtocol
 {
     var identifier:String { get }
     var path:String { get }
-    var json:Any { get }
+    var json:[String:Any] { get }
 }

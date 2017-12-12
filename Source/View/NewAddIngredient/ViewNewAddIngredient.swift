@@ -2,9 +2,9 @@ import UIKit
 
 final class ViewNewAddIngredient:ViewMain<ArchNewAddIngredient>
 {
-    weak var viewSpinner:ViewSpinner?
     private(set) weak var viewBar:ViewNewAddIngredientBar!
     private(set) weak var viewList:ViewNewAddIngredientList!
+    private(set) weak var viewSpinner:ViewSpinner!
     
     override var shouldPanBack:Bool
     {
@@ -16,7 +16,7 @@ final class ViewNewAddIngredient:ViewMain<ArchNewAddIngredient>
     
     deinit
     {
-        self.viewSpinner?.stopAnimating()
+        self.viewSpinner.stopAnimating()
     }
     
     override func factoryViews()
