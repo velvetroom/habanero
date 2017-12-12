@@ -16,6 +16,6 @@ extension ViewSpinner
             #imageLiteral(resourceName: "assetSpinner08"),
             #imageLiteral(resourceName: "assetSpinner09")]
         
-        static let animationDuration:TimeInterval = 0.9
+        static let animationDuration:TimeInterval = 0.8
     }
 }
