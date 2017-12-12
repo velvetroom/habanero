@@ -7,6 +7,7 @@ final class ViewNewAddListFooterIngredients:ViewNewAddListFooter
         super.factoryViews()
         
         let buttonAdd:UIButton = UIButton()
+        buttonAdd.translatesAutoresizingMaskIntoConstraints = false
         buttonAdd.setTitleColor(
             UIColor.colourSuccess,
             for:UIControlState.normal)
@@ -16,7 +17,7 @@ final class ViewNewAddListFooterIngredients:ViewNewAddListFooter
         buttonAdd.setTitle(
             String.localizedView(key:"ViewNewAddListFooterIngredients_buttonAdd"),
             for:UIControlState())
-        buttonAdd.titleLabel!.font = UIFont.bold(
+        buttonAdd.titleLabel!.font = UIFont.medium(
             size:ViewNewAddListFooterIngredients.Constants.buttonFontSize)
         self.addSubview(buttonAdd)
         
@@ -26,8 +27,16 @@ final class ViewNewAddListFooterIngredients:ViewNewAddListFooter
         NSLayoutConstraint.width(
             view:buttonAdd,
             constant:ViewNewAddListFooterIngredients.Constants.buttonWidth)
-        NSLayoutConstraint.rightToRight(
+        NSLayoutConstraint.leftToLeft(
             view:buttonAdd,
             toView:self)
+    }
+    
+    //MARK: selectors
+    
+    @objc
+    private func selectorButtonDelete(sender button:UIButton)
+    {
+        self.controller?.alertConfirmDelete()
     }
 }

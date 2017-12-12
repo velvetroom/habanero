@@ -8,6 +8,8 @@ final class ViewNew:ViewMain<ArchNew>
     {
         super.factoryViews()
         
+        self.backgroundColor = UIColor.colourBackgroundGray
+        
         let viewBar:ViewNewBar = ViewNewBar(controller:controller)
         
         let viewList:ViewNewList = ViewNewList(controller:controller)

@@ -8,6 +8,8 @@ final class ViewNewAdd:ViewMain<ArchNewAdd>
     {
         super.factoryViews()
         
+        self.backgroundColor = UIColor.colourBackgroundGray
+        
         let viewBar:ViewNewAddBar = ViewNewAddBar(controller:controller)
         
         let viewList:ViewNewAddList = ViewNewAddList(controller:controller)

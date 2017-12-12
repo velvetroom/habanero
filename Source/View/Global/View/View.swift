@@ -12,6 +12,8 @@ class View<A>:UIView, ViewControllableProtocol where A.C:Controller<A>
         self.backgroundColor = UIColor.clear
         self.translatesAutoresizingMaskIntoConstraints = false
         self.controller = controller
+        
+        self.factoryViews()
     }
     
     required init?(coder:NSCoder)
