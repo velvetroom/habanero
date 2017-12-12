@@ -43,15 +43,18 @@ final class NewAddIngredient:Model<ArchNewAddIngredient>
         { [weak self] in
             
             self?.ingredientsFound(
+                searching:searching,
                 items:items,
                 completion:completion)
         }
     }
     
     private func ingredientsFound(
+        searching:String,
         items:[Ingredient],
         completion:(() -> ()))
     {
+        self.searching = searching
         self.items = items
         completion()
     }

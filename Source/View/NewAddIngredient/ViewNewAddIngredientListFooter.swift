@@ -31,6 +31,7 @@ final class ViewNewAddIngredientListFooter:ViewCollectionReusable
         button.setTitleColor(
             UIColor(white:0, alpha:0.2),
             for:UIControlState.highlighted)
+        button.titleLabel!.font = UIFont.medium(size:ViewNewAddIngredientListFooter.Constants.buttonFontSize)
         button.layer.cornerRadius = ViewNewAddIngredientListFooter.Constants.buttonCornerRadius
         
         self.addSubview(button)

@@ -11,6 +11,8 @@ final class ViewNewAddIngredientList:ViewCollection<
     {
         super.factoryViews()
         
+        self.collectionView.alwaysBounceVertical = true
+        
         self.registerHeader(header:ViewNewAddIngredientListHeader.self)
         self.registerFooter(footer:ViewNewAddIngredientListFooter.self)
         
@@ -68,7 +70,7 @@ final class ViewNewAddIngredientList:ViewCollection<
         
         let size:CGSize = CGSize(
             width:0,
-            height:ViewNewAddIngredientList.Constants.headerHeight)
+            height:ViewNewAddIngredientList.Constants.footerHeight)
         
         return size
     }
