@@ -1010,16 +1010,16 @@
 		DAE7C3431FE08281003190FF /* Cloud */ = {
 			isa = PBXGroup;
 			children = (
-				DAE7C3441FE08281003190FF /* CloudItemProtocol+Default.swift */,
-				DAE7C3451FE08281003190FF /* CloudProtocol+Factory.swift */,
-				DAE7C3461FE08281003190FF /* Cloud+Factory.swift */,
-				DAE7C3471FE08281003190FF /* CloudError.swift */,
 				DAE7C3481FE08281003190FF /* Cloud.swift */,
-				DAE7C3491FE08281003190FF /* CloudListProtocol.swift */,
+				DAE7C3461FE08281003190FF /* Cloud+Factory.swift */,
 				DAE7C34A1FE08281003190FF /* CloudProtocol.swift */,
-				DAE7C34B1FE08281003190FF /* CloudError+Description.swift */,
+				DAE7C3451FE08281003190FF /* CloudProtocol+Factory.swift */,
 				DAE7C34C1FE08281003190FF /* CloudItemProtocol.swift */,
+				DAE7C3441FE08281003190FF /* CloudItemProtocol+Default.swift */,
+				DAE7C3491FE08281003190FF /* CloudListProtocol.swift */,
 				DAE7C34D1FE08281003190FF /* CloudListProtocol+Default.swift */,
+				DAE7C3471FE08281003190FF /* CloudError.swift */,
+				DAE7C34B1FE08281003190FF /* CloudError+Description.swift */,
 			);
 			path = Cloud;
 			sourceTree = "<group>";

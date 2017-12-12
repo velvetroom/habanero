@@ -4,7 +4,7 @@ extension Ingredient
 {
     //MARK: internal
     
-    class func factoryJson(name:String) -> Any
+    class func factoryJson(name:String) -> [String:Any]
     {
         let json:[String:Any] = [
             Ingredient.Keys.name : name]
@@ -12,10 +12,10 @@ extension Ingredient
         return json
     }
     
-    class func factoryJson(ingredient:Ingredient) -> Any
+    class func factoryJson(ingredient:Ingredient) -> [String:Any]
     {
         let name:String = ingredient.name
-        let json:Any = Ingredient.factoryJson(name:name)
+        let json:[String:Any] = Ingredient.factoryJson(name:name)
         
         return json
     }

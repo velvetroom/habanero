@@ -17,7 +17,7 @@ extension NewAddIngredient
             return
         }
         
-        let ingredientData:[String:Any] = 
+        let ingredientData:[String:Any] = Ingredient.factoryJson(name:self.searching)
         
         self.cloud.create(parent: <#T##CloudProtocol#>, data: <#T##[String : Any]#>, completion: <#T##((String?, Error?) -> ())##((String?, Error?) -> ())##(String?, Error?) -> ()#>)
     }

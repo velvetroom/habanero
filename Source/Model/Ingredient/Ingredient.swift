@@ -6,11 +6,11 @@ final class Ingredient:CloudItemProtocol
     let identifier:String
     let name:String
     
-    var json:Any
+    var json:[String:Any]
     {
         get
         {
-            let json:Any = Ingredient.factoryJson(ingredient:self)
+            let json:[String:Any] = Ingredient.factoryJson(ingredient:self)
             
             return json
         }
@@ -19,7 +19,7 @@ final class Ingredient:CloudItemProtocol
     init?(
         parent:CloudProtocol,
         identifier:String,
-        json:Any)
+        json:[String:Any])
     {
         guard
             
