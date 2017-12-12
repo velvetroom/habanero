@@ -29,8 +29,6 @@ extension NewAddIngredient
             data:ingredientData)
         { (identifier:String?, error:Error?) in
             
-            print("identifier: \(identifier) error: \(error)")
-            
             guard
             
                 let identifier:String = identifier

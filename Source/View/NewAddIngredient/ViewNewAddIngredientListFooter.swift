@@ -33,6 +33,10 @@ final class ViewNewAddIngredientListFooter:ViewCollectionReusable
             for:UIControlState.highlighted)
         button.titleLabel!.font = UIFont.medium(size:ViewNewAddIngredientListFooter.Constants.buttonFontSize)
         button.layer.cornerRadius = ViewNewAddIngredientListFooter.Constants.buttonCornerRadius
+        button.addTarget(
+            self,
+            action:#selector(self.selectorButton(sender:)),
+            for:UIControlEvents.touchUpInside)
         
         self.addSubview(button)
         
@@ -48,6 +52,14 @@ final class ViewNewAddIngredientListFooter:ViewCollectionReusable
         self.layoutButtonLeft = NSLayoutConstraint.leftToLeft(
             view:button,
             toView:self)
+    }
+    
+    //MARK: selectors
+    
+    @objc
+    private func selectorButton(sender button:UIButton)
+    {
+        self.controller?.createIngredient()
     }
     
     //MARK: internal
