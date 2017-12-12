@@ -11,22 +11,4 @@ extension CloudListProtocol
             return stringName
         }
     }
-    
-    var path:String
-    {
-        get
-        {
-            var path:String = String()
-            
-            if let parent:CloudProtocol = self.parent
-            {
-                path.append(parent.path)
-                path.append("/")
-            }
-            
-            path.append(self.identifier)
-            
-            return path
-        }
-    }
 }

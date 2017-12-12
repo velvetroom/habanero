@@ -1,6 +1,6 @@
 import Foundation
 
-extension CloudItemProtocol
+extension CloudProtocol
 {
     var path:String
     {

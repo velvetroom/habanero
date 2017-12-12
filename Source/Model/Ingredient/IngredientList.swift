@@ -3,7 +3,7 @@ import Foundation
 final class IngredientList:CloudListProtocol
 {
     let identifier:String = IngredientList.identifier
-    let parent:CloudProtocol?
+    let parentPath:String
     
     var json:[String:Any]
     {
@@ -14,9 +14,9 @@ final class IngredientList:CloudListProtocol
     }
     
     init?(
-        parent:CloudProtocol?,
+        parentPath:String,
         json:[String:Any])
     {
-        self.parent = nil
+        self.parentPath = parentPath
     }
 }

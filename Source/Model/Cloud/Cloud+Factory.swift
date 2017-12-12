@@ -26,15 +26,17 @@ extension Cloud
         return model
     }
     
+    */
+    
     class func factoryItem<T:CloudItemProtocol>(
-        snapshot:DataSnapshot,
-        parent:CloudProtocol,
-        identifier:String) -> T?
+        snapshot:DocumentSnapshot,
+        parentPath:String,
+        identifier:String,
+        completion:@escaping((T?, Error?) -> ()))
     {
         guard
             
-            let json:Any = snapshot.value,
-            json is NSNull == false
+            let json:[String:Any] = snapshot.data()
             
         else
         {
@@ -42,12 +44,12 @@ extension Cloud
         }
         
         let model:T? = T(
-            parent:parent,
+            parentPath:parentPath,
             identifier:identifier,
             json:json)
         
         return model
-    }*/
+    }
     
     class func factoryPath(
         parentPath:String,

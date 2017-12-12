@@ -25,7 +25,7 @@ extension NewAddIngredient
         let ingredientData:[String:Any] = Ingredient.factoryJson(name:self.searching)
         
         self.cloud.create(
-            path:IngredientList.identifier,
+            parentPath:IngredientList.identifier,
             data:ingredientData)
         { (identifier:String?, error:Error?) in
             

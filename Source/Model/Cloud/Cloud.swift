@@ -84,15 +84,14 @@ final class Cloud
                     nil,
                     CloudError.loadItemFailed)
                 
-                return nil
+                return
             }
             
-            let model:T? = Cloud.factoryItem(
+            Cloud.factoryItem(
                 snapshot:snapshot,
                 parent:parent,
-                identifier:identifier)
-            
-            completion(model)
+                identifier:identifier,
+                completion:completion)
         }
     }
     

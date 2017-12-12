@@ -2,7 +2,7 @@ import Foundation
 
 final class Ingredient:CloudItemProtocol
 {
-    let parent:CloudProtocol
+    let parentPath:String
     let identifier:String
     let name:String
     
@@ -17,14 +17,13 @@ final class Ingredient:CloudItemProtocol
     }
     
     init?(
-        parent:CloudProtocol,
+        parentPath:String,
         identifier:String,
         json:[String:Any])
     {
         guard
             
-            let jsonMap:[String:Any] = json as? [String:Any],
-            let name:String = jsonMap[Ingredient.Keys.name] as? String
+            let name:String = json[Ingredient.Keys.name] as? String
         
         else
         {
@@ -32,7 +31,7 @@ final class Ingredient:CloudItemProtocol
         }
         
         self.name = name
-        self.parent = parent
+        self.parentPath = parentPath
         self.identifier = identifier
     }
 }
