@@ -1,0 +1,2 @@
+CloudError_createFailed="Failed creating item in Cloud";
+CloudError_loadItemFailed="Load item failed";

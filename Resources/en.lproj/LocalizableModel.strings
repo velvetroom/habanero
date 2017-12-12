@@ -1,5 +1,3 @@
 NewAdd_infoSectionTitle="Recipe info";
 NewAdd_ingredientsSectionTitle="Ingredients";
 NewAdd_stepsSectionTitle="Steps";
-CloudError_createFailed="Failed creating item in Cloud";
-CloudError_loadItemFailed="Load item failed";

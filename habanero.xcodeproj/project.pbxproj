@@ -309,6 +309,8 @@
 		DAE7C3651FE0828C003190FF /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3631FE0828C003190FF /* Analytics.swift */; };
 		DAE7C3671FE08386003190FF /* IngredientList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3661FE08386003190FF /* IngredientList.swift */; };
 		DAE7C3681FE08386003190FF /* IngredientList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3661FE08386003190FF /* IngredientList.swift */; };
+		DAE7C36B1FE08C9F003190FF /* LocalizableError.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAE7C3691FE08C9F003190FF /* LocalizableError.strings */; };
+		DAE7C36C1FE08C9F003190FF /* LocalizableError.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAE7C3691FE08C9F003190FF /* LocalizableError.strings */; };
 		DAF949F21FD8B47D001BA32E /* ViewNewBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F11FD8B47D001BA32E /* ViewNewBar+Constants.swift */; };
 		DAF949F41FD8BC38001BA32E /* ArchNewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F31FD8BC38001BA32E /* ArchNewAdd.swift */; };
 		DAF949F61FD8BC6F001BA32E /* ControllerNewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F51FD8BC6F001BA32E /* ControllerNewAdd.swift */; };
@@ -522,6 +524,7 @@
 		DAE7C34D1FE08281003190FF /* CloudListProtocol+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CloudListProtocol+Default.swift"; sourceTree = "<group>"; };
 		DAE7C3631FE0828C003190FF /* Analytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 		DAE7C3661FE08386003190FF /* IngredientList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientList.swift; sourceTree = "<group>"; };
+		DAE7C36A1FE08C9F003190FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalizableError.strings; sourceTree = "<group>"; };
 		DAF949F11FD8B47D001BA32E /* ViewNewBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewBar+Constants.swift"; sourceTree = "<group>"; };
 		DAF949F31FD8BC38001BA32E /* ArchNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNewAdd.swift; sourceTree = "<group>"; };
 		DAF949F51FD8BC6F001BA32E /* ControllerNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerNewAdd.swift; sourceTree = "<group>"; };
@@ -747,10 +750,11 @@
 		DA90889F1FD4C65F00C1208A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DA9088A01FD4C65F00C1208A /* LocalizableModel.strings */,
 				DA9088A21FD4C65F00C1208A /* InfoPlist.strings */,
+				DA9088A01FD4C65F00C1208A /* LocalizableModel.strings */,
 				DA9088A41FD4C65F00C1208A /* LocalizableView.strings */,
 				DA9088A61FD4C65F00C1208A /* LocalizableController.strings */,
+				DAE7C3691FE08C9F003190FF /* LocalizableError.strings */,
 				DACF22121FDB5C3400D6B192 /* BuildDurationMinutes.plist */,
 			);
 			path = Resources;
@@ -1171,6 +1175,7 @@
 				DA9089061FD4C65F00C1208A /* LocalizableView.strings in Resources */,
 				DA753DAB1FD5EBC8007E5BC5 /* generic.xcassets in Resources */,
 				DA9089041FD4C65F00C1208A /* LocalizableModel.strings in Resources */,
+				DAE7C36B1FE08C9F003190FF /* LocalizableError.strings in Resources */,
 				DA9089051FD4C65F00C1208A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1187,6 +1192,7 @@
 				DA753DAC1FD5EBC8007E5BC5 /* generic.xcassets in Resources */,
 				DA9089B21FD4CE5F00C1208A /* InfoPlist.strings in Resources */,
 				DA16F1671FDFC05900EB6877 /* spinner.xcassets in Resources */,
+				DAE7C36C1FE08C9F003190FF /* LocalizableError.strings in Resources */,
 				DA6BF0DB1FDDFDE60027C167 /* GoogleService-Info.plist in Resources */,
 				DACEB3AE1FDCAF4F0089B3FE /* new.xcassets in Resources */,
 				DA9089B11FD4CE5F00C1208A /* LocalizableModel.strings in Resources */,
@@ -1669,6 +1675,14 @@
 				DA9088A71FD4C65F00C1208A /* en */,
 			);
 			name = LocalizableController.strings;
+			sourceTree = "<group>";
+		};
+		DAE7C3691FE08C9F003190FF /* LocalizableError.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAE7C36A1FE08C9F003190FF /* en */,
+			);
+			name = LocalizableError.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
