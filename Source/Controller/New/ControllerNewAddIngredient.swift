@@ -74,16 +74,8 @@ final class ControllerNewAddIngredient:Controller<ArchNewAddIngredient>
         }
     }
     
-    func createIngredient()
+    func selectIngredient(ingredient:Ingredient)
     {
-        self.viewMain.viewBar.searchBar.resignFirstResponder()
-        self.viewMain.viewBar.searchBar.isUserInteractionEnabled = false
-        self.viewMain.viewList.isHidden = true
-        self.viewMain.viewSpinner.startAnimating()
         
-        self.model.createIngredient
-        { [weak self] (ingredient:Ingredient?, error:Error?) in
-            
-        }
     }
 }
