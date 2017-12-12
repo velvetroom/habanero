@@ -39,7 +39,7 @@ final class NewAddIngredient:Model<ArchNewAddIngredient>
             items.append(ingredient)
         }
         
-        DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
+        DispatchQueue.main.async
         { [weak self] in
             
             self?.ingredientsFound(
