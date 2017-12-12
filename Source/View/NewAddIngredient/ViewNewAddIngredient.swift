@@ -3,7 +3,7 @@ import UIKit
 final class ViewNewAddIngredient:ViewMain<ArchNewAddIngredient>
 {
     private(set) weak var viewBar:ViewNewAddIngredientBar!
-    private weak var viewSpinner:ViewSpinner?
+    weak var viewSpinner:ViewSpinner?
     
     override var shouldPanBack:Bool
     {

@@ -34,6 +34,8 @@ final class ControllerNewAddIngredient:Controller<ArchNewAddIngredient>
     
     private func ingredientsLoaded()
     {
+        self.viewMain.viewSpinner?.stopAnimating()
+        self.viewMain.viewSpinner?.removeFromSuperview()
         self.viewMain.viewBar.searchBar.isUserInteractionEnabled = true
         self.viewMain.viewBar.searchBar.becomeFirstResponder()
     }
