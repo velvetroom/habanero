@@ -13,4 +13,12 @@ final class ControllerNewAddIngredient:Controller<ArchNewAddIngredient>
     {
         return nil
     }
+    
+    //MARK: internal
+    
+    func transitionBack()
+    {
+        self.viewMain.viewBar.searchBar.resignFirstResponder()
+        self.parentController?.pop(horizontal:ControllerTransition.Horizontal.right)
+    }
 }

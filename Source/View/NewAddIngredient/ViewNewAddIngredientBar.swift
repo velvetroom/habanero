@@ -26,11 +26,17 @@ final class ViewNewAddIngredientBar:ViewBarBack<ArchNewAddIngredient>, UISearchB
         NSLayoutConstraint.bottomToBottom(
             view:searchBar,
             toView:self)
-        NSLayoutConstraint.leftToRight(
+        NSLayoutConstraint.leftToLeft(
             view:searchBar,
-            toView:buttonBack)
+            toView:self,
+            constant:ViewNewAddIngredientBar.Constants.barLeft)
         NSLayoutConstraint.rightToRight(
             view:searchBar,
             toView:self)
+    }
+    
+    override func selectorButtonBack(sender button:UIButton)
+    {
+        self.controller.transitionBack()
     }
 }
