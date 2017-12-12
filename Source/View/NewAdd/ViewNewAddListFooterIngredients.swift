@@ -19,6 +19,10 @@ final class ViewNewAddListFooterIngredients:ViewNewAddListFooter
             for:UIControlState())
         buttonAdd.titleLabel!.font = UIFont.medium(
             size:ViewNewAddListFooterIngredients.Constants.buttonFontSize)
+        buttonAdd.addTarget(
+            self,
+            action:#selector(self.selectorButtonAdd(sender:)),
+            for:UIControlEvents.touchUpInside)
         self.addSubview(buttonAdd)
         
         NSLayoutConstraint.equalsVertical(
@@ -35,8 +39,8 @@ final class ViewNewAddListFooterIngredients:ViewNewAddListFooter
     //MARK: selectors
     
     @objc
-    private func selectorButtonDelete(sender button:UIButton)
+    private func selectorButtonAdd(sender button:UIButton)
     {
-        self.controller?.alertConfirmDelete()
+        self.controller?.transitionAddIngredient()
     }
 }

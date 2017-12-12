@@ -16,6 +16,12 @@ extension ControllerNewAdd
             return
         }
         
+        let controller:ControllerNewAddIngredient = ControllerNewAddIngredient(
+            build:build,
+            database:database)
         
+        self.parentController?.push(
+            controller:controller,
+            horizontal:ControllerTransition.Horizontal.right)
     }
 }
