@@ -17,6 +17,27 @@ final class ControllerNewAddIngredient:Controller<ArchNewAddIngredient>
         return nil
     }
     
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        
+        self.viewMain.viewBar.searchBar.isUserInteractionEnabled = false
+        
+        self.model.load
+        { [weak self] in
+         
+            self?.ingredientsLoaded()
+        }
+    }
+    
+    //MARK: private
+    
+    private func ingredientsLoaded()
+    {
+        self.viewMain.viewBar.searchBar.isUserInteractionEnabled = true
+        self.viewMain.viewBar.searchBar.becomeFirstResponder()
+    }
+    
     //MARK: internal
     
     func transitionBack()
