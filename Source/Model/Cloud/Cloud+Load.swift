@@ -65,4 +65,17 @@ extension Cloud
                 completion:completion)
         }
     }
+    
+    func loadList<T:CloudListProtocol>(
+        path:String,
+        completion:@escaping((T?, Error?) -> ()))
+    {
+        let listReference:CollectionReference = self.reference.collection(path)
+        
+        listReference.getDocuments
+        { (querySnapshot:QuerySnapshot?, error:Error?) in
+            
+            querySnapshot.docu
+        }
+    }
 }
