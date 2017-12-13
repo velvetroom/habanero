@@ -30,7 +30,7 @@ extension NewAddIngredient
                 error:NewAddIngredientError.ingredientAlreadyAdded,
                 completion:completion)
             
-            break
+            return
         }
         
         self.createIngredient(
