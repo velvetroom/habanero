@@ -15,9 +15,9 @@ extension NewAddIngredientError
     
     //MARK: private
     
-    private static func descriptionMap() -> [CloudError:String]
+    private static func descriptionMap() -> [NewAddIngredientError:String]
     {
-        let map:[CloudError:String] = [
+        let map:[NewAddIngredientError:String] = [
             NewAddIngredientError.ingredientAlreadyAdded : String.localizedError(key:"NewAddIngredientError_ingredientAlreadyAdded")
         
         return map

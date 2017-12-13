@@ -27,10 +27,40 @@ extension NewAddIngredient
             }
             
             self.finishSelecting(
-                error: <#T##Error?#>,
+                error:NewAddIngredientError.ingredientAlreadyAdded,
                 completion:completion)
             
             break
+        }
+        
+        self.createIngredient(
+            ingredient:ingredient,
+            completion:completion)
+    }
+    
+    private func createIngredient(
+        ingredient:Ingredient,
+        completion:@escaping((Error?) -> ()))
+    {
+        self.database?.create
+        { [weak self] (buildIngredient:BuildIngredient) in
+            
+            buildIngredient.cloudId = ingredient.identifier
+            buildIngredient.name = ingredient.name
+            buildIngredient.build = self?.build
+            
+            self?.ingredientCreated(completion:completion)
+        }
+    }
+    
+    private func ingredientCreated(completion:@escaping((Error?) -> ()))
+    {
+        database?.save
+        { [weak self] in
+            
+            self?.finishSelecting(
+                error:nil,
+                completion:completion)
         }
     }
     
