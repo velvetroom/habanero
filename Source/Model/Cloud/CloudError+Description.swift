@@ -1,8 +1,8 @@
 import Foundation
 
-extension CloudError
+extension CloudError:LocalizedError
 {
-    var localizedDescription:String?
+    var errorDescription:String?
     {
         get
         {

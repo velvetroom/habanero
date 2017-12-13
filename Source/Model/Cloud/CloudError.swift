@@ -1,6 +1,6 @@
 import Foundation
 
-enum CloudError:LocalizedError
+enum CloudError:Error
 {
     case createFailed
     case loadItemFailed

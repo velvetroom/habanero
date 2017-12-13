@@ -53,6 +53,7 @@ final class ControllerNewAddIngredient:Controller<ArchNewAddIngredient>
     {
         self.viewMain.viewSpinner.stopAnimating()
         self.viewMain.viewList.isHidden = false
+        self.viewMain.viewList.collectionView.reloadData()
         self.viewMain.viewBar.searchBar.isUserInteractionEnabled = true
         self.viewMain.viewBar.searchBar.becomeFirstResponder()
     }

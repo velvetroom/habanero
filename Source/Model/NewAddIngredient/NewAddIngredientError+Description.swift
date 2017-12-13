@@ -1,8 +1,8 @@
 import Foundation
 
-extension NewAddIngredientError
+extension NewAddIngredientError:LocalizedError
 {
-    var localizedDescription:String?
+    var errorDescription:String?
     {
         get
         {

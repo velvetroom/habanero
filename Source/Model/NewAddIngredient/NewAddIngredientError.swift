@@ -1,6 +1,6 @@
 import Foundation
 
-enum NewAddIngredientError:LocalizedError
+enum NewAddIngredientError:Error
 {
     case ingredientAlreadyAdded
 }
