@@ -6,36 +6,42 @@ extension NewAddIngredient
         ingredient:Ingredient,
         completion:@escaping((Error?) -> ()))
     {
+        let isAlreadyOnList:Bool = self.ingredientAlreadyOnList(ingredient:ingredient)
+        
+        if isAlreadyOnList
+        {
+            self.finishSelecting(
+                error:NewAddIngredientError.ingredientAlreadyAdded,
+                completion:completion)
+        }
+        else
+        {
+            self.createIngredient(
+                ingredient:ingredient,
+                completion:completion)
+        }
+    }
+    
+    private func ingredientAlreadyOnList(ingredient:Ingredient) -> Bool
+    {
         guard
             
             let ingredientList:[BuildIngredient] = self.build?.ingredientList
-        
+            
         else
         {
-            return
+            return false
         }
         
         for listedIngredient:BuildIngredient in ingredientList
         {
-            guard
-            
-                ingredient.identifier == listedIngredient.cloudId
-            
-            else
+            if ingredient.identifier == listedIngredient.cloudId
             {
-                continue
+                return true
             }
-            
-            self.finishSelecting(
-                error:NewAddIngredientError.ingredientAlreadyAdded,
-                completion:completion)
-            
-            return
         }
         
-        self.createIngredient(
-            ingredient:ingredient,
-            completion:completion)
+        return false
     }
     
     private func createIngredient(
