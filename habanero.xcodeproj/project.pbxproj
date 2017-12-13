@@ -315,6 +315,7 @@
 		DAE7C37C1FE0A7F6003190FF /* ControllerNewAddIngredient+Select.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C37B1FE0A7F6003190FF /* ControllerNewAddIngredient+Select.swift */; };
 		DAE7C37E1FE0A835003190FF /* NewAddIngredient+Select.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C37D1FE0A835003190FF /* NewAddIngredient+Select.swift */; };
 		DAE7C3801FE0A9B3003190FF /* Build+Computed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C37F1FE0A9B3003190FF /* Build+Computed.swift */; };
+		DAE7C3821FE0B088003190FF /* NewAddIngredientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3811FE0B088003190FF /* NewAddIngredientError.swift */; };
 		DAF949F21FD8B47D001BA32E /* ViewNewBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F11FD8B47D001BA32E /* ViewNewBar+Constants.swift */; };
 		DAF949F41FD8BC38001BA32E /* ArchNewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F31FD8BC38001BA32E /* ArchNewAdd.swift */; };
 		DAF949F61FD8BC6F001BA32E /* ControllerNewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F51FD8BC6F001BA32E /* ControllerNewAdd.swift */; };
@@ -533,6 +534,7 @@
 		DAE7C37B1FE0A7F6003190FF /* ControllerNewAddIngredient+Select.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerNewAddIngredient+Select.swift"; sourceTree = "<group>"; };
 		DAE7C37D1FE0A835003190FF /* NewAddIngredient+Select.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddIngredient+Select.swift"; sourceTree = "<group>"; };
 		DAE7C37F1FE0A9B3003190FF /* Build+Computed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Build+Computed.swift"; sourceTree = "<group>"; };
+		DAE7C3811FE0B088003190FF /* NewAddIngredientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddIngredientError.swift; sourceTree = "<group>"; };
 		DAF949F11FD8B47D001BA32E /* ViewNewBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewBar+Constants.swift"; sourceTree = "<group>"; };
 		DAF949F31FD8BC38001BA32E /* ArchNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNewAdd.swift; sourceTree = "<group>"; };
 		DAF949F51FD8BC6F001BA32E /* ControllerNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerNewAdd.swift; sourceTree = "<group>"; };
@@ -610,6 +612,7 @@
 				DAE7C3351FE03BE7003190FF /* NewAddIngredient+Load.swift */,
 				DAE7C3411FE07F6C003190FF /* NewAddIngredient+Create.swift */,
 				DAE7C37D1FE0A835003190FF /* NewAddIngredient+Select.swift */,
+				DAE7C3811FE0B088003190FF /* NewAddIngredientError.swift */,
 			);
 			path = NewAddIngredient;
 			sourceTree = "<group>";
@@ -1566,6 +1569,7 @@
 				DACEB3B01FDCB35A0089B3FE /* ViewNewListCellSteps+Constants.swift in Sources */,
 				DA71D6901FDA633E003A33E1 /* ArchText.swift in Sources */,
 				DACF55461FD7661E00069701 /* ExtensionNSManagedObject.swift in Sources */,
+				DAE7C3821FE0B088003190FF /* NewAddIngredientError.swift in Sources */,
 				DA9089811FD4CE2E00C1208A /* ControllerParent+Orientation.swift in Sources */,
 				DA58C6E51FD9E12A000E6F30 /* NewAddSectionItemProtocol.swift in Sources */,
 				DA71D6851FDA518E003A33E1 /* ViewNewAddList+Actions.swift in Sources */,

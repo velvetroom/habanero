@@ -6,7 +6,42 @@ extension NewAddIngredient
         ingredient:Ingredient,
         completion:@escaping((Error?) -> ()))
     {
+        guard
+            
+            let ingredientList:[BuildIngredient] = self.build?.ingredientList
         
+        else
+        {
+            return
+        }
+        
+        for listedIngredient:BuildIngredient in ingredientList
+        {
+            guard
+            
+                ingredient.identifier == listedIngredient.cloudId
+            
+            else
+            {
+                continue
+            }
+            
+            self.finishSelecting(
+                error: <#T##Error?#>,
+                completion:completion)
+            
+            break
+        }
+    }
+    
+    private func finishSelecting(
+        error:Error?,
+        completion:@escaping((Error?) -> ()))
+    {
+        DispatchQueue.main.async
+        {
+            completion(error)
+        }
     }
     
     //MARK: internal
