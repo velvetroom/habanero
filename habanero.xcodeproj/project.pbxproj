@@ -314,6 +314,7 @@
 		DAE7C37A1FE0A2E1003190FF /* ControllerNewAddIngredient+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3791FE0A2E1003190FF /* ControllerNewAddIngredient+Create.swift */; };
 		DAE7C37C1FE0A7F6003190FF /* ControllerNewAddIngredient+Select.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C37B1FE0A7F6003190FF /* ControllerNewAddIngredient+Select.swift */; };
 		DAE7C37E1FE0A835003190FF /* NewAddIngredient+Select.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C37D1FE0A835003190FF /* NewAddIngredient+Select.swift */; };
+		DAE7C3801FE0A9B3003190FF /* Build+Computed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C37F1FE0A9B3003190FF /* Build+Computed.swift */; };
 		DAF949F21FD8B47D001BA32E /* ViewNewBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F11FD8B47D001BA32E /* ViewNewBar+Constants.swift */; };
 		DAF949F41FD8BC38001BA32E /* ArchNewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F31FD8BC38001BA32E /* ArchNewAdd.swift */; };
 		DAF949F61FD8BC6F001BA32E /* ControllerNewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F51FD8BC6F001BA32E /* ControllerNewAdd.swift */; };
@@ -531,6 +532,7 @@
 		DAE7C3791FE0A2E1003190FF /* ControllerNewAddIngredient+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerNewAddIngredient+Create.swift"; sourceTree = "<group>"; };
 		DAE7C37B1FE0A7F6003190FF /* ControllerNewAddIngredient+Select.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerNewAddIngredient+Select.swift"; sourceTree = "<group>"; };
 		DAE7C37D1FE0A835003190FF /* NewAddIngredient+Select.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddIngredient+Select.swift"; sourceTree = "<group>"; };
+		DAE7C37F1FE0A9B3003190FF /* Build+Computed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Build+Computed.swift"; sourceTree = "<group>"; };
 		DAF949F11FD8B47D001BA32E /* ViewNewBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewBar+Constants.swift"; sourceTree = "<group>"; };
 		DAF949F31FD8BC38001BA32E /* ArchNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNewAdd.swift; sourceTree = "<group>"; };
 		DAF949F51FD8BC6F001BA32E /* ControllerNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerNewAdd.swift; sourceTree = "<group>"; };
@@ -711,6 +713,7 @@
 			children = (
 				DA8C6E3B1FDB2F3B00C0AD69 /* Build.swift */,
 				DA5D697F1FDB521400429F5D /* Build+Constants.swift */,
+				DAE7C37F1FE0A9B3003190FF /* Build+Computed.swift */,
 			);
 			path = Build;
 			sourceTree = "<group>";
@@ -1527,6 +1530,7 @@
 				DACEB3AC1FDCAE700089B3FE /* ViewNewListCellSteps.swift in Sources */,
 				DA9089841FD4CE2E00C1208A /* ControllerParent+Transitions.swift in Sources */,
 				DA91EB031FD62C1F0063560D /* ViewAlert+Constants.swift in Sources */,
+				DAE7C3801FE0A9B3003190FF /* Build+Computed.swift in Sources */,
 				DA71D67D1FDA4B91003A33E1 /* ViewNewAddListFooterInfo+Constants.swift in Sources */,
 				DA71D6831FDA50C4003A33E1 /* ViewNewAddList+Constants.swift in Sources */,
 				DA9089851FD4CE2E00C1208A /* ControllerTransition.swift in Sources */,
