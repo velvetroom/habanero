@@ -61,6 +61,7 @@
 		DA5D71C61FDB56AD00429F5D /* ViewNewAddListCellInfoDuration+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D71C51FDB56AD00429F5D /* ViewNewAddListCellInfoDuration+Constants.swift */; };
 		DA5D71C81FDB56E200429F5D /* NewAddSectionItemInfoDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D71C71FDB56E200429F5D /* NewAddSectionItemInfoDuration.swift */; };
 		DA60428E1FE1EC2300758A2F /* ViewNewAddListCellIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60428D1FE1EC2300758A2F /* ViewNewAddListCellIngredient.swift */; };
+		DA6042901FE1EE4D00758A2F /* ViewNewAddListCellIngredient+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60428F1FE1EE4D00758A2F /* ViewNewAddListCellIngredient+Constants.swift */; };
 		DA6BF0D91FDDFDDC0027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0D81FDDFDDC0027C167 /* GoogleService-Info.plist */; };
 		DA6BF0DB1FDDFDE60027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */; };
 		DA70AFBF1FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
@@ -377,6 +378,7 @@
 		DA5D71C51FDB56AD00429F5D /* ViewNewAddListCellInfoDuration+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddListCellInfoDuration+Constants.swift"; sourceTree = "<group>"; };
 		DA5D71C71FDB56E200429F5D /* NewAddSectionItemInfoDuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddSectionItemInfoDuration.swift; sourceTree = "<group>"; };
 		DA60428D1FE1EC2300758A2F /* ViewNewAddListCellIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellIngredient.swift; sourceTree = "<group>"; };
+		DA60428F1FE1EE4D00758A2F /* ViewNewAddListCellIngredient+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddListCellIngredient+Constants.swift"; sourceTree = "<group>"; };
 		DA69BA7C1FDDF98D0062E194 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DA6BF0D81FDDFDDC0027C167 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "user/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "admin/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -1078,6 +1080,7 @@
 				DA5D71C31FDB566D00429F5D /* ViewNewAddListCellInfoDuration.swift */,
 				DA5D71C51FDB56AD00429F5D /* ViewNewAddListCellInfoDuration+Constants.swift */,
 				DA60428D1FE1EC2300758A2F /* ViewNewAddListCellIngredient.swift */,
+				DA60428F1FE1EE4D00758A2F /* ViewNewAddListCellIngredient+Constants.swift */,
 			);
 			path = NewAdd;
 			sourceTree = "<group>";
@@ -1630,6 +1633,7 @@
 				DA91EB1D1FD62C1F0063560D /* ViewSpinner.swift in Sources */,
 				DAE7C3781FE0996B003190FF /* IngredientList.swift in Sources */,
 				DACF552C1FD7661E00069701 /* ExtensionDictionary.swift in Sources */,
+				DA6042901FE1EE4D00758A2F /* ViewNewAddListCellIngredient+Constants.swift in Sources */,
 				DA91EB0F1FD62C1F0063560D /* ViewBlur.swift in Sources */,
 				DA91EB251FD62D700063560D /* ViewControllableProtocol.swift in Sources */,
 				DAA333DC1FDB17EA002D766C /* Database+Constants.swift in Sources */,
