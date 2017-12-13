@@ -18,7 +18,7 @@ extension NewAddIngredientError
     private static func descriptionMap() -> [NewAddIngredientError:String]
     {
         let map:[NewAddIngredientError:String] = [
-            NewAddIngredientError.ingredientAlreadyAdded : String.localizedError(key:"NewAddIngredientError_ingredientAlreadyAdded")
+            NewAddIngredientError.ingredientAlreadyAdded : String.localizedError(key:"NewAddIngredientError_ingredientAlreadyAdded")]
         
         return map
     }

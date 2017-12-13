@@ -136,4 +136,13 @@ final class ViewNewAddIngredientList:ViewCollection<
         
         return cell
     }
+    
+    override func collectionView(
+        _ collectionView:UICollectionView,
+        didSelectItemAt indexPath:IndexPath)
+    {
+        let item:Ingredient = self.modelAtIndex(index:indexPath)
+        
+        self.controller.selectIngredient(ingredient:item)
+    }
 }
