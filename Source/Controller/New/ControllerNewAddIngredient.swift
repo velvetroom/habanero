@@ -73,9 +73,4 @@ final class ControllerNewAddIngredient:Controller<ArchNewAddIngredient>
             self?.viewMain.viewList.collectionView.reloadData()
         }
     }
-    
-    func selectIngredient(ingredient:Ingredient)
-    {
-        
-    }
 }

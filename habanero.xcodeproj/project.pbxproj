@@ -312,6 +312,8 @@
 		DAE7C3771FE0996B003190FF /* IngredientList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3761FE0996B003190FF /* IngredientList.swift */; };
 		DAE7C3781FE0996B003190FF /* IngredientList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3761FE0996B003190FF /* IngredientList.swift */; };
 		DAE7C37A1FE0A2E1003190FF /* ControllerNewAddIngredient+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3791FE0A2E1003190FF /* ControllerNewAddIngredient+Create.swift */; };
+		DAE7C37C1FE0A7F6003190FF /* ControllerNewAddIngredient+Select.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C37B1FE0A7F6003190FF /* ControllerNewAddIngredient+Select.swift */; };
+		DAE7C37E1FE0A835003190FF /* NewAddIngredient+Select.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C37D1FE0A835003190FF /* NewAddIngredient+Select.swift */; };
 		DAF949F21FD8B47D001BA32E /* ViewNewBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F11FD8B47D001BA32E /* ViewNewBar+Constants.swift */; };
 		DAF949F41FD8BC38001BA32E /* ArchNewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F31FD8BC38001BA32E /* ArchNewAdd.swift */; };
 		DAF949F61FD8BC6F001BA32E /* ControllerNewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F51FD8BC6F001BA32E /* ControllerNewAdd.swift */; };
@@ -527,6 +529,8 @@
 		DAE7C3731FE0990A003190FF /* CloudListProtocol+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudListProtocol+Default.swift"; sourceTree = "<group>"; };
 		DAE7C3761FE0996B003190FF /* IngredientList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientList.swift; sourceTree = "<group>"; };
 		DAE7C3791FE0A2E1003190FF /* ControllerNewAddIngredient+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerNewAddIngredient+Create.swift"; sourceTree = "<group>"; };
+		DAE7C37B1FE0A7F6003190FF /* ControllerNewAddIngredient+Select.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerNewAddIngredient+Select.swift"; sourceTree = "<group>"; };
+		DAE7C37D1FE0A835003190FF /* NewAddIngredient+Select.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddIngredient+Select.swift"; sourceTree = "<group>"; };
 		DAF949F11FD8B47D001BA32E /* ViewNewBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewBar+Constants.swift"; sourceTree = "<group>"; };
 		DAF949F31FD8BC38001BA32E /* ArchNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNewAdd.swift; sourceTree = "<group>"; };
 		DAF949F51FD8BC6F001BA32E /* ControllerNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerNewAdd.swift; sourceTree = "<group>"; };
@@ -603,6 +607,7 @@
 				DA3F0E8C1FDF457D0037C94D /* NewAddIngredient.swift */,
 				DAE7C3351FE03BE7003190FF /* NewAddIngredient+Load.swift */,
 				DAE7C3411FE07F6C003190FF /* NewAddIngredient+Create.swift */,
+				DAE7C37D1FE0A835003190FF /* NewAddIngredient+Select.swift */,
 			);
 			path = NewAddIngredient;
 			sourceTree = "<group>";
@@ -664,6 +669,7 @@
 				DA16F1631FDFB4C000EB6877 /* ControllerNewAdd+Ingredients.swift */,
 				DA3F0E891FDF45350037C94D /* ControllerNewAddIngredient.swift */,
 				DAE7C3791FE0A2E1003190FF /* ControllerNewAddIngredient+Create.swift */,
+				DAE7C37B1FE0A7F6003190FF /* ControllerNewAddIngredient+Select.swift */,
 			);
 			path = New;
 			sourceTree = "<group>";
@@ -1513,6 +1519,7 @@
 				DA9089911FD4CE3E00C1208A /* Menu+Factory.swift in Sources */,
 				DA71D67B1FDA4661003A33E1 /* NewAddSectionSteps.swift in Sources */,
 				DA71D6A21FDA6C1A003A33E1 /* ViewTextInput+Constants.swift in Sources */,
+				DAE7C37C1FE0A7F6003190FF /* ControllerNewAddIngredient+Select.swift in Sources */,
 				DA91EB111FD62C1F0063560D /* ViewSlider+Gesture.swift in Sources */,
 				DA91EB091FD62C1F0063560D /* ViewPushBackground.swift in Sources */,
 				DA3F0E881FDF44920037C94D /* ArchNewAddIngredient.swift in Sources */,
@@ -1606,6 +1613,7 @@
 				DAE7C3421FE07F6C003190FF /* NewAddIngredient+Create.swift in Sources */,
 				DA91EB171FD62C1F0063560D /* ViewSlider+Constants.swift in Sources */,
 				DA71D67F1FDA4BF6003A33E1 /* ViewNewAddListFooter.swift in Sources */,
+				DAE7C37E1FE0A835003190FF /* NewAddIngredient+Select.swift in Sources */,
 				DA91EAF31FD62C1F0063560D /* View.swift in Sources */,
 				DACF553E1FD7661E00069701 /* ExtensionNSLayoutConstraint.swift in Sources */,
 				DA992D7A1FD61EE500A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */,

@@ -4,7 +4,7 @@ extension NewAddIngredient
 {
     //MARK: private
     
-    func asynCreateIngredient(completion:@escaping((Ingredient?, Error?) -> ()))
+    private func asyncCreateIngredient(completion:@escaping((Ingredient?, Error?) -> ()))
     {
         let nameLength:Int = self.searching.count
         
@@ -27,7 +27,7 @@ extension NewAddIngredient
         self.cloud.create(
             parentPath:IngredientList.identifier,
             data:ingredientData)
-        { (identifier:String?, error:Error?) in
+        { [weak self] (identifier:String?, error:Error?) in
             
             guard
             
@@ -35,19 +35,34 @@ extension NewAddIngredient
             
             else
             {
-                self.ingredientCreated(
+                self?.ingredientCreated(
                     ingredient:nil,
                     error:error,
                     completion:completion)
                 
                 return
             }
+            
+            self?.loadIngredient(
+                identifier:identifier,
+                completion:completion)
         }
     }
     
-    private func loadIngredient(identifier:String)
+    private func loadIngredient(
+        identifier:String,
+        completion:@escaping((Ingredient?, Error?) -> ()))
     {
-        
+        self.cloud.loadItem(
+            parentPath:IngredientList.identifier,
+            identifier:identifier)
+        { [weak self] (ingredient:Ingredient?, error:Error?) in
+            
+            self?.ingredientCreated(
+                ingredient:ingredient,
+                error:error,
+                completion:completion)
+        }
     }
     
     private func ingredientCreated(
@@ -68,7 +83,7 @@ extension NewAddIngredient
         DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
         { [weak self] in
             
-            self?.asynCreateIngredient(completion:completion)
+            self?.asyncCreateIngredient(completion:completion)
         }
     }
 }
