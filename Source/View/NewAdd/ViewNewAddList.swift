@@ -14,6 +14,7 @@ final class ViewNewAddList:ViewCollection<ArchNewAdd, ViewNewAddListCell, ViewCo
         self.registerFooter(footer:ViewNewAddListFooterSteps.self)
         self.registerCell(cell:ViewNewAddListCellInfoTitle.self)
         self.registerCell(cell:ViewNewAddListCellInfoDuration.self)
+        self.registerCell(cell:ViewNewAddListCellIngredient.self)
         
         self.flow.minimumLineSpacing = ViewGlobal.Constants.interCellSpace
         self.flow.minimumInteritemSpacing = ViewGlobal.Constants.interCellSpace
