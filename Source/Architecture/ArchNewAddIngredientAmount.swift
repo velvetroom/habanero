@@ -1,4 +1,4 @@
-struct ArchNewAddIngredient:Arch
+struct ArchNewAddIngredientAmount:Arch
 {
     typealias M = NewAddIngredientAmount
     typealias V = ViewNewAddIngredientAmount
