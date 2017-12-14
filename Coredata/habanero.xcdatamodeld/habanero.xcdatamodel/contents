@@ -26,7 +26,7 @@
         <attribute name="quantity" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <entity name="BuildIngredientSpoons" representedClassName="BuildIngredientSpoons" parentEntity="BuildIngredient" syncable="YES" codeGenerationType="class">
-        <attribute name="spoons" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="spoons" attributeType="Integer 16" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <entity name="BuildStep" representedClassName="BuildStep" isAbstract="YES" syncable="YES" codeGenerationType="class">
         <attribute name="text" attributeType="String" syncable="YES"/>
@@ -38,14 +38,14 @@
     <entity name="BuildStepText" representedClassName="BuildStepText" parentEntity="BuildStep" syncable="YES" codeGenerationType="class"/>
     <elements>
         <element name="Build" positionX="-63" positionY="-18" width="128" height="135"/>
-        <element name="BuildStep" positionX="-63" positionY="9" width="128" height="75"/>
         <element name="BuildIngredient" positionX="-54" positionY="18" width="128" height="90"/>
-        <element name="BuildIngredientQuantity" positionX="-36" positionY="36" width="128" height="60"/>
+        <element name="BuildIngredientCups" positionX="36" positionY="90" width="128" height="60"/>
         <element name="BuildIngredientGrams" positionX="-18" positionY="45" width="128" height="60"/>
         <element name="BuildIngredientMililitres" positionX="0" positionY="54" width="128" height="60"/>
+        <element name="BuildIngredientQuantity" positionX="-36" positionY="36" width="128" height="60"/>
         <element name="BuildIngredientSpoons" positionX="18" positionY="72" width="128" height="60"/>
-        <element name="BuildIngredientCups" positionX="36" positionY="90" width="128" height="60"/>
-        <element name="BuildStepText" positionX="-18" positionY="45" width="128" height="45"/>
+        <element name="BuildStep" positionX="-63" positionY="9" width="128" height="75"/>
         <element name="BuildStepImage" positionX="-9" positionY="54" width="128" height="60"/>
+        <element name="BuildStepText" positionX="-18" positionY="45" width="128" height="45"/>
     </elements>
 </model>
