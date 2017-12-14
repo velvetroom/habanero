@@ -62,6 +62,8 @@
 		DA5D71C81FDB56E200429F5D /* NewAddSectionItemInfoDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D71C71FDB56E200429F5D /* NewAddSectionItemInfoDuration.swift */; };
 		DA60428E1FE1EC2300758A2F /* ViewNewAddListCellIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60428D1FE1EC2300758A2F /* ViewNewAddListCellIngredient.swift */; };
 		DA6042901FE1EE4D00758A2F /* ViewNewAddListCellIngredient+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60428F1FE1EE4D00758A2F /* ViewNewAddListCellIngredient+Constants.swift */; };
+		DA6042921FE1F7F300758A2F /* ViewFormat+Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6042911FE1F7F300758A2F /* ViewFormat+Ingredient.swift */; };
+		DA6042931FE1F7F300758A2F /* ViewFormat+Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6042911FE1F7F300758A2F /* ViewFormat+Ingredient.swift */; };
 		DA6BF0D91FDDFDDC0027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0D81FDDFDDC0027C167 /* GoogleService-Info.plist */; };
 		DA6BF0DB1FDDFDE60027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */; };
 		DA70AFBF1FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
@@ -379,6 +381,7 @@
 		DA5D71C71FDB56E200429F5D /* NewAddSectionItemInfoDuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddSectionItemInfoDuration.swift; sourceTree = "<group>"; };
 		DA60428D1FE1EC2300758A2F /* ViewNewAddListCellIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellIngredient.swift; sourceTree = "<group>"; };
 		DA60428F1FE1EE4D00758A2F /* ViewNewAddListCellIngredient+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddListCellIngredient+Constants.swift"; sourceTree = "<group>"; };
+		DA6042911FE1F7F300758A2F /* ViewFormat+Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewFormat+Ingredient.swift"; sourceTree = "<group>"; };
 		DA69BA7C1FDDF98D0062E194 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DA6BF0D81FDDFDDC0027C167 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "user/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "admin/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -596,6 +599,7 @@
 				DACF22161FDB673A00D6B192 /* ViewFormat.swift */,
 				DACF221C1FDB68BA00D6B192 /* ViewFormat+Constants.swift */,
 				DACF22191FDB676800D6B192 /* ViewFormat+Duration.swift */,
+				DA6042911FE1F7F300758A2F /* ViewFormat+Ingredient.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -1499,6 +1503,7 @@
 				DA71D6A11FDA6C1A003A33E1 /* ViewTextInput+Constants.swift in Sources */,
 				DA90892F1FD4C66000C1208A /* Menu+Factory.swift in Sources */,
 				DA3F0EB41FD74C5F00593B83 /* Menu+FactoryUser.swift in Sources */,
+				DA6042921FE1F7F300758A2F /* ViewFormat+Ingredient.swift in Sources */,
 				DA91EAFA1FD62C1F0063560D /* ViewMain.swift in Sources */,
 				DA71D68F1FDA633E003A33E1 /* ArchText.swift in Sources */,
 				DA71D6AD1FDA7A01003A33E1 /* ViewTextBar+Constants.swift in Sources */,
@@ -1681,6 +1686,7 @@
 				DA16F1601FDFAF7C00EB6877 /* ViewNewAddIngredientBar+Constants.swift in Sources */,
 				DA91EB281FD630E80063560D /* ViewGlobal.swift in Sources */,
 				DA90898F1FD4CE3E00C1208A /* Menu.swift in Sources */,
+				DA6042931FE1F7F300758A2F /* ViewFormat+Ingredient.swift in Sources */,
 				DAE7C33A1FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift in Sources */,
 				DA992D791FD61ED700A6CFEF /* MenuItemGenericProtocol.swift in Sources */,
 				DACF553A1FD7661E00069701 /* ExtensionURLResponse.swift in Sources */,
