@@ -3,6 +3,27 @@ import UIKit
 final class ViewNewAddListCellIngredient:ViewNewAddListCell
 {
     private weak var label:UILabel!
+    private let attributesName:[NSAttributedStringKey:Any]
+    private let attributesAmount:[NSAttributedStringKey:Any]
+    
+    override init(frame:CGRect)
+    {
+        self.attributesName = [
+            NSAttributedStringKey.font : UIFont.regular(size:ViewNewAddListCellIngredient.Constants.nameFontSize),
+            NSAttributedStringKey.foregroundColor : UIColor.colourBackgroundDark]
+        
+        self.attributesAmount = [
+            NSAttributedStringKey.font :
+                UIFont.regular(size:ViewNewAddListCellIngredient.Constants.amountFontSize),
+            NSAttributedStringKey.foregroundColor : UIColor(white:0, alpha:0.6)]
+        
+        super.init(frame:frame)
+    }
+    
+    required init?(coder:NSCoder)
+    {
+        return nil
+    }
     
     override func factoryViews()
     {
@@ -12,8 +33,6 @@ final class ViewNewAddListCellIngredient:ViewNewAddListCell
         label.isUserInteractionEnabled = false
         label.translatesAutoresizingMaskIntoConstraints = false
         label.backgroundColor = UIColor.clear
-        label.font = UIFont.regular(size:ViewNewAddListCellIngredient.Constants.fontSize)
-        label.textColor = UIColor.colourBackgroundDark
         label.numberOfLines = 0
         self.label = label
         
@@ -61,5 +80,11 @@ final class ViewNewAddListCellIngredient:ViewNewAddListCell
         super.config(
             controller:controller,
             model:model)
+        
+        self.
     }
+    
+    //MARK: private
+    
+    private func showInfo()
 }

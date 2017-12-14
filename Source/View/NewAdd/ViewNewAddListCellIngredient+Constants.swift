@@ -4,7 +4,8 @@ extension ViewNewAddListCellIngredient
 {
     struct Constants
     {
-        static let fontSize:CGFloat = 16
+        static let nameFontSize:CGFloat = 16
+        static let amountFontSize:CGFloat = 14
         static let buttonWidth:CGFloat = 60
     }
 }

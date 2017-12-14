@@ -65,6 +65,8 @@
 		DA6042921FE1F7F300758A2F /* ViewFormat+Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6042911FE1F7F300758A2F /* ViewFormat+Ingredient.swift */; };
 		DA6042931FE1F7F300758A2F /* ViewFormat+Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6042911FE1F7F300758A2F /* ViewFormat+Ingredient.swift */; };
 		DA6042951FE20CDC00758A2F /* BuildIngredient+Computed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6042941FE20CDC00758A2F /* BuildIngredient+Computed.swift */; };
+		DA6042971FE20F3B00758A2F /* BuildIngredientCups+Computed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6042961FE20F3B00758A2F /* BuildIngredientCups+Computed.swift */; };
+		DA6042991FE211EF00758A2F /* NewAddSectionItemIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6042981FE211EF00758A2F /* NewAddSectionItemIngredient.swift */; };
 		DA6BF0D91FDDFDDC0027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0D81FDDFDDC0027C167 /* GoogleService-Info.plist */; };
 		DA6BF0DB1FDDFDE60027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */; };
 		DA70AFBF1FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
@@ -384,6 +386,8 @@
 		DA60428F1FE1EE4D00758A2F /* ViewNewAddListCellIngredient+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddListCellIngredient+Constants.swift"; sourceTree = "<group>"; };
 		DA6042911FE1F7F300758A2F /* ViewFormat+Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewFormat+Ingredient.swift"; sourceTree = "<group>"; };
 		DA6042941FE20CDC00758A2F /* BuildIngredient+Computed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildIngredient+Computed.swift"; sourceTree = "<group>"; };
+		DA6042961FE20F3B00758A2F /* BuildIngredientCups+Computed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildIngredientCups+Computed.swift"; sourceTree = "<group>"; };
+		DA6042981FE211EF00758A2F /* NewAddSectionItemIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddSectionItemIngredient.swift; sourceTree = "<group>"; };
 		DA69BA7C1FDDF98D0062E194 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DA6BF0D81FDDFDDC0027C167 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "user/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "admin/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -731,6 +735,7 @@
 				DA5D697F1FDB521400429F5D /* Build+Constants.swift */,
 				DAE7C37F1FE0A9B3003190FF /* Build+Computed.swift */,
 				DA6042941FE20CDC00758A2F /* BuildIngredient+Computed.swift */,
+				DA6042961FE20F3B00758A2F /* BuildIngredientCups+Computed.swift */,
 			);
 			path = Build;
 			sourceTree = "<group>";
@@ -1108,6 +1113,7 @@
 				DA71D6881FDA5985003A33E1 /* NewAddSectionItemInfoTitle.swift */,
 				DA5D71C71FDB56E200429F5D /* NewAddSectionItemInfoDuration.swift */,
 				DACF22141FDB5D8A00D6B192 /* NewAddSectionItemInfoDuration+Constants.swift */,
+				DA6042981FE211EF00758A2F /* NewAddSectionItemIngredient.swift */,
 			);
 			path = NewAdd;
 			sourceTree = "<group>";
@@ -1667,6 +1673,7 @@
 				DACF55381FD7661E00069701 /* ExtensionFileManager.swift in Sources */,
 				DA71D6711FDA44C0003A33E1 /* ViewNewAddListFooterSteps.swift in Sources */,
 				DAE7C3421FE07F6C003190FF /* NewAddIngredient+Create.swift in Sources */,
+				DA6042991FE211EF00758A2F /* NewAddSectionItemIngredient.swift in Sources */,
 				DA91EB171FD62C1F0063560D /* ViewSlider+Constants.swift in Sources */,
 				DA71D67F1FDA4BF6003A33E1 /* ViewNewAddListFooter.swift in Sources */,
 				DAE7C37E1FE0A835003190FF /* NewAddIngredient+Select.swift in Sources */,
@@ -1693,6 +1700,7 @@
 				DA6042931FE1F7F300758A2F /* ViewFormat+Ingredient.swift in Sources */,
 				DAE7C33A1FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift in Sources */,
 				DA992D791FD61ED700A6CFEF /* MenuItemGenericProtocol.swift in Sources */,
+				DA6042971FE20F3B00758A2F /* BuildIngredientCups+Computed.swift in Sources */,
 				DACF553A1FD7661E00069701 /* ExtensionURLResponse.swift in Sources */,
 				DA9089891FD4CE3700C1208A /* Model.swift in Sources */,
 				DAF949F91FD8BCC6001BA32E /* ViewNewAdd.swift in Sources */,
