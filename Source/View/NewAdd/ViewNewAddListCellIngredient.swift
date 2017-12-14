@@ -81,10 +81,37 @@ final class ViewNewAddListCellIngredient:ViewNewAddListCell
             controller:controller,
             model:model)
         
-        self.
+        guard
+        
+            let model:NewAddSectionItemIngredient = model as? NewAddSectionItemIngredient
+        
+        else
+        {
+            return
+        }
+        
+        self.showInfo(model:model)
     }
     
     //MARK: private
     
-    private func showInfo()
+    private func showInfo(model:NewAddSectionItemIngredient)
+    {
+        let newLine:NSAttributedString = NSAttributedString(string:"\n")
+        
+        let name:NSAttributedString = NSAttributedString(
+            string:model.name,
+            attributes:self.attributesName)
+        
+        let amount:NSAttributedString = NSAttributedString(
+            string:model.amount,
+            attributes:self.attributesAmount)
+        
+        let mutableString:NSMutableAttributedString = NSMutableAttributedString()
+        mutableString.append(name)
+        mutableString.append(newLine)
+        mutableString.append(amount)
+        
+        self.label.attributedText = mutableString
+    }
 }
