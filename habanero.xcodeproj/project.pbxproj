@@ -67,6 +67,7 @@
 		DA6042951FE20CDC00758A2F /* BuildIngredient+Computed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6042941FE20CDC00758A2F /* BuildIngredient+Computed.swift */; };
 		DA6042971FE20F3B00758A2F /* BuildIngredientCups+Computed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6042961FE20F3B00758A2F /* BuildIngredientCups+Computed.swift */; };
 		DA6042991FE211EF00758A2F /* NewAddSectionItemIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6042981FE211EF00758A2F /* NewAddSectionItemIngredient.swift */; };
+		DA60429B1FE2190100758A2F /* ArchNewAddIngredientAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60429A1FE2190100758A2F /* ArchNewAddIngredientAmount.swift */; };
 		DA6BF0D91FDDFDDC0027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0D81FDDFDDC0027C167 /* GoogleService-Info.plist */; };
 		DA6BF0DB1FDDFDE60027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */; };
 		DA70AFBF1FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
@@ -388,6 +389,7 @@
 		DA6042941FE20CDC00758A2F /* BuildIngredient+Computed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildIngredient+Computed.swift"; sourceTree = "<group>"; };
 		DA6042961FE20F3B00758A2F /* BuildIngredientCups+Computed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildIngredientCups+Computed.swift"; sourceTree = "<group>"; };
 		DA6042981FE211EF00758A2F /* NewAddSectionItemIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddSectionItemIngredient.swift; sourceTree = "<group>"; };
+		DA60429A1FE2190100758A2F /* ArchNewAddIngredientAmount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNewAddIngredientAmount.swift; sourceTree = "<group>"; };
 		DA69BA7C1FDDF98D0062E194 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DA6BF0D81FDDFDDC0027C167 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "user/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "admin/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -848,6 +850,7 @@
 				DA84C0EE1FD73F59008959EA /* ArchNew.swift */,
 				DAF949F31FD8BC38001BA32E /* ArchNewAdd.swift */,
 				DA3F0E871FDF44920037C94D /* ArchNewAddIngredient.swift */,
+				DA60429A1FE2190100758A2F /* ArchNewAddIngredientAmount.swift */,
 				DA71D68E1FDA633E003A33E1 /* ArchText.swift */,
 			);
 			path = Architecture;
@@ -1582,6 +1585,7 @@
 				DA91EB091FD62C1F0063560D /* ViewPushBackground.swift in Sources */,
 				DA3F0E881FDF44920037C94D /* ArchNewAddIngredient.swift in Sources */,
 				DA5D71C81FDB56E200429F5D /* NewAddSectionItemInfoDuration.swift in Sources */,
+				DA60429B1FE2190100758A2F /* ArchNewAddIngredientAmount.swift in Sources */,
 				DACEB3AC1FDCAE700089B3FE /* ViewNewListCellSteps.swift in Sources */,
 				DA9089841FD4CE2E00C1208A /* ControllerParent+Transitions.swift in Sources */,
 				DA91EB031FD62C1F0063560D /* ViewAlert+Constants.swift in Sources */,
