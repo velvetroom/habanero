@@ -68,6 +68,7 @@
 		DA6042971FE20F3B00758A2F /* BuildIngredientCups+Computed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6042961FE20F3B00758A2F /* BuildIngredientCups+Computed.swift */; };
 		DA6042991FE211EF00758A2F /* NewAddSectionItemIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6042981FE211EF00758A2F /* NewAddSectionItemIngredient.swift */; };
 		DA60429B1FE2190100758A2F /* ArchNewAddIngredientAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60429A1FE2190100758A2F /* ArchNewAddIngredientAmount.swift */; };
+		DA60429D1FE21BAF00758A2F /* ControllerNewAddIngredientAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60429C1FE21BAF00758A2F /* ControllerNewAddIngredientAmount.swift */; };
 		DA6BF0D91FDDFDDC0027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0D81FDDFDDC0027C167 /* GoogleService-Info.plist */; };
 		DA6BF0DB1FDDFDE60027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */; };
 		DA70AFBF1FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
@@ -390,6 +391,7 @@
 		DA6042961FE20F3B00758A2F /* BuildIngredientCups+Computed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildIngredientCups+Computed.swift"; sourceTree = "<group>"; };
 		DA6042981FE211EF00758A2F /* NewAddSectionItemIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddSectionItemIngredient.swift; sourceTree = "<group>"; };
 		DA60429A1FE2190100758A2F /* ArchNewAddIngredientAmount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNewAddIngredientAmount.swift; sourceTree = "<group>"; };
+		DA60429C1FE21BAF00758A2F /* ControllerNewAddIngredientAmount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerNewAddIngredientAmount.swift; sourceTree = "<group>"; };
 		DA69BA7C1FDDF98D0062E194 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DA6BF0D81FDDFDDC0027C167 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "user/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "admin/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -694,6 +696,7 @@
 				DA3F0E891FDF45350037C94D /* ControllerNewAddIngredient.swift */,
 				DAE7C3791FE0A2E1003190FF /* ControllerNewAddIngredient+Create.swift */,
 				DAE7C37B1FE0A7F6003190FF /* ControllerNewAddIngredient+Select.swift */,
+				DA60429C1FE21BAF00758A2F /* ControllerNewAddIngredientAmount.swift */,
 			);
 			path = New;
 			sourceTree = "<group>";
@@ -1529,6 +1532,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA71D6891FDA5985003A33E1 /* NewAddSectionItemInfoTitle.swift in Sources */,
+				DA60429D1FE21BAF00758A2F /* ControllerNewAddIngredientAmount.swift in Sources */,
 				DACF221E1FDB68BA00D6B192 /* ViewFormat+Constants.swift in Sources */,
 				DA5D69801FDB521400429F5D /* Build+Constants.swift in Sources */,
 				DACEB3A31FDC9C890089B3FE /* ViewCollectionCell.swift in Sources */,
