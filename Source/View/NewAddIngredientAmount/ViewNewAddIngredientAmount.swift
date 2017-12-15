@@ -8,6 +8,9 @@ final class ViewNewAddIngredientAmount:ViewMain<ArchNewAddIngredientAmount>
     {
         super.factoryViews()
         
+        self.shouldPanBack = true
+        self.backgroundColor = UIColor.colourBackgroundGray
+        
         let viewInput:ViewNewAddIngredientAmountInput = ViewNewAddIngredientAmountInput(controller:self.controller)
         self.viewInput = viewInput
         
