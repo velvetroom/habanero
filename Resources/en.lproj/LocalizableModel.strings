@@ -1,3 +1,8 @@
 NewAdd_infoSectionTitle="Recipe info";
 NewAdd_ingredientsSectionTitle="Ingredients";
 NewAdd_stepsSectionTitle="Steps";
+NewAddIngredientAmountTypeCups_name="Cups";
+NewAddIngredientAmountTypeQuantity_name="Pieces";
+NewAddIngredientAmountTypeSpoons_name="Spoons";
+NewAddIngredientAmountTypeGrams_name="Grams";
+NewAddIngredientAmountTypeMililitres_name="Mililitres";
