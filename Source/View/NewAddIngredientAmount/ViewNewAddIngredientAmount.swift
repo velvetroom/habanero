@@ -17,8 +17,16 @@ final class ViewNewAddIngredientAmount:ViewMain<ArchNewAddIngredientAmount>
         let viewInput:ViewNewAddIngredientAmountInput = ViewNewAddIngredientAmountInput(controller:self.controller)
         self.viewInput = viewInput
         
+        let viewList:ViewNewAddIngredientAmountList = ViewNewAddIngredientAmountList(controller:self.controller)
+        self.viewList = viewList
+        
+        self.addSubview(viewList)
         self.addSubview(viewInput)
         self.addSubview(viewBar)
+        
+        NSLayoutConstraint.equals(
+            view:viewList,
+            toView:self)
         
         NSLayoutConstraint.topToTop(
             view:viewBar,
