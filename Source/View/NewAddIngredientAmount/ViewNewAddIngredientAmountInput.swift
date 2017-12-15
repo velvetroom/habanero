@@ -31,14 +31,10 @@ final class ViewNewAddIngredientAmountInput:View<ArchNewAddIngredientAmount>
         
         NSLayoutConstraint.equalsVertical(
             view:textField,
-            toView:self,
-            margin:ViewNewAddIngredientAmountInput.Constants.fieldMarginVertical)
-        NSLayoutConstraint.rightToRight(
+            toView:self)
+        NSLayoutConstraint.equalsHorizontal(
             view:textField,
             toView:self,
-            constant:ViewNewAddIngredientAmountInput.Constants.fieldRight)
-        NSLayoutConstraint.width(
-            view:textField,
-            constant:ViewNewAddIngredientAmountInput.Constants.fieldWidth)
+            margin:ViewNewAddIngredientAmountInput.Constants.fieldMarginHorizontal)
     }
 }
