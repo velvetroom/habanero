@@ -36,6 +36,9 @@
         <attribute name="imageURL" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="BuildStepText" representedClassName="BuildStepText" parentEntity="BuildStep" syncable="YES" codeGenerationType="class"/>
+    <entity name="Settings" representedClassName="Settings" syncable="YES" codeGenerationType="class">
+        <attribute name="rawMetrics" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
     <elements>
         <element name="Build" positionX="-63" positionY="-18" width="128" height="135"/>
         <element name="BuildIngredient" positionX="-54" positionY="18" width="128" height="90"/>
@@ -47,5 +50,6 @@
         <element name="BuildStep" positionX="-63" positionY="9" width="128" height="75"/>
         <element name="BuildStepImage" positionX="-9" positionY="54" width="128" height="60"/>
         <element name="BuildStepText" positionX="-18" positionY="45" width="128" height="45"/>
+        <element name="Settings" positionX="-18" positionY="45" width="128" height="60"/>
     </elements>
 </model>
