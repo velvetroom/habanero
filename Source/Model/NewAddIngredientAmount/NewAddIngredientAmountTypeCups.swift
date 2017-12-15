@@ -14,7 +14,7 @@ struct NewAddIngredientAmountTypeCups:NewAddIngredientAmountTypeProtocol
         
         else
         {
-            return 1
+            return NewAddIngredientAmountType.Constants.defaultCups
         }
         
         return cups
