@@ -4,35 +4,48 @@ extension ControllerNewAddIngredient
 {
     //MARK: private
     
-    private func ingredientSelected(error:Error?)
+    private func ingredientSelectedError(error:Error)
     {
-        guard
-        
-            let error:Error = error
-        
-        else
-        {
-            self.transitionBack()
-            
-            return
-        }
-        
         ViewAlert.messageFail(message:error.localizedDescription)
 
         self.viewMain.viewBar.searchBar.isUserInteractionEnabled = true
+    }
+    
+    private func ingredientSelectContinue(ingredient:Ingredient)
+    {
+        guard
+        
+            let build:Build = self.model.build,
+            let database:Database = self.model.database
+        
+        else
+        {
+            return
+        }
+        
+        let controller:ControllerNewAddIngredientAmount = ControllerNewAddIngredientAmount(
+            ingredient:ingredient,
+            build:build,
+            database:database)
+        
+        self.parentController?.push(
+            controller:controller,
+            horizontal:ControllerTransition.Horizontal.right)
     }
     
     //MARK: internal
     
     func selectIngredient(ingredient:Ingredient)
     {
-        self.viewMain.viewBar.searchBar.resignFirstResponder()
-        self.viewMain.viewBar.searchBar.isUserInteractionEnabled = false
+        let isValid:Bool = self.model.validateIngredient(ingredient:ingredient)
         
-        self.model.selectIngredient(ingredient:ingredient)
-        { [weak self] (error:Error?) in
-            
-            self?.ingredientSelected(error:error)
+        if isValid
+        {
+            self.ingredientSelectContinue(ingredient:ingredient)
+        }
+        else
+        {
+            self.ingredientSelectedError(error:NewAddIngredientError.ingredientAlreadyAdded)
         }
     }
 }
