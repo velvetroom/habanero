@@ -13,6 +13,10 @@ extension Home
     
     func loadSettings(completion:@escaping(() -> ()))
     {
-        
+        DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
+        { [weak self] in
+            
+            self?.asyncLoadSettings(completion:completion)
+        }
     }
 }
