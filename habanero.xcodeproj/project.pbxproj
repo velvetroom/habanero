@@ -126,6 +126,7 @@
 		DA8752CD1FE3866700AE74F5 /* ViewNewAddIngredientAmountList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752CC1FE3866700AE74F5 /* ViewNewAddIngredientAmountList+Constants.swift */; };
 		DA8752D11FE3874400AE74F5 /* ViewNewAddIngredientAmountBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752D01FE3874400AE74F5 /* ViewNewAddIngredientAmountBar.swift */; };
 		DA8752D31FE3888100AE74F5 /* NewAddIngredient+Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752D21FE3888100AE74F5 /* NewAddIngredient+Validate.swift */; };
+		DA8752D51FE3A90D00AE74F5 /* NewAddIngredientAmountTypeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752D41FE3A90D00AE74F5 /* NewAddIngredientAmountTypeProtocol.swift */; };
 		DA8C6E3D1FDB2F4600C0AD69 /* Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C6E3B1FDB2F3B00C0AD69 /* Build.swift */; };
 		DA9089031FD4C65F00C1208A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA90889E1FD4C65F00C1208A /* LaunchScreen.storyboard */; };
 		DA9089041FD4C65F00C1208A /* LocalizableModel.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A01FD4C65F00C1208A /* LocalizableModel.strings */; };
@@ -450,6 +451,7 @@
 		DA8752CC1FE3866700AE74F5 /* ViewNewAddIngredientAmountList+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientAmountList+Constants.swift"; sourceTree = "<group>"; };
 		DA8752D01FE3874400AE74F5 /* ViewNewAddIngredientAmountBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddIngredientAmountBar.swift; sourceTree = "<group>"; };
 		DA8752D21FE3888100AE74F5 /* NewAddIngredient+Validate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddIngredient+Validate.swift"; sourceTree = "<group>"; };
+		DA8752D41FE3A90D00AE74F5 /* NewAddIngredientAmountTypeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddIngredientAmountTypeProtocol.swift; sourceTree = "<group>"; };
 		DA8C6E3B1FDB2F3B00C0AD69 /* Build.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Build.swift; sourceTree = "<group>"; };
 		DA9088821FD4C38E00C1208A /* user.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = user.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9088981FD4C45600C1208A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -682,6 +684,7 @@
 			isa = PBXGroup;
 			children = (
 				DA60429F1FE21BE800758A2F /* NewAddIngredientAmount.swift */,
+				DA8752D41FE3A90D00AE74F5 /* NewAddIngredientAmountTypeProtocol.swift */,
 			);
 			path = NewAddIngredientAmount;
 			sourceTree = "<group>";
@@ -1663,6 +1666,7 @@
 				DA71D69F1FDA6B13003A33E1 /* ViewTextInput.swift in Sources */,
 				DA91EB221FD62C7D0063560D /* ViewTransitionableProtocol.swift in Sources */,
 				DACF55341FD7661E00069701 /* ExtensionMKPolyline.swift in Sources */,
+				DA8752D51FE3A90D00AE74F5 /* NewAddIngredientAmountTypeProtocol.swift in Sources */,
 				DA177BF11FD77874003B3836 /* ViewNewBar.swift in Sources */,
 				DACF55301FD7661E00069701 /* ExtensionUIColor.swift in Sources */,
 				DA71D6871FDA58E3003A33E1 /* ViewNewAddListCellInfoTitle.swift in Sources */,
