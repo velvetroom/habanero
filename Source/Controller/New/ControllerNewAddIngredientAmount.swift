@@ -18,4 +18,12 @@ final class ControllerNewAddIngredientAmount:Controller<ArchNewAddIngredientAmou
     {
         return nil
     }
+    
+    //MARK: internal
+    
+    func transitionBack()
+    {
+        self.viewMain.viewInput.viewText.resignFirstResponder()
+        self.parentController?.pop(horizontal:ControllerTransition.Horizontal.right)
+    }
 }
