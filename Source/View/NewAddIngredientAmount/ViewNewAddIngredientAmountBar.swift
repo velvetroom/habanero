@@ -6,7 +6,7 @@ final class ViewNewAddIngredientAmountBar:ViewBarBack<ArchNewAddIngredientAmount
     {
         super.factoryViews()
         
-        self.labelTitle.text = self.controller.model.ingredient?.name
+        self.labelTitle.text = self.controller.model.ingredient?.name.capitalized
     }
     
     override func selectorButtonBack(sender button:UIButton)

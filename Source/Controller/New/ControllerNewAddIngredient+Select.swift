@@ -31,6 +31,10 @@ extension ControllerNewAddIngredient
         self.parentController?.push(
             controller:controller,
             horizontal:ControllerTransition.Horizontal.right)
+        { [weak self] in
+ 
+            self?.viewMain.viewList.collectionView.reloadData()
+        }
     }
     
     //MARK: internal
