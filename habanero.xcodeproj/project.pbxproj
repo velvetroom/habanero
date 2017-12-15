@@ -312,6 +312,8 @@
 		DACF554C1FD7661E00069701 /* ExtensionUICollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF55291FD7661E00069701 /* ExtensionUICollectionReusableView.swift */; };
 		DACF554D1FD7661E00069701 /* ExtensionURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF552A1FD7661E00069701 /* ExtensionURL.swift */; };
 		DACF554E1FD7661E00069701 /* ExtensionURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF552A1FD7661E00069701 /* ExtensionURL.swift */; };
+		DAE5E4801FE489C100CC40BA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5E47F1FE489C100CC40BA /* Settings.swift */; };
+		DAE5E4811FE489C100CC40BA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5E47F1FE489C100CC40BA /* Settings.swift */; };
 		DAE7C3361FE03BE7003190FF /* NewAddIngredient+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3351FE03BE7003190FF /* NewAddIngredient+Load.swift */; };
 		DAE7C3381FE0605C003190FF /* ViewNewAddIngredientListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3371FE0605C003190FF /* ViewNewAddIngredientListHeader.swift */; };
 		DAE7C33A1FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3391FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift */; };
@@ -575,6 +577,7 @@
 		DACF55281FD7661E00069701 /* ExtensionUIFont+Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExtensionUIFont+Constants.swift"; sourceTree = "<group>"; };
 		DACF55291FD7661E00069701 /* ExtensionUICollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUICollectionReusableView.swift; sourceTree = "<group>"; };
 		DACF552A1FD7661E00069701 /* ExtensionURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionURL.swift; sourceTree = "<group>"; };
+		DAE5E47F1FE489C100CC40BA /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		DAE7C3351FE03BE7003190FF /* NewAddIngredient+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddIngredient+Load.swift"; sourceTree = "<group>"; };
 		DAE7C3371FE0605C003190FF /* ViewNewAddIngredientListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddIngredientListHeader.swift; sourceTree = "<group>"; };
 		DAE7C3391FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientList+Constants.swift"; sourceTree = "<group>"; };
@@ -947,6 +950,7 @@
 			children = (
 				DA9088D21FD4C65F00C1208A /* Abstract */,
 				DAE7C3621FE0828C003190FF /* Analytics */,
+				DAE5E47E1FE489AF00CC40BA /* Settings */,
 				DAE7C3431FE08281003190FF /* Cloud */,
 				DA60429E1FE21BDA00758A2F /* NewAddIngredientAmount */,
 				DA3F0E8B1FDF45720037C94D /* NewAddIngredient */,
@@ -1135,6 +1139,14 @@
 				DACF552A1FD7661E00069701 /* ExtensionURL.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DAE5E47E1FE489AF00CC40BA /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DAE5E47F1FE489C100CC40BA /* Settings.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		DAE7C3431FE08281003190FF /* Cloud */ = {
@@ -1526,6 +1538,7 @@
 				DACF554D1FD7661E00069701 /* ExtensionURL.swift in Sources */,
 				DACF55451FD7661E00069701 /* ExtensionNSManagedObject.swift in Sources */,
 				DA91EAFC1FD62C1F0063560D /* ViewParent+Transitions.swift in Sources */,
+				DAE5E4801FE489C100CC40BA /* Settings.swift in Sources */,
 				DA90891F1FD4C66000C1208A /* ControllerParent+Constants.swift in Sources */,
 				DA91EB101FD62C1F0063560D /* ViewSlider+Gesture.swift in Sources */,
 				DA91EB081FD62C1F0063560D /* ViewPushBackground.swift in Sources */,
@@ -1814,6 +1827,7 @@
 				DA8752E31FE3B27100AE74F5 /* ViewNewAddIngredientAmountList+Actions.swift in Sources */,
 				DA6042931FE1F7F300758A2F /* ViewFormat+Ingredient.swift in Sources */,
 				DAE7C33A1FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift in Sources */,
+				DAE5E4811FE489C100CC40BA /* Settings.swift in Sources */,
 				DA992D791FD61ED700A6CFEF /* MenuItemGenericProtocol.swift in Sources */,
 				DA6042971FE20F3B00758A2F /* BuildIngredientCups+Computed.swift in Sources */,
 				DACF553A1FD7661E00069701 /* ExtensionURLResponse.swift in Sources */,
