@@ -29,5 +29,16 @@ final class ViewNewAddIngredientAmountInput:View<ArchNewAddIngredientAmount>
         self.textField = textField
         
         self.addSubview(textField)
+        
+        NSLayoutConstraint.equalsVertical(
+            view:textField,
+            toView:self,
+            margin:ViewNewAddIngredientAmountInput.Constants.fieldMarginVertical)
+        NSLayoutConstraint.rightToRight(
+            view:textField,
+            toView:self)
+        NSLayoutConstraint.width(
+            view:textField,
+            constant:ViewNewAddIngredientAmountInput.Constants.fieldWidth)
     }
 }

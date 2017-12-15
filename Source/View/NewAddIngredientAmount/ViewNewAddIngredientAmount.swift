@@ -28,5 +28,15 @@ final class ViewNewAddIngredientAmount:ViewMain<ArchNewAddIngredientAmount>
         NSLayoutConstraint.equalsHorizontal(
             view:viewBar,
             toView:self)
+        
+        NSLayoutConstraint.topToBottom(
+            view:viewInput,
+            toView:viewBar)
+        NSLayoutConstraint.height(
+            view:viewInput,
+            constant:ViewNewAddIngredientAmount.Constants.inputHeight)
+        NSLayoutConstraint.equalsHorizontal(
+            view:viewInput,
+            toView:self)
     }
 }
