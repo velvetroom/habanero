@@ -1,6 +1,6 @@
 import UIKit
 
-final class ViewNewAddIngredientAmountListCell:ViewCollectionCell<ArchNewAddIngredientAmount>
+final class ViewNewAddIngredientAmountListCell:ViewCollectionCell
 {
     
 }
