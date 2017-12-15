@@ -44,6 +44,19 @@ final class ControllerNewAddIngredientAmount:Controller<ArchNewAddIngredientAmou
     
     func createIngredient()
     {
+        guard
+            
+            let amount:String = self.viewMain.viewInput.textField.text
+        
+        else
+        {
+            return
+        }
+        
+        self.viewMain.viewInput.textField.resignFirstResponder()
+        self.viewMain.viewInput.isUserInteractionEnabled = false
+        self.viewMain.viewList.isUserInteractionEnabled = false
+        
         
     }
 }

@@ -5,7 +5,7 @@ protocol NewAddIngredientAmountTypeProtocol
     var name:String { get }
     
     func createIngredient(
-        amount:Float,
+        amount:String,
         database:Database,
         completion:@escaping((BuildIngredient) -> ()))
 }
