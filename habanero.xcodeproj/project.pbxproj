@@ -127,6 +127,11 @@
 		DA8752D11FE3874400AE74F5 /* ViewNewAddIngredientAmountBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752D01FE3874400AE74F5 /* ViewNewAddIngredientAmountBar.swift */; };
 		DA8752D31FE3888100AE74F5 /* NewAddIngredient+Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752D21FE3888100AE74F5 /* NewAddIngredient+Validate.swift */; };
 		DA8752D51FE3A90D00AE74F5 /* NewAddIngredientAmountTypeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752D41FE3A90D00AE74F5 /* NewAddIngredientAmountTypeProtocol.swift */; };
+		DA8752D71FE3AB8D00AE74F5 /* NewAddIngredientAmountTypeCups.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752D61FE3AB8D00AE74F5 /* NewAddIngredientAmountTypeCups.swift */; };
+		DA8752D91FE3AB9400AE74F5 /* NewAddIngredientAmountTypeGrams.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752D81FE3AB9400AE74F5 /* NewAddIngredientAmountTypeGrams.swift */; };
+		DA8752DB1FE3AB9C00AE74F5 /* NewAddIngredientAmountTypeMililitres.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752DA1FE3AB9C00AE74F5 /* NewAddIngredientAmountTypeMililitres.swift */; };
+		DA8752DD1FE3ABA700AE74F5 /* NewAddIngredientAmountTypeQuantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752DC1FE3ABA700AE74F5 /* NewAddIngredientAmountTypeQuantity.swift */; };
+		DA8752DF1FE3ABAF00AE74F5 /* NewAddIngredientAmountTypeSpoons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752DE1FE3ABAF00AE74F5 /* NewAddIngredientAmountTypeSpoons.swift */; };
 		DA8C6E3D1FDB2F4600C0AD69 /* Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C6E3B1FDB2F3B00C0AD69 /* Build.swift */; };
 		DA9089031FD4C65F00C1208A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA90889E1FD4C65F00C1208A /* LaunchScreen.storyboard */; };
 		DA9089041FD4C65F00C1208A /* LocalizableModel.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A01FD4C65F00C1208A /* LocalizableModel.strings */; };
@@ -452,6 +457,11 @@
 		DA8752D01FE3874400AE74F5 /* ViewNewAddIngredientAmountBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddIngredientAmountBar.swift; sourceTree = "<group>"; };
 		DA8752D21FE3888100AE74F5 /* NewAddIngredient+Validate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddIngredient+Validate.swift"; sourceTree = "<group>"; };
 		DA8752D41FE3A90D00AE74F5 /* NewAddIngredientAmountTypeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddIngredientAmountTypeProtocol.swift; sourceTree = "<group>"; };
+		DA8752D61FE3AB8D00AE74F5 /* NewAddIngredientAmountTypeCups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddIngredientAmountTypeCups.swift; sourceTree = "<group>"; };
+		DA8752D81FE3AB9400AE74F5 /* NewAddIngredientAmountTypeGrams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddIngredientAmountTypeGrams.swift; sourceTree = "<group>"; };
+		DA8752DA1FE3AB9C00AE74F5 /* NewAddIngredientAmountTypeMililitres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddIngredientAmountTypeMililitres.swift; sourceTree = "<group>"; };
+		DA8752DC1FE3ABA700AE74F5 /* NewAddIngredientAmountTypeQuantity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddIngredientAmountTypeQuantity.swift; sourceTree = "<group>"; };
+		DA8752DE1FE3ABAF00AE74F5 /* NewAddIngredientAmountTypeSpoons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddIngredientAmountTypeSpoons.swift; sourceTree = "<group>"; };
 		DA8C6E3B1FDB2F3B00C0AD69 /* Build.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Build.swift; sourceTree = "<group>"; };
 		DA9088821FD4C38E00C1208A /* user.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = user.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9088981FD4C45600C1208A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -685,6 +695,11 @@
 			children = (
 				DA60429F1FE21BE800758A2F /* NewAddIngredientAmount.swift */,
 				DA8752D41FE3A90D00AE74F5 /* NewAddIngredientAmountTypeProtocol.swift */,
+				DA8752D61FE3AB8D00AE74F5 /* NewAddIngredientAmountTypeCups.swift */,
+				DA8752D81FE3AB9400AE74F5 /* NewAddIngredientAmountTypeGrams.swift */,
+				DA8752DA1FE3AB9C00AE74F5 /* NewAddIngredientAmountTypeMililitres.swift */,
+				DA8752DC1FE3ABA700AE74F5 /* NewAddIngredientAmountTypeQuantity.swift */,
+				DA8752DE1FE3ABAF00AE74F5 /* NewAddIngredientAmountTypeSpoons.swift */,
 			);
 			path = NewAddIngredientAmount;
 			sourceTree = "<group>";
@@ -1585,6 +1600,7 @@
 				DACF221E1FDB68BA00D6B192 /* ViewFormat+Constants.swift in Sources */,
 				DA5D69801FDB521400429F5D /* Build+Constants.swift in Sources */,
 				DACEB3A31FDC9C890089B3FE /* ViewCollectionCell.swift in Sources */,
+				DA8752DB1FE3AB9C00AE74F5 /* NewAddIngredientAmountTypeMililitres.swift in Sources */,
 				DA71D6771FDA4539003A33E1 /* NewAddSectionInfo.swift in Sources */,
 				DA91EB1B1FD62C1F0063560D /* ViewSlider.swift in Sources */,
 				DACF221B1FDB676800D6B192 /* ViewFormat+Duration.swift in Sources */,
@@ -1630,6 +1646,7 @@
 				DA8752C91FE385F100AE74F5 /* ViewNewAddIngredientAmountList.swift in Sources */,
 				DACF55481FD7661E00069701 /* ExtensionString.swift in Sources */,
 				DA84C0EF1FD73F59008959EA /* ArchNew.swift in Sources */,
+				DA8752D71FE3AB8D00AE74F5 /* NewAddIngredientAmountTypeCups.swift in Sources */,
 				DA3F0E801FDF32D10037C94D /* Ingredient+Factory.swift in Sources */,
 				DA58C6E71FD9E216000E6F30 /* NewAdd+Factory.swift in Sources */,
 				DAE7C34F1FE08281003190FF /* CloudProtocol+Default.swift in Sources */,
@@ -1683,6 +1700,7 @@
 				DA16F1621FDFB09900EB6877 /* ViewNewAddListFooterIngredients+Constants.swift in Sources */,
 				DAE7C36F1FE093D1003190FF /* Cloud+Load.swift in Sources */,
 				DACEB3B01FDCB35A0089B3FE /* ViewNewListCellSteps+Constants.swift in Sources */,
+				DA8752DD1FE3ABA700AE74F5 /* NewAddIngredientAmountTypeQuantity.swift in Sources */,
 				DA71D6901FDA633E003A33E1 /* ArchText.swift in Sources */,
 				DACF55461FD7661E00069701 /* ExtensionNSManagedObject.swift in Sources */,
 				DAE7C3821FE0B088003190FF /* NewAddIngredientError.swift in Sources */,
@@ -1706,6 +1724,7 @@
 				DA8752C71FE384B200AE74F5 /* ViewNewAddIngredientAmount+Constants.swift in Sources */,
 				DA8752C51FE3846D00AE74F5 /* ViewNewAddIngredientAmountInput+Constants.swift in Sources */,
 				DA8752D11FE3874400AE74F5 /* ViewNewAddIngredientAmountBar.swift in Sources */,
+				DA8752DF1FE3ABAF00AE74F5 /* NewAddIngredientAmountTypeSpoons.swift in Sources */,
 				DA71D6A51FDA7107003A33E1 /* ViewText+Constants.swift in Sources */,
 				DACF55401FD7661E00069701 /* ExtensionUIFont.swift in Sources */,
 				DA9089861FD4CE2E00C1208A /* ControllerParent.swift in Sources */,
@@ -1739,6 +1758,7 @@
 				DA91EB0B1FD62C1F0063560D /* ViewCollectionFlow.swift in Sources */,
 				DACF55381FD7661E00069701 /* ExtensionFileManager.swift in Sources */,
 				DA71D6711FDA44C0003A33E1 /* ViewNewAddListFooterSteps.swift in Sources */,
+				DA8752D91FE3AB9400AE74F5 /* NewAddIngredientAmountTypeGrams.swift in Sources */,
 				DAE7C3421FE07F6C003190FF /* NewAddIngredient+Create.swift in Sources */,
 				DA6042991FE211EF00758A2F /* NewAddSectionItemIngredient.swift in Sources */,
 				DA91EB171FD62C1F0063560D /* ViewSlider+Constants.swift in Sources */,
