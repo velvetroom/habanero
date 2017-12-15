@@ -32,6 +32,7 @@
 		DA177BFE1FD7832B003B3836 /* ViewNewListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA177BFC1FD7832B003B3836 /* ViewNewListHeader.swift */; };
 		DA177C001FD78361003B3836 /* ViewNewListHeader+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA177BFF1FD78361003B3836 /* ViewNewListHeader+Constants.swift */; };
 		DA177C041FD784AF003B3836 /* ViewNewList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA177C031FD784AF003B3836 /* ViewNewList+Constants.swift */; };
+		DA34213C1FE472E0002B23DA /* ViewNewAddIngredientAmountBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34213B1FE472E0002B23DA /* ViewNewAddIngredientAmountBar+Constants.swift */; };
 		DA3F0E731FDF0BC50037C94D /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E721FDF0BC50037C94D /* Ingredient.swift */; };
 		DA3F0E741FDF0BC50037C94D /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E721FDF0BC50037C94D /* Ingredient.swift */; };
 		DA3F0E7C1FDF326A0037C94D /* Ingredient+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E7B1FDF326A0037C94D /* Ingredient+Keys.swift */; };
@@ -379,6 +380,7 @@
 		DA177BFC1FD7832B003B3836 /* ViewNewListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewListHeader.swift; sourceTree = "<group>"; };
 		DA177BFF1FD78361003B3836 /* ViewNewListHeader+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewListHeader+Constants.swift"; sourceTree = "<group>"; };
 		DA177C031FD784AF003B3836 /* ViewNewList+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewList+Constants.swift"; sourceTree = "<group>"; };
+		DA34213B1FE472E0002B23DA /* ViewNewAddIngredientAmountBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientAmountBar+Constants.swift"; sourceTree = "<group>"; };
 		DA3F0E721FDF0BC50037C94D /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		DA3F0E7B1FDF326A0037C94D /* Ingredient+Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+Keys.swift"; sourceTree = "<group>"; };
 		DA3F0E7E1FDF32D10037C94D /* Ingredient+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+Factory.swift"; sourceTree = "<group>"; };
@@ -717,6 +719,7 @@
 				DA6042A21FE21C3000758A2F /* ViewNewAddIngredientAmount.swift */,
 				DA8752C61FE384B200AE74F5 /* ViewNewAddIngredientAmount+Constants.swift */,
 				DA8752D01FE3874400AE74F5 /* ViewNewAddIngredientAmountBar.swift */,
+				DA34213B1FE472E0002B23DA /* ViewNewAddIngredientAmountBar+Constants.swift */,
 				DA8752C21FE3844300AE74F5 /* ViewNewAddIngredientAmountInput.swift */,
 				DA8752C41FE3846D00AE74F5 /* ViewNewAddIngredientAmountInput+Constants.swift */,
 				DA8752C81FE385F100AE74F5 /* ViewNewAddIngredientAmountList.swift */,
@@ -1764,6 +1767,7 @@
 				DAA333DE1FDB1D81002D766C /* New+Create.swift in Sources */,
 				DA3F0EB61FD74C8700593B83 /* Menu+FactoryAdmin.swift in Sources */,
 				DA177C001FD78361003B3836 /* ViewNewListHeader+Constants.swift in Sources */,
+				DA34213C1FE472E0002B23DA /* ViewNewAddIngredientAmountBar+Constants.swift in Sources */,
 				DA91EB0B1FD62C1F0063560D /* ViewCollectionFlow.swift in Sources */,
 				DACF55381FD7661E00069701 /* ExtensionFileManager.swift in Sources */,
 				DA71D6711FDA44C0003A33E1 /* ViewNewAddListFooterSteps.swift in Sources */,

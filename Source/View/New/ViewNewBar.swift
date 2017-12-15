@@ -42,7 +42,6 @@ final class ViewNewBar:ViewBar<ArchNew>
             constant:ViewNewBar.Constants.buttonAddWidth)
     }
     
-    
     //MARK: selectors
     
     @objc

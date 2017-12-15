@@ -41,4 +41,9 @@ final class ControllerNewAddIngredientAmount:Controller<ArchNewAddIngredientAmou
     {
         self.model.selectedType = item
     }
+    
+    func createIngredient()
+    {
+        
+    }
 }
