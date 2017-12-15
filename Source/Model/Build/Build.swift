@@ -4,6 +4,8 @@ extension Build
 {
     public override func awakeFromInsert()
     {
+        super.awakeFromInsert()
+        
         let timestamp:Date = Date()
         
         self.created = timestamp
