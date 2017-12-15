@@ -23,7 +23,7 @@ final class ControllerNewAddIngredientAmount:Controller<ArchNewAddIngredientAmou
     
     func transitionBack()
     {
-        self.viewMain.viewInput.textView.resignFirstResponder()
+        self.viewMain.viewInput.textField.resignFirstResponder()
         self.parentController?.pop(horizontal:ControllerTransition.Horizontal.right)
     }
 }
