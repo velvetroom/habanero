@@ -37,6 +37,8 @@ extension ControllerNewAddIngredient
     
     func selectIngredient(ingredient:Ingredient)
     {
+        self.viewMain.viewBar.searchBar.resignFirstResponder()
+        
         let isValid:Bool = self.model.validateIngredient(ingredient:ingredient)
         
         if isValid

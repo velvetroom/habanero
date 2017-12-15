@@ -11,6 +11,6 @@ final class ViewNewAddIngredientAmount:ViewMain<ArchNewAddIngredientAmount>
         let viewInput:ViewNewAddIngredientAmountInput = ViewNewAddIngredientAmountInput(controller:self.controller)
         self.viewInput = viewInput
         
-        addSubview(viewInput)
+        self.addSubview(viewInput)
     }
 }

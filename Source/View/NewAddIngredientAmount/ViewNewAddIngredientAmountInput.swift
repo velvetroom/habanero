@@ -2,17 +2,17 @@ import UIKit
 
 final class ViewNewAddIngredientAmountInput:View<ArchNewAddIngredientAmount>
 {
-    private(set) weak var viewText:UITextView!
+    private(set) weak var textView:UITextView!
     
     override func factoryViews()
     {
         super.factoryViews()
         
-        let viewText:UITextView = UITextView()
-        viewText.translatesAutoresizingMaskIntoConstraints = false
+        let textView:UITextView = UITextView()
+        textView.translatesAutoresizingMaskIntoConstraints = false
         
-        self.viewText = viewText
+        self.textView = textView
         
-        addSubview(viewText)
+        self.addSubview(textView)
     }
 }

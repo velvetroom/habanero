@@ -90,6 +90,8 @@ extension ViewParent:UIGestureRecognizerDelegate
         location:CGPoint,
         xPos:CGFloat)
     {
+        UIApplication.shared.keyWindow?.endEditing(true)
+        
         if xPos < ViewParent.Constants.panningMaxX
         {
             self.panningX = xPos
@@ -122,7 +124,7 @@ extension ViewParent:UIGestureRecognizerDelegate
             return
         }
         
-        gesturePanTo(deltaX:deltaX)
+        self.gesturePanTo(deltaX:deltaX)
     }
     
     func gestureStateEnded(
