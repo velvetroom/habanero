@@ -1,9 +1,14 @@
-//
-//  NewAddIngredientAmountTypeQuantity.swift
-//  admin
-//
-//  Created by zero on 12/15/17.
-//  Copyright © 2017 iturbide. All rights reserved.
-//
-
 import Foundation
+
+struct NewAddIngredientAmountTypeQuantity:NewAddIngredientAmountTypeProtocol
+{
+    let name:String = String.localizedModel(key:"NewAddIngredientAmountTypeQuantity_name")
+    
+    func createIngredient(
+        amount:Float,
+        database:Database,
+        completion:@escaping((BuildIngredient) -> ()))
+    {
+        
+    }
+}
