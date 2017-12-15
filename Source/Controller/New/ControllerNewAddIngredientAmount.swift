@@ -29,6 +29,37 @@ final class ControllerNewAddIngredientAmount:Controller<ArchNewAddIngredientAmou
         self.viewMain.viewList.selectIndex(index:selectedIndex)
     }
     
+    //MARK: private
+    
+    private func blockInterface()
+    {
+        self.viewMain.viewInput.textField.resignFirstResponder()
+        self.viewMain.viewInput.isUserInteractionEnabled = false
+        self.viewMain.viewList.isUserInteractionEnabled = false
+    }
+    
+    private func ingredientCreated()
+    {
+        self.popIngredientsController()
+        self.transitionBack()
+    }
+    
+    private func popIngredientsController()
+    {
+        guard
+        
+            let countControllers:Int = self.parentController?.childViewControllers.count
+        
+        else
+        {
+            return
+        }
+        
+        let ingredientsIndex:Int = countControllers -
+                                    ControllerNewAddIngredientAmount.Constants.subtractIngredientIndex
+        self.parentController?.popSilent(removeIndex:ingredientsIndex)
+    }
+    
     //MARK: internal
     
     func transitionBack()
@@ -44,6 +75,8 @@ final class ControllerNewAddIngredientAmount:Controller<ArchNewAddIngredientAmou
     
     func createIngredient()
     {
+        self.blockInterface()
+        
         guard
             
             let amount:String = self.viewMain.viewInput.textField.text
@@ -53,10 +86,10 @@ final class ControllerNewAddIngredientAmount:Controller<ArchNewAddIngredientAmou
             return
         }
         
-        self.viewMain.viewInput.textField.resignFirstResponder()
-        self.viewMain.viewInput.isUserInteractionEnabled = false
-        self.viewMain.viewList.isUserInteractionEnabled = false
-        
-        
+        self.model.createIngredient(amount:amount)
+        { [weak self] in
+            
+            self?.ingredientCreated()
+        }
     }
 }
