@@ -3,6 +3,7 @@ import UIKit
 final class ViewNewAddIngredientAmount:ViewMain<ArchNewAddIngredientAmount>
 {
     private(set) weak var viewInput:ViewNewAddIngredientAmountInput!
+    private(set) weak var viewList:ViewNewAddIngredientAmountList!
     
     override func factoryViews()
     {

@@ -134,6 +134,7 @@
 		DA8752DF1FE3ABAF00AE74F5 /* NewAddIngredientAmountTypeSpoons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752DE1FE3ABAF00AE74F5 /* NewAddIngredientAmountTypeSpoons.swift */; };
 		DA8752E11FE3AFE800AE74F5 /* NewAddIngredientAmount+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752E01FE3AFE800AE74F5 /* NewAddIngredientAmount+Factory.swift */; };
 		DA8752E31FE3B27100AE74F5 /* ViewNewAddIngredientAmountList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752E21FE3B27100AE74F5 /* ViewNewAddIngredientAmountList+Actions.swift */; };
+		DA8752E51FE3B74900AE74F5 /* ViewNewAddIngredientAmountListCell+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752E41FE3B74900AE74F5 /* ViewNewAddIngredientAmountListCell+Constants.swift */; };
 		DA8C6E3D1FDB2F4600C0AD69 /* Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C6E3B1FDB2F3B00C0AD69 /* Build.swift */; };
 		DA9089031FD4C65F00C1208A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA90889E1FD4C65F00C1208A /* LaunchScreen.storyboard */; };
 		DA9089041FD4C65F00C1208A /* LocalizableModel.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A01FD4C65F00C1208A /* LocalizableModel.strings */; };
@@ -466,6 +467,7 @@
 		DA8752DE1FE3ABAF00AE74F5 /* NewAddIngredientAmountTypeSpoons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddIngredientAmountTypeSpoons.swift; sourceTree = "<group>"; };
 		DA8752E01FE3AFE800AE74F5 /* NewAddIngredientAmount+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddIngredientAmount+Factory.swift"; sourceTree = "<group>"; };
 		DA8752E21FE3B27100AE74F5 /* ViewNewAddIngredientAmountList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientAmountList+Actions.swift"; sourceTree = "<group>"; };
+		DA8752E41FE3B74900AE74F5 /* ViewNewAddIngredientAmountListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientAmountListCell+Constants.swift"; sourceTree = "<group>"; };
 		DA8C6E3B1FDB2F3B00C0AD69 /* Build.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Build.swift; sourceTree = "<group>"; };
 		DA9088821FD4C38E00C1208A /* user.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = user.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9088981FD4C45600C1208A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -721,6 +723,7 @@
 				DA8752CC1FE3866700AE74F5 /* ViewNewAddIngredientAmountList+Constants.swift */,
 				DA8752E21FE3B27100AE74F5 /* ViewNewAddIngredientAmountList+Actions.swift */,
 				DA8752CA1FE3863C00AE74F5 /* ViewNewAddIngredientAmountListCell.swift */,
+				DA8752E41FE3B74900AE74F5 /* ViewNewAddIngredientAmountListCell+Constants.swift */,
 			);
 			path = NewAddIngredientAmount;
 			sourceTree = "<group>";
@@ -1774,6 +1777,7 @@
 				DA91EAF31FD62C1F0063560D /* View.swift in Sources */,
 				DACF553E1FD7661E00069701 /* ExtensionNSLayoutConstraint.swift in Sources */,
 				DA992D7A1FD61EE500A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */,
+				DA8752E51FE3B74900AE74F5 /* ViewNewAddIngredientAmountListCell+Constants.swift in Sources */,
 				DA11BA0C1FD8F3DD0038F9B0 /* ViewBarBack.swift in Sources */,
 				DA71D6981FDA657E003A33E1 /* Text.swift in Sources */,
 				DA9089831FD4CE2E00C1208A /* ControllerParent+Menu.swift in Sources */,

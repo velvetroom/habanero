@@ -10,4 +10,12 @@ extension ViewNewAddIngredientAmountList
         
         return item
     }
+    
+    func selectIndex(index:IndexPath?)
+    {
+        self.collectionView.selectItem(
+            at:index,
+            animated:true,
+            scrollPosition:UICollectionViewScrollPosition())
+    }
 }

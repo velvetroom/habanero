@@ -18,7 +18,7 @@ final class ViewNewAddIngredientListCell:ViewCollectionCell
     {
         super.showHighlighted()
         
-        self.backgroundColor = UIColor.colourHabanero.withAlphaComponent(0.4)
+        self.backgroundColor = UIColor.colourSuccess.withAlphaComponent(0.4)
     }
     
     //MARK: internal

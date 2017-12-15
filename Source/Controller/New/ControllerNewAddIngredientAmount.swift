@@ -23,7 +23,10 @@ final class ControllerNewAddIngredientAmount:Controller<ArchNewAddIngredientAmou
     {
         super.viewDidAppear(animated)
         
+        let selectedIndex:IndexPath? = self.model.selectedIndex
+        
         self.viewMain.viewInput.textField.becomeFirstResponder()
+        self.viewMain.viewList.selectIndex(index:selectedIndex)
     }
     
     //MARK: internal
@@ -32,5 +35,10 @@ final class ControllerNewAddIngredientAmount:Controller<ArchNewAddIngredientAmou
     {
         self.viewMain.viewInput.textField.resignFirstResponder()
         self.parentController?.pop(horizontal:ControllerTransition.Horizontal.right)
+    }
+    
+    func selectType(item:NewAddIngredientAmountTypeProtocol)
+    {
+        self.model.selectedType = item
     }
 }
