@@ -132,6 +132,7 @@
 		DA8752DB1FE3AB9C00AE74F5 /* NewAddIngredientAmountTypeMililitres.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752DA1FE3AB9C00AE74F5 /* NewAddIngredientAmountTypeMililitres.swift */; };
 		DA8752DD1FE3ABA700AE74F5 /* NewAddIngredientAmountTypeQuantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752DC1FE3ABA700AE74F5 /* NewAddIngredientAmountTypeQuantity.swift */; };
 		DA8752DF1FE3ABAF00AE74F5 /* NewAddIngredientAmountTypeSpoons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752DE1FE3ABAF00AE74F5 /* NewAddIngredientAmountTypeSpoons.swift */; };
+		DA8752E11FE3AFE800AE74F5 /* NewAddIngredientAmount+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752E01FE3AFE800AE74F5 /* NewAddIngredientAmount+Factory.swift */; };
 		DA8C6E3D1FDB2F4600C0AD69 /* Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C6E3B1FDB2F3B00C0AD69 /* Build.swift */; };
 		DA9089031FD4C65F00C1208A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA90889E1FD4C65F00C1208A /* LaunchScreen.storyboard */; };
 		DA9089041FD4C65F00C1208A /* LocalizableModel.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A01FD4C65F00C1208A /* LocalizableModel.strings */; };
@@ -462,6 +463,7 @@
 		DA8752DA1FE3AB9C00AE74F5 /* NewAddIngredientAmountTypeMililitres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddIngredientAmountTypeMililitres.swift; sourceTree = "<group>"; };
 		DA8752DC1FE3ABA700AE74F5 /* NewAddIngredientAmountTypeQuantity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddIngredientAmountTypeQuantity.swift; sourceTree = "<group>"; };
 		DA8752DE1FE3ABAF00AE74F5 /* NewAddIngredientAmountTypeSpoons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddIngredientAmountTypeSpoons.swift; sourceTree = "<group>"; };
+		DA8752E01FE3AFE800AE74F5 /* NewAddIngredientAmount+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddIngredientAmount+Factory.swift"; sourceTree = "<group>"; };
 		DA8C6E3B1FDB2F3B00C0AD69 /* Build.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Build.swift; sourceTree = "<group>"; };
 		DA9088821FD4C38E00C1208A /* user.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = user.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9088981FD4C45600C1208A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -694,6 +696,7 @@
 			isa = PBXGroup;
 			children = (
 				DA60429F1FE21BE800758A2F /* NewAddIngredientAmount.swift */,
+				DA8752E01FE3AFE800AE74F5 /* NewAddIngredientAmount+Factory.swift */,
 				DA8752D41FE3A90D00AE74F5 /* NewAddIngredientAmountTypeProtocol.swift */,
 				DA8752D61FE3AB8D00AE74F5 /* NewAddIngredientAmountTypeCups.swift */,
 				DA8752D81FE3AB9400AE74F5 /* NewAddIngredientAmountTypeGrams.swift */,
@@ -1800,6 +1803,7 @@
 				DA90897F1FD4CE2E00C1208A /* AppDelegate.swift in Sources */,
 				DACF554A1FD7661E00069701 /* ExtensionUIFont+Constants.swift in Sources */,
 				DAA333D81FDB17EA002D766C /* Database.swift in Sources */,
+				DA8752E11FE3AFE800AE74F5 /* NewAddIngredientAmount+Factory.swift in Sources */,
 				DA8C6E3D1FDB2F4600C0AD69 /* Build.swift in Sources */,
 				DA60428E1FE1EC2300758A2F /* ViewNewAddListCellIngredient.swift in Sources */,
 				DA5D71C61FDB56AD00429F5D /* ViewNewAddListCellInfoDuration+Constants.swift in Sources */,
