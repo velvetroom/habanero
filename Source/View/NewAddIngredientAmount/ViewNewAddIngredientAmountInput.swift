@@ -24,7 +24,6 @@ final class ViewNewAddIngredientAmountInput:View<ArchNewAddIngredientAmount>
         textField.tintColor = UIColor.colourBackgroundDark
         textField.textColor = UIColor.colourBackgroundDark
         textField.textAlignment = NSTextAlignment.right
-        textField.backgroundColor = UIColor.white
         textField.placeholder = String.localizedView(key:"ViewNewAddIngredientAmountInput_textField")
         self.textField = textField
         
@@ -36,7 +35,8 @@ final class ViewNewAddIngredientAmountInput:View<ArchNewAddIngredientAmount>
             margin:ViewNewAddIngredientAmountInput.Constants.fieldMarginVertical)
         NSLayoutConstraint.rightToRight(
             view:textField,
-            toView:self)
+            toView:self,
+            constant:ViewNewAddIngredientAmountInput.Constants.fieldRight)
         NSLayoutConstraint.width(
             view:textField,
             constant:ViewNewAddIngredientAmountInput.Constants.fieldWidth)

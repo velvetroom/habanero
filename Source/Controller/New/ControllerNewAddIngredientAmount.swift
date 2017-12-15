@@ -19,6 +19,13 @@ final class ControllerNewAddIngredientAmount:Controller<ArchNewAddIngredientAmou
         return nil
     }
     
+    override func viewDidAppear(_ animated:Bool)
+    {
+        super.viewDidAppear(animated)
+        
+        self.viewMain.viewInput.textField.becomeFirstResponder()
+    }
+    
     //MARK: internal
     
     func transitionBack()

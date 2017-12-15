@@ -4,6 +4,6 @@ extension ViewNewAddIngredientAmount
 {
     struct Constants
     {
-        static let inputHeight:CGFloat = 70
+        static let inputHeight:CGFloat = 90
     }
 }
