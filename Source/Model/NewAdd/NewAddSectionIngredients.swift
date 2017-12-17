@@ -58,6 +58,19 @@ struct NewAddSectionIngredients:NewAddSectionProtocol
             items.append(item)
         }
         
+        items.sort
+        { (itemA:NewAddSectionItemIngredient, itemB:NewAddSectionItemIngredient) -> Bool in
+            
+            let comparisonResult:ComparisonResult = itemA.name.compare(itemB.name)
+            
+            if comparisonResult == ComparisonResult.orderedDescending
+            {
+                return false
+            }
+            
+            return true
+        }
+        
         return items
     }
 }
