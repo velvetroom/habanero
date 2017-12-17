@@ -9,3 +9,5 @@ NewAddIngredientAmountTypeMililitres_name="Mililitres";
 Format_durationMinutes=" minutes";
 Format_durationHours=" hours";
 FormatIngredientTypeCups_suffix=" cups";
+FormatIngredientTypeGrams_kilograms=" kilograms";
+FormatIngredientTypeGrams_pounds=" pounds";
