@@ -48,7 +48,16 @@ struct FormatIngredientTypeGrams:FormatIngredientTypeProtocol
     
     private static func factoryKilograms(grams:Int) -> String?
     {
+        let gramsFloat:Float = Float(grams)
+        let kilograms:Float = gramsFloat * FormatIngredientTypeGrams.Constants.gramsToKilograms
         
+        let formatter:NumberFormatter = Format.factoryFormatter(
+            decimals:FormatIngredientTypeGrams.Constants.decimalsUpperMetrics)
+        formatter.positiveSuffix = String.localizedView(key:"FormatIngredientTypeGrams_kilograms")
+        let number:NSNumber = kilograms as NSNumber
+        let amount:String? = formatter.string(from:number)
+        
+        return amount
     }
     
     private static func factoryGrams(grams:Int) -> String?
