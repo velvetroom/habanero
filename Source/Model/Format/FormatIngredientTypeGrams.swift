@@ -54,7 +54,7 @@ struct FormatIngredientTypeGrams:FormatIngredientTypeProtocol
         
         let formatter:NumberFormatter = Format.factoryFormatter(
             decimals:FormatIngredientTypeGrams.Constants.decimalsUpperMetrics)
-        formatter.positiveSuffix = String.localizedView(key:"FormatIngredientTypeGrams_kilograms")
+        formatter.positiveSuffix = String.localizedModel(key:"FormatIngredientTypeGrams_kilograms")
         
         let amount:String? = formatter.string(from:number)
         
@@ -67,7 +67,7 @@ struct FormatIngredientTypeGrams:FormatIngredientTypeProtocol
         
         let formatter:NumberFormatter = Format.factoryFormatter(
             decimals:FormatIngredientTypeGrams.Constants.decimalsLowerMetrics)
-        formatter.positiveSuffix = String.localizedView(key:"FormatIngredientTypeGrams_grams")
+        formatter.positiveSuffix = String.localizedModel(key:"FormatIngredientTypeGrams_grams")
         
         let amount:String? = formatter.string(from:number)
         
@@ -82,7 +82,7 @@ struct FormatIngredientTypeGrams:FormatIngredientTypeProtocol
         
         let formatter:NumberFormatter = Format.factoryFormatter(
             decimals:FormatIngredientTypeGrams.Constants.decimalsUpperMetrics)
-        formatter.positiveSuffix = String.localizedView(key:"FormatIngredientTypeGrams_pounds")
+        formatter.positiveSuffix = String.localizedModel(key:"FormatIngredientTypeGrams_pounds")
         
         let amount:String? = formatter.string(from:number)
         
@@ -97,7 +97,7 @@ struct FormatIngredientTypeGrams:FormatIngredientTypeProtocol
         
         let formatter:NumberFormatter = Format.factoryFormatter(
             decimals:FormatIngredientTypeGrams.Constants.decimalsLowerMetrics)
-        formatter.positiveSuffix = String.localizedView(key:"FormatIngredientTypeGrams_ounces")
+        formatter.positiveSuffix = String.localizedModel(key:"FormatIngredientTypeGrams_ounces")
         
         let amount:String? = formatter.string(from:number)
         
