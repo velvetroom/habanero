@@ -4,7 +4,7 @@ struct FormatIngredientTypeCups:FormatIngredientTypeProtocol
 {
     //MARK: internal
     
-    static func factoryAmount(ingredient:BuildIngredient) -> String?
+    static func factoryAmount(buildIngredient:BuildIngredient) -> String?
     {
         return nil
     }

@@ -2,5 +2,5 @@ import Foundation
 
 protocol FormatIngredientTypeProtocol
 {
-    static func factoryAmount(ingredient:BuildIngredient) -> String?
+    static func factoryAmount(buildIngredient:BuildIngredient) -> String?
 }
