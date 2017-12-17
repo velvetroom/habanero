@@ -12,7 +12,7 @@ final class ViewNewBar:ViewBar<ArchNew>
             UIColor.colourSuccess,
             for:UIControlState.normal)
         buttonAdd.setTitleColor(
-            UIColor.colourGradientDark,
+            UIColor.colourBackgroundDark,
             for:UIControlState.highlighted)
         buttonAdd.setTitle(
             String.localizedView(key:"ViewNewBar_buttonAdd"),

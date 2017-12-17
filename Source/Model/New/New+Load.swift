@@ -9,19 +9,20 @@ extension New
         self.getOrInitDatabaseAndSettings
         { [weak self] (database:Database, settings:Settings) in
             
+            self?.database = database
             self?.settings = settings
             
             database.fetch
             { [weak self] (builds:[Build]) in
                 
-                self?.buildLoaded(
+                self?.buildsLoaded(
                     builds:builds,
                     completion:completion)
             }
         }
     }
     
-    private func buildLoaded(
+    private func buildsLoaded(
         builds:[Build],
         completion:@escaping(() -> ()))
     {
@@ -61,8 +62,17 @@ extension New
             return
         }
         
-        database.create
-        { (settings:Settings) in
+        database.fetch
+        { (settingsList:[Settings]) in
+            
+            guard
+                
+                let settings:Settings = settingsList.first
+            
+            else
+            {
+                return
+            }
             
             completion(database, settings)
         }

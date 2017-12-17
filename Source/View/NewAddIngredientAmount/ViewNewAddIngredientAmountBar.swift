@@ -12,7 +12,7 @@ final class ViewNewAddIngredientAmountBar:ViewBarBack<ArchNewAddIngredientAmount
             UIColor.colourSuccess,
             for:UIControlState.normal)
         buttonAdd.setTitleColor(
-            UIColor.colourGradientDark,
+            UIColor.colourBackgroundDark,
             for:UIControlState.highlighted)
         buttonAdd.setTitle(
             String.localizedView(key:"ViewNewAddIngredientAmountBar_buttonAdd"),
