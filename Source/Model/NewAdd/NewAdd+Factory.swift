@@ -4,11 +4,21 @@ extension NewAdd
 {
     //MARK: internal
     
-    class func factorySections(build:Build) -> [NewAddSectionProtocol]
+    class func factorySections(
+        build:Build,
+        settings:Settings) -> [NewAddSectionProtocol]
     {
-        let infoSection:NewAddSectionInfo = NewAddSectionInfo(build:build)
-        let ingredientsSection:NewAddSectionIngredients = NewAddSectionIngredients(build:build)
-        let stepsSection:NewAddSectionSteps = NewAddSectionSteps(build:build)
+        let infoSection:NewAddSectionInfo = NewAddSectionInfo(
+            build:build,
+            settings:settings)
+        
+        let ingredientsSection:NewAddSectionIngredients = NewAddSectionIngredients(
+            build:build,
+            settings:settings)
+        
+        let stepsSection:NewAddSectionSteps = NewAddSectionSteps(
+            build:build,
+            settings:settings)
         
         let sections:[NewAddSectionProtocol] = [
             infoSection,

@@ -7,17 +7,24 @@ struct NewAddSectionIngredients:NewAddSectionProtocol
     let headerHeight:CGFloat
     let items:[NewAddSectionItemProtocol]
     
-    init(build:Build)
+    init(
+        build:Build,
+        settings:Settings)
     {
         self.title = String.localizedModel(key:"NewAdd_ingredientsSectionTitle")
         self.footerReusableIdentifier = ViewNewAddListFooterIngredients.reusableIdentifier
         self.headerHeight = NewAdd.Constants.headerIngredientsHeight
-        self.items = NewAddSectionIngredients.factoryItems(build:build)
+        
+        self.items = NewAddSectionIngredients.factoryItems(
+            build:build,
+            settings:settings)
     }
     
     //MARK: private
     
-    private static func factoryItems(build:Build) -> [NewAddSectionItemIngredient]
+    private static func factoryItems(
+        build:Build,
+        settings:Settings) -> [NewAddSectionItemIngredient]
     {
         guard
             

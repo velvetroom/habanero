@@ -7,5 +7,5 @@ protocol NewAddSectionProtocol
     var headerHeight:CGFloat  { get }
     var items:[NewAddSectionItemProtocol]  { get }
     
-    init(build:Build)
+    init(build:Build, settings:Settings)
 }

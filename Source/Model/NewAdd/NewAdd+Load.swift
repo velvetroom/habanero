@@ -8,14 +8,17 @@ extension NewAdd
     {
         guard
         
-            let build:Build = self.build
+            let build:Build = self.build,
+            let settings:Settings = self.settings
         
         else
         {
             return
         }
         
-        self.sections = NewAdd.factorySections(build:build)
+        self.sections = NewAdd.factorySections(
+            build:build,
+            settings:settings)
         
         DispatchQueue.main.async
         {
