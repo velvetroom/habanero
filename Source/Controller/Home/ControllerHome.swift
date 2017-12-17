@@ -19,6 +19,6 @@ final class ControllerHome:Controller<ArchHome>
     
     private func settingsLoaded()
     {
-        
+        self.view.superview?.isUserInteractionEnabled = true
     }
 }

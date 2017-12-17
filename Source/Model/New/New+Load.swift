@@ -6,21 +6,18 @@ extension New
     
     private func asyncLoad(completion:@escaping(() -> ()))
     {
-        guard
+        self.getOrInitDatabaseAndSettings
+        { [weak self] (database:Database, settings:Settings) in
             
-            let database:Database = self.getOrInitDatabase()
+            self?.settings = settings
             
-        else
-        {
-            return
-        }
-        
-        database.fetch
-        { [weak self] (builds:[Build]) in
-            
-            self?.buildLoaded(
-                builds:builds,
-                completion:completion)
+            database.fetch
+            { [weak self] (builds:[Build]) in
+                
+                self?.buildLoaded(
+                    builds:builds,
+                    completion:completion)
+            }
         }
     }
     
@@ -36,21 +33,39 @@ extension New
         }
     }
     
-    private func getOrInitDatabase() -> Database?
+    private func getOrInitDatabaseAndSettings(completion:@escaping((Database, Settings) -> ()))
     {
         guard
         
-            self.database == nil
+            let database:Database = self.database,
+            let settings:Settings = self.settings
         
         else
         {
-            return self.database
+            self.initDatabaseAndSettings(completion:completion)
+            
+            return
         }
         
-        let database:Database? = Database(bundle:Bundle.main)
-        self.database = database
+        completion(database, settings)
+    }
+    
+    private func initDatabaseAndSettings(completion:@escaping((Database, Settings) -> ()))
+    {
+        guard
         
-        return database
+            let database:Database = Database(bundle:Bundle.main)
+        
+        else
+        {
+            return
+        }
+        
+        database.create
+        { (settings:Settings) in
+            
+            completion(database, settings)
+        }
     }
     
     //MARK: internal
