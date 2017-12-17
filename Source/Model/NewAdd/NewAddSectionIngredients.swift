@@ -42,7 +42,9 @@ struct NewAddSectionIngredients:NewAddSectionProtocol
             guard
             
                 let name:String = ingredient.name,
-                let amount:String = ViewFormat.factoryAmount(ingredient:ingredient)
+                let amount:String = ViewFormat.factoryAmount(
+                    ingredient:ingredient,
+                    settings:settings)
             
             else
             {

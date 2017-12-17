@@ -4,7 +4,9 @@ extension ViewFormat
 {
     //MARK: internal
     
-    static func factoryAmount(ingredient:BuildIngredient) -> String?
+    static func factoryAmount(
+        ingredient:BuildIngredient,
+        settings:Settings) -> String?
     {
         return String()
     }
