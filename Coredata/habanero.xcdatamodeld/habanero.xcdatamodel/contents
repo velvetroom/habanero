@@ -12,7 +12,8 @@
         <attribute name="cloudId" attributeType="String" syncable="YES"/>
         <attribute name="decimals" transient="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
-        <attribute name="suffix" transient="YES" attributeType="String" syncable="YES"/>
+        <attribute name="suffixImperial" transient="YES" attributeType="String" syncable="YES"/>
+        <attribute name="suffixInternational" transient="YES" attributeType="String" syncable="YES"/>
         <relationship name="build" maxCount="1" deletionRule="Nullify" destinationEntity="Build" inverseName="ingredients" inverseEntity="Build" syncable="YES"/>
     </entity>
     <entity name="BuildIngredientCups" representedClassName="BuildIngredientCups" parentEntity="BuildIngredient" syncable="YES" codeGenerationType="class">
@@ -43,7 +44,7 @@
     </entity>
     <elements>
         <element name="Build" positionX="-63" positionY="-18" width="128" height="135"/>
-        <element name="BuildIngredient" positionX="-54" positionY="18" width="128" height="120"/>
+        <element name="BuildIngredient" positionX="-54" positionY="18" width="128" height="135"/>
         <element name="BuildIngredientCups" positionX="36" positionY="90" width="128" height="60"/>
         <element name="BuildIngredientGrams" positionX="-18" positionY="45" width="128" height="60"/>
         <element name="BuildIngredientMililitres" positionX="0" positionY="54" width="128" height="60"/>
