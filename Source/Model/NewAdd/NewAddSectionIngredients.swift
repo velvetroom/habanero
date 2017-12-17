@@ -43,7 +43,7 @@ struct NewAddSectionIngredients:NewAddSectionProtocol
             
                 let name:String = ingredient.name,
                 let amount:String = Format.factoryAmount(
-                    ingredient:ingredient,
+                    buildIngredient:ingredient,
                     settings:settings)
             
             else
