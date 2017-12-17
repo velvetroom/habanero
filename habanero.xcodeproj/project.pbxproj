@@ -121,6 +121,8 @@
 		DA74F0AC1FE6084100F45310 /* IngredientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74F0AA1FE6084100F45310 /* IngredientType.swift */; };
 		DA74F0AE1FE60A1300F45310 /* BuildIngredientMililitres+Computed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74F0AD1FE60A1300F45310 /* BuildIngredientMililitres+Computed.swift */; };
 		DA74F0AF1FE60A1300F45310 /* BuildIngredientMililitres+Computed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74F0AD1FE60A1300F45310 /* BuildIngredientMililitres+Computed.swift */; };
+		DA74F0B11FE60A4F00F45310 /* BuildIngredientQuantity+Computed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74F0B01FE60A4F00F45310 /* BuildIngredientQuantity+Computed.swift */; };
+		DA74F0B21FE60A4F00F45310 /* BuildIngredientQuantity+Computed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74F0B01FE60A4F00F45310 /* BuildIngredientQuantity+Computed.swift */; };
 		DA753DAB1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA753DAC1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA84C0EF1FD73F59008959EA /* ArchNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C0EE1FD73F59008959EA /* ArchNew.swift */; };
@@ -469,6 +471,7 @@
 		DA74F0A81FE6031200F45310 /* BuildIngredientGrams+Computed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildIngredientGrams+Computed.swift"; sourceTree = "<group>"; };
 		DA74F0AA1FE6084100F45310 /* IngredientType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientType.swift; sourceTree = "<group>"; };
 		DA74F0AD1FE60A1300F45310 /* BuildIngredientMililitres+Computed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildIngredientMililitres+Computed.swift"; sourceTree = "<group>"; };
+		DA74F0B01FE60A4F00F45310 /* BuildIngredientQuantity+Computed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildIngredientQuantity+Computed.swift"; sourceTree = "<group>"; };
 		DA753DA91FD5EB96007E5BC5 /* Design */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Design; sourceTree = "<group>"; };
 		DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = generic.xcassets; sourceTree = "<group>"; };
 		DA84C0EE1FD73F59008959EA /* ArchNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNew.swift; sourceTree = "<group>"; };
@@ -847,6 +850,7 @@
 				DA6042961FE20F3B00758A2F /* BuildIngredientCups+Computed.swift */,
 				DA74F0A81FE6031200F45310 /* BuildIngredientGrams+Computed.swift */,
 				DA74F0AD1FE60A1300F45310 /* BuildIngredientMililitres+Computed.swift */,
+				DA74F0B01FE60A4F00F45310 /* BuildIngredientQuantity+Computed.swift */,
 			);
 			path = Build;
 			sourceTree = "<group>";
@@ -1562,6 +1566,7 @@
 				DACF55451FD7661E00069701 /* ExtensionNSManagedObject.swift in Sources */,
 				DA91EAFC1FD62C1F0063560D /* ViewParent+Transitions.swift in Sources */,
 				DAE5E4801FE489C100CC40BA /* Settings.swift in Sources */,
+				DA74F0B11FE60A4F00F45310 /* BuildIngredientQuantity+Computed.swift in Sources */,
 				DA90891F1FD4C66000C1208A /* ControllerParent+Constants.swift in Sources */,
 				DA91EB101FD62C1F0063560D /* ViewSlider+Gesture.swift in Sources */,
 				DA91EB081FD62C1F0063560D /* ViewPushBackground.swift in Sources */,
@@ -1864,6 +1869,7 @@
 				DA992D791FD61ED700A6CFEF /* MenuItemGenericProtocol.swift in Sources */,
 				DA6042971FE20F3B00758A2F /* BuildIngredientCups+Computed.swift in Sources */,
 				DACF553A1FD7661E00069701 /* ExtensionURLResponse.swift in Sources */,
+				DA74F0B21FE60A4F00F45310 /* BuildIngredientQuantity+Computed.swift in Sources */,
 				DA9089891FD4CE3700C1208A /* Model.swift in Sources */,
 				DAF949F91FD8BCC6001BA32E /* ViewNewAdd.swift in Sources */,
 				DA91EAFB1FD62C1F0063560D /* ViewMain.swift in Sources */,
