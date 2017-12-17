@@ -91,7 +91,17 @@ struct FormatIngredientTypeGrams:FormatIngredientTypeProtocol
     
     private static func factoryOunces(grams:Int) -> String?
     {
+        let gramsFloat:Float = Float(grams)
+        let pounds:Float = gramsFloat / FormatIngredientTypeGrams.Constants.gramsPerOunce
+        let number:NSNumber = pounds as NSNumber
         
+        let formatter:NumberFormatter = Format.factoryFormatter(
+            decimals:FormatIngredientTypeGrams.Constants.decimalsLowerMetrics)
+        formatter.positiveSuffix = String.localizedView(key:"FormatIngredientTypeGrams_ounces")
+        
+        let amount:String? = formatter.string(from:number)
+        
+        return amount
     }
     
     //MARK: internal
