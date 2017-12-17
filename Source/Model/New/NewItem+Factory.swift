@@ -10,7 +10,7 @@ extension NewItem
         
             let title:String = build.title,
             let steps:Int = build.steps?.count,
-            let duration:String = ViewFormat.factoryDuration(duration:build.duration)
+            let duration:String = Format.factoryDuration(duration:build.duration)
         
         else
         {

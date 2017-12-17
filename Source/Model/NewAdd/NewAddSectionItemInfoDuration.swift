@@ -47,7 +47,7 @@ struct NewAddSectionItemInfoDuration:NewAddSectionItemProtocol
         duration:TimeInterval,
         minutes:[TimeInterval]) -> Int
     {
-        let minute:TimeInterval = duration / ViewFormat.Constants.Duration.secondsPerMinute
+        let minute:TimeInterval = duration / Format.Constants.Duration.secondsPerMinute
         var selected:Int = 0
         
         for indexedMinute:TimeInterval in minutes

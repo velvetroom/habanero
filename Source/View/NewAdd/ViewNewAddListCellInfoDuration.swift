@@ -109,11 +109,11 @@ final class ViewNewAddListCellInfoDuration:ViewNewAddListCell
         }
         
         let minutes:TimeInterval = minutesList[value]
-        let seconds:TimeInterval = minutes * ViewFormat.Constants.Duration.secondsPerMinute
+        let seconds:TimeInterval = minutes * Format.Constants.Duration.secondsPerMinute
         
         guard
             
-            let duration:String = ViewFormat.factoryDuration(duration:seconds)
+            let duration:String = Format.factoryDuration(duration:seconds)
         
         else
         {

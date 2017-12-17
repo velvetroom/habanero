@@ -6,3 +6,5 @@ NewAddIngredientAmountTypeQuantity_name="Pieces";
 NewAddIngredientAmountTypeSpoons_name="Spoons";
 NewAddIngredientAmountTypeGrams_name="Grams";
 NewAddIngredientAmountTypeMililitres_name="Mililitres";
+Format_durationMinutes=" minutes";
+Format_durationHours=" hours";

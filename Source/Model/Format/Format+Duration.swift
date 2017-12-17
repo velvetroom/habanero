@@ -9,7 +9,7 @@ extension Format
         let minutes:TimeInterval = duration / Format.Constants.Duration.secondsPerMinute
         let number:NSNumber = minutes as NSNumber
         let numberFormatter:NumberFormatter = Format.factoryFormatter(decimals:0)
-        numberFormatter.positiveSuffix = String.localizedView(key:"ViewFormat_durationMinutes")
+        numberFormatter.positiveSuffix = String.localizedView(key:"Format_durationMinutes")
         
         let minutesString:String? = numberFormatter.string(from:number)
         
@@ -21,8 +21,8 @@ extension Format
         let hours:TimeInterval = duration / Format.Constants.Duration.secondsPerHour
         let number:NSNumber = hours as NSNumber
         let numberFormatter:NumberFormatter = Format.factoryFormatter(
-            decimals:ViewFormat.Constants.Duration.decimalsPerHour)
-        numberFormatter.positiveSuffix = String.localizedView(key:"ViewFormat_durationHours")
+            decimals:Format.Constants.Duration.decimalsPerHour)
+        numberFormatter.positiveSuffix = String.localizedView(key:"Format_durationHours")
         
         let hoursString:String? = numberFormatter.string(from:number)
         
