@@ -1,6 +1,6 @@
 import Foundation
 
-extension ViewFormat
+extension Format
 {
     //MARK: internal
     

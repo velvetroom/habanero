@@ -2,9 +2,9 @@ import Foundation
 
 extension Format
 {
-    struct Numeric
+    struct Constants
     {
-        struct General
+        struct Numeric
         {
             static let minIntegers:Int = 1
         }
