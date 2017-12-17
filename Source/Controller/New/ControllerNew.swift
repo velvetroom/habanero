@@ -26,6 +26,7 @@ final class ControllerNew:Controller<ArchNew>
     {
         guard
             
+            let settings:Settings = self.model.settings,
             let database:Database = self.model.database
         
         else
@@ -35,6 +36,7 @@ final class ControllerNew:Controller<ArchNew>
         
         let controller:ControllerNewAdd = ControllerNewAdd(
             build:build,
+            settings:settings,
             database:database)
         
         self.parentController?.push(

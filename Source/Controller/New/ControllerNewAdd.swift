@@ -4,11 +4,13 @@ final class ControllerNewAdd:Controller<ArchNewAdd>
 {
     init(
         build:Build,
+        settings:Settings,
         database:Database)
     {
         super.init()
         
         self.model.database = database
+        self.model.settings = settings
         self.model.build = build
     }
     
