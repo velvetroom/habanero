@@ -1,12 +1,12 @@
 import Foundation
 
-extension BuildIngredientCups
+extension BuildIngredientGrams
 {
     public override var rawIngredientType:Int16
     {
         get
         {
-            return IngredientType.cups.rawValue
+            return IngredientType.grams.rawValue
         }
         
         set(newValue) { }

@@ -1,6 +1,6 @@
 import Foundation
 
-enum IngredientType:Int
+enum IngredientType:Int16
 {
     case cups
     case grams
