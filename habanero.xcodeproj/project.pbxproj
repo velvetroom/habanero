@@ -116,6 +116,7 @@
 		DA71D6AB1FDA74D8003A33E1 /* ViewTextBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6A91FDA74D8003A33E1 /* ViewTextBar.swift */; };
 		DA71D6AD1FDA7A01003A33E1 /* ViewTextBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6AC1FDA7A01003A33E1 /* ViewTextBar+Constants.swift */; };
 		DA71D6AE1FDA7A01003A33E1 /* ViewTextBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6AC1FDA7A01003A33E1 /* ViewTextBar+Constants.swift */; };
+		DA74F0A51FE601BD00F45310 /* BuildIngredientCups+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74F0A41FE601BD00F45310 /* BuildIngredientCups+Constants.swift */; };
 		DA753DAB1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA753DAC1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA84C0EF1FD73F59008959EA /* ArchNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C0EE1FD73F59008959EA /* ArchNew.swift */; };
@@ -461,6 +462,7 @@
 		DA71D6A31FDA7107003A33E1 /* ViewText+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewText+Constants.swift"; sourceTree = "<group>"; };
 		DA71D6A91FDA74D8003A33E1 /* ViewTextBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTextBar.swift; sourceTree = "<group>"; };
 		DA71D6AC1FDA7A01003A33E1 /* ViewTextBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewTextBar+Constants.swift"; sourceTree = "<group>"; };
+		DA74F0A41FE601BD00F45310 /* BuildIngredientCups+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildIngredientCups+Constants.swift"; sourceTree = "<group>"; };
 		DA753DA91FD5EB96007E5BC5 /* Design */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Design; sourceTree = "<group>"; };
 		DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = generic.xcassets; sourceTree = "<group>"; };
 		DA84C0EE1FD73F59008959EA /* ArchNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNew.swift; sourceTree = "<group>"; };
@@ -835,6 +837,7 @@
 				DA5D697F1FDB521400429F5D /* Build+Constants.swift */,
 				DAE7C37F1FE0A9B3003190FF /* Build+Computed.swift */,
 				DA6042941FE20CDC00758A2F /* BuildIngredient+Computed.swift */,
+				DA74F0A41FE601BD00F45310 /* BuildIngredientCups+Constants.swift */,
 				DA6042961FE20F3B00758A2F /* BuildIngredientCups+Computed.swift */,
 			);
 			path = Build;
@@ -1845,6 +1848,7 @@
 				DA6042931FE1F7F300758A2F /* ViewFormat+Ingredient.swift in Sources */,
 				DAE7C33A1FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift in Sources */,
 				DAE5E4811FE489C100CC40BA /* Settings.swift in Sources */,
+				DA74F0A51FE601BD00F45310 /* BuildIngredientCups+Constants.swift in Sources */,
 				DA992D791FD61ED700A6CFEF /* MenuItemGenericProtocol.swift in Sources */,
 				DA6042971FE20F3B00758A2F /* BuildIngredientCups+Computed.swift in Sources */,
 				DACF553A1FD7661E00069701 /* ExtensionURLResponse.swift in Sources */,
