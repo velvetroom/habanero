@@ -35,7 +35,7 @@ final class NewAddIngredient:Model<ArchNewAddIngredient>
             
             else
             {
-                return
+                continue
             }
             
             items.append(ingredient)

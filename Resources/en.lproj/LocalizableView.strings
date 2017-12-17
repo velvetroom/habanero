@@ -7,6 +7,6 @@ ViewNewAddListCellInfoTitle_labelTitle="Name";
 ViewNewAddListFooterIngredients_buttonAdd="Add ingredient";
 ViewNewAddIngredientListHeader_labelTitle="No ingredients";
 ViewNewAddIngredientListFooter_buttonTitle="Create ingredient";
-ViewNewAddIngredientAmountInput_textField="1";
+ViewNewAddIngredientAmountInput_textField="0";
 ViewNewAddIngredientAmountBar_buttonAdd="Add";
 ViewTextBar_button="Done";
