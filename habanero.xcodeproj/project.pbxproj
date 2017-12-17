@@ -139,6 +139,8 @@
 		DA74F0CB1FE6152700F45310 /* FormatIngredientTypeGrams.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74F0C91FE6152700F45310 /* FormatIngredientTypeGrams.swift */; };
 		DA74F0CD1FE6154800F45310 /* FormatIngredientTypeMililitres.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74F0CC1FE6154800F45310 /* FormatIngredientTypeMililitres.swift */; };
 		DA74F0CE1FE6154800F45310 /* FormatIngredientTypeMililitres.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74F0CC1FE6154800F45310 /* FormatIngredientTypeMililitres.swift */; };
+		DA74F0D01FE6156D00F45310 /* FormatIngredientTypeQuantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74F0CF1FE6156D00F45310 /* FormatIngredientTypeQuantity.swift */; };
+		DA74F0D11FE6156D00F45310 /* FormatIngredientTypeQuantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74F0CF1FE6156D00F45310 /* FormatIngredientTypeQuantity.swift */; };
 		DA753DAB1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA753DAC1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA84C0EF1FD73F59008959EA /* ArchNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C0EE1FD73F59008959EA /* ArchNew.swift */; };
@@ -490,6 +492,7 @@
 		DA74F0C61FE614BA00F45310 /* FormatIngredientTypeCups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatIngredientTypeCups.swift; sourceTree = "<group>"; };
 		DA74F0C91FE6152700F45310 /* FormatIngredientTypeGrams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatIngredientTypeGrams.swift; sourceTree = "<group>"; };
 		DA74F0CC1FE6154800F45310 /* FormatIngredientTypeMililitres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatIngredientTypeMililitres.swift; sourceTree = "<group>"; };
+		DA74F0CF1FE6156D00F45310 /* FormatIngredientTypeQuantity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatIngredientTypeQuantity.swift; sourceTree = "<group>"; };
 		DA753DA91FD5EB96007E5BC5 /* Design */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Design; sourceTree = "<group>"; };
 		DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = generic.xcassets; sourceTree = "<group>"; };
 		DA84C0EE1FD73F59008959EA /* ArchNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNew.swift; sourceTree = "<group>"; };
@@ -814,6 +817,7 @@
 				DA74F0C61FE614BA00F45310 /* FormatIngredientTypeCups.swift */,
 				DA74F0C91FE6152700F45310 /* FormatIngredientTypeGrams.swift */,
 				DA74F0CC1FE6154800F45310 /* FormatIngredientTypeMililitres.swift */,
+				DA74F0CF1FE6156D00F45310 /* FormatIngredientTypeQuantity.swift */,
 			);
 			path = Format;
 			sourceTree = "<group>";
@@ -1627,6 +1631,7 @@
 				DACEB3A51FDC9F560089B3FE /* ViewCollectionReusable.swift in Sources */,
 				DAE7C3561FE08281003190FF /* Cloud.swift in Sources */,
 				DACF552B1FD7661E00069701 /* ExtensionDictionary.swift in Sources */,
+				DA74F0D01FE6156D00F45310 /* FormatIngredientTypeQuantity.swift in Sources */,
 				DA71D69B1FDA65AB003A33E1 /* ViewText.swift in Sources */,
 				DA5A97CC1FD605E1006223BA /* MenuItemGeneric.swift in Sources */,
 				DACF553F1FD7661E00069701 /* ExtensionUIFont.swift in Sources */,
@@ -1906,6 +1911,7 @@
 				DA992D791FD61ED700A6CFEF /* MenuItemGenericProtocol.swift in Sources */,
 				DA6042971FE20F3B00758A2F /* BuildIngredientCups+Computed.swift in Sources */,
 				DACF553A1FD7661E00069701 /* ExtensionURLResponse.swift in Sources */,
+				DA74F0D11FE6156D00F45310 /* FormatIngredientTypeQuantity.swift in Sources */,
 				DA74F0B21FE60A4F00F45310 /* BuildIngredientQuantity+Computed.swift in Sources */,
 				DA9089891FD4CE3700C1208A /* Model.swift in Sources */,
 				DAF949F91FD8BCC6001BA32E /* ViewNewAdd.swift in Sources */,
