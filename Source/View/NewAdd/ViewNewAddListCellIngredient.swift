@@ -15,7 +15,7 @@ final class ViewNewAddListCellIngredient:ViewNewAddListCell
         self.attributesAmount = [
             NSAttributedStringKey.font :
                 UIFont.regular(size:ViewNewAddListCellIngredient.Constants.amountFontSize),
-            NSAttributedStringKey.foregroundColor : UIColor(white:0, alpha:0.5)]
+            NSAttributedStringKey.foregroundColor : UIColor(white:0, alpha:0.4)]
         
         super.init(frame:frame)
     }

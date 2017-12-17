@@ -41,7 +41,7 @@ struct NewAddSectionIngredients:NewAddSectionProtocol
         {
             guard
             
-                let name:String = ingredient.name,
+                let name:String = ingredient.name?.capitalized,
                 let amount:String = Format.factoryAmount(
                     buildIngredient:ingredient,
                     settings:settings)
