@@ -133,6 +133,8 @@
 		DA74F0C21FE612E200F45310 /* FormatIngredientTypeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74F0C01FE612E200F45310 /* FormatIngredientTypeProtocol.swift */; };
 		DA74F0C41FE6139F00F45310 /* Format+Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74F0C31FE6139F00F45310 /* Format+Duration.swift */; };
 		DA74F0C51FE6139F00F45310 /* Format+Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74F0C31FE6139F00F45310 /* Format+Duration.swift */; };
+		DA74F0C71FE614BA00F45310 /* FormatIngredientTypeCups.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74F0C61FE614BA00F45310 /* FormatIngredientTypeCups.swift */; };
+		DA74F0C81FE614BA00F45310 /* FormatIngredientTypeCups.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74F0C61FE614BA00F45310 /* FormatIngredientTypeCups.swift */; };
 		DA753DAB1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA753DAC1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA84C0EF1FD73F59008959EA /* ArchNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C0EE1FD73F59008959EA /* ArchNew.swift */; };
@@ -481,6 +483,7 @@
 		DA74F0BD1FE6127100F45310 /* Format+Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Format+Ingredient.swift"; sourceTree = "<group>"; };
 		DA74F0C01FE612E200F45310 /* FormatIngredientTypeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatIngredientTypeProtocol.swift; sourceTree = "<group>"; };
 		DA74F0C31FE6139F00F45310 /* Format+Duration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Format+Duration.swift"; sourceTree = "<group>"; };
+		DA74F0C61FE614BA00F45310 /* FormatIngredientTypeCups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatIngredientTypeCups.swift; sourceTree = "<group>"; };
 		DA753DA91FD5EB96007E5BC5 /* Design */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Design; sourceTree = "<group>"; };
 		DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = generic.xcassets; sourceTree = "<group>"; };
 		DA84C0EE1FD73F59008959EA /* ArchNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNew.swift; sourceTree = "<group>"; };
@@ -802,6 +805,7 @@
 				DA74F0BD1FE6127100F45310 /* Format+Ingredient.swift */,
 				DA74F0C31FE6139F00F45310 /* Format+Duration.swift */,
 				DA74F0C01FE612E200F45310 /* FormatIngredientTypeProtocol.swift */,
+				DA74F0C61FE614BA00F45310 /* FormatIngredientTypeCups.swift */,
 			);
 			path = Format;
 			sourceTree = "<group>";
@@ -1650,6 +1654,7 @@
 				DA9089221FD4C66000C1208A /* AppDelegate.swift in Sources */,
 				DA74F0C11FE612E200F45310 /* FormatIngredientTypeProtocol.swift in Sources */,
 				DAE7C35A1FE08281003190FF /* CloudProtocol.swift in Sources */,
+				DA74F0C71FE614BA00F45310 /* FormatIngredientTypeCups.swift in Sources */,
 				DA90892D1FD4C66000C1208A /* Menu.swift in Sources */,
 				DACEB3A21FDC9C890089B3FE /* ViewCollectionCell.swift in Sources */,
 				DA9089251FD4C66000C1208A /* Arch.swift in Sources */,
@@ -1756,6 +1761,7 @@
 				DA91EB031FD62C1F0063560D /* ViewAlert+Constants.swift in Sources */,
 				DAE7C3801FE0A9B3003190FF /* Build+Computed.swift in Sources */,
 				DA71D67D1FDA4B91003A33E1 /* ViewNewAddListFooterInfo+Constants.swift in Sources */,
+				DA74F0C81FE614BA00F45310 /* FormatIngredientTypeCups.swift in Sources */,
 				DA71D6831FDA50C4003A33E1 /* ViewNewAddList+Constants.swift in Sources */,
 				DA9089851FD4CE2E00C1208A /* ControllerTransition.swift in Sources */,
 				DA71D66F1FDA44A2003A33E1 /* ViewNewAddListFooterIngredients.swift in Sources */,
