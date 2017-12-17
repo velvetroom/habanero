@@ -129,6 +129,10 @@
 		DA74F0BC1FE6121B00F45310 /* Format+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74F0BA1FE6121B00F45310 /* Format+Constants.swift */; };
 		DA74F0BE1FE6127100F45310 /* Format+Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74F0BD1FE6127100F45310 /* Format+Ingredient.swift */; };
 		DA74F0BF1FE6127100F45310 /* Format+Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74F0BD1FE6127100F45310 /* Format+Ingredient.swift */; };
+		DA74F0C11FE612E200F45310 /* FormatIngredientTypeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74F0C01FE612E200F45310 /* FormatIngredientTypeProtocol.swift */; };
+		DA74F0C21FE612E200F45310 /* FormatIngredientTypeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74F0C01FE612E200F45310 /* FormatIngredientTypeProtocol.swift */; };
+		DA74F0C41FE6139F00F45310 /* Format+Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74F0C31FE6139F00F45310 /* Format+Duration.swift */; };
+		DA74F0C51FE6139F00F45310 /* Format+Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74F0C31FE6139F00F45310 /* Format+Duration.swift */; };
 		DA753DAB1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA753DAC1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA84C0EF1FD73F59008959EA /* ArchNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C0EE1FD73F59008959EA /* ArchNew.swift */; };
@@ -475,6 +479,8 @@
 		DA74F0B71FE611E500F45310 /* Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Format.swift; sourceTree = "<group>"; };
 		DA74F0BA1FE6121B00F45310 /* Format+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Format+Constants.swift"; sourceTree = "<group>"; };
 		DA74F0BD1FE6127100F45310 /* Format+Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Format+Ingredient.swift"; sourceTree = "<group>"; };
+		DA74F0C01FE612E200F45310 /* FormatIngredientTypeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatIngredientTypeProtocol.swift; sourceTree = "<group>"; };
+		DA74F0C31FE6139F00F45310 /* Format+Duration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Format+Duration.swift"; sourceTree = "<group>"; };
 		DA753DA91FD5EB96007E5BC5 /* Design */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Design; sourceTree = "<group>"; };
 		DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = generic.xcassets; sourceTree = "<group>"; };
 		DA84C0EE1FD73F59008959EA /* ArchNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNew.swift; sourceTree = "<group>"; };
@@ -794,6 +800,8 @@
 				DA74F0B71FE611E500F45310 /* Format.swift */,
 				DA74F0BA1FE6121B00F45310 /* Format+Constants.swift */,
 				DA74F0BD1FE6127100F45310 /* Format+Ingredient.swift */,
+				DA74F0C31FE6139F00F45310 /* Format+Duration.swift */,
+				DA74F0C01FE612E200F45310 /* FormatIngredientTypeProtocol.swift */,
 			);
 			path = Format;
 			sourceTree = "<group>";
@@ -1558,6 +1566,7 @@
 				DA91EB0C1FD62C1F0063560D /* ViewSliderBar.swift in Sources */,
 				DA177BF41FD7792C003B3836 /* ViewBar.swift in Sources */,
 				DAE7C3641FE0828C003190FF /* Analytics.swift in Sources */,
+				DA74F0C41FE6139F00F45310 /* Format+Duration.swift in Sources */,
 				DA9089281FD4C66000C1208A /* Menu+Constants.swift in Sources */,
 				DA91EB1E1FD62C1F0063560D /* ViewGradient+Constants.swift in Sources */,
 				DACF552F1FD7661E00069701 /* ExtensionUIColor.swift in Sources */,
@@ -1639,6 +1648,7 @@
 				DAE7C3741FE0990A003190FF /* CloudListProtocol+Default.swift in Sources */,
 				DACF55491FD7661E00069701 /* ExtensionUIFont+Constants.swift in Sources */,
 				DA9089221FD4C66000C1208A /* AppDelegate.swift in Sources */,
+				DA74F0C11FE612E200F45310 /* FormatIngredientTypeProtocol.swift in Sources */,
 				DAE7C35A1FE08281003190FF /* CloudProtocol.swift in Sources */,
 				DA90892D1FD4C66000C1208A /* Menu.swift in Sources */,
 				DACEB3A21FDC9C890089B3FE /* ViewCollectionCell.swift in Sources */,
@@ -1790,6 +1800,7 @@
 				DA71D6851FDA518E003A33E1 /* ViewNewAddList+Actions.swift in Sources */,
 				DA91EB051FD62C1F0063560D /* ViewCollection.swift in Sources */,
 				DA5A97CD1FD6061B006223BA /* MenuItemGeneric.swift in Sources */,
+				DA74F0C51FE6139F00F45310 /* Format+Duration.swift in Sources */,
 				DA3F0E941FDF4A450037C94D /* ViewNewAddIngredientListCell.swift in Sources */,
 				DAE7C3651FE0828C003190FF /* Analytics.swift in Sources */,
 				DAE7C33E1FE063D5003190FF /* ViewNewAddIngredientListFooter+Constants.swift in Sources */,
@@ -1839,6 +1850,7 @@
 				DA3F0EB61FD74C8700593B83 /* Menu+FactoryAdmin.swift in Sources */,
 				DA177C001FD78361003B3836 /* ViewNewListHeader+Constants.swift in Sources */,
 				DA34213C1FE472E0002B23DA /* ViewNewAddIngredientAmountBar+Constants.swift in Sources */,
+				DA74F0C21FE612E200F45310 /* FormatIngredientTypeProtocol.swift in Sources */,
 				DA91EB0B1FD62C1F0063560D /* ViewCollectionFlow.swift in Sources */,
 				DACF55381FD7661E00069701 /* ExtensionFileManager.swift in Sources */,
 				DA71D6711FDA44C0003A33E1 /* ViewNewAddListFooterSteps.swift in Sources */,
