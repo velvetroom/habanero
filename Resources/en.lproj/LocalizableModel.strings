@@ -10,4 +10,5 @@ Format_durationMinutes=" minutes";
 Format_durationHours=" hours";
 FormatIngredientTypeCups_suffix=" cups";
 FormatIngredientTypeGrams_kilograms=" kilograms";
+FormatIngredientTypeGrams_grams=" grams";
 FormatIngredientTypeGrams_pounds=" pounds";
