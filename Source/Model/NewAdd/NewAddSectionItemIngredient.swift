@@ -6,4 +6,5 @@ struct NewAddSectionItemIngredient:NewAddSectionItemProtocol
     let cellHeight:CGFloat = NewAdd.Constants.cellIngredientHeight
     let name:String
     let amount:String
+    weak var ingredient:BuildIngredient?
 }

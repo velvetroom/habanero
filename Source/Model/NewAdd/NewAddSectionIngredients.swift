@@ -53,7 +53,8 @@ struct NewAddSectionIngredients:NewAddSectionProtocol
             
             let item:NewAddSectionItemIngredient = NewAddSectionItemIngredient(
                 name:name,
-                amount:amount)
+                amount:amount,
+                ingredient:ingredient)
             
             items.append(item)
         }
