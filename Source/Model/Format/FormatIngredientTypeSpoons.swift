@@ -8,6 +8,22 @@ struct FormatIngredientTypeSpoons:FormatIngredientTypeProtocol
         buildIngredient:BuildIngredient,
         settings:Settings) -> String?
     {
-        return nil
+        guard
+            
+            let buildIngredient:BuildIngredientSpoons = buildIngredient as? BuildIngredientSpoons
+            
+        else
+        {
+            return nil
+        }
+        
+        let formatter:NumberFormatter = Format.factoryFormatter(
+            decimals:FormatIngredientTypeSpoons.Constants.maxDecimals)
+        formatter.positiveSuffix = String.localizedModel(key:"FormatIngredientTypeSpoons_suffix")
+        
+        let number:NSNumber = buildIngredient.spoons as NSNumber
+        let amount:String? = formatter.string(from:number)
+        
+        return amount
     }
 }

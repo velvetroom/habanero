@@ -14,3 +14,4 @@ FormatIngredientTypeGrams_grams=" grams";
 FormatIngredientTypeGrams_pounds=" pounds";
 FormatIngredientTypeGrams_ounces=" ounces";
 FormatIngredientTypeQuantity_suffix=" pieces";
+FormatIngredientTypeSpoons_suffix=" spoons";
