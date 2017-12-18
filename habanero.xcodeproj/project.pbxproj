@@ -72,6 +72,8 @@
 		DA5FFE611FE7701900A38154 /* NewAdd+Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FFE601FE7701900A38154 /* NewAdd+Ingredients.swift */; };
 		DA5FFE631FE7790000A38154 /* FormatIngredientTypeQuantity+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FFE621FE7790000A38154 /* FormatIngredientTypeQuantity+Constants.swift */; };
 		DA5FFE641FE7790000A38154 /* FormatIngredientTypeQuantity+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FFE621FE7790000A38154 /* FormatIngredientTypeQuantity+Constants.swift */; };
+		DA5FFE661FE779C300A38154 /* FormatIngredientTypeSpoons+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FFE651FE779C300A38154 /* FormatIngredientTypeSpoons+Constants.swift */; };
+		DA5FFE671FE779C300A38154 /* FormatIngredientTypeSpoons+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FFE651FE779C300A38154 /* FormatIngredientTypeSpoons+Constants.swift */; };
 		DA60428E1FE1EC2300758A2F /* ViewNewAddListCellIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60428D1FE1EC2300758A2F /* ViewNewAddListCellIngredient.swift */; };
 		DA6042901FE1EE4D00758A2F /* ViewNewAddListCellIngredient+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60428F1FE1EE4D00758A2F /* ViewNewAddListCellIngredient+Constants.swift */; };
 		DA6042951FE20CDC00758A2F /* BuildIngredient+Computed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6042941FE20CDC00758A2F /* BuildIngredient+Computed.swift */; };
@@ -453,6 +455,7 @@
 		DA5D71C71FDB56E200429F5D /* NewAddSectionItemInfoDuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddSectionItemInfoDuration.swift; sourceTree = "<group>"; };
 		DA5FFE601FE7701900A38154 /* NewAdd+Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Ingredients.swift"; sourceTree = "<group>"; };
 		DA5FFE621FE7790000A38154 /* FormatIngredientTypeQuantity+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormatIngredientTypeQuantity+Constants.swift"; sourceTree = "<group>"; };
+		DA5FFE651FE779C300A38154 /* FormatIngredientTypeSpoons+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormatIngredientTypeSpoons+Constants.swift"; sourceTree = "<group>"; };
 		DA60428D1FE1EC2300758A2F /* ViewNewAddListCellIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellIngredient.swift; sourceTree = "<group>"; };
 		DA60428F1FE1EE4D00758A2F /* ViewNewAddListCellIngredient+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddListCellIngredient+Constants.swift"; sourceTree = "<group>"; };
 		DA6042941FE20CDC00758A2F /* BuildIngredient+Computed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildIngredient+Computed.swift"; sourceTree = "<group>"; };
@@ -839,6 +842,7 @@
 				DA74F0CF1FE6156D00F45310 /* FormatIngredientTypeQuantity.swift */,
 				DA5FFE621FE7790000A38154 /* FormatIngredientTypeQuantity+Constants.swift */,
 				DA74F0D21FE6158A00F45310 /* FormatIngredientTypeSpoons.swift */,
+				DA5FFE651FE779C300A38154 /* FormatIngredientTypeSpoons+Constants.swift */,
 			);
 			path = Format;
 			sourceTree = "<group>";
@@ -1667,6 +1671,7 @@
 				DA91EB141FD62C1F0063560D /* ViewGradient.swift in Sources */,
 				DA9089211FD4C66000C1208A /* ControllerParent+Transitions.swift in Sources */,
 				DAE5E4891FE48F1D00CC40BA /* Home+Settings.swift in Sources */,
+				DA5FFE661FE779C300A38154 /* FormatIngredientTypeSpoons+Constants.swift in Sources */,
 				DAE7C36E1FE093D1003190FF /* Cloud+Load.swift in Sources */,
 				DAE7C3521FE08281003190FF /* Cloud+Factory.swift in Sources */,
 				DA91EB1C1FD62C1F0063560D /* ViewSpinner.swift in Sources */,
@@ -1825,6 +1830,7 @@
 				DACF55301FD7661E00069701 /* ExtensionUIColor.swift in Sources */,
 				DA71D6871FDA58E3003A33E1 /* ViewNewAddListCellInfoTitle.swift in Sources */,
 				DA8752C31FE3844300AE74F5 /* ViewNewAddIngredientAmountInput.swift in Sources */,
+				DA5FFE671FE779C300A38154 /* FormatIngredientTypeSpoons+Constants.swift in Sources */,
 				DAE7C3401FE076EC003190FF /* ViewNewAddIngredientList+Actions.swift in Sources */,
 				DA8752D31FE3888100AE74F5 /* NewAddIngredient+Validate.swift in Sources */,
 				DA5FFE611FE7701900A38154 /* NewAdd+Ingredients.swift in Sources */,
