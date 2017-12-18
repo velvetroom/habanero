@@ -69,6 +69,7 @@
 		DA5D71C41FDB566D00429F5D /* ViewNewAddListCellInfoDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D71C31FDB566D00429F5D /* ViewNewAddListCellInfoDuration.swift */; };
 		DA5D71C61FDB56AD00429F5D /* ViewNewAddListCellInfoDuration+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D71C51FDB56AD00429F5D /* ViewNewAddListCellInfoDuration+Constants.swift */; };
 		DA5D71C81FDB56E200429F5D /* NewAddSectionItemInfoDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D71C71FDB56E200429F5D /* NewAddSectionItemInfoDuration.swift */; };
+		DA5FFE611FE7701900A38154 /* NewAdd+Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FFE601FE7701900A38154 /* NewAdd+Ingredients.swift */; };
 		DA60428E1FE1EC2300758A2F /* ViewNewAddListCellIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60428D1FE1EC2300758A2F /* ViewNewAddListCellIngredient.swift */; };
 		DA6042901FE1EE4D00758A2F /* ViewNewAddListCellIngredient+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60428F1FE1EE4D00758A2F /* ViewNewAddListCellIngredient+Constants.swift */; };
 		DA6042951FE20CDC00758A2F /* BuildIngredient+Computed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6042941FE20CDC00758A2F /* BuildIngredient+Computed.swift */; };
@@ -448,6 +449,7 @@
 		DA5D71C31FDB566D00429F5D /* ViewNewAddListCellInfoDuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellInfoDuration.swift; sourceTree = "<group>"; };
 		DA5D71C51FDB56AD00429F5D /* ViewNewAddListCellInfoDuration+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddListCellInfoDuration+Constants.swift"; sourceTree = "<group>"; };
 		DA5D71C71FDB56E200429F5D /* NewAddSectionItemInfoDuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddSectionItemInfoDuration.swift; sourceTree = "<group>"; };
+		DA5FFE601FE7701900A38154 /* NewAdd+Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Ingredients.swift"; sourceTree = "<group>"; };
 		DA60428D1FE1EC2300758A2F /* ViewNewAddListCellIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellIngredient.swift; sourceTree = "<group>"; };
 		DA60428F1FE1EE4D00758A2F /* ViewNewAddListCellIngredient+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddListCellIngredient+Constants.swift"; sourceTree = "<group>"; };
 		DA6042941FE20CDC00758A2F /* BuildIngredient+Computed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildIngredient+Computed.swift"; sourceTree = "<group>"; };
@@ -1282,6 +1284,7 @@
 				DA58C6E61FD9E216000E6F30 /* NewAdd+Factory.swift */,
 				DAA333DF1FDB2694002D766C /* NewAdd+Load.swift */,
 				DAA333E11FDB29D8002D766C /* NewAdd+Info.swift */,
+				DA5FFE601FE7701900A38154 /* NewAdd+Ingredients.swift */,
 				DA71D6721FDA44E2003A33E1 /* NewAddSectionProtocol.swift */,
 				DA58C6E41FD9E12A000E6F30 /* NewAddSectionItemProtocol.swift */,
 				DA71D6761FDA4539003A33E1 /* NewAddSectionInfo.swift */,
@@ -1819,6 +1822,7 @@
 				DA8752C31FE3844300AE74F5 /* ViewNewAddIngredientAmountInput.swift in Sources */,
 				DAE7C3401FE076EC003190FF /* ViewNewAddIngredientList+Actions.swift in Sources */,
 				DA8752D31FE3888100AE74F5 /* NewAddIngredient+Validate.swift in Sources */,
+				DA5FFE611FE7701900A38154 /* NewAdd+Ingredients.swift in Sources */,
 				DA16F15A1FDFA78300EB6877 /* ViewNewAddIngredientListFooter.swift in Sources */,
 				DA91EB131FD62C1F0063560D /* ViewSpinner+Constants.swift in Sources */,
 				DA74F0AF1FE60A1300F45310 /* BuildIngredientMililitres+Computed.swift in Sources */,
