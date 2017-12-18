@@ -20,6 +20,7 @@ struct FormatIngredientTypeCups:FormatIngredientTypeProtocol
         let formatter:NumberFormatter = Format.factoryFormatter(
             decimals:FormatIngredientTypeCups.Constants.maxDecimals)
         formatter.positiveSuffix = String.localizedModel(key:"FormatIngredientTypeCups_suffix")
+        
         let number:NSNumber = buildIngredient.cups as NSNumber
         let amount:String? = formatter.string(from:number)
         
