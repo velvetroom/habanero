@@ -8,7 +8,7 @@ struct FormatIngredientTypeMililitres:FormatIngredientTypeProtocol
         {
             let map:[SettingsMetrics : ((Int) -> (String?))] = [
                 SettingsMetrics.international : FormatIngredientTypeMililitres.factoryMililitres,
-                SettingsMetrics.imperial : FormatIngredientTypeMililitres.factoryFluidOunces]
+                SettingsMetrics.us : FormatIngredientTypeMililitres.factoryFluidOunces]
             
             return map
         }
@@ -20,7 +20,7 @@ struct FormatIngredientTypeMililitres:FormatIngredientTypeProtocol
         {
             let map:[SettingsMetrics : ((Int) -> (String?))] = [
                 SettingsMetrics.international : FormatIngredientTypeMililitres.factoryLitres,
-                SettingsMetrics.imperial : FormatIngredientTypeMililitres.factoryGallons]
+                SettingsMetrics.us : FormatIngredientTypeMililitres.factoryGallons]
             
             return map
         }
