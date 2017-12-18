@@ -16,12 +16,6 @@ extension NewAdd
             return
         }
         
-        self.database?.fetch
-            { (ingredients:[BuildIngredient]) in
-            
-                print("total ingredients \(ingredients.count)")
-        }
-        
         self.sections = NewAdd.factorySections(
             build:build,
             settings:settings)
