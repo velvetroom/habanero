@@ -11,7 +11,7 @@ extension ControllerNewAdd
         self.model.removeIngredient(item:item)
         { [weak self] in
             
-            self?.updateSections()
+            self?.loadModel()
         }
     }
     

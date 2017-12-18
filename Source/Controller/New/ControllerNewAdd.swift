@@ -22,21 +22,28 @@ final class ControllerNewAdd:Controller<ArchNewAdd>
     override func viewDidAppear(_ animated:Bool)
     {
         super.viewDidAppear(animated)
-        self.viewMain.viewList.isUserInteractionEnabled = false
         
+        self.viewMain.viewList.isUserInteractionEnabled = false
+        self.loadModel()
+    }
+    
+    //MARK: private
+    
+    private func updateSections()
+    {
+        self.viewMain.viewList.isUserInteractionEnabled = true
+        self.viewMain.viewList.collectionView.reloadData()
+    }
+    
+    //MARK: internal
+    
+    func loadModel()
+    {
         self.model.load
         { [weak self] in
             
             self?.updateSections()
         }
-    }
-    
-    //MARK: internal
-    
-    func updateSections()
-    {
-        self.viewMain.viewList.isUserInteractionEnabled = true
-        self.viewMain.viewList.collectionView.reloadData()
     }
     
     func transitionBack()

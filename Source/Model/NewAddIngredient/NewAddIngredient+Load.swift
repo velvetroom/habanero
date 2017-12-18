@@ -9,11 +9,24 @@ extension NewAddIngredient
         self.cloud.loadList
         { [weak self] (ingredientList:IngredientList?, error:Error?) in
             
+            let ingredients:[Ingredient]? = ingredientList?.items.sorted
+            { (itemA:Ingredient, itemB:Ingredient) -> Bool in
+                
+                let comparisonResult:ComparisonResult = itemA.name.compare(itemB.name)
+                
+                if comparisonResult == ComparisonResult.orderedDescending
+                {
+                    return false
+                }
+                
+                return true
+            }
+            
             DispatchQueue.main.async
             { [weak self] in
                 
                 self?.loadCompleted(
-                    ingredientList:ingredientList,
+                    ingredients:ingredients,
                     error:error,
                     completion:completion)
             }
@@ -21,14 +34,14 @@ extension NewAddIngredient
     }
     
     private func loadCompleted(
-        ingredientList:IngredientList?,
+        ingredients:[Ingredient]?,
         error:Error?,
         completion:((Error?) -> ()))
     {
         guard
         
             error == nil,
-            let ingredientList:IngredientList = ingredientList
+            let ingredients:[Ingredient] = ingredients
         
         else
         {
@@ -37,7 +50,7 @@ extension NewAddIngredient
             return
         }
         
-        self.updateItems(ingredients:ingredientList.items)
+        self.updateItems(ingredients:ingredients)
         
         completion(nil)
     }
