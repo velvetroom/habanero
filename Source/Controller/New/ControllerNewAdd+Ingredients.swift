@@ -6,7 +6,13 @@ extension ControllerNewAdd
     
     func removeIngredient(item:NewAddSectionItemIngredient)
     {
+        self.viewMain.viewList.isUserInteractionEnabled = false
         
+        self.model.removeIngredient(item:item)
+        { [weak self] in
+            
+            self?.updateSections()
+        }
     }
     
     func transitionAddIngredient()

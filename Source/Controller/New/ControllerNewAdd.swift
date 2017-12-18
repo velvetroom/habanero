@@ -22,6 +22,7 @@ final class ControllerNewAdd:Controller<ArchNewAdd>
     override func viewDidAppear(_ animated:Bool)
     {
         super.viewDidAppear(animated)
+        self.viewMain.viewList.isUserInteractionEnabled = false
         
         self.model.load
         { [weak self] in
@@ -30,14 +31,13 @@ final class ControllerNewAdd:Controller<ArchNewAdd>
         }
     }
     
-    //MARK: private
+    //MARK: internal
     
-    private func updateSections()
+    func updateSections()
     {
+        self.viewMain.viewList.isUserInteractionEnabled = true
         self.viewMain.viewList.collectionView.reloadData()
     }
-    
-    //MARK: internal
     
     func transitionBack()
     {
