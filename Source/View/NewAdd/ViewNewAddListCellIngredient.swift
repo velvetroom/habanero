@@ -3,6 +3,7 @@ import UIKit
 final class ViewNewAddListCellIngredient:ViewNewAddListCell
 {
     private weak var label:UILabel!
+    private var model:NewAddSectionItemIngredient?
     private let attributesName:[NSAttributedStringKey:Any]
     private let attributesAmount:[NSAttributedStringKey:Any]
     
@@ -47,6 +48,10 @@ final class ViewNewAddListCellIngredient:ViewNewAddListCell
         removeButton.imageView!.tintColor = UIColor(white:0, alpha:0.2)
         removeButton.imageView!.clipsToBounds = true
         removeButton.imageView!.contentMode = UIViewContentMode.center
+        removeButton.addTarget(
+            self,
+            action:#selector(self.selectorRemove(sender:)),
+            for:UIControlEvents.touchUpInside)
         
         self.addSubview(label)
         self.addSubview(removeButton)
@@ -90,7 +95,25 @@ final class ViewNewAddListCellIngredient:ViewNewAddListCell
             return
         }
         
+        self.model = model
         self.showInfo(model:model)
+    }
+    
+    //MARK: selectors
+    
+    @objc
+    private func selectorRemove(sender button:UIButton)
+    {
+        guard
+        
+            let model:NewAddSectionItemIngredient = self.model
+        
+        else
+        {
+            return
+        }
+        
+        self.controller?.removeIngredient(item:model)
     }
     
     //MARK: private

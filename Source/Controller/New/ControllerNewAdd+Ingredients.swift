@@ -4,6 +4,11 @@ extension ControllerNewAdd
 {
     //MARK: internal
     
+    func removeIngredient(item:NewAddSectionItemIngredient)
+    {
+        
+    }
+    
     func transitionAddIngredient()
     {
         guard
