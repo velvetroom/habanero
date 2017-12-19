@@ -15,7 +15,7 @@ struct NewAddSectionInfo:NewAddSectionProtocol
         self.title = String.localizedModel(key:"NewAdd_infoSectionTitle")
         self.footerReusableIdentifier = ViewNewAddListFooterInfo.reusableIdentifier
         self.headerHeight = NewAdd.Constants.headerInfoHeight
-        self.footerHeight = NewAdd.Constants.footerStepsHeight
+        self.footerHeight = NewAdd.Constants.footerInfoHeight
         
         self.items = NewAddSectionInfo.factoryItems(build:build)
     }
