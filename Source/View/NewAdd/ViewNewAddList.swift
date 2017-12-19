@@ -19,6 +19,11 @@ final class ViewNewAddList:ViewCollection<ArchNewAdd, ViewNewAddListCell, ViewCo
         
         self.flow.minimumLineSpacing = ViewGlobal.Constants.interCellSpace
         self.flow.minimumInteritemSpacing = ViewGlobal.Constants.interCellSpace
+        
+        let longPressGesture:UILongPressGestureRecognizer = UILongPressGestureRecognizer(
+            target:self,
+            action:#selector(self.selectorLongPressGesture(sender:)))
+        self.collectionView.addGestureRecognizer(longPressGesture)
     }
     
     override func collectionView(
@@ -129,5 +134,13 @@ final class ViewNewAddList:ViewCollection<ArchNewAdd, ViewNewAddListCell, ViewCo
         shouldHighlightItemAt indexPath:IndexPath) -> Bool
     {
         return false
+    }
+    
+    //MARK: selectors
+    
+    @objc
+    private func selectorLongPressGesture(sender gesture:UILongPressGestureRecognizer)
+    {
+        
     }
 }
