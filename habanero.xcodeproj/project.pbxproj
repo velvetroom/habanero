@@ -33,6 +33,7 @@
 		DA177C001FD78361003B3836 /* ViewNewListHeader+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA177BFF1FD78361003B3836 /* ViewNewListHeader+Constants.swift */; };
 		DA177C041FD784AF003B3836 /* ViewNewList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA177C031FD784AF003B3836 /* ViewNewList+Constants.swift */; };
 		DA1F04F01FE8C05F00DF03A8 /* ViewNewAddListFooterSteps+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1F04EF1FE8C05F00DF03A8 /* ViewNewAddListFooterSteps+Constants.swift */; };
+		DA1F04F21FE8C0BF00DF03A8 /* ControllerNewAdd+Steps.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1F04F11FE8C0BF00DF03A8 /* ControllerNewAdd+Steps.swift */; };
 		DA34213C1FE472E0002B23DA /* ViewNewAddIngredientAmountBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34213B1FE472E0002B23DA /* ViewNewAddIngredientAmountBar+Constants.swift */; };
 		DA34213E1FE476D3002B23DA /* NewAddIngredientAmount+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34213D1FE476D3002B23DA /* NewAddIngredientAmount+Create.swift */; };
 		DA3421401FE47B40002B23DA /* NewAddIngredientAmountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34213F1FE47B40002B23DA /* NewAddIngredientAmountType.swift */; };
@@ -426,6 +427,7 @@
 		DA177BFF1FD78361003B3836 /* ViewNewListHeader+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewListHeader+Constants.swift"; sourceTree = "<group>"; };
 		DA177C031FD784AF003B3836 /* ViewNewList+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewList+Constants.swift"; sourceTree = "<group>"; };
 		DA1F04EF1FE8C05F00DF03A8 /* ViewNewAddListFooterSteps+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddListFooterSteps+Constants.swift"; sourceTree = "<group>"; };
+		DA1F04F11FE8C0BF00DF03A8 /* ControllerNewAdd+Steps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerNewAdd+Steps.swift"; sourceTree = "<group>"; };
 		DA34213B1FE472E0002B23DA /* ViewNewAddIngredientAmountBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientAmountBar+Constants.swift"; sourceTree = "<group>"; };
 		DA34213D1FE476D3002B23DA /* NewAddIngredientAmount+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddIngredientAmount+Create.swift"; sourceTree = "<group>"; };
 		DA34213F1FE47B40002B23DA /* NewAddIngredientAmountType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddIngredientAmountType.swift; sourceTree = "<group>"; };
@@ -860,6 +862,7 @@
 				DAF949F51FD8BC6F001BA32E /* ControllerNewAdd.swift */,
 				DA71D68C1FDA6262003A33E1 /* ControllerNewAdd+Info.swift */,
 				DA16F1631FDFB4C000EB6877 /* ControllerNewAdd+Ingredients.swift */,
+				DA1F04F11FE8C0BF00DF03A8 /* ControllerNewAdd+Steps.swift */,
 				DA3F0E891FDF45350037C94D /* ControllerNewAddIngredient.swift */,
 				DAE7C3791FE0A2E1003190FF /* ControllerNewAddIngredient+Create.swift */,
 				DAE7C37B1FE0A7F6003190FF /* ControllerNewAddIngredient+Select.swift */,
@@ -1891,6 +1894,7 @@
 				DA91EB1D1FD62C1F0063560D /* ViewSpinner.swift in Sources */,
 				DAE7C3781FE0996B003190FF /* IngredientList.swift in Sources */,
 				DACF552C1FD7661E00069701 /* ExtensionDictionary.swift in Sources */,
+				DA1F04F21FE8C0BF00DF03A8 /* ControllerNewAdd+Steps.swift in Sources */,
 				DA6042901FE1EE4D00758A2F /* ViewNewAddListCellIngredient+Constants.swift in Sources */,
 				DA91EB0F1FD62C1F0063560D /* ViewBlur.swift in Sources */,
 				DA91EB251FD62D700063560D /* ViewControllableProtocol.swift in Sources */,
