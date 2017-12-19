@@ -25,7 +25,7 @@ extension Format
     {
         guard
             
-            let formatter:FormatIngredientTypeProtocol.Type = Format.typeMap[buildIngredient.ingredientType]
+            let formatter:FormatIngredientTypeProtocol.Type = Format.typeMap[buildIngredient.ingredientAmountType]
         
         else
         {

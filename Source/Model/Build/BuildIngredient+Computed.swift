@@ -2,14 +2,14 @@ import Foundation
 
 extension BuildIngredient
 {
-    var ingredientType:IngredientAmountType
+    var ingredientAmountType:IngredientAmountType
     {
         get
         {
             guard
             
                 let ingredientType:IngredientAmountType = IngredientAmountType(
-                    rawValue:self.rawIngredientType)
+                    rawValue:self.rawIngredientAmountType)
             
             else
             {

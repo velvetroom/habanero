@@ -2,7 +2,7 @@ import Foundation
 
 extension BuildIngredientSpoons
 {
-    public override var rawIngredientType:Int16
+    public override var rawIngredientAmountType:Int16
     {
         get
         {
