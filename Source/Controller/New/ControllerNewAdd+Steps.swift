@@ -26,4 +26,17 @@ extension ControllerNewAdd
             controller:controller,
             vertical:ControllerTransition.Vertical.bottom)
     }
+    
+    func moveStepFrom(
+        origin:IndexPath,
+        to destination:IndexPath)
+    {
+        self.model.moveStepFrom(
+            origin:origin,
+            to:destination)
+        { [weak self] in
+            
+            self?.loadModel()
+        }
+    }
 }

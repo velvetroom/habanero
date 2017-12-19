@@ -144,7 +144,7 @@ final class ViewNewAddList:
         moveItemAt sourceIndexPath:IndexPath,
         to destinationIndexPath:IndexPath)
     {
-        self.controller.model.moveStepFrom(
+        self.controller.moveStepFrom(
             origin:sourceIndexPath,
             to:destinationIndexPath)
     }
