@@ -5,6 +5,7 @@ ViewNewAddBar_labelTitle="Add Recipe";
 ViewNewAddListFooterInfo_buttonDelete="Delete";
 ViewNewAddListCellInfoTitle_labelTitle="Name";
 ViewNewAddListFooterIngredients_buttonAdd="Add ingredient";
+ViewNewAddListFooterSteps_buttonAdd="Add step";
 ViewNewAddIngredientListHeader_labelTitle="No ingredients";
 ViewNewAddIngredientListFooter_buttonTitle="Create ingredient";
 ViewNewAddIngredientAmountInput_textField="0";
