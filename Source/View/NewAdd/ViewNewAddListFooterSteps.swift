@@ -6,43 +6,73 @@ final class ViewNewAddListFooterSteps:ViewNewAddListFooter
     {
         super.factoryViews()
         
-        let buttonAdd:UIButton = UIButton()
-        buttonAdd.translatesAutoresizingMaskIntoConstraints = false
-        buttonAdd.setTitleColor(
-            UIColor.colourSuccess,
+        let buttonAddImage:UIButton = UIButton()
+        buttonAddImage.translatesAutoresizingMaskIntoConstraints = false
+        buttonAddImage.setImage(
+            #imageLiteral(resourceName: "assetNewStepImage").withRenderingMode(UIImageRenderingMode.alwaysTemplate),
             for:UIControlState.normal)
-        buttonAdd.setTitleColor(
-            UIColor(white:0, alpha:0.2),
+        buttonAddImage.setImage(
+            #imageLiteral(resourceName: "assetNewStepImage").withRenderingMode(UIImageRenderingMode.alwaysOriginal),
             for:UIControlState.highlighted)
-        buttonAdd.setTitle(
-            String.localizedView(key:"ViewNewAddListFooterSteps_buttonAdd"),
-            for:UIControlState())
-        buttonAdd.titleLabel!.font = UIFont.medium(
-            size:ViewNewAddListFooterSteps.Constants.buttonFontSize)
-        buttonAdd.addTarget(
-            self,
-            action:#selector(self.selectorButtonAdd(sender:)),
-            for:UIControlEvents.touchUpInside)
-        self.addSubview(buttonAdd)
+        buttonAddImage.imageView!.clipsToBounds = true
+        buttonAddImage.imageView!.contentMode = UIViewContentMode.center
+        buttonAddImage.imageView!.tintColor = UIColor.colourSuccess
+        
+        let buttonAddText:UIButton = UIButton()
+        buttonAddText.translatesAutoresizingMaskIntoConstraints = false
+        buttonAddText.setImage(
+            #imageLiteral(resourceName: "assetNewStepText").withRenderingMode(UIImageRenderingMode.alwaysTemplate),
+            for:UIControlState.normal)
+        buttonAddText.setImage(
+            #imageLiteral(resourceName: "assetNewStepText").withRenderingMode(UIImageRenderingMode.alwaysOriginal),
+            for:UIControlState.highlighted)
+        buttonAddText.imageView!.clipsToBounds = true
+        buttonAddText.imageView!.contentMode = UIViewContentMode.center
+        buttonAddText.imageView!.tintColor = UIColor.colourSuccess
+        
+        self.addSubview(buttonAddImage)
+        self.addSubview(buttonAddText)
         
         NSLayoutConstraint.topToTop(
-            view:buttonAdd,
-            toView:self)
+            view:buttonAddImage,
+            toView:self,
+            constant:ViewNewAddListFooterSteps.Constants.buttonTop)
         NSLayoutConstraint.height(
-            view:buttonAdd,
+            view:buttonAddImage,
             constant:ViewNewAddListFooterSteps.Constants.buttonHeight)
-        NSLayoutConstraint.width(
-            view:buttonAdd,
-            constant:ViewNewAddListFooterSteps.Constants.buttonWidth)
         NSLayoutConstraint.leftToLeft(
-            view:buttonAdd,
-            toView:self)
+            view:buttonAddImage,
+            toView:self,
+            constant:ViewNewAddListFooterSteps.Constants.buttonLeft)
+        NSLayoutConstraint.width(
+            view:buttonAddImage,
+            constant:ViewNewAddListFooterSteps.Constants.buttonWidth)
+        
+        NSLayoutConstraint.topToTop(
+            view:buttonAddText,
+            toView:self,
+            constant:ViewNewAddListFooterSteps.Constants.buttonTop)
+        NSLayoutConstraint.height(
+            view:buttonAddText,
+            constant:ViewNewAddListFooterSteps.Constants.buttonHeight)
+        NSLayoutConstraint.leftToRight(
+            view:buttonAddText,
+            toView:buttonAddImage)
+        NSLayoutConstraint.width(
+            view:buttonAddText,
+            constant:ViewNewAddListFooterSteps.Constants.buttonWidth)
     }
     
     //MARK: selectors
     
     @objc
-    private func selectorButtonAdd(sender button:UIButton)
+    private func selectorButtonAddImage(sender button:UIButton)
+    {
+        self.controller?.transitionAddStep()
+    }
+    
+    @objc
+    private func selectorButtonAddText(sender button:UIButton)
     {
         self.controller?.transitionAddStep()
     }
