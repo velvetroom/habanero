@@ -11,4 +11,14 @@ extension Build
             return list
         }
     }
+    
+    var stepList:[BuildStep]?
+    {
+        get
+        {
+            let list:[BuildStep]? = self.steps?.array as? [BuildStep]
+            
+            return list
+        }
+    }
 }
