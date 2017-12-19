@@ -206,4 +206,9 @@ class ViewCollection<A, Cell:ViewCollectionCell, Flow:UICollectionViewFlowLayout
     func collectionView(
         _ collectionView:UICollectionView,
         didDeselectItemAt indexPath:IndexPath) { }
+    
+    func collectionView(
+        _ collectionView:UICollectionView,
+        moveItemAt sourceIndexPath:IndexPath,
+        to destinationIndexPath:IndexPath) { }
 }
