@@ -139,6 +139,16 @@ final class ViewNewAddList:
         return false
     }
     
+    override func collectionView(
+        _ collectionView:UICollectionView,
+        moveItemAt sourceIndexPath:IndexPath,
+        to destinationIndexPath:IndexPath)
+    {
+        self.controller.model.moveStepFrom(
+            origin:sourceIndexPath,
+            to:destinationIndexPath)
+    }
+    
     //MARK: selectors
     
     @objc
