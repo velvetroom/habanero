@@ -5,6 +5,7 @@ struct NewAddSectionInfo:NewAddSectionProtocol
     let title:String
     let footerReusableIdentifier:String
     let headerHeight:CGFloat
+    let footerHeight:CGFloat
     let items:[NewAddSectionItemProtocol]
 
     init(
@@ -14,6 +15,8 @@ struct NewAddSectionInfo:NewAddSectionProtocol
         self.title = String.localizedModel(key:"NewAdd_infoSectionTitle")
         self.footerReusableIdentifier = ViewNewAddListFooterInfo.reusableIdentifier
         self.headerHeight = NewAdd.Constants.headerInfoHeight
+        self.footerHeight = NewAdd.Constants.footerStepsHeight
+        
         self.items = NewAddSectionInfo.factoryItems(build:build)
     }
     

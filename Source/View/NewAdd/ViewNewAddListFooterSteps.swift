@@ -18,19 +18,22 @@ final class ViewNewAddListFooterSteps:ViewNewAddListFooter
             String.localizedView(key:"ViewNewAddListFooterSteps_buttonAdd"),
             for:UIControlState())
         buttonAdd.titleLabel!.font = UIFont.medium(
-            size:ViewNewAddListFooterIngredients.Constants.buttonFontSize)
+            size:ViewNewAddListFooterSteps.Constants.buttonFontSize)
         buttonAdd.addTarget(
             self,
             action:#selector(self.selectorButtonAdd(sender:)),
             for:UIControlEvents.touchUpInside)
         self.addSubview(buttonAdd)
         
-        NSLayoutConstraint.equalsVertical(
+        NSLayoutConstraint.topToTop(
             view:buttonAdd,
             toView:self)
+        NSLayoutConstraint.height(
+            view:buttonAdd,
+            constant:ViewNewAddListFooterSteps.Constants.buttonHeight)
         NSLayoutConstraint.width(
             view:buttonAdd,
-            constant:ViewNewAddListFooterIngredients.Constants.buttonWidth)
+            constant:ViewNewAddListFooterSteps.Constants.buttonWidth)
         NSLayoutConstraint.leftToLeft(
             view:buttonAdd,
             toView:self)
