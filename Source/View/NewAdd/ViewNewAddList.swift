@@ -151,19 +151,8 @@ final class ViewNewAddList:
     
     override func gestureRecognizerShouldBegin(_ gestureRecognizer:UIGestureRecognizer) -> Bool
     {
-        let location:CGPoint = gestureRecognizer.location(in:self.collectionView)
+        let should:Bool = self.isDraggableLocation(gesture:gestureRecognizer)
         
-        guard
-        
-            let indexPath:IndexPath = self.collectionView.indexPathForItem(at:location),
-            let cell:UICollectionViewCell = self.collectionView.cellForItem(at:indexPath),
-            cell is ViewNewAddListCellDraggrableProtocol == true
-        
-        else
-        {
-            return false
-        }
-        
-        return true
+        return should
     }
 }
