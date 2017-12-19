@@ -8,7 +8,7 @@ struct NewAddSectionSteps:NewAddSectionProtocol
         {
             let map:[RecipeStepType:((BuildStep) -> (NewAddSectionItemProtocol?))] = [
                 RecipeStepType.image : NewAddSectionSteps.factoryStepImage,
-                RecipeStepType.text : NewAddSectionSteps.factoryStepText,]
+                RecipeStepType.text : NewAddSectionSteps.factoryStepText]
             
             return map
         }
@@ -29,7 +29,7 @@ struct NewAddSectionSteps:NewAddSectionProtocol
         self.headerHeight = NewAdd.Constants.headerStepsHeight
         self.footerHeight = NewAdd.Constants.footerStepsHeight
         
-        self.items = []
+        self.items = NewAddSectionSteps.factoryItems(build:build)
     }
     
     //MARK: private
