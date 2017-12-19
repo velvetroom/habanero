@@ -6,6 +6,14 @@ final class ViewNewAddListFooterSteps:ViewNewAddListFooter
     {
         super.factoryViews()
         
+        let labelTitle:UILabel = UILabel()
+        labelTitle.isUserInteractionEnabled = false
+        labelTitle.translatesAutoresizingMaskIntoConstraints = false
+        labelTitle.backgroundColor = UIColor.clear
+        labelTitle.font = UIFont.regular(size:ViewNewAddListFooterSteps.Constants.titleFontSize)
+        labelTitle.textColor = UIColor.colourBackgroundDark
+        labelTitle.text = String.localizedView(key:"ViewNewAddListFooterSteps_labelTitle")
+        
         let buttonAddImage:UIButton = UIButton()
         buttonAddImage.translatesAutoresizingMaskIntoConstraints = false
         buttonAddImage.setImage(
@@ -38,8 +46,23 @@ final class ViewNewAddListFooterSteps:ViewNewAddListFooter
             action:#selector(self.selectorButtonAddText(sender:)),
             for:UIControlEvents.touchUpInside)
         
+        self.addSubview(labelTitle)
         self.addSubview(buttonAddImage)
         self.addSubview(buttonAddText)
+        
+        NSLayoutConstraint.topToTop(
+            view:labelTitle,
+            toView:self,
+            constant:ViewNewAddListFooterSteps.Constants.buttonTop)
+        NSLayoutConstraint.height(
+            view:labelTitle,
+            constant:ViewNewAddListFooterSteps.Constants.buttonHeight)
+        NSLayoutConstraint.leftToLeft(
+            view:labelTitle,
+            toView:self,
+            constant:ViewNewAddListFooterSteps.Constants.titleLeft)
+        NSLayoutConstraint.widthGreaterOrEqual(
+            view:buttonAddImage)
         
         NSLayoutConstraint.topToTop(
             view:buttonAddImage,
@@ -48,9 +71,9 @@ final class ViewNewAddListFooterSteps:ViewNewAddListFooter
         NSLayoutConstraint.height(
             view:buttonAddImage,
             constant:ViewNewAddListFooterSteps.Constants.buttonHeight)
-        NSLayoutConstraint.leftToLeft(
+        NSLayoutConstraint.leftToRight(
             view:buttonAddImage,
-            toView:self,
+            toView:labelTitle,
             constant:ViewNewAddListFooterSteps.Constants.buttonLeft)
         NSLayoutConstraint.width(
             view:buttonAddImage,
