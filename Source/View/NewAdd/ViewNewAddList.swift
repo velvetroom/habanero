@@ -1,6 +1,8 @@
 import UIKit
 
-final class ViewNewAddList:ViewCollection<ArchNewAdd, ViewNewAddListCell, ViewCollectionFlow>
+final class ViewNewAddList:
+    ViewCollection<ArchNewAdd, ViewNewAddListCell, ViewCollectionFlow>,
+    UIGestureRecognizerDelegate
 {
     override func factoryViews()
     {
@@ -23,6 +25,7 @@ final class ViewNewAddList:ViewCollection<ArchNewAdd, ViewNewAddListCell, ViewCo
         let longPressGesture:UILongPressGestureRecognizer = UILongPressGestureRecognizer(
             target:self,
             action:#selector(self.selectorLongPressGesture(sender:)))
+        longPressGesture.delegate = self
         self.collectionView.addGestureRecognizer(longPressGesture)
     }
     
@@ -141,6 +144,26 @@ final class ViewNewAddList:ViewCollection<ArchNewAdd, ViewNewAddListCell, ViewCo
     @objc
     private func selectorLongPressGesture(sender gesture:UILongPressGestureRecognizer)
     {
+        self.gestureReceived(gesture:gesture)
+    }
+    
+    //MARK: gesture delegate
+    
+    override func gestureRecognizerShouldBegin(_ gestureRecognizer:UIGestureRecognizer) -> Bool
+    {
+        let location:CGPoint = gestureRecognizer.location(in:self.collectionView)
         
+        guard
+        
+            let indexPath:IndexPath = self.collectionView.indexPathForItem(at:location),
+            let cell:UICollectionViewCell = self.collectionView.cellForItem(at:indexPath),
+            cell is ViewNewAddListCellDraggrableProtocol == true
+        
+        else
+        {
+            return false
+        }
+        
+        return true
     }
 }

@@ -1,6 +1,6 @@
 import UIKit
 
-final class ViewNewAddListCellStepText:ViewNewAddListCell
+final class ViewNewAddListCellStepText:ViewNewAddListCell, ViewNewAddListCellDraggrableProtocol
 {
     private weak var label:UILabel!
     
