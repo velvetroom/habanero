@@ -288,6 +288,7 @@
 		DA992D7A1FD61EE500A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA992D761FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift */; };
 		DAA26FAE1FE96B60005855F6 /* ViewNewAddList+Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA26FAD1FE96B60005855F6 /* ViewNewAddList+Gesture.swift */; };
 		DAA26FB01FE96F74005855F6 /* ViewNewAddListCellDraggableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA26FAF1FE96F74005855F6 /* ViewNewAddListCellDraggableProtocol.swift */; };
+		DAA26FB21FE97AE6005855F6 /* NewAdd+Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA26FB11FE97AE6005855F6 /* NewAdd+Move.swift */; };
 		DAA333D21FDB1453002D766C /* New+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333D11FDB1453002D766C /* New+Load.swift */; };
 		DAA333D71FDB17EA002D766C /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333D41FDB17EA002D766C /* Database.swift */; };
 		DAA333D81FDB17EA002D766C /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333D41FDB17EA002D766C /* Database.swift */; };
@@ -608,6 +609,7 @@
 		DA992D761FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MenuItemGenericProtocol+Default.swift"; sourceTree = "<group>"; };
 		DAA26FAD1FE96B60005855F6 /* ViewNewAddList+Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddList+Gesture.swift"; sourceTree = "<group>"; };
 		DAA26FAF1FE96F74005855F6 /* ViewNewAddListCellDraggableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellDraggableProtocol.swift; sourceTree = "<group>"; };
+		DAA26FB11FE97AE6005855F6 /* NewAdd+Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Move.swift"; sourceTree = "<group>"; };
 		DAA333D11FDB1453002D766C /* New+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "New+Load.swift"; sourceTree = "<group>"; };
 		DAA333D41FDB17EA002D766C /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		DAA333D51FDB17EA002D766C /* Database+Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database+Factory.swift"; sourceTree = "<group>"; };
@@ -1325,6 +1327,7 @@
 				DAA333E11FDB29D8002D766C /* NewAdd+Info.swift */,
 				DA5FFE601FE7701900A38154 /* NewAdd+Ingredients.swift */,
 				DA1F04F31FE8D26900DF03A8 /* NewAdd+Steps.swift */,
+				DAA26FB11FE97AE6005855F6 /* NewAdd+Move.swift */,
 				DA71D6721FDA44E2003A33E1 /* NewAddSectionProtocol.swift */,
 				DA58C6E41FD9E12A000E6F30 /* NewAddSectionItemProtocol.swift */,
 				DA71D6761FDA4539003A33E1 /* NewAddSectionInfo.swift */,
@@ -1875,6 +1878,7 @@
 				DA91EAEF1FD62C1F0063560D /* ViewMenu+Synth.swift in Sources */,
 				DA16F1621FDFB09900EB6877 /* ViewNewAddListFooterIngredients+Constants.swift in Sources */,
 				DAE7C36F1FE093D1003190FF /* Cloud+Load.swift in Sources */,
+				DAA26FB21FE97AE6005855F6 /* NewAdd+Move.swift in Sources */,
 				DACEB3B01FDCB35A0089B3FE /* ViewNewListCellSteps+Constants.swift in Sources */,
 				DA8752DD1FE3ABA700AE74F5 /* NewAddIngredientAmountTypeQuantity.swift in Sources */,
 				DA71D6901FDA633E003A33E1 /* ArchText.swift in Sources */,
