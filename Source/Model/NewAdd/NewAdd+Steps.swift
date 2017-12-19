@@ -10,6 +10,7 @@ extension NewAdd
     {
         guard
         
+            text.count > 0,
             let database:Database = self.database
         
         else
