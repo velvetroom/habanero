@@ -13,7 +13,7 @@ final class ViewNewAddListCellStepText:ViewNewAddListCell
         label.translatesAutoresizingMaskIntoConstraints = false
         label.backgroundColor = UIColor.clear
         label.numberOfLines = 0
-        label.font = UIFont.regular(size:)
+        label.font = UIFont.regular(size:ViewNewAddListCellStepText.Constants.fontSize)
         label.textColor = UIColor.colourBackgroundDark
         self.label = label
         
@@ -55,7 +55,7 @@ final class ViewNewAddListCellStepText:ViewNewAddListCell
             toView:self)
         NSLayoutConstraint.width(
             view:removeButton,
-            constant:ViewNewAddListCellIngredient.Constants.buttonWidth)
+            constant:ViewNewAddListCellStepText.Constants.buttonWidth)
     }
     
     override func config(
@@ -81,15 +81,15 @@ final class ViewNewAddListCellStepText:ViewNewAddListCell
     @objc
     private func selectorRemove(sender button:UIButton)
     {
-        guard
-            
-            let model:NewAddSectionItemIngredient = self.model
-            
-        else
-        {
-            return
-        }
-        
-        self.controller?.removeIngredient(item:model)
+//        guard
+//            
+//            let model:NewAddSectionItemIngredient = self.model
+//            
+//        else
+//        {
+//            return
+//        }
+//        
+//        self.controller?.removeIngredient(item:model)
     }
 }
