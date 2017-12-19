@@ -18,9 +18,6 @@ final class ViewNewAddList:ViewCollection<ArchNewAdd, ViewNewAddListCell, ViewCo
         
         self.flow.minimumLineSpacing = ViewGlobal.Constants.interCellSpace
         self.flow.minimumInteritemSpacing = ViewGlobal.Constants.interCellSpace
-        self.flow.footerReferenceSize = CGSize(
-            width:0,
-            height:ViewNewAddList.Constants.footerHeight)
     }
     
     override func collectionView(
@@ -33,6 +30,20 @@ final class ViewNewAddList:ViewCollection<ArchNewAdd, ViewNewAddListCell, ViewCo
         let size:CGSize = CGSize(
             width:0,
             height:sectionModel.headerHeight)
+        
+        return size
+    }
+    
+    override func collectionView(
+        _ collectionView:UICollectionView,
+        layout collectionViewLayout:UICollectionViewLayout,
+        referenceSizeForFooterInSection section:Int) -> CGSize
+    {
+        let sectionModel:NewAddSectionProtocol = self.sectionAtIndex(section:section)
+        
+        let size:CGSize = CGSize(
+            width:0,
+            height:sectionModel.footerHeight)
         
         return size
     }
