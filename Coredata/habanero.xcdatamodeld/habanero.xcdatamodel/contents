@@ -30,6 +30,7 @@
         <attribute name="spoons" attributeType="Integer 16" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <entity name="BuildStep" representedClassName="BuildStep" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="rawStepType" transient="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="text" attributeType="String" syncable="YES"/>
         <relationship name="build" maxCount="1" deletionRule="Nullify" destinationEntity="Build" inverseName="steps" inverseEntity="Build" syncable="YES"/>
     </entity>
@@ -48,7 +49,7 @@
         <element name="BuildIngredientMililitres" positionX="0" positionY="54" width="128" height="60"/>
         <element name="BuildIngredientQuantity" positionX="-36" positionY="36" width="128" height="60"/>
         <element name="BuildIngredientSpoons" positionX="18" positionY="72" width="128" height="60"/>
-        <element name="BuildStep" positionX="-63" positionY="9" width="128" height="75"/>
+        <element name="BuildStep" positionX="-63" positionY="9" width="128" height="90"/>
         <element name="BuildStepImage" positionX="-9" positionY="54" width="128" height="60"/>
         <element name="BuildStepText" positionX="-18" positionY="45" width="128" height="45"/>
         <element name="Settings" positionX="-18" positionY="45" width="128" height="60"/>
