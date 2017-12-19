@@ -4,11 +4,11 @@ extension ControllerNewAdd
 {
     //MARK: internal
     
-    func transitionAddStepImage()
+    func addStepImage()
     {
     }
     
-    func transitionAddStepText()
+    func addStepText()
     {
     }
 }

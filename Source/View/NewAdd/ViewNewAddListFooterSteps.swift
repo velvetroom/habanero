@@ -76,12 +76,12 @@ final class ViewNewAddListFooterSteps:ViewNewAddListFooter
     @objc
     private func selectorButtonAddImage(sender button:UIButton)
     {
-        self.controller?.transitionAddStepImage()
+        self.controller?.addStepImage()
     }
     
     @objc
     private func selectorButtonAddText(sender button:UIButton)
     {
-        self.controller?.transitionAddStepText()
+        self.controller?.addStepText()
     }
 }
