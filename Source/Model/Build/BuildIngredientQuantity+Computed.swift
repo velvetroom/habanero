@@ -6,7 +6,7 @@ extension BuildIngredientQuantity
     {
         get
         {
-            return IngredientType.quantity.rawValue
+            return IngredientAmountType.quantity.rawValue
         }
         
         set(newValue) { }

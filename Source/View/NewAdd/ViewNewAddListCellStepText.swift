@@ -68,12 +68,14 @@ final class ViewNewAddListCellStepText:ViewNewAddListCell
         
         guard
             
-            let model:NewAddSectionItemIngredient = model as? NewAddSectionItemIngredient
+            let model:NewAddSectionItemStepText = model as? NewAddSectionItemStepText
             
         else
         {
             return
         }
+        
+        self.label.text = model.text
     }
     
     //MARK: selectors

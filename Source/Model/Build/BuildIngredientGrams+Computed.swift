@@ -6,7 +6,7 @@ extension BuildIngredientGrams
     {
         get
         {
-            return IngredientType.grams.rawValue
+            return IngredientAmountType.grams.rawValue
         }
         
         set(newValue) { }

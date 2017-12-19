@@ -2,16 +2,16 @@ import Foundation
 
 extension Format
 {
-    private static var typeMap:[IngredientType:FormatIngredientTypeProtocol.Type]
+    private static var typeMap:[IngredientAmountType:FormatIngredientTypeProtocol.Type]
     {
         get
         {
-            let map:[IngredientType:FormatIngredientTypeProtocol.Type] = [
-                IngredientType.cups : FormatIngredientTypeCups.self,
-                IngredientType.grams : FormatIngredientTypeGrams.self,
-                IngredientType.mililitres : FormatIngredientTypeMililitres.self,
-                IngredientType.quantity : FormatIngredientTypeQuantity.self,
-                IngredientType.spoons : FormatIngredientTypeSpoons.self]
+            let map:[IngredientAmountType:FormatIngredientTypeProtocol.Type] = [
+                IngredientAmountType.cups : FormatIngredientTypeCups.self,
+                IngredientAmountType.grams : FormatIngredientTypeGrams.self,
+                IngredientAmountType.mililitres : FormatIngredientTypeMililitres.self,
+                IngredientAmountType.quantity : FormatIngredientTypeQuantity.self,
+                IngredientAmountType.spoons : FormatIngredientTypeSpoons.self]
             
             return map
         }

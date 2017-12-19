@@ -6,7 +6,7 @@ extension BuildIngredientCups
     {
         get
         {
-            return IngredientType.cups.rawValue
+            return IngredientAmountType.cups.rawValue
         }
         
         set(newValue) { }

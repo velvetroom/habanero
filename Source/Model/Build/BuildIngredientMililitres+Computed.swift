@@ -6,7 +6,7 @@ extension BuildIngredientMililitres
     {
         get
         {
-            return IngredientType.mililitres.rawValue
+            return IngredientAmountType.mililitres.rawValue
         }
         
         set(newValue) { }

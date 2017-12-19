@@ -6,7 +6,7 @@ extension BuildIngredientSpoons
     {
         get
         {
-            return IngredientType.spoons.rawValue
+            return IngredientAmountType.spoons.rawValue
         }
         
         set(newValue) { }
