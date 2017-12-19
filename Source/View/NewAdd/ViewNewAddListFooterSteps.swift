@@ -17,6 +17,10 @@ final class ViewNewAddListFooterSteps:ViewNewAddListFooter
         buttonAddImage.imageView!.clipsToBounds = true
         buttonAddImage.imageView!.contentMode = UIViewContentMode.center
         buttonAddImage.imageView!.tintColor = UIColor.colourSuccess
+        buttonAddImage.addTarget(
+            self,
+            action:#selector(self.selectorButtonAddImage(sender:)),
+            for:UIControlEvents.touchUpInside)
         
         let buttonAddText:UIButton = UIButton()
         buttonAddText.translatesAutoresizingMaskIntoConstraints = false
@@ -29,6 +33,10 @@ final class ViewNewAddListFooterSteps:ViewNewAddListFooter
         buttonAddText.imageView!.clipsToBounds = true
         buttonAddText.imageView!.contentMode = UIViewContentMode.center
         buttonAddText.imageView!.tintColor = UIColor.colourSuccess
+        buttonAddText.addTarget(
+            self,
+            action:#selector(self.selectorButtonAddText(sender:)),
+            for:UIControlEvents.touchUpInside)
         
         self.addSubview(buttonAddImage)
         self.addSubview(buttonAddText)
@@ -68,12 +76,12 @@ final class ViewNewAddListFooterSteps:ViewNewAddListFooter
     @objc
     private func selectorButtonAddImage(sender button:UIButton)
     {
-        self.controller?.transitionAddStep()
+        self.controller?.transitionAddStepImage()
     }
     
     @objc
     private func selectorButtonAddText(sender button:UIButton)
     {
-        self.controller?.transitionAddStep()
+        self.controller?.transitionAddStepText()
     }
 }
