@@ -2,10 +2,6 @@ import UIKit
 
 final class ViewParent:UIView
 {
-    typealias Router = (
-        (ViewParent) ->
-        (CGPoint, CGFloat) -> ())
-    
     weak var panRecognizer:UIPanGestureRecognizer!
     private(set) weak var controller:ControllerParent!
     private(set) weak var viewMenu:ViewMenu!

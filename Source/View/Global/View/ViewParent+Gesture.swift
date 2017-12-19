@@ -2,6 +2,22 @@ import UIKit
 
 extension ViewParent:UIGestureRecognizerDelegate
 {
+    private var gestureRouters:[UIGestureRecognizerState:((CGPoint, CGFloat) -> ())]
+    {
+        get
+        {
+            let map:[UIGestureRecognizerState:((CGPoint, CGFloat) -> ())] = [
+                UIGestureRecognizerState.began : self.gestureStateBegan,
+                UIGestureRecognizerState.possible : self.gestureStateBegan,
+                UIGestureRecognizerState.changed : self.gestureStateChanged,
+                UIGestureRecognizerState.cancelled : self.gestureStateEnded,
+                UIGestureRecognizerState.ended : self.gestureStateEnded,
+                UIGestureRecognizerState.failed : self.gestureStateEnded]
+            
+            return map
+        }
+    }
+    
     //MARK: selectors
     
     @objc
@@ -12,14 +28,14 @@ extension ViewParent:UIGestureRecognizerDelegate
         
         guard
         
-            let router:Router = ViewParent.Constants.routerMap[panGesture.state]
+            let router:((CGPoint, CGFloat) -> ()) = self.gestureRouters[panGesture.state]
         
         else
         {
             return
         }
         
-        router(self)(location, xPos)
+        router(location, xPos)
     }
     
     //MARK: private
