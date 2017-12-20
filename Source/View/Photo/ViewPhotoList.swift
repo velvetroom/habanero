@@ -50,8 +50,19 @@ final class ViewPhotoList:ViewCollection<ArchPhoto, ViewPhotoListCell, ViewColle
         _ collectionView:UICollectionView,
         cellForItemAt indexPath:IndexPath) -> UICollectionViewCell
     {
+        let item:PhotoOptionProtocol = self.modelAtIndex(index:indexPath)
         let cell:ViewPhotoListCell = self.cellAtIndex(indexPath:indexPath)
+        cell.config(model:item)
         
         return cell
+    }
+    
+    override func collectionView(
+        _ collectionView:UICollectionView,
+        didSelectItemAt indexPath:IndexPath)
+    {
+        let item:PhotoOptionProtocol = self.modelAtIndex(index:indexPath)
+        
+        self.controller.selectedOption(option:item)
     }
 }
