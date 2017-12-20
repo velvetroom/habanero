@@ -2,7 +2,7 @@ import UIKit
 
 final class ControllerPhoto:Controller<ArchPhoto>
 {
-    init(completion:@escaping((UIImage) -> ()))
+    init(completion:@escaping((UIImage?) -> ()))
     {
         super.init()
         

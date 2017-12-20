@@ -2,5 +2,5 @@ import UIKit
 
 final class Photo:Model<ArchPhoto>
 {
-    var completion:((UIImage) -> ())?
+    var completion:((UIImage?) -> ())?
 }
