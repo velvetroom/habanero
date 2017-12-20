@@ -303,6 +303,8 @@
 		DABA5EAA1FEA2DAC0017F865 /* ArchPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA5EA81FEA2DAB0017F865 /* ArchPhoto.swift */; };
 		DABA5EAD1FEA2E170017F865 /* ControllerPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA5EAC1FEA2E170017F865 /* ControllerPhoto.swift */; };
 		DABA5EAE1FEA2E170017F865 /* ControllerPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA5EAC1FEA2E170017F865 /* ControllerPhoto.swift */; };
+		DABA5EB11FEA2FF40017F865 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA5EB01FEA2FF40017F865 /* Photo.swift */; };
+		DABA5EB21FEA2FF40017F865 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA5EB01FEA2FF40017F865 /* Photo.swift */; };
 		DACEB3991FDC95480089B3FE /* NewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACEB3981FDC95480089B3FE /* NewItem.swift */; };
 		DACEB39B1FDC96190089B3FE /* NewItem+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACEB39A1FDC96190089B3FE /* NewItem+Factory.swift */; };
 		DACEB39D1FDC98820089B3FE /* ViewNewList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACEB39C1FDC98820089B3FE /* ViewNewList+Actions.swift */; };
@@ -623,6 +625,7 @@
 		DAA333E11FDB29D8002D766C /* NewAdd+Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Info.swift"; sourceTree = "<group>"; };
 		DABA5EA81FEA2DAB0017F865 /* ArchPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchPhoto.swift; sourceTree = "<group>"; };
 		DABA5EAC1FEA2E170017F865 /* ControllerPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerPhoto.swift; sourceTree = "<group>"; };
+		DABA5EB01FEA2FF40017F865 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		DACEB3981FDC95480089B3FE /* NewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItem.swift; sourceTree = "<group>"; };
 		DACEB39A1FDC96190089B3FE /* NewItem+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewItem+Factory.swift"; sourceTree = "<group>"; };
 		DACEB39C1FDC98820089B3FE /* ViewNewList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewList+Actions.swift"; sourceTree = "<group>"; };
@@ -1074,6 +1077,7 @@
 				DAE7C3431FE08281003190FF /* Cloud */,
 				DA3F0E711FDF0BB80037C94D /* Ingredient */,
 				DAA333D31FDB17EA002D766C /* Database */,
+				DABA5EAF1FEA2FE20017F865 /* Photo */,
 				DA8C6E3A1FDB2F3B00C0AD69 /* Build */,
 				DA1F04FB1FE8E1AC00DF03A8 /* Recipe */,
 				DA9088D41FD4C65F00C1208A /* Home */,
@@ -1219,6 +1223,14 @@
 			isa = PBXGroup;
 			children = (
 				DABA5EAC1FEA2E170017F865 /* ControllerPhoto.swift */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		DABA5EAF1FEA2FE20017F865 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				DABA5EB01FEA2FF40017F865 /* Photo.swift */,
 			);
 			path = Photo;
 			sourceTree = "<group>";
@@ -1761,6 +1773,7 @@
 				DACF553D1FD7661E00069701 /* ExtensionNSLayoutConstraint.swift in Sources */,
 				DA70AFC51FD5AABF0016B0DC /* Home.swift in Sources */,
 				DA91EB271FD630E80063560D /* ViewGlobal.swift in Sources */,
+				DABA5EB11FEA2FF40017F865 /* Photo.swift in Sources */,
 				DACF55071FD7656F00069701 /* habanero.xcdatamodeld in Sources */,
 				DA71D6AA1FDA74D8003A33E1 /* ViewTextBar.swift in Sources */,
 				DACF55431FD7661E00069701 /* ExtensionData.swift in Sources */,
@@ -1836,6 +1849,7 @@
 				DACEB3A81FDCAA370089B3FE /* ViewNewListCell+Constants.swift in Sources */,
 				DACEB39D1FDC98820089B3FE /* ViewNewList+Actions.swift in Sources */,
 				DAE7C35B1FE08281003190FF /* CloudProtocol.swift in Sources */,
+				DABA5EB21FEA2FF40017F865 /* Photo.swift in Sources */,
 				DA11BA0E1FD8F6E90038F9B0 /* ViewNewAddBar.swift in Sources */,
 				DA8752C91FE385F100AE74F5 /* ViewNewAddIngredientAmountList.swift in Sources */,
 				DACF55481FD7661E00069701 /* ExtensionString.swift in Sources */,
