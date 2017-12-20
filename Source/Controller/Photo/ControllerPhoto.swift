@@ -13,4 +13,11 @@ final class ControllerPhoto:Controller<ArchPhoto>
     {
         return nil
     }
+    
+    //MARK: internal
+    
+    func selectedOption(option:PhotoOptionProtocol)
+    {
+        option.router(self)()
+    }
 }
