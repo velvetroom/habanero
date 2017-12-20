@@ -307,6 +307,10 @@
 		DABA5EB21FEA2FF40017F865 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA5EB01FEA2FF40017F865 /* Photo.swift */; };
 		DABA5EB51FEA301D0017F865 /* ViewPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA5EB41FEA301D0017F865 /* ViewPhoto.swift */; };
 		DABA5EB61FEA301D0017F865 /* ViewPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA5EB41FEA301D0017F865 /* ViewPhoto.swift */; };
+		DABA5EB81FEA32C60017F865 /* ViewPhotoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA5EB71FEA32C60017F865 /* ViewPhotoList.swift */; };
+		DABA5EB91FEA32C60017F865 /* ViewPhotoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA5EB71FEA32C60017F865 /* ViewPhotoList.swift */; };
+		DABA5EBB1FEA32D30017F865 /* ViewPhotoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA5EBA1FEA32D30017F865 /* ViewPhotoListCell.swift */; };
+		DABA5EBC1FEA32D30017F865 /* ViewPhotoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA5EBA1FEA32D30017F865 /* ViewPhotoListCell.swift */; };
 		DACEB3991FDC95480089B3FE /* NewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACEB3981FDC95480089B3FE /* NewItem.swift */; };
 		DACEB39B1FDC96190089B3FE /* NewItem+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACEB39A1FDC96190089B3FE /* NewItem+Factory.swift */; };
 		DACEB39D1FDC98820089B3FE /* ViewNewList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACEB39C1FDC98820089B3FE /* ViewNewList+Actions.swift */; };
@@ -629,6 +633,8 @@
 		DABA5EAC1FEA2E170017F865 /* ControllerPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerPhoto.swift; sourceTree = "<group>"; };
 		DABA5EB01FEA2FF40017F865 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		DABA5EB41FEA301D0017F865 /* ViewPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhoto.swift; sourceTree = "<group>"; };
+		DABA5EB71FEA32C60017F865 /* ViewPhotoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoList.swift; sourceTree = "<group>"; };
+		DABA5EBA1FEA32D30017F865 /* ViewPhotoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoListCell.swift; sourceTree = "<group>"; };
 		DACEB3981FDC95480089B3FE /* NewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItem.swift; sourceTree = "<group>"; };
 		DACEB39A1FDC96190089B3FE /* NewItem+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewItem+Factory.swift"; sourceTree = "<group>"; };
 		DACEB39C1FDC98820089B3FE /* ViewNewList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewList+Actions.swift"; sourceTree = "<group>"; };
@@ -1243,6 +1249,8 @@
 			isa = PBXGroup;
 			children = (
 				DABA5EB41FEA301D0017F865 /* ViewPhoto.swift */,
+				DABA5EB71FEA32C60017F865 /* ViewPhotoList.swift */,
+				DABA5EBA1FEA32D30017F865 /* ViewPhotoListCell.swift */,
 			);
 			path = Photo;
 			sourceTree = "<group>";
@@ -1686,6 +1694,7 @@
 				DA9089281FD4C66000C1208A /* Menu+Constants.swift in Sources */,
 				DA91EB1E1FD62C1F0063560D /* ViewGradient+Constants.swift in Sources */,
 				DACF552F1FD7661E00069701 /* ExtensionUIColor.swift in Sources */,
+				DABA5EB81FEA32C60017F865 /* ViewPhotoList.swift in Sources */,
 				DACF55471FD7661E00069701 /* ExtensionString.swift in Sources */,
 				DA74F0CD1FE6154800F45310 /* FormatIngredientTypeMililitres.swift in Sources */,
 				DAA333D91FDB17EA002D766C /* Database+Factory.swift in Sources */,
@@ -1726,6 +1735,7 @@
 				DAE7C35C1FE08281003190FF /* CloudError+Description.swift in Sources */,
 				DA91EAEE1FD62C1F0063560D /* ViewMenu+Synth.swift in Sources */,
 				DA71D6A41FDA7107003A33E1 /* ViewText+Constants.swift in Sources */,
+				DABA5EBB1FEA32D30017F865 /* ViewPhotoListCell.swift in Sources */,
 				DA71D6971FDA657E003A33E1 /* Text.swift in Sources */,
 				DA91EB041FD62C1F0063560D /* ViewCollection.swift in Sources */,
 				DAA333DB1FDB17EA002D766C /* Database+Constants.swift in Sources */,
@@ -1864,6 +1874,7 @@
 				DAE7C35B1FE08281003190FF /* CloudProtocol.swift in Sources */,
 				DABA5EB21FEA2FF40017F865 /* Photo.swift in Sources */,
 				DA11BA0E1FD8F6E90038F9B0 /* ViewNewAddBar.swift in Sources */,
+				DABA5EBC1FEA32D30017F865 /* ViewPhotoListCell.swift in Sources */,
 				DA8752C91FE385F100AE74F5 /* ViewNewAddIngredientAmountList.swift in Sources */,
 				DACF55481FD7661E00069701 /* ExtensionString.swift in Sources */,
 				DA84C0EF1FD73F59008959EA /* ArchNew.swift in Sources */,
@@ -1876,6 +1887,7 @@
 				DA3421401FE47B40002B23DA /* NewAddIngredientAmountType.swift in Sources */,
 				DA71D67B1FDA4661003A33E1 /* NewAddSectionSteps.swift in Sources */,
 				DA71D6A21FDA6C1A003A33E1 /* ViewTextInput+Constants.swift in Sources */,
+				DABA5EB91FEA32C60017F865 /* ViewPhotoList.swift in Sources */,
 				DAE7C37C1FE0A7F6003190FF /* ControllerNewAddIngredient+Select.swift in Sources */,
 				DA91EB091FD62C1F0063560D /* ViewPushBackground.swift in Sources */,
 				DA3F0E881FDF44920037C94D /* ArchNewAddIngredient.swift in Sources */,
