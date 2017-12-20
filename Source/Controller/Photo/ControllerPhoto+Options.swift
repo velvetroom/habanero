@@ -6,7 +6,7 @@ extension ControllerPhoto
     
     func optionCancel()
     {
-        
+        self.parentController?.dismissAnimateOver(completion:nil)
     }
     
     func optionCamera()
