@@ -9,10 +9,10 @@ final class ViewPhoto:ViewMain<ArchPhoto>
         
         let viewBlur:ViewBlur = ViewBlur.light()
         
-        self.addSubview(ViewBlur)
+        self.addSubview(viewBlur)
         
         NSLayoutConstraint.equals(
-            view:ViewBlur,
+            view:viewBlur,
             toView:self)
     }
 }
