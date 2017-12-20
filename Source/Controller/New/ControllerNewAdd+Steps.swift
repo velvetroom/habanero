@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 extension ControllerNewAdd
 {
@@ -6,6 +6,22 @@ extension ControllerNewAdd
     
     func addStepImage()
     {
+        let controller:ControllerPhoto = ControllerPhoto
+        { [weak self] (image:UIImage?) in
+            
+            guard
+            
+                let image:UIImage = image
+            
+            else
+            {
+                return
+            }
+            
+            
+        }
+        
+        self.parentController?.animateOver(controller:controller)
     }
     
     func addStepText()
