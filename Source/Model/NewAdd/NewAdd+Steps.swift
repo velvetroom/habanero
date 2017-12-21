@@ -1,10 +1,10 @@
-import Foundation
+import UIKit
 
 extension NewAdd
 {
     //MARK: private
     
-    private func asyncCreateTextStep(
+    private func asyncCreateStepText(
         text:String,
         completion:@escaping(() -> ()))
     {
@@ -47,16 +47,24 @@ extension NewAdd
     
     //MARK: internal
     
-    func createTextStep(
+    func createStepText(
         text:String,
         completion:@escaping(() -> ()))
     {
         DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
         { [weak self] in
             
-            self?.asyncCreateTextStep(
+            self?.asyncCreateStepText(
                 text:text,
                 completion:completion)
         }
+    }
+    
+    func createStepImage(
+        image:UIImage,
+        text:String,
+        completion:@escaping(() -> ()))
+    {
+        
     }
 }

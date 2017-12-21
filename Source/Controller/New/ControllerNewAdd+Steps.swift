@@ -2,6 +2,29 @@ import UIKit
 
 extension ControllerNewAdd
 {
+    //MARK: private
+    
+    private func addStepImage(with image:UIImage)
+    {
+        let defaultText:String = String.localizedController(key:"ControllerNewAdd_defaultStepImage")
+        
+        let controller:ControllerText = ControllerText(text:defaultText)
+        { [weak self] (stepText:String) in
+            
+            self?.model.createStepImage(
+                image:image,
+                text:stepText)
+            { [weak self] in
+                
+                self?.loadModel()
+            }
+        }
+        
+        self.parentController?.push(
+            controller:controller,
+            vertical:ControllerTransition.Vertical.bottom)
+    }
+    
     //MARK: internal
     
     func addStepImage()
@@ -18,7 +41,7 @@ extension ControllerNewAdd
                 return
             }
             
-            
+            self?.addStepImage(with:image)
         }
         
         self.parentController?.animateOver(controller:controller)
@@ -31,7 +54,7 @@ extension ControllerNewAdd
         let controller:ControllerText = ControllerText(text:defaultText)
         { [weak self] (stepText:String) in
             
-            self?.model.createTextStep(text:stepText)
+            self?.model.createStepText(text:stepText)
             { [weak self] in
                 
                 self?.loadModel()
