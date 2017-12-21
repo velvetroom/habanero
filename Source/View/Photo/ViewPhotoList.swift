@@ -22,17 +22,17 @@ final class ViewPhotoList:ViewCollection<ArchPhoto, ViewPhotoListCell, ViewColle
         let width:CGFloat = collectionView.bounds.width
         let height:CGFloat = collectionView.bounds.height
         let cells:Int = self.collectionView.numberOfItems(inSection:0)
-        let cellsHeight:CGFloat = CGFloat(cells) * ViewPhotoList.Constants.cellWidth
+        let cellsHeight:CGFloat = CGFloat(cells) * ViewPhotoList.Constants.cellHeight
         let remainWidth:CGFloat = width - ViewPhotoList.Constants.cellWidth
-        let marginLeft:CGFloat = remainWidth / 2.0
+        let marginHorizontal:CGFloat = remainWidth / 2.0
         let remainHeight:CGFloat = height - cellsHeight
         let marginTop:CGFloat = remainHeight / 2.0
         
         let sectionInsets:UIEdgeInsets = UIEdgeInsets(
             top:marginTop,
-            left:marginLeft,
+            left:marginHorizontal,
             bottom:0,
-            right:0)
+            right:marginHorizontal)
         
         return sectionInsets
     }
