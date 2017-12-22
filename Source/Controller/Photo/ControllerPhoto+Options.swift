@@ -4,9 +4,11 @@ extension ControllerPhoto
 {
     //MARK: private
     
-    private func presentPicker()
+    private func presentPicker(with sourceType:UIImagePickerControllerSourceType)
     {
         let controller:UIImagePickerController = UIImagePickerController()
+        controller.sourceType = sourceType
+        controller.allowsEditing = false
         controller.delegate = self
         
         self.parentController?.present(
@@ -24,11 +26,11 @@ extension ControllerPhoto
     
     func optionCamera()
     {
-        self.presentPicker()
+        self.presentPicker(width:UIImagePickerControllerSourceType.camera)
     }
     
     func optionLibrary()
     {
-        self.presentPicker()
+        self.presentPicker(width:UIImagePickerControllerSourceType.photoLibrary)
     }
 }
