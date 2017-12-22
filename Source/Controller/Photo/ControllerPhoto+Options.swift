@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 extension ControllerPhoto
 {
@@ -11,7 +11,11 @@ extension ControllerPhoto
     
     func optionCamera()
     {
-        
+        let controller:UIImagePickerController = UIImagePickerController()
+        self.parentController?.present(
+            controller,
+            animated:true,
+            completion:nil)
     }
     
     func optionLibrary()
