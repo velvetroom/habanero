@@ -2,14 +2,9 @@ import UIKit
 
 extension ControllerPhoto
 {
-    //MARK: internal
+    //MARK: private
     
-    func optionCancel()
-    {
-        self.transitionBack()
-    }
-    
-    func optionCamera()
+    private func presentPicker()
     {
         let controller:UIImagePickerController = UIImagePickerController()
         controller.delegate = self
@@ -20,8 +15,20 @@ extension ControllerPhoto
             completion:nil)
     }
     
+    //MARK: internal
+    
+    func optionCancel()
+    {
+        self.transitionBack()
+    }
+    
+    func optionCamera()
+    {
+        self.presentPicker()
+    }
+    
     func optionLibrary()
     {
-        
+        self.presentPicker()
     }
 }
