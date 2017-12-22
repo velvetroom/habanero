@@ -12,6 +12,8 @@ extension ControllerPhoto
     func optionCamera()
     {
         let controller:UIImagePickerController = UIImagePickerController()
+        controller.delegate = self
+        
         self.parentController?.present(
             controller,
             animated:true,

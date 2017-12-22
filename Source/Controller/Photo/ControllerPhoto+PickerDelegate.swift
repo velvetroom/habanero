@@ -1,6 +1,6 @@
 import UIKit
 
-extension ControllerPhoto:UIImagePickerControllerDelegate
+extension ControllerPhoto:UIImagePickerControllerDelegate, UINavigationControllerDelegate
 {
     func imagePickerControllerDidCancel(_ picker:UIImagePickerController)
     {
