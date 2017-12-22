@@ -37,5 +37,15 @@ final class ControllerPhoto:Controller<ArchPhoto>, UIImagePickerControllerDelega
         _ picker:UIImagePickerController,
         didFinishPickingMediaWithInfo info:[String : Any])
     {
+        guard
+            
+            let image:UIImage = info[UIImagePickerControllerOriginalImage] as? UIImage
+        
+        else
+        {
+            self.transitionBack()
+            
+            return
+        }
     }
 }
