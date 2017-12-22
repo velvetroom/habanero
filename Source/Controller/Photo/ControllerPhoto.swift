@@ -20,4 +20,9 @@ final class ControllerPhoto:Controller<ArchPhoto>
     {
         option.router(self)()
     }
+    
+    func transitionBack()
+    {
+        self.parentController?.dismissAnimateOver(completion:nil)
+    }
 }
