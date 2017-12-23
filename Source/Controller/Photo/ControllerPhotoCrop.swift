@@ -21,4 +21,11 @@ final class ControllerPhotoCrop:Controller<ArchPhotoCrop>
     {
         return nil
     }
+    
+    //MARK: internal
+    
+    func transitionBack()
+    {
+        self.parentController?.pop(vertical:ControllerTransition.Vertical.top)
+    }
 }

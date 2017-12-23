@@ -11,3 +11,4 @@ ViewNewAddIngredientListFooter_buttonTitle="Create ingredient";
 ViewNewAddIngredientAmountInput_textField="0";
 ViewNewAddIngredientAmountBar_buttonAdd="Add";
 ViewTextBar_button="Done";
+ViewPhotoCropMenu_buttonCancel="Cancel";
