@@ -74,6 +74,10 @@
 		DA4233E31FEDE5DD0012A589 /* PhotoCrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4233E11FEDE5DD0012A589 /* PhotoCrop.swift */; };
 		DA4233E61FEDE60F0012A589 /* ViewPhotoCrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4233E51FEDE60F0012A589 /* ViewPhotoCrop.swift */; };
 		DA4233E71FEDE60F0012A589 /* ViewPhotoCrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4233E51FEDE60F0012A589 /* ViewPhotoCrop.swift */; };
+		DA4233E91FEDEBE10012A589 /* ViewPhotoCropMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4233E81FEDEBE10012A589 /* ViewPhotoCropMenu.swift */; };
+		DA4233EA1FEDEBE10012A589 /* ViewPhotoCropMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4233E81FEDEBE10012A589 /* ViewPhotoCropMenu.swift */; };
+		DA4233EC1FEDEBEC0012A589 /* ViewPhotoCrop+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4233EB1FEDEBEC0012A589 /* ViewPhotoCrop+Constants.swift */; };
+		DA4233ED1FEDEBEC0012A589 /* ViewPhotoCrop+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4233EB1FEDEBEC0012A589 /* ViewPhotoCrop+Constants.swift */; };
 		DA4AA5061FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5051FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift */; };
 		DA4AA5071FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5051FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift */; };
 		DA4AA5091FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5081FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift */; };
@@ -501,6 +505,8 @@
 		DA4233DD1FEDE56F0012A589 /* ArchPhotoCrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchPhotoCrop.swift; sourceTree = "<group>"; };
 		DA4233E11FEDE5DD0012A589 /* PhotoCrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCrop.swift; sourceTree = "<group>"; };
 		DA4233E51FEDE60F0012A589 /* ViewPhotoCrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoCrop.swift; sourceTree = "<group>"; };
+		DA4233E81FEDEBE10012A589 /* ViewPhotoCropMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoCropMenu.swift; sourceTree = "<group>"; };
+		DA4233EB1FEDEBEC0012A589 /* ViewPhotoCrop+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewPhotoCrop+Constants.swift"; sourceTree = "<group>"; };
 		DA4AA5051FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormatIngredientTypeCups+Constants.swift"; sourceTree = "<group>"; };
 		DA4AA5081FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormatIngredientTypeGrams+Constants.swift"; sourceTree = "<group>"; };
 		DA4AA50B1FE7374A00374B07 /* ViewNewAddIngredientListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientListCell+Constants.swift"; sourceTree = "<group>"; };
@@ -857,6 +863,8 @@
 			isa = PBXGroup;
 			children = (
 				DA4233E51FEDE60F0012A589 /* ViewPhotoCrop.swift */,
+				DA4233EB1FEDEBEC0012A589 /* ViewPhotoCrop+Constants.swift */,
+				DA4233E81FEDEBE10012A589 /* ViewPhotoCropMenu.swift */,
 			);
 			path = PhotoCrop;
 			sourceTree = "<group>";
@@ -1768,6 +1776,7 @@
 				DABA5ECD1FEA3CA70017F865 /* ViewPhotoList+Constants.swift in Sources */,
 				DACF55471FD7661E00069701 /* ExtensionString.swift in Sources */,
 				DA4233DB1FEDE4DF0012A589 /* ControllerPhotoCrop.swift in Sources */,
+				DA4233E91FEDEBE10012A589 /* ViewPhotoCropMenu.swift in Sources */,
 				DA74F0CD1FE6154800F45310 /* FormatIngredientTypeMililitres.swift in Sources */,
 				DAA333D91FDB17EA002D766C /* Database+Factory.swift in Sources */,
 				DA74F0B41FE60F0D00F45310 /* BuildIngredientSpoons+Computed.swift in Sources */,
@@ -1860,6 +1869,7 @@
 				DACF55491FD7661E00069701 /* ExtensionUIFont+Constants.swift in Sources */,
 				DA9089221FD4C66000C1208A /* AppDelegate.swift in Sources */,
 				DA74F0C11FE612E200F45310 /* FormatIngredientTypeProtocol.swift in Sources */,
+				DA4233EC1FEDEBEC0012A589 /* ViewPhotoCrop+Constants.swift in Sources */,
 				DAE7C35A1FE08281003190FF /* CloudProtocol.swift in Sources */,
 				DA74F0C71FE614BA00F45310 /* FormatIngredientTypeCups.swift in Sources */,
 				DA90892D1FD4C66000C1208A /* Menu.swift in Sources */,
@@ -1963,6 +1973,7 @@
 				DA8752D71FE3AB8D00AE74F5 /* NewAddIngredientAmountTypeCups.swift in Sources */,
 				DA3F0E801FDF32D10037C94D /* Ingredient+Factory.swift in Sources */,
 				DA58C6E71FD9E216000E6F30 /* NewAdd+Factory.swift in Sources */,
+				DA4233EA1FEDEBE10012A589 /* ViewPhotoCropMenu.swift in Sources */,
 				DAE7C34F1FE08281003190FF /* CloudProtocol+Default.swift in Sources */,
 				DA71D66D1FDA43EF003A33E1 /* ViewNewAddListFooterInfo.swift in Sources */,
 				DA9089911FD4CE3E00C1208A /* Menu+Factory.swift in Sources */,
@@ -1981,6 +1992,7 @@
 				DA91EB031FD62C1F0063560D /* ViewAlert+Constants.swift in Sources */,
 				DAE7C3801FE0A9B3003190FF /* Build+Computed.swift in Sources */,
 				DA71D67D1FDA4B91003A33E1 /* ViewNewAddListFooterInfo+Constants.swift in Sources */,
+				DA4233ED1FEDEBEC0012A589 /* ViewPhotoCrop+Constants.swift in Sources */,
 				DA74F0C81FE614BA00F45310 /* FormatIngredientTypeCups.swift in Sources */,
 				DA71D6831FDA50C4003A33E1 /* ViewNewAddList+Constants.swift in Sources */,
 				DA9089851FD4CE2E00C1208A /* ControllerTransition.swift in Sources */,
