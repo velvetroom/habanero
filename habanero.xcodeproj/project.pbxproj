@@ -66,6 +66,8 @@
 		DA3F0EB81FD74FC400593B83 /* MenuItemNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0EB71FD74FC400593B83 /* MenuItemNew.swift */; };
 		DA3F0EBB1FD7505E00593B83 /* Menu+OrderUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0EB91FD7505A00593B83 /* Menu+OrderUser.swift */; };
 		DA3F0EBD1FD7509500593B83 /* Menu+OrderAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0EBC1FD7509500593B83 /* Menu+OrderAdmin.swift */; };
+		DA4233DB1FEDE4DF0012A589 /* ControllerPhotoCrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4233DA1FEDE4DF0012A589 /* ControllerPhotoCrop.swift */; };
+		DA4233DC1FEDE4DF0012A589 /* ControllerPhotoCrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4233DA1FEDE4DF0012A589 /* ControllerPhotoCrop.swift */; };
 		DA4AA5061FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5051FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift */; };
 		DA4AA5071FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5051FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift */; };
 		DA4AA5091FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5081FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift */; };
@@ -489,6 +491,7 @@
 		DA3F0EB71FD74FC400593B83 /* MenuItemNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemNew.swift; sourceTree = "<group>"; };
 		DA3F0EB91FD7505A00593B83 /* Menu+OrderUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+OrderUser.swift"; sourceTree = "<group>"; };
 		DA3F0EBC1FD7509500593B83 /* Menu+OrderAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+OrderAdmin.swift"; sourceTree = "<group>"; };
+		DA4233DA1FEDE4DF0012A589 /* ControllerPhotoCrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerPhotoCrop.swift; sourceTree = "<group>"; };
 		DA4AA5051FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormatIngredientTypeCups+Constants.swift"; sourceTree = "<group>"; };
 		DA4AA5081FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormatIngredientTypeGrams+Constants.swift"; sourceTree = "<group>"; };
 		DA4AA50B1FE7374A00374B07 /* ViewNewAddIngredientListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientListCell+Constants.swift"; sourceTree = "<group>"; };
@@ -1262,6 +1265,7 @@
 			children = (
 				DABA5EAC1FEA2E170017F865 /* ControllerPhoto.swift */,
 				DABA5EC01FEA35EE0017F865 /* ControllerPhoto+Options.swift */,
+				DA4233DA1FEDE4DF0012A589 /* ControllerPhotoCrop.swift */,
 			);
 			path = Photo;
 			sourceTree = "<group>";
@@ -1735,6 +1739,7 @@
 				DABA5EB81FEA32C60017F865 /* ViewPhotoList.swift in Sources */,
 				DABA5ECD1FEA3CA70017F865 /* ViewPhotoList+Constants.swift in Sources */,
 				DACF55471FD7661E00069701 /* ExtensionString.swift in Sources */,
+				DA4233DB1FEDE4DF0012A589 /* ControllerPhotoCrop.swift in Sources */,
 				DA74F0CD1FE6154800F45310 /* FormatIngredientTypeMililitres.swift in Sources */,
 				DAA333D91FDB17EA002D766C /* Database+Factory.swift in Sources */,
 				DA74F0B41FE60F0D00F45310 /* BuildIngredientSpoons+Computed.swift in Sources */,
@@ -2015,6 +2020,7 @@
 				DA8752C71FE384B200AE74F5 /* ViewNewAddIngredientAmount+Constants.swift in Sources */,
 				DA8752C51FE3846D00AE74F5 /* ViewNewAddIngredientAmountInput+Constants.swift in Sources */,
 				DA8752D11FE3874400AE74F5 /* ViewNewAddIngredientAmountBar.swift in Sources */,
+				DA4233DC1FEDE4DF0012A589 /* ControllerPhotoCrop.swift in Sources */,
 				DA8752DF1FE3ABAF00AE74F5 /* NewAddIngredientAmountTypeSpoons.swift in Sources */,
 				DA71D6A51FDA7107003A33E1 /* ViewText+Constants.swift in Sources */,
 				DACF55401FD7661E00069701 /* ExtensionUIFont.swift in Sources */,
