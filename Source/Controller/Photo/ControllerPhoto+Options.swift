@@ -26,11 +26,11 @@ extension ControllerPhoto
     
     func optionCamera()
     {
-        self.presentPicker(width:UIImagePickerControllerSourceType.camera)
+        self.presentPicker(with:UIImagePickerControllerSourceType.camera)
     }
     
     func optionLibrary()
     {
-        self.presentPicker(width:UIImagePickerControllerSourceType.photoLibrary)
+        self.presentPicker(with:UIImagePickerControllerSourceType.photoLibrary)
     }
 }

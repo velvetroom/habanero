@@ -35,7 +35,7 @@ final class ControllerPhoto:Controller<ArchPhoto>, UIImagePickerControllerDelega
     
     func imagePickerController(
         _ picker:UIImagePickerController,
-        didFinishPickingMediaWithInfo info:[String : Any])
+        didFinishPickingMediaWithInfo info:[String:Any])
     {
         guard
             
@@ -47,5 +47,11 @@ final class ControllerPhoto:Controller<ArchPhoto>, UIImagePickerControllerDelega
             
             return
         }
+        
+        let controller:ControllerPhotoCrop = ControllerPhotoCrop(image:image)
+        
+        self.parentController?.push(
+            controller:controller,
+            vertical:ControllerTransition.Vertical.top)
     }
 }
