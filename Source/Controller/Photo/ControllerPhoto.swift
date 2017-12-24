@@ -61,7 +61,7 @@ final class ControllerPhoto:Controller<ArchPhoto>, UIImagePickerControllerDelega
         guard
             
             let image:UIImage = info[UIImagePickerControllerOriginalImage] as? UIImage,
-            let currentIndex:Int = self.parentController?.childViewControllers.count
+            let nextIndex:Int = self.parentController?.childViewControllers.count
         
         else
         {
@@ -69,6 +69,8 @@ final class ControllerPhoto:Controller<ArchPhoto>, UIImagePickerControllerDelega
             
             return
         }
+        
+        let currentIndex:Int = nextIndex - 1
         
         picker.dismiss(animated:true)
         { [weak self] in
