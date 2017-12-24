@@ -1,6 +1,6 @@
 import UIKit
 
-final class ViewPhotoCropDisplayCorner:UIView
+class ViewPhotoCropDisplayCorner:UIView
 {
     weak var layoutTop:NSLayoutConstraint!
     weak var layoutLeft:NSLayoutConstraint!

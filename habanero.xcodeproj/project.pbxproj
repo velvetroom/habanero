@@ -59,6 +59,8 @@
 		DA2C17831FEF4FB1001BDA54 /* ViewPhotoCropDisplayCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C17811FEF4FB1001BDA54 /* ViewPhotoCropDisplayCorner.swift */; };
 		DA2C17851FEF5174001BDA54 /* ViewPhotoCropDisplayCorner+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C17841FEF5174001BDA54 /* ViewPhotoCropDisplayCorner+Constants.swift */; };
 		DA2C17861FEF5174001BDA54 /* ViewPhotoCropDisplayCorner+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C17841FEF5174001BDA54 /* ViewPhotoCropDisplayCorner+Constants.swift */; };
+		DA2C17881FEF53C4001BDA54 /* ViewPhotoCropDisplayCornerTopLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C17871FEF53C4001BDA54 /* ViewPhotoCropDisplayCornerTopLeft.swift */; };
+		DA2C17891FEF53C4001BDA54 /* ViewPhotoCropDisplayCornerTopLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C17871FEF53C4001BDA54 /* ViewPhotoCropDisplayCornerTopLeft.swift */; };
 		DA34213C1FE472E0002B23DA /* ViewNewAddIngredientAmountBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34213B1FE472E0002B23DA /* ViewNewAddIngredientAmountBar+Constants.swift */; };
 		DA34213E1FE476D3002B23DA /* NewAddIngredientAmount+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34213D1FE476D3002B23DA /* NewAddIngredientAmount+Create.swift */; };
 		DA3421401FE47B40002B23DA /* NewAddIngredientAmountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34213F1FE47B40002B23DA /* NewAddIngredientAmountType.swift */; };
@@ -508,6 +510,7 @@
 		DA2C177B1FEF484F001BDA54 /* ViewPhotoCropDisplay+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewPhotoCropDisplay+Constants.swift"; sourceTree = "<group>"; };
 		DA2C17811FEF4FB1001BDA54 /* ViewPhotoCropDisplayCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoCropDisplayCorner.swift; sourceTree = "<group>"; };
 		DA2C17841FEF5174001BDA54 /* ViewPhotoCropDisplayCorner+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewPhotoCropDisplayCorner+Constants.swift"; sourceTree = "<group>"; };
+		DA2C17871FEF53C4001BDA54 /* ViewPhotoCropDisplayCornerTopLeft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoCropDisplayCornerTopLeft.swift; sourceTree = "<group>"; };
 		DA34213B1FE472E0002B23DA /* ViewNewAddIngredientAmountBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientAmountBar+Constants.swift"; sourceTree = "<group>"; };
 		DA34213D1FE476D3002B23DA /* NewAddIngredientAmount+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddIngredientAmount+Create.swift"; sourceTree = "<group>"; };
 		DA34213F1FE47B40002B23DA /* NewAddIngredientAmountType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddIngredientAmountType.swift; sourceTree = "<group>"; };
@@ -901,6 +904,7 @@
 				DA2C17751FEF4305001BDA54 /* ViewPhotoCropDisplayImage.swift */,
 				DA2C17811FEF4FB1001BDA54 /* ViewPhotoCropDisplayCorner.swift */,
 				DA2C17841FEF5174001BDA54 /* ViewPhotoCropDisplayCorner+Constants.swift */,
+				DA2C17871FEF53C4001BDA54 /* ViewPhotoCropDisplayCornerTopLeft.swift */,
 			);
 			path = PhotoCrop;
 			sourceTree = "<group>";
@@ -1894,6 +1898,7 @@
 				DA4233E61FEDE60F0012A589 /* ViewPhotoCrop.swift in Sources */,
 				DAE7C34E1FE08281003190FF /* CloudProtocol+Default.swift in Sources */,
 				DACF55371FD7661E00069701 /* ExtensionFileManager.swift in Sources */,
+				DA2C17881FEF53C4001BDA54 /* ViewPhotoCropDisplayCornerTopLeft.swift in Sources */,
 				DAE7C3771FE0996B003190FF /* IngredientList.swift in Sources */,
 				DA9089201FD4C66000C1208A /* ControllerParent+Menu.swift in Sources */,
 				DA91EB241FD62D700063560D /* ViewControllableProtocol.swift in Sources */,
@@ -2182,6 +2187,7 @@
 				DA71D6981FDA657E003A33E1 /* Text.swift in Sources */,
 				DA1F04FA1FE8DF8800DF03A8 /* NewAddSectionItemStepText.swift in Sources */,
 				DA9089831FD4CE2E00C1208A /* ControllerParent+Menu.swift in Sources */,
+				DA2C17891FEF53C4001BDA54 /* ViewPhotoCropDisplayCornerTopLeft.swift in Sources */,
 				DAA333D21FDB1453002D766C /* New+Load.swift in Sources */,
 				DA91EAEB1FD62C1F0063560D /* ViewMenu+Collection.swift in Sources */,
 				DABDF33C1FEB6BC8002EF842 /* PhotoOptionLibrary.swift in Sources */,
