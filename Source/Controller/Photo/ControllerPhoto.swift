@@ -14,6 +14,23 @@ final class ControllerPhoto:Controller<ArchPhoto>, UIImagePickerControllerDelega
         return nil
     }
     
+    //MARK: private
+    
+    private func transitionToEditPhoto(
+        image:UIImage,
+        currentIndex:Int)
+    {
+        let controller:ControllerPhotoCrop = ControllerPhotoCrop(image:image)
+        
+        self.parentController?.push(
+            controller:controller,
+            vertical:ControllerTransition.Vertical.top)
+        { [weak self] in
+            
+            self?.parentController?.popSilent(removeIndex:currentIndex)
+        }
+    }
+    
     //MARK: internal
     
     func selectedOption(option:PhotoOptionProtocol)
@@ -43,7 +60,8 @@ final class ControllerPhoto:Controller<ArchPhoto>, UIImagePickerControllerDelega
     {
         guard
             
-            let image:UIImage = info[UIImagePickerControllerOriginalImage] as? UIImage
+            let image:UIImage = info[UIImagePickerControllerOriginalImage] as? UIImage,
+            let currentIndex:Int = self.parentController?.childViewControllers.count
         
         else
         {
@@ -52,14 +70,12 @@ final class ControllerPhoto:Controller<ArchPhoto>, UIImagePickerControllerDelega
             return
         }
         
-        let controller:ControllerPhotoCrop = ControllerPhotoCrop(image:image)
-        
         picker.dismiss(animated:true)
         { [weak self] in
             
-            self?.parentController?.push(
-                controller:controller,
-                vertical:ControllerTransition.Vertical.top)
+            self?.transitionToEditPhoto(
+                image:image,
+                currentIndex:currentIndex)
         }
     }
 }
