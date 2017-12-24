@@ -9,7 +9,10 @@ final class ViewPhotoCrop:ViewMain<ArchPhotoCrop>
         
         let viewMenu:ViewPhotoCropMenu = ViewPhotoCropMenu(controller:self.controller)
         
+        let viewDisplay:ViewPhotoCropDisplay = ViewPhotoCropDisplay(controller:self.controller)
+        
         self.addSubview(viewMenu)
+        self.addSubview(viewDisplay)
         
         NSLayoutConstraint.bottomToBottom(
             view:viewMenu,
@@ -20,5 +23,15 @@ final class ViewPhotoCrop:ViewMain<ArchPhotoCrop>
         NSLayoutConstraint.equalsHorizontal(
             view:viewMenu,
             toView:self)
+        
+        NSLayoutConstraint.topToTop(
+            view:viewDisplay,
+            toView:self)
+        NSLayoutConstraint.equalsHorizontal(
+            view:viewDisplay,
+            toView:self)
+        NSLayoutConstraint.bottomToTop(
+            view:viewDisplay,
+            toView:viewMenu)
     }
 }
