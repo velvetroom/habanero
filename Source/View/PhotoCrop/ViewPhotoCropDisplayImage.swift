@@ -11,6 +11,8 @@ final class ViewPhotoCropDisplayImage:View<ArchPhotoCrop>
     {
         super.factoryViews()
         self.isUserInteractionEnabled = false
+        self.layer.borderColor = UIColor(white:1, alpha:0.5).cgColor
+        self.layer.borderWidth = ViewGlobal.Constants.borderWidth
         
         let imageView:UIImageView = UIImageView()
         imageView.isUserInteractionEnabled = false
