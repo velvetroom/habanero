@@ -28,10 +28,6 @@ final class ViewPhotoCropDisplay:View<ArchPhotoCrop>
         self.viewCornerBottomRight = viewCornerBottomRight
         
         self.addSubview(viewImage)
-        self.addSubview(viewCornerTopLeft)
-        self.addSubview(viewCornerTopRight)
-        self.addSubview(viewCornerBottomLeft)
-        self.addSubview(viewCornerBottomRight)
         
         self.layoutCorner(viewCorner:viewCornerTopLeft)
         self.layoutCorner(viewCorner:viewCornerTopRight)

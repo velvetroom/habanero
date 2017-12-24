@@ -57,8 +57,8 @@ extension ViewPhotoCropDisplay
             initialTop:maxY,
             initialLeft:minX)
         self.viewCornerBottomRight.adjustLayout(
-            initialTop:maxX,
-            initialLeft:maxY)
+            initialTop:maxY,
+            initialLeft:maxX)
         self.viewCornerTopLeft.adjustLayout(
             initialTop:minY,
             initialLeft:minX)
