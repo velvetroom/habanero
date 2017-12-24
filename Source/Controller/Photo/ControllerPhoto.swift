@@ -30,7 +30,11 @@ final class ControllerPhoto:Controller<ArchPhoto>, UIImagePickerControllerDelega
     
     func imagePickerControllerDidCancel(_ picker:UIImagePickerController)
     {
-        self.transitionBack()
+        picker.dismiss(animated:true)
+        { [weak self] in
+            
+            self?.transitionBack()
+        }
     }
     
     func imagePickerController(
@@ -50,8 +54,12 @@ final class ControllerPhoto:Controller<ArchPhoto>, UIImagePickerControllerDelega
         
         let controller:ControllerPhotoCrop = ControllerPhotoCrop(image:image)
         
-        self.parentController?.push(
-            controller:controller,
-            vertical:ControllerTransition.Vertical.top)
+        picker.dismiss(animated:true)
+        { [weak self] in
+            
+            self?.parentController?.push(
+                controller:controller,
+                vertical:ControllerTransition.Vertical.top)
+        }
     }
 }
