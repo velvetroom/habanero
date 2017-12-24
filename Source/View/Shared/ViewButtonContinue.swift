@@ -18,8 +18,11 @@ final class ViewButtonContinue:UIButton
         backgroundImage.translatesAutoresizingMaskIntoConstraints = false
         backgroundImage.clipsToBounds = true
         backgroundImage.contentMode = UIViewContentMode.center
+        backgroundImage.isUserInteractionEnabled = false
+        backgroundImage.image = #imageLiteral(resourceName: "assetGenericButton")
         
         self.addSubview(backgroundImage)
+        self.sendSubview(toBack:backgroundImage)
         
         NSLayoutConstraint.equals(
             view:backgroundImage,
