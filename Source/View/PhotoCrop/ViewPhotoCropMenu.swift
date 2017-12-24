@@ -3,6 +3,7 @@ import UIKit
 final class ViewPhotoCropMenu:View<ArchPhotoCrop>
 {
     private weak var layoutCancelLeft:NSLayoutConstraint!
+    private weak var layoutAcceptLeft:NSLayoutConstraint!
     
     override func factoryViews()
     {
@@ -26,6 +27,12 @@ final class ViewPhotoCropMenu:View<ArchPhotoCrop>
             action:#selector(self.selectorCancel(sender:)),
             for:UIControlEvents.touchUpInside)
         
+        let buttonAccept:UIButton = UIButton()
+        buttonAccept.translatesAutoresizingMaskIntoConstraints = false
+        buttonAccept.setBackgroundImage(
+            #imageLiteral(resourceName: "assetGenericButton"),
+            for:UIControlState())
+        
         self.addSubview(buttonCancel)
         
         NSLayoutConstraint.topToTop(
@@ -41,6 +48,20 @@ final class ViewPhotoCropMenu:View<ArchPhotoCrop>
         NSLayoutConstraint.width(
             view:buttonCancel,
             constant:ViewPhotoCropMenu.Constants.cancelWidth)
+    }
+    
+    override func layoutSubviews()
+    {
+        let width:CGFloat = self.bounds.width
+        let remainCancel:CGFloat = width - ViewPhotoCropMenu.Constants.cancelWidth
+        let remainAccept:CGFloat = width - ViewPhotoCropMenu.Constants.acceptWidth
+        let cancelLeft:CGFloat = remainCancel / 2.0
+        let acceptLeft:CGFloat = remainAccept / 2.0
+        
+        layoutAcceptLeft.constant = cancelLeft
+        layoutCancelLeft.constant = acceptLeft
+        
+        super.layoutSubviews()
     }
     
     //MARK: selectors
