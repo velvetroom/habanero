@@ -47,6 +47,8 @@
 		DA2C176E1FEF3A91001BDA54 /* ViewButtonContinue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C176C1FEF3A91001BDA54 /* ViewButtonContinue.swift */; };
 		DA2C17701FEF3C68001BDA54 /* ViewButtonContinue+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C176F1FEF3C68001BDA54 /* ViewButtonContinue+Constants.swift */; };
 		DA2C17711FEF3C68001BDA54 /* ViewButtonContinue+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C176F1FEF3C68001BDA54 /* ViewButtonContinue+Constants.swift */; };
+		DA2C17731FEF41AD001BDA54 /* ViewPhotoCropDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C17721FEF41AD001BDA54 /* ViewPhotoCropDisplay.swift */; };
+		DA2C17741FEF41AD001BDA54 /* ViewPhotoCropDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C17721FEF41AD001BDA54 /* ViewPhotoCropDisplay.swift */; };
 		DA34213C1FE472E0002B23DA /* ViewNewAddIngredientAmountBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34213B1FE472E0002B23DA /* ViewNewAddIngredientAmountBar+Constants.swift */; };
 		DA34213E1FE476D3002B23DA /* NewAddIngredientAmount+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34213D1FE476D3002B23DA /* NewAddIngredientAmount+Create.swift */; };
 		DA3421401FE47B40002B23DA /* NewAddIngredientAmountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34213F1FE47B40002B23DA /* NewAddIngredientAmountType.swift */; };
@@ -490,6 +492,7 @@
 		DA1F05051FE8E3CD00DF03A8 /* BuildStepImage+Computed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildStepImage+Computed.swift"; sourceTree = "<group>"; };
 		DA2C176C1FEF3A91001BDA54 /* ViewButtonContinue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewButtonContinue.swift; sourceTree = "<group>"; };
 		DA2C176F1FEF3C68001BDA54 /* ViewButtonContinue+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewButtonContinue+Constants.swift"; sourceTree = "<group>"; };
+		DA2C17721FEF41AD001BDA54 /* ViewPhotoCropDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoCropDisplay.swift; sourceTree = "<group>"; };
 		DA34213B1FE472E0002B23DA /* ViewNewAddIngredientAmountBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientAmountBar+Constants.swift"; sourceTree = "<group>"; };
 		DA34213D1FE476D3002B23DA /* NewAddIngredientAmount+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddIngredientAmount+Create.swift"; sourceTree = "<group>"; };
 		DA34213F1FE47B40002B23DA /* NewAddIngredientAmountType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddIngredientAmountType.swift; sourceTree = "<group>"; };
@@ -877,6 +880,7 @@
 				DA4233EB1FEDEBEC0012A589 /* ViewPhotoCrop+Constants.swift */,
 				DA4233E81FEDEBE10012A589 /* ViewPhotoCropMenu.swift */,
 				DA4233EE1FEDF7D50012A589 /* ViewPhotoCropMenu+Constants.swift */,
+				DA2C17721FEF41AD001BDA54 /* ViewPhotoCropDisplay.swift */,
 			);
 			path = PhotoCrop;
 			sourceTree = "<group>";
@@ -1910,6 +1914,7 @@
 				DABA5EA91FEA2DAB0017F865 /* ArchPhoto.swift in Sources */,
 				DA74F0AE1FE60A1300F45310 /* BuildIngredientMililitres+Computed.swift in Sources */,
 				DA90892F1FD4C66000C1208A /* Menu+Factory.swift in Sources */,
+				DA2C17731FEF41AD001BDA54 /* ViewPhotoCropDisplay.swift in Sources */,
 				DA3F0EB41FD74C5F00593B83 /* Menu+FactoryUser.swift in Sources */,
 				DA74F0BE1FE6127100F45310 /* Format+Ingredient.swift in Sources */,
 				DA4233E21FEDE5DD0012A589 /* PhotoCrop.swift in Sources */,
@@ -2154,6 +2159,7 @@
 				DAF949FC1FD8BD13001BA32E /* NewAdd.swift in Sources */,
 				DA1F04FE1FE8E1DA00DF03A8 /* RecipeStepType.swift in Sources */,
 				DA16F15C1FDFADD800EB6877 /* ViewNewAddIngredientBar.swift in Sources */,
+				DA2C17741FEF41AD001BDA54 /* ViewPhotoCropDisplay.swift in Sources */,
 				DA177BEF1FD77773003B3836 /* ViewNewListCell.swift in Sources */,
 				DA91EB071FD62C1F0063560D /* ViewAlert.swift in Sources */,
 				DA71D6731FDA44E2003A33E1 /* NewAddSectionProtocol.swift in Sources */,
