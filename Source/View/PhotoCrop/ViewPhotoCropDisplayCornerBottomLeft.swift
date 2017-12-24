@@ -2,27 +2,19 @@ import UIKit
 
 final class ViewPhotoCropDisplayCornerBottomLeft:ViewPhotoCropDisplayCorner
 {
-    override func drawWithContext(
-        context:CGContext,
-        width:CGFloat,
-        height:CGFloat)
+    override func drawWithContext(context:CGContext)
     {
-        super.drawWithContext(
-            context:context,
-            width:width,
-            height:height)
-        
-        let maxY:CGFloat = height - self.lineWidth_2
+        super.drawWithContext(context:context)
         
         let initialPoint:CGPoint = CGPoint(
             x:self.lineWidth_2,
             y:0)
         let middlePoint:CGPoint = CGPoint(
             x:self.lineWidth_2,
-            y:maxY)
+            y:self.sizeMinusLine)
         let endPoint:CGPoint = CGPoint(
-            x:width,
-            y:maxY)
+            x:ViewPhotoCropDisplayCorner.Constant.size,
+            y:self.sizeMinusLine)
         
         context.move(to:initialPoint)
         context.addLine(to:middlePoint)

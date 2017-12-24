@@ -22,9 +22,9 @@ final class ControllerPhotoCrop:Controller<ArchPhotoCrop>
         return nil
     }
     
-    override func viewWillAppear(_ animated:Bool)
+    override func viewDidAppear(_ animated:Bool)
     {
-        super.viewWillAppear(animated)
+        super.viewDidAppear(animated)
         
         self.viewMain.viewDisplay.adjustImageToDisplay()
         self.viewMain.viewDisplay.adjustCornersToDisplay()

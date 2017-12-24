@@ -6,6 +6,7 @@ class ViewPhotoCropDisplayCorner:UIView
     weak var layoutLeft:NSLayoutConstraint!
     var previousTouch:CGPoint?
     let lineWidth_2:CGFloat
+    let sizeMinusLine:CGFloat
     private var initialLeft:CGFloat
     private var initialTop:CGFloat
     
@@ -32,6 +33,7 @@ class ViewPhotoCropDisplayCorner:UIView
     init()
     {
         self.lineWidth_2 = ViewPhotoCropDisplayCorner.Constant.lineWidth / 2.0
+        self.sizeMinusLine = ViewPhotoCropDisplayCorner.Constant.size - self.lineWidth_2
         self.initialLeft = 0
         self.initialTop = 0
         
@@ -58,16 +60,10 @@ class ViewPhotoCropDisplayCorner:UIView
             return
         }
         
-        let width:CGFloat = rect.width
-        let height:CGFloat = rect.height
-        
         context.setLineWidth(ViewPhotoCropDisplayCorner.Constant.lineWidth)
         context.setStrokeColor(UIColor.white.cgColor)
         
-        self.drawWithContext(
-            context:context,
-            width:width,
-            height:height)
+        self.drawWithContext(context:context)
         
         context.drawPath(using:CGPathDrawingMode.stroke)
     }
@@ -84,8 +80,5 @@ class ViewPhotoCropDisplayCorner:UIView
         self.layoutLeft.constant = initialLeft
     }
     
-    func drawWithContext(
-        context:CGContext,
-        width:CGFloat,
-        height:CGFloat) { }
+    func drawWithContext(context:CGContext) { }
 }
