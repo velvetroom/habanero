@@ -2,5 +2,90 @@ import UIKit
 
 final class ViewPhotoCropDisplayCorner:UIView
 {
+    weak var layoutTop:NSLayoutConstraint!
+    weak var layoutLeft:NSLayoutConstraint!
+    var previousTouch:CGPoint?
+    let lineWidth_2:CGFloat
+    private var initialLeft:CGFloat
+    private var initialTop:CGFloat
     
+    var deltaLeft:CGFloat
+    {
+        get
+        {
+            let delta:CGFloat = self.layoutLeft.constant - self.initialLeft
+            
+            return delta
+        }
+    }
+    
+    var deltaTop:CGFloat
+    {
+        get
+        {
+            let delta:CGFloat = self.layoutTop.constant - self.initialTop
+            
+            return delta
+        }
+    }
+    
+    init()
+    {
+        self.lineWidth_2 = ViewPhotoCropDisplayCorner.Constant.lineWidth / 2.0
+        self.initialLeft = 0
+        self.initialTop = 0
+        
+        super.init(frame:CGRect.zero)
+        self.isUserInteractionEnabled = false
+        self.clipsToBounds = true
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.backgroundColor = UIColor.clear
+    }
+    
+    required init?(coder:NSCoder)
+    {
+        return nil
+    }
+    
+    override func draw(_ rect:CGRect)
+    {
+        guard
+            
+            let context:CGContext = UIGraphicsGetCurrentContext()
+            
+        else
+        {
+            return
+        }
+        
+        let width:CGFloat = rect.width
+        let height:CGFloat = rect.height
+        
+        context.setLineWidth(ViewPhotoCropDisplayCorner.Constant.lineWidth)
+        context.setStrokeColor(UIColor.white.cgColor)
+        
+        self.drawWithContext(
+            context:context,
+            width:width,
+            height:height)
+        
+        context.drawPath(using:CGPathDrawingMode.stroke)
+    }
+    
+    //MARK: internal
+    
+    final func adjustLayout(
+        initialTop:CGFloat,
+        initialLeft:CGFloat)
+    {
+        self.initialTop = initialTop
+        self.initialLeft = initialLeft
+        self.layoutTop.constant = initialTop
+        self.layoutLeft.constant = initialLeft
+    }
+    
+    func drawWithContext(
+        context:CGContext,
+        width:CGFloat,
+        height:CGFloat) { }
 }
