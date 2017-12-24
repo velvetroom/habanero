@@ -15,7 +15,7 @@ final class ViewPhotoCropDisplayImage:View<ArchPhotoCrop>
         let imageView:UIImageView = UIImageView()
         imageView.isUserInteractionEnabled = false
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.contentMode = UIViewContentMode.center
+        imageView.contentMode = UIViewContentMode.scaleAspectFit
         imageView.clipsToBounds = true
         imageView.image = self.controller.model.image
         
