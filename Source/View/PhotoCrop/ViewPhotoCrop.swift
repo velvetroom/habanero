@@ -2,6 +2,8 @@ import UIKit
 
 final class ViewPhotoCrop:ViewMain<ArchPhotoCrop>
 {
+    private(set) weak var viewDisplay:ViewPhotoCropDisplay!
+    
     override func factoryViews()
     {
         super.factoryViews()
@@ -10,6 +12,7 @@ final class ViewPhotoCrop:ViewMain<ArchPhotoCrop>
         let viewMenu:ViewPhotoCropMenu = ViewPhotoCropMenu(controller:self.controller)
         
         let viewDisplay:ViewPhotoCropDisplay = ViewPhotoCropDisplay(controller:self.controller)
+        self.viewDisplay = viewDisplay
         
         self.addSubview(viewMenu)
         self.addSubview(viewDisplay)

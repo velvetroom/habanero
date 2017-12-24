@@ -2,7 +2,7 @@ import UIKit
 
 final class ViewPhotoCropDisplay:View<ArchPhotoCrop>
 {
-    private weak var viewImage:ViewPhotoCropDisplayImage!
+    private(set) weak var viewImage:ViewPhotoCropDisplayImage!
     
     override func factoryViews()
     {

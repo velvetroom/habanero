@@ -22,10 +22,25 @@ final class ControllerPhotoCrop:Controller<ArchPhotoCrop>
         return nil
     }
     
+    override func viewWillAppear(_ animated:Bool)
+    {
+        super.viewWillAppear(animated)
+        
+        self.viewMain.viewDisplay.adjustImageToDisplay()
+    }
+    
     //MARK: internal
     
     func transitionBack()
     {
         self.parentController?.pop(vertical:ControllerTransition.Vertical.top)
+    }
+    
+    func imageScaledSize(
+        width:CGFloat,
+        height:CGFloat)
+    {
+        self.model.scaledWidth = width
+        self.model.scaledHeight = height
     }
 }
