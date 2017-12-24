@@ -27,6 +27,7 @@ final class ControllerPhotoCrop:Controller<ArchPhotoCrop>
         super.viewWillAppear(animated)
         
         self.viewMain.viewDisplay.adjustImageToDisplay()
+        self.viewMain.viewDisplay.adjustCornersToDisplay()
     }
     
     //MARK: internal

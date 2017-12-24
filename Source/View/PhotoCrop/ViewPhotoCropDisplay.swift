@@ -66,6 +66,6 @@ final class ViewPhotoCropDisplay:View<ArchPhotoCrop>
             toView:self)
         NSLayoutConstraint.size(
             view:viewCorner,
-            constant:ViewPhotoCropDisplayCorner.Constant.cornerSize)
+            constant:ViewPhotoCropDisplayCorner.Constant.size)
     }
 }

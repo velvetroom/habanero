@@ -41,4 +41,29 @@ extension ViewPhotoCropDisplay
         self.viewImage.layoutTop.constant = marginHeight
         self.viewImage.layoutBottom.constant = -marginHeight
     }
+    
+    func adjustCornersToDisplay()
+    {
+        let displayWidth:CGFloat = self.bounds.width
+        let displayHeight:CGFloat = self.bounds.height
+        let minX:CGFloat = self.viewImage.layoutLeft.constant
+        let minY:CGFloat = self.viewImage.layoutTop.constant
+        let maxX:CGFloat = displayWidth + self.viewImage.layoutRight.constant -
+            ViewPhotoCropDisplayCorner.Constant.size
+        let maxY:CGFloat = displayHeight + self.viewImage.layoutBottom.constant -
+            ViewPhotoCropDisplayCorner.Constant.size
+        
+        self.viewCornerBottomLeft.adjustLayout(
+            initialTop:maxY,
+            initialLeft:minX)
+        self.viewCornerBottomRight.adjustLayout(
+            initialTop:maxX,
+            initialLeft:maxY)
+        self.viewCornerTopLeft.adjustLayout(
+            initialTop:minY,
+            initialLeft:minX)
+        self.viewCornerTopRight.adjustLayout(
+            initialTop:minY,
+            initialLeft:maxX)
+    }
 }
