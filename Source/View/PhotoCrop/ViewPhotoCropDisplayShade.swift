@@ -40,7 +40,8 @@ final class ViewPhotoCropDisplayShade:View<ArchPhotoCrop>
     {
         get
         {
-            let maxY:CGFloat = self.controller.viewMain.viewDisplay.viewCornerTopRight.layoutTop.constant
+            let maxY:CGFloat = self.controller.viewMain.viewDisplay.viewCornerBottomRight.layoutTop.constant +
+                ViewPhotoCropDisplayCorner.Constant.size
             
             return maxY
         }
@@ -60,7 +61,8 @@ final class ViewPhotoCropDisplayShade:View<ArchPhotoCrop>
     {
         get
         {
-            let maxX:CGFloat = self.controller.viewMain.viewDisplay.viewCornerTopRight.layoutLeft.constant
+            let maxX:CGFloat = self.controller.viewMain.viewDisplay.viewCornerTopRight.layoutLeft.constant +
+                ViewPhotoCropDisplayCorner.Constant.size
             
             return maxX
         }
@@ -79,16 +81,9 @@ final class ViewPhotoCropDisplayShade:View<ArchPhotoCrop>
         self.layer.addSublayer(layerMask)
     }
     
-    override func layoutSubviews()
-    {
-        self.updateMaskDisplay()
-        
-        super.layoutSubviews()
-    }
+    //MARK: internal
     
-    //MARK: private
-    
-    private func updateMaskDisplay()
+    func updateMask()
     {
         let innerPath:UIBezierPath = UIBezierPath(rect:self.innerRect)
         let outerPath:UIBezierPath = UIBezierPath(rect:self.bounds)
