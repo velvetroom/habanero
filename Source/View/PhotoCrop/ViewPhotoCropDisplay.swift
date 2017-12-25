@@ -17,6 +17,7 @@ final class ViewPhotoCropDisplay:View<ArchPhotoCrop>
         self.viewImage = viewImage
         
         let viewShade:ViewPhotoCropDisplayShade = ViewPhotoCropDisplayShade(controller:self.controller)
+        self.viewShade = viewShade
         
         let viewCornerTopLeft:ViewPhotoCropDisplayCornerTopLeft = ViewPhotoCropDisplayCornerTopLeft()
         self.viewCornerTopLeft = viewCornerTopLeft
@@ -49,6 +50,10 @@ final class ViewPhotoCropDisplay:View<ArchPhotoCrop>
             toView:self)
         viewImage.layoutBottom = NSLayoutConstraint.bottomToBottom(
             view:viewImage,
+            toView:self)
+        
+        NSLayoutConstraint.equals(
+            view:viewShade,
             toView:self)
     }
     

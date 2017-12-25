@@ -28,6 +28,7 @@ final class ControllerPhotoCrop:Controller<ArchPhotoCrop>
         
         self.viewMain.viewDisplay.adjustImageToDisplay()
         self.viewMain.viewDisplay.adjustCornersToDisplay()
+        self.viewMain.viewDisplay.viewShade.layoutIfNeeded()
     }
     
     //MARK: internal

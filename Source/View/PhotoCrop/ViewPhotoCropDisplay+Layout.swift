@@ -52,18 +52,19 @@ extension ViewPhotoCropDisplay
             ViewPhotoCropDisplayCorner.Constant.size
         let maxY:CGFloat = displayHeight + self.viewImage.layoutBottom.constant -
             ViewPhotoCropDisplayCorner.Constant.size
+        let minMaximum:CGFloat = min(maxX, maxY)
         
         self.viewCornerBottomLeft.adjustLayout(
-            initialTop:maxY,
+            initialTop:minMaximum,
             initialLeft:minX)
         self.viewCornerBottomRight.adjustLayout(
-            initialTop:maxY,
-            initialLeft:maxX)
+            initialTop:minMaximum,
+            initialLeft:minMaximum)
         self.viewCornerTopLeft.adjustLayout(
             initialTop:minY,
             initialLeft:minX)
         self.viewCornerTopRight.adjustLayout(
             initialTop:minY,
-            initialLeft:maxX)
+            initialLeft:minMaximum)
     }
 }
