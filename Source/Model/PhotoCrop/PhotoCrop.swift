@@ -5,6 +5,7 @@ final class PhotoCrop:Model<ArchPhotoCrop>
     var image:UIImage?
     var scaledWidth:CGFloat
     var scaledHeight:CGFloat
+    private(set) var moving:PhotoCropMoving?
     
     required init()
     {
@@ -12,5 +13,16 @@ final class PhotoCrop:Model<ArchPhotoCrop>
         self.scaledHeight = 0
         
         super.init()
+    }
+    
+    //MARK: internal
+    
+    func beganMoving(
+        viewCorner:ViewPhotoCropDisplayCorner,
+        at location:CGPoint)
+    {
+        self.moving = PhotoCropMoving(
+            viewCorner:viewCorner,
+            location:location)
     }
 }
