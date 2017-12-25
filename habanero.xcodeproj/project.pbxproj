@@ -109,6 +109,8 @@
 		DA4AA5091FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5081FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift */; };
 		DA4AA50A1FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5081FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift */; };
 		DA4AA50D1FE7374A00374B07 /* ViewNewAddIngredientListCell+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA50B1FE7374A00374B07 /* ViewNewAddIngredientListCell+Constants.swift */; };
+		DA55E2241FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */; };
+		DA55E2251FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */; };
 		DA58C6E51FD9E12A000E6F30 /* NewAddSectionItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58C6E41FD9E12A000E6F30 /* NewAddSectionItemProtocol.swift */; };
 		DA58C6E71FD9E216000E6F30 /* NewAdd+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58C6E61FD9E216000E6F30 /* NewAdd+Factory.swift */; };
 		DA58C6E91FD9EAFB000E6F30 /* NewAdd+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58C6E81FD9EAFB000E6F30 /* NewAdd+Constants.swift */; };
@@ -549,6 +551,7 @@
 		DA4AA5051FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormatIngredientTypeCups+Constants.swift"; sourceTree = "<group>"; };
 		DA4AA5081FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormatIngredientTypeGrams+Constants.swift"; sourceTree = "<group>"; };
 		DA4AA50B1FE7374A00374B07 /* ViewNewAddIngredientListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientListCell+Constants.swift"; sourceTree = "<group>"; };
+		DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoCropDisplayShade.swift; sourceTree = "<group>"; };
 		DA58C6E41FD9E12A000E6F30 /* NewAddSectionItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddSectionItemProtocol.swift; sourceTree = "<group>"; };
 		DA58C6E61FD9E216000E6F30 /* NewAdd+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Factory.swift"; sourceTree = "<group>"; };
 		DA58C6E81FD9EAFB000E6F30 /* NewAdd+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Constants.swift"; sourceTree = "<group>"; };
@@ -917,6 +920,7 @@
 				DA2C178A1FEF5422001BDA54 /* ViewPhotoCropDisplayCornerTopRight.swift */,
 				DA2C178D1FEF5474001BDA54 /* ViewPhotoCropDisplayCornerBottomLeft.swift */,
 				DA2C17901FEF54AE001BDA54 /* ViewPhotoCropDisplayCornerBottomRight.swift */,
+				DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */,
 			);
 			path = PhotoCrop;
 			sourceTree = "<group>";
@@ -1816,6 +1820,7 @@
 			files = (
 				DA2C177C1FEF484F001BDA54 /* ViewPhotoCropDisplay+Constants.swift in Sources */,
 				DACF554B1FD7661E00069701 /* ExtensionUICollectionReusableView.swift in Sources */,
+				DA55E2241FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */,
 				DA70AFC21FD5AA980016B0DC /* ControllerHome.swift in Sources */,
 				DACF552D1FD7661E00069701 /* ExtensionNotification.swift in Sources */,
 				DA3F0EBB1FD7505E00593B83 /* Menu+OrderUser.swift in Sources */,
@@ -2062,6 +2067,7 @@
 				DA71D67D1FDA4B91003A33E1 /* ViewNewAddListFooterInfo+Constants.swift in Sources */,
 				DA4233ED1FEDEBEC0012A589 /* ViewPhotoCrop+Constants.swift in Sources */,
 				DA74F0C81FE614BA00F45310 /* FormatIngredientTypeCups.swift in Sources */,
+				DA55E2251FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */,
 				DA71D6831FDA50C4003A33E1 /* ViewNewAddList+Constants.swift in Sources */,
 				DA9089851FD4CE2E00C1208A /* ControllerTransition.swift in Sources */,
 				DA71D66F1FDA44A2003A33E1 /* ViewNewAddListFooterIngredients.swift in Sources */,
