@@ -2,6 +2,7 @@ import UIKit
 
 final class ViewPhotoCropDisplay:View<ArchPhotoCrop>
 {
+    private(set) weak var viewShade:ViewPhotoCropDisplayShade!
     private(set) weak var viewImage:ViewPhotoCropDisplayImage!
     private(set) weak var viewCornerTopLeft:ViewPhotoCropDisplayCornerTopLeft!
     private(set) weak var viewCornerTopRight:ViewPhotoCropDisplayCornerTopRight!
@@ -14,6 +15,8 @@ final class ViewPhotoCropDisplay:View<ArchPhotoCrop>
         
         let viewImage:ViewPhotoCropDisplayImage = ViewPhotoCropDisplayImage(controller:self.controller)
         self.viewImage = viewImage
+        
+        let viewShade:ViewPhotoCropDisplayShade = ViewPhotoCropDisplayShade(controller:self.controller)
         
         let viewCornerTopLeft:ViewPhotoCropDisplayCornerTopLeft = ViewPhotoCropDisplayCornerTopLeft()
         self.viewCornerTopLeft = viewCornerTopLeft
@@ -28,6 +31,7 @@ final class ViewPhotoCropDisplay:View<ArchPhotoCrop>
         self.viewCornerBottomRight = viewCornerBottomRight
         
         self.addSubview(viewImage)
+        self.addSubview(viewShade)
         
         self.layoutCorner(viewCorner:viewCornerTopLeft)
         self.layoutCorner(viewCorner:viewCornerTopRight)
