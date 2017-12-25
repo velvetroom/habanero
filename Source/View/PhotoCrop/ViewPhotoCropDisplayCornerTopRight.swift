@@ -2,6 +2,14 @@ import UIKit
 
 final class ViewPhotoCropDisplayCornerTopRight:ViewPhotoCropDisplayCorner
 {
+    override var movingRouter:((ControllerPhotoCrop) -> (CGFloat, CGFloat) -> ())?
+    {
+        get
+        {
+            return ControllerPhotoCrop.cornerTopRightMoveTo
+        }
+    }
+    
     override func drawWithContext(context:CGContext)
     {
         super.drawWithContext(context:context)
