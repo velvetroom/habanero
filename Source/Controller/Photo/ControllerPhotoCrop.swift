@@ -22,6 +22,13 @@ final class ControllerPhotoCrop:Controller<ArchPhotoCrop>
         return nil
     }
     
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        
+        self.viewMain.viewDisplay.alpha = 0
+    }
+    
     override func viewDidAppear(_ animated:Bool)
     {
         super.viewDidAppear(animated)
@@ -29,6 +36,19 @@ final class ControllerPhotoCrop:Controller<ArchPhotoCrop>
         self.viewMain.viewDisplay.adjustImageToDisplay()
         self.viewMain.viewDisplay.adjustCornersToDisplay()
         self.viewMain.viewDisplay.viewShade.updateMask()
+        
+        self.animateShowDisplay()
+    }
+    
+    //MARK: private
+    
+    private func animateShowDisplay()
+    {
+        UIView.animate(withDuration:ViewGlobal.Constants.animationDuration)
+        { [weak self] in
+            
+            self?.viewMain.viewDisplay.alpha = 1
+        }
     }
     
     //MARK: internal
