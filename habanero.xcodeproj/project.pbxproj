@@ -111,6 +111,8 @@
 		DA4AA50D1FE7374A00374B07 /* ViewNewAddIngredientListCell+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA50B1FE7374A00374B07 /* ViewNewAddIngredientListCell+Constants.swift */; };
 		DA55E2241FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */; };
 		DA55E2251FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */; };
+		DA55E2271FF0CBB20098C7BD /* ControllerPhotoCrop+Touches.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55E2261FF0CBB20098C7BD /* ControllerPhotoCrop+Touches.swift */; };
+		DA55E2281FF0CBB20098C7BD /* ControllerPhotoCrop+Touches.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55E2261FF0CBB20098C7BD /* ControllerPhotoCrop+Touches.swift */; };
 		DA58C6E51FD9E12A000E6F30 /* NewAddSectionItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58C6E41FD9E12A000E6F30 /* NewAddSectionItemProtocol.swift */; };
 		DA58C6E71FD9E216000E6F30 /* NewAdd+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58C6E61FD9E216000E6F30 /* NewAdd+Factory.swift */; };
 		DA58C6E91FD9EAFB000E6F30 /* NewAdd+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58C6E81FD9EAFB000E6F30 /* NewAdd+Constants.swift */; };
@@ -552,6 +554,7 @@
 		DA4AA5081FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormatIngredientTypeGrams+Constants.swift"; sourceTree = "<group>"; };
 		DA4AA50B1FE7374A00374B07 /* ViewNewAddIngredientListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientListCell+Constants.swift"; sourceTree = "<group>"; };
 		DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoCropDisplayShade.swift; sourceTree = "<group>"; };
+		DA55E2261FF0CBB20098C7BD /* ControllerPhotoCrop+Touches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerPhotoCrop+Touches.swift"; sourceTree = "<group>"; };
 		DA58C6E41FD9E12A000E6F30 /* NewAddSectionItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddSectionItemProtocol.swift; sourceTree = "<group>"; };
 		DA58C6E61FD9E216000E6F30 /* NewAdd+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Factory.swift"; sourceTree = "<group>"; };
 		DA58C6E81FD9EAFB000E6F30 /* NewAdd+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Constants.swift"; sourceTree = "<group>"; };
@@ -1358,6 +1361,7 @@
 				DABA5EAC1FEA2E170017F865 /* ControllerPhoto.swift */,
 				DABA5EC01FEA35EE0017F865 /* ControllerPhoto+Options.swift */,
 				DA4233DA1FEDE4DF0012A589 /* ControllerPhotoCrop.swift */,
+				DA55E2261FF0CBB20098C7BD /* ControllerPhotoCrop+Touches.swift */,
 			);
 			path = Photo;
 			sourceTree = "<group>";
@@ -1927,6 +1931,7 @@
 				DA91EB0A1FD62C1F0063560D /* ViewCollectionFlow.swift in Sources */,
 				DA5FFE691FE77A2F00A38154 /* FormatIngredientTypeMililitres+Constants.swift in Sources */,
 				DABA5ED01FEA3CE60017F865 /* ViewPhotoList+Actions.swift in Sources */,
+				DA55E2271FF0CBB20098C7BD /* ControllerPhotoCrop+Touches.swift in Sources */,
 				DA3F0E731FDF0BC50037C94D /* Ingredient.swift in Sources */,
 				DA91EAF21FD62C1F0063560D /* View.swift in Sources */,
 				DACF55411FD7661E00069701 /* ExtensionUIImage.swift in Sources */,
@@ -2166,6 +2171,7 @@
 				DA4233DF1FEDE56F0012A589 /* ArchPhotoCrop.swift in Sources */,
 				DA2C178F1FEF5474001BDA54 /* ViewPhotoCropDisplayCornerBottomLeft.swift in Sources */,
 				DAF949F21FD8B47D001BA32E /* ViewNewBar+Constants.swift in Sources */,
+				DA55E2281FF0CBB20098C7BD /* ControllerPhotoCrop+Touches.swift in Sources */,
 				DA5D71C41FDB566D00429F5D /* ViewNewAddListCellInfoDuration.swift in Sources */,
 				DA3F0E7D1FDF326A0037C94D /* Ingredient+Keys.swift in Sources */,
 				DA9089821FD4CE2E00C1208A /* ControllerParent+Constants.swift in Sources */,
