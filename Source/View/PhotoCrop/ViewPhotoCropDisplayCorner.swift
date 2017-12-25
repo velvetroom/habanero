@@ -38,7 +38,6 @@ class ViewPhotoCropDisplayCorner:UIView
         self.initialTop = 0
         
         super.init(frame:CGRect.zero)
-        self.isUserInteractionEnabled = false
         self.clipsToBounds = true
         self.translatesAutoresizingMaskIntoConstraints = false
         self.backgroundColor = UIColor.clear
