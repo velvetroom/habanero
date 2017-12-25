@@ -4,6 +4,7 @@ class ViewPhotoCropDisplayCorner:UIView
 {
     weak var layoutTop:NSLayoutConstraint!
     weak var layoutLeft:NSLayoutConstraint!
+    var movingRouter:((ControllerPhotoCrop) -> (CGFloat, CGFloat) -> ())?
     var previousTouch:CGPoint?
     let lineWidth_2:CGFloat
     let sizeMinusLine:CGFloat
