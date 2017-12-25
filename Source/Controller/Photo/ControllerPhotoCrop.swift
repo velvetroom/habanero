@@ -55,28 +55,28 @@ final class ControllerPhotoCrop:Controller<ArchPhotoCrop>
         _ touches:Set<UITouch>,
         with event:UIEvent?)
     {
-        
+        self.touchesBegan(touches:touches)
     }
     
     override func touchesMoved(
         _ touches:Set<UITouch>,
         with event:UIEvent?)
     {
-        
+        self.touchesMoved(touches:touches)
     }
     
     override func touchesCancelled(
         _ touches:Set<UITouch>,
         with event:UIEvent?)
     {
-        
+        self.touchesCancelled(touches:touches)
     }
     
     override func touchesEnded(
         _ touches:Set<UITouch>,
         with event:UIEvent?)
     {
-        
+        self.touchesEnded(touches:touches)
     }
     
     //MARK: internal
