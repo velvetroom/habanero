@@ -25,4 +25,9 @@ final class PhotoCrop:Model<ArchPhotoCrop>
             viewCorner:viewCorner,
             location:location)
     }
+    
+    func updateMoving(lastPosition:CGPoint)
+    {
+        self.moving?.lastPosition = lastPosition
+    }
 }

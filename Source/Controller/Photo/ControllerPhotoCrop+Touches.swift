@@ -25,7 +25,23 @@ extension ControllerPhotoCrop
     
     func touchesMoved(touches:Set<UITouch>)
     {
+        guard
         
+            let touch:UITouch = touches.first,
+            let moving:PhotoCropMoving = self.model.moving
+        
+        else
+        {
+            return
+        }
+        
+        let location:CGPoint = touch.location(in:self.viewMain.viewDisplay)
+        let deltaX:CGFloat = location.x - moving.lastPosition.x
+        let deltaY:CGFloat = location.y - moving.lastPosition.y
+        let newX:CGFloat = moving.viewCorner.layoutLeft.constant + deltaX
+        let newY:CGFloat = moving.viewCorner.layoutTop.constant + deltaY
+        
+        self.model.updateMoving(lastPosition:location)
     }
     
     func touchesCancelled(touches:Set<UITouch>)
