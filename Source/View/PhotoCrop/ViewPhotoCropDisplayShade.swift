@@ -4,6 +4,28 @@ final class ViewPhotoCropDisplayShade:View<ArchPhotoCrop>
 {
     private weak var layerMask:CAShapeLayer!
     
+    private var innerRect:CGRect
+    {
+        get
+        {
+            let minX:CGFloat = self.innerRectMinX
+            let maxX:CGFloat = self.innerRectMaxX
+            let minY:CGFloat = self.innerRectMinY
+            let maxY:CGFloat = self.innerRectMaxY
+            
+            let width:CGFloat = maxX - minX
+            let height:CGFloat = maxY - minY
+            
+            let rect:CGRect = CGRect(
+                x:minX,
+                y:minY,
+                width:width,
+                height:height)
+            
+            return rect
+        }
+    }
+    
     private var innerRectMinY:CGFloat
     {
         get
@@ -51,7 +73,7 @@ final class ViewPhotoCropDisplayShade:View<ArchPhotoCrop>
         
         let layerMask:CAShapeLayer = CAShapeLayer()
         layerMask.fillRule = kCAFillRuleEvenOdd
-        layerMask.fillColor = UIColor(white:0, alpha:0.8)
+        layerMask.fillColor = UIColor(white:0, alpha:0.8).cgColor
         self.layerMask = layerMask
         
         self.layer.addSublayer(layerMask)
@@ -68,23 +90,11 @@ final class ViewPhotoCropDisplayShade:View<ArchPhotoCrop>
     
     private func updateMaskDisplay()
     {
-        let outerRect:CGRect = self.bounds
-        let outerWidth:CGFloat = outerRect.width
-        let outerHeight:CGFloat = outerRect.height
+        let innerPath:UIBezierPath = UIBezierPath(rect:self.innerRect)
+        let outerPath:UIBezierPath = UIBezierPath(rect:self.bounds)
+        outerPath.usesEvenOddFillRule = true
+        outerPath.append(innerPath)
         
-        
-        
-        let outerPath:UIBezierPath = UIBezierPath(rect:outerRect)
-        
-        
-        let highlightPath:UIBezierPath = UIBezierPath(roundedRect:highlightFrame, cornerRadius:0)
-        backgroundPath.append(highlightPath)
-        backgroundPath.usesEvenOddFillRule = true
-        
-        let fillLayer:CAShapeLayer = CAShapeLayer()
-        fillLayer.fillRule = kCAFillRuleEvenOdd
-        fillLayer.fillColor = UIColor.black.cgColor
-        fillLayer.path = backgroundPath.cgPath
-        layer.addSublayer(fillLayer)
+        self.layerMask.path = outerPath.cgPath
     }
 }
