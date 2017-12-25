@@ -42,6 +42,8 @@ extension ControllerPhotoCrop
         let newY:CGFloat = moving.viewCorner.layoutTop.constant + deltaY
         
         self.model.updateMoving(lastPosition:location)
+        
+        moving.viewCorner.movingRouter?(self)(newX, newY)
     }
     
     func touchesCancelled(touches:Set<UITouch>)
