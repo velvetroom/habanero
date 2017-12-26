@@ -70,6 +70,24 @@ extension ControllerPhotoCrop
         return newValue
     }
     
+    private func maxSquareSize(
+        minX:CGFloat,
+        minY:CGFloat,
+        maxX:CGFloat,
+        maxY:CGFloat) -> CGPoint
+    {
+        let deltaX:CGFloat = maxX - minX
+        let deltaY:CGFloat = maxY - minY
+        let minDelta:CGFloat = min(deltaX, deltaY)
+        let maxSquareX:CGFloat = minX + minDelta
+        let maxSquareY:CGFloat = minY + minDelta
+        let maxSquare:CGPoint = CGPoint(
+            x:maxSquareX,
+            y:maxSquareY)
+        
+        return maxSquare
+    }
+    
     //MARK: internal
     
     func cornerTopLeftMoveTo(
@@ -84,14 +102,20 @@ extension ControllerPhotoCrop
         let maxY:CGFloat = self.viewCornerBottomLeft.layoutTop.constant -
             ControllerPhotoCrop.Constants.minCornerSeparation
         
+        let maxSquared:CGPoint = self.maxSquareSize(
+            minX:minX,
+            minY:minY,
+            maxX:maxX,
+            maxY:maxY)
+        
         let constrainedX:CGFloat = self.constrainPosition(
             value:positionX,
             minValue:minX,
-            maxValue:maxX)
+            maxValue:maxSquared.x)
         let constrainedY:CGFloat = self.constrainPosition(
             value:positionY,
             minValue:minY,
-            maxValue:maxY)
+            maxValue:maxSquared.y)
         
         self.viewCornerTopLeft.layoutLeft.constant = constrainedX
         self.viewCornerTopLeft.layoutTop.constant = constrainedY
