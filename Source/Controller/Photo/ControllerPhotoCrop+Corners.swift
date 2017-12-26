@@ -137,15 +137,21 @@ extension ControllerPhotoCrop
         let maxY:CGFloat = self.viewCornerBottomRight.layoutTop.constant -
             ControllerPhotoCrop.Constants.minCornerSeparation
         
+        let maxSquared:CGPoint = self.maxSquareSize(
+            minX:minX,
+            minY:minY,
+            maxX:maxX,
+            maxY:maxY)
+        
         let constrainedX:CGFloat = self.constrainPosition(
             value:positionX,
             minValue:minX,
-            maxValue:maxX)
+            maxValue:maxSquared.x)
         
         let constrainedY:CGFloat = self.constrainPosition(
             value:positionY,
             minValue:minY,
-            maxValue:maxY)
+            maxValue:maxSquared.y)
         
         self.viewCornerTopRight.layoutLeft.constant = constrainedX
         self.viewCornerTopRight.layoutTop.constant = constrainedY
@@ -168,15 +174,21 @@ extension ControllerPhotoCrop
         
         let maxY:CGFloat = self.viewCornerBottomLeft.initialTop
         
+        let maxSquared:CGPoint = self.maxSquareSize(
+            minX:minX,
+            minY:minY,
+            maxX:maxX,
+            maxY:maxY)
+        
         let constrainedX:CGFloat = self.constrainPosition(
             value:positionX,
             minValue:minX,
-            maxValue:maxX)
+            maxValue:maxSquared.x)
         
         let constrainedY:CGFloat = self.constrainPosition(
             value:positionY,
             minValue:minY,
-            maxValue:maxY)
+            maxValue:maxSquared.y)
         
         self.viewCornerBottomLeft.layoutLeft.constant = constrainedX
         self.viewCornerBottomLeft.layoutTop.constant = constrainedY
@@ -199,15 +211,21 @@ extension ControllerPhotoCrop
         
         let maxY:CGFloat = self.viewCornerBottomRight.initialTop
         
+        let maxSquared:CGPoint = self.maxSquareSize(
+            minX:minX,
+            minY:minY,
+            maxX:maxX,
+            maxY:maxY)
+        
         let constrainedX:CGFloat = self.constrainPosition(
             value:positionX,
             minValue:minX,
-            maxValue:maxX)
+            maxValue:maxSquared.x)
         
         let constrainedY:CGFloat = self.constrainPosition(
             value:positionY,
             minValue:minY,
-            maxValue:maxY)
+            maxValue:maxSquared.y)
         
         self.viewCornerBottomRight.layoutLeft.constant = constrainedX
         self.viewCornerBottomRight.layoutTop.constant = constrainedY
