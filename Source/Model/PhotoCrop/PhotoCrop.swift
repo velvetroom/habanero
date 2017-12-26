@@ -30,4 +30,9 @@ final class PhotoCrop:Model<ArchPhotoCrop>
     {
         self.moving?.lastPosition = lastPosition
     }
+    
+    func cleanMoving()
+    {
+        self.moving = nil
+    }
 }

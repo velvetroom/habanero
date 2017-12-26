@@ -48,11 +48,11 @@ extension ControllerPhotoCrop
     
     func touchesCancelled(touches:Set<UITouch>)
     {
-        
+        self.model.cleanMoving()
     }
     
     func touchesEnded(touches:Set<UITouch>)
     {
-        
+        self.model.cleanMoving()
     }
 }
