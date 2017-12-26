@@ -3,11 +3,16 @@ import UIKit
 final class ViewPhotoCropDisplayShade:View<ArchPhotoCrop>
 {
     private weak var layerMask:CAShapeLayer!
+    private weak var layoutUpperBorderTop:NSLayoutConstraint!
+    private weak var layoutLowerBorderTop:NSLayoutConstraint!
     
     override func factoryViews()
     {
         super.factoryViews()
         self.isUserInteractionEnabled = false
+        
+        let upperBorder:ViewBorder = ViewBorder(colour:UIColor.white)
+        let lowerBorder:ViewBorder = ViewBorder(colour:UIColor.white)
         
         let layerMask:CAShapeLayer = CAShapeLayer()
         layerMask.fillRule = kCAFillRuleEvenOdd
@@ -15,6 +20,29 @@ final class ViewPhotoCropDisplayShade:View<ArchPhotoCrop>
         self.layerMask = layerMask
         
         self.layer.addSublayer(layerMask)
+        
+        self.addSubview(upperBorder)
+        self.addSubview(lowerBorder)
+        
+        layoutUpperBorderTop = NSLayoutConstraint.topToTop(
+            view:upperBorder,
+            toView:self)
+        NSLayoutConstraint.height(
+            view:upperBorder,
+            constant:ViewGlobal.Constants.borderWidth)
+        NSLayoutConstraint.equalsHorizontal(
+            view:upperBorder,
+            toView:self)
+        
+        layoutLowerBorderTop = NSLayoutConstraint.topToTop(
+            view:lowerBorder,
+            toView:upperBorder)
+        NSLayoutConstraint.height(
+            view:lowerBorder,
+            constant:ViewGlobal.Constants.borderWidth)
+        NSLayoutConstraint.equalsHorizontal(
+            view:lowerBorder,
+            toView:self)
     }
     
     override func layoutSubviews()
@@ -35,6 +63,9 @@ final class ViewPhotoCropDisplayShade:View<ArchPhotoCrop>
         outerPath.append(innerPath)
         
         self.layerMask.path = outerPath.cgPath
+        
+        layoutUpperBorderTop.constant = marginTop
+        layoutLowerBorderTop.constant = width
         
         super.layoutSubviews()
     }
