@@ -97,6 +97,8 @@ extension ControllerPhotoCrop
         self.viewCornerTopLeft.layoutTop.constant = constrainedY
         self.viewCornerBottomLeft.layoutLeft.constant = constrainedX
         self.viewCornerTopRight.layoutTop.constant = constrainedY
+        
+        self.viewMain.viewDisplay.viewShade.updateMask()
     }
     
     func cornerTopRightMoveTo(
@@ -125,6 +127,8 @@ extension ControllerPhotoCrop
         self.viewCornerTopRight.layoutTop.constant = constrainedY
         self.viewCornerBottomRight.layoutLeft.constant = constrainedX
         self.viewCornerTopLeft.layoutTop.constant = constrainedY
+        
+        self.viewMain.viewDisplay.viewShade.updateMask()
     }
     
     func cornerBottomLeftMoveTo(
@@ -154,6 +158,8 @@ extension ControllerPhotoCrop
         self.viewCornerBottomLeft.layoutTop.constant = constrainedY
         self.viewCornerTopLeft.layoutLeft.constant = constrainedX
         self.viewCornerBottomRight.layoutTop.constant = constrainedY
+        
+        self.viewMain.viewDisplay.viewShade.updateMask()
     }
     
     func cornerBottomRightMoveTo(
@@ -183,5 +189,7 @@ extension ControllerPhotoCrop
         self.viewCornerBottomRight.layoutTop.constant = constrainedY
         self.viewCornerTopRight.layoutLeft.constant = constrainedX
         self.viewCornerBottomLeft.layoutTop.constant = constrainedY
+        
+        self.viewMain.viewDisplay.viewShade.updateMask()
     }
 }
