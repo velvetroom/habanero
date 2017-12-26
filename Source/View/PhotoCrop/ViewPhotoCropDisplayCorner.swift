@@ -8,8 +8,8 @@ class ViewPhotoCropDisplayCorner:UIView
     let lineWidth_2:CGFloat
     let sizeMinusLine:CGFloat
     private(set) var movingRouter:((ControllerPhotoCrop) -> (CGFloat, CGFloat) -> ())?
-    private var initialLeft:CGFloat
-    private var initialTop:CGFloat
+    private(set) var initialLeft:CGFloat
+    private(set) var initialTop:CGFloat
     
     var deltaLeft:CGFloat
     {
