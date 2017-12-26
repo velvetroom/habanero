@@ -33,10 +33,6 @@ final class ControllerPhotoCrop:Controller<ArchPhotoCrop>
     {
         super.viewDidAppear(animated)
         
-        self.viewMain.viewDisplay.adjustImageToDisplay()
-        self.viewMain.viewDisplay.adjustCornersToDisplay()
-        self.viewMain.viewDisplay.viewShade.updateMask()
-        
         self.animateShowDisplay()
     }
     
@@ -51,46 +47,10 @@ final class ControllerPhotoCrop:Controller<ArchPhotoCrop>
         }
     }
     
-    override func touchesBegan(
-        _ touches:Set<UITouch>,
-        with event:UIEvent?)
-    {
-        self.touchesBegan(touches:touches)
-    }
-    
-    override func touchesMoved(
-        _ touches:Set<UITouch>,
-        with event:UIEvent?)
-    {
-        self.touchesMoved(touches:touches)
-    }
-    
-    override func touchesCancelled(
-        _ touches:Set<UITouch>,
-        with event:UIEvent?)
-    {
-        self.touchesCancelled(touches:touches)
-    }
-    
-    override func touchesEnded(
-        _ touches:Set<UITouch>,
-        with event:UIEvent?)
-    {
-        self.touchesEnded(touches:touches)
-    }
-    
     //MARK: internal
     
     func transitionBack()
     {
         self.parentController?.pop(vertical:ControllerTransition.Vertical.top)
-    }
-    
-    func imageScaledSize(
-        width:CGFloat,
-        height:CGFloat)
-    {
-        self.model.scaledWidth = width
-        self.model.scaledHeight = height
     }
 }
