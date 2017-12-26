@@ -160,6 +160,28 @@ extension ControllerPhotoCrop
         positionX:CGFloat,
         positionY:CGFloat)
     {
+        let minX:CGFloat = self.viewCornerBottomLeft.layoutLeft.constant +
+            ControllerPhotoCrop.Constants.minCornerSeparation
         
+        let maxX:CGFloat = self.viewCornerBottomRight.initialLeft
+        let minY:CGFloat = self.viewCornerTopRight.layoutTop.constant +
+            ControllerPhotoCrop.Constants.minCornerSeparation
+        
+        let maxY:CGFloat = self.viewCornerBottomRight.initialTop
+        
+        let constrainedX:CGFloat = self.constrainPosition(
+            value:positionX,
+            minValue:minX,
+            maxValue:maxX)
+        
+        let constrainedY:CGFloat = self.constrainPosition(
+            value:positionY,
+            minValue:minY,
+            maxValue:maxY)
+        
+        self.viewCornerBottomRight.layoutLeft.constant = constrainedX
+        self.viewCornerBottomRight.layoutTop.constant = constrainedY
+        self.viewCornerTopRight.layoutLeft.constant = constrainedX
+        self.viewCornerBottomLeft.layoutTop.constant = constrainedY
     }
 }
