@@ -40,6 +40,8 @@ final class ControllerPhotoCrop:Controller<ArchPhotoCrop>
     
     private func animateShowDisplay()
     {
+        self.viewMain.viewDisplay.viewImage.adjustImage()
+        
         UIView.animate(withDuration:ViewGlobal.Constants.animationDuration)
         { [weak self] in
             

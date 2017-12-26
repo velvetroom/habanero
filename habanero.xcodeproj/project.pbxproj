@@ -43,6 +43,8 @@
 		DA1F05001FE8E2F500DF03A8 /* BuildStep+Computed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1F04FF1FE8E2F500DF03A8 /* BuildStep+Computed.swift */; };
 		DA1F05021FE8E37D00DF03A8 /* BuildStepText+Computed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1F05011FE8E37D00DF03A8 /* BuildStepText+Computed.swift */; };
 		DA1F05061FE8E3CD00DF03A8 /* BuildStepImage+Computed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1F05051FE8E3CD00DF03A8 /* BuildStepImage+Computed.swift */; };
+		DA2A94E61FF30089009D2FF9 /* ViewPhotoCropDisplayImage+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2A94E51FF30089009D2FF9 /* ViewPhotoCropDisplayImage+Constants.swift */; };
+		DA2A94E71FF30089009D2FF9 /* ViewPhotoCropDisplayImage+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2A94E51FF30089009D2FF9 /* ViewPhotoCropDisplayImage+Constants.swift */; };
 		DA2C176D1FEF3A91001BDA54 /* ViewButtonContinue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C176C1FEF3A91001BDA54 /* ViewButtonContinue.swift */; };
 		DA2C176E1FEF3A91001BDA54 /* ViewButtonContinue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C176C1FEF3A91001BDA54 /* ViewButtonContinue.swift */; };
 		DA2C17701FEF3C68001BDA54 /* ViewButtonContinue+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C176F1FEF3C68001BDA54 /* ViewButtonContinue+Constants.swift */; };
@@ -494,6 +496,7 @@
 		DA1F04FF1FE8E2F500DF03A8 /* BuildStep+Computed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildStep+Computed.swift"; sourceTree = "<group>"; };
 		DA1F05011FE8E37D00DF03A8 /* BuildStepText+Computed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildStepText+Computed.swift"; sourceTree = "<group>"; };
 		DA1F05051FE8E3CD00DF03A8 /* BuildStepImage+Computed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildStepImage+Computed.swift"; sourceTree = "<group>"; };
+		DA2A94E51FF30089009D2FF9 /* ViewPhotoCropDisplayImage+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewPhotoCropDisplayImage+Constants.swift"; sourceTree = "<group>"; };
 		DA2C176C1FEF3A91001BDA54 /* ViewButtonContinue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewButtonContinue.swift; sourceTree = "<group>"; };
 		DA2C176F1FEF3C68001BDA54 /* ViewButtonContinue+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewButtonContinue+Constants.swift"; sourceTree = "<group>"; };
 		DA2C17721FEF41AD001BDA54 /* ViewPhotoCropDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoCropDisplay.swift; sourceTree = "<group>"; };
@@ -888,6 +891,7 @@
 				DA4233EE1FEDF7D50012A589 /* ViewPhotoCropMenu+Constants.swift */,
 				DA2C17721FEF41AD001BDA54 /* ViewPhotoCropDisplay.swift */,
 				DA2C17751FEF4305001BDA54 /* ViewPhotoCropDisplayImage.swift */,
+				DA2A94E51FF30089009D2FF9 /* ViewPhotoCropDisplayImage+Constants.swift */,
 				DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */,
 			);
 			path = PhotoCrop;
@@ -1804,6 +1808,7 @@
 				DA4233E91FEDEBE10012A589 /* ViewPhotoCropMenu.swift in Sources */,
 				DA74F0CD1FE6154800F45310 /* FormatIngredientTypeMililitres.swift in Sources */,
 				DAA333D91FDB17EA002D766C /* Database+Factory.swift in Sources */,
+				DA2A94E61FF30089009D2FF9 /* ViewPhotoCropDisplayImage+Constants.swift in Sources */,
 				DA74F0B41FE60F0D00F45310 /* BuildIngredientSpoons+Computed.swift in Sources */,
 				DAE7C3541FE08281003190FF /* CloudError.swift in Sources */,
 				DA91EB001FD62C1F0063560D /* ViewParent+Gesture.swift in Sources */,
@@ -2211,6 +2216,7 @@
 				DA8C6E3D1FDB2F4600C0AD69 /* Build.swift in Sources */,
 				DA2C176E1FEF3A91001BDA54 /* ViewButtonContinue.swift in Sources */,
 				DA60428E1FE1EC2300758A2F /* ViewNewAddListCellIngredient.swift in Sources */,
+				DA2A94E71FF30089009D2FF9 /* ViewPhotoCropDisplayImage+Constants.swift in Sources */,
 				DA5D71C61FDB56AD00429F5D /* ViewNewAddListCellInfoDuration+Constants.swift in Sources */,
 				DACF554E1FD7661E00069701 /* ExtensionURL.swift in Sources */,
 				DABA5EAE1FEA2E170017F865 /* ControllerPhoto.swift in Sources */,
