@@ -217,20 +217,10 @@ extension ControllerPhotoCrop
             maxX:maxX,
             maxY:maxY)
         
-        let constrainedX:CGFloat = self.constrainPosition(
-            value:positionX,
-            minValue:minX,
-            maxValue:maxSquared.x)
-        
-        let constrainedY:CGFloat = self.constrainPosition(
-            value:positionY,
-            minValue:minY,
-            maxValue:maxSquared.y)
-        
-        self.viewCornerBottomRight.layoutLeft.constant = constrainedX
-        self.viewCornerBottomRight.layoutTop.constant = constrainedY
-        self.viewCornerTopRight.layoutLeft.constant = constrainedX
-        self.viewCornerBottomLeft.layoutTop.constant = constrainedY
+        self.viewCornerBottomRight.layoutLeft.constant = maxSquared.x
+        self.viewCornerBottomRight.layoutTop.constant = maxSquared.y
+        self.viewCornerTopRight.layoutLeft.constant = maxSquared.x
+        self.viewCornerBottomLeft.layoutTop.constant = maxSquared.y
         
         self.viewMain.viewDisplay.viewShade.updateMask()
     }
