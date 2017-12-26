@@ -1,9 +1,10 @@
 import UIKit
 
-final class ViewPhotoCropDisplayImage:View<ArchPhotoCrop>
+final class ViewPhotoCropDisplayImage:View<ArchPhotoCrop>, UIScrollViewDelegate
 {
     private(set) weak var viewScroll:UIScrollView!
     private weak var imageView:UIImageView!
+    private var marginVertical:CGFloat?
     
     override func factoryViews()
     {
@@ -22,6 +23,7 @@ final class ViewPhotoCropDisplayImage:View<ArchPhotoCrop>
         viewScroll.showsHorizontalScrollIndicator = false
         viewScroll.minimumZoomScale = ViewPhotoCropDisplayImage.Constants.minZoom
         viewScroll.maximumZoomScale = ViewPhotoCropDisplayImage.Constants.maxZoom
+        viewScroll.delegate = self
         self.viewScroll = viewScroll
         
         let imageView:UIImageView = UIImageView()
@@ -54,17 +56,54 @@ final class ViewPhotoCropDisplayImage:View<ArchPhotoCrop>
         let width:CGFloat = self.bounds.width
         let height:CGFloat = self.bounds.height
         let ratioWidth:CGFloat = image.size.width / width
-        let ratioHeight:CGFloat = image.size.height * ratioWidth
-        let remainHeight:CGFloat = height - ratioHeight
-        let marginTop:CGFloat = remainHeight / 2.0
+        let ratioHeight:CGFloat = image.size.height / ratioWidth
+        let maxHeight:CGFloat = max(height, ratioHeight)
+        let remainHeight:CGFloat = height - width
+        let contentHeight:CGFloat = maxHeight + remainHeight
+        let marginVertical:CGFloat = remainHeight / 2
+        self.marginVertical = marginVertical
         
         let imageRect:CGRect = CGRect(
             x:0,
-            y:marginTop,
+            y:marginVertical,
             width:width,
             height:ratioHeight)
         
+        let contentSize:CGSize = CGSize(
+            width:width,
+            height:contentHeight)
+        
         self.imageView.frame = imageRect
         self.imageView.image = image
+        self.viewScroll.contentSize = contentSize
+    }
+    
+    //MARK: scrollView delegate
+    
+    func viewForZooming(in scrollView:UIScrollView) -> UIView?
+    {
+        return self.imageView
+    }
+    
+    func scrollViewDidEndZooming(
+        _ scrollView:UIScrollView,
+        with view:UIView?,
+        atScale scale:CGFloat)
+    {
+        guard
+        
+            let viewFrame:CGRect = view?.frame,
+            let marginVertical:CGFloat = self.marginVertical
+        
+        else
+        {
+            return
+        }
+        
+        let contentSize:CGSize = CGSize(
+            width:viewFrame.maxX,
+            height:viewFrame.maxY + marginVertical)
+        
+        self.viewScroll.contentSize = contentSize
     }
 }
