@@ -84,11 +84,11 @@ extension ControllerPhotoCrop
         let maxY:CGFloat = self.viewCornerBottomLeft.layoutTop.constant -
             ControllerPhotoCrop.Constants.minCornerSeparation
         
-        let constrainedX:CGFloat = constrainPosition(
+        let constrainedX:CGFloat = self.constrainPosition(
             value:positionX,
             minValue:minX,
             maxValue:maxX)
-        let constrainedY:CGFloat = constrainPosition(
+        let constrainedY:CGFloat = self.constrainPosition(
             value:positionY,
             minValue:minY,
             maxValue:maxY)
@@ -111,12 +111,12 @@ extension ControllerPhotoCrop
         let maxY:CGFloat = self.viewCornerBottomRight.layoutTop.constant -
             ControllerPhotoCrop.Constants.minCornerSeparation
         
-        let constrainedX:CGFloat = constrainPosition(
+        let constrainedX:CGFloat = self.constrainPosition(
             value:positionX,
             minValue:minX,
             maxValue:maxX)
         
-        let constrainedY:CGFloat = constrainPosition(
+        let constrainedY:CGFloat = self.constrainPosition(
             value:positionY,
             minValue:minY,
             maxValue:maxY)
@@ -131,7 +131,29 @@ extension ControllerPhotoCrop
         positionX:CGFloat,
         positionY:CGFloat)
     {
+        let minX:CGFloat = self.viewCornerBottomLeft.initialLeft
+        let maxX:CGFloat = self.viewCornerBottomRight.layoutLeft.constant -
+            ControllerPhotoCrop.Constants.minCornerSeparation
         
+        let minY:CGFloat = self.viewCornerTopLeft.layoutTop.constant +
+            ControllerPhotoCrop.Constants.minCornerSeparation
+        
+        let maxY:CGFloat = self.viewCornerBottomLeft.initialTop
+        
+        let constrainedX:CGFloat = self.constrainPosition(
+            value:positionX,
+            minValue:minX,
+            maxValue:maxX)
+        
+        let constrainedY:CGFloat = self.constrainPosition(
+            value:positionY,
+            minValue:minY,
+            maxValue:maxY)
+        
+        self.viewCornerBottomLeft.layoutLeft.constant = constrainedX
+        self.viewCornerBottomLeft.layoutTop.constant = constrainedY
+        self.viewCornerTopLeft.layoutLeft.constant = constrainedX
+        self.viewCornerBottomRight.layoutTop.constant = constrainedY
     }
     
     func cornerBottomRightMoveTo(
