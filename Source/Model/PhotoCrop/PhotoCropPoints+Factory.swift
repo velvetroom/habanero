@@ -4,20 +4,18 @@ extension PhotoCropPoints
 {
     //MARK: private
     
-    private static func factoryZoomedSize(
+    private static func factoryDrawingSize(
         originalImage:CGImage,
         mask:PhotoCropMask) -> CGSize
     {
         let imageWidth:CGFloat = CGFloat(originalImage.width)
         let imageHeight:CGFloat = CGFloat(originalImage.height)
-        
-        let zoom:CGFloat = mask.zoomScale
-        let zoomedWidth:CGFloat = zoom * imageWidth
-        let zoomedHeight:CGFloat = zoom * imageHeight
+        let ceilWidth:CGFloat = ceil(imageWidth)
+        let ceilHeight:CGFloat = ceil(imageHeight)
         
         let size:CGSize = CGSize(
-            width:zoomedWidth,
-            height:zoomedHeight)
+            width:ceilWidth,
+            height:ceilHeight)
         
         return size
     }
@@ -37,24 +35,27 @@ extension PhotoCropPoints
     {
         let scaledContextSize:CGFloat = mask.screenWidth
         let contextSize:CGFloat = scaledContextSize / mask.imageScale
+        let ceilSize:CGFloat = ceil(contextSize)
         
         let size:CGSize = CGSize(
-            width:contextSize,
-            height:contextSize)
+            width:ceilSize,
+            height:ceilSize)
         
         return size
     }
     
     private static func factoryOffset(mask:PhotoCropMask) -> CGPoint
     {
-        let scaledOffsetX:CGFloat = mask.contentOffset.x
+        let scaledOffsetX:CGFloat = -mask.contentOffset.x
         let scaledOffsetY:CGFloat = mask.contentOffset.y
         let offsetX:CGFloat = scaledOffsetX / mask.imageScale
         let offsetY:CGFloat = scaledOffsetY / mask.imageScale
+        let roundX:CGFloat = round(offsetX)
+        let roundY:CGFloat = round(offsetY)
         
         let offset:CGPoint = CGPoint(
-            x:offsetX,
-            y:offsetY)
+            x:roundX,
+            y:roundY)
         
         return offset
     }
@@ -63,7 +64,7 @@ extension PhotoCropPoints
         originalImage:CGImage,
         mask:PhotoCropMask) -> CGRect
     {
-        let zoomedSize:CGSize = PhotoCropPoints.factoryZoomedSize(
+        let size:CGSize = PhotoCropPoints.factoryDrawingSize(
             originalImage:originalImage,
             mask:mask)
         
@@ -71,7 +72,7 @@ extension PhotoCropPoints
         
         let drawingRect:CGRect = CGRect(
             origin:offset,
-            size:zoomedSize)
+            size:size)
         
         return drawingRect
     }
