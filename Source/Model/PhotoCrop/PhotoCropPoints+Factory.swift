@@ -33,12 +33,10 @@ extension PhotoCropPoints
         return scale
     }
     
-    private static func factoryContextSize(
-        scale:CGFloat,
-        mask:PhotoCropMask) -> CGSize
+    private static func factoryContextSize(mask:PhotoCropMask) -> CGSize
     {
         let scaledContextSize:CGFloat = mask.screenWidth
-        let contextSize:CGFloat = scaledContextSize / scale
+        let contextSize:CGFloat = scaledContextSize / mask.imageScale
         
         let size:CGSize = CGSize(
             width:contextSize,
@@ -47,14 +45,12 @@ extension PhotoCropPoints
         return size
     }
     
-    private static func factoryOffset(
-        scale:CGFloat,
-        mask:PhotoCropMask) -> CGPoint
+    private static func factoryOffset(mask:PhotoCropMask) -> CGPoint
     {
         let scaledOffsetX:CGFloat = mask.contentOffset.x
         let scaledOffsetY:CGFloat = mask.contentOffset.y
-        let offsetX:CGFloat = scaledOffsetX / scale
-        let offsetY:CGFloat = scaledOffsetY / scale
+        let offsetX:CGFloat = scaledOffsetX / mask.imageScale
+        let offsetY:CGFloat = scaledOffsetY / mask.imageScale
         
         let offset:CGPoint = CGPoint(
             x:offsetX,
@@ -65,16 +61,13 @@ extension PhotoCropPoints
     
     private static func factoryImageDrawingRect(
         originalImage:CGImage,
-        scale:CGFloat,
         mask:PhotoCropMask) -> CGRect
     {
         let zoomedSize:CGSize = PhotoCropPoints.factoryZoomedSize(
             originalImage:originalImage,
             mask:mask)
         
-        let offset:CGPoint = PhotoCropPoints.factoryOffset(
-            scale:scale,
-            mask:mask)
+        let offset:CGPoint = PhotoCropPoints.factoryOffset(mask:mask)
         
         let drawingRect:CGRect = CGRect(
             origin:offset,
@@ -89,17 +82,15 @@ extension PhotoCropPoints
         originalImage:CGImage,
         mask:PhotoCropMask) -> PhotoCropPoints
     {
-        let scale:CGFloat = PhotoCropPoints.factoryScale(
+        var mask:PhotoCropMask = mask
+        mask.imageScale = PhotoCropPoints.factoryScale(
             originalImage:originalImage,
             mask:mask)
         
-        let contextSize:CGSize = PhotoCropPoints.factoryContextSize(
-            scale:scale,
-            mask:mask)
+        let contextSize:CGSize = PhotoCropPoints.factoryContextSize(mask:mask)
         
         let imageDrawingRect:CGRect = PhotoCropPoints.factoryImageDrawingRect(
             originalImage:originalImage,
-            scale:scale,
             mask:mask)
         
         let points:PhotoCropPoints = PhotoCropPoints(

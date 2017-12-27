@@ -5,6 +5,7 @@ struct PhotoCropMask
     var imageRect:CGRect
     var contentOffset:CGPoint
     var screenWidth:CGFloat
+    var imageScale:CGFloat
     var zoomScale:CGFloat
     
     init()
@@ -12,6 +13,7 @@ struct PhotoCropMask
         self.imageRect = CGRect.zero
         self.contentOffset = CGPoint.zero
         self.screenWidth = 0
+        self.imageScale = 0
         self.zoomScale = 0
     }
 }
