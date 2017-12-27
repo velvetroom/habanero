@@ -4,19 +4,32 @@ extension PhotoCrop
 {
     //MARK: private
     
-    private func asyncExportImage(completion:@escaping((UIImage) -> ()))
+    private func asyncExportImage(
+        viewImage:ViewPhotoCropDisplayImage,
+        completion:@escaping((UIImage) -> ()))
     {
+        guard
         
+            let originalImage:CGImage = self.image?.cgImage
+        
+        else
+        {
+            return
+        }
     }
     
     //MARK: internal
     
-    func exportImage(completion:@escaping((UIImage) -> ()))
+    func exportImage(
+        viewImage:ViewPhotoCropDisplayImage,
+        completion:@escaping((UIImage) -> ()))
     {
         DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
         { [weak self] in
             
-            self?.asyncExportImage(completion:completion)
+            self?.asyncExportImage(
+                viewImage:viewImage,
+                completion:completion)
         }
     }
 }

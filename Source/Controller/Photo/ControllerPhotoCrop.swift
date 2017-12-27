@@ -56,7 +56,9 @@ final class ControllerPhotoCrop:Controller<ArchPhotoCrop>
     
     func exportImage()
     {
-        self.model.exportImage
+        let viewImage:ViewPhotoCropDisplayImage = self.viewMain.viewDisplay.viewImage
+        
+        self.model.exportImage(viewImage:viewImage)
         { [weak self] (exportedImage:UIImage) in
             
             self?.transitionBack(exportedImage:exportedImage)
