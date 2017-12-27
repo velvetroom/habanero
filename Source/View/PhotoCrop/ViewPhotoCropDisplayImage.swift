@@ -57,9 +57,22 @@ final class ViewPhotoCropDisplayImage:View<ArchPhotoCrop>, UIScrollViewDelegate
         let height:CGFloat = self.bounds.height
         let ratioWidth:CGFloat = image.size.width / width
         let ratioHeight:CGFloat = image.size.height / ratioWidth
-        let maxHeight:CGFloat = max(height, ratioHeight)
-        let remainHeight:CGFloat = height - width
-        let contentHeight:CGFloat = maxHeight + remainHeight
+        
+        let remainHeight:CGFloat
+        
+        if ratioHeight > width
+        {
+            let minHeight:CGFloat = min(height, ratioHeight)
+            let maxMinHeightWidth:CGFloat = max(minHeight, width)
+            
+            remainHeight = maxMinHeightWidth - width
+        }
+        else
+        {
+            remainHeight = height - ratioHeight
+        }
+        
+        let contentHeight:CGFloat = ratioHeight + remainHeight
         let marginVertical:CGFloat = remainHeight / 2
         self.marginVertical = marginVertical
         
