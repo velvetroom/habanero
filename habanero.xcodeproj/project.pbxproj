@@ -200,6 +200,8 @@
 		DA84C0F81FD7403D008959EA /* ViewNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C0F71FD7403D008959EA /* ViewNew.swift */; };
 		DA855E051FF367E600E1B69F /* PhotoCrop+Export.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA855E041FF367E600E1B69F /* PhotoCrop+Export.swift */; };
 		DA855E061FF367E600E1B69F /* PhotoCrop+Export.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA855E041FF367E600E1B69F /* PhotoCrop+Export.swift */; };
+		DA855E081FF370F200E1B69F /* PhotoCropPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA855E071FF370F200E1B69F /* PhotoCropPoints.swift */; };
+		DA855E091FF370F200E1B69F /* PhotoCropPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA855E071FF370F200E1B69F /* PhotoCropPoints.swift */; };
 		DA8752C31FE3844300AE74F5 /* ViewNewAddIngredientAmountInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752C21FE3844300AE74F5 /* ViewNewAddIngredientAmountInput.swift */; };
 		DA8752C51FE3846D00AE74F5 /* ViewNewAddIngredientAmountInput+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752C41FE3846D00AE74F5 /* ViewNewAddIngredientAmountInput+Constants.swift */; };
 		DA8752C71FE384B200AE74F5 /* ViewNewAddIngredientAmount+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752C61FE384B200AE74F5 /* ViewNewAddIngredientAmount+Constants.swift */; };
@@ -613,6 +615,7 @@
 		DA84C0F41FD74009008959EA /* New.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New.swift; sourceTree = "<group>"; };
 		DA84C0F71FD7403D008959EA /* ViewNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNew.swift; sourceTree = "<group>"; };
 		DA855E041FF367E600E1B69F /* PhotoCrop+Export.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoCrop+Export.swift"; sourceTree = "<group>"; };
+		DA855E071FF370F200E1B69F /* PhotoCropPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCropPoints.swift; sourceTree = "<group>"; };
 		DA8752C21FE3844300AE74F5 /* ViewNewAddIngredientAmountInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddIngredientAmountInput.swift; sourceTree = "<group>"; };
 		DA8752C41FE3846D00AE74F5 /* ViewNewAddIngredientAmountInput+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientAmountInput+Constants.swift"; sourceTree = "<group>"; };
 		DA8752C61FE384B200AE74F5 /* ViewNewAddIngredientAmount+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientAmount+Constants.swift"; sourceTree = "<group>"; };
@@ -890,6 +893,7 @@
 				DAAD4A741FF320EE0044B1FE /* PhotoCrop+Constants.swift */,
 				DAAD4A711FF31F310044B1FE /* PhotoCrop+Rotate.swift */,
 				DA855E041FF367E600E1B69F /* PhotoCrop+Export.swift */,
+				DA855E071FF370F200E1B69F /* PhotoCropPoints.swift */,
 			);
 			path = PhotoCrop;
 			sourceTree = "<group>";
@@ -1856,6 +1860,7 @@
 				DA74F0CA1FE6152700F45310 /* FormatIngredientTypeGrams.swift in Sources */,
 				DA91EB211FD62C7D0063560D /* ViewTransitionableProtocol.swift in Sources */,
 				DA91EB121FD62C1F0063560D /* ViewSpinner+Constants.swift in Sources */,
+				DA855E081FF370F200E1B69F /* PhotoCropPoints.swift in Sources */,
 				DA71D6931FDA63FD003A33E1 /* ControllerText.swift in Sources */,
 				DA9089261FD4C66000C1208A /* ArchHome.swift in Sources */,
 				DAE7C35C1FE08281003190FF /* CloudError+Description.swift in Sources */,
@@ -2069,6 +2074,7 @@
 				DA177BF11FD77874003B3836 /* ViewNewBar.swift in Sources */,
 				DAAD4A731FF31F310044B1FE /* PhotoCrop+Rotate.swift in Sources */,
 				DACF55301FD7661E00069701 /* ExtensionUIColor.swift in Sources */,
+				DA855E091FF370F200E1B69F /* PhotoCropPoints.swift in Sources */,
 				DA71D6871FDA58E3003A33E1 /* ViewNewAddListCellInfoTitle.swift in Sources */,
 				DA8752C31FE3844300AE74F5 /* ViewNewAddIngredientAmountInput.swift in Sources */,
 				DA5FFE671FE779C300A38154 /* FormatIngredientTypeSpoons+Constants.swift in Sources */,
