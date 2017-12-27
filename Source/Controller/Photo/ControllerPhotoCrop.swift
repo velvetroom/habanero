@@ -56,8 +56,12 @@ final class ControllerPhotoCrop:Controller<ArchPhotoCrop>
         self.parentController?.pop(vertical:ControllerTransition.Vertical.top)
     }
     
-    func rotateRight()
+    func rotateImageRight()
     {
-        
+        self.model.rotateImageRight
+        { [weak self] in
+            
+            self?.viewMain.viewDisplay.viewImage.adjustImage()
+        }
     }
 }

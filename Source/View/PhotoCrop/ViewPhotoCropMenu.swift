@@ -119,6 +119,6 @@ final class ViewPhotoCropMenu:View<ArchPhotoCrop>
     @objc
     private func selectorRotate(sender button:UIButton)
     {
-        self.controller.rotateRight()
+        self.controller.rotateImageRight()
     }
 }
