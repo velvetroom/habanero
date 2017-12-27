@@ -56,12 +56,20 @@ final class ControllerPhotoCrop:Controller<ArchPhotoCrop>
     
     func exportImage()
     {
-        
+        self.model.exportImage
+        { [weak self] (exportedImage:UIImage) in
+            
+            self?.transitionBack(exportedImage:exportedImage)
+        }
     }
     
-    func transitionBack()
+    func transitionBack(exportedImage:UIImage?)
     {
         self.parentController?.pop(vertical:ControllerTransition.Vertical.top)
+        { [weak self] in
+            
+            self?.model.completion?(exportedImage)
+        }
     }
     
     func rotateImageRight()

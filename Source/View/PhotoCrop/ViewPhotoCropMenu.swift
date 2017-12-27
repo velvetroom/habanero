@@ -107,13 +107,13 @@ final class ViewPhotoCropMenu:View<ArchPhotoCrop>
     @objc
     private func selectorCancel(sender button:UIButton)
     {
-        self.controller.transitionBack()
+        self.controller.transitionBack(exportedImage:nil)
     }
     
     @objc
     private func selectorAccept(sender button:UIButton)
     {
-        self.controller.transitionBack()
+        self.controller.exportImage()
     }
     
     @objc

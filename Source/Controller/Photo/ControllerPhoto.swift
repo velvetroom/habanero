@@ -43,7 +43,11 @@ final class ControllerPhoto:Controller<ArchPhoto>, UIImagePickerControllerDelega
     
     func transitionBack()
     {
-        self.parentController?.dismissAnimateOver(completion:nil)
+        self.parentController?.dismissAnimateOver
+        { [weak self] in
+            
+            self?.model.completion?(nil)
+        }
     }
     
     //MARK: picker delegate
