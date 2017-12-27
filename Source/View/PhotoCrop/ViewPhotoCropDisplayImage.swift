@@ -6,6 +6,40 @@ final class ViewPhotoCropDisplayImage:View<ArchPhotoCrop>, UIScrollViewDelegate
     private weak var imageView:UIImageView!
     private var marginVertical:CGFloat?
     
+    private var adjustedImageSize:CGSize?
+    {
+        get
+        {
+            guard
+                
+                let image:UIImage = self.controller.model.image
+                
+            else
+            {
+                return nil
+            }
+            
+            let width:CGFloat = self.bounds.width
+            let ratio:CGFloat = image.size.width / width
+            var ratioWidth:CGFloat = image.size.width / ratio
+            var ratioHeight:CGFloat = image.size.height / ratio
+            
+            if ratioHeight < width
+            {
+                let scale:CGFloat = width / ratioHeight
+                
+                ratioWidth *= scale
+                ratioHeight *= scale
+            }
+            
+            let size:CGSize = CGSize(
+                width:ratioWidth,
+                height:ratioHeight)
+            
+            return size
+        }
+    }
+    
     override func factoryViews()
     {
         super.factoryViews()
@@ -46,7 +80,7 @@ final class ViewPhotoCropDisplayImage:View<ArchPhotoCrop>, UIScrollViewDelegate
     {
         guard
             
-            let image:UIImage = self.controller.model.image
+            let adjustedSize:CGSize = self.adjustedImageSize
         
         else
         {
@@ -55,39 +89,23 @@ final class ViewPhotoCropDisplayImage:View<ArchPhotoCrop>, UIScrollViewDelegate
         
         let width:CGFloat = self.bounds.width
         let height:CGFloat = self.bounds.height
-        let ratioWidth:CGFloat = image.size.width / width
-        let ratioHeight:CGFloat = image.size.height / ratioWidth
-        
-        let remainHeight:CGFloat
-        
-        if ratioHeight > width
-        {
-            let minHeight:CGFloat = min(height, ratioHeight)
-            let maxMinHeightWidth:CGFloat = max(minHeight, width)
-            
-            remainHeight = maxMinHeightWidth - width
-        }
-        else
-        {
-            remainHeight = height - ratioHeight
-        }
-        
-        let contentHeight:CGFloat = ratioHeight + remainHeight
+        let remainHeight:CGFloat = height - width
+        let contentHeight:CGFloat = adjustedSize.height + remainHeight
         let marginVertical:CGFloat = remainHeight / 2
         self.marginVertical = marginVertical
         
         let imageRect:CGRect = CGRect(
             x:0,
             y:marginVertical,
-            width:width,
-            height:ratioHeight)
+            width:adjustedSize.width,
+            height:adjustedSize.height)
         
         let contentSize:CGSize = CGSize(
-            width:width,
+            width:adjustedSize.width,
             height:contentHeight)
         
         self.imageView.frame = imageRect
-        self.imageView.image = image
+        self.imageView.image = self.controller.model.image
         self.viewScroll.contentSize = contentSize
     }
     
