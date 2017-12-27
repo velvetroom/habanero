@@ -5,7 +5,7 @@ extension PhotoCrop
     //MARK: private
     
     private func asyncExportImage(
-        pointsBuilder:PhotoCropPointsBuilder,
+        mask:PhotoCropMask,
         completion:@escaping((UIImage) -> ()))
     {
         guard
@@ -19,7 +19,7 @@ extension PhotoCrop
         
         let points:PhotoCropPoints = PhotoCropPoints.factoryPoints(
             originalImage:originalImage,
-            pointsBuilder:pointsBuilder)
+            mask:mask)
         
         guard
         
@@ -86,14 +86,14 @@ extension PhotoCrop
     //MARK: internal
     
     func exportImage(
-        pointsBuilder:PhotoCropPointsBuilder,
+        mask:PhotoCropMask,
         completion:@escaping((UIImage) -> ()))
     {
         DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
         { [weak self] in
             
             self?.asyncExportImage(
-                pointsBuilder:pointsBuilder,
+                mask:mask,
                 completion:completion)
         }
     }

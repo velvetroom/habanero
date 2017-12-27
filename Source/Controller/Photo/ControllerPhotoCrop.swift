@@ -10,18 +10,19 @@ final class ControllerPhotoCrop:Controller<ArchPhotoCrop>
         }
     }
     
-    private var pointsBuilder:PhotoCropPointsBuilder
+    private var mask:PhotoCropMask
     {
         get
         {
             let viewImage:ViewPhotoCropDisplayImage = self.viewMain.viewDisplay.viewImage
-            var builder:PhotoCropPointsBuilder = PhotoCropPointsBuilder()
-            builder.imageRect = viewImage.imageView.frame
-            builder.screenWidth = viewImage.bounds.width
-            builder.contentOffset = viewImage.viewScroll.contentOffset
-            builder.zoomScale = viewImage.viewScroll.zoomScale
             
-            return builder
+            var mask:PhotoCropMask = PhotoCropMask()
+            mask.imageRect = viewImage.imageView.frame
+            mask.screenWidth = viewImage.bounds.width
+            mask.contentOffset = viewImage.viewScroll.contentOffset
+            mask.zoomScale = viewImage.viewScroll.zoomScale
+            
+            return mask
         }
     }
     
@@ -71,7 +72,7 @@ final class ControllerPhotoCrop:Controller<ArchPhotoCrop>
     
     func exportImage()
     {
-        self.model.exportImage(pointsBuilder:self.pointsBuilder)
+        self.model.exportImage(mask:self.mask)
         { [weak self] (exportedImage:UIImage) in
             
             self?.transitionBack(exportedImage:exportedImage)

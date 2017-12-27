@@ -204,8 +204,8 @@
 		DA855E091FF370F200E1B69F /* PhotoCropPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA855E071FF370F200E1B69F /* PhotoCropPoints.swift */; };
 		DA855E0B1FF371D100E1B69F /* PhotoCropPoints+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA855E0A1FF371D100E1B69F /* PhotoCropPoints+Factory.swift */; };
 		DA855E0C1FF371D100E1B69F /* PhotoCropPoints+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA855E0A1FF371D100E1B69F /* PhotoCropPoints+Factory.swift */; };
-		DA855E0E1FF3839000E1B69F /* PhotoCropPointsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA855E0D1FF3839000E1B69F /* PhotoCropPointsBuilder.swift */; };
-		DA855E0F1FF3839000E1B69F /* PhotoCropPointsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA855E0D1FF3839000E1B69F /* PhotoCropPointsBuilder.swift */; };
+		DA855E0E1FF3839000E1B69F /* PhotoCropMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA855E0D1FF3839000E1B69F /* PhotoCropMask.swift */; };
+		DA855E0F1FF3839000E1B69F /* PhotoCropMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA855E0D1FF3839000E1B69F /* PhotoCropMask.swift */; };
 		DA8752C31FE3844300AE74F5 /* ViewNewAddIngredientAmountInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752C21FE3844300AE74F5 /* ViewNewAddIngredientAmountInput.swift */; };
 		DA8752C51FE3846D00AE74F5 /* ViewNewAddIngredientAmountInput+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752C41FE3846D00AE74F5 /* ViewNewAddIngredientAmountInput+Constants.swift */; };
 		DA8752C71FE384B200AE74F5 /* ViewNewAddIngredientAmount+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752C61FE384B200AE74F5 /* ViewNewAddIngredientAmount+Constants.swift */; };
@@ -621,7 +621,7 @@
 		DA855E041FF367E600E1B69F /* PhotoCrop+Export.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoCrop+Export.swift"; sourceTree = "<group>"; };
 		DA855E071FF370F200E1B69F /* PhotoCropPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCropPoints.swift; sourceTree = "<group>"; };
 		DA855E0A1FF371D100E1B69F /* PhotoCropPoints+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoCropPoints+Factory.swift"; sourceTree = "<group>"; };
-		DA855E0D1FF3839000E1B69F /* PhotoCropPointsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCropPointsBuilder.swift; sourceTree = "<group>"; };
+		DA855E0D1FF3839000E1B69F /* PhotoCropMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCropMask.swift; sourceTree = "<group>"; };
 		DA8752C21FE3844300AE74F5 /* ViewNewAddIngredientAmountInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddIngredientAmountInput.swift; sourceTree = "<group>"; };
 		DA8752C41FE3846D00AE74F5 /* ViewNewAddIngredientAmountInput+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientAmountInput+Constants.swift"; sourceTree = "<group>"; };
 		DA8752C61FE384B200AE74F5 /* ViewNewAddIngredientAmount+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientAmount+Constants.swift"; sourceTree = "<group>"; };
@@ -901,7 +901,7 @@
 				DA855E041FF367E600E1B69F /* PhotoCrop+Export.swift */,
 				DA855E071FF370F200E1B69F /* PhotoCropPoints.swift */,
 				DA855E0A1FF371D100E1B69F /* PhotoCropPoints+Factory.swift */,
-				DA855E0D1FF3839000E1B69F /* PhotoCropPointsBuilder.swift */,
+				DA855E0D1FF3839000E1B69F /* PhotoCropMask.swift */,
 			);
 			path = PhotoCrop;
 			sourceTree = "<group>";
@@ -1887,7 +1887,7 @@
 				DA74F0D01FE6156D00F45310 /* FormatIngredientTypeQuantity.swift in Sources */,
 				DA71D69B1FDA65AB003A33E1 /* ViewText.swift in Sources */,
 				DA2C176D1FEF3A91001BDA54 /* ViewButtonContinue.swift in Sources */,
-				DA855E0E1FF3839000E1B69F /* PhotoCropPointsBuilder.swift in Sources */,
+				DA855E0E1FF3839000E1B69F /* PhotoCropMask.swift in Sources */,
 				DA5A97CC1FD605E1006223BA /* MenuItemGeneric.swift in Sources */,
 				DABA5EBE1FEA34D20017F865 /* PhotoOptionProtocol.swift in Sources */,
 				DA1F04FD1FE8E1DA00DF03A8 /* RecipeStepType.swift in Sources */,
@@ -2056,7 +2056,7 @@
 				DA60429B1FE2190100758A2F /* ArchNewAddIngredientAmount.swift in Sources */,
 				DACEB3AC1FDCAE700089B3FE /* ViewNewListCellSteps.swift in Sources */,
 				DA9089841FD4CE2E00C1208A /* ControllerParent+Transitions.swift in Sources */,
-				DA855E0F1FF3839000E1B69F /* PhotoCropPointsBuilder.swift in Sources */,
+				DA855E0F1FF3839000E1B69F /* PhotoCropMask.swift in Sources */,
 				DA91EB031FD62C1F0063560D /* ViewAlert+Constants.swift in Sources */,
 				DAE7C3801FE0A9B3003190FF /* Build+Computed.swift in Sources */,
 				DA71D67D1FDA4B91003A33E1 /* ViewNewAddListFooterInfo+Constants.swift in Sources */,

@@ -1,6 +1,6 @@
 import UIKit
 
-struct PhotoCropPointsBuilder
+struct PhotoCropMask
 {
     var imageRect:CGRect
     var contentOffset:CGPoint
