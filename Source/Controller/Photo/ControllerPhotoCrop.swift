@@ -10,11 +10,14 @@ final class ControllerPhotoCrop:Controller<ArchPhotoCrop>
         }
     }
     
-    init(image:UIImage)
+    init(
+        image:UIImage,
+        completion:@escaping((UIImage?) -> ()))
     {
         super.init()
         
         self.model.image = image
+        self.model.completion = completion
     }
     
     required init?(coder:NSCoder)
@@ -50,6 +53,11 @@ final class ControllerPhotoCrop:Controller<ArchPhotoCrop>
     }
     
     //MARK: internal
+    
+    func exportImage()
+    {
+        
+    }
     
     func transitionBack()
     {

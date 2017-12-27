@@ -18,9 +18,12 @@ final class ControllerPhoto:Controller<ArchPhoto>, UIImagePickerControllerDelega
     
     private func transitionToEditPhoto(
         image:UIImage,
-        currentIndex:Int)
+        currentIndex:Int,
+        completion:@escaping((UIImage?) -> ()))
     {
-        let controller:ControllerPhotoCrop = ControllerPhotoCrop(image:image)
+        let controller:ControllerPhotoCrop = ControllerPhotoCrop(
+            image:image,
+            completion:completion)
         
         self.parentController?.push(
             controller:controller,
@@ -61,6 +64,7 @@ final class ControllerPhoto:Controller<ArchPhoto>, UIImagePickerControllerDelega
         guard
             
             let image:UIImage = info[UIImagePickerControllerOriginalImage] as? UIImage,
+            let completion:((UIImage?) -> ()) = self.model.completion,
             let nextIndex:Int = self.parentController?.childViewControllers.count
         
         else
@@ -77,7 +81,8 @@ final class ControllerPhoto:Controller<ArchPhoto>, UIImagePickerControllerDelega
             
             self?.transitionToEditPhoto(
                 image:image,
-                currentIndex:currentIndex)
+                currentIndex:currentIndex,
+                completion:completion)
         }
     }
 }
