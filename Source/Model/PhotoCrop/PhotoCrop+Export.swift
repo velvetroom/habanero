@@ -5,7 +5,7 @@ extension PhotoCrop
     //MARK: private
     
     private func asyncExportImage(
-        viewImage:ViewPhotoCropDisplayImage,
+        pointsBuilder:PhotoCropPointsBuilder,
         completion:@escaping((UIImage) -> ()))
     {
         guard
@@ -19,7 +19,7 @@ extension PhotoCrop
         
         let points:PhotoCropPoints = PhotoCropPoints.factoryPoints(
             originalImage:originalImage,
-            viewImage:viewImage)
+            pointsBuilder:pointsBuilder)
         
         guard
         
@@ -52,6 +52,14 @@ extension PhotoCrop
             return nil
         }
         
+        context.translateBy(
+            x:0,
+            y:points.imageDrawingRect.height)
+        
+        context.scaleBy(
+            x:1,
+            y:-1)
+        
         context.draw(
             originalImage,
             in:points.imageDrawingRect)
@@ -78,14 +86,14 @@ extension PhotoCrop
     //MARK: internal
     
     func exportImage(
-        viewImage:ViewPhotoCropDisplayImage,
+        pointsBuilder:PhotoCropPointsBuilder,
         completion:@escaping((UIImage) -> ()))
     {
         DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
         { [weak self] in
             
             self?.asyncExportImage(
-                viewImage:viewImage,
+                pointsBuilder:pointsBuilder,
                 completion:completion)
         }
     }

@@ -6,12 +6,12 @@ extension PhotoCropPoints
     
     private static func factoryZoomedSize(
         originalImage:CGImage,
-        viewImage:ViewPhotoCropDisplayImage) -> CGSize
+        pointsBuilder:PhotoCropPointsBuilder) -> CGSize
     {
         let imageWidth:CGFloat = CGFloat(originalImage.width)
         let imageHeight:CGFloat = CGFloat(originalImage.height)
         
-        let zoom:CGFloat = viewImage.viewScroll.zoomScale
+        let zoom:CGFloat = pointsBuilder.zoomScale
         let zoomedWidth:CGFloat = zoom * imageWidth
         let zoomedHeight:CGFloat = zoom * imageHeight
         
@@ -24,10 +24,10 @@ extension PhotoCropPoints
     
     private static func factoryScale(
         originalImage:CGImage,
-        viewImage:ViewPhotoCropDisplayImage) -> CGFloat
+        pointsBuilder:PhotoCropPointsBuilder) -> CGFloat
     {
         let imageWidth:CGFloat = CGFloat(originalImage.width)
-        let scaledImageWidth:CGFloat = viewImage.imageView.frame.size.width
+        let scaledImageWidth:CGFloat = pointsBuilder.imageRect.width
         let scale:CGFloat = scaledImageWidth / imageWidth
         
         return scale
@@ -35,9 +35,9 @@ extension PhotoCropPoints
     
     private static func factoryContextSize(
         scale:CGFloat,
-        viewImage:ViewPhotoCropDisplayImage) -> CGSize
+        pointsBuilder:PhotoCropPointsBuilder) -> CGSize
     {
-        let scaledContextSize:CGFloat = viewImage.bounds.size.width
+        let scaledContextSize:CGFloat = pointsBuilder.screenWidth
         let contextSize:CGFloat = scaledContextSize / scale
         
         let size:CGSize = CGSize(
@@ -49,10 +49,10 @@ extension PhotoCropPoints
     
     private static func factoryOffset(
         scale:CGFloat,
-        viewImage:ViewPhotoCropDisplayImage) -> CGPoint
+        pointsBuilder:PhotoCropPointsBuilder) -> CGPoint
     {
-        let scaledOffsetX:CGFloat = viewImage.viewScroll.contentOffset.x
-        let scaledOffsetY:CGFloat = viewImage.viewScroll.contentOffset.x
+        let scaledOffsetX:CGFloat = pointsBuilder.contentOffset.x
+        let scaledOffsetY:CGFloat = pointsBuilder.contentOffset.y
         let offsetX:CGFloat = scaledOffsetX / scale
         let offsetY:CGFloat = scaledOffsetY / scale
         
@@ -66,15 +66,15 @@ extension PhotoCropPoints
     private static func factoryImageDrawingRect(
         originalImage:CGImage,
         scale:CGFloat,
-        viewImage:ViewPhotoCropDisplayImage) -> CGRect
+        pointsBuilder:PhotoCropPointsBuilder) -> CGRect
     {
         let zoomedSize:CGSize = PhotoCropPoints.factoryZoomedSize(
             originalImage:originalImage,
-            viewImage:viewImage)
+            pointsBuilder:pointsBuilder)
         
         let offset:CGPoint = PhotoCropPoints.factoryOffset(
             scale:scale,
-            viewImage:viewImage)
+            pointsBuilder:pointsBuilder)
         
         let drawingRect:CGRect = CGRect(
             origin:offset,
@@ -87,20 +87,20 @@ extension PhotoCropPoints
     
     static func factoryPoints(
         originalImage:CGImage,
-        viewImage:ViewPhotoCropDisplayImage) -> PhotoCropPoints
+        pointsBuilder:PhotoCropPointsBuilder) -> PhotoCropPoints
     {
         let scale:CGFloat = PhotoCropPoints.factoryScale(
             originalImage:originalImage,
-            viewImage:viewImage)
+            pointsBuilder:pointsBuilder)
         
         let contextSize:CGSize = PhotoCropPoints.factoryContextSize(
             scale:scale,
-            viewImage:viewImage)
+            pointsBuilder:pointsBuilder)
         
         let imageDrawingRect:CGRect = PhotoCropPoints.factoryImageDrawingRect(
             originalImage:originalImage,
             scale:scale,
-            viewImage:viewImage)
+            pointsBuilder:pointsBuilder)
         
         let points:PhotoCropPoints = PhotoCropPoints(
             contextSize:contextSize,
