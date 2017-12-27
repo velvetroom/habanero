@@ -55,4 +55,9 @@ final class ControllerPhotoCrop:Controller<ArchPhotoCrop>
     {
         self.parentController?.pop(vertical:ControllerTransition.Vertical.top)
     }
+    
+    func rotateRight()
+    {
+        
+    }
 }

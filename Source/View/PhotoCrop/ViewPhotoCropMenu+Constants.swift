@@ -8,5 +8,6 @@ extension ViewPhotoCropMenu
         static let cancelWidth:CGFloat = 120
         static let cancelHeight:CGFloat = 34
         static let cancelTop:CGFloat = 30
+        static let rotateSize:CGFloat = 60
     }
 }

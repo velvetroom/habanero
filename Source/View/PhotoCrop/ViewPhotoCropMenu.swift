@@ -36,8 +36,25 @@ final class ViewPhotoCropMenu:View<ArchPhotoCrop>
             action:#selector(self.selectorAccept(sender:)),
             for:UIControlEvents.touchUpInside)
         
+        let buttonRotate:UIButton = UIButton()
+        buttonRotate.translatesAutoresizingMaskIntoConstraints = false
+        buttonRotate.setImage(
+            #imageLiteral(resourceName: "assetPhotoRotate").withRenderingMode(UIImageRenderingMode.alwaysOriginal),
+            for:UIControlState.normal)
+        buttonRotate.setImage(
+            #imageLiteral(resourceName: "assetPhotoRotate").withRenderingMode(UIImageRenderingMode.alwaysTemplate),
+            for:UIControlState.highlighted)
+        buttonRotate.imageView!.clipsToBounds = true
+        buttonRotate.imageView!.contentMode = UIViewContentMode.center
+        buttonRotate.imageView!.tintColor = UIColor.colourBackgroundGray
+        buttonRotate.addTarget(
+            self,
+            action:#selector(self.selectorRotate(sender:)),
+            for:UIControlEvents.touchUpInside)
+        
         self.addSubview(buttonCancel)
         self.addSubview(buttonAccept)
+        self.addSubview(buttonRotate)
         
         NSLayoutConstraint.topToTop(
             view:buttonCancel,
@@ -59,6 +76,16 @@ final class ViewPhotoCropMenu:View<ArchPhotoCrop>
         layoutAcceptLeft = NSLayoutConstraint.leftToLeft(
             view:buttonAccept,
             toView:self)
+        
+        NSLayoutConstraint.topToTop(
+            view:buttonRotate,
+            toView:self)
+        NSLayoutConstraint.rightToRight(
+            view:buttonRotate,
+            toView:self)
+        NSLayoutConstraint.size(
+            view:buttonRotate,
+            constant:ViewPhotoCropMenu.Constants.rotateSize)
     }
     
     override func layoutSubviews()
@@ -87,5 +114,11 @@ final class ViewPhotoCropMenu:View<ArchPhotoCrop>
     private func selectorAccept(sender button:UIButton)
     {
         self.controller.transitionBack()
+    }
+    
+    @objc
+    private func selectorRotate(sender button:UIButton)
+    {
+        self.controller.rotateRight()
     }
 }
