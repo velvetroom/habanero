@@ -3,7 +3,7 @@ import UIKit
 final class ViewPhotoCropDisplayImage:View<ArchPhotoCrop>, UIScrollViewDelegate
 {
     private(set) weak var viewScroll:UIScrollView!
-    private weak var imageView:UIImageView!
+    private(set) weak var imageView:UIImageView!
     private var marginVertical:CGFloat?
     
     private var adjustedImageSize:CGSize?
