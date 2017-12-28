@@ -28,15 +28,18 @@ class ViewNewAddListCellStep:ViewNewAddListCell, ViewNewAddListCellDraggrablePro
         
         self.addSubview(actionsButton)
         
-        NSLayoutConstraint.equalsVertical(
+        NSLayoutConstraint.topToTop(
             view:actionsButton,
             toView:self)
+        NSLayoutConstraint.height(
+            view:actionsButton,
+            constant:ViewNewAddListCellStep.Constants.buttonHeight)
         NSLayoutConstraint.rightToRight(
             view:actionsButton,
             toView:self)
         NSLayoutConstraint.width(
             view:actionsButton,
-            constant:ViewNewAddListCellStepText.Constants.buttonWidth)
+            constant:ViewNewAddListCellStep.Constants.buttonWidth)
     }
     
     override func config(

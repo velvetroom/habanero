@@ -4,7 +4,6 @@ extension ViewNewAddListCellStepImage
 {
     struct Constants
     {
-        static let fontSize:CGFloat = 16
-        static let buttonWidth:CGFloat = 50
+        static let fontSize:CGFloat = 14
     }
 }
