@@ -29,6 +29,14 @@ extension NewAdd
         }
     }
     
+    private func asyncCreateStepImage(
+        image:UIImage,
+        text:String,
+        completion:@escaping(() -> ()))
+    {
+        
+    }
+    
     private func stepCreated(
         step:BuildStep,
         database:Database,
@@ -65,6 +73,13 @@ extension NewAdd
         text:String,
         completion:@escaping(() -> ()))
     {
-        
+        DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
+        { [weak self] in
+            
+            self?.asyncCreateStepImage(
+                image:image,
+                text:text,
+                completion:completion)
+        }
     }
 }
