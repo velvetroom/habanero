@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 extension NewAdd
 {
@@ -54,5 +54,32 @@ extension NewAdd
                 to:destination,
                 completion:completion)
         }
+    }
+    
+    func saveMovingCellDelta(
+        gestureLocation:CGPoint,
+        cellLocation:CGPoint)
+    {
+        self.movingCellDelta = CGPoint(
+            x:cellLocation.x - gestureLocation.x,
+            y:cellLocation.y - gestureLocation.y)
+    }
+    
+    func updatedCellLocation(gestureLocation:CGPoint) -> CGPoint?
+    {
+        guard
+        
+            let movingCellDelta:CGPoint = self.movingCellDelta
+        
+        else
+        {
+            return nil
+        }
+        
+        let cellLocation:CGPoint = CGPoint(
+            x:gestureLocation.x + movingCellDelta.x,
+            y:gestureLocation.y + movingCellDelta.y)
+        
+        return cellLocation
     }
 }

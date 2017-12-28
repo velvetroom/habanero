@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 final class NewAdd:Model<ArchNewAdd>
 {
@@ -6,6 +6,7 @@ final class NewAdd:Model<ArchNewAdd>
     var build:Build?
     var settings:Settings?
     var sections:[NewAddSectionProtocol]
+    var movingCellDelta:CGPoint?
     
     static var stepsImageDirectory:URL?
     {

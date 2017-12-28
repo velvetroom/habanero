@@ -22,16 +22,21 @@ extension ControllerNewAdd
     
     private func gestureStateBegan(gesture:UILongPressGestureRecognizer)
     {
-        let location:CGPoint = gesture.location(in:self.collectionView)
+        let location:CGPoint = gesture.location(in:self.viewMain.viewList.collectionView)
         
         guard
             
-            let indexPath:IndexPath = self.viewMain.viewList.collectionView.indexPathForItem(at:location)
+            let indexPath:IndexPath = self.viewMain.viewList.collectionView.indexPathForItem(at:location),
+            let cell:UICollectionViewCell = self.viewMain.viewList.collectionView.cellForItem(at:indexPath)
             
         else
         {
             return
         }
+        
+        self.model.saveMovingCellDelta(
+            gestureLocation:location,
+            cellLocation:cell.center)
         
         self.viewMain.viewList.collectionView.beginInteractiveMovementForItem(at:indexPath)
     }
@@ -47,17 +52,29 @@ extension ControllerNewAdd
             return
         }
         
-        let location:CGPoint = gesture.location(in:self.viewMain.viewList.collectionView)
-        self.viewMain.viewList.collectionView.updateInteractiveMovementTargetPosition(location)
+        let gestureLocation:CGPoint = gesture.location(in:self.viewMain.viewList.collectionView)
+        
+        guard
+            
+            let updatedLocation:CGPoint = self.model.updatedCellLocation(gestureLocation:gestureLocation)
+        
+        else
+        {
+            return
+        }
+        
+        self.viewMain.viewList.collectionView.updateInteractiveMovementTargetPosition(updatedLocation)
     }
     
     private func gestureStateEnded(gesture:UILongPressGestureRecognizer)
     {
+        self.model.movingCellDelta = nil
         self.viewMain.viewList.collectionView.endInteractiveMovement()
     }
     
     private func gestureStateCancelled(gesture:UILongPressGestureRecognizer)
     {
+        self.model.movingCellDelta = nil
         self.viewMain.viewList.collectionView.cancelInteractiveMovement()
     }
     
