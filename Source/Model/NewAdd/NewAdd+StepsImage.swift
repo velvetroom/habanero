@@ -26,10 +26,75 @@ extension NewAdd
         }
     }
     
+    //MARK: private
+    
+    private func localURLForImage(identifier:String) -> URL?
+    {
+        guard
+        
+            let imageDirectory:URL = NewAdd.stepsImageDirectory
+        
+        else
+        {
+            return nil
+        }
+        
+        let localURL:URL = imageDirectory.appendingPathComponent(identifier)
+        
+        return localURL
+    }
+    
+    private func store(
+        image:UIImage,
+        at localURL:URL) throws
+    {
+        guard
+        
+            let imageData:Data = UIImagePNGRepresentation(image)
+        
+        else
+        {
+            throw NewAddError.invalidImageData
+        }
+        
+        do
+        {
+            try imageData.write(
+                to:localURL,
+                options:Data.WritingOptions.atomicWrite)
+        }
+        catch let error
+        {
+            throw error
+        }
+    }
+    
     //MARK: internal
     
-    func saveImageLocally() -> URL?
+    func storeImageLocally(image:UIImage) -> String?
     {
+        let identifier:String = UUID().uuidString
         
+        guard
+        
+            let localURL:URL = self.localURLForImage(identifier:identifier)
+        
+        else
+        {
+            return nil
+        }
+        
+        do
+        {
+            try self.store(
+                image:image,
+                at:localURL)
+        }
+        catch
+        {
+            return nil
+        }
+        
+        return identifier
     }
 }

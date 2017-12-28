@@ -4,13 +4,27 @@ extension NewAdd
 {
     //MARK: private
     
+    private func validateText(text:String) -> Bool
+    {
+        guard
+        
+            text.count > 0
+        
+        else
+        {
+            return false
+        }
+        
+        return true
+    }
+    
     private func asyncCreateStepText(
         text:String,
         completion:@escaping(() -> ()))
     {
         guard
         
-            text.count > 0,
+            self.validateText(text:text) == true,
             let database:Database = self.database
         
         else
@@ -22,6 +36,7 @@ extension NewAdd
         { [weak self] (step:BuildStepText) in
             
             step.text = text
+            
             self?.stepCreated(
                 step:step,
                 database:database,
@@ -34,7 +49,28 @@ extension NewAdd
         text:String,
         completion:@escaping(() -> ()))
     {
+        guard
         
+            self.validateText(text:text) == true,
+            let database:Database = self.database,
+            let imageURL:String = self.storeImageLocally(image:image)
+        
+        else
+        {
+            return
+        }
+        
+        database.create
+        { [weak self] (step:BuildStepImage) in
+            
+            step.text = text
+            step.imageURL = imageURL
+            
+            self?.stepCreated(
+                step:step,
+                database:database,
+                completion:completion)
+        }
     }
     
     private func stepCreated(
