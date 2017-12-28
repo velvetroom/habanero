@@ -1,8 +1,6 @@
 import UIKit
 
-final class ViewNewAddList:
-    ViewCollection<ArchNewAdd, ViewNewAddListCell, ViewCollectionFlow>,
-    UIGestureRecognizerDelegate
+final class ViewNewAddList:ViewCollection<ArchNewAdd, ViewNewAddListCell, ViewCollectionFlow>
 {
     override func factoryViews()
     {
@@ -22,12 +20,6 @@ final class ViewNewAddList:
         
         self.flow.minimumLineSpacing = ViewGlobal.Constants.interCellSpace
         self.flow.minimumInteritemSpacing = ViewGlobal.Constants.interCellSpace
-        
-        let longPressGesture:UILongPressGestureRecognizer = UILongPressGestureRecognizer(
-            target:self,
-            action:#selector(self.selectorLongPressGesture(sender:)))
-        longPressGesture.delegate = self
-        self.collectionView.addGestureRecognizer(longPressGesture)
     }
     
     override func collectionView(
@@ -148,22 +140,5 @@ final class ViewNewAddList:
         self.controller.moveStepFrom(
             origin:sourceIndexPath,
             to:destinationIndexPath)
-    }
-    
-    //MARK: selectors
-    
-    @objc
-    private func selectorLongPressGesture(sender gesture:UILongPressGestureRecognizer)
-    {
-        self.gestureReceived(gesture:gesture)
-    }
-    
-    //MARK: gesture delegate
-    
-    override func gestureRecognizerShouldBegin(_ gestureRecognizer:UIGestureRecognizer) -> Bool
-    {
-        let should:Bool = self.isDraggableLocation(gesture:gestureRecognizer)
-        
-        return should
     }
 }

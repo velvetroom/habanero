@@ -1,6 +1,6 @@
 import UIKit
 
-final class ControllerNewAdd:Controller<ArchNewAdd>
+final class ControllerNewAdd:Controller<ArchNewAdd>, UIGestureRecognizerDelegate
 {
     init(
         build:Build,
@@ -19,12 +19,31 @@ final class ControllerNewAdd:Controller<ArchNewAdd>
         return nil
     }
     
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        
+        let longPressGesture:UILongPressGestureRecognizer = UILongPressGestureRecognizer(
+            target:self,
+            action:#selector(self.selectorLongPressGesture(sender:)))
+        longPressGesture.delegate = self
+        self.viewMain.viewList.collectionView.addGestureRecognizer(longPressGesture)
+    }
+    
     override func viewDidAppear(_ animated:Bool)
     {
         super.viewDidAppear(animated)
         
         self.viewMain.viewList.isUserInteractionEnabled = false
         self.loadModel()
+    }
+    
+    //MARK: selectors
+    
+    @objc
+    private func selectorLongPressGesture(sender gesture:UILongPressGestureRecognizer)
+    {
+        self.gestureReceived(gesture:gesture)
     }
     
     //MARK: private
@@ -49,5 +68,14 @@ final class ControllerNewAdd:Controller<ArchNewAdd>
     func transitionBack()
     {
         self.parentController?.pop(horizontal:ControllerTransition.Horizontal.right)
+    }
+    
+    //MARK: gesture delegate
+    
+    func gestureRecognizerShouldBegin(_ gestureRecognizer:UIGestureRecognizer) -> Bool
+    {
+        let should:Bool = self.isDraggableLocation(gesture:gestureRecognizer)
+        
+        return should
     }
 }

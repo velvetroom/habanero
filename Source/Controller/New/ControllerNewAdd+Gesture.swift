@@ -1,6 +1,6 @@
 import UIKit
 
-extension ViewNewAddList
+extension ControllerNewAdd
 {
     private var gestureRouters:[UIGestureRecognizerState:((UILongPressGestureRecognizer) -> ())]
     {
@@ -26,14 +26,14 @@ extension ViewNewAddList
         
         guard
             
-            let indexPath:IndexPath = self.collectionView.indexPathForItem(at:location)
+            let indexPath:IndexPath = self.viewMain.viewList.collectionView.indexPathForItem(at:location)
             
         else
         {
             return
         }
         
-        self.collectionView.beginInteractiveMovementForItem(at:indexPath)
+        self.viewMain.viewList.collectionView.beginInteractiveMovementForItem(at:indexPath)
     }
     
     private func gestureStateChanged(gesture:UILongPressGestureRecognizer)
@@ -41,24 +41,24 @@ extension ViewNewAddList
         guard
             
             self.isDraggableLocation(gesture:gesture) == true
-        
+            
         else
         {
             return
         }
         
-        let location:CGPoint = gesture.location(in:self.collectionView)
-        self.collectionView.updateInteractiveMovementTargetPosition(location)
+        let location:CGPoint = gesture.location(in:self.viewMain.viewList.collectionView)
+        self.viewMain.viewList.collectionView.updateInteractiveMovementTargetPosition(location)
     }
     
     private func gestureStateEnded(gesture:UILongPressGestureRecognizer)
     {
-        self.collectionView.endInteractiveMovement()
+        self.viewMain.viewList.collectionView.endInteractiveMovement()
     }
     
     private func gestureStateCancelled(gesture:UILongPressGestureRecognizer)
     {
-        self.collectionView.cancelInteractiveMovement()
+        self.viewMain.viewList.collectionView.cancelInteractiveMovement()
     }
     
     //MARK: internal
@@ -66,9 +66,9 @@ extension ViewNewAddList
     func gestureReceived(gesture:UILongPressGestureRecognizer)
     {
         guard
-        
+            
             let router:((UILongPressGestureRecognizer) -> ()) = self.gestureRouters[gesture.state]
-        
+            
         else
         {
             return
@@ -79,12 +79,12 @@ extension ViewNewAddList
     
     func isDraggableLocation(gesture:UIGestureRecognizer) -> Bool
     {
-        let location:CGPoint = gesture.location(in:self.collectionView)
+        let location:CGPoint = gesture.location(in:self.viewMain.viewList.collectionView)
         
         guard
             
-            let indexPath:IndexPath = self.collectionView.indexPathForItem(at:location),
-            let cell:UICollectionViewCell = self.collectionView.cellForItem(at:indexPath),
+            let indexPath:IndexPath = self.viewMain.viewList.collectionView.indexPathForItem(at:location),
+            let cell:UICollectionViewCell = self.viewMain.viewList.collectionView.cellForItem(at:indexPath),
             cell is ViewNewAddListCellDraggrableProtocol == true
             
         else
