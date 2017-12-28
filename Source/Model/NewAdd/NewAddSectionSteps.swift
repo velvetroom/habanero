@@ -89,18 +89,51 @@ struct NewAddSectionSteps:NewAddSectionProtocol
     {
         guard
             
-            let step:BuildStepText = step as? BuildStepText,
-            let text:String = step.text
+            let step:BuildStepImage = step as? BuildStepImage,
+            let text:String = step.text,
+            let imageURL:String = step.imageURL,
+            let image:UIImage = NewAddSectionSteps.imageWithURL(imageURL:imageURL)
             
         else
         {
             return nil
         }
         
-        let item:NewAddSectionItemStepText = NewAddSectionItemStepText(
+        let item:NewAddSectionItemStepImage = NewAddSectionItemStepImage(
+            image:image,
             text:text,
             step:step)
         
         return item
+    }
+    
+    private static func imageWithURL(imageURL:String) -> UIImage?
+    {
+        guard
+        
+            let imageDirectory:URL = NewAdd.stepsImageDirectory
+        
+        else
+        {
+            return nil
+        }
+        
+        let imageLocation:URL = imageDirectory.appendingPathComponent(imageURL)
+        let imageData:Data
+        
+        do
+        {
+            try imageData = Data(
+                contentsOf:imageLocation,
+                options:Data.ReadingOptions.mappedIfSafe)
+        }
+        catch
+        {
+            return nil
+        }
+        
+        let image:UIImage? = UIImage(data:imageData)
+        
+        return image
     }
 }

@@ -2,12 +2,19 @@ import UIKit
 
 extension NewAdd
 {
-    private static var stepsImageDirectory:URL?
+    private static var directory:URL?
     {
         get
         {
-            var directory:URL = FileManager.default.appDirectory.appendingPathComponent(
-                NewAdd.Constants.stepsImageDirectory)
+            guard
+                
+                var directory:URL = NewAdd.stepsImageDirectory
+            
+            else
+            {
+                return nil
+            }
+            
             directory.excludeFromBackup()
             
             do
@@ -32,7 +39,7 @@ extension NewAdd
     {
         guard
         
-            let imageDirectory:URL = NewAdd.stepsImageDirectory
+            let imageDirectory:URL = NewAdd.directory
         
         else
         {

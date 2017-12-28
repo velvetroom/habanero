@@ -18,6 +18,7 @@ final class ViewNewAddList:
         self.registerCell(cell:ViewNewAddListCellInfoDuration.self)
         self.registerCell(cell:ViewNewAddListCellIngredient.self)
         self.registerCell(cell:ViewNewAddListCellStepText.self)
+        self.registerCell(cell:ViewNewAddListCellStepImage.self)
         
         self.flow.minimumLineSpacing = ViewGlobal.Constants.interCellSpace
         self.flow.minimumInteritemSpacing = ViewGlobal.Constants.interCellSpace
