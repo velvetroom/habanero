@@ -1,9 +1,9 @@
 import UIKit
 
-struct NewAddSectionItemStepText:NewAddSectionItemProtocol
+struct NewAddSectionItemStepText:NewAddSectionItemProtocol, NewAddSectionItemStepProtocol
 {
     let reusableIdentifier:String = ViewNewAddListCellStepText.reusableIdentifier
     let cellHeight:CGFloat = NewAdd.Constants.cellStepTextHeight
     let text:String
-    weak var step:BuildStepText?
+    weak var step:BuildStep?
 }
