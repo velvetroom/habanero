@@ -12,10 +12,10 @@ class ViewNewAddListCellStep:ViewNewAddListCell, ViewNewAddListCellDraggrablePro
         let actionsButton:UIButton = UIButton()
         actionsButton.translatesAutoresizingMaskIntoConstraints = false
         actionsButton.setImage(
-            #imageLiteral(resourceName: "assetGenericRemove").withRenderingMode(UIImageRenderingMode.alwaysOriginal),
+            #imageLiteral(resourceName: "assetGenericActions").withRenderingMode(UIImageRenderingMode.alwaysOriginal),
             for:UIControlState.normal)
         actionsButton.setImage(
-            #imageLiteral(resourceName: "assetGenericRemove").withRenderingMode(UIImageRenderingMode.alwaysTemplate),
+            #imageLiteral(resourceName: "assetGenericActions").withRenderingMode(UIImageRenderingMode.alwaysTemplate),
             for:UIControlState.highlighted)
         actionsButton.imageView!.tintColor = UIColor(white:0, alpha:0.2)
         actionsButton.imageView!.clipsToBounds = true
