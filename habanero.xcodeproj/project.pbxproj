@@ -342,6 +342,7 @@
 		DAB786251FF4B3DF00579BB5 /* NewAddError+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */; };
 		DAB786271FF4B88C00579BB5 /* NewAddSectionItemStepImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786261FF4B88C00579BB5 /* NewAddSectionItemStepImage.swift */; };
 		DAB786291FF4B8E300579BB5 /* ViewNewAddListCellStepImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786281FF4B8E300579BB5 /* ViewNewAddListCellStepImage.swift */; };
+		DAB7862B1FF4B92000579BB5 /* ViewNewAddListCellStepImage+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7862A1FF4B92000579BB5 /* ViewNewAddListCellStepImage+Constants.swift */; };
 		DABA5EA91FEA2DAB0017F865 /* ArchPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA5EA81FEA2DAB0017F865 /* ArchPhoto.swift */; };
 		DABA5EAA1FEA2DAC0017F865 /* ArchPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA5EA81FEA2DAB0017F865 /* ArchPhoto.swift */; };
 		DABA5EAD1FEA2E170017F865 /* ControllerPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA5EAC1FEA2E170017F865 /* ControllerPhoto.swift */; };
@@ -714,6 +715,7 @@
 		DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddError+Description.swift"; sourceTree = "<group>"; };
 		DAB786261FF4B88C00579BB5 /* NewAddSectionItemStepImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddSectionItemStepImage.swift; sourceTree = "<group>"; };
 		DAB786281FF4B8E300579BB5 /* ViewNewAddListCellStepImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellStepImage.swift; sourceTree = "<group>"; };
+		DAB7862A1FF4B92000579BB5 /* ViewNewAddListCellStepImage+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddListCellStepImage+Constants.swift"; sourceTree = "<group>"; };
 		DABA5EA81FEA2DAB0017F865 /* ArchPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchPhoto.swift; sourceTree = "<group>"; };
 		DABA5EAC1FEA2E170017F865 /* ControllerPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerPhoto.swift; sourceTree = "<group>"; };
 		DABA5EB01FEA2FF40017F865 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
@@ -1500,6 +1502,7 @@
 				DA1F04F51FE8DB5700DF03A8 /* ViewNewAddListCellStepText.swift */,
 				DA1F04F71FE8DF3D00DF03A8 /* ViewNewAddListCellStepText+Constants.swift */,
 				DAB786281FF4B8E300579BB5 /* ViewNewAddListCellStepImage.swift */,
+				DAB7862A1FF4B92000579BB5 /* ViewNewAddListCellStepImage+Constants.swift */,
 			);
 			path = NewAdd;
 			sourceTree = "<group>";
@@ -2241,6 +2244,7 @@
 				DA3F0E901FDF45C30037C94D /* ViewNewAddIngredient.swift in Sources */,
 				DA11BA091FD8F2200038F9B0 /* ViewNewAddListCell.swift in Sources */,
 				DA16F1601FDFAF7C00EB6877 /* ViewNewAddIngredientBar+Constants.swift in Sources */,
+				DAB7862B1FF4B92000579BB5 /* ViewNewAddListCellStepImage+Constants.swift in Sources */,
 				DA91EB281FD630E80063560D /* ViewGlobal.swift in Sources */,
 				DA90898F1FD4CE3E00C1208A /* Menu.swift in Sources */,
 				DA8752E31FE3B27100AE74F5 /* ViewNewAddIngredientAmountList+Actions.swift in Sources */,
