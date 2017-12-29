@@ -39,7 +39,7 @@ extension PhotoRotation
             let map:[PhotoRotation : ((CGImage) -> (CGSize))] = [
                 PhotoRotation.right : PhotoRotation.swapSize,
                 PhotoRotation.left : PhotoRotation.swapSize,
-                PhotoRotation.left : PhotoRotation.sameSize]
+                PhotoRotation.upsidedown : PhotoRotation.sameSize]
             
             return map
         }
