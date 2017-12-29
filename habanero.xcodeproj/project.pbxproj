@@ -336,6 +336,12 @@
 		DAAD4A731FF31F310044B1FE /* PhotoCrop+Rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAD4A711FF31F310044B1FE /* PhotoCrop+Rotate.swift */; };
 		DAAD4A751FF320EE0044B1FE /* PhotoCrop+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAD4A741FF320EE0044B1FE /* PhotoCrop+Constants.swift */; };
 		DAAD4A761FF320EE0044B1FE /* PhotoCrop+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAD4A741FF320EE0044B1FE /* PhotoCrop+Constants.swift */; };
+		DAAE61F41FF636F500954EFC /* PhotoRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE61F31FF636F500954EFC /* PhotoRotation.swift */; };
+		DAAE61F51FF636F500954EFC /* PhotoRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE61F31FF636F500954EFC /* PhotoRotation.swift */; };
+		DAAE61F71FF637A700954EFC /* PhotoRotation+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE61F61FF637A700954EFC /* PhotoRotation+Factory.swift */; };
+		DAAE61F81FF637A700954EFC /* PhotoRotation+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE61F61FF637A700954EFC /* PhotoRotation+Factory.swift */; };
+		DAAE61FA1FF6385300954EFC /* PhotoRotation+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE61F91FF6385300954EFC /* PhotoRotation+Constants.swift */; };
+		DAAE61FB1FF6385300954EFC /* PhotoRotation+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE61F91FF6385300954EFC /* PhotoRotation+Constants.swift */; };
 		DAB786211FF4AE9900579BB5 /* NewAdd+StepsImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786201FF4AE9900579BB5 /* NewAdd+StepsImage.swift */; };
 		DAB786231FF4B3B400579BB5 /* NewAddError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786221FF4B3B400579BB5 /* NewAddError.swift */; };
 		DAB786251FF4B3DF00579BB5 /* NewAddError+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */; };
@@ -712,6 +718,9 @@
 		DAA333E11FDB29D8002D766C /* NewAdd+Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Info.swift"; sourceTree = "<group>"; };
 		DAAD4A711FF31F310044B1FE /* PhotoCrop+Rotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoCrop+Rotate.swift"; sourceTree = "<group>"; };
 		DAAD4A741FF320EE0044B1FE /* PhotoCrop+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoCrop+Constants.swift"; sourceTree = "<group>"; };
+		DAAE61F31FF636F500954EFC /* PhotoRotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRotation.swift; sourceTree = "<group>"; };
+		DAAE61F61FF637A700954EFC /* PhotoRotation+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoRotation+Factory.swift"; sourceTree = "<group>"; };
+		DAAE61F91FF6385300954EFC /* PhotoRotation+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoRotation+Constants.swift"; sourceTree = "<group>"; };
 		DAB786201FF4AE9900579BB5 /* NewAdd+StepsImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+StepsImage.swift"; sourceTree = "<group>"; };
 		DAB786221FF4B3B400579BB5 /* NewAddError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddError.swift; sourceTree = "<group>"; };
 		DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddError+Description.swift"; sourceTree = "<group>"; };
@@ -1386,6 +1395,9 @@
 				DABA5EC31FEA36D60017F865 /* PhotoOptionCancel.swift */,
 				DABDF3371FEB6B87002EF842 /* PhotoOptionCamera.swift */,
 				DABDF33A1FEB6BC8002EF842 /* PhotoOptionLibrary.swift */,
+				DAAE61F31FF636F500954EFC /* PhotoRotation.swift */,
+				DAAE61F91FF6385300954EFC /* PhotoRotation+Constants.swift */,
+				DAAE61F61FF637A700954EFC /* PhotoRotation+Factory.swift */,
 			);
 			path = Photo;
 			sourceTree = "<group>";
@@ -1853,6 +1865,7 @@
 				DA91EB1E1FD62C1F0063560D /* ViewGradient+Constants.swift in Sources */,
 				DACF552F1FD7661E00069701 /* ExtensionUIColor.swift in Sources */,
 				DABA5EB81FEA32C60017F865 /* ViewPhotoList.swift in Sources */,
+				DAAE61FA1FF6385300954EFC /* PhotoRotation+Constants.swift in Sources */,
 				DABA5ECD1FEA3CA70017F865 /* ViewPhotoList+Constants.swift in Sources */,
 				DACF55471FD7661E00069701 /* ExtensionString.swift in Sources */,
 				DA4233DB1FEDE4DF0012A589 /* ControllerPhotoCrop.swift in Sources */,
@@ -1945,6 +1958,7 @@
 				DA9089201FD4C66000C1208A /* ControllerParent+Menu.swift in Sources */,
 				DA91EB241FD62D700063560D /* ViewControllableProtocol.swift in Sources */,
 				DAE5E4861FE48CA700CC40BA /* Settings+Computed.swift in Sources */,
+				DAAE61F41FF636F500954EFC /* PhotoRotation.swift in Sources */,
 				DA9089271FD4C66000C1208A /* Model.swift in Sources */,
 				DA91EB0A1FD62C1F0063560D /* ViewCollectionFlow.swift in Sources */,
 				DA5FFE691FE77A2F00A38154 /* FormatIngredientTypeMililitres+Constants.swift in Sources */,
@@ -1965,6 +1979,7 @@
 				DABA5EC11FEA35EE0017F865 /* ControllerPhoto+Options.swift in Sources */,
 				DA4AA5091FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift in Sources */,
 				DA9089251FD4C66000C1208A /* Arch.swift in Sources */,
+				DAAE61F71FF637A700954EFC /* PhotoRotation+Factory.swift in Sources */,
 				DAA333D71FDB17EA002D766C /* Database.swift in Sources */,
 				DA855E0B1FF371D100E1B69F /* PhotoCropPoints+Factory.swift in Sources */,
 				DA5FFE631FE7790000A38154 /* FormatIngredientTypeQuantity+Constants.swift in Sources */,
@@ -2047,6 +2062,7 @@
 				DA74F0B51FE60F0D00F45310 /* BuildIngredientSpoons+Computed.swift in Sources */,
 				DA3F0EBD1FD7509500593B83 /* Menu+OrderAdmin.swift in Sources */,
 				DACF22151FDB5D8A00D6B192 /* NewAddSectionItemInfoDuration+Constants.swift in Sources */,
+				DAAE61F51FF636F500954EFC /* PhotoRotation.swift in Sources */,
 				DA11BA071FD8F1DE0038F9B0 /* ViewNewAddList.swift in Sources */,
 				DA91EAF51FD62C1F0063560D /* ViewParent.swift in Sources */,
 				DA6042951FE20CDC00758A2F /* BuildIngredient+Computed.swift in Sources */,
@@ -2129,6 +2145,7 @@
 				DA71D6791FDA4613003A33E1 /* NewAddSectionIngredients.swift in Sources */,
 				DA71D6AE1FDA7A01003A33E1 /* ViewTextBar+Constants.swift in Sources */,
 				DA71D6941FDA63FD003A33E1 /* ControllerText.swift in Sources */,
+				DAAE61F81FF637A700954EFC /* PhotoRotation+Factory.swift in Sources */,
 				DAF949F41FD8BC38001BA32E /* ArchNewAdd.swift in Sources */,
 				DA91EAEF1FD62C1F0063560D /* ViewMenu+Synth.swift in Sources */,
 				DA16F1621FDFB09900EB6877 /* ViewNewAddListFooterIngredients+Constants.swift in Sources */,
@@ -2175,6 +2192,7 @@
 				DA9089861FD4CE2E00C1208A /* ControllerParent.swift in Sources */,
 				DA91EB151FD62C1F0063560D /* ViewGradient.swift in Sources */,
 				DA4233F01FEDF7D50012A589 /* ViewPhotoCropMenu+Constants.swift in Sources */,
+				DAAE61FB1FF6385300954EFC /* PhotoRotation+Constants.swift in Sources */,
 				DA71D68B1FDA5D37003A33E1 /* ViewNewAddListCellInfoTitle+Constants.swift in Sources */,
 				DA84C0F51FD74009008959EA /* New.swift in Sources */,
 				DA91EB1D1FD62C1F0063560D /* ViewSpinner.swift in Sources */,
