@@ -4,7 +4,6 @@ final class ViewNewAddListCellStepImage:ViewNewAddListCellStep
 {
     private weak var label:UILabel!
     private weak var imageView:UIImageView!
-    private weak var layoutImageWidth:NSLayoutConstraint!
     
     override func factoryViews()
     {
@@ -42,20 +41,15 @@ final class ViewNewAddListCellStepImage:ViewNewAddListCellStep
         
         NSLayoutConstraint.equalsVertical(
             view:imageView,
-            toView:self)
+            toView:self,
+            margin:ViewNewAddList.Constants.marginHorizontal)
         NSLayoutConstraint.leftToLeft(
             view:imageView,
-            toView:self)
-        layoutImageWidth = NSLayoutConstraint.width(
-            view:imageView)
-    }
-    
-    override func layoutSubviews()
-    {
-        let height:CGFloat = self.bounds.height
-        self.layoutImageWidth.constant = height
-        
-        super.layoutSubviews()
+            toView:self,
+            constant:ViewNewAddList.Constants.marginHorizontal)
+        NSLayoutConstraint.width(
+            view:imageView,
+            constant:ViewNewAddListCellStepImage.Constants.imageWidth)
     }
     
     override func config(

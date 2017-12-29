@@ -4,6 +4,6 @@ extension ViewNewAddListCellStepText
 {
     struct Constants
     {
-        static let fontSize:CGFloat = 16
+        static let fontSize:CGFloat = 14
     }
 }
