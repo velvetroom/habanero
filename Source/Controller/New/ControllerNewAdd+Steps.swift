@@ -6,6 +6,14 @@ extension ControllerNewAdd
     
     private func addStepImage(with image:UIImage)
     {
+        let activity:UIActivityViewController = UIActivityViewController(
+            activityItems:[image],
+            applicationActivities:nil)
+        
+        present(activity, animated:true, completion:nil)
+        
+        return
+        
         let defaultText:String = String.localizedController(key:"ControllerNewAdd_defaultStepImage")
         
         let controller:ControllerText = ControllerText(text:defaultText)

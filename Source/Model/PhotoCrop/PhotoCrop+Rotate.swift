@@ -2,37 +2,6 @@ import UIKit
 
 extension PhotoCrop
 {
-    private var imageRotatedRight:UIImage?
-    {
-        get
-        {
-            guard
-                
-                let image:CGImage = self.image?.cgImage,
-                let newSize:CGSize = self.rotatedSize,
-                let drawingRect:CGRect = self.drawingRect,
-                let context:CGContext = self.context,
-                let imageRotated:CGImage = self.rotateImage(
-                    image:image,
-                    context:context,
-                    newSize:newSize,
-                    drawingRect:drawingRect)
-                
-            else
-            {
-                UIGraphicsEndImageContext()
-                
-                return nil
-            }
-            
-            UIGraphicsEndImageContext()
-            
-            let newImage:UIImage = UIImage(cgImage:imageRotated)
-            
-            return newImage
-        }
-    }
-    
     private var context:CGContext?
     {
         get
@@ -110,7 +79,10 @@ extension PhotoCrop
     {
         guard
         
-            let newImage:UIImage = self.imageRotatedRight
+            let originalImage:UIImage = self.image,
+            let newImage:UIImage = self.rotateImage(
+                image:originalImage,
+                rotation:PhotoCrop.Constants.rotateRight)
         
         else
         {
@@ -129,7 +101,8 @@ extension PhotoCrop
         image:CGImage,
         context:CGContext,
         newSize:CGSize,
-        drawingRect:CGRect) -> CGImage?
+        drawingRect:CGRect,
+        rotation:CGFloat) -> CGImage?
     {
         let width_2:CGFloat = newSize.width / 2.0
         let height_2:CGFloat = newSize.height / 2.0
@@ -138,7 +111,7 @@ extension PhotoCrop
             x:width_2,
             y:height_2)
         
-        context.rotate(by:PhotoCrop.Constants.rotateAmount)
+        context.rotate(by:rotation)
         
         context.translateBy(
             x:-drawingRect.midX,
@@ -158,6 +131,37 @@ extension PhotoCrop
     }
     
     //MARK: internal
+    
+    func rotateImage(
+        image:UIImage,
+        rotation:CGFloat) -> UIImage?
+    {
+        guard
+            
+            let image:CGImage = image.cgImage,
+            let newSize:CGSize = self.rotatedSize,
+            let drawingRect:CGRect = self.drawingRect,
+            let context:CGContext = self.context,
+            let imageRotated:CGImage = self.rotateImage(
+                image:image,
+                context:context,
+                newSize:newSize,
+                drawingRect:drawingRect,
+                rotation:rotation)
+            
+        else
+        {
+            UIGraphicsEndImageContext()
+            
+            return nil
+        }
+        
+        UIGraphicsEndImageContext()
+        
+        let newImage:UIImage = UIImage(cgImage:imageRotated)
+        
+        return newImage
+    }
     
     func rotateImageRight(completion:@escaping(() -> ()))
     {

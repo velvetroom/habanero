@@ -32,8 +32,8 @@ final class ControllerPhotoCrop:Controller<ArchPhotoCrop>
     {
         super.init()
         
-        self.model.image = image
         self.model.completion = completion
+        self.model.renderImage(image:image)
     }
     
     required init?(coder:NSCoder)
