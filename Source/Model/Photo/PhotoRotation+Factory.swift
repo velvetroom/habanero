@@ -2,7 +2,7 @@ import UIKit
 
 extension PhotoRotation
 {
-    var rotationDegrees:CGFloat
+    var radians:CGFloat
     {
         get
         {
