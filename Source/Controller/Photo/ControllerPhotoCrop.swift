@@ -32,8 +32,12 @@ final class ControllerPhotoCrop:Controller<ArchPhotoCrop>
     {
         super.init()
         
-        self.model.completion = completion
-        self.model.renderImage(image:image)
+        self.model.normalizeOrientation(image:image)
+        { [weak self] (normalizedImage:UIImage) in
+            
+            self?.model.image = normalizedImage
+            self?.model.completion = completion
+        }
     }
     
     required init?(coder:NSCoder)
