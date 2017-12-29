@@ -23,7 +23,29 @@ extension ControllerNewAdd
     
     private func stepEditText(stepText:BuildStepText)
     {
+        guard
+            
+            let currentText:String = stepText.text
         
+        else
+        {
+            return
+        }
+        
+        let controller:ControllerText = ControllerText(text:currentText)
+        { [weak self] (updatedText:String) in
+            
+            self?.model.update(
+                stepText:stepText,
+                text:updatedText)
+            {
+                self?.loadModel()
+            }
+        }
+        
+        self.parentController?.push(
+            controller:controller,
+            vertical:ControllerTransition.Vertical.bottom)
     }
     
     private func stepEditText(stepImage:BuildStepImage)
