@@ -25,14 +25,28 @@ extension NewAdd
     //MARK: internal
     
     func update(
-        stepText:BuildStepText,
+        step:BuildStepText,
         text:String,
         completion:@escaping(() -> ()))
     {
         DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
         { [weak self] in
             
-            stepText.text = text
+            step.text = text
+            
+            self?.asyncUpdated(completion:completion)
+        }
+    }
+    
+    func update(
+        step:BuildStepImage,
+        text:String,
+        completion:@escaping(() -> ()))
+    {
+        DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
+        { [weak self] in
+            
+            step.text = text
             
             self?.asyncUpdated(completion:completion)
         }

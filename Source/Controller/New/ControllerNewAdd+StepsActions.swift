@@ -21,11 +21,11 @@ extension ControllerNewAdd
         
     }
     
-    private func stepEditText(stepText:BuildStepText)
+    private func stepEditText(step:BuildStepText)
     {
         guard
             
-            let currentText:String = stepText.text
+            let currentText:String = step.text
         
         else
         {
@@ -36,7 +36,7 @@ extension ControllerNewAdd
         { [weak self] (updatedText:String) in
             
             self?.model.update(
-                stepText:stepText,
+                step:step,
                 text:updatedText)
             {
                 self?.loadModel()
@@ -48,12 +48,34 @@ extension ControllerNewAdd
             vertical:ControllerTransition.Vertical.bottom)
     }
     
-    private func stepEditText(stepImage:BuildStepImage)
+    private func stepEditText(step:BuildStepImage)
     {
+        guard
+            
+            let currentText:String = step.text
+            
+        else
+        {
+            return
+        }
         
+        let controller:ControllerText = ControllerText(text:currentText)
+        { [weak self] (updatedText:String) in
+            
+            self?.model.update(
+                step:step,
+                text:updatedText)
+            {
+                self?.loadModel()
+            }
+        }
+        
+        self.parentController?.push(
+            controller:controller,
+            vertical:ControllerTransition.Vertical.bottom)
     }
     
-    private func stepEditImage(stepImage:BuildStepImage)
+    private func stepEditImage(step:BuildStepImage)
     {
         
     }
@@ -120,7 +142,7 @@ extension ControllerNewAdd
             style:UIAlertActionStyle.default)
         { [weak self] (action:UIAlertAction) in
             
-            self?.stepEditText(stepText:step)
+            self?.stepEditText(step:step)
         }
         
         let actions:[UIAlertAction] = [
@@ -147,7 +169,7 @@ extension ControllerNewAdd
             style:UIAlertActionStyle.default)
         { [weak self] (action:UIAlertAction) in
             
-            self?.stepEditText(stepImage:step)
+            self?.stepEditText(step:step)
         }
         
         let actionEditImage:UIAlertAction = UIAlertAction(
@@ -155,7 +177,7 @@ extension ControllerNewAdd
             style:UIAlertActionStyle.default)
         { [weak self] (action:UIAlertAction) in
             
-            self?.stepEditImage(stepImage:step)
+            self?.stepEditImage(step:step)
         }
         
         let actions:[UIAlertAction] = [
