@@ -5,98 +5,41 @@ final class PhotoCrop:Model<ArchPhotoCrop>
     var image:UIImage?
     var completion:((UIImage?) -> ())?
     
+    private var orientationRotationMap:[UIImageOrientation : CGFloat]
+    {
+        get
+        {
+            let map:[UIImageOrientation : CGFloat] = [
+                UIImageOrientation.down : PhotoCrop.Constants.rotateUpsidedown,
+                UIImageOrientation.downMirrored : PhotoCrop.Constants.rotateUpsidedown,
+                UIImageOrientation.right : PhotoCrop.Constants.rotateRight,
+                UIImageOrientation.rightMirrored : PhotoCrop.Constants.rotateRight,
+                UIImageOrientation.left : PhotoCrop.Constants.rotateLeft,
+                UIImageOrientation.leftMirrored : PhotoCrop.Constants.rotateLeft ]
+            
+            return map
+        }
+    }
+    
     //MARK: private
     
     private func asyncRenderImage(image:UIImage)
     {
-        switch image.imageOrientation
-        {
-        case UIImageOrientation.down:
-            
-            print("down")
-            
-        case UIImageOrientation.up:
-            
-                print("up")
-            
-        case UIImageOrientation.left:
-            
-            print("left")
-            
-        case UIImageOrientation.right:
-            
-            print("right")
-            
-        default:
-            
-            print("other")
-        }
-        
-        
-        
-        UIGraphicsBeginImageContext(image.size)
-        
         guard
-            
-            let cgImage:CGImage = image.cgImage
+        
+            let rotation:CGFloat = self.orientationRotationMap[image.imageOrientation],
+            let rotatedImage:UIImage = self.rotateImage(
+                image:image,
+                rotation:rotation)
         
         else
         {
-            return
-        }
-        
-        let imageWidth:CGFloat = CGFloat(cgImage.width)
-        let imageHeight:CGFloat = CGFloat(cgImage.height)
-        
-        let imageSize:CGSize = CGSize(
-            width:imageWidth,
-            height:imageHeight)
-        
-        let drawingRect:CGRect = CGRect(
-            x:0,
-            y:0,
-            width:imageWidth,
-            height:imageHeight)
-        
-        UIGraphicsBeginImageContext(imageSize)
-        
-        guard
-            
-            let context:CGContext = UIGraphicsGetCurrentContext()
-            
-        else
-        {
-            return
-        }
-        
-        context.translateBy(
-            x:0,
-            y:imageHeight)
-        
-        context.scaleBy(
-            x:1,
-            y:-1)
-        
-        context.draw(
-            cgImage,
-            in:drawingRect)
-        
-        guard
-            
-            let newCgImage:CGImage = context.makeImage()
-        
-        else
-        {
-            UIGraphicsEndImageContext()
+            self.image = image
             
             return
         }
         
-        UIGraphicsEndImageContext()
-        
-        let renderedImage:UIImage = UIImage(cgImage:newCgImage)
-        
-        self.image = renderedImage
+        self.image = rotatedImage
     }
     
     //MARK: internal
