@@ -2,27 +2,6 @@ import UIKit
 
 extension PhotoCrop
 {
-    private var context:CGContext?
-    {
-        get
-        {
-            guard
-                
-                let newSize:CGSize = self.rotatedSize
-                
-            else
-            {
-                return nil
-            }
-            
-            UIGraphicsBeginImageContext(newSize)
-            
-            let context:CGContext? = UIGraphicsGetCurrentContext()
-            
-            return context
-        }
-    }
-    
     private var rotatedSize:CGSize?
     {
         get
@@ -80,9 +59,13 @@ extension PhotoCrop
         guard
         
             let originalImage:UIImage = self.image,
+            let newSize:CGSize = self.rotatedSize,
+            let drawingRect:CGRect = self.drawingRect,
             let newImage:UIImage = self.rotateImage(
                 image:originalImage,
-                rotation:PhotoCrop.Constants.rotateRight)
+                rotation:PhotoCrop.Constants.rotateLeft,
+                newSize:newSize,
+                drawingRect:drawingRect)
         
         else
         {
@@ -99,10 +82,10 @@ extension PhotoCrop
     
     private func rotateImage(
         image:CGImage,
+        rotation:CGFloat,
         context:CGContext,
         newSize:CGSize,
-        drawingRect:CGRect,
-        rotation:CGFloat) -> CGImage?
+        drawingRect:CGRect) -> CGImage?
     {
         let width_2:CGFloat = newSize.width / 2.0
         let height_2:CGFloat = newSize.height / 2.0
@@ -134,21 +117,23 @@ extension PhotoCrop
     
     func rotateImage(
         image:UIImage,
-        rotation:CGFloat) -> UIImage?
+        rotation:CGFloat,
+        newSize:CGSize,
+        drawingRect:CGRect) -> UIImage?
     {
+        UIGraphicsBeginImageContext(newSize)
+        
         guard
             
+            let context:CGContext = UIGraphicsGetCurrentContext(),
             let image:CGImage = image.cgImage,
-            let newSize:CGSize = self.rotatedSize,
-            let drawingRect:CGRect = self.drawingRect,
-            let context:CGContext = self.context,
             let imageRotated:CGImage = self.rotateImage(
                 image:image,
+                rotation:rotation,
                 context:context,
                 newSize:newSize,
-                drawingRect:drawingRect,
-                rotation:rotation)
-            
+                drawingRect:drawingRect)
+        
         else
         {
             UIGraphicsEndImageContext()
