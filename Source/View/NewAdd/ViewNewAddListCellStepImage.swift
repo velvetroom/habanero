@@ -3,6 +3,8 @@ import UIKit
 final class ViewNewAddListCellStepImage:ViewNewAddListCellStep
 {
     private weak var label:UILabel!
+    private weak var imageView:UIImageView!
+    private weak var layoutImageWidth:NSLayoutConstraint!
     
     override func factoryViews()
     {
@@ -17,18 +19,43 @@ final class ViewNewAddListCellStepImage:ViewNewAddListCellStep
         label.textColor = UIColor.colourBackgroundDark
         self.label = label
         
+        let imageView:UIImageView = UIImageView()
+        imageView.isUserInteractionEnabled = false
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.clipsToBounds = true
+        imageView.contentMode = UIViewContentMode.scaleAspectFit
+        self.imageView = imageView
+        
+        self.addSubview(imageView)
         self.addSubview(label)
         
         NSLayoutConstraint.equalsVertical(
             view:label,
             toView:self)
-        NSLayoutConstraint.leftToLeft(
+        NSLayoutConstraint.leftToRight(
             view:label,
-            toView:self,
-            constant:ViewNewAddList.Constants.marginHorizontal)
+            toView:imageView,
+            constant:ViewNewAddListCellStepImage.Constants.labelLeft)
         NSLayoutConstraint.rightToLeft(
             view:label,
             toView:self.actionsButton)
+        
+        NSLayoutConstraint.equalsVertical(
+            view:imageView,
+            toView:self)
+        NSLayoutConstraint.leftToLeft(
+            view:imageView,
+            toView:self)
+        layoutImageWidth = NSLayoutConstraint.width(
+            view:imageView)
+    }
+    
+    override func layoutSubviews()
+    {
+        let height:CGFloat = self.bounds.height
+        self.layoutImageWidth.constant = height
+        
+        super.layoutSubviews()
     }
     
     override func config(
@@ -49,5 +76,6 @@ final class ViewNewAddListCellStepImage:ViewNewAddListCellStep
         }
         
         self.label.text = model.text
+        self.imageView.image = model.image
     }
 }
