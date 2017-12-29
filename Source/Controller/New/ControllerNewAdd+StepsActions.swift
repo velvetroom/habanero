@@ -57,13 +57,13 @@ extension ControllerNewAdd
             self?.deleteStep(step:step)
         }
         
-        alert.addAction(actionCancel)
-        alert.addAction(actionDelete)
-        
         for action:UIAlertAction in actions
         {
             alert.addAction(action)
         }
+        
+        alert.addAction(actionDelete)
+        alert.addAction(actionCancel)
         
         if let popover:UIPopoverPresentationController = alert.popoverPresentationController
         {
