@@ -78,9 +78,4 @@ extension ControllerNewAdd
             self?.loadModel()
         }
     }
-    
-    func showActionsForStep(step:NewAddSectionItemStepProtocol)
-    {
-        
-    }
 }
