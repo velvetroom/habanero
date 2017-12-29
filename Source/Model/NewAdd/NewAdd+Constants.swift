@@ -15,6 +15,6 @@ extension NewAdd
         static let cellInfoDurationHeight:CGFloat = 140
         static let cellIngredientHeight:CGFloat = 60
         static let cellStepTextHeight:CGFloat = 100
-        static let cellStepImageHeight:CGFloat = 150
+        static let cellStepImageHeight:CGFloat = 120
     }
 }
