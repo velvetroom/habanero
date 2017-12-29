@@ -69,13 +69,13 @@ class ViewNewAddListCellStep:ViewNewAddListCell, ViewNewAddListCellDraggrablePro
     {
         guard
         
-            let model:NewAddSectionItemStepProtocol = self.model
+            let step:BuildStep = self.model?.step
         
         else
         {
             return
         }
         
-        self.controller?.showActionsForStep(step:model)
+        self.controller?.showActionsForStep(step:step)
     }
 }
