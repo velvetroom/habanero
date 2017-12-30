@@ -32,7 +32,7 @@ class ViewNewAddListCellText:ViewNewAddListCell
         labelTitle.isUserInteractionEnabled = false
         labelTitle.translatesAutoresizingMaskIntoConstraints = false
         labelTitle.backgroundColor = UIColor.clear
-        labelTitle.font = UIFont.regular(size:ViewNewAddListCellInfoTitle.Constants.titleFontSize)
+        labelTitle.font = UIFont.regular(size:ViewNewAddListCellText.Constants.titleFontSize)
         labelTitle.textColor = UIColor.colourBackgroundDark
         self.labelTitle = labelTitle
         
@@ -40,7 +40,7 @@ class ViewNewAddListCellText:ViewNewAddListCell
         labelContent.isUserInteractionEnabled = false
         labelContent.translatesAutoresizingMaskIntoConstraints = false
         labelContent.backgroundColor = UIColor.clear
-        labelContent.font = UIFont.regular(size:ViewNewAddListCellInfoTitle.Constants.contentFontSize)
+        labelContent.font = UIFont.regular(size:ViewNewAddListCellText.Constants.contentFontSize)
         labelContent.textColor = UIColor(white:0, alpha:0.5)
         labelContent.numberOfLines = 0
         self.labelContent = labelContent
@@ -52,10 +52,10 @@ class ViewNewAddListCellText:ViewNewAddListCell
         NSLayoutConstraint.topToTop(
             view:labelTitle,
             toView:self,
-            constant:ViewNewAddListCellInfoTitle.Constants.titleTop)
+            constant:ViewNewAddListCellText.Constants.titleTop)
         NSLayoutConstraint.height(
             view:labelTitle,
-            constant:ViewNewAddListCellInfoTitle.Constants.titleHeight)
+            constant:ViewNewAddListCellText.Constants.titleHeight)
         NSLayoutConstraint.leftToLeft(
             view:labelTitle,
             toView:self,
@@ -72,14 +72,10 @@ class ViewNewAddListCellText:ViewNewAddListCell
             toView:labelTitle)
         NSLayoutConstraint.heightGreaterOrEqual(
             view:labelContent)
-        NSLayoutConstraint.leftToLeft(
+        NSLayoutConstraint.equalsHorizontal(
             view:labelContent,
             toView:self,
-            constant:ViewNewAddList.Constants.marginHorizontal)
-        NSLayoutConstraint.rightToRight(
-            view:labelContent,
-            toView:self,
-            constant:-ViewNewAddList.Constants.marginHorizontal)
+            margin:ViewNewAddList.Constants.marginHorizontal)
     }
     
     override func showHighlighted()
