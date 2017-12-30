@@ -30,8 +30,11 @@ final class ControllerText:Controller<ArchText>, UITextViewDelegate
     func doneEditing()
     {
         self.viewMain.viewInput.resignFirstResponder()
-        self.model.sendCompletion()
         self.parentController?.pop(vertical:ControllerTransition.Vertical.bottom)
+        { [weak self] in
+            
+            self?.model.sendCompletion()
+        }
     }
     
     //MARK: textView delegate
