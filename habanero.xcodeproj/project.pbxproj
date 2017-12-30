@@ -143,7 +143,6 @@
 		DA71D6851FDA518E003A33E1 /* ViewNewAddList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6841FDA518E003A33E1 /* ViewNewAddList+Actions.swift */; };
 		DA71D6871FDA58E3003A33E1 /* ViewNewAddListCellInfoTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6861FDA58E3003A33E1 /* ViewNewAddListCellInfoTitle.swift */; };
 		DA71D6891FDA5985003A33E1 /* NewAddSectionItemInfoTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6881FDA5985003A33E1 /* NewAddSectionItemInfoTitle.swift */; };
-		DA71D68B1FDA5D37003A33E1 /* ViewNewAddListCellInfoTitle+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D68A1FDA5D37003A33E1 /* ViewNewAddListCellInfoTitle+Constants.swift */; };
 		DA71D68D1FDA6262003A33E1 /* ControllerNewAdd+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D68C1FDA6262003A33E1 /* ControllerNewAdd+Info.swift */; };
 		DA71D68F1FDA633E003A33E1 /* ArchText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D68E1FDA633E003A33E1 /* ArchText.swift */; };
 		DA71D6901FDA633E003A33E1 /* ArchText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D68E1FDA633E003A33E1 /* ArchText.swift */; };
@@ -606,7 +605,6 @@
 		DA71D6841FDA518E003A33E1 /* ViewNewAddList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddList+Actions.swift"; sourceTree = "<group>"; };
 		DA71D6861FDA58E3003A33E1 /* ViewNewAddListCellInfoTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellInfoTitle.swift; sourceTree = "<group>"; };
 		DA71D6881FDA5985003A33E1 /* NewAddSectionItemInfoTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddSectionItemInfoTitle.swift; sourceTree = "<group>"; };
-		DA71D68A1FDA5D37003A33E1 /* ViewNewAddListCellInfoTitle+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddListCellInfoTitle+Constants.swift"; sourceTree = "<group>"; };
 		DA71D68C1FDA6262003A33E1 /* ControllerNewAdd+Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerNewAdd+Info.swift"; sourceTree = "<group>"; };
 		DA71D68E1FDA633E003A33E1 /* ArchText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchText.swift; sourceTree = "<group>"; };
 		DA71D6921FDA63FD003A33E1 /* ControllerText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerText.swift; sourceTree = "<group>"; };
@@ -1525,7 +1523,6 @@
 				DAC732C91FF8502A00980854 /* ViewNewAddListCellText.swift */,
 				DAC732CB1FF8523900980854 /* ViewNewAddListCellText+Constants.swift */,
 				DA71D6861FDA58E3003A33E1 /* ViewNewAddListCellInfoTitle.swift */,
-				DA71D68A1FDA5D37003A33E1 /* ViewNewAddListCellInfoTitle+Constants.swift */,
 				DA5D71C31FDB566D00429F5D /* ViewNewAddListCellInfoDuration.swift */,
 				DA5D71C51FDB56AD00429F5D /* ViewNewAddListCellInfoDuration+Constants.swift */,
 				DA60428D1FE1EC2300758A2F /* ViewNewAddListCellIngredient.swift */,
@@ -2213,7 +2210,6 @@
 				DA91EB151FD62C1F0063560D /* ViewGradient.swift in Sources */,
 				DA4233F01FEDF7D50012A589 /* ViewPhotoCropMenu+Constants.swift in Sources */,
 				DAAE61FB1FF6385300954EFC /* PhotoRotation+Constants.swift in Sources */,
-				DA71D68B1FDA5D37003A33E1 /* ViewNewAddListCellInfoTitle+Constants.swift in Sources */,
 				DA84C0F51FD74009008959EA /* New.swift in Sources */,
 				DA91EB1D1FD62C1F0063560D /* ViewSpinner.swift in Sources */,
 				DAE7C3781FE0996B003190FF /* IngredientList.swift in Sources */,
