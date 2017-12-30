@@ -18,7 +18,11 @@ extension ControllerNewAdd
     
     private func deleteStep(step:BuildStep)
     {
-        
+        self.model.deleteStep(step:step)
+        { [weak self] in
+            
+            self?.loadModel()
+        }
     }
     
     private func stepEditText(step:BuildStepText)
