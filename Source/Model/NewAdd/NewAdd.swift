@@ -8,17 +8,6 @@ final class NewAdd:Model<ArchNewAdd>
     var sections:[NewAddSectionProtocol]
     var movingCellDelta:CGPoint?
     
-    static var stepsImageDirectory:URL?
-    {
-        get
-        {
-            let directory:URL = FileManager.default.appDirectory.appendingPathComponent(
-                NewAdd.Constants.stepsImageDirectory)
-            
-            return directory
-        }
-    }
-    
     required init()
     {
         self.sections = []

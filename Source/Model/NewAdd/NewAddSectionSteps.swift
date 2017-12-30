@@ -111,14 +111,13 @@ struct NewAddSectionSteps:NewAddSectionProtocol
     {
         guard
         
-            let imageDirectory:URL = NewAdd.stepsImageDirectory
+            let imageLocation:URL = NewAdd.localURLForImage(identifier:imageURL)
         
         else
         {
             return nil
         }
         
-        let imageLocation:URL = imageDirectory.appendingPathComponent(imageURL)
         let imageData:Data
         
         do

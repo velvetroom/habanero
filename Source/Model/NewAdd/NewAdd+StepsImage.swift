@@ -2,45 +2,44 @@ import UIKit
 
 extension NewAdd
 {
-    private static var directory:URL?
+    static var stepsImageDirectory:URL?
     {
         get
         {
-            guard
+            var directory:URL = FileManager.default.appDirectory.appendingPathComponent(
+                NewAdd.Constants.stepsImageDirectory)
+            
+            let directoryExists:Bool = FileManager.default.fileExists(atPath:directory.path)
+            
+            if directoryExists == false
+            {
+                directory.excludeFromBackup()
                 
-                var directory:URL = NewAdd.stepsImageDirectory
-            
-            else
-            {
-                return nil
-            }
-            
-            directory.excludeFromBackup()
-            
-            do
-            {
-                try FileManager.default.createDirectory(
-                    at:directory,
-                    withIntermediateDirectories:true,
-                    attributes:nil)
-            }
-            catch
-            {
-                return nil
+                do
+                {
+                    try FileManager.default.createDirectory(
+                        at:directory,
+                        withIntermediateDirectories:true,
+                        attributes:nil)
+                }
+                catch
+                {
+                    return nil
+                }
             }
             
             return directory
         }
     }
     
-    //MARK: private
+    //MARK: internal
     
-    private func localURLForImage(identifier:String) -> URL?
+    class func localURLForImage(identifier:String) -> URL?
     {
         guard
-        
-            let imageDirectory:URL = NewAdd.directory
-        
+            
+            let imageDirectory:URL = NewAdd.stepsImageDirectory
+            
         else
         {
             return nil
@@ -51,40 +50,13 @@ extension NewAdd
         return localURL
     }
     
-    private func store(
-        image:UIImage,
-        at localURL:URL) throws
-    {
-        guard
-        
-            let imageData:Data = UIImagePNGRepresentation(image)
-        
-        else
-        {
-            throw NewAddError.invalidImageData
-        }
-        
-        do
-        {
-            try imageData.write(
-                to:localURL,
-                options:Data.WritingOptions.atomicWrite)
-        }
-        catch let error
-        {
-            throw error
-        }
-    }
-    
-    //MARK: internal
-    
     func storeImageLocally(image:UIImage) -> String?
     {
         let identifier:String = UUID().uuidString
         
         guard
         
-            let localURL:URL = self.localURLForImage(identifier:identifier)
+            let localURL:URL = NewAdd.localURLForImage(identifier:identifier)
         
         else
         {
@@ -103,5 +75,44 @@ extension NewAdd
         }
         
         return identifier
+    }
+    
+    func store(
+        image:UIImage,
+        at localURL:URL) throws
+    {
+        let fileExists:Bool = FileManager.default.fileExists(atPath:localURL.path)
+        
+        if fileExists
+        {
+            do
+            {
+                try FileManager.default.removeItem(at:localURL)
+            }
+            catch let error
+            {
+                throw error
+            }
+        }
+        
+        guard
+            
+            let imageData:Data = UIImagePNGRepresentation(image)
+            
+        else
+        {
+            throw NewAddError.invalidImageData
+        }
+        
+        do
+        {
+            try imageData.write(
+                to:localURL,
+                options:Data.WritingOptions.atomicWrite)
+        }
+        catch let error
+        {
+            throw error
+        }
     }
 }
