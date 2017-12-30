@@ -37,7 +37,7 @@
         <relationship name="build" maxCount="1" deletionRule="Nullify" destinationEntity="Build" inverseName="steps" inverseEntity="Build" syncable="YES"/>
     </entity>
     <entity name="BuildStepImage" representedClassName="BuildStepImage" parentEntity="BuildStep" syncable="YES" codeGenerationType="class">
-        <attribute name="imageURL" attributeType="String" syncable="YES"/>
+        <attribute name="imageIdentifier" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="BuildStepText" representedClassName="BuildStepText" parentEntity="BuildStep" syncable="YES" codeGenerationType="class"/>
     <entity name="Settings" representedClassName="Settings" syncable="YES" codeGenerationType="class">
