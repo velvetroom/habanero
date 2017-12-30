@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 extension NewAdd
 {
@@ -50,5 +50,13 @@ extension NewAdd
             
             self?.asyncUpdated(completion:completion)
         }
+    }
+    
+    func update(
+        step:BuildStepImage,
+        image:UIImage,
+        completion:@escaping(() -> ()))
+    {
+        
     }
 }

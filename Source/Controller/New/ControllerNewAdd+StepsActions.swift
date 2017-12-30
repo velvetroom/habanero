@@ -77,7 +77,28 @@ extension ControllerNewAdd
     
     private func stepEditImage(step:BuildStepImage)
     {
+        let controller:ControllerPhoto = ControllerPhoto
+        { [weak self] (image:UIImage?) in
+            
+            guard
+            
+                let image:UIImage = image
+            
+            else
+            {
+                return
+            }
+            
+            self?.model.update(
+                step:step,
+                image:image)
+            { [weak self] in
+                
+                self?.loadModel()
+            }
+        }
         
+        self.parentController?.animateOver(controller:controller)
     }
     
     private func showActions(
