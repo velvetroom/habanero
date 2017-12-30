@@ -12,5 +12,6 @@ extension Build
         self.syncstamp = timestamp
         self.duration = Build.Constants.defaultDuration
         self.title = String()
+        self.subtitle = String()
     }
 }
