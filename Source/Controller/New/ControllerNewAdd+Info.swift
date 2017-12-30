@@ -68,7 +68,29 @@ extension ControllerNewAdd
         let controller:ControllerText = ControllerText(text:title)
         { [weak self] (text:String) in
             
-            self?.model.editTitle(title:text)
+            self?.model.editInfoTitle(title:text)
+        }
+        
+        self.parentController?.push(
+            controller:controller,
+            vertical:ControllerTransition.Vertical.bottom)
+    }
+    
+    func editInfoSubtitle()
+    {
+        guard
+            
+            let subtitle:String = self.model.build?.subtitle
+            
+        else
+        {
+            return
+        }
+        
+        let controller:ControllerText = ControllerText(text:subtitle)
+        { [weak self] (text:String) in
+            
+            self?.model.editInfoSubtitle(subtitle:text)
         }
         
         self.parentController?.push(

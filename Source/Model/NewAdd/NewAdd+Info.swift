@@ -45,12 +45,22 @@ extension NewAdd
         }
     }
     
-    func editTitle(title:String)
+    func editInfoTitle(title:String)
     {
         DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
         { [weak self] in
                 
             self?.build?.title = title
+            self?.database?.save(completion:nil)
+        }
+    }
+    
+    func editInfoSubtitle(subtitle:String)
+    {
+        DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
+        { [weak self] in
+            
+            self?.build?.subtitle = subtitle
             self?.database?.save(completion:nil)
         }
     }
