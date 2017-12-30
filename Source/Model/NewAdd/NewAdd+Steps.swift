@@ -53,7 +53,7 @@ extension NewAdd
         
             self.validateText(text:text) == true,
             let database:Database = self.database,
-            let imageURL:String = self.storeImageLocally(image:image)
+            let imageIdentifier:String = self.storeImageLocally(image:image)
         
         else
         {
@@ -64,7 +64,7 @@ extension NewAdd
         { [weak self] (step:BuildStepImage) in
             
             step.text = text
-            step.imageURL = imageURL
+            step.imageIdentifier = imageIdentifier
             
             self?.stepCreated(
                 step:step,

@@ -29,7 +29,7 @@ extension NewAdd
     {
         guard
         
-            let imageIdentifier:String = step.imageURL,
+            let imageIdentifier:String = step.imageIdentifier,
             let imageURL:URL = NewAdd.localURLForImage(identifier:imageIdentifier)
         
         else

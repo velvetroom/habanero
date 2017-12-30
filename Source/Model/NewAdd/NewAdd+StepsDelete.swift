@@ -53,7 +53,7 @@ extension NewAdd
         guard
         
             let step:BuildStepImage = step as? BuildStepImage,
-            let imageIdentifier:String = step.imageURL,
+            let imageIdentifier:String = step.imageIdentifier,
             let imageURL:URL = NewAdd.localURLForImage(identifier:imageIdentifier)
         
         else
