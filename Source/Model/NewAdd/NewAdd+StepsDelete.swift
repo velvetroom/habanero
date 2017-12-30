@@ -2,6 +2,17 @@ import Foundation
 
 extension NewAdd
 {
+    private static var stepDeleteContentsRouter:[RecipeStepType : ((NewAdd) -> (BuildStep) -> ())]
+    {
+        get
+        {
+            let map:[RecipeStepType : ((NewAdd) -> (BuildStep) -> ())] = [
+                RecipeStepType.image : NewAdd.deleteStepImageContents]
+            
+            return map
+        }
+    }
+    
     //MARK: private
     
     private func asyncDeleteStep(
@@ -37,6 +48,11 @@ extension NewAdd
         }
     }
     
+    private func deleteStepImageContents(step:BuildStep)
+    {
+        
+    }
+    
     //MARK: internal
     
     func deleteStep(
@@ -54,6 +70,15 @@ extension NewAdd
     
     func deleteStepContents(step:BuildStep)
     {
+        guard
         
+            let router:((NewAdd) -> (BuildStep) -> ()) = NewAdd.stepDeleteContentsRouter[step.recipeStepType]
+        
+        else
+        {
+            return
+        }
+        
+        router(self)(step)
     }
 }
