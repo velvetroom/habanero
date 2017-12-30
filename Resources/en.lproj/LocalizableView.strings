@@ -4,6 +4,7 @@ ViewNewBar_buttonAdd="Add";
 ViewNewAddBar_labelTitle="Add Recipe";
 ViewNewAddListFooterInfo_buttonDelete="Delete";
 ViewNewAddListCellInfoTitle_labelTitle="Name";
+ViewNewAddListCellInfoTitle_labelSubtitle="Description";
 ViewNewAddListFooterIngredients_buttonAdd="Add ingredient";
 ViewNewAddListFooterSteps_labelTitle="Add step";
 ViewNewAddIngredientListHeader_labelTitle="No ingredients";
