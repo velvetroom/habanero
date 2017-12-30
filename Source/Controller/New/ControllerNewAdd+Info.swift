@@ -69,6 +69,10 @@ extension ControllerNewAdd
         { [weak self] (text:String) in
             
             self?.model.editInfoTitle(title:text)
+            { [weak self] in
+                
+                self?.loadModel()
+            }
         }
         
         self.parentController?.push(
@@ -91,6 +95,10 @@ extension ControllerNewAdd
         { [weak self] (text:String) in
             
             self?.model.editInfoSubtitle(subtitle:text)
+            { [weak self] in
+                
+                self?.loadModel()
+            }
         }
         
         self.parentController?.push(

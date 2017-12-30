@@ -17,20 +17,20 @@ extension NewAdd
         }
         
         database.delete(data:build)
-        {
-            database.save
-            { [weak self] in
-                
-                self?.buildDeleted(completion:completion)
-            }
+        { [weak self] in
+            
+            self?.infoUpdated(completion:completion)
         }
     }
     
-    private func buildDeleted(completion:@escaping(() -> ()))
+    private func infoUpdated(completion:@escaping(() -> ()))
     {
-        DispatchQueue.main.async
+        self.database?.save
         {
-            completion()
+            DispatchQueue.main.async
+            {
+                completion()
+            }
         }
     }
     
@@ -45,23 +45,29 @@ extension NewAdd
         }
     }
     
-    func editInfoTitle(title:String)
+    func editInfoTitle(
+        title:String,
+        completion:@escaping(() -> ()))
     {
         DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
         { [weak self] in
                 
             self?.build?.title = title
-            self?.database?.save(completion:nil)
+            
+            self?.infoUpdated(completion:completion)
         }
     }
     
-    func editInfoSubtitle(subtitle:String)
+    func editInfoSubtitle(
+        subtitle:String,
+        completion:@escaping(() -> ()))
     {
         DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
         { [weak self] in
             
             self?.build?.subtitle = subtitle
-            self?.database?.save(completion:nil)
+            
+            self?.infoUpdated(completion:completion)
         }
     }
     
