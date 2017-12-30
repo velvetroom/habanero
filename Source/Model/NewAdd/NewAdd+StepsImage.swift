@@ -81,19 +81,7 @@ extension NewAdd
         image:UIImage,
         at localURL:URL) throws
     {
-        let fileExists:Bool = FileManager.default.fileExists(atPath:localURL.path)
-        
-        if fileExists
-        {
-            do
-            {
-                try FileManager.default.removeItem(at:localURL)
-            }
-            catch let error
-            {
-                throw error
-            }
-        }
+        try self.deleteImage(localURL:localURL)
         
         guard
             
@@ -104,15 +92,18 @@ extension NewAdd
             throw NewAddError.invalidImageData
         }
         
-        do
+        try imageData.write(
+            to:localURL,
+            options:Data.WritingOptions.atomicWrite)
+    }
+    
+    func deleteImage(localURL:URL) throws
+    {
+        let fileExists:Bool = FileManager.default.fileExists(atPath:localURL.path)
+        
+        if fileExists
         {
-            try imageData.write(
-                to:localURL,
-                options:Data.WritingOptions.atomicWrite)
-        }
-        catch let error
-        {
-            throw error
+            try FileManager.default.removeItem(at:localURL)
         }
     }
 }

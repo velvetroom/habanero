@@ -2,11 +2,11 @@ import Foundation
 
 extension NewAdd
 {
-    private static var stepDeleteContentsRouter:[RecipeStepType : ((NewAdd) -> (BuildStep) -> ())]
+    private static var stepDeleteContentsRouter:[RecipeStepType : ((NewAdd) -> (BuildStep) throws -> ())]
     {
         get
         {
-            let map:[RecipeStepType : ((NewAdd) -> (BuildStep) -> ())] = [
+            let map:[RecipeStepType : ((NewAdd) -> (BuildStep) throws -> ())] = [
                 RecipeStepType.image : NewAdd.deleteStepImageContents]
             
             return map
@@ -48,9 +48,20 @@ extension NewAdd
         }
     }
     
-    private func deleteStepImageContents(step:BuildStep)
+    private func deleteStepImageContents(step:BuildStep) throws
     {
+        guard
         
+            let step:BuildStepImage = step as? BuildStepImage,
+            let imageIdentifier:String = step.imageURL,
+            let imageURL:URL = NewAdd.localURLForImage(identifier:imageIdentifier)
+        
+        else
+        {
+            return
+        }
+        
+        try self.deleteImage(localURL:imageURL)
     }
     
     //MARK: internal
@@ -72,13 +83,18 @@ extension NewAdd
     {
         guard
         
-            let router:((NewAdd) -> (BuildStep) -> ()) = NewAdd.stepDeleteContentsRouter[step.recipeStepType]
+            let router:((NewAdd) -> (BuildStep) throws -> ()) =
+            NewAdd.stepDeleteContentsRouter[step.recipeStepType]
         
         else
         {
             return
         }
         
-        router(self)(step)
+        do
+        {
+            try router(self)(step)
+        }
+        catch { }
     }
 }
