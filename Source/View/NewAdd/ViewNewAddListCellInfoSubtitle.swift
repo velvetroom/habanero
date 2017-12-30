@@ -19,18 +19,18 @@ final class ViewNewAddListCellInfoSubtitle:ViewNewAddListCellText
         
         guard
             
-            let model:NewAddSectionItemInfoTitle = model as? NewAddSectionItemInfoTitle
+            let model:NewAddSectionItemInfoSubtitle = model as? NewAddSectionItemInfoSubtitle
             
         else
         {
             return
         }
         
-        self.labelContent.text = model.title
+        self.labelContent.text = model.subtitle
     }
     
     override func editText()
     {
-        self.controller?.editInfoTitle()
+        self.controller?.editInfoSubtitle()
     }
 }
