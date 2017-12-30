@@ -12,6 +12,7 @@ extension NewAdd
         static let footerIngredientsHeight:CGFloat = 50
         static let footerStepsHeight:CGFloat = 100
         static let cellInfoTitleHeight:CGFloat = 80
+        static let cellInfoSubtitleHeight:CGFloat = 100
         static let cellInfoDurationHeight:CGFloat = 140
         static let cellIngredientHeight:CGFloat = 60
         static let cellStepTextHeight:CGFloat = 70

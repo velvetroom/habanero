@@ -24,12 +24,24 @@ struct NewAddSectionInfo:NewAddSectionProtocol
     
     private static func factoryItems(build:Build) -> [NewAddSectionItemProtocol]
     {
-        let itemTitle:NewAddSectionItemInfoTitle = NewAddSectionItemInfoTitle(title:build.title)
-        let itemDuration:NewAddSectionItemInfoDuration = NewAddSectionItemInfoDuration(duration:build.duration)
+        var items:[NewAddSectionItemProtocol] = []
         
-        let items:[NewAddSectionItemProtocol] = [
-            itemTitle,
-            itemDuration]
+        if let title:String = build.title
+        {
+            let itemTitle:NewAddSectionItemInfoTitle = NewAddSectionItemInfoTitle(title:title)
+            
+            items.append(itemTitle)
+        }
+        
+        if let subtitle:String = build.subtitle
+        {
+            let itemSubtitle:NewAddSectionItemInfoSubtitle = NewAddSectionItemInfoSubtitle(subtitle:subtitle)
+            
+            items.append(itemSubtitle)
+        }
+        
+        let itemDuration:NewAddSectionItemInfoDuration = NewAddSectionItemInfoDuration(duration:build.duration)
+        items.append(itemDuration)
         
         return items
     }

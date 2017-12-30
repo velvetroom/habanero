@@ -82,17 +82,28 @@ extension ControllerNewAdd
     
     func editInfoSubtitle()
     {
-        guard
-            
-            let subtitle:String = self.model.build?.subtitle
-            
+        let subtitle:String
+        
+        if let currentSubtitle:String = self.model.build?.subtitle
+        {
+            subtitle = currentSubtitle
+        }
         else
         {
-            return
+            subtitle = String()
         }
         
         let controller:ControllerText = ControllerText(text:subtitle)
         { [weak self] (text:String) in
+            
+            guard
+                
+                text.count > 0
+            
+            else
+            {
+                return
+            }
             
             self?.model.editInfoSubtitle(subtitle:text)
             { [weak self] in
