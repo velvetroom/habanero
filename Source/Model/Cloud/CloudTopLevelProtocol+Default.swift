@@ -1,6 +1,6 @@
 import Foundation
 
-extension CloudListTopLevelProtocol
+extension CloudTopLevelProtocol
 {
     static var identifier:String
     {
