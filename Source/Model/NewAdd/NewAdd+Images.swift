@@ -42,6 +42,35 @@ extension NewAdd
     
     //MARK: internal
     
+    class func localImageForIdentifier(identifier:String) -> UIImage?
+    {
+        guard
+            
+            let imageLocation:URL = NewAdd.localURLForImage(identifier:identifier)
+            
+        else
+        {
+            return nil
+        }
+        
+        let imageData:Data
+        
+        do
+        {
+            try imageData = Data(
+                contentsOf:imageLocation,
+                options:Data.ReadingOptions.mappedIfSafe)
+        }
+        catch
+        {
+            return nil
+        }
+        
+        let image:UIImage? = UIImage(data:imageData)
+        
+        return image
+    }
+    
     class func localURLForImage(identifier:String) -> URL?
     {
         guard

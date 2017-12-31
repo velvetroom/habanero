@@ -92,7 +92,7 @@ struct NewAddSectionSteps:NewAddSectionProtocol
             let step:BuildStepImage = step as? BuildStepImage,
             let text:String = step.text,
             let imageIdentifier:String = step.imageIdentifier,
-            let image:UIImage = NewAddSectionSteps.imageWithIdentifier(imageIdentifier:imageIdentifier)
+            let image:UIImage = NewAdd.localImageForIdentifier(identifier:imageIdentifier)
             
         else
         {
@@ -105,34 +105,5 @@ struct NewAddSectionSteps:NewAddSectionProtocol
             step:step)
         
         return item
-    }
-    
-    private static func imageWithIdentifier(imageIdentifier:String) -> UIImage?
-    {
-        guard
-        
-            let imageLocation:URL = NewAdd.localURLForImage(identifier:imageIdentifier)
-        
-        else
-        {
-            return nil
-        }
-        
-        let imageData:Data
-        
-        do
-        {
-            try imageData = Data(
-                contentsOf:imageLocation,
-                options:Data.ReadingOptions.mappedIfSafe)
-        }
-        catch
-        {
-            return nil
-        }
-        
-        let image:UIImage? = UIImage(data:imageData)
-        
-        return image
     }
 }
