@@ -13,8 +13,13 @@ protocol CloudProviderProtocol
         width json:[String:Any],
         completion:@escaping((String?, Error?) -> ()))
     
+    func loadTopLevelList<T:CloudListProtocol>(
+        identifier:String,
+        completion:@escaping((T?, Error?) -> ()))
+    
     func loadList<T:CloudListProtocol>(
-        parentPath:String,
+        identifier:String,
+        
         completion:@escaping((T?, Error?) -> ()))
     
     func loadItem<T:CloudItemProtocol>(

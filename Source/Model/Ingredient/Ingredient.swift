@@ -1,6 +1,6 @@
 import Foundation
 
-final class Ingredient:CloudItemProtocol
+final class Ingredient:CloudItemProtocol, CloudSerialisableProtocol
 {
     let parentPath:String
     let identifier:String

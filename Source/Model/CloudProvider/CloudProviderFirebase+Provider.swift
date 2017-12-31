@@ -30,4 +30,12 @@ extension CloudProviderFirebase
             with:json,
             completion:completion)
     }
+    
+    func loadList<T>(parentPath: String, completion: @escaping ((T?, Error?) -> ())) where T : CloudListProtocol {
+        
+    }
+    
+    func loadItem<T>(identifier: String, at parentPath: String, completion: @escaping ((T?, Error?) -> ())) where T : CloudItemProtocol {
+    
+    }
 }
