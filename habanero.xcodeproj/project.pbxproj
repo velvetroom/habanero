@@ -125,7 +125,8 @@
 		DA6BF0D91FDDFDDC0027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0D81FDDFDDC0027C167 /* GoogleService-Info.plist */; };
 		DA6BF0DB1FDDFDE60027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */; };
 		DA6E804D1FF96C0D00175F70 /* NewAdd+Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E804C1FF96C0D00175F70 /* NewAdd+Delete.swift */; };
-		DA6E804F1FF96D3800175F70 /* NewAddDeleteStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E804E1FF96D3800175F70 /* NewAddDeleteStrategy.swift */; };
+		DA6E804F1FF96D3800175F70 /* NewAddDeleteStrategyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E804E1FF96D3800175F70 /* NewAddDeleteStrategyProtocol.swift */; };
+		DA6E80511FF9706A00175F70 /* NewAddDeleteStrategyInfoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80501FF9706A00175F70 /* NewAddDeleteStrategyInfoImage.swift */; };
 		DA70AFBF1FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
 		DA70AFC01FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
 		DA70AFC21FD5AA980016B0DC /* ControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */; };
@@ -597,7 +598,8 @@
 		DA6BF0DC1FDDFE430027C167 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = user/Info.plist; sourceTree = "<group>"; };
 		DA6BF0DE1FDDFE4E0027C167 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = admin/Info.plist; sourceTree = "<group>"; };
 		DA6E804C1FF96C0D00175F70 /* NewAdd+Delete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Delete.swift"; sourceTree = "<group>"; };
-		DA6E804E1FF96D3800175F70 /* NewAddDeleteStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddDeleteStrategy.swift; sourceTree = "<group>"; };
+		DA6E804E1FF96D3800175F70 /* NewAddDeleteStrategyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddDeleteStrategyProtocol.swift; sourceTree = "<group>"; };
+		DA6E80501FF9706A00175F70 /* NewAddDeleteStrategyInfoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddDeleteStrategyInfoImage.swift; sourceTree = "<group>"; };
 		DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHome.swift; sourceTree = "<group>"; };
 		DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerHome.swift; sourceTree = "<group>"; };
 		DA70AFC41FD5AABF0016B0DC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -1585,7 +1587,8 @@
 				DAB786261FF4B88C00579BB5 /* NewAddSectionItemStepImage.swift */,
 				DAB786221FF4B3B400579BB5 /* NewAddError.swift */,
 				DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */,
-				DA6E804E1FF96D3800175F70 /* NewAddDeleteStrategy.swift */,
+				DA6E804E1FF96D3800175F70 /* NewAddDeleteStrategyProtocol.swift */,
+				DA6E80501FF9706A00175F70 /* NewAddDeleteStrategyInfoImage.swift */,
 			);
 			path = NewAdd;
 			sourceTree = "<group>";
@@ -2225,7 +2228,7 @@
 				DA8752C51FE3846D00AE74F5 /* ViewNewAddIngredientAmountInput+Constants.swift in Sources */,
 				DA8752D11FE3874400AE74F5 /* ViewNewAddIngredientAmountBar.swift in Sources */,
 				DAC732CA1FF8502A00980854 /* ViewNewAddListCellText.swift in Sources */,
-				DA6E804F1FF96D3800175F70 /* NewAddDeleteStrategy.swift in Sources */,
+				DA6E804F1FF96D3800175F70 /* NewAddDeleteStrategyProtocol.swift in Sources */,
 				DA4233DC1FEDE4DF0012A589 /* ControllerPhotoCrop.swift in Sources */,
 				DA4233E31FEDE5DD0012A589 /* PhotoCrop.swift in Sources */,
 				DA8752DF1FE3ABAF00AE74F5 /* NewAddIngredientAmountTypeSpoons.swift in Sources */,
@@ -2306,6 +2309,7 @@
 				DA84C0F81FD7403D008959EA /* ViewNew.swift in Sources */,
 				DAF949FC1FD8BD13001BA32E /* NewAdd.swift in Sources */,
 				DA1F04FE1FE8E1DA00DF03A8 /* RecipeStepType.swift in Sources */,
+				DA6E80511FF9706A00175F70 /* NewAddDeleteStrategyInfoImage.swift in Sources */,
 				DA16F15C1FDFADD800EB6877 /* ViewNewAddIngredientBar.swift in Sources */,
 				DA2C17741FEF41AD001BDA54 /* ViewPhotoCropDisplay.swift in Sources */,
 				DA177BEF1FD77773003B3836 /* ViewNewListCell.swift in Sources */,

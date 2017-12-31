@@ -1,6 +1,6 @@
 import Foundation
 
-protocol NewAddDeleteStrategy
+protocol NewAddDeleteStrategyProtocol
 {
     func delete(
         build:Build,
