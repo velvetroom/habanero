@@ -26,6 +26,10 @@ struct NewAddSectionInfo:NewAddSectionProtocol
     {
         var items:[NewAddSectionItemProtocol] = []
         
+        let image:UIImage? = NewAddSectionInfo.factoryBuildImage(build:build)
+        let itemImage:NewAddSectionItemInfoImage = NewAddSectionItemInfoImage(image:image)
+        items.append(itemImage)
+        
         if let title:String = build.title
         {
             let itemTitle:NewAddSectionItemInfoTitle = NewAddSectionItemInfoTitle(title:title)
@@ -44,5 +48,21 @@ struct NewAddSectionInfo:NewAddSectionProtocol
         items.append(itemDuration)
         
         return items
+    }
+    
+    private static func factoryBuildImage(build:Build) -> UIImage?
+    {
+        guard
+        
+            let imageIdentifier:String = build.imageIdentifier
+        
+        else
+        {
+            return nil
+        }
+        
+        let image:UIImage? = NewAdd.localImageForIdentifier(identifier:imageIdentifier)
+        
+        return image
     }
 }
