@@ -7,6 +7,8 @@ extension NewAdd
         get
         {
             let strategies:[NewAddDeleteStrategyProtocol.Type] = [
+                NewAddDeleteStrategyBuild.self,
+                NewAddDeleteStrategyStepsImages.self,
                 NewAddDeleteStrategyInfoImage.self]
             
             return strategies
