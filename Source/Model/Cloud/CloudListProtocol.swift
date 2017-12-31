@@ -1,9 +1,9 @@
 import Foundation
 
-protocol CloudListProtocol
+protocol CloudListProtocol:CloudEntityProtocol
 {
     associatedtype Item:CloudItemProtocol
     var items:[Item] { get set }
     
-    init()
+    init(parentPath:String)
 }

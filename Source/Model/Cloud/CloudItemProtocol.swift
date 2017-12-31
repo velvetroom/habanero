@@ -1,11 +1,9 @@
 import Foundation
 
-protocol CloudItemProtocol
+protocol CloudItemProtocol:CloudEntityProtocol
 {
-    var identifier:String { get }
-    var parent:CloudItemProtocol? { get }
-    
     init?(
         identifier:String,
+        parentPath:String,
         json:[String:Any])
 }

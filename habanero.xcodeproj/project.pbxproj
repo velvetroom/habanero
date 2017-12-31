@@ -137,14 +137,14 @@
 		DA6E80621FF98ABB00175F70 /* Cloud+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80601FF98ABB00175F70 /* Cloud+Create.swift */; };
 		DA6E80641FF98B3E00175F70 /* CloudProviderFirebase+Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80631FF98B3E00175F70 /* CloudProviderFirebase+Provider.swift */; };
 		DA6E80651FF98B3E00175F70 /* CloudProviderFirebase+Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80631FF98B3E00175F70 /* CloudProviderFirebase+Provider.swift */; };
-		DA6E80671FF992BC00175F70 /* CloudTopLevelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80661FF992BC00175F70 /* CloudTopLevelProtocol.swift */; };
-		DA6E80681FF992BC00175F70 /* CloudTopLevelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80661FF992BC00175F70 /* CloudTopLevelProtocol.swift */; };
-		DA6E806A1FF992C900175F70 /* CloudTopLevelProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80691FF992C900175F70 /* CloudTopLevelProtocol+Default.swift */; };
-		DA6E806B1FF992C900175F70 /* CloudTopLevelProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80691FF992C900175F70 /* CloudTopLevelProtocol+Default.swift */; };
 		DA6E806D1FF998FF00175F70 /* CloudProviderFirebase+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E806C1FF998FF00175F70 /* CloudProviderFirebase+Load.swift */; };
 		DA6E806E1FF998FF00175F70 /* CloudProviderFirebase+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E806C1FF998FF00175F70 /* CloudProviderFirebase+Load.swift */; };
 		DA6E80701FF9998800175F70 /* CloudSerialisableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E806F1FF9998800175F70 /* CloudSerialisableProtocol.swift */; };
 		DA6E80711FF9998800175F70 /* CloudSerialisableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E806F1FF9998800175F70 /* CloudSerialisableProtocol.swift */; };
+		DA6E80731FF9A18A00175F70 /* CloudListProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80721FF9A18A00175F70 /* CloudListProtocol+Default.swift */; };
+		DA6E80741FF9A18A00175F70 /* CloudListProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80721FF9A18A00175F70 /* CloudListProtocol+Default.swift */; };
+		DA6E80761FF9A1F400175F70 /* CloudEntityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80751FF9A1F400175F70 /* CloudEntityProtocol.swift */; };
+		DA6E80771FF9A1F400175F70 /* CloudEntityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80751FF9A1F400175F70 /* CloudEntityProtocol.swift */; };
 		DA70AFBF1FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
 		DA70AFC01FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
 		DA70AFC21FD5AA980016B0DC /* ControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */; };
@@ -618,10 +618,10 @@
 		DA6E805D1FF987F100175F70 /* CloudProviderFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudProviderFirebase.swift; sourceTree = "<group>"; };
 		DA6E80601FF98ABB00175F70 /* Cloud+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cloud+Create.swift"; sourceTree = "<group>"; };
 		DA6E80631FF98B3E00175F70 /* CloudProviderFirebase+Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudProviderFirebase+Provider.swift"; sourceTree = "<group>"; };
-		DA6E80661FF992BC00175F70 /* CloudTopLevelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudTopLevelProtocol.swift; sourceTree = "<group>"; };
-		DA6E80691FF992C900175F70 /* CloudTopLevelProtocol+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudTopLevelProtocol+Default.swift"; sourceTree = "<group>"; };
 		DA6E806C1FF998FF00175F70 /* CloudProviderFirebase+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudProviderFirebase+Load.swift"; sourceTree = "<group>"; };
 		DA6E806F1FF9998800175F70 /* CloudSerialisableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudSerialisableProtocol.swift; sourceTree = "<group>"; };
+		DA6E80721FF9A18A00175F70 /* CloudListProtocol+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudListProtocol+Default.swift"; sourceTree = "<group>"; };
+		DA6E80751FF9A1F400175F70 /* CloudEntityProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudEntityProtocol.swift; sourceTree = "<group>"; };
 		DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHome.swift; sourceTree = "<group>"; };
 		DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerHome.swift; sourceTree = "<group>"; };
 		DA70AFC41FD5AABF0016B0DC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -1530,10 +1530,10 @@
 				DAE7C3481FE08281003190FF /* Cloud.swift */,
 				DA6E80601FF98ABB00175F70 /* Cloud+Create.swift */,
 				DAE7C36D1FE093D1003190FF /* Cloud+Load.swift */,
-				DAE7C3701FE0971B003190FF /* CloudListProtocol.swift */,
-				DA6E80661FF992BC00175F70 /* CloudTopLevelProtocol.swift */,
-				DA6E80691FF992C900175F70 /* CloudTopLevelProtocol+Default.swift */,
+				DA6E80751FF9A1F400175F70 /* CloudEntityProtocol.swift */,
 				DA6E806F1FF9998800175F70 /* CloudSerialisableProtocol.swift */,
+				DAE7C3701FE0971B003190FF /* CloudListProtocol.swift */,
+				DA6E80721FF9A18A00175F70 /* CloudListProtocol+Default.swift */,
 				DAE7C34A1FE08281003190FF /* CloudItemProtocol.swift */,
 				DAE7C3471FE08281003190FF /* CloudError.swift */,
 				DAE7C34B1FE08281003190FF /* CloudError+Description.swift */,
@@ -1953,7 +1953,6 @@
 				DA71D69E1FDA6B13003A33E1 /* ViewTextInput.swift in Sources */,
 				DACF554D1FD7661E00069701 /* ExtensionURL.swift in Sources */,
 				DACF55451FD7661E00069701 /* ExtensionNSManagedObject.swift in Sources */,
-				DA6E80671FF992BC00175F70 /* CloudTopLevelProtocol.swift in Sources */,
 				DA91EAFC1FD62C1F0063560D /* ViewParent+Transitions.swift in Sources */,
 				DAE5E4801FE489C100CC40BA /* Settings.swift in Sources */,
 				DA74F0B11FE60A4F00F45310 /* BuildIngredientQuantity+Computed.swift in Sources */,
@@ -1966,7 +1965,6 @@
 				DAE5E4831FE48C6100CC40BA /* SettingsMetrics.swift in Sources */,
 				DABA5EC41FEA36D60017F865 /* PhotoOptionCancel.swift in Sources */,
 				DAAD4A721FF31F310044B1FE /* PhotoCrop+Rotate.swift in Sources */,
-				DA6E806A1FF992C900175F70 /* CloudTopLevelProtocol+Default.swift in Sources */,
 				DACF55331FD7661E00069701 /* ExtensionMKPolyline.swift in Sources */,
 				DA90891E1FD4C66000C1208A /* ControllerParent+Orientation.swift in Sources */,
 				DA4AA5061FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift in Sources */,
@@ -1981,6 +1979,7 @@
 				DA91EAE81FD62C1F0063560D /* ViewMenu+Actions.swift in Sources */,
 				DA74F0CA1FE6152700F45310 /* FormatIngredientTypeGrams.swift in Sources */,
 				DA91EB211FD62C7D0063560D /* ViewTransitionableProtocol.swift in Sources */,
+				DA6E80761FF9A1F400175F70 /* CloudEntityProtocol.swift in Sources */,
 				DA91EB121FD62C1F0063560D /* ViewSpinner+Constants.swift in Sources */,
 				DA855E081FF370F200E1B69F /* PhotoCropPoints.swift in Sources */,
 				DA71D6931FDA63FD003A33E1 /* ControllerText.swift in Sources */,
@@ -2042,6 +2041,7 @@
 				DACF55491FD7661E00069701 /* ExtensionUIFont+Constants.swift in Sources */,
 				DA9089221FD4C66000C1208A /* AppDelegate.swift in Sources */,
 				DA74F0C11FE612E200F45310 /* FormatIngredientTypeProtocol.swift in Sources */,
+				DA6E80731FF9A18A00175F70 /* CloudListProtocol+Default.swift in Sources */,
 				DA4233EC1FEDEBEC0012A589 /* ViewPhotoCrop+Constants.swift in Sources */,
 				DAE7C35A1FE08281003190FF /* CloudItemProtocol.swift in Sources */,
 				DA74F0C71FE614BA00F45310 /* FormatIngredientTypeCups.swift in Sources */,
@@ -2179,6 +2179,7 @@
 				DACEB3AC1FDCAE700089B3FE /* ViewNewListCellSteps.swift in Sources */,
 				DAC732CE1FF853F600980854 /* ViewNewAddListCellInfoSubtitle.swift in Sources */,
 				DA9089841FD4CE2E00C1208A /* ControllerParent+Transitions.swift in Sources */,
+				DA6E80741FF9A18A00175F70 /* CloudListProtocol+Default.swift in Sources */,
 				DA855E0F1FF3839000E1B69F /* PhotoCropMask.swift in Sources */,
 				DA91EB031FD62C1F0063560D /* ViewAlert+Constants.swift in Sources */,
 				DAE7C3801FE0A9B3003190FF /* Build+Computed.swift in Sources */,
@@ -2214,6 +2215,7 @@
 				DA6E80551FF97AE400175F70 /* NewAddDeleteStrategyBuild.swift in Sources */,
 				DA71D6871FDA58E3003A33E1 /* ViewNewAddListCellInfoTitle.swift in Sources */,
 				DA8752C31FE3844300AE74F5 /* ViewNewAddIngredientAmountInput.swift in Sources */,
+				DA6E80771FF9A1F400175F70 /* CloudEntityProtocol.swift in Sources */,
 				DA5FFE671FE779C300A38154 /* FormatIngredientTypeSpoons+Constants.swift in Sources */,
 				DAE7C3401FE076EC003190FF /* ViewNewAddIngredientList+Actions.swift in Sources */,
 				DA8752D31FE3888100AE74F5 /* NewAddIngredient+Validate.swift in Sources */,
@@ -2265,7 +2267,6 @@
 				DAE7C33C1FE061BD003190FF /* ViewNewAddIngredientListHeader+Constants.swift in Sources */,
 				DA9089801FD4CE2E00C1208A /* Controller.swift in Sources */,
 				DA11BA121FD8FEEB0038F9B0 /* ViewNewAddListHeader.swift in Sources */,
-				DA6E806B1FF992C900175F70 /* CloudTopLevelProtocol+Default.swift in Sources */,
 				DA8752C71FE384B200AE74F5 /* ViewNewAddIngredientAmount+Constants.swift in Sources */,
 				DA8752C51FE3846D00AE74F5 /* ViewNewAddIngredientAmountInput+Constants.swift in Sources */,
 				DA8752D11FE3874400AE74F5 /* ViewNewAddIngredientAmountBar.swift in Sources */,
@@ -2399,7 +2400,6 @@
 				DA2C176E1FEF3A91001BDA54 /* ViewButtonContinue.swift in Sources */,
 				DA60428E1FE1EC2300758A2F /* ViewNewAddListCellIngredient.swift in Sources */,
 				DA2A94E71FF30089009D2FF9 /* ViewPhotoCropDisplayImage+Constants.swift in Sources */,
-				DA6E80681FF992BC00175F70 /* CloudTopLevelProtocol.swift in Sources */,
 				DA5D71C61FDB56AD00429F5D /* ViewNewAddListCellInfoDuration+Constants.swift in Sources */,
 				DACF554E1FD7661E00069701 /* ExtensionURL.swift in Sources */,
 				DABA5EAE1FEA2E170017F865 /* ControllerPhoto.swift in Sources */,
