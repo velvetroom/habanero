@@ -121,4 +121,28 @@ extension ControllerNewAdd
     {
         self.model.durationEdited(duration:duration)
     }
+    
+    func updateInfoImage()
+    {
+        let controller:ControllerPhoto = ControllerPhoto
+        { [weak self] (image:UIImage?) in
+            
+            guard
+                
+                let image:UIImage = image
+                
+            else
+            {
+                return
+            }
+            
+            self?.model.updateInfoImage(image:image)
+            { [weak self] in
+                
+                self?.loadModel()
+            }
+        }
+        
+        self.parentController?.animateOver(controller:controller)
+    }
 }

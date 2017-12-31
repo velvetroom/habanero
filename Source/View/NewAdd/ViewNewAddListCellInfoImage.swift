@@ -57,6 +57,6 @@ final class ViewNewAddListCellInfoImage:ViewNewAddListCellEditable
     
     override func selectorEdit()
     {
-        
+        self.controller?.updateInfoImage()
     }
 }

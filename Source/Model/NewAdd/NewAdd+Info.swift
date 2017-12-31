@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 extension NewAdd
 {
@@ -31,6 +31,37 @@ extension NewAdd
             {
                 completion()
             }
+        }
+    }
+    
+    private func asyncUpdateInfoImage(
+        image:UIImage,
+        completion:@escaping(() -> ()))
+    {
+        guard
+            
+            let imageIdentifier:String = self.build?.imageIdentifier,
+            let imageURL:URL = NewAdd.localURLForImage(identifier:imageIdentifier)
+            
+        else
+        {
+            return
+        }
+        
+        do
+        {
+            try self.store(
+                image:image,
+                at:imageURL)
+        }
+        catch
+        {
+            return
+        }
+        
+        DispatchQueue.main.async
+        {
+            completion()
         }
     }
     
@@ -78,6 +109,19 @@ extension NewAdd
             
             self?.build?.duration = duration
             self?.database?.save(completion:nil)
+        }
+    }
+    
+    func updateInfoImage(
+        image:UIImage,
+        completion:@escaping(() -> ()))
+    {
+        DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
+        { [weak self] in
+                
+            self?.asyncUpdateInfoImage(
+                image:image,
+                completion:completion)
         }
     }
 }
