@@ -6,7 +6,7 @@ extension CloudTopLevelProtocol
     {
         get
         {
-            let stringName:String = String(describing:CloudListTopLevelProtocol.self)
+            let stringName:String = String(describing:CloudTopLevelProtocol.self)
             
             return stringName
         }

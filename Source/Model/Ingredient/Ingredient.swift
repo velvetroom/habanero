@@ -10,7 +10,7 @@ final class Ingredient:CloudItemProtocol
     {
         get
         {
-            let json:[String:Any] = Ingredient.factoryJson(ingredient:self)
+            let json:[String:Any] = Ingredient.factoryJson(item:self)
             
             return json
         }

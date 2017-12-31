@@ -5,12 +5,12 @@ extension CloudProviderFirebase
     //MARK: Cloud provider delegate
  
     func createItemAt(
-        list:CloudListProtocol.Type,
+        topLevel:CloudTopLevelProtocol.Type,
         width json:[String:Any],
         completion:@escaping((String?, Error?) -> ()))
     {
         self.createDocumentAt(
-            collectionPath:list.identifier,
+            collectionPath:topLevel.identifier,
             with:json,
             completion:completion)
     }

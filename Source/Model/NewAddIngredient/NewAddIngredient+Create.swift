@@ -23,11 +23,8 @@ extension NewAddIngredient
         }
         
         let ingredientName:String = self.searching.lowercased()
-        let ingredientData:[String:Any] = Ingredient.factoryJson(name:ingredientName)
         
-        self.cloud.create(
-            parentPath:IngredientList.identifier,
-            data:ingredientData)
+        self.cloud.createIngredient(name:ingredientName)
         { [weak self] (identifier:String?, error:Error?) in
             
             guard

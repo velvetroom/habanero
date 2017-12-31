@@ -12,10 +12,10 @@ extension Ingredient
         return json
     }
     
-    class func factoryJson(ingredient:Ingredient) -> [String:Any]
+    static func factoryJson(item:Ingredient) -> [String:Any]
     {
-        let name:String = ingredient.name
-        let json:[String:Any] = Ingredient.factoryJson(name:name)
+        var json:[String:Any] = []
+        json[Ingredient.Keys.name] = item.name
         
         return json
     }

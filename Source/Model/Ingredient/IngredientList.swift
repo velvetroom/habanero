@@ -1,6 +1,6 @@
 import Foundation
 
-struct IngredientList:CloudListProtocol, CloudListTopLevelProtocol
+struct IngredientList:CloudListProtocol, CloudTopLevelProtocol
 {
     typealias Item = Ingredient
     
