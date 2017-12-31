@@ -22,7 +22,8 @@ extension NewAddIngredient
             return
         }
         
-        let ingredientData:[String:Any] = Ingredient.factoryJson(name:self.searching.lowercased())
+        let ingredientName:String = self.searching.lowercased()
+        let ingredientData:[String:Any] = Ingredient.factoryJson(name:ingredientName)
         
         self.cloud.create(
             parentPath:IngredientList.identifier,

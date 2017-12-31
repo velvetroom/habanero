@@ -133,6 +133,14 @@
 		DA6E805C1FF9873100175F70 /* CloudProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E805A1FF9873100175F70 /* CloudProviderProtocol.swift */; };
 		DA6E805E1FF987F100175F70 /* CloudProviderFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E805D1FF987F100175F70 /* CloudProviderFirebase.swift */; };
 		DA6E805F1FF987F100175F70 /* CloudProviderFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E805D1FF987F100175F70 /* CloudProviderFirebase.swift */; };
+		DA6E80611FF98ABB00175F70 /* Cloud+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80601FF98ABB00175F70 /* Cloud+Create.swift */; };
+		DA6E80621FF98ABB00175F70 /* Cloud+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80601FF98ABB00175F70 /* Cloud+Create.swift */; };
+		DA6E80641FF98B3E00175F70 /* CloudProviderFirebase+Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80631FF98B3E00175F70 /* CloudProviderFirebase+Provider.swift */; };
+		DA6E80651FF98B3E00175F70 /* CloudProviderFirebase+Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80631FF98B3E00175F70 /* CloudProviderFirebase+Provider.swift */; };
+		DA6E80671FF992BC00175F70 /* CloudListTopLevelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80661FF992BC00175F70 /* CloudListTopLevelProtocol.swift */; };
+		DA6E80681FF992BC00175F70 /* CloudListTopLevelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80661FF992BC00175F70 /* CloudListTopLevelProtocol.swift */; };
+		DA6E806A1FF992C900175F70 /* CloudListTopLevelProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80691FF992C900175F70 /* CloudListTopLevelProtocol+Default.swift */; };
+		DA6E806B1FF992C900175F70 /* CloudListTopLevelProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80691FF992C900175F70 /* CloudListTopLevelProtocol+Default.swift */; };
 		DA70AFBF1FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
 		DA70AFC01FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
 		DA70AFC21FD5AA980016B0DC /* ControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */; };
@@ -487,8 +495,6 @@
 		DAE7C36F1FE093D1003190FF /* Cloud+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C36D1FE093D1003190FF /* Cloud+Load.swift */; };
 		DAE7C3711FE0971B003190FF /* CloudListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3701FE0971B003190FF /* CloudListProtocol.swift */; };
 		DAE7C3721FE0971B003190FF /* CloudListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3701FE0971B003190FF /* CloudListProtocol.swift */; };
-		DAE7C3741FE0990A003190FF /* CloudListProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3731FE0990A003190FF /* CloudListProtocol+Default.swift */; };
-		DAE7C3751FE0990A003190FF /* CloudListProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3731FE0990A003190FF /* CloudListProtocol+Default.swift */; };
 		DAE7C3771FE0996B003190FF /* IngredientList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3761FE0996B003190FF /* IngredientList.swift */; };
 		DAE7C3781FE0996B003190FF /* IngredientList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3761FE0996B003190FF /* IngredientList.swift */; };
 		DAE7C37A1FE0A2E1003190FF /* ControllerNewAddIngredient+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3791FE0A2E1003190FF /* ControllerNewAddIngredient+Create.swift */; };
@@ -610,6 +616,10 @@
 		DA6E80541FF97AE400175F70 /* NewAddDeleteStrategyBuild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddDeleteStrategyBuild.swift; sourceTree = "<group>"; };
 		DA6E805A1FF9873100175F70 /* CloudProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudProviderProtocol.swift; sourceTree = "<group>"; };
 		DA6E805D1FF987F100175F70 /* CloudProviderFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudProviderFirebase.swift; sourceTree = "<group>"; };
+		DA6E80601FF98ABB00175F70 /* Cloud+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cloud+Create.swift"; sourceTree = "<group>"; };
+		DA6E80631FF98B3E00175F70 /* CloudProviderFirebase+Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudProviderFirebase+Provider.swift"; sourceTree = "<group>"; };
+		DA6E80661FF992BC00175F70 /* CloudListTopLevelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudListTopLevelProtocol.swift; sourceTree = "<group>"; };
+		DA6E80691FF992C900175F70 /* CloudListTopLevelProtocol+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudListTopLevelProtocol+Default.swift"; sourceTree = "<group>"; };
 		DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHome.swift; sourceTree = "<group>"; };
 		DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerHome.swift; sourceTree = "<group>"; };
 		DA70AFC41FD5AABF0016B0DC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -833,7 +843,6 @@
 		DAE7C36A1FE08C9F003190FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalizableError.strings; sourceTree = "<group>"; };
 		DAE7C36D1FE093D1003190FF /* Cloud+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cloud+Load.swift"; sourceTree = "<group>"; };
 		DAE7C3701FE0971B003190FF /* CloudListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudListProtocol.swift; sourceTree = "<group>"; };
-		DAE7C3731FE0990A003190FF /* CloudListProtocol+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudListProtocol+Default.swift"; sourceTree = "<group>"; };
 		DAE7C3761FE0996B003190FF /* IngredientList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientList.swift; sourceTree = "<group>"; };
 		DAE7C3791FE0A2E1003190FF /* ControllerNewAddIngredient+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerNewAddIngredient+Create.swift"; sourceTree = "<group>"; };
 		DAE7C37B1FE0A7F6003190FF /* ControllerNewAddIngredient+Select.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerNewAddIngredient+Select.swift"; sourceTree = "<group>"; };
@@ -1022,6 +1031,7 @@
 			children = (
 				DA6E805A1FF9873100175F70 /* CloudProviderProtocol.swift */,
 				DA6E805D1FF987F100175F70 /* CloudProviderFirebase.swift */,
+				DA6E80631FF98B3E00175F70 /* CloudProviderFirebase+Provider.swift */,
 			);
 			path = CloudProvider;
 			sourceTree = "<group>";
@@ -1518,9 +1528,11 @@
 			children = (
 				DAE7C3481FE08281003190FF /* Cloud.swift */,
 				DAE7C3461FE08281003190FF /* Cloud+Factory.swift */,
+				DA6E80601FF98ABB00175F70 /* Cloud+Create.swift */,
 				DAE7C36D1FE093D1003190FF /* Cloud+Load.swift */,
 				DAE7C3701FE0971B003190FF /* CloudListProtocol.swift */,
-				DAE7C3731FE0990A003190FF /* CloudListProtocol+Default.swift */,
+				DA6E80661FF992BC00175F70 /* CloudListTopLevelProtocol.swift */,
+				DA6E80691FF992C900175F70 /* CloudListTopLevelProtocol+Default.swift */,
 				DAE7C34A1FE08281003190FF /* CloudItemProtocol.swift */,
 				DAE7C3441FE08281003190FF /* CloudItemProtocol+Default.swift */,
 				DAE7C3471FE08281003190FF /* CloudError.swift */,
@@ -1941,6 +1953,7 @@
 				DA71D69E1FDA6B13003A33E1 /* ViewTextInput.swift in Sources */,
 				DACF554D1FD7661E00069701 /* ExtensionURL.swift in Sources */,
 				DACF55451FD7661E00069701 /* ExtensionNSManagedObject.swift in Sources */,
+				DA6E80671FF992BC00175F70 /* CloudListTopLevelProtocol.swift in Sources */,
 				DA91EAFC1FD62C1F0063560D /* ViewParent+Transitions.swift in Sources */,
 				DAE5E4801FE489C100CC40BA /* Settings.swift in Sources */,
 				DA74F0B11FE60A4F00F45310 /* BuildIngredientQuantity+Computed.swift in Sources */,
@@ -1952,6 +1965,7 @@
 				DAE5E4831FE48C6100CC40BA /* SettingsMetrics.swift in Sources */,
 				DABA5EC41FEA36D60017F865 /* PhotoOptionCancel.swift in Sources */,
 				DAAD4A721FF31F310044B1FE /* PhotoCrop+Rotate.swift in Sources */,
+				DA6E806A1FF992C900175F70 /* CloudListTopLevelProtocol+Default.swift in Sources */,
 				DACF55331FD7661E00069701 /* ExtensionMKPolyline.swift in Sources */,
 				DA90891E1FD4C66000C1208A /* ControllerParent+Orientation.swift in Sources */,
 				DA4AA5061FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift in Sources */,
@@ -2026,7 +2040,6 @@
 				DA91EAF21FD62C1F0063560D /* View.swift in Sources */,
 				DACF55411FD7661E00069701 /* ExtensionUIImage.swift in Sources */,
 				DABDF33B1FEB6BC8002EF842 /* PhotoOptionLibrary.swift in Sources */,
-				DAE7C3741FE0990A003190FF /* CloudListProtocol+Default.swift in Sources */,
 				DACF55491FD7661E00069701 /* ExtensionUIFont+Constants.swift in Sources */,
 				DA9089221FD4C66000C1208A /* AppDelegate.swift in Sources */,
 				DA74F0C11FE612E200F45310 /* FormatIngredientTypeProtocol.swift in Sources */,
@@ -2041,9 +2054,11 @@
 				DAAE61F71FF637A700954EFC /* PhotoRotation+Factory.swift in Sources */,
 				DAA333D71FDB17EA002D766C /* Database.swift in Sources */,
 				DA855E0B1FF371D100E1B69F /* PhotoCropPoints+Factory.swift in Sources */,
+				DA6E80641FF98B3E00175F70 /* CloudProviderFirebase+Provider.swift in Sources */,
 				DA5FFE631FE7790000A38154 /* FormatIngredientTypeQuantity+Constants.swift in Sources */,
 				DA91EAEA1FD62C1F0063560D /* ViewMenu+Collection.swift in Sources */,
 				DA91EB061FD62C1F0063560D /* ViewAlert.swift in Sources */,
+				DA6E80611FF98ABB00175F70 /* Cloud+Create.swift in Sources */,
 				DACF553D1FD7661E00069701 /* ExtensionNSLayoutConstraint.swift in Sources */,
 				DABDF3381FEB6B87002EF842 /* PhotoOptionCamera.swift in Sources */,
 				DA70AFC51FD5AABF0016B0DC /* Home.swift in Sources */,
@@ -2187,6 +2202,7 @@
 				DA91EAF11FD62C1F0063560D /* ViewMenuCell.swift in Sources */,
 				DA16F15E1FDFAF3100EB6877 /* ViewNewAddIngredient+Constants.swift in Sources */,
 				DA91EAE91FD62C1F0063560D /* ViewMenu+Actions.swift in Sources */,
+				DA6E80621FF98ABB00175F70 /* Cloud+Create.swift in Sources */,
 				DA58C6E91FD9EAFB000E6F30 /* NewAdd+Constants.swift in Sources */,
 				DA71D69F1FDA6B13003A33E1 /* ViewTextInput.swift in Sources */,
 				DA91EB221FD62C7D0063560D /* ViewTransitionableProtocol.swift in Sources */,
@@ -2250,6 +2266,7 @@
 				DAE7C33C1FE061BD003190FF /* ViewNewAddIngredientListHeader+Constants.swift in Sources */,
 				DA9089801FD4CE2E00C1208A /* Controller.swift in Sources */,
 				DA11BA121FD8FEEB0038F9B0 /* ViewNewAddListHeader.swift in Sources */,
+				DA6E806B1FF992C900175F70 /* CloudListTopLevelProtocol+Default.swift in Sources */,
 				DA8752C71FE384B200AE74F5 /* ViewNewAddIngredientAmount+Constants.swift in Sources */,
 				DA8752C51FE3846D00AE74F5 /* ViewNewAddIngredientAmountInput+Constants.swift in Sources */,
 				DA8752D11FE3874400AE74F5 /* ViewNewAddIngredientAmountBar.swift in Sources */,
@@ -2287,7 +2304,6 @@
 				DACF552E1FD7661E00069701 /* ExtensionNotification.swift in Sources */,
 				DABA5EC51FEA36D60017F865 /* PhotoOptionCancel.swift in Sources */,
 				DA90898C1FD4CE3E00C1208A /* MenuItemHome.swift in Sources */,
-				DAE7C3751FE0990A003190FF /* CloudListProtocol+Default.swift in Sources */,
 				DA11BA141FD8FFE30038F9B0 /* ViewNewAddListHeader+Constants.swift in Sources */,
 				DA2C17711FEF3C68001BDA54 /* ViewButtonContinue+Constants.swift in Sources */,
 				DA71D69C1FDA65AB003A33E1 /* ViewText.swift in Sources */,
@@ -2359,6 +2375,7 @@
 				DA6042971FE20F3B00758A2F /* BuildIngredientCups+Computed.swift in Sources */,
 				DACF553A1FD7661E00069701 /* ExtensionURLResponse.swift in Sources */,
 				DA1F05001FE8E2F500DF03A8 /* BuildStep+Computed.swift in Sources */,
+				DA6E80651FF98B3E00175F70 /* CloudProviderFirebase+Provider.swift in Sources */,
 				DA74F0D11FE6156D00F45310 /* FormatIngredientTypeQuantity.swift in Sources */,
 				DA74F0B21FE60A4F00F45310 /* BuildIngredientQuantity+Computed.swift in Sources */,
 				DA9089891FD4CE3700C1208A /* Model.swift in Sources */,
@@ -2382,6 +2399,7 @@
 				DA2C176E1FEF3A91001BDA54 /* ViewButtonContinue.swift in Sources */,
 				DA60428E1FE1EC2300758A2F /* ViewNewAddListCellIngredient.swift in Sources */,
 				DA2A94E71FF30089009D2FF9 /* ViewPhotoCropDisplayImage+Constants.swift in Sources */,
+				DA6E80681FF992BC00175F70 /* CloudListTopLevelProtocol.swift in Sources */,
 				DA5D71C61FDB56AD00429F5D /* ViewNewAddListCellInfoDuration+Constants.swift in Sources */,
 				DACF554E1FD7661E00069701 /* ExtensionURL.swift in Sources */,
 				DABA5EAE1FEA2E170017F865 /* ControllerPhoto.swift in Sources */,

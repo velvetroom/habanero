@@ -1,12 +1,12 @@
 import Foundation
 
-extension CloudListProtocol
+extension CloudListTopLevelProtocol
 {
     static var identifier:String
     {
         get
         {
-            let stringName:String = String(describing:self)
+            let stringName:String = String(describing:CloudListTopLevelProtocol.self)
             
             return stringName
         }
