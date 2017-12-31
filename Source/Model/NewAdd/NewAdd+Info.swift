@@ -40,7 +40,30 @@ extension NewAdd
     {
         guard
             
-            let imageIdentifier:String = self.build?.imageIdentifier,
+            let imageIdentifier:String = self.build?.imageIdentifier
+            
+        else
+        {
+            self.createInfoImage(
+                image:image,
+                completion:completion)
+            
+            return
+        }
+        
+        self.replaceInfoImage(
+            image:image,
+            imageIdentifier:imageIdentifier,
+            completion:completion)
+    }
+    
+    private func replaceInfoImage(
+        image:UIImage,
+        imageIdentifier:String,
+        completion:@escaping(() -> ()))
+    {
+        guard
+            
             let imageURL:URL = NewAdd.localURLForImage(identifier:imageIdentifier)
             
         else
@@ -50,7 +73,7 @@ extension NewAdd
         
         do
         {
-            try self.store(
+            try NewAdd.store(
                 image:image,
                 at:imageURL)
         }
@@ -62,6 +85,32 @@ extension NewAdd
         DispatchQueue.main.async
         {
             completion()
+        }
+    }
+    
+    private func createInfoImage(
+        image:UIImage,
+        completion:@escaping(() -> ()))
+    {
+        guard
+            
+            let database:Database = self.database,
+            let build:Build = self.build,
+            let imageIdentifier:String = NewAdd.createIdentifierAndStoreLocally(image:image)
+            
+        else
+        {
+            return
+        }
+        
+        build.imageIdentifier = imageIdentifier
+        
+        database.save
+        {
+            DispatchQueue.main.async
+            {
+                completion()
+            }
         }
     }
     
