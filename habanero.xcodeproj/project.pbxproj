@@ -463,16 +463,16 @@
 		DAE7C33E1FE063D5003190FF /* ViewNewAddIngredientListFooter+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C33D1FE063D5003190FF /* ViewNewAddIngredientListFooter+Constants.swift */; };
 		DAE7C3401FE076EC003190FF /* ViewNewAddIngredientList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C33F1FE076EC003190FF /* ViewNewAddIngredientList+Actions.swift */; };
 		DAE7C3421FE07F6C003190FF /* NewAddIngredient+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3411FE07F6C003190FF /* NewAddIngredient+Create.swift */; };
-		DAE7C34E1FE08281003190FF /* CloudProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3441FE08281003190FF /* CloudProtocol+Default.swift */; };
-		DAE7C34F1FE08281003190FF /* CloudProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3441FE08281003190FF /* CloudProtocol+Default.swift */; };
+		DAE7C34E1FE08281003190FF /* CloudItemProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3441FE08281003190FF /* CloudItemProtocol+Default.swift */; };
+		DAE7C34F1FE08281003190FF /* CloudItemProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3441FE08281003190FF /* CloudItemProtocol+Default.swift */; };
 		DAE7C3521FE08281003190FF /* Cloud+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3461FE08281003190FF /* Cloud+Factory.swift */; };
 		DAE7C3531FE08281003190FF /* Cloud+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3461FE08281003190FF /* Cloud+Factory.swift */; };
 		DAE7C3541FE08281003190FF /* CloudError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3471FE08281003190FF /* CloudError.swift */; };
 		DAE7C3551FE08281003190FF /* CloudError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3471FE08281003190FF /* CloudError.swift */; };
 		DAE7C3561FE08281003190FF /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3481FE08281003190FF /* Cloud.swift */; };
 		DAE7C3571FE08281003190FF /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3481FE08281003190FF /* Cloud.swift */; };
-		DAE7C35A1FE08281003190FF /* CloudProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C34A1FE08281003190FF /* CloudProtocol.swift */; };
-		DAE7C35B1FE08281003190FF /* CloudProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C34A1FE08281003190FF /* CloudProtocol.swift */; };
+		DAE7C35A1FE08281003190FF /* CloudItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C34A1FE08281003190FF /* CloudItemProtocol.swift */; };
+		DAE7C35B1FE08281003190FF /* CloudItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C34A1FE08281003190FF /* CloudItemProtocol.swift */; };
 		DAE7C35C1FE08281003190FF /* CloudError+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C34B1FE08281003190FF /* CloudError+Description.swift */; };
 		DAE7C35D1FE08281003190FF /* CloudError+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C34B1FE08281003190FF /* CloudError+Description.swift */; };
 		DAE7C3641FE0828C003190FF /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3631FE0828C003190FF /* Analytics.swift */; };
@@ -817,11 +817,11 @@
 		DAE7C33D1FE063D5003190FF /* ViewNewAddIngredientListFooter+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientListFooter+Constants.swift"; sourceTree = "<group>"; };
 		DAE7C33F1FE076EC003190FF /* ViewNewAddIngredientList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientList+Actions.swift"; sourceTree = "<group>"; };
 		DAE7C3411FE07F6C003190FF /* NewAddIngredient+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddIngredient+Create.swift"; sourceTree = "<group>"; };
-		DAE7C3441FE08281003190FF /* CloudProtocol+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CloudProtocol+Default.swift"; sourceTree = "<group>"; };
+		DAE7C3441FE08281003190FF /* CloudItemProtocol+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CloudItemProtocol+Default.swift"; sourceTree = "<group>"; };
 		DAE7C3461FE08281003190FF /* Cloud+Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cloud+Factory.swift"; sourceTree = "<group>"; };
 		DAE7C3471FE08281003190FF /* CloudError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudError.swift; sourceTree = "<group>"; };
 		DAE7C3481FE08281003190FF /* Cloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
-		DAE7C34A1FE08281003190FF /* CloudProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudProtocol.swift; sourceTree = "<group>"; };
+		DAE7C34A1FE08281003190FF /* CloudItemProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudItemProtocol.swift; sourceTree = "<group>"; };
 		DAE7C34B1FE08281003190FF /* CloudError+Description.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CloudError+Description.swift"; sourceTree = "<group>"; };
 		DAE7C3631FE0828C003190FF /* Analytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 		DAE7C36A1FE08C9F003190FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalizableError.strings; sourceTree = "<group>"; };
@@ -1505,8 +1505,8 @@
 				DAE7C36D1FE093D1003190FF /* Cloud+Load.swift */,
 				DAE7C3701FE0971B003190FF /* CloudListProtocol.swift */,
 				DAE7C3731FE0990A003190FF /* CloudListProtocol+Default.swift */,
-				DAE7C34A1FE08281003190FF /* CloudProtocol.swift */,
-				DAE7C3441FE08281003190FF /* CloudProtocol+Default.swift */,
+				DAE7C34A1FE08281003190FF /* CloudItemProtocol.swift */,
+				DAE7C3441FE08281003190FF /* CloudItemProtocol+Default.swift */,
 				DAE7C3471FE08281003190FF /* CloudError.swift */,
 				DAE7C34B1FE08281003190FF /* CloudError+Description.swift */,
 			);
@@ -1994,7 +1994,7 @@
 				DA3F0E7F1FDF32D10037C94D /* Ingredient+Factory.swift in Sources */,
 				DACF55311FD7661E00069701 /* ExtensionCGImage.swift in Sources */,
 				DA4233E61FEDE60F0012A589 /* ViewPhotoCrop.swift in Sources */,
-				DAE7C34E1FE08281003190FF /* CloudProtocol+Default.swift in Sources */,
+				DAE7C34E1FE08281003190FF /* CloudItemProtocol+Default.swift in Sources */,
 				DACF55371FD7661E00069701 /* ExtensionFileManager.swift in Sources */,
 				DAE7C3771FE0996B003190FF /* IngredientList.swift in Sources */,
 				DA9089201FD4C66000C1208A /* ControllerParent+Menu.swift in Sources */,
@@ -2014,7 +2014,7 @@
 				DA9089221FD4C66000C1208A /* AppDelegate.swift in Sources */,
 				DA74F0C11FE612E200F45310 /* FormatIngredientTypeProtocol.swift in Sources */,
 				DA4233EC1FEDEBEC0012A589 /* ViewPhotoCrop+Constants.swift in Sources */,
-				DAE7C35A1FE08281003190FF /* CloudProtocol.swift in Sources */,
+				DAE7C35A1FE08281003190FF /* CloudItemProtocol.swift in Sources */,
 				DA74F0C71FE614BA00F45310 /* FormatIngredientTypeCups.swift in Sources */,
 				DA90892D1FD4C66000C1208A /* Menu.swift in Sources */,
 				DACEB3A21FDC9C890089B3FE /* ViewCollectionCell.swift in Sources */,
@@ -2117,7 +2117,7 @@
 				DA91EAFD1FD62C1F0063560D /* ViewParent+Transitions.swift in Sources */,
 				DACEB3A81FDCAA370089B3FE /* ViewNewListCell+Constants.swift in Sources */,
 				DACEB39D1FDC98820089B3FE /* ViewNewList+Actions.swift in Sources */,
-				DAE7C35B1FE08281003190FF /* CloudProtocol.swift in Sources */,
+				DAE7C35B1FE08281003190FF /* CloudItemProtocol.swift in Sources */,
 				DABA5EB21FEA2FF40017F865 /* Photo.swift in Sources */,
 				DA11BA0E1FD8F6E90038F9B0 /* ViewNewAddBar.swift in Sources */,
 				DABA5EBC1FEA32D30017F865 /* ViewPhotoListCell.swift in Sources */,
@@ -2128,7 +2128,7 @@
 				DA3F0E801FDF32D10037C94D /* Ingredient+Factory.swift in Sources */,
 				DA58C6E71FD9E216000E6F30 /* NewAdd+Factory.swift in Sources */,
 				DA4233EA1FEDEBE10012A589 /* ViewPhotoCropMenu.swift in Sources */,
-				DAE7C34F1FE08281003190FF /* CloudProtocol+Default.swift in Sources */,
+				DAE7C34F1FE08281003190FF /* CloudItemProtocol+Default.swift in Sources */,
 				DA2C17771FEF4305001BDA54 /* ViewPhotoCropDisplayImage.swift in Sources */,
 				DA71D66D1FDA43EF003A33E1 /* ViewNewAddListFooterInfo.swift in Sources */,
 				DA8E738C1FF88F3C005264F4 /* ViewNewAddListCellEditable.swift in Sources */,

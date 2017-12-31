@@ -1,6 +1,6 @@
 import Foundation
 
-protocol CloudProtocol
+protocol CloudItemProtocol
 {
     var identifier:String { get }
     var parentPath:String { get }
