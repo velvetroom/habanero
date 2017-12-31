@@ -39,7 +39,7 @@ extension NewAdd
         
         do
         {
-            try self.store(
+            try NewAdd.store(
                 image:image,
                 at:imageURL)
         }

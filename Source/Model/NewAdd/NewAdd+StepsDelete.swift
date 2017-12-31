@@ -61,7 +61,7 @@ extension NewAdd
             return
         }
         
-        try self.deleteImage(localURL:imageURL)
+        try NewAdd.deleteImage(localURL:imageURL)
     }
     
     //MARK: internal

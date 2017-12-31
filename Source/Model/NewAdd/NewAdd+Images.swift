@@ -87,7 +87,7 @@ extension NewAdd
         return localURL
     }
     
-    func createIdentifierAndStoreLocally(image:UIImage) -> String?
+    class func createIdentifierAndStoreLocally(image:UIImage) -> String?
     {
         let identifier:String = UUID().uuidString
         
@@ -102,7 +102,7 @@ extension NewAdd
         
         do
         {
-            try self.store(
+            try NewAdd.store(
                 image:image,
                 at:localURL)
         }
@@ -114,11 +114,11 @@ extension NewAdd
         return identifier
     }
     
-    func store(
+    class func store(
         image:UIImage,
         at localURL:URL) throws
     {
-        try self.deleteImage(localURL:localURL)
+        try NewAdd.deleteImage(localURL:localURL)
         
         guard
             
@@ -134,7 +134,7 @@ extension NewAdd
             options:Data.WritingOptions.atomicWrite)
     }
     
-    func deleteImage(localURL:URL) throws
+    class func deleteImage(localURL:URL) throws
     {
         let fileExists:Bool = FileManager.default.fileExists(atPath:localURL.path)
         
