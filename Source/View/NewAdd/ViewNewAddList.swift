@@ -12,6 +12,7 @@ final class ViewNewAddList:ViewCollection<ArchNewAdd, ViewNewAddListCell, ViewCo
         self.registerFooter(footer:ViewNewAddListFooterInfo.self)
         self.registerFooter(footer:ViewNewAddListFooterIngredients.self)
         self.registerFooter(footer:ViewNewAddListFooterSteps.self)
+        self.registerCell(cell:ViewNewAddListCellInfoImage.self)
         self.registerCell(cell:ViewNewAddListCellInfoTitle.self)
         self.registerCell(cell:ViewNewAddListCellInfoSubtitle.self)
         self.registerCell(cell:ViewNewAddListCellInfoDuration.self)
