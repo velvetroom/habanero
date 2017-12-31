@@ -344,7 +344,7 @@
 		DAAE61FB1FF6385300954EFC /* PhotoRotation+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE61F91FF6385300954EFC /* PhotoRotation+Constants.swift */; };
 		DAAE61FD1FF6465C00954EFC /* ControllerNewAdd+StepsActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE61FC1FF6465C00954EFC /* ControllerNewAdd+StepsActions.swift */; };
 		DAAE61FF1FF64E9700954EFC /* NewAdd+StepsUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE61FE1FF64E9700954EFC /* NewAdd+StepsUpdate.swift */; };
-		DAB786211FF4AE9900579BB5 /* NewAdd+StepsImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786201FF4AE9900579BB5 /* NewAdd+StepsImage.swift */; };
+		DAB786211FF4AE9900579BB5 /* NewAdd+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */; };
 		DAB786231FF4B3B400579BB5 /* NewAddError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786221FF4B3B400579BB5 /* NewAddError.swift */; };
 		DAB786251FF4B3DF00579BB5 /* NewAddError+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */; };
 		DAB786271FF4B88C00579BB5 /* NewAddSectionItemStepImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786261FF4B88C00579BB5 /* NewAddSectionItemStepImage.swift */; };
@@ -732,7 +732,7 @@
 		DAAE61F91FF6385300954EFC /* PhotoRotation+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoRotation+Constants.swift"; sourceTree = "<group>"; };
 		DAAE61FC1FF6465C00954EFC /* ControllerNewAdd+StepsActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerNewAdd+StepsActions.swift"; sourceTree = "<group>"; };
 		DAAE61FE1FF64E9700954EFC /* NewAdd+StepsUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+StepsUpdate.swift"; sourceTree = "<group>"; };
-		DAB786201FF4AE9900579BB5 /* NewAdd+StepsImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+StepsImage.swift"; sourceTree = "<group>"; };
+		DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Images.swift"; sourceTree = "<group>"; };
 		DAB786221FF4B3B400579BB5 /* NewAddError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddError.swift; sourceTree = "<group>"; };
 		DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddError+Description.swift"; sourceTree = "<group>"; };
 		DAB786261FF4B88C00579BB5 /* NewAddSectionItemStepImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddSectionItemStepImage.swift; sourceTree = "<group>"; };
@@ -1556,11 +1556,11 @@
 				DAF949FB1FD8BD13001BA32E /* NewAdd.swift */,
 				DA58C6E81FD9EAFB000E6F30 /* NewAdd+Constants.swift */,
 				DA58C6E61FD9E216000E6F30 /* NewAdd+Factory.swift */,
+				DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */,
 				DAA333DF1FDB2694002D766C /* NewAdd+Load.swift */,
 				DAA333E11FDB29D8002D766C /* NewAdd+Info.swift */,
 				DA5FFE601FE7701900A38154 /* NewAdd+Ingredients.swift */,
 				DA1F04F31FE8D26900DF03A8 /* NewAdd+Steps.swift */,
-				DAB786201FF4AE9900579BB5 /* NewAdd+StepsImage.swift */,
 				DAAE61FE1FF64E9700954EFC /* NewAdd+StepsUpdate.swift */,
 				DAC732C71FF7579800980854 /* NewAdd+StepsDelete.swift */,
 				DAA26FB11FE97AE6005855F6 /* NewAdd+Move.swift */,
@@ -2237,7 +2237,7 @@
 				DA91EB0F1FD62C1F0063560D /* ViewBlur.swift in Sources */,
 				DA91EB251FD62D700063560D /* ViewControllableProtocol.swift in Sources */,
 				DAC732D01FF85AB400980854 /* NewAddSectionItemInfoSubtitle.swift in Sources */,
-				DAB786211FF4AE9900579BB5 /* NewAdd+StepsImage.swift in Sources */,
+				DAB786211FF4AE9900579BB5 /* NewAdd+Images.swift in Sources */,
 				DA3421421FE47EB6002B23DA /* ControllerNewAddIngredientAmount+Constants.swift in Sources */,
 				DA5FFE641FE7790000A38154 /* FormatIngredientTypeQuantity+Constants.swift in Sources */,
 				DAA333DC1FDB17EA002D766C /* Database+Constants.swift in Sources */,
