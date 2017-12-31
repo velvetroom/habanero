@@ -2,7 +2,7 @@ import Foundation
 
 protocol NewAddDeleteStrategyProtocol
 {
-    func delete(
+    static func delete(
         build:Build,
         database:Database,
         completion:@escaping(() -> ()))

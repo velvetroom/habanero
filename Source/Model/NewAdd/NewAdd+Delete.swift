@@ -2,11 +2,11 @@ import Foundation
 
 extension NewAdd
 {
-    private static var strategies:[NewAddDeleteStrategy]
+    private static var strategies:[NewAddDeleteStrategyProtocol.Type]
     {
         get
         {
-            let strategies:[NewAddDeleteStrategy] = []
+            let strategies:[NewAddDeleteStrategyProtocol.Type] = []
             
             return strategies
         }
@@ -26,7 +26,7 @@ extension NewAdd
             return
         }
         
-        let strategies:[NewAddDeleteStrategy] = NewAdd.strategies
+        let strategies:[NewAddDeleteStrategyProtocol.Type] = NewAdd.strategies
         
         self.delete(
             build:build,
@@ -38,14 +38,14 @@ extension NewAdd
     private func delete(
         build:Build,
         database:Database,
-        strategies:[NewAddDeleteStrategy],
+        strategies:[NewAddDeleteStrategyProtocol.Type],
         completion:@escaping(() -> ()))
     {
-        var remainStrategies:[NewAddDeleteStrategy] = strategies
+        var remainStrategies:[NewAddDeleteStrategyProtocol.Type] = strategies
         
         guard
         
-            let strategy:NewAddDeleteStrategy = remainStrategies.popLast()
+            let strategy:NewAddDeleteStrategyProtocol.Type = remainStrategies.popLast()
         
         else
         {
