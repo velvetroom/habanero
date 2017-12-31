@@ -5,7 +5,7 @@ extension Cloud
 {
     //MARK: private
     
-    private func loadItem<T:CloudProtocol>(
+    private func loadItem<T:CloudItemProtocol>(
         snapshot:DocumentSnapshot?,
         parentPath:String,
         identifier:String,
@@ -68,7 +68,7 @@ extension Cloud
     
     //MARK: internal
     
-    func loadItem<T:CloudProtocol>(
+    func loadItem<T:CloudItemProtocol>(
         parentPath:String,
         identifier:String,
         completion:@escaping((T?, Error?) -> ()))

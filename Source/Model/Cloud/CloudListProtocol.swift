@@ -2,7 +2,7 @@ import Foundation
 
 protocol CloudListProtocol
 {
-    associatedtype Item:CloudProtocol
+    associatedtype Item:CloudItemProtocol
     var items:[Item] { get set }
     
     init()

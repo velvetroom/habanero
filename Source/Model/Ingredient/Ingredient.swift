@@ -1,6 +1,6 @@
 import Foundation
 
-final class Ingredient:CloudProtocol
+final class Ingredient:CloudItemProtocol
 {
     let parentPath:String
     let identifier:String
