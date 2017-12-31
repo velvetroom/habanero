@@ -2,33 +2,41 @@ import UIKit
 
 extension NewAdd
 {
-    static var stepsImageDirectory:URL?
+    private static var imagesDirectory:URL?
     {
         get
         {
-            var directory:URL = FileManager.default.appDirectory.appendingPathComponent(
-                NewAdd.Constants.stepsImageDirectory)
+            let directory:URL = FileManager.default.appDirectory.appendingPathComponent(
+                NewAdd.Constants.imagesDirectory)
             
-            let directoryExists:Bool = FileManager.default.fileExists(atPath:directory.path)
-            
-            if directoryExists == false
+            do
             {
-                directory.excludeFromBackup()
-                
-                do
-                {
-                    try FileManager.default.createDirectory(
-                        at:directory,
-                        withIntermediateDirectories:true,
-                        attributes:nil)
-                }
-                catch
-                {
-                    return nil
-                }
+                try NewAdd.createDirectoryIfNeeded(directory:directory)
+            }
+            catch
+            {
+                return nil
             }
             
             return directory
+        }
+    }
+    
+    //MARK: private
+    
+    private static func createDirectoryIfNeeded(directory:URL) throws
+    {
+        var directory:URL = directory
+        let directoryExists:Bool = FileManager.default.fileExists(atPath:directory.path)
+        
+        if directoryExists == false
+        {
+            directory.excludeFromBackup()
+            
+            try FileManager.default.createDirectory(
+                at:directory,
+                withIntermediateDirectories:true,
+                attributes:nil)
         }
     }
     
@@ -38,7 +46,7 @@ extension NewAdd
     {
         guard
             
-            let imageDirectory:URL = NewAdd.stepsImageDirectory
+            let imageDirectory:URL = NewAdd.imagesDirectory
             
         else
         {
@@ -50,7 +58,7 @@ extension NewAdd
         return localURL
     }
     
-    func storeImageLocally(image:UIImage) -> String?
+    func createIdentifierAndStoreLocally(image:UIImage) -> String?
     {
         let identifier:String = UUID().uuidString
         

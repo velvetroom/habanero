@@ -53,7 +53,7 @@ extension NewAdd
         
             self.validateText(text:text) == true,
             let database:Database = self.database,
-            let imageIdentifier:String = self.storeImageLocally(image:image)
+            let imageIdentifier:String = self.createIdentifierAndStoreLocally(image:image)
         
         else
         {

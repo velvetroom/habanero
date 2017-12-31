@@ -4,7 +4,7 @@ extension NewAdd
 {
     struct Constants
     {
-        static let stepsImageDirectory:String = "steps"
+        static let imagesDirectory:String = "build_images"
         static let headerInfoHeight:CGFloat = 120
         static let headerIngredientsHeight:CGFloat = 70
         static let headerStepsHeight:CGFloat = 70
