@@ -29,7 +29,7 @@ final class ViewNewAddListCellInfoSubtitle:ViewNewAddListCellText
         self.labelContent.text = model.subtitle
     }
     
-    override func editText()
+    override func selectorEdit()
     {
         self.controller?.editInfoSubtitle()
     }
