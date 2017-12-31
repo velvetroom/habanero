@@ -8,6 +8,12 @@ final class ViewNewAddListCellInfoImage:ViewNewAddListCellEditable
     {
         super.factoryViews()
         
+        let placeholder:UIImageView = UIImageView()
+        placeholder.isUserInteractionEnabled = false
+        placeholder.translatesAutoresizingMaskIntoConstraints = false
+        placeholder.clipsToBounds = true
+        placeholder.contentMode = UIViewContentMode.center
+        
         let imageView:UIImageView = UIImageView()
         imageView.isUserInteractionEnabled = false
         imageView.clipsToBounds = true
@@ -15,7 +21,12 @@ final class ViewNewAddListCellInfoImage:ViewNewAddListCellEditable
         imageView.translatesAutoresizingMaskIntoConstraints = false
         self.imageView = imageView
         
+        self.addSubview(placeholder)
         self.addSubview(imageView)
+        
+        NSLayoutConstraint.equals(
+            view:placeholder,
+            toView:self)
         
         NSLayoutConstraint.equals(
             view:imageView,
