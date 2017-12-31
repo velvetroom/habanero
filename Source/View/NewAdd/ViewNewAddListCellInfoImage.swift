@@ -13,6 +13,7 @@ final class ViewNewAddListCellInfoImage:ViewNewAddListCellEditable
         placeholder.translatesAutoresizingMaskIntoConstraints = false
         placeholder.clipsToBounds = true
         placeholder.contentMode = UIViewContentMode.center
+        placeholder.image = #imageLiteral(resourceName: "assetNewImage")
         
         let imageView:UIImageView = UIImageView()
         imageView.isUserInteractionEnabled = false
@@ -38,6 +39,10 @@ final class ViewNewAddListCellInfoImage:ViewNewAddListCellEditable
         controller:ControllerNewAdd,
         model:NewAddSectionItemProtocol)
     {
+        super.config(
+            controller:controller,
+            model:model)
+        
         guard
         
             let model:NewAddSectionItemInfoImage = model as? NewAddSectionItemInfoImage

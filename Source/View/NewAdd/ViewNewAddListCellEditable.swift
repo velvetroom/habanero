@@ -47,6 +47,17 @@ class ViewNewAddListCellEditable:ViewNewAddListCell
         self.button.backgroundColor = UIColor.clear
     }
     
+    override func config(
+        controller:ControllerNewAdd,
+        model:NewAddSectionItemProtocol)
+    {
+        super.config(
+            controller:controller,
+            model:model)
+        
+        self.bringSubview(toFront:self.button)
+    }
+    
     //MARK: selectors
     
     @objc
