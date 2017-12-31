@@ -131,6 +131,8 @@
 		DA6E80551FF97AE400175F70 /* NewAddDeleteStrategyBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80541FF97AE400175F70 /* NewAddDeleteStrategyBuild.swift */; };
 		DA6E805B1FF9873100175F70 /* CloudProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E805A1FF9873100175F70 /* CloudProviderProtocol.swift */; };
 		DA6E805C1FF9873100175F70 /* CloudProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E805A1FF9873100175F70 /* CloudProviderProtocol.swift */; };
+		DA6E805E1FF987F100175F70 /* CloudProviderFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E805D1FF987F100175F70 /* CloudProviderFirebase.swift */; };
+		DA6E805F1FF987F100175F70 /* CloudProviderFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E805D1FF987F100175F70 /* CloudProviderFirebase.swift */; };
 		DA70AFBF1FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
 		DA70AFC01FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
 		DA70AFC21FD5AA980016B0DC /* ControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */; };
@@ -607,6 +609,7 @@
 		DA6E80521FF9758C00175F70 /* NewAddDeleteStrategyStepsImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddDeleteStrategyStepsImages.swift; sourceTree = "<group>"; };
 		DA6E80541FF97AE400175F70 /* NewAddDeleteStrategyBuild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddDeleteStrategyBuild.swift; sourceTree = "<group>"; };
 		DA6E805A1FF9873100175F70 /* CloudProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudProviderProtocol.swift; sourceTree = "<group>"; };
+		DA6E805D1FF987F100175F70 /* CloudProviderFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudProviderFirebase.swift; sourceTree = "<group>"; };
 		DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHome.swift; sourceTree = "<group>"; };
 		DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerHome.swift; sourceTree = "<group>"; };
 		DA70AFC41FD5AABF0016B0DC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -1018,6 +1021,7 @@
 			isa = PBXGroup;
 			children = (
 				DA6E805A1FF9873100175F70 /* CloudProviderProtocol.swift */,
+				DA6E805D1FF987F100175F70 /* CloudProviderFirebase.swift */,
 			);
 			path = CloudProvider;
 			sourceTree = "<group>";
@@ -2060,6 +2064,7 @@
 				DA3F0EB41FD74C5F00593B83 /* Menu+FactoryUser.swift in Sources */,
 				DA74F0BE1FE6127100F45310 /* Format+Ingredient.swift in Sources */,
 				DA4233E21FEDE5DD0012A589 /* PhotoCrop.swift in Sources */,
+				DA6E805E1FF987F100175F70 /* CloudProviderFirebase.swift in Sources */,
 				DA91EAFA1FD62C1F0063560D /* ViewMain.swift in Sources */,
 				DA71D68F1FDA633E003A33E1 /* ArchText.swift in Sources */,
 				DA71D6AD1FDA7A01003A33E1 /* ViewTextBar+Constants.swift in Sources */,
@@ -2084,6 +2089,7 @@
 				DA855E061FF367E600E1B69F /* PhotoCrop+Export.swift in Sources */,
 				DA6042A01FE21BE800758A2F /* NewAddIngredientAmount.swift in Sources */,
 				DACF553C1FD7661E00069701 /* ExtensionMKAnnotationView.swift in Sources */,
+				DA6E805F1FF987F100175F70 /* CloudProviderFirebase.swift in Sources */,
 				DAE7C37A1FE0A2E1003190FF /* ControllerNewAddIngredient+Create.swift in Sources */,
 				DA70AFC31FD5AA980016B0DC /* ControllerHome.swift in Sources */,
 				DA16F1641FDFB4C000EB6877 /* ControllerNewAdd+Ingredients.swift in Sources */,
