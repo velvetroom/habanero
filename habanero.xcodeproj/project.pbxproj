@@ -127,6 +127,7 @@
 		DA6E804D1FF96C0D00175F70 /* NewAdd+Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E804C1FF96C0D00175F70 /* NewAdd+Delete.swift */; };
 		DA6E804F1FF96D3800175F70 /* NewAddDeleteStrategyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E804E1FF96D3800175F70 /* NewAddDeleteStrategyProtocol.swift */; };
 		DA6E80511FF9706A00175F70 /* NewAddDeleteStrategyInfoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80501FF9706A00175F70 /* NewAddDeleteStrategyInfoImage.swift */; };
+		DA6E80531FF9758C00175F70 /* NewAddDeleteStrategyStepsImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80521FF9758C00175F70 /* NewAddDeleteStrategyStepsImages.swift */; };
 		DA70AFBF1FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
 		DA70AFC01FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
 		DA70AFC21FD5AA980016B0DC /* ControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */; };
@@ -600,6 +601,7 @@
 		DA6E804C1FF96C0D00175F70 /* NewAdd+Delete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Delete.swift"; sourceTree = "<group>"; };
 		DA6E804E1FF96D3800175F70 /* NewAddDeleteStrategyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddDeleteStrategyProtocol.swift; sourceTree = "<group>"; };
 		DA6E80501FF9706A00175F70 /* NewAddDeleteStrategyInfoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddDeleteStrategyInfoImage.swift; sourceTree = "<group>"; };
+		DA6E80521FF9758C00175F70 /* NewAddDeleteStrategyStepsImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddDeleteStrategyStepsImages.swift; sourceTree = "<group>"; };
 		DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHome.swift; sourceTree = "<group>"; };
 		DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerHome.swift; sourceTree = "<group>"; };
 		DA70AFC41FD5AABF0016B0DC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -1589,6 +1591,7 @@
 				DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */,
 				DA6E804E1FF96D3800175F70 /* NewAddDeleteStrategyProtocol.swift */,
 				DA6E80501FF9706A00175F70 /* NewAddDeleteStrategyInfoImage.swift */,
+				DA6E80521FF9758C00175F70 /* NewAddDeleteStrategyStepsImages.swift */,
 			);
 			path = NewAdd;
 			sourceTree = "<group>";
@@ -2340,6 +2343,7 @@
 				DACF55081FD7656F00069701 /* habanero.xcdatamodeld in Sources */,
 				DAE5E4871FE48CA700CC40BA /* Settings+Computed.swift in Sources */,
 				DABA5EB61FEA301D0017F865 /* ViewPhoto.swift in Sources */,
+				DA6E80531FF9758C00175F70 /* NewAddDeleteStrategyStepsImages.swift in Sources */,
 				DA177C041FD784AF003B3836 /* ViewNewList+Constants.swift in Sources */,
 				DA70AFC01FD5A8B10016B0DC /* ViewHome.swift in Sources */,
 				DA177BED1FD77713003B3836 /* ViewNewList.swift in Sources */,
