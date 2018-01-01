@@ -37,6 +37,7 @@ final class ControllerPhotoCrop:Controller<ArchPhotoCrop>
             
             self?.model.image = normalizedImage
             self?.model.completion = completion
+            self?.viewMain.viewDisplay.viewImage.adjustImage()
         }
     }
     

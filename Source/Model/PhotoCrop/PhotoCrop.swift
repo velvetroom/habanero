@@ -25,7 +25,7 @@ final class PhotoCrop:Model<ArchPhotoCrop>
     
     private func asyncNormalizeOrientation(
         image:UIImage,
-        completion:((UIImage) -> ()))
+        completion:@escaping((UIImage) -> ()))
     {
         guard
         
@@ -36,12 +36,26 @@ final class PhotoCrop:Model<ArchPhotoCrop>
         
         else
         {
-            completion(image)
+            self.imageNormalized(
+                image:image,
+                completion:completion)
             
             return
         }
         
-        completion(normalizedImage)
+        self.imageNormalized(
+            image:normalizedImage,
+            completion:completion)
+    }
+    
+    private func imageNormalized(
+        image:UIImage,
+        completion:@escaping((UIImage) -> ()))
+    {
+        DispatchQueue.main.async
+        {
+            completion(image)
+        }
     }
     
     //MARK: internal
