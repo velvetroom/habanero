@@ -16,9 +16,9 @@ extension CloudListProtocol
     {
         get
         {
-            let identifier:String = String(describing:self)
-            
-            return identifier
+            let listType:Self.Type = type(of:self)
+
+            return listType.identifier
         }
     }
 }
