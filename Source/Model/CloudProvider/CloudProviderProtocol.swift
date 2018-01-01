@@ -3,27 +3,21 @@ import Foundation
 protocol CloudProviderProtocol
 {
     func createItemAt(
-        topLevel:CloudTopLevelProtocol.Type,
+        entity:CloudEntityProtocol,
         width json:[String:Any],
         completion:@escaping((String?, Error?) -> ()))
     
-    func createItemAt(
-        list:String,
-        of item:CloudItemProtocol,
-        width json:[String:Any],
-        completion:@escaping((String?, Error?) -> ()))
-    
-    func loadTopLevelList<T:CloudListProtocol>(
+    func loadList<T:CloudListProtocol>(
         identifier:String,
         completion:@escaping((T?, Error?) -> ()))
     
     func loadList<T:CloudListProtocol>(
         identifier:String,
-        
+        of entity:CloudEntityProtocol,
         completion:@escaping((T?, Error?) -> ()))
     
     func loadItem<T:CloudItemProtocol>(
         identifier:String,
-        at parentPath:String,
+        of entity:CloudEntityProtocol,
         completion:@escaping((T?, Error?) -> ()))
 }

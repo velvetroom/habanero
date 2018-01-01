@@ -5,21 +5,21 @@ extension CloudProviderFirebase
 {
     //MARK: private
     
-    private func loadItem<T:CloudItemProtocol>(
-        snapshot:DocumentSnapshot?,
-        parentPath:String,
+    private func loadDocument<T:CloudItemProtocol>(
         identifier:String,
+        collectionPath:String,
+        snapshot:DocumentSnapshot?,
         completion:((T?, Error?) -> ()))
     {
         guard
             
             let json:[String:Any] = snapshot?.data(),
             let model:T = T(
-                parentPath:parentPath,
                 identifier:identifier,
+                parentPath:collectionPath,
                 json:json)
             
-            else
+        else
         {
             completion(
                 nil,
@@ -33,12 +33,14 @@ extension CloudProviderFirebase
             nil)
     }
     
-    private func loadList<T:CloudListProtocol>(
-        querySnapshot:QuerySnapshot,
+    private func loadCollectionDocuments<T:CloudListProtocol>(
+        collectionIdentifier:String,
         parentPath:String,
+        querySnapshot:QuerySnapshot,
         completion:((T?, Error?) -> ()))
     {
-        var list:T = T()
+        let collectionPath:String = parentPath.appendingPathComponent(component:collectionIdentifier)
+        var collection:T = T(parentPath:parentPath)
         let documents:[DocumentSnapshot] = querySnapshot.documents
         
         for document:DocumentSnapshot in documents
@@ -49,87 +51,87 @@ extension CloudProviderFirebase
             guard
                 
                 let item:T.Item = T.Item(
-                    parentPath:parentPath,
                     identifier:identifier,
+                    parentPath:collectionPath,
                     json:json)
                 
-                else
+            else
             {
                 continue
             }
             
-            list.items.append(item)
+            collection.items.append(item)
         }
         
         completion(
-            list,
+            collection,
             nil)
     }
     
     //MARK: internal
     
-    func loadItem<T:CloudItemProtocol>(
-        parentPath:String,
+    func loadDocument<T:CloudItemProtocol>(
         identifier:String,
+        collectionPath:String,
         completion:@escaping((T?, Error?) -> ()))
     {
-        let itemReference:DocumentReference = self.reference.collection(parentPath).document(identifier)
+        let documentReference:DocumentReference = self.reference.collection(
+            collectionPath).document(identifier)
         
-        itemReference.getDocument
-            { [weak self] (snapshot:DocumentSnapshot?, error:Error?) in
+        documentReference.getDocument
+        { [weak self] (snapshot:DocumentSnapshot?, error:Error?) in
+            
+            guard
                 
-                guard
-                    
-                    error == nil
-                    
-                    else
-                {
-                    completion(
-                        nil,
-                        CloudError.loadItemFailed)
-                    
-                    return
-                }
+                error == nil
                 
-                self?.loadItem(
-                    snapshot:snapshot,
-                    parentPath:parentPath,
-                    identifier:identifier,
-                    completion:completion)
+            else
+            {
+                completion(
+                    nil,
+                    CloudError.loadItemFailed)
+                
+                return
+            }
+            
+            self?.loadDocument(
+                identifier:identifier,
+                collectionPath:collectionPath,
+                snapshot:snapshot,
+                completion:completion)
         }
     }
     
     func loadCollection<T:CloudListProtocol>(
-        parentPath:String = String(),
+        identifier:String,
+        parentPath:String,
         completion:@escaping((T?, Error?) -> ()))
     {
-        let path:String = Cloud.factoryPath(
-            parentPath:parentPath,
-            identifier:T.identifier)
+        let path:String = parentPath.appendingPathComponent(component:identifier)
+        let collectionReference:CollectionReference = self.reference.collection(path)
         
-        let listReference:CollectionReference = self.reference.collection(path)
-        
-        listReference.getDocuments
-            { [weak self] (querySnapshot:QuerySnapshot?, error:Error?) in
+        collectionReference.getDocuments
+        { [weak self] (querySnapshot:QuerySnapshot?, error:Error?) in
+            
+            guard
                 
-                guard
-                    
-                    error == nil,
-                    let querySnapshot:QuerySnapshot = querySnapshot
-                    
-                    else
-                {
-                    completion(
-                        nil,
-                        CloudError.loadListFailed)
-                    
-                    return
-                }
+                error == nil,
+                let querySnapshot:QuerySnapshot = querySnapshot
                 
-                self?.loadList(
-                    querySnapshot:querySnapshot,
-                    parentPath:path,
-                    completion:completion)
+            else
+            {
+                completion(
+                    nil,
+                    CloudError.loadListFailed)
+                
+                return
+            }
+            
+            self?.loadCollectionDocuments(
+                collectionIdentifier:identifier,
+                parentPath:parentPath,
+                querySnapshot:querySnapshot,
+                completion:completion)
         }
     }
 }

@@ -145,6 +145,8 @@
 		DA6E80741FF9A18A00175F70 /* CloudListProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80721FF9A18A00175F70 /* CloudListProtocol+Default.swift */; };
 		DA6E80761FF9A1F400175F70 /* CloudEntityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80751FF9A1F400175F70 /* CloudEntityProtocol.swift */; };
 		DA6E80771FF9A1F400175F70 /* CloudEntityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80751FF9A1F400175F70 /* CloudEntityProtocol.swift */; };
+		DA6E80791FF9A6A500175F70 /* CloudEntityProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80781FF9A6A500175F70 /* CloudEntityProtocol+Default.swift */; };
+		DA6E807A1FF9A6A500175F70 /* CloudEntityProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80781FF9A6A500175F70 /* CloudEntityProtocol+Default.swift */; };
 		DA70AFBF1FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
 		DA70AFC01FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
 		DA70AFC21FD5AA980016B0DC /* ControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */; };
@@ -622,6 +624,7 @@
 		DA6E806F1FF9998800175F70 /* CloudSerialisableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudSerialisableProtocol.swift; sourceTree = "<group>"; };
 		DA6E80721FF9A18A00175F70 /* CloudListProtocol+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudListProtocol+Default.swift"; sourceTree = "<group>"; };
 		DA6E80751FF9A1F400175F70 /* CloudEntityProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudEntityProtocol.swift; sourceTree = "<group>"; };
+		DA6E80781FF9A6A500175F70 /* CloudEntityProtocol+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudEntityProtocol+Default.swift"; sourceTree = "<group>"; };
 		DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHome.swift; sourceTree = "<group>"; };
 		DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerHome.swift; sourceTree = "<group>"; };
 		DA70AFC41FD5AABF0016B0DC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -1531,6 +1534,7 @@
 				DA6E80601FF98ABB00175F70 /* Cloud+Create.swift */,
 				DAE7C36D1FE093D1003190FF /* Cloud+Load.swift */,
 				DA6E80751FF9A1F400175F70 /* CloudEntityProtocol.swift */,
+				DA6E80781FF9A6A500175F70 /* CloudEntityProtocol+Default.swift */,
 				DA6E806F1FF9998800175F70 /* CloudSerialisableProtocol.swift */,
 				DAE7C3701FE0971B003190FF /* CloudListProtocol.swift */,
 				DA6E80721FF9A18A00175F70 /* CloudListProtocol+Default.swift */,
@@ -2065,6 +2069,7 @@
 				DABA5EB51FEA301D0017F865 /* ViewPhoto.swift in Sources */,
 				DABA5EB11FEA2FF40017F865 /* Photo.swift in Sources */,
 				DA6E80701FF9998800175F70 /* CloudSerialisableProtocol.swift in Sources */,
+				DA6E80791FF9A6A500175F70 /* CloudEntityProtocol+Default.swift in Sources */,
 				DA855E051FF367E600E1B69F /* PhotoCrop+Export.swift in Sources */,
 				DA2C17701FEF3C68001BDA54 /* ViewButtonContinue+Constants.swift in Sources */,
 				DA4233DE1FEDE56F0012A589 /* ArchPhotoCrop.swift in Sources */,
@@ -2216,6 +2221,7 @@
 				DA71D6871FDA58E3003A33E1 /* ViewNewAddListCellInfoTitle.swift in Sources */,
 				DA8752C31FE3844300AE74F5 /* ViewNewAddIngredientAmountInput.swift in Sources */,
 				DA6E80771FF9A1F400175F70 /* CloudEntityProtocol.swift in Sources */,
+				DA6E807A1FF9A6A500175F70 /* CloudEntityProtocol+Default.swift in Sources */,
 				DA5FFE671FE779C300A38154 /* FormatIngredientTypeSpoons+Constants.swift in Sources */,
 				DAE7C3401FE076EC003190FF /* ViewNewAddIngredientList+Actions.swift in Sources */,
 				DA8752D31FE3888100AE74F5 /* NewAddIngredient+Validate.swift in Sources */,

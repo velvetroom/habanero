@@ -33,4 +33,13 @@ extension String
             tableName:String.Constants.tableError,
             comment:String())
     }
+    
+    func appendingPathComponent(component:String) -> String
+    {
+        var newString:String = String()
+        newString.append("/")
+        newString.append(component)
+        
+        return newString
+    }
 }

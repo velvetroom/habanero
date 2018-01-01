@@ -51,9 +51,7 @@ extension NewAddIngredient
         identifier:String,
         completion:@escaping((Ingredient?, Error?) -> ()))
     {
-        self.cloud.loadItem(
-            parentPath:IngredientList.identifier,
-            identifier:identifier)
+        self.cloud.loadIngredient(identifier:identifier)
         { [weak self] (ingredient:Ingredient?, error:Error?) in
             
             self?.ingredientCreated(

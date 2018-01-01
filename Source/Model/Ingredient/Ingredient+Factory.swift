@@ -14,7 +14,7 @@ extension Ingredient
     
     static func factoryJson(item:Ingredient) -> [String:Any]
     {
-        var json:[String:Any] = []
+        var json:[String:Any] = [:]
         json[Ingredient.Keys.name] = item.name
         
         return json

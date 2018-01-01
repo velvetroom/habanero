@@ -2,7 +2,7 @@ import Foundation
 
 final class Cloud
 {
-    private let provider:CloudProviderProtocol
+    let provider:CloudProviderProtocol
     
     init(provider:CloudProviderProtocol = CloudProviderFirebase())
     {

@@ -5,37 +5,36 @@ extension CloudProviderFirebase
     //MARK: Cloud provider delegate
  
     func createItemAt(
-        topLevel:CloudTopLevelProtocol.Type,
+        entity:CloudEntityProtocol,
         width json:[String:Any],
         completion:@escaping((String?, Error?) -> ()))
     {
         self.createDocumentAt(
-            collectionPath:topLevel.identifier,
+            collectionPath:entity.path,
             with:json,
             completion:completion)
     }
     
-    func createItemAt(
-        list:String,
-        of item:CloudItemProtocol,
-        width json:[String:Any],
-        completion:@escaping((String?, Error?) -> ()))
+    func loadList<T:CloudListProtocol>(
+        identifier:String,
+        completion:@escaping((T?, Error?) -> ()))
     {
-        var collectionPath:String = item.identifier
-        collectionPath.append("/")
-        collectionPath.append(list)
-        
-        self.createDocumentAt(
-            collectionPath:collectionPath,
-            with:json,
-            completion:completion)
-    }
-    
-    func loadList<T>(parentPath: String, completion: @escaping ((T?, Error?) -> ())) where T : CloudListProtocol {
         
     }
     
-    func loadItem<T>(identifier: String, at parentPath: String, completion: @escaping ((T?, Error?) -> ())) where T : CloudItemProtocol {
+    func loadList<T:CloudListProtocol>(
+        identifier:String,
+        of entity:CloudEntityProtocol,
+        completion:@escaping((T?, Error?) -> ()))
+    {
+        
+    }
     
+    func loadItem<T:CloudItemProtocol>(
+        identifier:String,
+        of entity:CloudEntityProtocol,
+        completion:@escaping((T?, Error?) -> ()))
+    {
+        
     }
 }

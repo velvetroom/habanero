@@ -2,7 +2,7 @@ import Foundation
 
 extension CloudListProtocol
 {
-    var identifier:String
+    static var identifier:String
     {
         get
         {
@@ -12,13 +12,13 @@ extension CloudListProtocol
         }
     }
     
-    var parentPath:String
+    var identifier:String
     {
         get
         {
-            let path:String = String()
+            let identifier:String = String(describing:self)
             
-            return path
+            return identifier
         }
     }
 }

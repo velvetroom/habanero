@@ -6,7 +6,7 @@ extension NewAddIngredient
     
     private func asyncLoad(completion:@escaping((Error?) -> ()))
     {
-        self.cloud.loadList
+        self.cloud.loadIngredients
         { [weak self] (ingredientList:IngredientList?, error:Error?) in
             
             let ingredients:[Ingredient]? = ingredientList?.items.sorted
