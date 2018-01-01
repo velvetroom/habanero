@@ -151,6 +151,8 @@
 		DA6E807F1FF9B60B00175F70 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E807D1FF9B60B00175F70 /* Storage.swift */; };
 		DA6E80811FF9B64400175F70 /* StorageProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80801FF9B64400175F70 /* StorageProviderProtocol.swift */; };
 		DA6E80821FF9B64400175F70 /* StorageProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80801FF9B64400175F70 /* StorageProviderProtocol.swift */; };
+		DA6E80841FF9B7A600175F70 /* StorageProviderFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80831FF9B7A600175F70 /* StorageProviderFirebase.swift */; };
+		DA6E80851FF9B7A600175F70 /* StorageProviderFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80831FF9B7A600175F70 /* StorageProviderFirebase.swift */; };
 		DA70AFBF1FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
 		DA70AFC01FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
 		DA70AFC21FD5AA980016B0DC /* ControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */; };
@@ -631,6 +633,7 @@
 		DA6E80781FF9A6A500175F70 /* CloudEntityProtocol+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudEntityProtocol+Default.swift"; sourceTree = "<group>"; };
 		DA6E807D1FF9B60B00175F70 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		DA6E80801FF9B64400175F70 /* StorageProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageProviderProtocol.swift; sourceTree = "<group>"; };
+		DA6E80831FF9B7A600175F70 /* StorageProviderFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageProviderFirebase.swift; sourceTree = "<group>"; };
 		DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHome.swift; sourceTree = "<group>"; };
 		DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerHome.swift; sourceTree = "<group>"; };
 		DA70AFC41FD5AABF0016B0DC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -1058,6 +1061,7 @@
 			isa = PBXGroup;
 			children = (
 				DA6E80801FF9B64400175F70 /* StorageProviderProtocol.swift */,
+				DA6E80831FF9B7A600175F70 /* StorageProviderFirebase.swift */,
 			);
 			path = StorageProvider;
 			sourceTree = "<group>";
@@ -2041,6 +2045,7 @@
 				DA9089241FD4C66000C1208A /* ControllerParent.swift in Sources */,
 				DA90891D1FD4C66000C1208A /* Controller.swift in Sources */,
 				DA91EB141FD62C1F0063560D /* ViewGradient.swift in Sources */,
+				DA6E80841FF9B7A600175F70 /* StorageProviderFirebase.swift in Sources */,
 				DA6E807E1FF9B60B00175F70 /* Storage.swift in Sources */,
 				DA9089211FD4C66000C1208A /* ControllerParent+Transitions.swift in Sources */,
 				DAE5E4891FE48F1D00CC40BA /* Home+Settings.swift in Sources */,
@@ -2337,6 +2342,7 @@
 				DA6E807F1FF9B60B00175F70 /* Storage.swift in Sources */,
 				DA9089821FD4CE2E00C1208A /* ControllerParent+Constants.swift in Sources */,
 				DACF552E1FD7661E00069701 /* ExtensionNotification.swift in Sources */,
+				DA6E80851FF9B7A600175F70 /* StorageProviderFirebase.swift in Sources */,
 				DABA5EC51FEA36D60017F865 /* PhotoOptionCancel.swift in Sources */,
 				DA90898C1FD4CE3E00C1208A /* MenuItemHome.swift in Sources */,
 				DA11BA141FD8FFE30038F9B0 /* ViewNewAddListHeader+Constants.swift in Sources */,
