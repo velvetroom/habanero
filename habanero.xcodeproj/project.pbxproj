@@ -149,6 +149,8 @@
 		DA6E807A1FF9A6A500175F70 /* CloudEntityProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80781FF9A6A500175F70 /* CloudEntityProtocol+Default.swift */; };
 		DA6E807E1FF9B60B00175F70 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E807D1FF9B60B00175F70 /* Storage.swift */; };
 		DA6E807F1FF9B60B00175F70 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E807D1FF9B60B00175F70 /* Storage.swift */; };
+		DA6E80811FF9B64400175F70 /* StorageProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80801FF9B64400175F70 /* StorageProviderProtocol.swift */; };
+		DA6E80821FF9B64400175F70 /* StorageProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80801FF9B64400175F70 /* StorageProviderProtocol.swift */; };
 		DA70AFBF1FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
 		DA70AFC01FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
 		DA70AFC21FD5AA980016B0DC /* ControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */; };
@@ -628,6 +630,7 @@
 		DA6E80751FF9A1F400175F70 /* CloudEntityProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudEntityProtocol.swift; sourceTree = "<group>"; };
 		DA6E80781FF9A6A500175F70 /* CloudEntityProtocol+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudEntityProtocol+Default.swift"; sourceTree = "<group>"; };
 		DA6E807D1FF9B60B00175F70 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		DA6E80801FF9B64400175F70 /* StorageProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageProviderProtocol.swift; sourceTree = "<group>"; };
 		DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHome.swift; sourceTree = "<group>"; };
 		DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerHome.swift; sourceTree = "<group>"; };
 		DA70AFC41FD5AABF0016B0DC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -1054,6 +1057,7 @@
 		DA6E807C1FF9B5FD00175F70 /* StorageProvider */ = {
 			isa = PBXGroup;
 			children = (
+				DA6E80801FF9B64400175F70 /* StorageProviderProtocol.swift */,
 			);
 			path = StorageProvider;
 			sourceTree = "<group>";
@@ -1991,6 +1995,7 @@
 				DAAD4A721FF31F310044B1FE /* PhotoCrop+Rotate.swift in Sources */,
 				DACF55331FD7661E00069701 /* ExtensionMKPolyline.swift in Sources */,
 				DA90891E1FD4C66000C1208A /* ControllerParent+Orientation.swift in Sources */,
+				DA6E80811FF9B64400175F70 /* StorageProviderProtocol.swift in Sources */,
 				DA4AA5061FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift in Sources */,
 				DA992D781FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */,
 				DA3F0E7C1FDF326A0037C94D /* Ingredient+Keys.swift in Sources */,
@@ -2243,6 +2248,7 @@
 				DA8752C31FE3844300AE74F5 /* ViewNewAddIngredientAmountInput.swift in Sources */,
 				DA6E80771FF9A1F400175F70 /* CloudEntityProtocol.swift in Sources */,
 				DA6E807A1FF9A6A500175F70 /* CloudEntityProtocol+Default.swift in Sources */,
+				DA6E80821FF9B64400175F70 /* StorageProviderProtocol.swift in Sources */,
 				DA5FFE671FE779C300A38154 /* FormatIngredientTypeSpoons+Constants.swift in Sources */,
 				DAE7C3401FE076EC003190FF /* ViewNewAddIngredientList+Actions.swift in Sources */,
 				DA8752D31FE3888100AE74F5 /* NewAddIngredient+Validate.swift in Sources */,
