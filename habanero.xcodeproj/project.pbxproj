@@ -147,6 +147,8 @@
 		DA6E80771FF9A1F400175F70 /* CloudEntityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80751FF9A1F400175F70 /* CloudEntityProtocol.swift */; };
 		DA6E80791FF9A6A500175F70 /* CloudEntityProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80781FF9A6A500175F70 /* CloudEntityProtocol+Default.swift */; };
 		DA6E807A1FF9A6A500175F70 /* CloudEntityProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80781FF9A6A500175F70 /* CloudEntityProtocol+Default.swift */; };
+		DA6E807E1FF9B60B00175F70 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E807D1FF9B60B00175F70 /* Storage.swift */; };
+		DA6E807F1FF9B60B00175F70 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E807D1FF9B60B00175F70 /* Storage.swift */; };
 		DA70AFBF1FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
 		DA70AFC01FD5A8B10016B0DC /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */; };
 		DA70AFC21FD5AA980016B0DC /* ControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */; };
@@ -625,6 +627,7 @@
 		DA6E80721FF9A18A00175F70 /* CloudListProtocol+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudListProtocol+Default.swift"; sourceTree = "<group>"; };
 		DA6E80751FF9A1F400175F70 /* CloudEntityProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudEntityProtocol.swift; sourceTree = "<group>"; };
 		DA6E80781FF9A6A500175F70 /* CloudEntityProtocol+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudEntityProtocol+Default.swift"; sourceTree = "<group>"; };
+		DA6E807D1FF9B60B00175F70 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHome.swift; sourceTree = "<group>"; };
 		DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerHome.swift; sourceTree = "<group>"; };
 		DA70AFC41FD5AABF0016B0DC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -1040,6 +1043,21 @@
 			path = CloudProvider;
 			sourceTree = "<group>";
 		};
+		DA6E807B1FF9B5FD00175F70 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				DA6E807D1FF9B60B00175F70 /* Storage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		DA6E807C1FF9B5FD00175F70 /* StorageProvider */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StorageProvider;
+			sourceTree = "<group>";
+		};
 		DA71D6911FDA63F1003A33E1 /* Text */ = {
 			isa = PBXGroup;
 			children = (
@@ -1282,6 +1300,8 @@
 		DA9088D11FD4C65F00C1208A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DA6E807B1FF9B5FD00175F70 /* Storage */,
+				DA6E807C1FF9B5FD00175F70 /* StorageProvider */,
 				DA74F0B61FE611DB00F45310 /* Format */,
 				DA9088D21FD4C65F00C1208A /* Abstract */,
 				DAE7C3621FE0828C003190FF /* Analytics */,
@@ -2016,6 +2036,7 @@
 				DA9089241FD4C66000C1208A /* ControllerParent.swift in Sources */,
 				DA90891D1FD4C66000C1208A /* Controller.swift in Sources */,
 				DA91EB141FD62C1F0063560D /* ViewGradient.swift in Sources */,
+				DA6E807E1FF9B60B00175F70 /* Storage.swift in Sources */,
 				DA9089211FD4C66000C1208A /* ControllerParent+Transitions.swift in Sources */,
 				DAE5E4891FE48F1D00CC40BA /* Home+Settings.swift in Sources */,
 				DA5FFE661FE779C300A38154 /* FormatIngredientTypeSpoons+Constants.swift in Sources */,
@@ -2307,6 +2328,7 @@
 				DAF949F21FD8B47D001BA32E /* ViewNewBar+Constants.swift in Sources */,
 				DA5D71C41FDB566D00429F5D /* ViewNewAddListCellInfoDuration.swift in Sources */,
 				DA3F0E7D1FDF326A0037C94D /* Ingredient+Keys.swift in Sources */,
+				DA6E807F1FF9B60B00175F70 /* Storage.swift in Sources */,
 				DA9089821FD4CE2E00C1208A /* ControllerParent+Constants.swift in Sources */,
 				DACF552E1FD7661E00069701 /* ExtensionNotification.swift in Sources */,
 				DABA5EC51FEA36D60017F865 /* PhotoOptionCancel.swift in Sources */,
