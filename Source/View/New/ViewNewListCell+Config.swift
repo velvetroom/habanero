@@ -28,6 +28,7 @@ extension ViewNewListCell
     
     func config(model:NewItem)
     {
+        self.imageView.image = model.image
         self.updateInfo(model:model)
         self.viewSteps.config(model:model)
         self.showState()
