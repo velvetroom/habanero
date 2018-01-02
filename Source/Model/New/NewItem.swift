@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 struct NewItem
 {
@@ -6,4 +6,5 @@ struct NewItem
     let duration:String
     let steps:Int
     let build:Build
+    let image:UIImage?
 }

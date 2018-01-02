@@ -1,8 +1,24 @@
-import Foundation
+import UIKit
 
 extension NewItem
 {
     //MARK: private
+    
+    private static func factoryItemImage(build:Build) -> UIImage?
+    {
+        guard
+        
+            let imageIdentifier:String = build.imageIdentifier
+        
+        else
+        {
+            return nil
+        }
+        
+        let image:UIImage? = NewAdd.localImageForIdentifier(identifier:imageIdentifier)
+        
+        return image
+    }
     
     private static func factoryItem(build:Build) -> NewItem?
     {
@@ -17,11 +33,14 @@ extension NewItem
             return nil
         }
         
+        let image:UIImage? = NewItem.factoryItemImage(build:build)
+        
         let item:NewItem = NewItem(
             title:title,
             duration:duration,
             steps:steps,
-            build:build)
+            build:build,
+            image:image)
         
         return item
     }
