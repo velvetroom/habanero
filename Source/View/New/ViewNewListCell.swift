@@ -6,6 +6,7 @@ final class ViewNewListCell:ViewCollectionCell
     let attributesDuration:[NSAttributedStringKey:Any]
     private(set) weak var viewSteps:ViewNewListCellSteps!
     private(set) weak var labelInfo:UILabel!
+    private(set) weak var imageView:UIImageView!
     
     override init(frame:CGRect)
     {
@@ -39,8 +40,17 @@ final class ViewNewListCell:ViewCollectionCell
         let viewSteps:ViewNewListCellSteps = ViewNewListCellSteps()
         self.viewSteps = viewSteps
         
+        let imageView:UIImageView = UIImageView()
+        imageView.isUserInteractionEnabled = false
+        imageView.clipsToBounds = true
+        imageView.contentMode = UIViewContentMode.scaleAspectFill
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.backgroundColor = UIColor.colourBackgroundGray
+        self.imageView = imageView
+        
         addSubview(labelInfo)
         addSubview(viewSteps)
+        addSubview(imageView)
         
         NSLayoutConstraint.topToTop(
             view:labelInfo,
@@ -65,6 +75,23 @@ final class ViewNewListCell:ViewCollectionCell
         NSLayoutConstraint.rightToRight(
             view:viewSteps,
             toView:self)
+        
+        NSLayoutConstraint.equalsVertical(
+            view:imageView,
+            toView:self,
+            margin:ViewNewListCell.Constants.imageMargin)
+        NSLayoutConstraint.leftToLeft(
+            view:imageView,
+            toView:self,
+            constant:ViewNewListCell.Constants.imageMargin)
+        NSLayoutConstraint(
+            item:imageView,
+            attribute:NSLayoutAttribute.width,
+            relatedBy:NSLayoutRelation.equal,
+            toItem:imageView,
+            attribute:NSLayoutAttribute.height,
+            multiplier:1,
+            constant:0).isActive = true
     }
     
     override func showReleased()

@@ -9,5 +9,6 @@ extension ViewNewListCell
         static let infoLeft:CGFloat = 20
         static let infoTop:CGFloat = 10
         static let stepsWidth:CGFloat = 60
+        static let imageMargin:CGFloat = 20
     }
 }
