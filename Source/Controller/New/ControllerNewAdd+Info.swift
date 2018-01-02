@@ -17,41 +17,25 @@ extension ControllerNewAdd
     
     func alertConfirmDelete()
     {
-        let alert:UIAlertController = UIAlertController(
-            title:String.localizedController(key:"ControllerNewAdd_alertDeleteTitle"),
-            message:nil,
-            preferredStyle:UIAlertControllerStyle.actionSheet)
-        
         let actionCancel:UIAlertAction = UIAlertAction(
-            title:String.localizedController(key:"ControllerNewAdd_alertDeleteCancel"),
+            title:String.localizedController(key:"ControllerNewAdd_alertDeleteBuildCancel"),
             style:UIAlertActionStyle.cancel)
         
         let actionDelete:UIAlertAction = UIAlertAction(
-            title:String.localizedController(key:"ControllerNewAdd_alertDeleteDelete"),
+            title:String.localizedController(key:"ControllerNewAdd_alertDeleteBuildDelete"),
             style:UIAlertActionStyle.destructive)
         { [weak self] (action:UIAlertAction) in
             
             self?.deleteConfirmed()
         }
         
-        alert.addAction(actionDelete)
-        alert.addAction(actionCancel)
+        let actions:[UIAlertAction] = [
+            actionDelete,
+            actionCancel]
         
-        if let popover:UIPopoverPresentationController = alert.popoverPresentationController
-        {
-            popover.sourceView = self.view
-            popover.permittedArrowDirections = UIPopoverArrowDirection.up
-            popover.sourceRect = CGRect(
-                x:self.view.center.x,
-                y:0,
-                width:1,
-                height:1)
-        }
-        
-        self.present(
-            alert,
-            animated:true,
-            completion:nil)
+        self.showAlert(
+            actions:actions,
+            title:String.localizedController(key:"ControllerNewAdd_alertDeleteBuildTitle"))
     }
     
     func editInfoTitle()

@@ -5,9 +5,9 @@ extension Controller
     //MARK: internal
     
     func showAlert(
-        title:String?,
-        message:String?
-        actions:[UIAlertAction])
+        actions:[UIAlertAction],
+        title:String? = nil,
+        message:String? = nil)
     {
         let alert:UIAlertController = UIAlertController(
             title:title,
