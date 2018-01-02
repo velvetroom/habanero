@@ -27,11 +27,6 @@ extension ControllerNewAdd
     
     private func deleteStep(step:BuildStep)
     {
-        let alert:UIAlertController = UIAlertController(
-            title:String.localizedController(key:"ControllerNewAdd_alertDeleteStepTitle"),
-            message:nil,
-            preferredStyle:UIAlertControllerStyle.actionSheet)
-        
         let actionCancel:UIAlertAction = UIAlertAction(
             title:String.localizedController(key:"ControllerNewAdd_alertDeleteStepCancel"),
             style:UIAlertActionStyle.cancel)
@@ -44,24 +39,13 @@ extension ControllerNewAdd
             self?.confirmDeleteStep(step:step)
         }
         
-        alert.addAction(actionDelete)
-        alert.addAction(actionCancel)
+        let actions:[UIAlertAction] = [
+            actionDelete,
+            actionCancel]
         
-        if let popover:UIPopoverPresentationController = alert.popoverPresentationController
-        {
-            popover.sourceView = self.view
-            popover.permittedArrowDirections = UIPopoverArrowDirection.up
-            popover.sourceRect = CGRect(
-                x:self.view.center.x,
-                y:0,
-                width:1,
-                height:1)
-        }
-        
-        self.present(
-            alert,
-            animated:true,
-            completion:nil)
+        self.showAlert(
+            actions:actions,
+            title:String.localizedController(key:"ControllerNewAdd_alertDeleteStepTitle"))
     }
     
     private func stepEditText(step:BuildStepText)
