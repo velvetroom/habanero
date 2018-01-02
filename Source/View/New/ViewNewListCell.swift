@@ -58,9 +58,9 @@ final class ViewNewListCell:ViewCollectionCell
             constant:ViewNewListCell.Constants.infoTop)
         NSLayoutConstraint.heightGreaterOrEqual(
             view:labelInfo)
-        NSLayoutConstraint.leftToLeft(
+        NSLayoutConstraint.leftToRight(
             view:labelInfo,
-            toView:self,
+            toView:imageView,
             constant:ViewNewListCell.Constants.infoLeft)
         NSLayoutConstraint.rightToLeft(
             view:labelInfo,
@@ -79,11 +79,11 @@ final class ViewNewListCell:ViewCollectionCell
         NSLayoutConstraint.equalsVertical(
             view:imageView,
             toView:self,
-            margin:ViewNewListCell.Constants.imageMargin)
+            margin:ViewNewListCell.Constants.imageMarginVertical)
         NSLayoutConstraint.leftToLeft(
             view:imageView,
             toView:self,
-            constant:ViewNewListCell.Constants.imageMargin)
+            constant:ViewNewListCell.Constants.imageLeft)
         NSLayoutConstraint(
             item:imageView,
             attribute:NSLayoutAttribute.width,

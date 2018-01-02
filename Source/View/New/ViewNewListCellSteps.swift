@@ -36,7 +36,7 @@ final class ViewNewListCellSteps:UIView
         label.backgroundColor = UIColor.clear
         label.textAlignment = NSTextAlignment.center
         label.font = UIFont.bold(size:ViewNewListCellSteps.Constants.fontSize)
-        label.textColor = UIColor.colourSuccess
+        label.textColor = UIColor.colourBackgroundDark
         self.label = label
         
         self.addSubview(image)
