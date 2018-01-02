@@ -132,10 +132,7 @@ extension ControllerNewAdd
         actions:[UIAlertAction],
         for step:BuildStep)
     {
-        let alert:UIAlertController = UIAlertController(
-            title:String.localizedController(key:"ControllerNewAdd_stepActionsTitle"),
-            message:nil,
-            preferredStyle:UIAlertControllerStyle.actionSheet)
+        var actions:[UIAlertAction] = actions
         
         let actionCancel:UIAlertAction = UIAlertAction(
             title:String.localizedController(key:"ControllerNewAdd_stepActionCancel"),
@@ -149,29 +146,12 @@ extension ControllerNewAdd
             self?.deleteStep(step:step)
         }
         
-        for action:UIAlertAction in actions
-        {
-            alert.addAction(action)
-        }
+        actions.append(actionDelete)
+        actions.append(actionCancel)
         
-        alert.addAction(actionDelete)
-        alert.addAction(actionCancel)
-        
-        if let popover:UIPopoverPresentationController = alert.popoverPresentationController
-        {
-            popover.sourceView = self.view
-            popover.permittedArrowDirections = UIPopoverArrowDirection.up
-            popover.sourceRect = CGRect(
-                x:self.view.center.x,
-                y:0,
-                width:1,
-                height:1)
-        }
-        
-        self.present(
-            alert,
-            animated:true,
-            completion:nil)
+        self.showAlert(
+            actions:actions,
+            title:String.localizedController(key:"ControllerNewAdd_stepActionsTitle"))
     }
     
     private func showActionsForText(step:BuildStep)
