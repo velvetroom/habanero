@@ -17,11 +17,6 @@ extension ControllerNewAdd
     
     func removeIngredient(item:NewAddSectionItemIngredient)
     {
-        let alert:UIAlertController = UIAlertController(
-            title:String.localizedController(key:"ControllerNewAdd_alertDeleteIngredientTitle"),
-            message:item.name,
-            preferredStyle:UIAlertControllerStyle.actionSheet)
-        
         let actionCancel:UIAlertAction = UIAlertAction(
             title:String.localizedController(key:"ControllerNewAdd_alertDeleteIngredientCancel"),
             style:UIAlertActionStyle.cancel)
@@ -34,24 +29,14 @@ extension ControllerNewAdd
             self?.confirmRemoveIngredient(item:item)
         }
         
-        alert.addAction(actionDelete)
-        alert.addAction(actionCancel)
+        let actions:[UIAlertAction] = [
+            actionDelete,
+            actionCancel]
         
-        if let popover:UIPopoverPresentationController = alert.popoverPresentationController
-        {
-            popover.sourceView = self.view
-            popover.permittedArrowDirections = UIPopoverArrowDirection.up
-            popover.sourceRect = CGRect(
-                x:self.view.center.x,
-                y:0,
-                width:1,
-                height:1)
-        }
-        
-        self.present(
-            alert,
-            animated:true,
-            completion:nil)
+        self.showAlert(
+            actions:actions,
+            title:String.localizedController(key:"ControllerNewAdd_alertDeleteIngredientTitle"),
+            message:item.name)
     }
     
     func transitionAddIngredient()
