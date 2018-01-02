@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		43A11BCCBB0D1C292C1CEE83 /* Pods_admin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF6EEE1B276B4389C07938C /* Pods_admin.framework */; };
 		8F2E98EAEBD65E388FB5CB76 /* Pods_user.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34488D08B2947E1784847953 /* Pods_user.framework */; };
+		DA10A1E51FFB1FC700166CF7 /* Controller+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10A1E41FFB1FC700166CF7 /* Controller+Alert.swift */; };
+		DA10A1E61FFB1FC700166CF7 /* Controller+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10A1E41FFB1FC700166CF7 /* Controller+Alert.swift */; };
 		DA11BA071FD8F1DE0038F9B0 /* ViewNewAddList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11BA061FD8F1DE0038F9B0 /* ViewNewAddList.swift */; };
 		DA11BA091FD8F2200038F9B0 /* ViewNewAddListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11BA081FD8F2200038F9B0 /* ViewNewAddListCell.swift */; };
 		DA11BA0B1FD8F3DD0038F9B0 /* ViewBarBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11BA0A1FD8F3DD0038F9B0 /* ViewBarBack.swift */; };
@@ -525,6 +527,7 @@
 		34488D08B2947E1784847953 /* Pods_user.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_user.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A96C209AACB2D78CA84704A /* Pods-user.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-user.debug.xcconfig"; path = "Pods/Target Support Files/Pods-user/Pods-user.debug.xcconfig"; sourceTree = "<group>"; };
 		A3BF40A8891C588AFE14AB30 /* Pods-admin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-admin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-admin/Pods-admin.debug.xcconfig"; sourceTree = "<group>"; };
+		DA10A1E41FFB1FC700166CF7 /* Controller+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Controller+Alert.swift"; sourceTree = "<group>"; };
 		DA11BA061FD8F1DE0038F9B0 /* ViewNewAddList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddList.swift; sourceTree = "<group>"; };
 		DA11BA081FD8F2200038F9B0 /* ViewNewAddListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCell.swift; sourceTree = "<group>"; };
 		DA11BA0A1FD8F3DD0038F9B0 /* ViewBarBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBarBack.swift; sourceTree = "<group>"; };
@@ -1271,6 +1274,7 @@
 			children = (
 				DA9088CA1FD4C65F00C1208A /* AppDelegate.swift */,
 				DA9088C51FD4C65F00C1208A /* Controller.swift */,
+				DA10A1E41FFB1FC700166CF7 /* Controller+Alert.swift */,
 				DA9088CC1FD4C65F00C1208A /* ControllerParent.swift */,
 				DA9088C61FD4C65F00C1208A /* ControllerParent+Orientation.swift */,
 				DA9088C71FD4C65F00C1208A /* ControllerParent+Constants.swift */,
@@ -2115,6 +2119,7 @@
 				DA3F0EB41FD74C5F00593B83 /* Menu+FactoryUser.swift in Sources */,
 				DA74F0BE1FE6127100F45310 /* Format+Ingredient.swift in Sources */,
 				DA4233E21FEDE5DD0012A589 /* PhotoCrop.swift in Sources */,
+				DA10A1E51FFB1FC700166CF7 /* Controller+Alert.swift in Sources */,
 				DA6E805E1FF987F100175F70 /* CloudProviderFirebase.swift in Sources */,
 				DA91EAFA1FD62C1F0063560D /* ViewMain.swift in Sources */,
 				DA71D68F1FDA633E003A33E1 /* ArchText.swift in Sources */,
@@ -2212,6 +2217,7 @@
 				DA3F0E881FDF44920037C94D /* ArchNewAddIngredient.swift in Sources */,
 				DA5D71C81FDB56E200429F5D /* NewAddSectionItemInfoDuration.swift in Sources */,
 				DA60429B1FE2190100758A2F /* ArchNewAddIngredientAmount.swift in Sources */,
+				DA10A1E61FFB1FC700166CF7 /* Controller+Alert.swift in Sources */,
 				DACEB3AC1FDCAE700089B3FE /* ViewNewListCellSteps.swift in Sources */,
 				DAC732CE1FF853F600980854 /* ViewNewAddListCellInfoSubtitle.swift in Sources */,
 				DA9089841FD4CE2E00C1208A /* ControllerParent+Transitions.swift in Sources */,
