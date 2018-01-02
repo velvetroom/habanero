@@ -46,6 +46,8 @@ final class ViewNewListCell:ViewCollectionCell
         imageView.contentMode = UIViewContentMode.scaleAspectFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.backgroundColor = UIColor.colourBackgroundGray
+        imageView.layer.borderWidth = ViewGlobal.Constants.borderWidth
+        imageView.layer.borderColor = UIColor.colourBackgroundDark.cgColor
         self.imageView = imageView
         
         addSubview(labelInfo)
