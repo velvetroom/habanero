@@ -4,8 +4,8 @@ struct NewAddSectionItemInfoDuration:NewAddSectionItemProtocol
 {
     let reusableIdentifier:String = ViewNewAddListCellInfoDuration.reusableIdentifier
     let cellHeight:CGFloat = NewAdd.Constants.cellInfoDurationHeight
-    let minuteSelected:Int
     let minutes:[TimeInterval]
+    private(set) var minuteSelected:Int
     
     init(duration:TimeInterval)
     {
@@ -67,5 +67,14 @@ struct NewAddSectionItemInfoDuration:NewAddSectionItemProtocol
         }
         
         return selected
+    }
+    
+    //MARK: internal
+    
+    mutating func updateDuration(duration:TimeInterval)
+    {
+        self.minuteSelected = NewAddSectionItemInfoDuration.factoryMinuteSelected(
+            duration:duration,
+            minutes:self.minutes)
     }
 }

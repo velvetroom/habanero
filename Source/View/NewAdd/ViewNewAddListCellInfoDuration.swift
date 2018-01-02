@@ -121,11 +121,6 @@ final class ViewNewAddListCellInfoDuration:ViewNewAddListCell
         }
         
         self.labelDuration.text = duration
-        self.saveNewDuration(duration:seconds)
-    }
-    
-    private func saveNewDuration(duration:TimeInterval)
-    {
-        self.controller?.durationEdited(duration:duration)
+        self.controller?.durationEdited(duration:seconds)
     }
 }

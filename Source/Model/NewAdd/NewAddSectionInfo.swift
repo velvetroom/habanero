@@ -2,11 +2,11 @@ import UIKit
 
 struct NewAddSectionInfo:NewAddSectionProtocol
 {
+    var items:[NewAddSectionItemProtocol]
     let title:String
     let footerReusableIdentifier:String
     let headerHeight:CGFloat
     let footerHeight:CGFloat
-    let items:[NewAddSectionItemProtocol]
 
     init(
         build:Build,
