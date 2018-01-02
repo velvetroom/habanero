@@ -169,6 +169,7 @@ extension NewAdd
             
             self?.build?.duration = duration
             self?.database?.save(completion:nil)
+            self?.updateCurrentDurationValue(duration:duration)
         }
     }
     
