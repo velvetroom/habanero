@@ -95,45 +95,6 @@ extension NewAdd
         }
     }
     
-    private func updateCurrentDurationValue(duration:TimeInterval)
-    {
-        for section:NewAddSectionProtocol in self.sections
-        {
-            guard
-            
-                var section:NewAddSectionInfo = section as? NewAddSectionInfo
-            
-            else
-            {
-                continue
-            }
-            
-            let countItems:Int = section.items.count
-            
-            for index:Int in 0 ..< countItems
-            {
-                let item:NewAddSectionItemProtocol = section.items[index]
-                
-                guard
-                
-                    var itemDuration:NewAddSectionItemInfoDuration = item as? NewAddSectionItemInfoDuration
-                
-                else
-                {
-                    continue
-                }
-                
-                itemDuration.updateDuration(duration:duration)
-                section.items.remove(at:index)
-                section.items.insert(itemDuration, at:index)
-                
-                break
-            }
-            
-            break
-        }
-    }
-    
     //MARK: internal
     
     func editInfoTitle(
@@ -168,8 +129,11 @@ extension NewAdd
         { [weak self] in
             
             self?.build?.duration = duration
-            self?.database?.save(completion:nil)
-            self?.updateCurrentDurationValue(duration:duration)
+            self?.database?.save
+            { [weak self] in
+                
+                self?.load{ }
+            }
         }
     }
     
