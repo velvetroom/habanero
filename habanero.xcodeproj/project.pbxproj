@@ -369,6 +369,7 @@
 		DAAD4A761FF320EE0044B1FE /* PhotoCrop+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAD4A741FF320EE0044B1FE /* PhotoCrop+Constants.swift */; };
 		DAADC49B1FFC751000862A90 /* ViewNewAddBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAADC49A1FFC751000862A90 /* ViewNewAddBar+Constants.swift */; };
 		DAADC49D1FFC75A800862A90 /* ControllerNewAdd+Done.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAADC49C1FFC75A800862A90 /* ControllerNewAdd+Done.swift */; };
+		DAADC49F1FFC783600862A90 /* NewAdd+Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAADC49E1FFC783600862A90 /* NewAdd+Validate.swift */; };
 		DAAE61F41FF636F500954EFC /* PhotoRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE61F31FF636F500954EFC /* PhotoRotation.swift */; };
 		DAAE61F51FF636F500954EFC /* PhotoRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE61F31FF636F500954EFC /* PhotoRotation.swift */; };
 		DAAE61F71FF637A700954EFC /* PhotoRotation+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE61F61FF637A700954EFC /* PhotoRotation+Factory.swift */; };
@@ -774,6 +775,7 @@
 		DAAD4A741FF320EE0044B1FE /* PhotoCrop+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoCrop+Constants.swift"; sourceTree = "<group>"; };
 		DAADC49A1FFC751000862A90 /* ViewNewAddBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddBar+Constants.swift"; sourceTree = "<group>"; };
 		DAADC49C1FFC75A800862A90 /* ControllerNewAdd+Done.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerNewAdd+Done.swift"; sourceTree = "<group>"; };
+		DAADC49E1FFC783600862A90 /* NewAdd+Validate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Validate.swift"; sourceTree = "<group>"; };
 		DAAE61F31FF636F500954EFC /* PhotoRotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRotation.swift; sourceTree = "<group>"; };
 		DAAE61F61FF637A700954EFC /* PhotoRotation+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoRotation+Factory.swift"; sourceTree = "<group>"; };
 		DAAE61F91FF6385300954EFC /* PhotoRotation+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoRotation+Constants.swift"; sourceTree = "<group>"; };
@@ -1645,6 +1647,7 @@
 				DAC732C71FF7579800980854 /* NewAdd+StepsDelete.swift */,
 				DAA26FB11FE97AE6005855F6 /* NewAdd+Move.swift */,
 				DA6E804C1FF96C0D00175F70 /* NewAdd+Delete.swift */,
+				DAADC49E1FFC783600862A90 /* NewAdd+Validate.swift */,
 				DA71D6721FDA44E2003A33E1 /* NewAddSectionProtocol.swift */,
 				DA58C6E41FD9E12A000E6F30 /* NewAddSectionItemProtocol.swift */,
 				DA71D6761FDA4539003A33E1 /* NewAddSectionInfo.swift */,
@@ -2324,6 +2327,7 @@
 				DA6E804F1FF96D3800175F70 /* NewAddDeleteStrategyProtocol.swift in Sources */,
 				DA4233DC1FEDE4DF0012A589 /* ControllerPhotoCrop.swift in Sources */,
 				DA4233E31FEDE5DD0012A589 /* PhotoCrop.swift in Sources */,
+				DAADC49F1FFC783600862A90 /* NewAdd+Validate.swift in Sources */,
 				DA8752DF1FE3ABAF00AE74F5 /* NewAddIngredientAmountTypeSpoons.swift in Sources */,
 				DA71D6A51FDA7107003A33E1 /* ViewText+Constants.swift in Sources */,
 				DACF55401FD7661E00069701 /* ExtensionUIFont.swift in Sources */,
