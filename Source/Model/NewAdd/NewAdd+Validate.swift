@@ -8,6 +8,7 @@ extension NewAdd
         {
             let strategies:[NewAddValidateStrategyProtocol.Type] = [
                 NewAddValidateStrategyMinSteps.self,
+                NewAddValidateStrategyMinIngredients.self,
                 NewAddValidateStrategyTitle.self,
                 NewAddValidateStrategySubtitle.self]
             

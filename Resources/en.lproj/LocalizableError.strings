@@ -4,5 +4,6 @@ CloudError_loadItemDataFailed="Incorrect item response from server";
 CloudError_loadListFailed="Failed loading items list";
 NewAddIngredientError_ingredientAlreadyAdded="Ingredient already on Recipe";
 NewAddError_validateErrorMinSteps="Recipe should have at least %@ steps";
+NewAddError_validateErrorMinIngredients="Recipe should have at least 1 ingredient";
 NewAddError_validateErrorTitle="Invalid recipe title";
 NewAddError_validateErrorSubtitle="Invalid recipe subtitle";

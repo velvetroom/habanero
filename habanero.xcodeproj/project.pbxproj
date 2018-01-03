@@ -376,6 +376,7 @@
 		DAADC4A71FFC826D00862A90 /* NewAddValidateStrategyMinSteps+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAADC4A61FFC826D00862A90 /* NewAddValidateStrategyMinSteps+Constants.swift */; };
 		DAADC4A91FFC85E600862A90 /* NewAddValidateStrategyTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAADC4A81FFC85E600862A90 /* NewAddValidateStrategyTitle.swift */; };
 		DAADC4AB1FFC86DD00862A90 /* NewAddValidateStrategySubtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAADC4AA1FFC86DD00862A90 /* NewAddValidateStrategySubtitle.swift */; };
+		DAADC4AD1FFC875600862A90 /* NewAddValidateStrategyMinIngredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAADC4AC1FFC875600862A90 /* NewAddValidateStrategyMinIngredients.swift */; };
 		DAAE61F41FF636F500954EFC /* PhotoRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE61F31FF636F500954EFC /* PhotoRotation.swift */; };
 		DAAE61F51FF636F500954EFC /* PhotoRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE61F31FF636F500954EFC /* PhotoRotation.swift */; };
 		DAAE61F71FF637A700954EFC /* PhotoRotation+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE61F61FF637A700954EFC /* PhotoRotation+Factory.swift */; };
@@ -788,6 +789,7 @@
 		DAADC4A61FFC826D00862A90 /* NewAddValidateStrategyMinSteps+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddValidateStrategyMinSteps+Constants.swift"; sourceTree = "<group>"; };
 		DAADC4A81FFC85E600862A90 /* NewAddValidateStrategyTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddValidateStrategyTitle.swift; sourceTree = "<group>"; };
 		DAADC4AA1FFC86DD00862A90 /* NewAddValidateStrategySubtitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddValidateStrategySubtitle.swift; sourceTree = "<group>"; };
+		DAADC4AC1FFC875600862A90 /* NewAddValidateStrategyMinIngredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddValidateStrategyMinIngredients.swift; sourceTree = "<group>"; };
 		DAAE61F31FF636F500954EFC /* PhotoRotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRotation.swift; sourceTree = "<group>"; };
 		DAAE61F61FF637A700954EFC /* PhotoRotation+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoRotation+Factory.swift"; sourceTree = "<group>"; };
 		DAAE61F91FF6385300954EFC /* PhotoRotation+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoRotation+Constants.swift"; sourceTree = "<group>"; };
@@ -1684,6 +1686,7 @@
 				DAADC4A21FFC7E6400862A90 /* NewAddValidateStrategyProtocol.swift */,
 				DAADC4A41FFC80E500862A90 /* NewAddValidateStrategyMinSteps.swift */,
 				DAADC4A61FFC826D00862A90 /* NewAddValidateStrategyMinSteps+Constants.swift */,
+				DAADC4AC1FFC875600862A90 /* NewAddValidateStrategyMinIngredients.swift */,
 				DAADC4A81FFC85E600862A90 /* NewAddValidateStrategyTitle.swift */,
 				DAADC4AA1FFC86DD00862A90 /* NewAddValidateStrategySubtitle.swift */,
 			);
@@ -2279,6 +2282,7 @@
 				DACF55341FD7661E00069701 /* ExtensionMKPolyline.swift in Sources */,
 				DA8752D51FE3A90D00AE74F5 /* NewAddIngredientAmountTypeProtocol.swift in Sources */,
 				DA177BF11FD77874003B3836 /* ViewNewBar.swift in Sources */,
+				DAADC4AD1FFC875600862A90 /* NewAddValidateStrategyMinIngredients.swift in Sources */,
 				DAAD4A731FF31F310044B1FE /* PhotoCrop+Rotate.swift in Sources */,
 				DAB7862F1FF4BC2D00579BB5 /* NewAddSectionItemStepProtocol.swift in Sources */,
 				DACF55301FD7661E00069701 /* ExtensionUIColor.swift in Sources */,
