@@ -8,11 +8,16 @@ extension ControllerNewAdd
     {
         ViewAlert.messageFail(message:error.localizedDescription)
         
-        self.viewMain.viewList.isUserInteractionEnabled = true
+        self.viewMain.isUserInteractionEnabled = true
+        self.viewMain.viewList.isHidden = false
+        self.viewMain.viewSpinner.stopAnimating()
     }
     
     private func passedValidation()
     {
+        self.viewMain.viewList.isHidden = true
+        self.viewMain.viewSpinner.startAnimating()
+        
         self.model.save
         { [weak self] (error:Error?) in
             
@@ -35,7 +40,7 @@ extension ControllerNewAdd
     
     func createRecipe()
     {
-        self.viewMain.viewList.isUserInteractionEnabled = false
+        self.viewMain.isUserInteractionEnabled = false
         
         self.model.validate
         { [weak self] (error:Error?) in
