@@ -2,10 +2,21 @@ import Foundation
 
 extension NewAdd
 {
-    //MARK: internal
+    //MARK: private
     
-    func validate(completion:@escaping(() -> ()))
+    private func asyncValidate(completion:@escaping((Error?) -> ()))
     {
         
+    }
+    
+    //MARK: internal
+    
+    func validate(completion:@escaping((Error?) -> ()))
+    {
+        DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
+        { [weak self] in
+            
+            self?.asyncValidate(completion:completion)
+        }
     }
 }

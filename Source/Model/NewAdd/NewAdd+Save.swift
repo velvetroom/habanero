@@ -4,7 +4,7 @@ extension NewAdd
 {
     //MARK: internal
     
-    func save(completion:@escaping(() -> ()))
+    func save(completion:@escaping((Error?) -> ()))
     {
         
     }

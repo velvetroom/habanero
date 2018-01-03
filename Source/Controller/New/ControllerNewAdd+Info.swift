@@ -2,17 +2,6 @@ import UIKit
 
 extension ControllerNewAdd
 {
-    //MARK: private
-    
-    private func deleteConfirmed()
-    {
-        self.model.delete
-        { [weak self] in
-            
-            self?.transitionBack()
-        }
-    }
-    
     //MARK: internal
     
     func alertConfirmDelete()
@@ -36,6 +25,15 @@ extension ControllerNewAdd
         self.showAlert(
             actions:actions,
             title:String.localizedController(key:"ControllerNewAdd_alertDeleteBuildTitle"))
+    }
+    
+    func deleteConfirmed()
+    {
+        self.model.delete
+        { [weak self] in
+            
+            self?.transitionBack()
+        }
     }
     
     func editInfoTitle()
