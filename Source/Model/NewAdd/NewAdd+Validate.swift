@@ -10,7 +10,8 @@ extension NewAdd
                 NewAddValidateStrategyMinSteps.self,
                 NewAddValidateStrategyMinIngredients.self,
                 NewAddValidateStrategyTitle.self,
-                NewAddValidateStrategySubtitle.self]
+                NewAddValidateStrategySubtitle.self,
+                NewAddValidateStrategyImage.self]
             
             return strategies
         }

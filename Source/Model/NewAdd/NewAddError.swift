@@ -7,4 +7,5 @@ enum NewAddError:Error
     case validateErrorMinIngredients
     case validateErrorTitle
     case validateErrorSubtitle
+    case validateErrorImage
 }

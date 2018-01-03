@@ -7,3 +7,4 @@ NewAddError_validateErrorMinSteps="Recipe should have at least %@ steps";
 NewAddError_validateErrorMinIngredients="Recipe should have at least 1 ingredient";
 NewAddError_validateErrorTitle="Invalid recipe title";
 NewAddError_validateErrorSubtitle="Invalid recipe subtitle";
+NewAddError_validateErrorImage="Invalid recipe image";

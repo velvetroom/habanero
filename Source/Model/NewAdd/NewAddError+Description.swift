@@ -28,7 +28,8 @@ extension NewAddError:LocalizedError
             NewAddError.validateErrorMinIngredients :
                 String.localizedError(key:"NewAddError_validateErrorMinIngredients"),
             NewAddError.validateErrorTitle : String.localizedError(key:"NewAddError_validateErrorTitle"),
-            NewAddError.validateErrorSubtitle : String.localizedError(key:"NewAddError_validateErrorSubtitle")]
+            NewAddError.validateErrorSubtitle : String.localizedError(key:"NewAddError_validateErrorSubtitle"),
+            NewAddError.validateErrorImage : String.localizedError(key:"NewAddError_validateErrorImage")]
         
         return map
     }
