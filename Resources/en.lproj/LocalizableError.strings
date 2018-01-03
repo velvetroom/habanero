@@ -3,3 +3,4 @@ CloudError_loadItemFailed="Load item failed";
 CloudError_loadItemDataFailed="Incorrect item response from server";
 CloudError_loadListFailed="Failed loading items list";
 NewAddIngredientError_ingredientAlreadyAdded="Ingredient already on Recipe";
+NewAddError_validateErrorMinSteps="Recipe should have at least 1 step";

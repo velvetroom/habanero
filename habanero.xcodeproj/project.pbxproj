@@ -372,6 +372,8 @@
 		DAADC49F1FFC783600862A90 /* NewAdd+Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAADC49E1FFC783600862A90 /* NewAdd+Validate.swift */; };
 		DAADC4A11FFC7B8F00862A90 /* NewAdd+Save.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAADC4A01FFC7B8F00862A90 /* NewAdd+Save.swift */; };
 		DAADC4A31FFC7E6400862A90 /* NewAddValidateStrategyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAADC4A21FFC7E6400862A90 /* NewAddValidateStrategyProtocol.swift */; };
+		DAADC4A51FFC80E600862A90 /* NewAddValidateStrategyMinSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAADC4A41FFC80E500862A90 /* NewAddValidateStrategyMinSteps.swift */; };
+		DAADC4A71FFC826D00862A90 /* NewAddValidateStrategyMinSteps+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAADC4A61FFC826D00862A90 /* NewAddValidateStrategyMinSteps+Constants.swift */; };
 		DAAE61F41FF636F500954EFC /* PhotoRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE61F31FF636F500954EFC /* PhotoRotation.swift */; };
 		DAAE61F51FF636F500954EFC /* PhotoRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE61F31FF636F500954EFC /* PhotoRotation.swift */; };
 		DAAE61F71FF637A700954EFC /* PhotoRotation+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE61F61FF637A700954EFC /* PhotoRotation+Factory.swift */; };
@@ -780,6 +782,8 @@
 		DAADC49E1FFC783600862A90 /* NewAdd+Validate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Validate.swift"; sourceTree = "<group>"; };
 		DAADC4A01FFC7B8F00862A90 /* NewAdd+Save.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Save.swift"; sourceTree = "<group>"; };
 		DAADC4A21FFC7E6400862A90 /* NewAddValidateStrategyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddValidateStrategyProtocol.swift; sourceTree = "<group>"; };
+		DAADC4A41FFC80E500862A90 /* NewAddValidateStrategyMinSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddValidateStrategyMinSteps.swift; sourceTree = "<group>"; };
+		DAADC4A61FFC826D00862A90 /* NewAddValidateStrategyMinSteps+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddValidateStrategyMinSteps+Constants.swift"; sourceTree = "<group>"; };
 		DAAE61F31FF636F500954EFC /* PhotoRotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRotation.swift; sourceTree = "<group>"; };
 		DAAE61F61FF637A700954EFC /* PhotoRotation+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoRotation+Factory.swift"; sourceTree = "<group>"; };
 		DAAE61F91FF6385300954EFC /* PhotoRotation+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoRotation+Constants.swift"; sourceTree = "<group>"; };
@@ -1674,6 +1678,8 @@
 				DA6E80521FF9758C00175F70 /* NewAddDeleteStrategyStepsImages.swift */,
 				DA6E80541FF97AE400175F70 /* NewAddDeleteStrategyBuild.swift */,
 				DAADC4A21FFC7E6400862A90 /* NewAddValidateStrategyProtocol.swift */,
+				DAADC4A41FFC80E500862A90 /* NewAddValidateStrategyMinSteps.swift */,
+				DAADC4A61FFC826D00862A90 /* NewAddValidateStrategyMinSteps+Constants.swift */,
 			);
 			path = NewAdd;
 			sourceTree = "<group>";
@@ -2333,6 +2339,7 @@
 				DA6E804F1FF96D3800175F70 /* NewAddDeleteStrategyProtocol.swift in Sources */,
 				DA4233DC1FEDE4DF0012A589 /* ControllerPhotoCrop.swift in Sources */,
 				DA4233E31FEDE5DD0012A589 /* PhotoCrop.swift in Sources */,
+				DAADC4A51FFC80E600862A90 /* NewAddValidateStrategyMinSteps.swift in Sources */,
 				DAADC49F1FFC783600862A90 /* NewAdd+Validate.swift in Sources */,
 				DA8752DF1FE3ABAF00AE74F5 /* NewAddIngredientAmountTypeSpoons.swift in Sources */,
 				DA71D6A51FDA7107003A33E1 /* ViewText+Constants.swift in Sources */,
@@ -2353,6 +2360,7 @@
 				DAC732D01FF85AB400980854 /* NewAddSectionItemInfoSubtitle.swift in Sources */,
 				DAB786211FF4AE9900579BB5 /* NewAdd+Images.swift in Sources */,
 				DA3421421FE47EB6002B23DA /* ControllerNewAddIngredientAmount+Constants.swift in Sources */,
+				DAADC4A71FFC826D00862A90 /* NewAddValidateStrategyMinSteps+Constants.swift in Sources */,
 				DA5FFE641FE7790000A38154 /* FormatIngredientTypeQuantity+Constants.swift in Sources */,
 				DAA333DC1FDB17EA002D766C /* Database+Constants.swift in Sources */,
 				DA5FFE6A1FE77A2F00A38154 /* FormatIngredientTypeMililitres+Constants.swift in Sources */,

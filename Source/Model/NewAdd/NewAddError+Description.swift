@@ -18,7 +18,8 @@ extension NewAddError:LocalizedError
     private static func descriptionMap() -> [NewAddError:String]
     {
         let map:[NewAddError:String] = [
-            NewAddError.invalidImageData : String.localizedError(key:"NewAddError_invalidImageData")]
+            NewAddError.invalidImageData : String.localizedError(key:"NewAddError_invalidImageData"),
+            NewAddError.validateErrorMinSteps : String.localizedError(key:"NewAddError_validateErrorMinSteps")]
         
         return map
     }
