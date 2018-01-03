@@ -371,6 +371,7 @@
 		DAADC49D1FFC75A800862A90 /* ControllerNewAdd+Done.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAADC49C1FFC75A800862A90 /* ControllerNewAdd+Done.swift */; };
 		DAADC49F1FFC783600862A90 /* NewAdd+Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAADC49E1FFC783600862A90 /* NewAdd+Validate.swift */; };
 		DAADC4A11FFC7B8F00862A90 /* NewAdd+Save.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAADC4A01FFC7B8F00862A90 /* NewAdd+Save.swift */; };
+		DAADC4A31FFC7E6400862A90 /* NewAddValidateStrategyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAADC4A21FFC7E6400862A90 /* NewAddValidateStrategyProtocol.swift */; };
 		DAAE61F41FF636F500954EFC /* PhotoRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE61F31FF636F500954EFC /* PhotoRotation.swift */; };
 		DAAE61F51FF636F500954EFC /* PhotoRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE61F31FF636F500954EFC /* PhotoRotation.swift */; };
 		DAAE61F71FF637A700954EFC /* PhotoRotation+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE61F61FF637A700954EFC /* PhotoRotation+Factory.swift */; };
@@ -778,6 +779,7 @@
 		DAADC49C1FFC75A800862A90 /* ControllerNewAdd+Done.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerNewAdd+Done.swift"; sourceTree = "<group>"; };
 		DAADC49E1FFC783600862A90 /* NewAdd+Validate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Validate.swift"; sourceTree = "<group>"; };
 		DAADC4A01FFC7B8F00862A90 /* NewAdd+Save.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Save.swift"; sourceTree = "<group>"; };
+		DAADC4A21FFC7E6400862A90 /* NewAddValidateStrategyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddValidateStrategyProtocol.swift; sourceTree = "<group>"; };
 		DAAE61F31FF636F500954EFC /* PhotoRotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRotation.swift; sourceTree = "<group>"; };
 		DAAE61F61FF637A700954EFC /* PhotoRotation+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoRotation+Factory.swift"; sourceTree = "<group>"; };
 		DAAE61F91FF6385300954EFC /* PhotoRotation+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoRotation+Constants.swift"; sourceTree = "<group>"; };
@@ -1671,6 +1673,7 @@
 				DA6E80501FF9706A00175F70 /* NewAddDeleteStrategyInfoImage.swift */,
 				DA6E80521FF9758C00175F70 /* NewAddDeleteStrategyStepsImages.swift */,
 				DA6E80541FF97AE400175F70 /* NewAddDeleteStrategyBuild.swift */,
+				DAADC4A21FFC7E6400862A90 /* NewAddValidateStrategyProtocol.swift */,
 			);
 			path = NewAdd;
 			sourceTree = "<group>";
@@ -2373,6 +2376,7 @@
 				DAE7C3841FE0B0C5003190FF /* NewAddIngredientError+Description.swift in Sources */,
 				DAE7C3571FE08281003190FF /* Cloud.swift in Sources */,
 				DABA5EBF1FEA34D20017F865 /* PhotoOptionProtocol.swift in Sources */,
+				DAADC4A31FFC7E6400862A90 /* NewAddValidateStrategyProtocol.swift in Sources */,
 				DA6E805C1FF9873100175F70 /* CloudProviderProtocol.swift in Sources */,
 				DAA333DE1FDB1D81002D766C /* New+Create.swift in Sources */,
 				DA3F0EB61FD74C8700593B83 /* Menu+FactoryAdmin.swift in Sources */,
