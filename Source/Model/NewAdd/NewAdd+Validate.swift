@@ -7,7 +7,8 @@ extension NewAdd
         get
         {
             let strategies:[NewAddValidateStrategyProtocol.Type] = [
-                NewAddValidateStrategyMinSteps.self]
+                NewAddValidateStrategyMinSteps.self,
+                NewAddValidateStrategyTitle.self]
             
             return strategies
         }

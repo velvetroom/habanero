@@ -80,7 +80,7 @@ extension ControllerNewAdd
             
             guard
                 
-                text.count > 0
+                text.isEmpty == false
             
             else
             {

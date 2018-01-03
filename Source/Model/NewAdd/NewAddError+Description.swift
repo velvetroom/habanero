@@ -24,7 +24,8 @@ extension NewAddError:LocalizedError
         
         let map:[NewAddError:String] = [
             NewAddError.invalidImageData : String.localizedError(key:"NewAddError_invalidImageData"),
-            NewAddError.validateErrorMinSteps : messageMinSteps]
+            NewAddError.validateErrorMinSteps : messageMinSteps,
+            NewAddError.validateErrorTitle : String.localizedError(key:"NewAddError_validateErrorTitle")]
         
         return map
     }
