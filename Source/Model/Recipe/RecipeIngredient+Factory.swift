@@ -7,7 +7,11 @@ extension RecipeIngredient
         get
         {
             let map:[IngredientAmountType:RecipeIngredient.Type] = [
-                :]
+                IngredientAmountType.cups : RecipeIngredientCups.self,
+                IngredientAmountType.grams : RecipeIngredientGrams.self,
+                IngredientAmountType.mililitres : RecipeIngredientMililitres.self,
+                IngredientAmountType.quantity : RecipeIngredientQuantity.self,
+                IngredientAmountType.spoons : RecipeIngredientSpoons.self,]
             
             return map
         }
