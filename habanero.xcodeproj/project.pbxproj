@@ -521,6 +521,8 @@
 		DACF89ED1FFDD84700F4FCF0 /* RecipeIngredientMililitres.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF89EB1FFDD84700F4FCF0 /* RecipeIngredientMililitres.swift */; };
 		DACF89EF1FFDD8A900F4FCF0 /* RecipeIngredientQuantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF89EE1FFDD8A900F4FCF0 /* RecipeIngredientQuantity.swift */; };
 		DACF89F01FFDD8A900F4FCF0 /* RecipeIngredientQuantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF89EE1FFDD8A900F4FCF0 /* RecipeIngredientQuantity.swift */; };
+		DACF89F21FFDD8F800F4FCF0 /* RecipeIngredientSpoons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF89F11FFDD8F800F4FCF0 /* RecipeIngredientSpoons.swift */; };
+		DACF89F31FFDD8F800F4FCF0 /* RecipeIngredientSpoons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF89F11FFDD8F800F4FCF0 /* RecipeIngredientSpoons.swift */; };
 		DAE5E4801FE489C100CC40BA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5E47F1FE489C100CC40BA /* Settings.swift */; };
 		DAE5E4811FE489C100CC40BA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5E47F1FE489C100CC40BA /* Settings.swift */; };
 		DAE5E4831FE48C6100CC40BA /* SettingsMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5E4821FE48C6100CC40BA /* SettingsMetrics.swift */; };
@@ -915,6 +917,7 @@
 		DACF89E81FFDD7B400F4FCF0 /* RecipeIngredientGrams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeIngredientGrams.swift; sourceTree = "<group>"; };
 		DACF89EB1FFDD84700F4FCF0 /* RecipeIngredientMililitres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeIngredientMililitres.swift; sourceTree = "<group>"; };
 		DACF89EE1FFDD8A900F4FCF0 /* RecipeIngredientQuantity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeIngredientQuantity.swift; sourceTree = "<group>"; };
+		DACF89F11FFDD8F800F4FCF0 /* RecipeIngredientSpoons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeIngredientSpoons.swift; sourceTree = "<group>"; };
 		DAE5E47F1FE489C100CC40BA /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		DAE5E4821FE48C6100CC40BA /* SettingsMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMetrics.swift; sourceTree = "<group>"; };
 		DAE5E4851FE48CA700CC40BA /* Settings+Computed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings+Computed.swift"; sourceTree = "<group>"; };
@@ -1015,6 +1018,7 @@
 				DACF89E81FFDD7B400F4FCF0 /* RecipeIngredientGrams.swift */,
 				DACF89EB1FFDD84700F4FCF0 /* RecipeIngredientMililitres.swift */,
 				DACF89EE1FFDD8A900F4FCF0 /* RecipeIngredientQuantity.swift */,
+				DACF89F11FFDD8F800F4FCF0 /* RecipeIngredientSpoons.swift */,
 			);
 			path = Recipe;
 			sourceTree = "<group>";
@@ -2152,6 +2156,7 @@
 				DA74F0D01FE6156D00F45310 /* FormatIngredientTypeQuantity.swift in Sources */,
 				DA71D69B1FDA65AB003A33E1 /* ViewText.swift in Sources */,
 				DA35DD2C1FFDBF1C0047881F /* Storage+Save.swift in Sources */,
+				DACF89F21FFDD8F800F4FCF0 /* RecipeIngredientSpoons.swift in Sources */,
 				DA2C176D1FEF3A91001BDA54 /* ViewButtonContinue.swift in Sources */,
 				DA855E0E1FF3839000E1B69F /* PhotoCropMask.swift in Sources */,
 				DA5A97CC1FD605E1006223BA /* MenuItemGeneric.swift in Sources */,
@@ -2347,6 +2352,7 @@
 				DA5D71C81FDB56E200429F5D /* NewAddSectionItemInfoDuration.swift in Sources */,
 				DA60429B1FE2190100758A2F /* ArchNewAddIngredientAmount.swift in Sources */,
 				DA10A1E61FFB1FC700166CF7 /* Controller+Alert.swift in Sources */,
+				DACF89F31FFDD8F800F4FCF0 /* RecipeIngredientSpoons.swift in Sources */,
 				DACEB3AC1FDCAE700089B3FE /* ViewNewListCellSteps.swift in Sources */,
 				DAC732CE1FF853F600980854 /* ViewNewAddListCellInfoSubtitle.swift in Sources */,
 				DA9089841FD4CE2E00C1208A /* ControllerParent+Transitions.swift in Sources */,
