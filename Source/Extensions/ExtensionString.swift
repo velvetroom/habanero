@@ -36,7 +36,7 @@ extension String
     
     func appendingPathComponent(component:String) -> String
     {
-        var newString:String = String()
+        var newString:String = self
         newString.append("/")
         newString.append(component)
         

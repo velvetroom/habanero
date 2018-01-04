@@ -59,6 +59,44 @@ extension NewAdd
         recipeIdentifier:String,
         completion:@escaping((Error?) -> ()))
     {
+        guard
+        
+            let build:Build = self.build
+        
+        else
+        {
+            return
+        }
+        
+        self.storage.saveRecipeImage(
+            recipeIdentifier:recipeIdentifier,
+            build:build)
+        { [weak self] (error:Error?) in
+            
+            guard
+            
+                error == nil
+            
+            else
+            {
+                self?.finishedSaving(
+                    error:error,
+                    completion:completion)
+                
+                return
+            }
+            
+            self?.createSteps(
+                recipeIdentifier:recipeIdentifier,
+                completion:completion)
+        }
+    }
+    
+    private func createSteps(
+        recipeIdentifier:String,
+        completion:@escaping((Error?) -> ()))
+    {
+        
     }
     
     private func finishedSaving(
