@@ -8,7 +8,10 @@ extension Cloud
         name:String,
         completion:@escaping((String?, Error?) -> ()))
     {
-        let ingredientData:[String:Any] = Ingredient.factoryJson(name:name)
+        var ingredientBuilder:IngredientBuilder = IngredientBuilder()
+        ingredientBuilder.name = name
+        
+        let ingredientData:[String:Any] = ingredientBuilder.json
         let ingredientList:IngredientList = IngredientList()
         
         self.provider.createItemAt(
