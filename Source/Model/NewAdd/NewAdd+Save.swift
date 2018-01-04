@@ -9,7 +9,7 @@ extension NewAdd
         
     }
     
-    private func finishSaving(
+    private func finishedSaving(
         error:Error?,
         completion:@escaping((Error?) -> ()))
     {
