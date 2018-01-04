@@ -10,5 +10,7 @@ extension RecipeIngredient
         static let cups:String = "cups"
         static let grams:String = "grams"
         static let mililitres:String = "mililitres"
+        static let quantity:String = "quantity"
+        static let spoons:String = "spoons"
     }
 }
