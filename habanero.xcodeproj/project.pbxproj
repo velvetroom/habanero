@@ -65,6 +65,8 @@
 		DA35DD0C1FFDAADF0047881F /* RecipeStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35DD0A1FFDAADF0047881F /* RecipeStatus.swift */; };
 		DA35DD0E1FFDAB280047881F /* Recipe+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35DD0D1FFDAB280047881F /* Recipe+Keys.swift */; };
 		DA35DD0F1FFDAB280047881F /* Recipe+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35DD0D1FFDAB280047881F /* Recipe+Keys.swift */; };
+		DA35DD111FFDAEEB0047881F /* CloudItemBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35DD101FFDAEEB0047881F /* CloudItemBuilderProtocol.swift */; };
+		DA35DD121FFDAEEB0047881F /* CloudItemBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35DD101FFDAEEB0047881F /* CloudItemBuilderProtocol.swift */; };
 		DA3F0E731FDF0BC50037C94D /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E721FDF0BC50037C94D /* Ingredient.swift */; };
 		DA3F0E741FDF0BC50037C94D /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E721FDF0BC50037C94D /* Ingredient.swift */; };
 		DA3F0E7C1FDF326A0037C94D /* Ingredient+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E7B1FDF326A0037C94D /* Ingredient+Keys.swift */; };
@@ -585,6 +587,7 @@
 		DA35DD071FFDA8C20047881F /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		DA35DD0A1FFDAADF0047881F /* RecipeStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStatus.swift; sourceTree = "<group>"; };
 		DA35DD0D1FFDAB280047881F /* Recipe+Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+Keys.swift"; sourceTree = "<group>"; };
+		DA35DD101FFDAEEB0047881F /* CloudItemBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudItemBuilderProtocol.swift; sourceTree = "<group>"; };
 		DA3F0E721FDF0BC50037C94D /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		DA3F0E7B1FDF326A0037C94D /* Ingredient+Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+Keys.swift"; sourceTree = "<group>"; };
 		DA3F0E7E1FDF32D10037C94D /* Ingredient+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+Factory.swift"; sourceTree = "<group>"; };
@@ -1602,6 +1605,7 @@
 				DAE7C3701FE0971B003190FF /* CloudListProtocol.swift */,
 				DA6E80721FF9A18A00175F70 /* CloudListProtocol+Default.swift */,
 				DAE7C34A1FE08281003190FF /* CloudItemProtocol.swift */,
+				DA35DD101FFDAEEB0047881F /* CloudItemBuilderProtocol.swift */,
 				DAE7C3471FE08281003190FF /* CloudError.swift */,
 				DAE7C34B1FE08281003190FF /* CloudError+Description.swift */,
 			);
@@ -2169,6 +2173,7 @@
 				DA71D6AD1FDA7A01003A33E1 /* ViewTextBar+Constants.swift in Sources */,
 				DACF55391FD7661E00069701 /* ExtensionURLResponse.swift in Sources */,
 				DA70AFBF1FD5A8B10016B0DC /* ViewHome.swift in Sources */,
+				DA35DD111FFDAEEB0047881F /* CloudItemBuilderProtocol.swift in Sources */,
 				DA74F0AB1FE6084100F45310 /* IngredientAmountType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2434,6 +2439,7 @@
 				DAE7C37E1FE0A835003190FF /* NewAddIngredient+Select.swift in Sources */,
 				DA1F04F81FE8DF3D00DF03A8 /* ViewNewAddListCellStepText+Constants.swift in Sources */,
 				DA91EAF31FD62C1F0063560D /* View.swift in Sources */,
+				DA35DD121FFDAEEB0047881F /* CloudItemBuilderProtocol.swift in Sources */,
 				DABDF3391FEB6B87002EF842 /* PhotoOptionCamera.swift in Sources */,
 				DACF553E1FD7661E00069701 /* ExtensionNSLayoutConstraint.swift in Sources */,
 				DA992D7A1FD61EE500A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */,
