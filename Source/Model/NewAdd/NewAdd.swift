@@ -7,10 +7,12 @@ final class NewAdd:Model<ArchNewAdd>
     var settings:Settings?
     var sections:[NewAddSectionProtocol]
     var movingCellDelta:CGPoint?
+    let cloud:Cloud
     
     required init()
     {
         self.sections = []
+        self.cloud = Cloud()
         
         super.init()
     }
