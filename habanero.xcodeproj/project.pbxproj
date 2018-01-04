@@ -73,8 +73,6 @@
 		DA3F0E741FDF0BC50037C94D /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E721FDF0BC50037C94D /* Ingredient.swift */; };
 		DA3F0E7C1FDF326A0037C94D /* Ingredient+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E7B1FDF326A0037C94D /* Ingredient+Keys.swift */; };
 		DA3F0E7D1FDF326A0037C94D /* Ingredient+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E7B1FDF326A0037C94D /* Ingredient+Keys.swift */; };
-		DA3F0E7F1FDF32D10037C94D /* Ingredient+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E7E1FDF32D10037C94D /* Ingredient+Factory.swift */; };
-		DA3F0E801FDF32D10037C94D /* Ingredient+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E7E1FDF32D10037C94D /* Ingredient+Factory.swift */; };
 		DA3F0E881FDF44920037C94D /* ArchNewAddIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E871FDF44920037C94D /* ArchNewAddIngredient.swift */; };
 		DA3F0E8A1FDF45350037C94D /* ControllerNewAddIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E891FDF45350037C94D /* ControllerNewAddIngredient.swift */; };
 		DA3F0E8D1FDF457D0037C94D /* NewAddIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E8C1FDF457D0037C94D /* NewAddIngredient.swift */; };
@@ -593,7 +591,6 @@
 		DA35DD131FFDAF460047881F /* IngredientBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientBuilder.swift; sourceTree = "<group>"; };
 		DA3F0E721FDF0BC50037C94D /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		DA3F0E7B1FDF326A0037C94D /* Ingredient+Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+Keys.swift"; sourceTree = "<group>"; };
-		DA3F0E7E1FDF32D10037C94D /* Ingredient+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+Factory.swift"; sourceTree = "<group>"; };
 		DA3F0E871FDF44920037C94D /* ArchNewAddIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNewAddIngredient.swift; sourceTree = "<group>"; };
 		DA3F0E891FDF45350037C94D /* ControllerNewAddIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerNewAddIngredient.swift; sourceTree = "<group>"; };
 		DA3F0E8C1FDF457D0037C94D /* NewAddIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddIngredient.swift; sourceTree = "<group>"; };
@@ -973,7 +970,6 @@
 			children = (
 				DA3F0E721FDF0BC50037C94D /* Ingredient.swift */,
 				DA3F0E7B1FDF326A0037C94D /* Ingredient+Keys.swift */,
-				DA3F0E7E1FDF32D10037C94D /* Ingredient+Factory.swift */,
 				DA35DD131FFDAF460047881F /* IngredientBuilder.swift */,
 				DAE7C3761FE0996B003190FF /* IngredientList.swift */,
 				DA74F0AA1FE6084100F45310 /* IngredientAmountType.swift */,
@@ -2111,7 +2107,6 @@
 				DA74F0D31FE6158A00F45310 /* FormatIngredientTypeSpoons.swift in Sources */,
 				DA11BA0B1FD8F3DD0038F9B0 /* ViewBarBack.swift in Sources */,
 				DACF553B1FD7661E00069701 /* ExtensionMKAnnotationView.swift in Sources */,
-				DA3F0E7F1FDF32D10037C94D /* Ingredient+Factory.swift in Sources */,
 				DACF55311FD7661E00069701 /* ExtensionCGImage.swift in Sources */,
 				DA4233E61FEDE60F0012A589 /* ViewPhotoCrop.swift in Sources */,
 				DACF55371FD7661E00069701 /* ExtensionFileManager.swift in Sources */,
@@ -2255,7 +2250,6 @@
 				DACF55481FD7661E00069701 /* ExtensionString.swift in Sources */,
 				DA84C0EF1FD73F59008959EA /* ArchNew.swift in Sources */,
 				DA8752D71FE3AB8D00AE74F5 /* NewAddIngredientAmountTypeCups.swift in Sources */,
-				DA3F0E801FDF32D10037C94D /* Ingredient+Factory.swift in Sources */,
 				DA58C6E71FD9E216000E6F30 /* NewAdd+Factory.swift in Sources */,
 				DA4233EA1FEDEBE10012A589 /* ViewPhotoCropMenu.swift in Sources */,
 				DA2C17771FEF4305001BDA54 /* ViewPhotoCropDisplayImage.swift in Sources */,
