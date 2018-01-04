@@ -83,6 +83,8 @@
 		DA35DD271FFDBBF70047881F /* StorageProviderFirebase+Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35DD251FFDBBF70047881F /* StorageProviderFirebase+Provider.swift */; };
 		DA35DD291FFDBDF70047881F /* StorageProviderFirebase+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35DD281FFDBDF70047881F /* StorageProviderFirebase+Constants.swift */; };
 		DA35DD2A1FFDBDF70047881F /* StorageProviderFirebase+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35DD281FFDBDF70047881F /* StorageProviderFirebase+Constants.swift */; };
+		DA35DD2C1FFDBF1C0047881F /* Storage+Save.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35DD2B1FFDBF1C0047881F /* Storage+Save.swift */; };
+		DA35DD2D1FFDBF1C0047881F /* Storage+Save.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35DD2B1FFDBF1C0047881F /* Storage+Save.swift */; };
 		DA3F0E731FDF0BC50037C94D /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E721FDF0BC50037C94D /* Ingredient.swift */; };
 		DA3F0E741FDF0BC50037C94D /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E721FDF0BC50037C94D /* Ingredient.swift */; };
 		DA3F0E7C1FDF326A0037C94D /* Ingredient+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E7B1FDF326A0037C94D /* Ingredient+Keys.swift */; };
@@ -610,6 +612,7 @@
 		DA35DD221FFDBAC50047881F /* StorageContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageContainer.swift; sourceTree = "<group>"; };
 		DA35DD251FFDBBF70047881F /* StorageProviderFirebase+Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageProviderFirebase+Provider.swift"; sourceTree = "<group>"; };
 		DA35DD281FFDBDF70047881F /* StorageProviderFirebase+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageProviderFirebase+Constants.swift"; sourceTree = "<group>"; };
+		DA35DD2B1FFDBF1C0047881F /* Storage+Save.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storage+Save.swift"; sourceTree = "<group>"; };
 		DA3F0E721FDF0BC50037C94D /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		DA3F0E7B1FDF326A0037C94D /* Ingredient+Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+Keys.swift"; sourceTree = "<group>"; };
 		DA3F0E871FDF44920037C94D /* ArchNewAddIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNewAddIngredient.swift; sourceTree = "<group>"; };
@@ -1113,6 +1116,7 @@
 			isa = PBXGroup;
 			children = (
 				DA6E807D1FF9B60B00175F70 /* Storage.swift */,
+				DA35DD2B1FFDBF1C0047881F /* Storage+Save.swift */,
 				DA35DD221FFDBAC50047881F /* StorageContainer.swift */,
 				DA35DD1C1FFDB91A0047881F /* StorageError.swift */,
 				DA35DD1F1FFDB95B0047881F /* StorageError+Description.swift */,
@@ -2115,6 +2119,7 @@
 				DACF552B1FD7661E00069701 /* ExtensionDictionary.swift in Sources */,
 				DA74F0D01FE6156D00F45310 /* FormatIngredientTypeQuantity.swift in Sources */,
 				DA71D69B1FDA65AB003A33E1 /* ViewText.swift in Sources */,
+				DA35DD2C1FFDBF1C0047881F /* Storage+Save.swift in Sources */,
 				DA2C176D1FEF3A91001BDA54 /* ViewButtonContinue.swift in Sources */,
 				DA855E0E1FF3839000E1B69F /* PhotoCropMask.swift in Sources */,
 				DA5A97CC1FD605E1006223BA /* MenuItemGeneric.swift in Sources */,
@@ -2474,6 +2479,7 @@
 				DAE7C3421FE07F6C003190FF /* NewAddIngredient+Create.swift in Sources */,
 				DA6042991FE211EF00758A2F /* NewAddSectionItemIngredient.swift in Sources */,
 				DA71D67F1FDA4BF6003A33E1 /* ViewNewAddListFooter.swift in Sources */,
+				DA35DD2D1FFDBF1C0047881F /* Storage+Save.swift in Sources */,
 				DAB786231FF4B3B400579BB5 /* NewAddError.swift in Sources */,
 				DA8752CD1FE3866700AE74F5 /* ViewNewAddIngredientAmountList+Constants.swift in Sources */,
 				DAE7C37E1FE0A835003190FF /* NewAddIngredient+Select.swift in Sources */,
