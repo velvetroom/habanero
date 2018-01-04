@@ -4,6 +4,7 @@ final class Recipe:CloudItemProtocol
 {
     let identifier:String
     let parentPath:String
+    let status:RecipeStatus
     
     init?(
         identifier:String,

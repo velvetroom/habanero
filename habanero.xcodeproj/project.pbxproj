@@ -63,6 +63,8 @@
 		DA35DD091FFDA8C20047881F /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35DD071FFDA8C20047881F /* Recipe.swift */; };
 		DA35DD0B1FFDAADF0047881F /* RecipeStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35DD0A1FFDAADF0047881F /* RecipeStatus.swift */; };
 		DA35DD0C1FFDAADF0047881F /* RecipeStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35DD0A1FFDAADF0047881F /* RecipeStatus.swift */; };
+		DA35DD0E1FFDAB280047881F /* Recipe+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35DD0D1FFDAB280047881F /* Recipe+Keys.swift */; };
+		DA35DD0F1FFDAB280047881F /* Recipe+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35DD0D1FFDAB280047881F /* Recipe+Keys.swift */; };
 		DA3F0E731FDF0BC50037C94D /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E721FDF0BC50037C94D /* Ingredient.swift */; };
 		DA3F0E741FDF0BC50037C94D /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E721FDF0BC50037C94D /* Ingredient.swift */; };
 		DA3F0E7C1FDF326A0037C94D /* Ingredient+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E7B1FDF326A0037C94D /* Ingredient+Keys.swift */; };
@@ -584,6 +586,7 @@
 		DA3421411FE47EB6002B23DA /* ControllerNewAddIngredientAmount+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerNewAddIngredientAmount+Constants.swift"; sourceTree = "<group>"; };
 		DA35DD071FFDA8C20047881F /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		DA35DD0A1FFDAADF0047881F /* RecipeStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStatus.swift; sourceTree = "<group>"; };
+		DA35DD0D1FFDAB280047881F /* Recipe+Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+Keys.swift"; sourceTree = "<group>"; };
 		DA3F0E721FDF0BC50037C94D /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		DA3F0E7B1FDF326A0037C94D /* Ingredient+Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+Keys.swift"; sourceTree = "<group>"; };
 		DA3F0E7E1FDF32D10037C94D /* Ingredient+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+Factory.swift"; sourceTree = "<group>"; };
@@ -955,6 +958,7 @@
 			isa = PBXGroup;
 			children = (
 				DA35DD071FFDA8C20047881F /* Recipe.swift */,
+				DA35DD0D1FFDAB280047881F /* Recipe+Keys.swift */,
 				DA35DD0A1FFDAADF0047881F /* RecipeStatus.swift */,
 				DA1F04FC1FE8E1DA00DF03A8 /* RecipeStepType.swift */,
 			);
@@ -2134,6 +2138,7 @@
 				DA9089251FD4C66000C1208A /* Arch.swift in Sources */,
 				DAAE61F71FF637A700954EFC /* PhotoRotation+Factory.swift in Sources */,
 				DAA333D71FDB17EA002D766C /* Database.swift in Sources */,
+				DA35DD0E1FFDAB280047881F /* Recipe+Keys.swift in Sources */,
 				DA855E0B1FF371D100E1B69F /* PhotoCropPoints+Factory.swift in Sources */,
 				DA6E80641FF98B3E00175F70 /* CloudProviderFirebase+Provider.swift in Sources */,
 				DA5FFE631FE7790000A38154 /* FormatIngredientTypeQuantity+Constants.swift in Sources */,
@@ -2374,6 +2379,7 @@
 				DA9089861FD4CE2E00C1208A /* ControllerParent.swift in Sources */,
 				DA91EB151FD62C1F0063560D /* ViewGradient.swift in Sources */,
 				DA4233F01FEDF7D50012A589 /* ViewPhotoCropMenu+Constants.swift in Sources */,
+				DA35DD0F1FFDAB280047881F /* Recipe+Keys.swift in Sources */,
 				DAAE61FB1FF6385300954EFC /* PhotoRotation+Constants.swift in Sources */,
 				DA84C0F51FD74009008959EA /* New.swift in Sources */,
 				DA91EB1D1FD62C1F0063560D /* ViewSpinner.swift in Sources */,
