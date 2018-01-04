@@ -6,7 +6,7 @@ extension CloudProviderFirebase
  
     func createItemAt(
         entity:CloudEntityProtocol,
-        width json:[String:Any],
+        with json:[String:Any],
         completion:@escaping((String?, Error?) -> ()))
     {
         self.createDocumentAt(

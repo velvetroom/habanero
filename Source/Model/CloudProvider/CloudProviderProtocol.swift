@@ -4,7 +4,7 @@ protocol CloudProviderProtocol
 {
     func createItemAt(
         entity:CloudEntityProtocol,
-        width json:[String:Any],
+        with json:[String:Any],
         completion:@escaping((String?, Error?) -> ()))
     
     func loadList<T:CloudListProtocol>(
