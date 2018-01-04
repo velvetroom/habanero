@@ -1,20 +1,10 @@
 import Foundation
 
-final class Ingredient:CloudItemProtocol, CloudSerialisableProtocol
+final class Ingredient:CloudItemProtocol
 {
     let parentPath:String
     let identifier:String
     let name:String
-    
-    var json:[String:Any]
-    {
-        get
-        {
-            let json:[String:Any] = Ingredient.factoryJson(item:self)
-            
-            return json
-        }
-    }
     
     init?(
         identifier:String,
