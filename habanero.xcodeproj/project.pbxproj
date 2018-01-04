@@ -73,6 +73,10 @@
 		DA35DD181FFDB11E0047881F /* RecipeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35DD161FFDB11E0047881F /* RecipeBuilder.swift */; };
 		DA35DD1A1FFDB4A30047881F /* RecipeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35DD191FFDB4A30047881F /* RecipeList.swift */; };
 		DA35DD1B1FFDB4A30047881F /* RecipeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35DD191FFDB4A30047881F /* RecipeList.swift */; };
+		DA35DD1D1FFDB91A0047881F /* StorageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35DD1C1FFDB91A0047881F /* StorageError.swift */; };
+		DA35DD1E1FFDB91A0047881F /* StorageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35DD1C1FFDB91A0047881F /* StorageError.swift */; };
+		DA35DD201FFDB95B0047881F /* StorageError+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35DD1F1FFDB95B0047881F /* StorageError+Description.swift */; };
+		DA35DD211FFDB95B0047881F /* StorageError+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35DD1F1FFDB95B0047881F /* StorageError+Description.swift */; };
 		DA3F0E731FDF0BC50037C94D /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E721FDF0BC50037C94D /* Ingredient.swift */; };
 		DA3F0E741FDF0BC50037C94D /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E721FDF0BC50037C94D /* Ingredient.swift */; };
 		DA3F0E7C1FDF326A0037C94D /* Ingredient+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E7B1FDF326A0037C94D /* Ingredient+Keys.swift */; };
@@ -595,6 +599,8 @@
 		DA35DD131FFDAF460047881F /* IngredientBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientBuilder.swift; sourceTree = "<group>"; };
 		DA35DD161FFDB11E0047881F /* RecipeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeBuilder.swift; sourceTree = "<group>"; };
 		DA35DD191FFDB4A30047881F /* RecipeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeList.swift; sourceTree = "<group>"; };
+		DA35DD1C1FFDB91A0047881F /* StorageError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageError.swift; sourceTree = "<group>"; };
+		DA35DD1F1FFDB95B0047881F /* StorageError+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageError+Description.swift"; sourceTree = "<group>"; };
 		DA3F0E721FDF0BC50037C94D /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		DA3F0E7B1FDF326A0037C94D /* Ingredient+Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+Keys.swift"; sourceTree = "<group>"; };
 		DA3F0E871FDF44920037C94D /* ArchNewAddIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNewAddIngredient.swift; sourceTree = "<group>"; };
@@ -1098,6 +1104,8 @@
 			isa = PBXGroup;
 			children = (
 				DA6E807D1FF9B60B00175F70 /* Storage.swift */,
+				DA35DD1C1FFDB91A0047881F /* StorageError.swift */,
+				DA35DD1F1FFDB95B0047881F /* StorageError+Description.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -2038,6 +2046,7 @@
 				DAE7C3541FE08281003190FF /* CloudError.swift in Sources */,
 				DA91EB001FD62C1F0063560D /* ViewParent+Gesture.swift in Sources */,
 				DA91EAF41FD62C1F0063560D /* ViewParent.swift in Sources */,
+				DA35DD1D1FFDB91A0047881F /* StorageError.swift in Sources */,
 				DACF55351FD7661E00069701 /* ExtensionString+Constants.swift in Sources */,
 				DABA5EAD1FEA2E170017F865 /* ControllerPhoto.swift in Sources */,
 				DAE7C3711FE0971B003190FF /* CloudListProtocol.swift in Sources */,
@@ -2109,6 +2118,7 @@
 				DA6E807E1FF9B60B00175F70 /* Storage.swift in Sources */,
 				DA9089211FD4C66000C1208A /* ControllerParent+Transitions.swift in Sources */,
 				DAE5E4891FE48F1D00CC40BA /* Home+Settings.swift in Sources */,
+				DA35DD201FFDB95B0047881F /* StorageError+Description.swift in Sources */,
 				DA5FFE661FE779C300A38154 /* FormatIngredientTypeSpoons+Constants.swift in Sources */,
 				DAE7C36E1FE093D1003190FF /* Cloud+Load.swift in Sources */,
 				DA91EB1C1FD62C1F0063560D /* ViewSpinner.swift in Sources */,
@@ -2212,6 +2222,7 @@
 				DA16F1641FDFB4C000EB6877 /* ControllerNewAdd+Ingredients.swift in Sources */,
 				DABA5EAA1FEA2DAC0017F865 /* ArchPhoto.swift in Sources */,
 				DA3F0E8A1FDF45350037C94D /* ControllerNewAddIngredient.swift in Sources */,
+				DA35DD1E1FFDB91A0047881F /* StorageError.swift in Sources */,
 				DAA26FB01FE96F74005855F6 /* ViewNewAddListCellDraggableProtocol.swift in Sources */,
 				DAE5E4841FE48C6100CC40BA /* SettingsMetrics.swift in Sources */,
 				DA71D6AB1FDA74D8003A33E1 /* ViewTextBar.swift in Sources */,
@@ -2489,6 +2500,7 @@
 				DA8752E31FE3B27100AE74F5 /* ViewNewAddIngredientAmountList+Actions.swift in Sources */,
 				DA35DD151FFDAF460047881F /* IngredientBuilder.swift in Sources */,
 				DAE7C33A1FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift in Sources */,
+				DA35DD211FFDB95B0047881F /* StorageError+Description.swift in Sources */,
 				DAE5E4811FE489C100CC40BA /* Settings.swift in Sources */,
 				DA992D791FD61ED700A6CFEF /* MenuItemGenericProtocol.swift in Sources */,
 				DA6042971FE20F3B00758A2F /* BuildIngredientCups+Computed.swift in Sources */,
