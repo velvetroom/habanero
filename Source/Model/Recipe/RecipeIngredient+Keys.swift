@@ -9,5 +9,6 @@ extension RecipeIngredient
         static let ingredientName:String = "ingredientName"
         static let cups:String = "cups"
         static let grams:String = "grams"
+        static let mililitres:String = "mililitres"
     }
 }
