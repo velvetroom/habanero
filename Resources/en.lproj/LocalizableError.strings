@@ -4,6 +4,7 @@ CloudError_loadItemDataFailed="Incorrect item response from server";
 CloudError_loadListFailed="Failed loading items list";
 StorageError_saveFailed="Save failed";
 StorageError_loadFailed="Load failed";
+StorageError_fileNotFound="File not found";
 StorageError_deleteFailed="Delete failed";
 NewAddIngredientError_ingredientAlreadyAdded="Ingredient already on Recipe";
 NewAddError_validateErrorMinSteps="Recipe should have at least %@ steps";

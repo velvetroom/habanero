@@ -12,30 +12,64 @@ final class StorageProviderFirebase:StorageProviderProtocol
     
     //MARK: internal
     
-    func saveData(path:String, data:Data, completionHandler:@escaping((String?) -> ()))
+    func saveData(
+        data:Data,
+        at path:String,
+        completion:@escaping((Error?) -> ()))
     {
-//        let childReference:StorageReference = reference.child(path)
-//        childReference.putData(
-//            data,
-//            metadata:nil)
-//        { (metaData:StorageMetadata?, error:Error?) in
-//            
-//            let errorString:String? = error?.localizedDescription
-//            completionHandler(errorString)
-//        }
+        let childReference:StorageReference = self.reference.child(path)
+        
+        childReference.putData(
+            data,
+            metadata:nil)
+        { (metadata:StorageMetadata?, error:Error?) in
+            
+            guard
+            
+                error == nil
+            
+            else
+            {
+                completion(StorageError.saveFailed)
+                
+                return
+            }
+            
+            completion(nil)
+        }
     }
     
-    func loadData(path:String, completionHandler:@escaping((Data?, Error?) -> ()))
+    func loadData(
+        path:String,
+        completion:@escaping((Data?, Error?) -> ()))
     {
-//        let childReference:StorageReference = reference.child(path)
-//        childReference.getData(
-//            maxSize:kTenMegaBytes,
-//            completion:completionHandler)
-    }
-    
-    func deleteData(path:String, completionHandler:@escaping((Error?) -> ()))
-    {
-//        let childReference:StorageReference = reference.child(path)
-//        childReference.delete(completion:completionHandler)
+        let childReference:StorageReference = self.reference.child(path)
+        childReference.getData(maxSize:StorageProviderFirebase.Constants.maxFileSize)
+        { (data:Data?, error:Error?) in
+            
+            guard
+            
+                error == nil
+            
+            else
+            {
+                completion(nil, StorageError.loadFailed)
+                
+                return
+            }
+            
+            guard
+            
+                let data:Data = data
+            
+            else
+            {
+                completion(nil, StorageError.fileNotFound)
+                
+                return
+            }
+            
+            completion(data, nil)
+        }
     }
 }

@@ -20,6 +20,7 @@ extension StorageError:LocalizedError
         let map:[StorageError:String] = [
             StorageError.saveFailed : String.localizedError(key:"StorageError_saveFailed"),
             StorageError.loadFailed : String.localizedError(key:"StorageError_loadFailed"),
+            StorageError.fileNotFound : String.localizedError(key:"StorageError_fileNotFound"),
             StorageError.deleteFailed : String.localizedError(key:"StorageError_deleteFailed")]
         
         return map
