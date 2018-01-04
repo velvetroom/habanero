@@ -1,8 +1,8 @@
 import Foundation
 
-protocol CloudItemBuilderProtocol {
-    
-    var json:[String:AnyObject] { get }
+protocol CloudItemBuilderProtocol
+{
+    var json:[String:Any] { get }
     
     init()
 }
