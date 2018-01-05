@@ -23,7 +23,9 @@ extension Cloud
     {
         guard
         
-            let ingredient:BuildIngredientCups = ingredient as? BuildIngredientCups
+            let ingredient:BuildIngredientCups = ingredient as? BuildIngredientCups,
+            let ingredientIdentifier:String = ingredient.cloudId,
+            let ingredientName:String = ingredient.name
         
         else
         {
@@ -32,6 +34,9 @@ extension Cloud
         
         var builder:RecipeIngredientCupsBuilder = RecipeIngredientCupsBuilder()
         builder.cups = ingredient.cups
+        builder.amountType = ingredient.ingredientAmountType
+        builder.ingredientIdentifier = ingredientIdentifier
+        builder.ingredientName = ingredientName
         
         let json:[String:Any] = builder.json
         
@@ -42,7 +47,9 @@ extension Cloud
     {
         guard
             
-            let ingredient:BuildIngredientGrams = ingredient as? BuildIngredientGrams
+            let ingredient:BuildIngredientGrams = ingredient as? BuildIngredientGrams,
+            let ingredientIdentifier:String = ingredient.cloudId,
+            let ingredientName:String = ingredient.name
             
         else
         {
@@ -51,6 +58,9 @@ extension Cloud
         
         var builder:RecipeIngredientGramsBuilder = RecipeIngredientGramsBuilder()
         builder.grams = Int(ingredient.grams)
+        builder.amountType = ingredient.ingredientAmountType
+        builder.ingredientIdentifier = ingredientIdentifier
+        builder.ingredientName = ingredientName
         
         let json:[String:Any] = builder.json
         
@@ -61,7 +71,9 @@ extension Cloud
     {
         guard
             
-            let ingredient:BuildIngredientMililitres = ingredient as? BuildIngredientMililitres
+            let ingredient:BuildIngredientMililitres = ingredient as? BuildIngredientMililitres,
+            let ingredientIdentifier:String = ingredient.cloudId,
+            let ingredientName:String = ingredient.name
             
         else
         {
@@ -70,6 +82,9 @@ extension Cloud
         
         var builder:RecipeIngredientMililitresBuilder = RecipeIngredientMililitresBuilder()
         builder.mililitres = Int(ingredient.mililitres)
+        builder.amountType = ingredient.ingredientAmountType
+        builder.ingredientIdentifier = ingredientIdentifier
+        builder.ingredientName = ingredientName
         
         let json:[String:Any] = builder.json
         
@@ -80,7 +95,9 @@ extension Cloud
     {
         guard
             
-            let ingredient:BuildIngredientQuantity = ingredient as? BuildIngredientQuantity
+            let ingredient:BuildIngredientQuantity = ingredient as? BuildIngredientQuantity,
+            let ingredientIdentifier:String = ingredient.cloudId,
+            let ingredientName:String = ingredient.name
             
         else
         {
@@ -89,6 +106,9 @@ extension Cloud
         
         var builder:RecipeIngredientQuantityBuilder = RecipeIngredientQuantityBuilder()
         builder.quantity = ingredient.quantity
+        builder.amountType = ingredient.ingredientAmountType
+        builder.ingredientIdentifier = ingredientIdentifier
+        builder.ingredientName = ingredientName
         
         let json:[String:Any] = builder.json
         
@@ -99,7 +119,9 @@ extension Cloud
     {
         guard
             
-            let ingredient:BuildIngredientSpoons = ingredient as? BuildIngredientSpoons
+            let ingredient:BuildIngredientSpoons = ingredient as? BuildIngredientSpoons,
+            let ingredientIdentifier:String = ingredient.cloudId,
+            let ingredientName:String = ingredient.name
             
         else
         {
@@ -108,6 +130,9 @@ extension Cloud
         
         var builder:RecipeIngredientSpoonsBuilder = RecipeIngredientSpoonsBuilder()
         builder.spoons = Int(ingredient.spoons)
+        builder.amountType = ingredient.ingredientAmountType
+        builder.ingredientIdentifier = ingredientIdentifier
+        builder.ingredientName = ingredientName
         
         let json:[String:Any] = builder.json
         
