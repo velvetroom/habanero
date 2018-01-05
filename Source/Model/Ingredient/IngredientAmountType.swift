@@ -7,4 +7,5 @@ enum IngredientAmountType:Int16
     case mililitres
     case quantity
     case spoons
+    case unknown
 }

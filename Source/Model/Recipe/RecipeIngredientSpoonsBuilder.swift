@@ -2,6 +2,9 @@ import Foundation
 
 struct RecipeIngredientSpoonsBuilder:CloudItemBuilderProtocol
 {
+    var amountType:IngredientAmountType
+    var ingredientIdentifier:String
+    var ingredientName:String
     var spoons:Int
     
     var json:[String:Any]
@@ -17,6 +20,9 @@ struct RecipeIngredientSpoonsBuilder:CloudItemBuilderProtocol
     
     init()
     {
+        self.amountType = IngredientAmountType.unknown
+        self.ingredientIdentifier = String()
+        self.ingredientName = String()
         self.spoons = 0
     }
 }
