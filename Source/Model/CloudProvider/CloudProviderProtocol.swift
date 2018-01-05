@@ -2,8 +2,8 @@ import Foundation
 
 protocol CloudProviderProtocol
 {
-    func createItemAt(
-        listType:CloudListProtocol.Type,
+    func createItemAt<T:CloudListProtocol>(
+        listType:T.Type,
         with json:[String:Any],
         completion:@escaping((String?, Error?) -> ()))
     
@@ -13,8 +13,8 @@ protocol CloudProviderProtocol
         with json:[String:Any],
         completion:@escaping((String?, Error?) -> ()))
     
-    func createItemAt(
-        list:CloudListProtocol,
+    func createItemAt<T:CloudListProtocol>(
+        list:T,
         with json:[String:Any],
         completion:@escaping((String?, Error?) -> ()))
     

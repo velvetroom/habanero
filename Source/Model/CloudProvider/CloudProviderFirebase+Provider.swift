@@ -4,37 +4,64 @@ extension CloudProviderFirebase
 {
     //MARK: Cloud provider delegate
  
-    func createItemAt(
-        entity:CloudEntityProtocol,
+    func createItemAt<T:CloudListProtocol>(
+        listType:T.Type,
         with json:[String:Any],
         completion:@escaping((String?, Error?) -> ()))
     {
+        let path:String = listType.identifier
+        
         self.createDocumentAt(
-            collectionPath:entity.path,
+            collectionPath:path,
             with:json,
             completion:completion)
     }
     
-    func loadList<T:CloudListProtocol>(
-        identifier:String,
-        completion:@escaping((T?, Error?) -> ()))
+    func createItemAt(
+        listKey:String,
+        of item:CloudItemProtocol,
+        with json:[String:Any],
+        completion:@escaping((String?, Error?) -> ()))
     {
-        let parentPath:String = String()
+        let path:String = item.path.appendingPathComponent(component:listKey)
+        
+        self.createDocumentAt(
+            collectionPath:listType.identifier,
+            with:json,
+            completion:completion)
+    }
+    
+    func createItemAt<T:CloudListProtocol>(
+        list:T,
+        with json:[String:Any],
+        completion:@escaping((String?, Error?) -> ()))
+    {
+        let path:String = list.identifier
+        
+        self.createDocumentAt(
+            collectionPath:path,
+            with:json,
+            completion:completion)
+    }
+    
+    func loadList<T:CloudListProtocol>(completion:@escaping((T?, Error?) -> ()))
+    {
+        let path:String = T.identifier
         
         self.loadCollection(
-            identifier:identifier,
-            parentPath:parentPath,
+            path:path,
             completion:completion)
     }
     
     func loadList<T:CloudListProtocol>(
-        identifier:String,
-        of entity:CloudEntityProtocol,
+        listKey:String,
+        of item:CloudItemProtocol,
         completion:@escaping((T?, Error?) -> ()))
     {
+        let path:String = item.path.appendingPathComponent(component:listKey)
+        
         self.loadCollection(
-            identifier:identifier,
-            parentPath:entity.path,
+            path:path,
             completion:completion)
     }
     
@@ -43,9 +70,11 @@ extension CloudProviderFirebase
         of entity:CloudEntityProtocol,
         completion:@escaping((T?, Error?) -> ()))
     {
+        let path:String = entity.path
+        
         self.loadDocument(
             identifier:identifier,
-            collectionPath:entity.path,
+            collectionPath:path,
             completion:completion)
     }
 }

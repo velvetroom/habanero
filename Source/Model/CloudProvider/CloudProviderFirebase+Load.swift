@@ -103,11 +103,9 @@ extension CloudProviderFirebase
     }
     
     func loadCollection<T:CloudListProtocol>(
-        identifier:String,
-        parentPath:String,
+        path:String,
         completion:@escaping((T?, Error?) -> ()))
     {
-        let path:String = parentPath.appendingPathComponent(component:identifier)
         let collectionReference:CollectionReference = self.reference.collection(path)
         
         collectionReference.getDocuments
