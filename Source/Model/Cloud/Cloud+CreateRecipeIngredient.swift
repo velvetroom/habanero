@@ -10,7 +10,8 @@ extension Cloud
                 IngredientAmountType.cups : Cloud.ingredientCups,
                 IngredientAmountType.grams : Cloud.ingredientGrams,
                 IngredientAmountType.mililitres : Cloud.ingredientMililitres,
-                IngredientAmountType.quantity : Cloud.ingredientQuantity]
+                IngredientAmountType.quantity : Cloud.ingredientQuantity,
+                IngredientAmountType.spoons : Cloud.ingredientSpoons]
             
             return map
         }
@@ -88,6 +89,25 @@ extension Cloud
         
         var builder:RecipeIngredientQuantityBuilder = RecipeIngredientQuantityBuilder()
         builder.quantity = ingredient.quantity
+        
+        let json:[String:Any] = builder.json
+        
+        return json
+    }
+    
+    private class func ingredientSpoons(ingredient:BuildIngredient) -> [String:Any]?
+    {
+        guard
+            
+            let ingredient:BuildIngredientSpoons = ingredient as? BuildIngredientSpoons
+            
+        else
+        {
+            return nil
+        }
+        
+        var builder:RecipeIngredientSpoonsBuilder = RecipeIngredientSpoonsBuilder()
+        builder.spoons = Int(ingredient.spoons)
         
         let json:[String:Any] = builder.json
         
