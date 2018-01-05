@@ -22,4 +22,16 @@ extension Cloud
             of:ingredientList,
             completion:completion)
     }
+    
+    func loadRecipe(
+        identifier:String,
+        completion:@escaping((Recipe?, Error?) -> ()))
+    {
+        let recipeList:RecipeList = RecipeList()
+        
+        self.provider.loadItem(
+            identifier:identifier,
+            of:recipeList,
+            completion:completion)
+    }
 }

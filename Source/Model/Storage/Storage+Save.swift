@@ -25,7 +25,7 @@ extension Storage
     //MARK: internal
     
     func saveRecipeImage(
-        recipeIdentifier:String,
+        recipe:Recipe,
         build:Build,
         completion:@escaping((Error?) -> ()))
     {
@@ -42,7 +42,7 @@ extension Storage
         
         self.provider.save(
             data:data,
-            with:recipeIdentifier,
+            with:recipe.identifier,
             at:StorageContainer.recipe,
             completion:completion)
     }
