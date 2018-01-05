@@ -86,17 +86,10 @@ extension NewAdd
                 return
             }
             
-            self?.createSteps(
+            self?.saveIngredients(
                 recipeIdentifier:recipeIdentifier,
                 completion:completion)
         }
-    }
-    
-    private func createSteps(
-        recipeIdentifier:String,
-        completion:@escaping((Error?) -> ()))
-    {
-        
     }
     
     private func finishedSaving(
