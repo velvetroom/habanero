@@ -5,7 +5,7 @@ extension NewAdd
     //MARK: internal
     
     func saveSteps(
-        recipeIdentifier:String,
+        recipe:Recipe,
         completion:@escaping((Error?) -> ()))
     {
         

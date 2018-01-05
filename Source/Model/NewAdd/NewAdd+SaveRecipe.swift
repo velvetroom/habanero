@@ -59,7 +59,7 @@ extension NewAdd
             }
             
             self?.saveIngredients(
-                recipeIdentifier:recipeIdentifier,
+                recipe:recipe,
                 completion:completion)
         }
     }

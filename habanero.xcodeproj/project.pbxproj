@@ -382,6 +382,8 @@
 		DA936CFC1FFF135000740BE8 /* NewAdd+SaveIngredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA936CFB1FFF135000740BE8 /* NewAdd+SaveIngredients.swift */; };
 		DA936CFE1FFF153900740BE8 /* NewAdd+SaveSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA936CFD1FFF153900740BE8 /* NewAdd+SaveSteps.swift */; };
 		DA936D001FFF165F00740BE8 /* NewAdd+SaveRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA936CFF1FFF165F00740BE8 /* NewAdd+SaveRecipe.swift */; };
+		DA936D021FFF19AF00740BE8 /* Cloud+CreateRecipeIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA936D011FFF19AF00740BE8 /* Cloud+CreateRecipeIngredient.swift */; };
+		DA936D031FFF19B300740BE8 /* Cloud+CreateRecipeIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA936D011FFF19AF00740BE8 /* Cloud+CreateRecipeIngredient.swift */; };
 		DA992D771FD61E7300A6CFEF /* MenuItemGenericProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA992D751FD61E7300A6CFEF /* MenuItemGenericProtocol.swift */; };
 		DA992D781FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA992D761FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift */; };
 		DA992D791FD61ED700A6CFEF /* MenuItemGenericProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA992D751FD61E7300A6CFEF /* MenuItemGenericProtocol.swift */; };
@@ -838,6 +840,7 @@
 		DA936CFB1FFF135000740BE8 /* NewAdd+SaveIngredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+SaveIngredients.swift"; sourceTree = "<group>"; };
 		DA936CFD1FFF153900740BE8 /* NewAdd+SaveSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+SaveSteps.swift"; sourceTree = "<group>"; };
 		DA936CFF1FFF165F00740BE8 /* NewAdd+SaveRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+SaveRecipe.swift"; sourceTree = "<group>"; };
+		DA936D011FFF19AF00740BE8 /* Cloud+CreateRecipeIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cloud+CreateRecipeIngredient.swift"; sourceTree = "<group>"; };
 		DA992D751FD61E7300A6CFEF /* MenuItemGenericProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemGenericProtocol.swift; sourceTree = "<group>"; };
 		DA992D761FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MenuItemGenericProtocol+Default.swift"; sourceTree = "<group>"; };
 		DAA26FAF1FE96F74005855F6 /* ViewNewAddListCellDraggableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellDraggableProtocol.swift; sourceTree = "<group>"; };
@@ -1689,6 +1692,7 @@
 			children = (
 				DAE7C3481FE08281003190FF /* Cloud.swift */,
 				DA6E80601FF98ABB00175F70 /* Cloud+Create.swift */,
+				DA936D011FFF19AF00740BE8 /* Cloud+CreateRecipeIngredient.swift */,
 				DAE7C36D1FE093D1003190FF /* Cloud+Load.swift */,
 				DA6E80751FF9A1F400175F70 /* CloudEntityProtocol.swift */,
 				DA6E80781FF9A6A500175F70 /* CloudEntityProtocol+Default.swift */,
@@ -2111,6 +2115,7 @@
 				DA74F0C41FE6139F00F45310 /* Format+Duration.swift in Sources */,
 				DA9089281FD4C66000C1208A /* Menu+Constants.swift in Sources */,
 				DA91EB1E1FD62C1F0063560D /* ViewGradient+Constants.swift in Sources */,
+				DA936D031FFF19B300740BE8 /* Cloud+CreateRecipeIngredient.swift in Sources */,
 				DA35DD291FFDBDF70047881F /* StorageProviderFirebase+Constants.swift in Sources */,
 				DACF552F1FD7661E00069701 /* ExtensionUIColor.swift in Sources */,
 				DABA5EB81FEA32C60017F865 /* ViewPhotoList.swift in Sources */,
@@ -2564,6 +2569,7 @@
 				DA8752D91FE3AB9400AE74F5 /* NewAddIngredientAmountTypeGrams.swift in Sources */,
 				DAE7C3421FE07F6C003190FF /* NewAddIngredient+Create.swift in Sources */,
 				DA6042991FE211EF00758A2F /* NewAddSectionItemIngredient.swift in Sources */,
+				DA936D021FFF19AF00740BE8 /* Cloud+CreateRecipeIngredient.swift in Sources */,
 				DA71D67F1FDA4BF6003A33E1 /* ViewNewAddListFooter.swift in Sources */,
 				DA35DD2D1FFDBF1C0047881F /* Storage+Save.swift in Sources */,
 				DAB786231FF4B3B400579BB5 /* NewAddError.swift in Sources */,

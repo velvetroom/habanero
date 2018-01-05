@@ -65,12 +65,4 @@ extension Cloud
             with:recipeData,
             completion:completion)
     }
-    
-    func createRecipeIngredient(
-        buildIngredient:BuildIngredient,
-        for recipeIdentifier:String,
-        completion:@escaping((String?, Error?) -> ()))
-    {
-        
-    }
 }

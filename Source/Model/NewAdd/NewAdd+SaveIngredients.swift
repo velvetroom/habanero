@@ -6,7 +6,7 @@ extension NewAdd
     
     private func saveIngredients(
         ingredients:[BuildIngredient],
-        for recipeIdentifier:String,
+        for recipe:Recipe,
         completion:@escaping((Error?) -> ()))
     {
         var ingredients:[BuildIngredient] = ingredients
@@ -18,21 +18,21 @@ extension NewAdd
         else
         {
             self.saveSteps(
-                recipeIdentifier:recipeIdentifier,
+                recipe:recipe,
                 completion:completion)
             
             return
         }
         
         self.cloud.createRecipeIngredient(
-            buildIngredient:ingredient,
-            for:recipeIdentifier)
-        { [weak self] (recipeIngredientIdentifier:String?, error:Error?) in
+            ingredient:ingredient,
+            for:recipe)
+        { [weak self] (identifier:String?, error:Error?) in
             
             guard
             
                 error == nil,
-                recipeIngredientIdentifier != nil
+                identifier != nil
             
             else
             {
@@ -43,7 +43,7 @@ extension NewAdd
             
             self?.saveIngredients(
                 ingredients:ingredients,
-                for:recipeIdentifier,
+                for:recipe,
                 completion:completion)
         }
     }
@@ -51,7 +51,7 @@ extension NewAdd
     //MARK: internal
     
     func saveIngredients(
-        recipeIdentifier:String,
+        recipe:Recipe,
         completion:@escaping((Error?) -> ()))
     {
         guard
@@ -65,7 +65,7 @@ extension NewAdd
         
         self.saveIngredients(
             ingredients:ingredients,
-            for:recipeIdentifier,
+            for:recipe,
             completion:completion)
     }
 }
