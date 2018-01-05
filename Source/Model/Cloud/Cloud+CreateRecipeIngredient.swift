@@ -7,7 +7,8 @@ extension Cloud
         get
         {
             let map:[IngredientAmountType : ((BuildIngredient) -> ([String:Any]?))] = [
-                IngredientAmountType.cups : Cloud.ingredientCups]
+                IngredientAmountType.cups : Cloud.ingredientCups,
+                IngredientAmountType.grams : Cloud.ingredientGrams]
             
             return map
         }
@@ -28,6 +29,25 @@ extension Cloud
         
         var builder:RecipeIngredientCupsBuilder = RecipeIngredientCupsBuilder()
         builder.cups = ingredient.cups
+        
+        let json:[String:Any] = builder.json
+        
+        return json
+    }
+    
+    private class func ingredientGrams(ingredient:BuildIngredient) -> [String:Any]?
+    {
+        guard
+            
+            let ingredient:BuildIngredientGrams = ingredient as? BuildIngredientGrams
+            
+        else
+        {
+            return nil
+        }
+        
+        var builder:RecipeIngredientGramsBuilder = RecipeIngredientGramsBuilder()
+        builder.grams = Int(ingredient.grams)
         
         let json:[String:Any] = builder.json
         
