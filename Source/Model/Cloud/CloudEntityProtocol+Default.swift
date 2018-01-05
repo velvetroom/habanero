@@ -6,8 +6,7 @@ extension CloudEntityProtocol
     {
         get
         {
-            var path:String = self.parentPath
-            path.append(self.identifier)
+            let path:String = self.parentPath.appendingPathComponent(component:self.identifier)
             
             return path
         }
