@@ -26,7 +26,7 @@ extension CloudProviderFirebase
         let path:String = item.path.appendingPathComponent(component:listKey)
         
         self.createDocumentAt(
-            collectionPath:listType.identifier,
+            collectionPath:path,
             with:json,
             completion:completion)
     }
@@ -46,10 +46,12 @@ extension CloudProviderFirebase
     
     func loadList<T:CloudListProtocol>(completion:@escaping((T?, Error?) -> ()))
     {
-        let path:String = T.identifier
+        let identifier:String = T.identifier
+        let parentPath:String = String()
         
         self.loadCollection(
-            path:path,
+            identifier:identifier,
+            parentPath:parentPath,
             completion:completion)
     }
     
@@ -58,10 +60,12 @@ extension CloudProviderFirebase
         of item:CloudItemProtocol,
         completion:@escaping((T?, Error?) -> ()))
     {
-        let path:String = item.path.appendingPathComponent(component:listKey)
+        let identifier:String = listKey
+        let parentPath:String = item.path
         
         self.loadCollection(
-            path:path,
+            identifier:identifier,
+            parentPath:parentPath,
             completion:completion)
     }
     

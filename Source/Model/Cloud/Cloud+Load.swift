@@ -6,9 +6,7 @@ extension Cloud
     
     func loadIngredients(completion:@escaping((IngredientList?, Error?) -> ()))
     {
-        self.provider.loadList(
-            identifier:IngredientList.identifier,
-            completion:completion)
+        self.provider.loadList(completion:completion)
     }
     
     func loadIngredient(

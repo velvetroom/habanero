@@ -10,5 +10,6 @@ extension Recipe
         static let status:String = "status"
         static let title:String = "title"
         static let subtitle:String = "subtitle"
+        static let ingredients:String = "ingredients"
     }
 }

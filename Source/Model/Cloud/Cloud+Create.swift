@@ -44,10 +44,9 @@ extension Cloud
         ingredientBuilder.name = name
         
         let ingredientData:[String:Any] = ingredientBuilder.json
-        let ingredientList:IngredientList = IngredientList()
         
         self.provider.createItemAt(
-            entity:ingredientList,
+            listType:IngredientList.self,
             with:ingredientData,
             completion:completion)
     }
@@ -58,10 +57,9 @@ extension Cloud
     {
         let recipeBuilder:RecipeBuilder = Cloud.recipeBuilder(build:build)
         let recipeData:[String:Any] = recipeBuilder.json
-        let recipeList:RecipeList = RecipeList()
         
         self.provider.createItemAt(
-            entity:recipeList,
+            listType:RecipeList.self,
             with:recipeData,
             completion:completion)
     }
