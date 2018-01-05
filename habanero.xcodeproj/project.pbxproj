@@ -379,6 +379,8 @@
 		DA936CF71FFF11DD00740BE8 /* RecipeIngredientQuantityBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA936CF51FFF11DD00740BE8 /* RecipeIngredientQuantityBuilder.swift */; };
 		DA936CF91FFF121200740BE8 /* RecipeIngredientSpoonsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA936CF81FFF121200740BE8 /* RecipeIngredientSpoonsBuilder.swift */; };
 		DA936CFA1FFF121200740BE8 /* RecipeIngredientSpoonsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA936CF81FFF121200740BE8 /* RecipeIngredientSpoonsBuilder.swift */; };
+		DA936CFC1FFF135000740BE8 /* NewAdd+SaveIngredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA936CFB1FFF135000740BE8 /* NewAdd+SaveIngredients.swift */; };
+		DA936CFE1FFF153900740BE8 /* NewAdd+SaveSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA936CFD1FFF153900740BE8 /* NewAdd+SaveSteps.swift */; };
 		DA992D771FD61E7300A6CFEF /* MenuItemGenericProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA992D751FD61E7300A6CFEF /* MenuItemGenericProtocol.swift */; };
 		DA992D781FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA992D761FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift */; };
 		DA992D791FD61ED700A6CFEF /* MenuItemGenericProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA992D751FD61E7300A6CFEF /* MenuItemGenericProtocol.swift */; };
@@ -832,6 +834,8 @@
 		DA936CF21FFF11A100740BE8 /* RecipeIngredientMililitresBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeIngredientMililitresBuilder.swift; sourceTree = "<group>"; };
 		DA936CF51FFF11DD00740BE8 /* RecipeIngredientQuantityBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeIngredientQuantityBuilder.swift; sourceTree = "<group>"; };
 		DA936CF81FFF121200740BE8 /* RecipeIngredientSpoonsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeIngredientSpoonsBuilder.swift; sourceTree = "<group>"; };
+		DA936CFB1FFF135000740BE8 /* NewAdd+SaveIngredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+SaveIngredients.swift"; sourceTree = "<group>"; };
+		DA936CFD1FFF153900740BE8 /* NewAdd+SaveSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+SaveSteps.swift"; sourceTree = "<group>"; };
 		DA992D751FD61E7300A6CFEF /* MenuItemGenericProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemGenericProtocol.swift; sourceTree = "<group>"; };
 		DA992D761FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MenuItemGenericProtocol+Default.swift"; sourceTree = "<group>"; };
 		DAA26FAF1FE96F74005855F6 /* ViewNewAddListCellDraggableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellDraggableProtocol.swift; sourceTree = "<group>"; };
@@ -1761,6 +1765,8 @@
 				DA6E804C1FF96C0D00175F70 /* NewAdd+Delete.swift */,
 				DAADC49E1FFC783600862A90 /* NewAdd+Validate.swift */,
 				DAADC4A01FFC7B8F00862A90 /* NewAdd+Save.swift */,
+				DA936CFB1FFF135000740BE8 /* NewAdd+SaveIngredients.swift */,
+				DA936CFD1FFF153900740BE8 /* NewAdd+SaveSteps.swift */,
 				DA71D6721FDA44E2003A33E1 /* NewAddSectionProtocol.swift */,
 				DA58C6E41FD9E12A000E6F30 /* NewAddSectionItemProtocol.swift */,
 				DA71D6761FDA4539003A33E1 /* NewAddSectionInfo.swift */,
@@ -2442,7 +2448,9 @@
 				DA91EAEF1FD62C1F0063560D /* ViewMenu+Synth.swift in Sources */,
 				DA16F1621FDFB09900EB6877 /* ViewNewAddListFooterIngredients+Constants.swift in Sources */,
 				DAE7C36F1FE093D1003190FF /* Cloud+Load.swift in Sources */,
+				DA936CFE1FFF153900740BE8 /* NewAdd+SaveSteps.swift in Sources */,
 				DAA26FB21FE97AE6005855F6 /* NewAdd+Move.swift in Sources */,
+				DA936CFC1FFF135000740BE8 /* NewAdd+SaveIngredients.swift in Sources */,
 				DACEB3B01FDCB35A0089B3FE /* ViewNewListCellSteps+Constants.swift in Sources */,
 				DA8752DD1FE3ABA700AE74F5 /* NewAddIngredientAmountTypeQuantity.swift in Sources */,
 				DACF89F01FFDD8A900F4FCF0 /* RecipeIngredientQuantity.swift in Sources */,
