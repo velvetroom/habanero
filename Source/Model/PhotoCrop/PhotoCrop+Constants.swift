@@ -4,6 +4,6 @@ extension PhotoCrop
 {
     struct Constants
     {
-        static let maxImageSize:CGFloat = 680
+        static let maxImageSize:CGFloat = 480
     }
 }
