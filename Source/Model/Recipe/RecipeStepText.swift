@@ -1,6 +1,3 @@
 import Foundation
 
-final class RecipeStepText:RecipeStep
-{
-    
-}
+final class RecipeStepText:RecipeStep { }

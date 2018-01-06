@@ -6,6 +6,6 @@ extension RecipeStep
     {
         static let stepType:String = "stepType"
         static let text:String = "text"
-        static let image:String = "image"
+        static let imageIdentifier:String = "image"
     }
 }
