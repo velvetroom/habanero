@@ -24,7 +24,7 @@ extension Cloud
         guard
         
             let ingredient:BuildIngredientCups = ingredient as? BuildIngredientCups,
-            let ingredientIdentifier:String = ingredient.cloudId,
+            let ingredientIdentifier:String = ingredient.ingredientIdentifier,
             let ingredientName:String = ingredient.name
         
         else
@@ -47,7 +47,7 @@ extension Cloud
         guard
             
             let ingredient:BuildIngredientGrams = ingredient as? BuildIngredientGrams,
-            let ingredientIdentifier:String = ingredient.cloudId,
+            let ingredientIdentifier:String = ingredient.ingredientIdentifier,
             let ingredientName:String = ingredient.name
             
         else
@@ -70,7 +70,7 @@ extension Cloud
         guard
             
             let ingredient:BuildIngredientMililitres = ingredient as? BuildIngredientMililitres,
-            let ingredientIdentifier:String = ingredient.cloudId,
+            let ingredientIdentifier:String = ingredient.ingredientIdentifier,
             let ingredientName:String = ingredient.name
             
         else
@@ -93,7 +93,7 @@ extension Cloud
         guard
             
             let ingredient:BuildIngredientQuantity = ingredient as? BuildIngredientQuantity,
-            let ingredientIdentifier:String = ingredient.cloudId,
+            let ingredientIdentifier:String = ingredient.ingredientIdentifier,
             let ingredientName:String = ingredient.name
             
         else
@@ -116,7 +116,7 @@ extension Cloud
         guard
             
             let ingredient:BuildIngredientSpoons = ingredient as? BuildIngredientSpoons,
-            let ingredientIdentifier:String = ingredient.cloudId,
+            let ingredientIdentifier:String = ingredient.ingredientIdentifier,
             let ingredientName:String = ingredient.name
             
         else

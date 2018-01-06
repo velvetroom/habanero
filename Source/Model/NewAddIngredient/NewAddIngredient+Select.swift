@@ -35,7 +35,7 @@ extension NewAddIngredient
         
         for listedIngredient:BuildIngredient in ingredientList
         {
-            if ingredient.identifier == listedIngredient.cloudId
+            if ingredient.identifier == listedIngredient.ingredientIdentifier
             {
                 return true
             }
@@ -51,7 +51,7 @@ extension NewAddIngredient
         self.database?.create
         { [weak self] (buildIngredient:BuildIngredient) in
             
-            buildIngredient.cloudId = ingredient.identifier
+            buildIngredient.ingredientIdentifier = ingredient.identifier
             buildIngredient.name = ingredient.name
             buildIngredient.build = self?.build
             

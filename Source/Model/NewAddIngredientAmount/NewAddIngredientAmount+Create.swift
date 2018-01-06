@@ -44,7 +44,7 @@ extension NewAddIngredientAmount
             return
         }
         
-        buildIngredient.cloudId = cloudIngredient.identifier
+        buildIngredient.ingredientIdentifier = cloudIngredient.identifier
         buildIngredient.name = cloudIngredient.name
         buildIngredient.build = self.build
         

@@ -17,7 +17,7 @@ extension NewAddIngredient
         
         for listedIngredient:BuildIngredient in ingredientList
         {
-            if ingredient.identifier == listedIngredient.cloudId
+            if ingredient.identifier == listedIngredient.ingredientIdentifier
             {
                 return false
             }
