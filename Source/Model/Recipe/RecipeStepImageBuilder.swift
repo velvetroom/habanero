@@ -10,7 +10,7 @@ struct RecipeStepImageBuilder:CloudItemBuilderProtocol
         get
         {
             let json:[String:Any] = [
-                RecipeStep.Keys.stepType : RecipeStepType.image,
+                RecipeStep.Keys.stepType : RecipeStepType.image.rawValue,
                 RecipeStep.Keys.text : self.text,
                 RecipeStep.Keys.order : self.order]
             

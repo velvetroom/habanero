@@ -11,7 +11,7 @@ struct RecipeIngredientSpoonsBuilder:CloudItemBuilderProtocol
         get
         {
             let json:[String:Any] = [
-                RecipeIngredient.Keys.amountType : IngredientAmountType.spoons,
+                RecipeIngredient.Keys.amountType : IngredientAmountType.spoons.rawValue,
                 RecipeIngredient.Keys.spoons : self.spoons,
                 RecipeIngredient.Keys.ingredientIdentifier : self.ingredientIdentifier,
                 RecipeIngredient.Keys.ingredientName : self.ingredientName]
