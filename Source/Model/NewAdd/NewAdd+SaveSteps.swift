@@ -7,6 +7,21 @@ extension NewAdd
         for recipe:Recipe,
         completion:@escaping((Error?) -> ()))
     {
+        var steps:[BuildStep] = steps
+        
+        guard
+        
+            let step:BuildStep = steps.popLast()
+        
+        else
+        {
+            self.finishedSaving(
+                error:nil,
+                completion:completion)
+            
+            return
+        }
+        
         
     }
     
