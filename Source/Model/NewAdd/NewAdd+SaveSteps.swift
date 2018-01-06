@@ -8,8 +8,6 @@ extension NewAdd
         for recipe:Recipe,
         completion:@escaping((Error?) -> ()))
     {
-        var steps:[BuildStep] = steps
-        
         guard
         
             steps.count > 0
@@ -23,6 +21,7 @@ extension NewAdd
             return
         }
         
+        var steps:[BuildStep] = steps
         let step:BuildStep = steps.removeFirst()
         
         self.cloud.createRecipeStep(
