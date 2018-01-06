@@ -33,7 +33,7 @@ extension NewAdd
     {
         guard
             
-            let sateps:[BuildStep] = self.build?.stepList
+            let steps:[BuildStep] = self.build?.stepList
             
         else
         {

@@ -1,18 +1,19 @@
 import Foundation
 
-struct RecipeIngredientMililitresBuilder:CloudItemBuilderProtocol
+struct RecipeStepTextBuilder:CloudItemBuilderProtocol
 {
+    var stepType:IngredientAmountType
     var ingredientIdentifier:String
     var ingredientName:String
-    var mililitres:Int
+    var cups:Float
     
     var json:[String:Any]
     {
         get
         {
             let json:[String:Any] = [
-                RecipeIngredient.Keys.amountType : IngredientAmountType.mililitres,
-                RecipeIngredient.Keys.mililitres : self.mililitres,
+                RecipeIngredient.Keys.cups : self.cups,
+                RecipeIngredient.Keys.amountType : self.amountType.rawValue,
                 RecipeIngredient.Keys.ingredientIdentifier : self.ingredientIdentifier,
                 RecipeIngredient.Keys.ingredientName : self.ingredientName]
             
@@ -22,8 +23,9 @@ struct RecipeIngredientMililitresBuilder:CloudItemBuilderProtocol
     
     init()
     {
+        self.amountType = IngredientAmountType.unknown
         self.ingredientIdentifier = String()
         self.ingredientName = String()
-        self.mililitres = 0
+        self.cups = 0
     }
 }

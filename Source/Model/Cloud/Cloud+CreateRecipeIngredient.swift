@@ -34,7 +34,6 @@ extension Cloud
         
         var builder:RecipeIngredientCupsBuilder = RecipeIngredientCupsBuilder()
         builder.cups = ingredient.cups
-        builder.amountType = ingredient.ingredientAmountType
         builder.ingredientIdentifier = ingredientIdentifier
         builder.ingredientName = ingredientName
         
@@ -58,7 +57,6 @@ extension Cloud
         
         var builder:RecipeIngredientGramsBuilder = RecipeIngredientGramsBuilder()
         builder.grams = Int(ingredient.grams)
-        builder.amountType = ingredient.ingredientAmountType
         builder.ingredientIdentifier = ingredientIdentifier
         builder.ingredientName = ingredientName
         
@@ -82,7 +80,6 @@ extension Cloud
         
         var builder:RecipeIngredientMililitresBuilder = RecipeIngredientMililitresBuilder()
         builder.mililitres = Int(ingredient.mililitres)
-        builder.amountType = ingredient.ingredientAmountType
         builder.ingredientIdentifier = ingredientIdentifier
         builder.ingredientName = ingredientName
         
@@ -106,7 +103,6 @@ extension Cloud
         
         var builder:RecipeIngredientQuantityBuilder = RecipeIngredientQuantityBuilder()
         builder.quantity = ingredient.quantity
-        builder.amountType = ingredient.ingredientAmountType
         builder.ingredientIdentifier = ingredientIdentifier
         builder.ingredientName = ingredientName
         
@@ -130,7 +126,6 @@ extension Cloud
         
         var builder:RecipeIngredientSpoonsBuilder = RecipeIngredientSpoonsBuilder()
         builder.spoons = Int(ingredient.spoons)
-        builder.amountType = ingredient.ingredientAmountType
         builder.ingredientIdentifier = ingredientIdentifier
         builder.ingredientName = ingredientName
         

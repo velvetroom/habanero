@@ -160,6 +160,8 @@
 		DA683597200176BB0087C77D /* RecipeStepText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA683595200176BB0087C77D /* RecipeStepText.swift */; };
 		DA683599200176DC0087C77D /* RecipeStepImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA683598200176DC0087C77D /* RecipeStepImage.swift */; };
 		DA68359A200176DC0087C77D /* RecipeStepImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA683598200176DC0087C77D /* RecipeStepImage.swift */; };
+		DA68359C200179940087C77D /* RecipeStepTextBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA68359B200179940087C77D /* RecipeStepTextBuilder.swift */; };
+		DA68359D200179940087C77D /* RecipeStepTextBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA68359B200179940087C77D /* RecipeStepTextBuilder.swift */; };
 		DA6BF0D91FDDFDDC0027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0D81FDDFDDC0027C167 /* GoogleService-Info.plist */; };
 		DA6BF0DB1FDDFDE60027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */; };
 		DA6E804D1FF96C0D00175F70 /* NewAdd+Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E804C1FF96C0D00175F70 /* NewAdd+Delete.swift */; };
@@ -709,6 +711,7 @@
 		DA683592200176130087C77D /* RecipeStep+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipeStep+Factory.swift"; sourceTree = "<group>"; };
 		DA683595200176BB0087C77D /* RecipeStepText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepText.swift; sourceTree = "<group>"; };
 		DA683598200176DC0087C77D /* RecipeStepImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepImage.swift; sourceTree = "<group>"; };
+		DA68359B200179940087C77D /* RecipeStepTextBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepTextBuilder.swift; sourceTree = "<group>"; };
 		DA69BA7C1FDDF98D0062E194 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DA6BF0D81FDDFDDC0027C167 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "user/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "admin/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -1070,6 +1073,7 @@
 				DA68358F200174D50087C77D /* RecipeStep+Keys.swift */,
 				DA683592200176130087C77D /* RecipeStep+Factory.swift */,
 				DA683595200176BB0087C77D /* RecipeStepText.swift */,
+				DA68359B200179940087C77D /* RecipeStepTextBuilder.swift */,
 				DA683598200176DC0087C77D /* RecipeStepImage.swift */,
 			);
 			path = Recipe;
@@ -2211,6 +2215,7 @@
 				DA71D6971FDA657E003A33E1 /* Text.swift in Sources */,
 				DA91EB041FD62C1F0063560D /* ViewCollection.swift in Sources */,
 				DAA333DB1FDB17EA002D766C /* Database+Constants.swift in Sources */,
+				DA68359C200179940087C77D /* RecipeStepTextBuilder.swift in Sources */,
 				DA4233EF1FEDF7D50012A589 /* ViewPhotoCropMenu+Constants.swift in Sources */,
 				DACEB3A51FDC9F560089B3FE /* ViewCollectionReusable.swift in Sources */,
 				DAAD4A751FF320EE0044B1FE /* PhotoCrop+Constants.swift in Sources */,
@@ -2485,6 +2490,7 @@
 				DA35DD271FFDBBF70047881F /* StorageProviderFirebase+Provider.swift in Sources */,
 				DAF949F41FD8BC38001BA32E /* ArchNewAdd.swift in Sources */,
 				DA936CF11FFF114900740BE8 /* RecipeIngredientGramsBuilder.swift in Sources */,
+				DA68359D200179940087C77D /* RecipeStepTextBuilder.swift in Sources */,
 				DA683591200174D50087C77D /* RecipeStep+Keys.swift in Sources */,
 				DA91EAEF1FD62C1F0063560D /* ViewMenu+Synth.swift in Sources */,
 				DA16F1621FDFB09900EB6877 /* ViewNewAddListFooterIngredients+Constants.swift in Sources */,
