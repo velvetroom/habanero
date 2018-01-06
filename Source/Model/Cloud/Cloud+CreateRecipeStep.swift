@@ -46,7 +46,6 @@ extension Cloud
         guard
             
             let step:BuildStepImage = step as? BuildStepImage,
-            let imageIdentifier:String = step.imageIdentifier,
             let text:String = step.text
             
         else
@@ -55,7 +54,6 @@ extension Cloud
         }
         
         var builder:RecipeStepImageBuilder = RecipeStepImageBuilder()
-        builder.imageIdentifier = imageIdentifier
         builder.text = text
         builder.order = order
         
@@ -75,7 +73,9 @@ extension Cloud
         guard
             
             let router:((BuildStep, Int) -> ([String:Any]?)) = Cloud.stepTypeRouter[step.recipeStepType],
-            let json:[String:Any] = router(step, order)
+            let json:[String:Any] = router(
+                step,
+                order)
             
         else
         {

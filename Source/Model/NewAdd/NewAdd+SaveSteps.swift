@@ -4,6 +4,7 @@ extension NewAdd
 {
     private func saveSteps(
         steps:[BuildStep],
+        with currentOrder:Int,
         for recipe:Recipe,
         completion:@escaping((Error?) -> ()))
     {
@@ -22,7 +23,32 @@ extension NewAdd
             return
         }
         
-        
+        self.cloud.createRecipeStep(
+            step:step,
+            with:currentOrder,
+            for:recipe)
+        { [weak self] (identifier:String?, error:Error?) in
+            
+            guard
+                
+                error == nil,
+                identifier != nil
+                
+            else
+            {
+                completion(error)
+                
+                return
+            }
+            
+            let nextOrder:Int = currentOrder + 1
+            
+            self?.saveSteps(
+                steps:steps,
+                with:nextOrder,
+                for:recipe,
+                completion:completion)
+        }
     }
     
     //MARK: internal
@@ -42,6 +68,7 @@ extension NewAdd
         
         self.saveSteps(
             steps:steps,
+            with:0,
             for:recipe,
             completion:completion)
     }

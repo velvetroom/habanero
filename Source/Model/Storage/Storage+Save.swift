@@ -2,6 +2,17 @@ import Foundation
 
 extension Storage
 {
+    private static var stepTypeRouter:[RecipeStepType : ((BuildStep, Recipe, @escaping((Error?) -> ())) -> ())]
+    {
+        get
+        {
+            let map:[RecipeStepType : ((BuildStep, Recipe, @escaping((Error?) -> ())) -> ())] = [
+                RecipeStepType.image : Storage.stepImage]
+            
+            return map
+        }
+    }
+    
     //MARK: private
     
     private class func dataFor(fileLocation:URL) -> Data?
@@ -20,6 +31,30 @@ extension Storage
         }
         
         return data
+    }
+    
+    private class func stepImage(
+        step:BuildStep,
+        recipe:Recipe,
+        completion:@escaping((Error?) -> ()))
+    {
+        guard
+            
+            let step:BuildStepImage = step as? BuildStepImage,
+            let imageIdentifier:String = step.imageIdentifier,
+            let imageURL:URL = NewAdd.localURLForImage(identifier:imageIdentifier),
+            let data:Data = Storage.dataFor(fileLocation:imageURL)
+            
+        else
+        {
+            return
+        }
+        
+        self.provider.save(
+            data:data,
+            with:recipe.identifier,
+            at:StorageContainer.recipeSteps,
+            completion:completion)
     }
     
     //MARK: internal
@@ -45,5 +80,28 @@ extension Storage
             with:recipe.identifier,
             at:StorageContainer.recipe,
             completion:completion)
+    }
+    
+    func saveStepAssets(
+        step:BuildStep,
+        recipe:Recipe,
+        completion:@escaping((Error?) -> ()))
+    {
+        guard
+        
+            let router:((BuildStep, Recipe, @escaping((Error?) -> ())) -> ()) =
+                Storage.stepTypeRouter[step.recipeStepType]
+        
+        else
+        {
+            completion(nil)
+            
+            return
+        }
+        
+        router(
+            step,
+            recipe,
+            completion)
     }
 }

@@ -2,7 +2,6 @@ import Foundation
 
 struct RecipeStepImageBuilder:CloudItemBuilderProtocol
 {
-    var imageIdentifier:String
     var text:String
     var order:Int
     
@@ -12,7 +11,6 @@ struct RecipeStepImageBuilder:CloudItemBuilderProtocol
         {
             let json:[String:Any] = [
                 RecipeStep.Keys.stepType : RecipeStepType.image,
-                RecipeStep.Keys.imageIdentifier : self.imageIdentifier,
                 RecipeStep.Keys.text : self.text,
                 RecipeStep.Keys.order : self.order]
             
@@ -22,7 +20,6 @@ struct RecipeStepImageBuilder:CloudItemBuilderProtocol
     
     init()
     {
-        self.imageIdentifier = String()
         self.text = String()
         self.order = 0
     }
