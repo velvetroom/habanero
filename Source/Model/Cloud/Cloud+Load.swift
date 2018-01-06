@@ -32,4 +32,12 @@ extension Cloud
             of:recipeList,
             completion:completion)
     }
+    
+    func loadRecipeStep(
+        identifier:String,
+        from recipe:Recipe,
+        completion:@escaping((RecipeStep?, Error?) -> ()))
+    {
+        self.provider.loadItem(identifier: <#T##String#>, of: <#T##CloudEntityProtocol#>, completion: <#T##((CloudItemProtocol?, Error?) -> ())##((CloudItemProtocol?, Error?) -> ())##(CloudItemProtocol?, Error?) -> ()#>)
+    }
 }

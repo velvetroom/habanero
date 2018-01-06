@@ -29,4 +29,10 @@ protocol CloudProviderProtocol
         identifier:String,
         of entity:CloudEntityProtocol,
         completion:@escaping((T?, Error?) -> ()))
+    
+    func loadItem<T:CloudItemProtocol>(
+        identifier:String,
+        at listKey:String,
+        of parentItem:CloudItemProtocol,
+        completion:@escaping((T?, Error?) -> ()))
 }

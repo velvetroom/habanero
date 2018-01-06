@@ -81,4 +81,18 @@ extension CloudProviderFirebase
             collectionPath:path,
             completion:completion)
     }
+    
+    func loadItem<T:CloudItemProtocol>(
+        identifier:String,
+        at listKey:String,
+        of parentItem:CloudItemProtocol,
+        completion:@escaping((T?, Error?) -> ()))
+    {
+        let path:String = parentItem.path.appendingPathComponent(component:listKey)
+        
+        self.loadDocument(
+            identifier:identifier,
+            collectionPath:path,
+            completion:completion)
+    }
 }
