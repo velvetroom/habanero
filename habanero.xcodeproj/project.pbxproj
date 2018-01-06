@@ -158,6 +158,8 @@
 		DA683594200176130087C77D /* RecipeStep+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA683592200176130087C77D /* RecipeStep+Factory.swift */; };
 		DA683596200176BB0087C77D /* RecipeStepText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA683595200176BB0087C77D /* RecipeStepText.swift */; };
 		DA683597200176BB0087C77D /* RecipeStepText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA683595200176BB0087C77D /* RecipeStepText.swift */; };
+		DA683599200176DC0087C77D /* RecipeStepImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA683598200176DC0087C77D /* RecipeStepImage.swift */; };
+		DA68359A200176DC0087C77D /* RecipeStepImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA683598200176DC0087C77D /* RecipeStepImage.swift */; };
 		DA6BF0D91FDDFDDC0027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0D81FDDFDDC0027C167 /* GoogleService-Info.plist */; };
 		DA6BF0DB1FDDFDE60027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */; };
 		DA6E804D1FF96C0D00175F70 /* NewAdd+Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E804C1FF96C0D00175F70 /* NewAdd+Delete.swift */; };
@@ -706,6 +708,7 @@
 		DA68358F200174D50087C77D /* RecipeStep+Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipeStep+Keys.swift"; sourceTree = "<group>"; };
 		DA683592200176130087C77D /* RecipeStep+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipeStep+Factory.swift"; sourceTree = "<group>"; };
 		DA683595200176BB0087C77D /* RecipeStepText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepText.swift; sourceTree = "<group>"; };
+		DA683598200176DC0087C77D /* RecipeStepImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepImage.swift; sourceTree = "<group>"; };
 		DA69BA7C1FDDF98D0062E194 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DA6BF0D81FDDFDDC0027C167 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "user/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "admin/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -1067,6 +1070,7 @@
 				DA68358F200174D50087C77D /* RecipeStep+Keys.swift */,
 				DA683592200176130087C77D /* RecipeStep+Factory.swift */,
 				DA683595200176BB0087C77D /* RecipeStepText.swift */,
+				DA683598200176DC0087C77D /* RecipeStepImage.swift */,
 			);
 			path = Recipe;
 			sourceTree = "<group>";
@@ -2252,6 +2256,7 @@
 				DA9089201FD4C66000C1208A /* ControllerParent+Menu.swift in Sources */,
 				DA91EB241FD62D700063560D /* ViewControllableProtocol.swift in Sources */,
 				DA35DD171FFDB11E0047881F /* RecipeBuilder.swift in Sources */,
+				DA683599200176DC0087C77D /* RecipeStepImage.swift in Sources */,
 				DAE5E4861FE48CA700CC40BA /* Settings+Computed.swift in Sources */,
 				DAAE61F41FF636F500954EFC /* PhotoRotation.swift in Sources */,
 				DA9089271FD4C66000C1208A /* Model.swift in Sources */,
@@ -2429,6 +2434,7 @@
 				DA4233ED1FEDEBEC0012A589 /* ViewPhotoCrop+Constants.swift in Sources */,
 				DA74F0C81FE614BA00F45310 /* FormatIngredientTypeCups.swift in Sources */,
 				DA55E2251FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */,
+				DA68359A200176DC0087C77D /* RecipeStepImage.swift in Sources */,
 				DA71D6831FDA50C4003A33E1 /* ViewNewAddList+Constants.swift in Sources */,
 				DA9089851FD4CE2E00C1208A /* ControllerTransition.swift in Sources */,
 				DA71D66F1FDA44A2003A33E1 /* ViewNewAddListFooterIngredients.swift in Sources */,
