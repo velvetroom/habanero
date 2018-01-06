@@ -12,8 +12,7 @@ extension NewAdd
         
         guard
         
-            steps.count > 0,
-            let step:BuildStep = steps.removeFirst()
+            steps.count > 0
         
         else
         {
@@ -23,6 +22,8 @@ extension NewAdd
             
             return
         }
+        
+        let step:BuildStep = steps.removeFirst()
         
         self.cloud.createRecipeStep(
             step:step,
