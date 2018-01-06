@@ -2,11 +2,13 @@ import Foundation
 
 extension Storage
 {
-    private static var stepTypeRouter:[RecipeStepType : ((BuildStep, Recipe, @escaping((Error?) -> ())) -> ())]
+    private static var stepTypeRouter:[RecipeStepType :
+        ((Storage) -> (RecipeStep, BuildStep, Recipe, @escaping((Error?) -> ())) -> ())]
     {
         get
         {
-            let map:[RecipeStepType : ((BuildStep, Recipe, @escaping((Error?) -> ())) -> ())] = [
+            let map:[RecipeStepType :
+                ((Storage) -> (RecipeStep, BuildStep, Recipe, @escaping((Error?) -> ())) -> ())] = [
                 RecipeStepType.image : Storage.stepImage]
             
             return map
@@ -33,7 +35,8 @@ extension Storage
         return data
     }
     
-    private class func stepImage(
+    private func stepImage(
+        recipeStep:RecipeStep,
         step:BuildStep,
         recipe:Recipe,
         completion:@escaping((Error?) -> ()))
@@ -52,8 +55,9 @@ extension Storage
         
         self.provider.save(
             data:data,
-            with:recipe.identifier,
-            at:StorageContainer.recipeSteps,
+            with:recipeStep.identifier,
+            at:recipe.identifier,
+            of:StorageContainer.recipeSteps,
             completion:completion)
     }
     
@@ -82,14 +86,15 @@ extension Storage
             completion:completion)
     }
     
-    func saveStepAssets(
+    func saveRecipeStepAssets(
+        recipeStep:RecipeStep,
         step:BuildStep,
         recipe:Recipe,
         completion:@escaping((Error?) -> ()))
     {
         guard
         
-            let router:((BuildStep, Recipe, @escaping((Error?) -> ())) -> ()) =
+            let router:((Storage) -> (RecipeStep, BuildStep, Recipe, @escaping((Error?) -> ())) -> ()) =
                 Storage.stepTypeRouter[step.recipeStepType]
         
         else
@@ -99,7 +104,8 @@ extension Storage
             return
         }
         
-        router(
+        router(self)(
+            recipeStep,
             step,
             recipe,
             completion)

@@ -38,6 +38,10 @@ extension Cloud
         from recipe:Recipe,
         completion:@escaping((RecipeStep?, Error?) -> ()))
     {
-        self.provider.loadItem(identifier: <#T##String#>, of: <#T##CloudEntityProtocol#>, completion: <#T##((CloudItemProtocol?, Error?) -> ())##((CloudItemProtocol?, Error?) -> ())##(CloudItemProtocol?, Error?) -> ()#>)
+        self.provider.loadItem(
+            identifier:identifier,
+            at:Recipe.Keys.steps,
+            of:recipe,
+            completion:completion)
     }
 }
