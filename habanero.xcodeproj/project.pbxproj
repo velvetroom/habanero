@@ -162,6 +162,8 @@
 		DA68359A200176DC0087C77D /* RecipeStepImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA683598200176DC0087C77D /* RecipeStepImage.swift */; };
 		DA68359C200179940087C77D /* RecipeStepTextBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA68359B200179940087C77D /* RecipeStepTextBuilder.swift */; };
 		DA68359D200179940087C77D /* RecipeStepTextBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA68359B200179940087C77D /* RecipeStepTextBuilder.swift */; };
+		DA68359F20017C120087C77D /* RecipeStepImageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA68359E20017C120087C77D /* RecipeStepImageBuilder.swift */; };
+		DA6835A020017C120087C77D /* RecipeStepImageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA68359E20017C120087C77D /* RecipeStepImageBuilder.swift */; };
 		DA6BF0D91FDDFDDC0027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0D81FDDFDDC0027C167 /* GoogleService-Info.plist */; };
 		DA6BF0DB1FDDFDE60027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */; };
 		DA6E804D1FF96C0D00175F70 /* NewAdd+Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E804C1FF96C0D00175F70 /* NewAdd+Delete.swift */; };
@@ -712,6 +714,7 @@
 		DA683595200176BB0087C77D /* RecipeStepText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepText.swift; sourceTree = "<group>"; };
 		DA683598200176DC0087C77D /* RecipeStepImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepImage.swift; sourceTree = "<group>"; };
 		DA68359B200179940087C77D /* RecipeStepTextBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepTextBuilder.swift; sourceTree = "<group>"; };
+		DA68359E20017C120087C77D /* RecipeStepImageBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepImageBuilder.swift; sourceTree = "<group>"; };
 		DA69BA7C1FDDF98D0062E194 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DA6BF0D81FDDFDDC0027C167 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "user/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "admin/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -1075,6 +1078,7 @@
 				DA683595200176BB0087C77D /* RecipeStepText.swift */,
 				DA68359B200179940087C77D /* RecipeStepTextBuilder.swift */,
 				DA683598200176DC0087C77D /* RecipeStepImage.swift */,
+				DA68359E20017C120087C77D /* RecipeStepImageBuilder.swift */,
 			);
 			path = Recipe;
 			sourceTree = "<group>";
@@ -2256,6 +2260,7 @@
 				DACF553B1FD7661E00069701 /* ExtensionMKAnnotationView.swift in Sources */,
 				DACF55311FD7661E00069701 /* ExtensionCGImage.swift in Sources */,
 				DA4233E61FEDE60F0012A589 /* ViewPhotoCrop.swift in Sources */,
+				DA68359F20017C120087C77D /* RecipeStepImageBuilder.swift in Sources */,
 				DACF55371FD7661E00069701 /* ExtensionFileManager.swift in Sources */,
 				DAE7C3771FE0996B003190FF /* IngredientList.swift in Sources */,
 				DA9089201FD4C66000C1208A /* ControllerParent+Menu.swift in Sources */,
@@ -2629,6 +2634,7 @@
 				DA1F04FA1FE8DF8800DF03A8 /* NewAddSectionItemStepText.swift in Sources */,
 				DA6E804D1FF96C0D00175F70 /* NewAdd+Delete.swift in Sources */,
 				DA9089831FD4CE2E00C1208A /* ControllerParent+Menu.swift in Sources */,
+				DA6835A020017C120087C77D /* RecipeStepImageBuilder.swift in Sources */,
 				DAA333D21FDB1453002D766C /* New+Load.swift in Sources */,
 				DA91EAEB1FD62C1F0063560D /* ViewMenu+Collection.swift in Sources */,
 				DAB786331FF4C27600579BB5 /* ControllerNewAdd+Gesture.swift in Sources */,
