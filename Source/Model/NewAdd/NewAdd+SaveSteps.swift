@@ -12,7 +12,8 @@ extension NewAdd
         
         guard
         
-            let step:BuildStep = steps.popLast()
+            steps.count > 0,
+            let step:BuildStep = steps.removeFirst()
         
         else
         {
