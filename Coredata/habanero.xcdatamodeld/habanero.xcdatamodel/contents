@@ -11,7 +11,7 @@
         <relationship name="steps" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="BuildStep" inverseName="build" inverseEntity="BuildStep" syncable="YES"/>
     </entity>
     <entity name="BuildIngredient" representedClassName="BuildIngredient" isAbstract="YES" syncable="YES" codeGenerationType="class">
-        <attribute name="cloudId" attributeType="String" syncable="YES"/>
+        <attribute name="ingredientIdentifier" attributeType="String" syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
         <attribute name="rawIngredientAmountType" transient="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" customClassName="IngredientType" syncable="YES"/>
         <relationship name="build" maxCount="1" deletionRule="Nullify" destinationEntity="Build" inverseName="ingredients" inverseEntity="Build" syncable="YES"/>
