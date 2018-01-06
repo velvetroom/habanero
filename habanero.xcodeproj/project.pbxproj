@@ -156,6 +156,8 @@
 		DA683591200174D50087C77D /* RecipeStep+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA68358F200174D50087C77D /* RecipeStep+Keys.swift */; };
 		DA683593200176130087C77D /* RecipeStep+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA683592200176130087C77D /* RecipeStep+Factory.swift */; };
 		DA683594200176130087C77D /* RecipeStep+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA683592200176130087C77D /* RecipeStep+Factory.swift */; };
+		DA683596200176BB0087C77D /* RecipeStepText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA683595200176BB0087C77D /* RecipeStepText.swift */; };
+		DA683597200176BB0087C77D /* RecipeStepText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA683595200176BB0087C77D /* RecipeStepText.swift */; };
 		DA6BF0D91FDDFDDC0027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0D81FDDFDDC0027C167 /* GoogleService-Info.plist */; };
 		DA6BF0DB1FDDFDE60027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */; };
 		DA6E804D1FF96C0D00175F70 /* NewAdd+Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E804C1FF96C0D00175F70 /* NewAdd+Delete.swift */; };
@@ -703,6 +705,7 @@
 		DA6042A21FE21C3000758A2F /* ViewNewAddIngredientAmount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddIngredientAmount.swift; sourceTree = "<group>"; };
 		DA68358F200174D50087C77D /* RecipeStep+Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipeStep+Keys.swift"; sourceTree = "<group>"; };
 		DA683592200176130087C77D /* RecipeStep+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipeStep+Factory.swift"; sourceTree = "<group>"; };
+		DA683595200176BB0087C77D /* RecipeStepText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepText.swift; sourceTree = "<group>"; };
 		DA69BA7C1FDDF98D0062E194 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DA6BF0D81FDDFDDC0027C167 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "user/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "admin/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -1063,6 +1066,7 @@
 				DA280FC320006AE90016AD43 /* RecipeStep.swift */,
 				DA68358F200174D50087C77D /* RecipeStep+Keys.swift */,
 				DA683592200176130087C77D /* RecipeStep+Factory.swift */,
+				DA683595200176BB0087C77D /* RecipeStepText.swift */,
 			);
 			path = Recipe;
 			sourceTree = "<group>";
@@ -2237,6 +2241,7 @@
 				DACF89E31FFDD46900F4FCF0 /* RecipeIngredient+Keys.swift in Sources */,
 				DA91EB1C1FD62C1F0063560D /* ViewSpinner.swift in Sources */,
 				DA91EB0E1FD62C1F0063560D /* ViewBlur.swift in Sources */,
+				DA683596200176BB0087C77D /* RecipeStepText.swift in Sources */,
 				DA74F0D31FE6158A00F45310 /* FormatIngredientTypeSpoons.swift in Sources */,
 				DA11BA0B1FD8F3DD0038F9B0 /* ViewBarBack.swift in Sources */,
 				DACF553B1FD7661E00069701 /* ExtensionMKAnnotationView.swift in Sources */,
@@ -2449,6 +2454,7 @@
 				DAAD4A731FF31F310044B1FE /* PhotoCrop+Rotate.swift in Sources */,
 				DAB7862F1FF4BC2D00579BB5 /* NewAddSectionItemStepProtocol.swift in Sources */,
 				DACF55301FD7661E00069701 /* ExtensionUIColor.swift in Sources */,
+				DA683597200176BB0087C77D /* RecipeStepText.swift in Sources */,
 				DA855E091FF370F200E1B69F /* PhotoCropPoints.swift in Sources */,
 				DA6E80551FF97AE400175F70 /* NewAddDeleteStrategyBuild.swift in Sources */,
 				DA71D6871FDA58E3003A33E1 /* ViewNewAddListCellInfoTitle.swift in Sources */,
