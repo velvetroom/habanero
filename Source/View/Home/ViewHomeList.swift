@@ -1,6 +1,6 @@
 import UIKit
 
-final class ViewHomeList:ViewCollection<ArchHome, ViewCollectionCell, UICollectionViewFlowLayout>
+final class ViewHomeList:ViewCollection<ArchHome, ViewHomeListCell, UICollectionViewFlowLayout>
 {
     
 }

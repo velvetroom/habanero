@@ -2,7 +2,8 @@ import UIKit
 
 final class ViewHome:ViewMain<ArchHome>
 {
-    private weak var viewSpinner:ViewSpinner!
+    private(set) weak var viewSpinner:ViewSpinner!
+    private(set) weak var viewList:ViewHomeList!
     
     override func factoryViews()
     {
@@ -13,11 +14,19 @@ final class ViewHome:ViewMain<ArchHome>
         let viewSpinner:ViewSpinner = ViewSpinner()
         self.viewSpinner = viewSpinner
         
+        let viewList:ViewHomeList = ViewHomeList(controller:self.controller)
+        self.viewList = viewList
+        
+        self.addSubview(viewList)
         self.addSubview(viewSpinner)
         self.addSubview(viewBar)
         
         NSLayoutConstraint.equals(
             view:viewSpinner,
+            toView:self)
+        
+        NSLayoutConstraint.equals(
+            view:viewList,
             toView:self)
         
         NSLayoutConstraint.topToTop(
