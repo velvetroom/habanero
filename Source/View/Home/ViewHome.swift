@@ -17,4 +17,9 @@ final class ViewHome:ViewMain<ArchHome>
             view:viewSpinner,
             toView:self)
     }
+    
+    deinit
+    {
+        self.viewSpinner.stopAnimating()
+    }
 }
