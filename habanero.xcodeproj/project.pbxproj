@@ -11,6 +11,8 @@
 		8F2E98EAEBD65E388FB5CB76 /* Pods_user.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34488D08B2947E1784847953 /* Pods_user.framework */; };
 		DA1058972002DD7800019445 /* ViewHomeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1058962002DD7800019445 /* ViewHomeBar.swift */; };
 		DA1058982002DD7800019445 /* ViewHomeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1058962002DD7800019445 /* ViewHomeBar.swift */; };
+		DA10589A2002E14600019445 /* ViewHomeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1058992002E14600019445 /* ViewHomeList.swift */; };
+		DA10589B2002E14600019445 /* ViewHomeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1058992002E14600019445 /* ViewHomeList.swift */; };
 		DA10A1E51FFB1FC700166CF7 /* Controller+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10A1E41FFB1FC700166CF7 /* Controller+Alert.swift */; };
 		DA10A1E61FFB1FC700166CF7 /* Controller+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10A1E41FFB1FC700166CF7 /* Controller+Alert.swift */; };
 		DA11BA071FD8F1DE0038F9B0 /* ViewNewAddList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11BA061FD8F1DE0038F9B0 /* ViewNewAddList.swift */; };
@@ -610,6 +612,7 @@
 		9A96C209AACB2D78CA84704A /* Pods-user.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-user.debug.xcconfig"; path = "Pods/Target Support Files/Pods-user/Pods-user.debug.xcconfig"; sourceTree = "<group>"; };
 		A3BF40A8891C588AFE14AB30 /* Pods-admin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-admin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-admin/Pods-admin.debug.xcconfig"; sourceTree = "<group>"; };
 		DA1058962002DD7800019445 /* ViewHomeBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeBar.swift; sourceTree = "<group>"; };
+		DA1058992002E14600019445 /* ViewHomeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeList.swift; sourceTree = "<group>"; };
 		DA10A1E41FFB1FC700166CF7 /* Controller+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Controller+Alert.swift"; sourceTree = "<group>"; };
 		DA11BA061FD8F1DE0038F9B0 /* ViewNewAddList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddList.swift; sourceTree = "<group>"; };
 		DA11BA081FD8F2200038F9B0 /* ViewNewAddListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCell.swift; sourceTree = "<group>"; };
@@ -1559,6 +1562,7 @@
 			children = (
 				DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */,
 				DA1058962002DD7800019445 /* ViewHomeBar.swift */,
+				DA1058992002E14600019445 /* ViewHomeList.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -2197,6 +2201,7 @@
 				DA936CF61FFF11DD00740BE8 /* RecipeIngredientQuantityBuilder.swift in Sources */,
 				DA280FC120006AA40016AD43 /* Cloud+CreateRecipeStep.swift in Sources */,
 				DA4AA5061FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift in Sources */,
+				DA10589A2002E14600019445 /* ViewHomeList.swift in Sources */,
 				DA992D781FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */,
 				DA3F0E7C1FDF326A0037C94D /* Ingredient+Keys.swift in Sources */,
 				DA91EB021FD62C1F0063560D /* ViewAlert+Constants.swift in Sources */,
@@ -2619,6 +2624,7 @@
 				DA71D6711FDA44C0003A33E1 /* ViewNewAddListFooterSteps.swift in Sources */,
 				DA8752D91FE3AB9400AE74F5 /* NewAddIngredientAmountTypeGrams.swift in Sources */,
 				DAE7C3421FE07F6C003190FF /* NewAddIngredient+Create.swift in Sources */,
+				DA10589B2002E14600019445 /* ViewHomeList.swift in Sources */,
 				DA6042991FE211EF00758A2F /* NewAddSectionItemIngredient.swift in Sources */,
 				DA936D021FFF19AF00740BE8 /* Cloud+CreateRecipeIngredient.swift in Sources */,
 				DA71D67F1FDA4BF6003A33E1 /* ViewNewAddListFooter.swift in Sources */,
