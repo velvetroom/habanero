@@ -2,23 +2,36 @@ import Foundation
 
 final class ControllerHome:Controller<ArchHome>
 {
-    override func viewDidLoad()
+    override func viewDidAppear(_ animated:Bool)
     {
-        super.viewDidLoad()
+        super.viewDidAppear(animated)
         
-        self.view.superview?.isUserInteractionEnabled = false
+        self.viewMain.superview?.isUserInteractionEnabled = false
+        self.viewMain.viewList.isHidden = true
+        self.viewMain.viewSpinner.startAnimating()
         
         self.model.loadSettings
         { [weak self] in
-        
-            self?.settingsLoaded()
+            
+            self?.loadRecipes()
         }
     }
     
     //MARK: private
     
-    private func settingsLoaded()
+    private func loadRecipes()
     {
-        self.view.superview?.isUserInteractionEnabled = true
+        self.model.loadRecipes
+        { [weak self] in
+        
+            self?.modelReady()
+        }
+    }
+    
+    private func modelReady()
+    {
+        self.viewMain.superview?.isUserInteractionEnabled = true
+        self.viewMain.viewList.isHidden = false
+        self.viewMain.viewSpinner.stopAnimating()
     }
 }

@@ -72,6 +72,17 @@ extension Home
     
     func loadSettings(completion:@escaping(() -> ()))
     {
+        guard
+            
+            self.settings == nil
+        
+        else
+        {
+            completion()
+            
+            return
+        }
+        
         DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
         { [weak self] in
             
