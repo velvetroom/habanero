@@ -9,6 +9,11 @@ extension Cloud
         self.provider.loadList(completion:completion)
     }
     
+    func loadRecipes(completion:@escaping((RecipeList?, Error?) -> ()))
+    {
+        self.provider.loadList(completion:completion)
+    }
+    
     func loadIngredient(
         identifier:String,
         completion:@escaping((Ingredient?, Error?) -> ()))
