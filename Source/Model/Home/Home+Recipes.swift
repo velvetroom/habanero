@@ -23,28 +23,43 @@ extension Home
                 return
             }
             
-            self?.sortRecipes(
+            self?.mergeRecipes(
                 recipeList:recipeList,
                 completion:completion)
         }
     }
     
-    private func sortRecipes(
+    private func mergeRecipes(
         recipeList:RecipeList,
         completion:@escaping(() -> ()))
     {
-        let recipes:[Recipe] = recipeList.items.sorted
-        { (recipeA:Recipe, recipeB:Recipe) -> Bool in
+        for recipe:Recipe in recipeList.items
+        {
+            guard
             
-            return recipeA.created <= recipeB.created
+                self.recipesMap[recipe.identifier] == nil
+            
+            else
+            {
+                continue
+            }
+            
+            let item:HomeItem = HomeItem(recipe:recipe)
+            
+            self.recipesMap[recipe.identifier] = item
         }
         
-        var items:[HomeItem] = []
+        self.sortItems(completion:completion)
+    }
+    
+    private func sortItems(completion:@escaping(() -> ()))
+    {
+        var items:[HomeItem] = Array(self.recipesMap.values)
         
-        for recipe:Recipe in recipes
-        {
-            let item:HomeItem = HomeItem(recipe:recipe)
-            items.append(item)
+        items.sort
+        { (itemA:HomeItem, itemB:HomeItem) -> Bool in
+            
+            return itemA.recipe.created <= itemB.recipe.created
         }
         
         self.recipesLoaded(
