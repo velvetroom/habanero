@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		43A11BCCBB0D1C292C1CEE83 /* Pods_admin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF6EEE1B276B4389C07938C /* Pods_admin.framework */; };
 		8F2E98EAEBD65E388FB5CB76 /* Pods_user.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34488D08B2947E1784847953 /* Pods_user.framework */; };
+		DA07501020042A36002C428A /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07500F20042A36002C428A /* HomeItem.swift */; };
+		DA07501120042A36002C428A /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07500F20042A36002C428A /* HomeItem.swift */; };
 		DA1058972002DD7800019445 /* ViewHomeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1058962002DD7800019445 /* ViewHomeBar.swift */; };
 		DA1058982002DD7800019445 /* ViewHomeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1058962002DD7800019445 /* ViewHomeBar.swift */; };
 		DA10589A2002E14600019445 /* ViewHomeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1058992002E14600019445 /* ViewHomeList.swift */; };
@@ -615,6 +617,7 @@
 		34488D08B2947E1784847953 /* Pods_user.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_user.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A96C209AACB2D78CA84704A /* Pods-user.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-user.debug.xcconfig"; path = "Pods/Target Support Files/Pods-user/Pods-user.debug.xcconfig"; sourceTree = "<group>"; };
 		A3BF40A8891C588AFE14AB30 /* Pods-admin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-admin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-admin/Pods-admin.debug.xcconfig"; sourceTree = "<group>"; };
+		DA07500F20042A36002C428A /* HomeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItem.swift; sourceTree = "<group>"; };
 		DA1058962002DD7800019445 /* ViewHomeBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeBar.swift; sourceTree = "<group>"; };
 		DA1058992002E14600019445 /* ViewHomeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeList.swift; sourceTree = "<group>"; };
 		DA10589C2002E17600019445 /* ViewHomeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeListCell.swift; sourceTree = "<group>"; };
@@ -1522,6 +1525,7 @@
 				DA70AFC41FD5AABF0016B0DC /* Home.swift */,
 				DAE5E4881FE48F1D00CC40BA /* Home+Settings.swift */,
 				DA10589F2002E57100019445 /* Home+Recipes.swift */,
+				DA07500F20042A36002C428A /* HomeItem.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -2214,6 +2218,7 @@
 				DA992D781FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */,
 				DA3F0E7C1FDF326A0037C94D /* Ingredient+Keys.swift in Sources */,
 				DA91EB021FD62C1F0063560D /* ViewAlert+Constants.swift in Sources */,
+				DA07501020042A36002C428A /* HomeItem.swift in Sources */,
 				DA2C17761FEF4305001BDA54 /* ViewPhotoCropDisplayImage.swift in Sources */,
 				DA90892A1FD4C66000C1208A /* MenuItemHome.swift in Sources */,
 				DA992D771FD61E7300A6CFEF /* MenuItemGenericProtocol.swift in Sources */,
@@ -2590,6 +2595,7 @@
 				DA91EB0F1FD62C1F0063560D /* ViewBlur.swift in Sources */,
 				DA91EB251FD62D700063560D /* ViewControllableProtocol.swift in Sources */,
 				DAC732D01FF85AB400980854 /* NewAddSectionItemInfoSubtitle.swift in Sources */,
+				DA07501120042A36002C428A /* HomeItem.swift in Sources */,
 				DAB786211FF4AE9900579BB5 /* NewAdd+Images.swift in Sources */,
 				DA3421421FE47EB6002B23DA /* ControllerNewAddIngredientAmount+Constants.swift in Sources */,
 				DAADC4A71FFC826D00862A90 /* NewAddValidateStrategyMinSteps+Constants.swift in Sources */,
