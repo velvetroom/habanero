@@ -4,7 +4,7 @@ final class Home:Model<ArchHome>
 {
     var settings:Settings?
     var database:Database?
-    var recipes:[Recipe]
+    var items:[HomeItem]
     let cloud:Cloud
     let storage:Storage
     
@@ -12,7 +12,7 @@ final class Home:Model<ArchHome>
     {
         self.cloud = Cloud()
         self.storage = Storage()
-        self.recipes = []
+        self.items = []
         
         super.init()
     }

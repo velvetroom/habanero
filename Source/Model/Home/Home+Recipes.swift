@@ -17,7 +17,7 @@ extension Home
             else
             {
                 self?.recipesLoaded(
-                    recipes:[],
+                    items:[],
                     completion:completion)
                 
                 return
@@ -39,16 +39,24 @@ extension Home
             return recipeA.created <= recipeB.created
         }
         
+        var items:[HomeItem] = []
+        
+        for recipe:Recipe in recipes
+        {
+            let item:HomeItem = HomeItem(recipe:recipe)
+            items.append(item)
+        }
+        
         self.recipesLoaded(
-            recipes:recipes,
+            items:items,
             completion:completion)
     }
     
     private func recipesLoaded(
-        recipes:[Recipe],
+        items:[HomeItem],
         completion:@escaping(() -> ()))
     {
-        self.recipes = recipes
+        self.items = items
         
         DispatchQueue.main.async
         {
