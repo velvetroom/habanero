@@ -30,8 +30,9 @@ final class ControllerHome:Controller<ArchHome>
     
     private func modelReady()
     {
-        self.viewMain.superview?.isUserInteractionEnabled = true
-        self.viewMain.viewList.isHidden = false
         self.viewMain.viewSpinner.stopAnimating()
+        self.viewMain.viewList.isHidden = false
+        self.viewMain.viewList.collectionView.reloadData()
+        self.viewMain.superview?.isUserInteractionEnabled = true
     }
 }
