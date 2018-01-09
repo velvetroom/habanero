@@ -56,12 +56,12 @@ final class ViewHomeListCell:ViewCollectionCell
             view:imageView,
             toView:containerView)
         
+        NSLayoutConstraint.topToTop(
+            view:viewBlur,
+            toView:containerView)
         NSLayoutConstraint.height(
             view:viewBlur,
             constant:ViewHomeListCell.Constants.blurHeight)
-        NSLayoutConstraint.bottomToBottom(
-            view:viewBlur,
-            toView:containerView)
         NSLayoutConstraint.equalsHorizontal(
             view:viewBlur,
             toView:containerView)
