@@ -16,6 +16,7 @@ final class ViewHome:ViewMain<ArchHome>
         self.viewSpinner = viewSpinner
         
         let viewList:ViewHomeList = ViewHomeList(controller:self.controller)
+        viewList.isHidden = true
         self.viewList = viewList
         
         self.addSubview(viewList)

@@ -2,13 +2,16 @@ import Foundation
 
 final class ControllerHome:Controller<ArchHome>
 {
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        
+        self.viewMain.superview?.isUserInteractionEnabled = false
+    }
+    
     override func viewDidAppear(_ animated:Bool)
     {
         super.viewDidAppear(animated)
-        
-        self.viewMain.superview?.isUserInteractionEnabled = false
-        self.viewMain.viewList.isHidden = true
-        self.viewMain.viewSpinner.startAnimating()
         
         self.model.loadSettings
         { [weak self] in
@@ -32,7 +35,6 @@ final class ControllerHome:Controller<ArchHome>
     {
         self.viewMain.viewSpinner.stopAnimating()
         self.viewMain.viewList.isHidden = false
-        self.viewMain.viewList.collectionView.isUserInteractionEnabled = true
         self.viewMain.viewList.collectionView.reloadData()
         self.viewMain.superview?.isUserInteractionEnabled = true
     }
