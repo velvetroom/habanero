@@ -54,4 +54,19 @@ final class ViewHomeList:ViewCollection<ArchHome, ViewHomeListCell, UICollection
         
         return count
     }
+    
+    override func collectionView(
+        _ collectionView:UICollectionView,
+        cellForItemAt indexPath:IndexPath) -> UICollectionViewCell
+    {
+        let item:HomeItem = self.modelAtIndex(index:indexPath)
+        let cell:ViewHomeListCell = self.cellAtIndex(indexPath:indexPath)
+        cell.config(model:item)
+        
+        self.controller.loadRecipeImage(
+            item:item,
+            on:cell)
+        
+        return cell
+    }
 }

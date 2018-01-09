@@ -52,4 +52,11 @@ final class ViewHomeListCell:ViewCollectionCell
             view:imageView,
             toView:containerView)
     }
+    
+    //MARK: internal
+    
+    func config(model:HomeItem)
+    {
+        self.model = model
+    }
 }
