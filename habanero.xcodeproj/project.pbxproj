@@ -1162,20 +1162,6 @@
 			path = NewAddIngredient;
 			sourceTree = "<group>";
 		};
-		DA4233E01FEDE5C90012A589 /* PhotoCrop */ = {
-			isa = PBXGroup;
-			children = (
-				DA4233E11FEDE5DD0012A589 /* PhotoCrop.swift */,
-				DAAD4A741FF320EE0044B1FE /* PhotoCrop+Constants.swift */,
-				DAAD4A711FF31F310044B1FE /* PhotoCrop+Rotate.swift */,
-				DA855E041FF367E600E1B69F /* PhotoCrop+Export.swift */,
-				DA855E071FF370F200E1B69F /* PhotoCropPoints.swift */,
-				DA855E0A1FF371D100E1B69F /* PhotoCropPoints+Factory.swift */,
-				DA855E0D1FF3839000E1B69F /* PhotoCropMask.swift */,
-			);
-			path = PhotoCrop;
-			sourceTree = "<group>";
-		};
 		DA4233E41FEDE6010012A589 /* PhotoCrop */ = {
 			isa = PBXGroup;
 			children = (
@@ -1516,7 +1502,6 @@
 				DA6E80591FF9872400175F70 /* CloudProvider */,
 				DA3F0E711FDF0BB80037C94D /* Ingredient */,
 				DAA333D31FDB17EA002D766C /* Database */,
-				DA4233E01FEDE5C90012A589 /* PhotoCrop */,
 				DABA5EAF1FEA2FE20017F865 /* Photo */,
 				DA8C6E3A1FDB2F3B00C0AD69 /* Build */,
 				DA1F04FB1FE8E1AC00DF03A8 /* Recipe */,
@@ -1683,6 +1668,13 @@
 		DABA5EAF1FEA2FE20017F865 /* Photo */ = {
 			isa = PBXGroup;
 			children = (
+				DA4233E11FEDE5DD0012A589 /* PhotoCrop.swift */,
+				DAAD4A741FF320EE0044B1FE /* PhotoCrop+Constants.swift */,
+				DAAD4A711FF31F310044B1FE /* PhotoCrop+Rotate.swift */,
+				DA855E041FF367E600E1B69F /* PhotoCrop+Export.swift */,
+				DA855E071FF370F200E1B69F /* PhotoCropPoints.swift */,
+				DA855E0A1FF371D100E1B69F /* PhotoCropPoints+Factory.swift */,
+				DA855E0D1FF3839000E1B69F /* PhotoCropMask.swift */,
 				DABA5EB01FEA2FF40017F865 /* Photo.swift */,
 				DABA5EC91FEA3B090017F865 /* Photo+Factory.swift */,
 				DABA5EBD1FEA34D20017F865 /* PhotoOptionProtocol.swift */,
