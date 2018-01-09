@@ -3,6 +3,7 @@ import UIKit
 final class ViewHomeListCell:ViewCollectionCell
 {
     private(set) weak var model:HomeItem?
+    private(set) weak var imageView:UIImageView!
     
     override func factoryViews()
     {
@@ -24,6 +25,14 @@ final class ViewHomeListCell:ViewCollectionCell
         containerView.translatesAutoresizingMaskIntoConstraints = false
         containerView.clipsToBounds = true
         
+        let imageView:UIImageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.clipsToBounds = true
+        imageView.contentMode = UIViewContentMode.scaleAspectFit
+        imageView.isUserInteractionEnabled = false
+        self.imageView = imageView
+        
+        containerView.addSubview(imageView)
         self.addSubview(baseView)
         self.addSubview(containerView)
         
@@ -38,5 +47,9 @@ final class ViewHomeListCell:ViewCollectionCell
         NSLayoutConstraint.equals(
             view:containerView,
             toView:baseView)
+        
+        NSLayoutConstraint.equals(
+            view:imageView,
+            toView:containerView)
     }
 }
