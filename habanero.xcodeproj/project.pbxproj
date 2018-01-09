@@ -153,6 +153,8 @@
 		DA5761CF2005877600A5151C /* ArchCook.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5761CD2005877600A5151C /* ArchCook.swift */; };
 		DA5761D12005879D00A5151C /* ControllerCook.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5761D02005879D00A5151C /* ControllerCook.swift */; };
 		DA5761D22005879D00A5151C /* ControllerCook.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5761D02005879D00A5151C /* ControllerCook.swift */; };
+		DA5761D52005884C00A5151C /* Cook.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5761D42005884C00A5151C /* Cook.swift */; };
+		DA5761D62005884C00A5151C /* Cook.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5761D42005884C00A5151C /* Cook.swift */; };
 		DA58C6E51FD9E12A000E6F30 /* NewAddSectionItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58C6E41FD9E12A000E6F30 /* NewAddSectionItemProtocol.swift */; };
 		DA58C6E71FD9E216000E6F30 /* NewAdd+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58C6E61FD9E216000E6F30 /* NewAdd+Factory.swift */; };
 		DA58C6E91FD9EAFB000E6F30 /* NewAdd+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58C6E81FD9EAFB000E6F30 /* NewAdd+Constants.swift */; };
@@ -726,6 +728,7 @@
 		DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoCropDisplayShade.swift; sourceTree = "<group>"; };
 		DA5761CD2005877600A5151C /* ArchCook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchCook.swift; sourceTree = "<group>"; };
 		DA5761D02005879D00A5151C /* ControllerCook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerCook.swift; sourceTree = "<group>"; };
+		DA5761D42005884C00A5151C /* Cook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cook.swift; sourceTree = "<group>"; };
 		DA58C6E41FD9E12A000E6F30 /* NewAddSectionItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddSectionItemProtocol.swift; sourceTree = "<group>"; };
 		DA58C6E61FD9E216000E6F30 /* NewAdd+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Factory.swift"; sourceTree = "<group>"; };
 		DA58C6E81FD9EAFB000E6F30 /* NewAdd+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Constants.swift"; sourceTree = "<group>"; };
@@ -1176,6 +1179,14 @@
 			path = Cook;
 			sourceTree = "<group>";
 		};
+		DA5761D32005884200A5151C /* Cook */ = {
+			isa = PBXGroup;
+			children = (
+				DA5761D42005884C00A5151C /* Cook.swift */,
+			);
+			path = Cook;
+			sourceTree = "<group>";
+		};
 		DA60429E1FE21BDA00758A2F /* NewAddIngredientAmount */ = {
 			isa = PBXGroup;
 			children = (
@@ -1493,6 +1504,7 @@
 		DA9088D11FD4C65F00C1208A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DA5761D32005884200A5151C /* Cook */,
 				DA6E807B1FF9B5FD00175F70 /* Storage */,
 				DA6E807C1FF9B5FD00175F70 /* StorageProvider */,
 				DA74F0B61FE611DB00F45310 /* Format */,
@@ -2260,6 +2272,7 @@
 				DA91EB121FD62C1F0063560D /* ViewSpinner+Constants.swift in Sources */,
 				DA855E081FF370F200E1B69F /* PhotoCropPoints.swift in Sources */,
 				DA71D6931FDA63FD003A33E1 /* ControllerText.swift in Sources */,
+				DA5761D52005884C00A5151C /* Cook.swift in Sources */,
 				DA9089261FD4C66000C1208A /* ArchHome.swift in Sources */,
 				DAE7C35C1FE08281003190FF /* CloudError+Description.swift in Sources */,
 				DA936CED1FFF10EB00740BE8 /* RecipeIngredientCupsBuilder.swift in Sources */,
@@ -2407,6 +2420,7 @@
 				DA5D69801FDB521400429F5D /* Build+Constants.swift in Sources */,
 				DACEB3A31FDC9C890089B3FE /* ViewCollectionCell.swift in Sources */,
 				DA936CFA1FFF121200740BE8 /* RecipeIngredientSpoonsBuilder.swift in Sources */,
+				DA5761D62005884C00A5151C /* Cook.swift in Sources */,
 				DA8752DB1FE3AB9C00AE74F5 /* NewAddIngredientAmountTypeMililitres.swift in Sources */,
 				DA71D6771FDA4539003A33E1 /* NewAddSectionInfo.swift in Sources */,
 				DA6042A31FE21C3000758A2F /* ViewNewAddIngredientAmount.swift in Sources */,
