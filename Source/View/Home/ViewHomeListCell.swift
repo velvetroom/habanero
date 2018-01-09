@@ -33,7 +33,10 @@ final class ViewHomeListCell:ViewCollectionCell
         imageView.isUserInteractionEnabled = false
         self.imageView = imageView
         
+        let viewBlur:ViewBlur = ViewBlur.extraLight()
+        
         containerView.addSubview(imageView)
+        containerView.addSubview(viewBlur)
         self.addSubview(baseView)
         self.addSubview(containerView)
         
@@ -51,6 +54,16 @@ final class ViewHomeListCell:ViewCollectionCell
         
         NSLayoutConstraint.equals(
             view:imageView,
+            toView:containerView)
+        
+        NSLayoutConstraint.height(
+            view:viewBlur,
+            constant:ViewHomeListCell.Constants.blurHeight)
+        NSLayoutConstraint.bottomToBottom(
+            view:viewBlur,
+            toView:containerView)
+        NSLayoutConstraint.equalsHorizontal(
+            view:viewBlur,
             toView:containerView)
     }
     
