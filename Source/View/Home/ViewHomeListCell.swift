@@ -129,7 +129,7 @@ final class ViewHomeListCell:ViewCollectionCell
         
         let transform:CGAffineTransform = self.transformOriginal
         
-        UIView.animate(withDuration:ViewGlobal.Constants.animationDuration)
+        UIView.animate(withDuration:ViewHomeListCell.Constants.animationDuration)
         { [weak self] in
             
             self?.transform = transform

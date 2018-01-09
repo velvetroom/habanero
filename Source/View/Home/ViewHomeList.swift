@@ -74,6 +74,9 @@ final class ViewHomeList:ViewCollection<ArchHome, ViewHomeListCell, UICollection
         _ collectionView:UICollectionView,
         didSelectItemAt indexPath:IndexPath)
     {
+        collectionView.isUserInteractionEnabled = false
         
+        let item:HomeItem = self.modelAtIndex(index:indexPath)
+        self.controller.transitionToRecipe(item:item)
     }
 }

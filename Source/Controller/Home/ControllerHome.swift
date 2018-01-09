@@ -32,6 +32,7 @@ final class ControllerHome:Controller<ArchHome>
     {
         self.viewMain.viewSpinner.stopAnimating()
         self.viewMain.viewList.isHidden = false
+        self.viewMain.viewList.collectionView.isUserInteractionEnabled = true
         self.viewMain.viewList.collectionView.reloadData()
         self.viewMain.superview?.isUserInteractionEnabled = true
     }

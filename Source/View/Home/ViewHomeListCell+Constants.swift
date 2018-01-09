@@ -4,6 +4,7 @@ extension ViewHomeListCell
 {
     struct Constants
     {
+        static let animationDuration:TimeInterval = 0.15
         static let blurHeight:CGFloat = 70
         static let titleFontSize:CGFloat = 18
         static let animateScale:CGFloat = 0.95
