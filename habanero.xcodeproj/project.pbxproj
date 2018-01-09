@@ -21,6 +21,8 @@
 		DA07501D200450F6002C428A /* Home+RecipesImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07501B200450F6002C428A /* Home+RecipesImage.swift */; };
 		DA07501F2004528D002C428A /* Storage+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07501E2004528D002C428A /* Storage+Load.swift */; };
 		DA0750202004528D002C428A /* Storage+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07501E2004528D002C428A /* Storage+Load.swift */; };
+		DA0750222004582E002C428A /* ViewHomeList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0750212004582E002C428A /* ViewHomeList+Actions.swift */; };
+		DA0750232004582E002C428A /* ViewHomeList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0750212004582E002C428A /* ViewHomeList+Actions.swift */; };
 		DA1058972002DD7800019445 /* ViewHomeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1058962002DD7800019445 /* ViewHomeBar.swift */; };
 		DA1058982002DD7800019445 /* ViewHomeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1058962002DD7800019445 /* ViewHomeBar.swift */; };
 		DA10589A2002E14600019445 /* ViewHomeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1058992002E14600019445 /* ViewHomeList.swift */; };
@@ -633,6 +635,7 @@
 		DA07501820044E21002C428A /* ControllerHome+Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerHome+Recipes.swift"; sourceTree = "<group>"; };
 		DA07501B200450F6002C428A /* Home+RecipesImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home+RecipesImage.swift"; sourceTree = "<group>"; };
 		DA07501E2004528D002C428A /* Storage+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storage+Load.swift"; sourceTree = "<group>"; };
+		DA0750212004582E002C428A /* ViewHomeList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeList+Actions.swift"; sourceTree = "<group>"; };
 		DA1058962002DD7800019445 /* ViewHomeBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeBar.swift; sourceTree = "<group>"; };
 		DA1058992002E14600019445 /* ViewHomeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeList.swift; sourceTree = "<group>"; };
 		DA10589C2002E17600019445 /* ViewHomeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeListCell.swift; sourceTree = "<group>"; };
@@ -1593,6 +1596,7 @@
 				DA1058962002DD7800019445 /* ViewHomeBar.swift */,
 				DA1058992002E14600019445 /* ViewHomeList.swift */,
 				DA07501220044518002C428A /* ViewHomeList+Constants.swift */,
+				DA0750212004582E002C428A /* ViewHomeList+Actions.swift */,
 				DA10589C2002E17600019445 /* ViewHomeListCell.swift */,
 				DA075015200445DF002C428A /* ViewHomeListCell+Constants.swift */,
 			);
@@ -2238,6 +2242,7 @@
 				DA10589A2002E14600019445 /* ViewHomeList.swift in Sources */,
 				DA992D781FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */,
 				DA3F0E7C1FDF326A0037C94D /* Ingredient+Keys.swift in Sources */,
+				DA0750222004582E002C428A /* ViewHomeList+Actions.swift in Sources */,
 				DA91EB021FD62C1F0063560D /* ViewAlert+Constants.swift in Sources */,
 				DA07501020042A36002C428A /* HomeItem.swift in Sources */,
 				DA07501320044518002C428A /* ViewHomeList+Constants.swift in Sources */,
@@ -2584,6 +2589,7 @@
 				DA91EAFF1FD62C1F0063560D /* ViewParent+Constants.swift in Sources */,
 				DABA5ECE1FEA3CA70017F865 /* ViewPhotoList+Constants.swift in Sources */,
 				DA91EB191FD62C1F0063560D /* ViewBorder.swift in Sources */,
+				DA0750232004582E002C428A /* ViewHomeList+Actions.swift in Sources */,
 				DA1F04F01FE8C05F00DF03A8 /* ViewNewAddListFooterSteps+Constants.swift in Sources */,
 				DA9089881FD4CE3300C1208A /* ArchHome.swift in Sources */,
 				DA91EAED1FD62C1F0063560D /* ViewMenu.swift in Sources */,
