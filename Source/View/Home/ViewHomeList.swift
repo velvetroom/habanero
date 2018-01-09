@@ -69,4 +69,11 @@ final class ViewHomeList:ViewCollection<ArchHome, ViewHomeListCell, UICollection
         
         return cell
     }
+    
+    override func collectionView(
+        _ collectionView:UICollectionView,
+        didSelectItemAt indexPath:IndexPath)
+    {
+        
+    }
 }

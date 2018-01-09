@@ -6,6 +6,30 @@ final class ViewHomeListCell:ViewCollectionCell
     private(set) weak var imageView:UIImageView!
     private weak var labelTitle:UILabel!
     
+    private var transformScale:CGAffineTransform
+    {
+        get
+        {
+            let transform:CGAffineTransform = CGAffineTransform(
+                scaleX:ViewHomeListCell.Constants.animateScale,
+                y:ViewHomeListCell.Constants.animateScale)
+            
+            return transform
+        }
+    }
+    
+    private var transformOriginal:CGAffineTransform
+    {
+        get
+        {
+            let transform:CGAffineTransform = CGAffineTransform(
+                scaleX:1,
+                y:1)
+            
+            return transform
+        }
+    }
+    
     override func factoryViews()
     {
         super.factoryViews()
@@ -84,6 +108,32 @@ final class ViewHomeListCell:ViewCollectionCell
             view:labelTitle,
             toView:viewBlur,
             margin:ViewHomeList.Constants.padding)
+    }
+    
+    override func showHighlighted()
+    {
+        super.showHighlighted()
+        
+        let transform:CGAffineTransform = self.transformScale
+        
+        UIView.animate(withDuration:ViewGlobal.Constants.animationDuration)
+        { [weak self] in
+            
+            self?.transform = transform
+        }
+    }
+    
+    override func showReleased()
+    {
+        super.showReleased()
+        
+        let transform:CGAffineTransform = self.transformOriginal
+        
+        UIView.animate(withDuration:ViewGlobal.Constants.animationDuration)
+        { [weak self] in
+            
+            self?.transform = transform
+        }
     }
     
     //MARK: internal
