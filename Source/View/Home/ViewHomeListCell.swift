@@ -4,6 +4,7 @@ final class ViewHomeListCell:ViewCollectionCell
 {
     private(set) weak var model:HomeItem?
     private(set) weak var imageView:UIImageView!
+    private weak var labelTitle:UILabel!
     
     override func factoryViews()
     {
@@ -35,8 +36,18 @@ final class ViewHomeListCell:ViewCollectionCell
         
         let viewBlur:ViewBlur = ViewBlur.extraLight()
         
+        let labelTitle:UILabel = UILabel()
+        labelTitle.backgroundColor = UIColor.clear
+        labelTitle.isUserInteractionEnabled = false
+        labelTitle.translatesAutoresizingMaskIntoConstraints = false
+        labelTitle.numberOfLines = 0
+        labelTitle.font = UIFont.bold(size:ViewHomeListCell.Constants.titleFontSize)
+        labelTitle.textColor = UIColor.colourBackgroundDark
+        self.labelTitle = labelTitle
+        
         containerView.addSubview(imageView)
         containerView.addSubview(viewBlur)
+        containerView.addSubview(labelTitle)
         self.addSubview(baseView)
         self.addSubview(containerView)
         
@@ -65,6 +76,14 @@ final class ViewHomeListCell:ViewCollectionCell
         NSLayoutConstraint.equalsHorizontal(
             view:viewBlur,
             toView:containerView)
+        
+        NSLayoutConstraint.equalsVertical(
+            view:labelTitle,
+            toView:viewBlur)
+        NSLayoutConstraint.equalsHorizontal(
+            view:labelTitle,
+            toView:viewBlur,
+            margin:ViewHomeList.Constants.padding)
     }
     
     //MARK: internal
@@ -72,5 +91,6 @@ final class ViewHomeListCell:ViewCollectionCell
     func config(model:HomeItem)
     {
         self.model = model
+        self.labelTitle.text = model.recipe.title
     }
 }
