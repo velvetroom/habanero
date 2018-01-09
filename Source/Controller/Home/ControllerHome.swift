@@ -35,4 +35,15 @@ final class ControllerHome:Controller<ArchHome>
         self.viewMain.viewList.collectionView.reloadData()
         self.viewMain.superview?.isUserInteractionEnabled = true
     }
+    
+    //MARK: internal
+    
+    func transitionToRecipe(item:HomeItem)
+    {
+        let controller:ControllerCook = ControllerCook(recipe:item.recipe)
+        
+        self.parentController?.push(
+            controller:controller,
+            horizontal:ControllerTransition.Horizontal.right)
+    }
 }
