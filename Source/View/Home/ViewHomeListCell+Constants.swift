@@ -6,6 +6,6 @@ extension ViewHomeListCell
     {
         static let cornerRadius:CGFloat = 6
         static let shadowRadius:CGFloat = 10
-        static let shadowOpacity:Float = 0.1
+        static let shadowOpacity:Float = 0.15
     }
 }

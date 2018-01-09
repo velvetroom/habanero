@@ -59,7 +59,7 @@ extension Home
         items.sort
         { (itemA:HomeItem, itemB:HomeItem) -> Bool in
             
-            return itemA.recipe.created <= itemB.recipe.created
+            return itemA.recipe.created > itemB.recipe.created
         }
         
         self.recipesLoaded(
