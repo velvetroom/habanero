@@ -6,6 +6,7 @@ StorageError_saveFailed="Save failed";
 StorageError_loadFailed="Load failed";
 StorageError_fileNotFound="File not found";
 StorageError_deleteFailed="Delete failed";
+StorageError_malformedData="Malformed data";
 NewAddIngredientError_ingredientAlreadyAdded="Ingredient already on Recipe";
 NewAddError_validateErrorMinSteps="Recipe should have at least %@ steps";
 NewAddError_validateErrorMinIngredients="Recipe should have at least 1 ingredient";

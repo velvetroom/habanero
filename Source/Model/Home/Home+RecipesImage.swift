@@ -8,7 +8,33 @@ extension Home
         recipe:Recipe,
         completion:@escaping((UIImage) -> ()))
     {
-        self.storage.
+        self.storage.loadRecipeImage(recipe:recipe)
+        { [weak self] (image:UIImage?, error:Error?) in
+            
+            guard
+            
+                error == nil,
+                let image:UIImage = image
+            
+            else
+            {
+                return
+            }
+            
+            self?.receivedImage(
+                image:image,
+                completion:completion)
+        }
+    }
+    
+    private func receivedImage(
+        image:UIImage,
+        completion:@escaping((UIImage) -> ()))
+    {
+        DispatchQueue.main.async
+        {   
+            completion(image)
+        }
     }
     
     //MARK: internal

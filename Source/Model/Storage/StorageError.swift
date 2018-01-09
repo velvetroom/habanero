@@ -6,4 +6,5 @@ enum StorageError:Error
     case loadFailed
     case fileNotFound
     case deleteFailed
+    case malformedData
 }

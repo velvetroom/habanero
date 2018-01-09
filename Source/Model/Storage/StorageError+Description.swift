@@ -21,7 +21,8 @@ extension StorageError:LocalizedError
             StorageError.saveFailed : String.localizedError(key:"StorageError_saveFailed"),
             StorageError.loadFailed : String.localizedError(key:"StorageError_loadFailed"),
             StorageError.fileNotFound : String.localizedError(key:"StorageError_fileNotFound"),
-            StorageError.deleteFailed : String.localizedError(key:"StorageError_deleteFailed")]
+            StorageError.deleteFailed : String.localizedError(key:"StorageError_deleteFailed"),
+            StorageError.malformedData : String.localizedError(key:"StorageError_malformedData")]
         
         return map
     }
