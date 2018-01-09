@@ -4,6 +4,6 @@ extension ViewHomeListCell
 {
     struct Constants
     {
-        static let cornerRadius:CGFloat = 4
+        static let cornerRadius:CGFloat = 6
     }
 }
