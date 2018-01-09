@@ -4,7 +4,20 @@ final class ViewHomeList:ViewCollection<ArchHome, ViewHomeListCell, UICollection
 {
     private var cellSize:CGSize?
     
-    
+    override func factoryViews()
+    {
+        super.factoryViews()
+        self.collectionView.alwaysBounceVertical = true
+        self.collectionView.showsVerticalScrollIndicator = true
+        
+        self.flow.minimumLineSpacing = ViewHomeList.Constants.padding
+        self.flow.minimumInteritemSpacing = ViewHomeList.Constants.padding
+        self.flow.sectionInset = UIEdgeInsets(
+            top:ViewHomeList.Constants.padding,
+            left:0,
+            bottom:ViewHomeList.Constants.padding,
+            right:0)
+    }
     
     override func collectionView(
         _ collectionView:UICollectionView,
