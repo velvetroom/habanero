@@ -25,7 +25,14 @@ final class ViewHome:ViewMain<ArchHome>
             view:viewSpinner,
             toView:self)
         
-        NSLayoutConstraint.equals(
+        NSLayoutConstraint.topToBottom(
+            view:viewList,
+            toView:viewBar)
+        NSLayoutConstraint.bottomToBottom(
+            view:viewList,
+            toView:self,
+            constant:-ViewGlobal.Constants.menuHeight)
+        NSLayoutConstraint.equalsHorizontal(
             view:viewList,
             toView:self)
         
