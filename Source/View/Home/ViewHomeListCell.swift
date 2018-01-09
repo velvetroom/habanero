@@ -2,6 +2,8 @@ import UIKit
 
 final class ViewHomeListCell:ViewCollectionCell
 {
+    private(set) weak var model:HomeItem?
+    
     override func factoryViews()
     {
         super.factoryViews()
@@ -17,7 +19,13 @@ final class ViewHomeListCell:ViewCollectionCell
         baseView.layer.shadowRadius = 10
         baseView.layer.shadowOffset = CGSize.zero
         
+        let containerView:UIView = UIView()
+        containerView.isUserInteractionEnabled = false
+        containerView.translatesAutoresizingMaskIntoConstraints = false
+        containerView.clipsToBounds = true
+        
         self.addSubview(baseView)
+        self.addSubview(containerView)
         
         NSLayoutConstraint.equalsVertical(
             view:baseView,
@@ -26,5 +34,9 @@ final class ViewHomeListCell:ViewCollectionCell
             view:baseView,
             toView:self,
             margin:ViewHomeList.Constants.padding)
+        
+        NSLayoutConstraint.equals(
+            view:containerView,
+            toView:baseView)
     }
 }
