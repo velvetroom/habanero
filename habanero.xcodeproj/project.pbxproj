@@ -11,6 +11,8 @@
 		8F2E98EAEBD65E388FB5CB76 /* Pods_user.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34488D08B2947E1784847953 /* Pods_user.framework */; };
 		DA07501020042A36002C428A /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07500F20042A36002C428A /* HomeItem.swift */; };
 		DA07501120042A36002C428A /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07500F20042A36002C428A /* HomeItem.swift */; };
+		DA07501320044518002C428A /* ViewHomeList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07501220044518002C428A /* ViewHomeList+Constants.swift */; };
+		DA07501420044518002C428A /* ViewHomeList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07501220044518002C428A /* ViewHomeList+Constants.swift */; };
 		DA1058972002DD7800019445 /* ViewHomeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1058962002DD7800019445 /* ViewHomeBar.swift */; };
 		DA1058982002DD7800019445 /* ViewHomeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1058962002DD7800019445 /* ViewHomeBar.swift */; };
 		DA10589A2002E14600019445 /* ViewHomeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1058992002E14600019445 /* ViewHomeList.swift */; };
@@ -618,6 +620,7 @@
 		9A96C209AACB2D78CA84704A /* Pods-user.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-user.debug.xcconfig"; path = "Pods/Target Support Files/Pods-user/Pods-user.debug.xcconfig"; sourceTree = "<group>"; };
 		A3BF40A8891C588AFE14AB30 /* Pods-admin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-admin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-admin/Pods-admin.debug.xcconfig"; sourceTree = "<group>"; };
 		DA07500F20042A36002C428A /* HomeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItem.swift; sourceTree = "<group>"; };
+		DA07501220044518002C428A /* ViewHomeList+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeList+Constants.swift"; sourceTree = "<group>"; };
 		DA1058962002DD7800019445 /* ViewHomeBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeBar.swift; sourceTree = "<group>"; };
 		DA1058992002E14600019445 /* ViewHomeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeList.swift; sourceTree = "<group>"; };
 		DA10589C2002E17600019445 /* ViewHomeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeListCell.swift; sourceTree = "<group>"; };
@@ -1574,6 +1577,7 @@
 				DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */,
 				DA1058962002DD7800019445 /* ViewHomeBar.swift */,
 				DA1058992002E14600019445 /* ViewHomeList.swift */,
+				DA07501220044518002C428A /* ViewHomeList+Constants.swift */,
 				DA10589C2002E17600019445 /* ViewHomeListCell.swift */,
 			);
 			path = Home;
@@ -2219,6 +2223,7 @@
 				DA3F0E7C1FDF326A0037C94D /* Ingredient+Keys.swift in Sources */,
 				DA91EB021FD62C1F0063560D /* ViewAlert+Constants.swift in Sources */,
 				DA07501020042A36002C428A /* HomeItem.swift in Sources */,
+				DA07501320044518002C428A /* ViewHomeList+Constants.swift in Sources */,
 				DA2C17761FEF4305001BDA54 /* ViewPhotoCropDisplayImage.swift in Sources */,
 				DA90892A1FD4C66000C1208A /* MenuItemHome.swift in Sources */,
 				DA992D771FD61E7300A6CFEF /* MenuItemGenericProtocol.swift in Sources */,
@@ -2689,6 +2694,7 @@
 				DA11BA091FD8F2200038F9B0 /* ViewNewAddListCell.swift in Sources */,
 				DA16F1601FDFAF7C00EB6877 /* ViewNewAddIngredientBar+Constants.swift in Sources */,
 				DAB7862B1FF4B92000579BB5 /* ViewNewAddListCellStepImage+Constants.swift in Sources */,
+				DA07501420044518002C428A /* ViewHomeList+Constants.swift in Sources */,
 				DA91EB281FD630E80063560D /* ViewGlobal.swift in Sources */,
 				DA90898F1FD4CE3E00C1208A /* Menu.swift in Sources */,
 				DAB7862D1FF4BAA000579BB5 /* ViewNewAddListCellStep.swift in Sources */,
