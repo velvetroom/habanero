@@ -27,9 +27,9 @@ extension UIColor
         alpha:1)
     
     static let colourBackgroundGray:UIColor = UIColor(
-        red:0.95,
-        green:0.96,
-        blue:0.97,
+        red:0.96,
+        green:0.97,
+        blue:0.98,
         alpha:1)
     
     static let colourBackgroundDark:UIColor = UIColor(

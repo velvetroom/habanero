@@ -30,11 +30,13 @@ final class ViewHomeList:ViewCollection<ArchHome, ViewHomeListCell, UICollection
         
         else
         {
+            let padding:CGFloat = ViewHomeList.Constants.padding * 2
             let width:CGFloat = collectionView.bounds.width
+            let height:CGFloat = width - padding
             
             let cellSize:CGSize = CGSize(
                 width:width,
-                height:width)
+                height:height)
             
             self.cellSize = cellSize
             
