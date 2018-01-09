@@ -8,6 +8,7 @@ final class ViewHome:ViewMain<ArchHome>
     override func factoryViews()
     {
         super.factoryViews()
+        self.backgroundColor = UIColor.colourBackgroundGray
         
         let viewBar:ViewHomeBar = ViewHomeBar(controller:self.controller)
         
