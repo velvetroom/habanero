@@ -16,14 +16,15 @@ final class ViewHomeListCell:ViewCollectionCell
         baseView.translatesAutoresizingMaskIntoConstraints = false
         baseView.layer.cornerRadius = ViewHomeListCell.Constants.cornerRadius
         baseView.layer.shadowColor = UIColor.black.cgColor
-        baseView.layer.shadowOpacity = 0.1
-        baseView.layer.shadowRadius = 10
+        baseView.layer.shadowOpacity = ViewHomeListCell.Constants.shadowOpacity
+        baseView.layer.shadowRadius = ViewHomeListCell.Constants.shadowRadius
         baseView.layer.shadowOffset = CGSize.zero
         
         let containerView:UIView = UIView()
         containerView.isUserInteractionEnabled = false
         containerView.translatesAutoresizingMaskIntoConstraints = false
         containerView.clipsToBounds = true
+        containerView.layer.cornerRadius = ViewHomeListCell.Constants.cornerRadius
         
         let imageView:UIImageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false

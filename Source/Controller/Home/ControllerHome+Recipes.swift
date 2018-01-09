@@ -17,7 +17,7 @@ extension ControllerHome
             return
         }
         
-        
+        cell.imageView.image = item.image
     }
     
     //MARK: internal
