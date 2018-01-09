@@ -149,6 +149,8 @@
 		DA4AA50D1FE7374A00374B07 /* ViewNewAddIngredientListCell+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA50B1FE7374A00374B07 /* ViewNewAddIngredientListCell+Constants.swift */; };
 		DA55E2241FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */; };
 		DA55E2251FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */; };
+		DA5761CE2005877600A5151C /* ArchCook.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5761CD2005877600A5151C /* ArchCook.swift */; };
+		DA5761CF2005877600A5151C /* ArchCook.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5761CD2005877600A5151C /* ArchCook.swift */; };
 		DA58C6E51FD9E12A000E6F30 /* NewAddSectionItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58C6E41FD9E12A000E6F30 /* NewAddSectionItemProtocol.swift */; };
 		DA58C6E71FD9E216000E6F30 /* NewAdd+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58C6E61FD9E216000E6F30 /* NewAdd+Factory.swift */; };
 		DA58C6E91FD9EAFB000E6F30 /* NewAdd+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58C6E81FD9EAFB000E6F30 /* NewAdd+Constants.swift */; };
@@ -720,6 +722,7 @@
 		DA4AA5081FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormatIngredientTypeGrams+Constants.swift"; sourceTree = "<group>"; };
 		DA4AA50B1FE7374A00374B07 /* ViewNewAddIngredientListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientListCell+Constants.swift"; sourceTree = "<group>"; };
 		DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoCropDisplayShade.swift; sourceTree = "<group>"; };
+		DA5761CD2005877600A5151C /* ArchCook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchCook.swift; sourceTree = "<group>"; };
 		DA58C6E41FD9E12A000E6F30 /* NewAddSectionItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddSectionItemProtocol.swift; sourceTree = "<group>"; };
 		DA58C6E61FD9E216000E6F30 /* NewAdd+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Factory.swift"; sourceTree = "<group>"; };
 		DA58C6E81FD9EAFB000E6F30 /* NewAdd+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Constants.swift"; sourceTree = "<group>"; };
@@ -1162,6 +1165,13 @@
 			path = NewAddIngredient;
 			sourceTree = "<group>";
 		};
+		DA5761CC2005876700A5151C /* Cook */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cook;
+			sourceTree = "<group>";
+		};
 		DA60429E1FE21BDA00758A2F /* NewAddIngredientAmount */ = {
 			isa = PBXGroup;
 			children = (
@@ -1424,6 +1434,7 @@
 		DA9088C31FD4C65F00C1208A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DA5761CC2005876700A5151C /* Cook */,
 				DA9088C41FD4C65F00C1208A /* Abstract */,
 				DA9088CD1FD4C65F00C1208A /* Home */,
 				DA84C0F01FD73FC5008959EA /* New */,
@@ -1470,6 +1481,7 @@
 				DA71D68E1FDA633E003A33E1 /* ArchText.swift */,
 				DABA5EA81FEA2DAB0017F865 /* ArchPhoto.swift */,
 				DA4233DD1FEDE56F0012A589 /* ArchPhotoCrop.swift */,
+				DA5761CD2005877600A5151C /* ArchCook.swift */,
 			);
 			path = Architecture;
 			sourceTree = "<group>";
@@ -2339,6 +2351,7 @@
 				DA91EB061FD62C1F0063560D /* ViewAlert.swift in Sources */,
 				DA6E80611FF98ABB00175F70 /* Cloud+Create.swift in Sources */,
 				DACF553D1FD7661E00069701 /* ExtensionNSLayoutConstraint.swift in Sources */,
+				DA5761CE2005877600A5151C /* ArchCook.swift in Sources */,
 				DABDF3381FEB6B87002EF842 /* PhotoOptionCamera.swift in Sources */,
 				DA70AFC51FD5AABF0016B0DC /* Home.swift in Sources */,
 				DA91EB271FD630E80063560D /* ViewGlobal.swift in Sources */,
@@ -2559,6 +2572,7 @@
 				DA58C6E51FD9E12A000E6F30 /* NewAddSectionItemProtocol.swift in Sources */,
 				DA71D6851FDA518E003A33E1 /* ViewNewAddList+Actions.swift in Sources */,
 				DA91EB051FD62C1F0063560D /* ViewCollection.swift in Sources */,
+				DA5761CF2005877600A5151C /* ArchCook.swift in Sources */,
 				DA5A97CD1FD6061B006223BA /* MenuItemGeneric.swift in Sources */,
 				DAC732C81FF7579800980854 /* NewAdd+StepsDelete.swift in Sources */,
 				DA1F05021FE8E37D00DF03A8 /* BuildStepText+Computed.swift in Sources */,
