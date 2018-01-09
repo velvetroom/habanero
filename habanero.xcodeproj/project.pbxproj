@@ -13,6 +13,8 @@
 		DA07501120042A36002C428A /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07500F20042A36002C428A /* HomeItem.swift */; };
 		DA07501320044518002C428A /* ViewHomeList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07501220044518002C428A /* ViewHomeList+Constants.swift */; };
 		DA07501420044518002C428A /* ViewHomeList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07501220044518002C428A /* ViewHomeList+Constants.swift */; };
+		DA075016200445DF002C428A /* ViewHomeListCell+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA075015200445DF002C428A /* ViewHomeListCell+Constants.swift */; };
+		DA075017200445DF002C428A /* ViewHomeListCell+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA075015200445DF002C428A /* ViewHomeListCell+Constants.swift */; };
 		DA1058972002DD7800019445 /* ViewHomeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1058962002DD7800019445 /* ViewHomeBar.swift */; };
 		DA1058982002DD7800019445 /* ViewHomeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1058962002DD7800019445 /* ViewHomeBar.swift */; };
 		DA10589A2002E14600019445 /* ViewHomeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1058992002E14600019445 /* ViewHomeList.swift */; };
@@ -621,6 +623,7 @@
 		A3BF40A8891C588AFE14AB30 /* Pods-admin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-admin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-admin/Pods-admin.debug.xcconfig"; sourceTree = "<group>"; };
 		DA07500F20042A36002C428A /* HomeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItem.swift; sourceTree = "<group>"; };
 		DA07501220044518002C428A /* ViewHomeList+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeList+Constants.swift"; sourceTree = "<group>"; };
+		DA075015200445DF002C428A /* ViewHomeListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeListCell+Constants.swift"; sourceTree = "<group>"; };
 		DA1058962002DD7800019445 /* ViewHomeBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeBar.swift; sourceTree = "<group>"; };
 		DA1058992002E14600019445 /* ViewHomeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeList.swift; sourceTree = "<group>"; };
 		DA10589C2002E17600019445 /* ViewHomeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeListCell.swift; sourceTree = "<group>"; };
@@ -1579,6 +1582,7 @@
 				DA1058992002E14600019445 /* ViewHomeList.swift */,
 				DA07501220044518002C428A /* ViewHomeList+Constants.swift */,
 				DA10589C2002E17600019445 /* ViewHomeListCell.swift */,
+				DA075015200445DF002C428A /* ViewHomeListCell+Constants.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -2179,6 +2183,7 @@
 				DAAE61FA1FF6385300954EFC /* PhotoRotation+Constants.swift in Sources */,
 				DABA5ECD1FEA3CA70017F865 /* ViewPhotoList+Constants.swift in Sources */,
 				DACF55471FD7661E00069701 /* ExtensionString.swift in Sources */,
+				DA075016200445DF002C428A /* ViewHomeListCell+Constants.swift in Sources */,
 				DA4233DB1FEDE4DF0012A589 /* ControllerPhotoCrop.swift in Sources */,
 				DA35DD261FFDBBF70047881F /* StorageProviderFirebase+Provider.swift in Sources */,
 				DA4233E91FEDEBE10012A589 /* ViewPhotoCropMenu.swift in Sources */,
@@ -2556,6 +2561,7 @@
 				DA74F0D41FE6158A00F45310 /* FormatIngredientTypeSpoons.swift in Sources */,
 				DA3F0E941FDF4A450037C94D /* ViewNewAddIngredientListCell.swift in Sources */,
 				DAE7C3651FE0828C003190FF /* Analytics.swift in Sources */,
+				DA075017200445DF002C428A /* ViewHomeListCell+Constants.swift in Sources */,
 				DAE7C33E1FE063D5003190FF /* ViewNewAddIngredientListFooter+Constants.swift in Sources */,
 				DACF55321FD7661E00069701 /* ExtensionCGImage.swift in Sources */,
 				DA91EAFF1FD62C1F0063560D /* ViewParent+Constants.swift in Sources */,
