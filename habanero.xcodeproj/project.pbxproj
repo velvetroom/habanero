@@ -155,6 +155,8 @@
 		DA5761D22005879D00A5151C /* ControllerCook.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5761D02005879D00A5151C /* ControllerCook.swift */; };
 		DA5761D52005884C00A5151C /* Cook.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5761D42005884C00A5151C /* Cook.swift */; };
 		DA5761D62005884C00A5151C /* Cook.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5761D42005884C00A5151C /* Cook.swift */; };
+		DA5761D92005893C00A5151C /* ViewCook.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5761D82005893C00A5151C /* ViewCook.swift */; };
+		DA5761DA2005893C00A5151C /* ViewCook.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5761D82005893C00A5151C /* ViewCook.swift */; };
 		DA58C6E51FD9E12A000E6F30 /* NewAddSectionItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58C6E41FD9E12A000E6F30 /* NewAddSectionItemProtocol.swift */; };
 		DA58C6E71FD9E216000E6F30 /* NewAdd+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58C6E61FD9E216000E6F30 /* NewAdd+Factory.swift */; };
 		DA58C6E91FD9EAFB000E6F30 /* NewAdd+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58C6E81FD9EAFB000E6F30 /* NewAdd+Constants.swift */; };
@@ -729,6 +731,7 @@
 		DA5761CD2005877600A5151C /* ArchCook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchCook.swift; sourceTree = "<group>"; };
 		DA5761D02005879D00A5151C /* ControllerCook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerCook.swift; sourceTree = "<group>"; };
 		DA5761D42005884C00A5151C /* Cook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cook.swift; sourceTree = "<group>"; };
+		DA5761D82005893C00A5151C /* ViewCook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCook.swift; sourceTree = "<group>"; };
 		DA58C6E41FD9E12A000E6F30 /* NewAddSectionItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddSectionItemProtocol.swift; sourceTree = "<group>"; };
 		DA58C6E61FD9E216000E6F30 /* NewAdd+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Factory.swift"; sourceTree = "<group>"; };
 		DA58C6E81FD9EAFB000E6F30 /* NewAdd+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Constants.swift"; sourceTree = "<group>"; };
@@ -1187,6 +1190,14 @@
 			path = Cook;
 			sourceTree = "<group>";
 		};
+		DA5761D72005886E00A5151C /* Cook */ = {
+			isa = PBXGroup;
+			children = (
+				DA5761D82005893C00A5151C /* ViewCook.swift */,
+			);
+			path = Cook;
+			sourceTree = "<group>";
+		};
 		DA60429E1FE21BDA00758A2F /* NewAddIngredientAmount */ = {
 			isa = PBXGroup;
 			children = (
@@ -1572,6 +1583,7 @@
 		DA9088E01FD4C65F00C1208A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DA5761D72005886E00A5151C /* Cook */,
 				DA91EAC81FD62C1F0063560D /* Global */,
 				DA91EAD81FD62C1F0063560D /* Generic */,
 				DA177BF21FD77915003B3836 /* Shared */,
@@ -2357,6 +2369,7 @@
 				DA90892D1FD4C66000C1208A /* Menu.swift in Sources */,
 				DACEB3A21FDC9C890089B3FE /* ViewCollectionCell.swift in Sources */,
 				DABA5EC11FEA35EE0017F865 /* ControllerPhoto+Options.swift in Sources */,
+				DA5761D92005893C00A5151C /* ViewCook.swift in Sources */,
 				DA4AA5091FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift in Sources */,
 				DA9089251FD4C66000C1208A /* Arch.swift in Sources */,
 				DAAE61F71FF637A700954EFC /* PhotoRotation+Factory.swift in Sources */,
@@ -2650,6 +2663,7 @@
 				DAB786211FF4AE9900579BB5 /* NewAdd+Images.swift in Sources */,
 				DA3421421FE47EB6002B23DA /* ControllerNewAddIngredientAmount+Constants.swift in Sources */,
 				DAADC4A71FFC826D00862A90 /* NewAddValidateStrategyMinSteps+Constants.swift in Sources */,
+				DA5761DA2005893C00A5151C /* ViewCook.swift in Sources */,
 				DA5FFE641FE7790000A38154 /* FormatIngredientTypeQuantity+Constants.swift in Sources */,
 				DAA333DC1FDB17EA002D766C /* Database+Constants.swift in Sources */,
 				DA5FFE6A1FE77A2F00A38154 /* FormatIngredientTypeMililitres+Constants.swift in Sources */,
