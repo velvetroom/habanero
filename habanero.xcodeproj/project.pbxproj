@@ -590,6 +590,8 @@
 		DAE35C9B2005D34F002B1C9C /* ViewCookHeader+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE35C992005D34F002B1C9C /* ViewCookHeader+Constants.swift */; };
 		DAE35C9D2005E57C002B1C9C /* ViewCookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE35C9C2005E57C002B1C9C /* ViewCookList.swift */; };
 		DAE35C9E2005E57C002B1C9C /* ViewCookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE35C9C2005E57C002B1C9C /* ViewCookList.swift */; };
+		DAE35CA02005E65F002B1C9C /* ViewCookListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE35C9F2005E65F002B1C9C /* ViewCookListCell.swift */; };
+		DAE35CA12005E65F002B1C9C /* ViewCookListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE35C9F2005E65F002B1C9C /* ViewCookListCell.swift */; };
 		DAE5E4801FE489C100CC40BA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5E47F1FE489C100CC40BA /* Settings.swift */; };
 		DAE5E4811FE489C100CC40BA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5E47F1FE489C100CC40BA /* Settings.swift */; };
 		DAE5E4831FE48C6100CC40BA /* SettingsMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5E4821FE48C6100CC40BA /* SettingsMetrics.swift */; };
@@ -1020,6 +1022,7 @@
 		DAE35C962005D0C5002B1C9C /* ViewCookHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookHeader.swift; sourceTree = "<group>"; };
 		DAE35C992005D34F002B1C9C /* ViewCookHeader+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookHeader+Constants.swift"; sourceTree = "<group>"; };
 		DAE35C9C2005E57C002B1C9C /* ViewCookList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookList.swift; sourceTree = "<group>"; };
+		DAE35C9F2005E65F002B1C9C /* ViewCookListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookListCell.swift; sourceTree = "<group>"; };
 		DAE5E47F1FE489C100CC40BA /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		DAE5E4821FE48C6100CC40BA /* SettingsMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMetrics.swift; sourceTree = "<group>"; };
 		DAE5E4851FE48CA700CC40BA /* Settings+Computed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings+Computed.swift"; sourceTree = "<group>"; };
@@ -1206,6 +1209,7 @@
 				DAE35C962005D0C5002B1C9C /* ViewCookHeader.swift */,
 				DAE35C992005D34F002B1C9C /* ViewCookHeader+Constants.swift */,
 				DAE35C9C2005E57C002B1C9C /* ViewCookList.swift */,
+				DAE35C9F2005E65F002B1C9C /* ViewCookListCell.swift */,
 			);
 			path = Cook;
 			sourceTree = "<group>";
@@ -2301,6 +2305,7 @@
 				DA9089261FD4C66000C1208A /* ArchHome.swift in Sources */,
 				DAE7C35C1FE08281003190FF /* CloudError+Description.swift in Sources */,
 				DA936CED1FFF10EB00740BE8 /* RecipeIngredientCupsBuilder.swift in Sources */,
+				DAE35CA02005E65F002B1C9C /* ViewCookListCell.swift in Sources */,
 				DA1058972002DD7800019445 /* ViewHomeBar.swift in Sources */,
 				DA91EAEE1FD62C1F0063560D /* ViewMenu+Synth.swift in Sources */,
 				DABA5ECA1FEA3B090017F865 /* Photo+Factory.swift in Sources */,
@@ -2506,6 +2511,7 @@
 				DACEB39D1FDC98820089B3FE /* ViewNewList+Actions.swift in Sources */,
 				DAE7C35B1FE08281003190FF /* CloudItemProtocol.swift in Sources */,
 				DABA5EB21FEA2FF40017F865 /* Photo.swift in Sources */,
+				DAE35CA12005E65F002B1C9C /* ViewCookListCell.swift in Sources */,
 				DA11BA0E1FD8F6E90038F9B0 /* ViewNewAddBar.swift in Sources */,
 				DABA5EBC1FEA32D30017F865 /* ViewPhotoListCell.swift in Sources */,
 				DA8752C91FE385F100AE74F5 /* ViewNewAddIngredientAmountList.swift in Sources */,
