@@ -18,7 +18,7 @@ final class ViewCook:ViewMain<ArchCook>
             toView:self)
         layoutHeaderHeight = NSLayoutConstraint.height(
             view:viewHeader)
-        NSLayoutConstraint.equals(
+        NSLayoutConstraint.equalsHorizontal(
             view:viewHeader,
             toView:self)
     }
