@@ -15,9 +15,14 @@ final class ViewCookHeader:View<ArchCook>
         imageView.contentMode = UIViewContentMode.scaleAspectFill
         imageView.image = self.controller.model.item?.image
         
+        let viewShadow:ViewGradient = ViewGradient.vertical(
+            colourTop:UIColor(white:0, alpha:0.5),
+            colourBottom:UIColor(white:0, alpha:0))
+        
         let viewBorder:ViewBorder = ViewBorder(colour:UIColor.colourBackgroundDark)
         
         self.addSubview(imageView)
+        self.addSubview(viewShadow)
         self.addSubview(viewBorder)
         
         NSLayoutConstraint.equalsVertical(
@@ -36,6 +41,16 @@ final class ViewCookHeader:View<ArchCook>
             constant:ViewGlobal.Constants.borderWidth)
         NSLayoutConstraint.equalsHorizontal(
             view:viewBorder,
+            toView:self)
+        
+        NSLayoutConstraint.topToTop(
+            view:viewShadow,
+            toView:self)
+        NSLayoutConstraint.height(
+            view:viewShadow,
+            constant:ViewCookHeader.Constants.shadowHeight)
+        NSLayoutConstraint.equalsHorizontal(
+            view:viewShadow,
             toView:self)
     }
 }
