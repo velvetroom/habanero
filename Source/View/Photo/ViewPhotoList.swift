@@ -61,6 +61,8 @@ final class ViewPhotoList:ViewCollection<ArchPhoto, ViewPhotoListCell, ViewColle
         _ collectionView:UICollectionView,
         didSelectItemAt indexPath:IndexPath)
     {
+        collectionView.isUserInteractionEnabled = false
+        
         let item:PhotoOptionProtocol = self.modelAtIndex(index:indexPath)
         
         self.controller.selectedOption(option:item)

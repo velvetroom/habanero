@@ -83,6 +83,10 @@ final class ViewNewList:ViewCollection<ArchNew,  ViewNewListCell, ViewCollection
         _ collectionView:UICollectionView,
         didSelectItemAt indexPath:IndexPath)
     {
+        super.collectionView(
+            collectionView,
+            didSelectItemAt:indexPath)
+        
         let item:NewItem = self.modelAtIndex(index:indexPath)
         self.controller.transitionToNewAdd(build:item.build)
     }
