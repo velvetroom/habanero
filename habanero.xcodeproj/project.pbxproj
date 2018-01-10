@@ -588,6 +588,8 @@
 		DAE35C982005D0C5002B1C9C /* ViewCookHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE35C962005D0C5002B1C9C /* ViewCookHeader.swift */; };
 		DAE35C9A2005D34F002B1C9C /* ViewCookHeader+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE35C992005D34F002B1C9C /* ViewCookHeader+Constants.swift */; };
 		DAE35C9B2005D34F002B1C9C /* ViewCookHeader+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE35C992005D34F002B1C9C /* ViewCookHeader+Constants.swift */; };
+		DAE35C9D2005E57C002B1C9C /* ViewCookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE35C9C2005E57C002B1C9C /* ViewCookList.swift */; };
+		DAE35C9E2005E57C002B1C9C /* ViewCookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE35C9C2005E57C002B1C9C /* ViewCookList.swift */; };
 		DAE5E4801FE489C100CC40BA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5E47F1FE489C100CC40BA /* Settings.swift */; };
 		DAE5E4811FE489C100CC40BA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5E47F1FE489C100CC40BA /* Settings.swift */; };
 		DAE5E4831FE48C6100CC40BA /* SettingsMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5E4821FE48C6100CC40BA /* SettingsMetrics.swift */; };
@@ -1017,6 +1019,7 @@
 		DACF89F11FFDD8F800F4FCF0 /* RecipeIngredientSpoons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeIngredientSpoons.swift; sourceTree = "<group>"; };
 		DAE35C962005D0C5002B1C9C /* ViewCookHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookHeader.swift; sourceTree = "<group>"; };
 		DAE35C992005D34F002B1C9C /* ViewCookHeader+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookHeader+Constants.swift"; sourceTree = "<group>"; };
+		DAE35C9C2005E57C002B1C9C /* ViewCookList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookList.swift; sourceTree = "<group>"; };
 		DAE5E47F1FE489C100CC40BA /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		DAE5E4821FE48C6100CC40BA /* SettingsMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMetrics.swift; sourceTree = "<group>"; };
 		DAE5E4851FE48CA700CC40BA /* Settings+Computed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings+Computed.swift"; sourceTree = "<group>"; };
@@ -1202,6 +1205,7 @@
 				DA5761D82005893C00A5151C /* ViewCook.swift */,
 				DAE35C962005D0C5002B1C9C /* ViewCookHeader.swift */,
 				DAE35C992005D34F002B1C9C /* ViewCookHeader+Constants.swift */,
+				DAE35C9C2005E57C002B1C9C /* ViewCookList.swift */,
 			);
 			path = Cook;
 			sourceTree = "<group>";
@@ -2252,6 +2256,7 @@
 				DACF554D1FD7661E00069701 /* ExtensionURL.swift in Sources */,
 				DACF55451FD7661E00069701 /* ExtensionNSManagedObject.swift in Sources */,
 				DA91EAFC1FD62C1F0063560D /* ViewParent+Transitions.swift in Sources */,
+				DAE35C9D2005E57C002B1C9C /* ViewCookList.swift in Sources */,
 				DAE5E4801FE489C100CC40BA /* Settings.swift in Sources */,
 				DA74F0B11FE60A4F00F45310 /* BuildIngredientQuantity+Computed.swift in Sources */,
 				DA74F0BB1FE6121B00F45310 /* Format+Constants.swift in Sources */,
@@ -2800,6 +2805,7 @@
 				DA90897F1FD4CE2E00C1208A /* AppDelegate.swift in Sources */,
 				DA1F04F61FE8DB5700DF03A8 /* ViewNewAddListCellStepText.swift in Sources */,
 				DACF554A1FD7661E00069701 /* ExtensionUIFont+Constants.swift in Sources */,
+				DAE35C9E2005E57C002B1C9C /* ViewCookList.swift in Sources */,
 				DAA333D81FDB17EA002D766C /* Database.swift in Sources */,
 				DA4AA5071FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift in Sources */,
 				DA74F0CB1FE6152700F45310 /* FormatIngredientTypeGrams.swift in Sources */,
