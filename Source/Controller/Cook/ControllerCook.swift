@@ -1,12 +1,12 @@
-import Foundation
+import UIKit
 
 final class ControllerCook:Controller<ArchCook>
 {
-    init(recipe:Recipe)
+    init(item:HomeItem)
     {
         super.init()
         
-        self.model.recipe = recipe
+        self.model.item = item
     }
     
     required init?(coder:NSCoder)

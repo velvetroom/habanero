@@ -2,5 +2,5 @@ import Foundation
 
 final class Cook:Model<ArchCook>
 {
-    var recipe:Recipe?
+    var item:HomeItem?
 }
