@@ -660,6 +660,8 @@
 		DAFA62E520081EF30068EC17 /* ViewCookList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA62E320081EF30068EC17 /* ViewCookList+Actions.swift */; };
 		DAFA62E7200821640068EC17 /* ViewCookListCellRecipe+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA62E6200821640068EC17 /* ViewCookListCellRecipe+Constants.swift */; };
 		DAFA62E8200821640068EC17 /* ViewCookListCellRecipe+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA62E6200821640068EC17 /* ViewCookListCellRecipe+Constants.swift */; };
+		DAFA62EA200824C80068EC17 /* ExtensionNSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA62E9200824C80068EC17 /* ExtensionNSMutableAttributedString.swift */; };
+		DAFA62EB200824C80068EC17 /* ExtensionNSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA62E9200824C80068EC17 /* ExtensionNSMutableAttributedString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1090,6 +1092,7 @@
 		DAFA62E020081AE40068EC17 /* Cook+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cook+Factory.swift"; sourceTree = "<group>"; };
 		DAFA62E320081EF30068EC17 /* ViewCookList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookList+Actions.swift"; sourceTree = "<group>"; };
 		DAFA62E6200821640068EC17 /* ViewCookListCellRecipe+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookListCellRecipe+Constants.swift"; sourceTree = "<group>"; };
+		DAFA62E9200824C80068EC17 /* ExtensionNSMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionNSMutableAttributedString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1836,6 +1839,7 @@
 				DACF55281FD7661E00069701 /* ExtensionUIFont+Constants.swift */,
 				DACF55291FD7661E00069701 /* ExtensionUICollectionReusableView.swift */,
 				DACF552A1FD7661E00069701 /* ExtensionURL.swift */,
+				DAFA62E9200824C80068EC17 /* ExtensionNSMutableAttributedString.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -2311,6 +2315,7 @@
 				DA91EAFC1FD62C1F0063560D /* ViewParent+Transitions.swift in Sources */,
 				DAE35C9D2005E57C002B1C9C /* ViewCookList.swift in Sources */,
 				DAE5E4801FE489C100CC40BA /* Settings.swift in Sources */,
+				DAFA62EA200824C80068EC17 /* ExtensionNSMutableAttributedString.swift in Sources */,
 				DA74F0B11FE60A4F00F45310 /* BuildIngredientQuantity+Computed.swift in Sources */,
 				DA74F0BB1FE6121B00F45310 /* Format+Constants.swift in Sources */,
 				DA90891F1FD4C66000C1208A /* ControllerParent+Constants.swift in Sources */,
@@ -2790,6 +2795,7 @@
 				DA35DD181FFDB11E0047881F /* RecipeBuilder.swift in Sources */,
 				DA1F04F41FE8D26900DF03A8 /* NewAdd+Steps.swift in Sources */,
 				DA91EB0B1FD62C1F0063560D /* ViewCollectionFlow.swift in Sources */,
+				DAFA62EB200824C80068EC17 /* ExtensionNSMutableAttributedString.swift in Sources */,
 				DABA5EC21FEA35EE0017F865 /* ControllerPhoto+Options.swift in Sources */,
 				DA936D001FFF165F00740BE8 /* NewAdd+SaveRecipe.swift in Sources */,
 				DA74F0CE1FE6154800F45310 /* FormatIngredientTypeMililitres.swift in Sources */,
