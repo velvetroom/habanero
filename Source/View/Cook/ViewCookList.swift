@@ -30,4 +30,43 @@ final class ViewCookList:ViewCollection<ArchCook, ViewCookListCell, ViewCollecti
         
         return insets
     }
+    
+    override func collectionView(
+        _ collectionView:UICollectionView,
+        layout collectionViewLayout:UICollectionViewLayout,
+        sizeForItemAt indexPath:IndexPath) -> CGSize
+    {
+        let item:CookItemProtocol = self.modelAtIndex(index:indexPath)
+        let width:CGFloat = collectionView.bounds.width
+        
+        let size:CGSize = CGSize(
+            width:width,
+            height:item.cellHeight)
+        
+        return size
+    }
+    
+    override func collectionView(
+        _ collectionView:UICollectionView,
+        numberOfItemsInSection section:Int) -> Int
+    {
+        let count:Int = self.controller.model.items.count
+        
+        return count
+    }
+    
+    override func collectionView(
+        _ collectionView:UICollectionView,
+        cellForItemAt indexPath:IndexPath) -> UICollectionViewCell
+    {
+        let item:CookItemProtocol = self.modelAtIndex(index:indexPath)
+        
+        let cell:ViewCookListCell = self.cellAtIndex(
+            indexPath:indexPath,
+            reusableIdentifier:item.reusableIdentifier)
+        
+        cell.config(model:item)
+        
+        return cell
+    }
 }
