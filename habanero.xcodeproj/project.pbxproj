@@ -646,6 +646,8 @@
 		DAF949FC1FD8BD13001BA32E /* NewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949FB1FD8BD13001BA32E /* NewAdd.swift */; };
 		DAFA62D22008191C0068EC17 /* CookItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA62D12008191C0068EC17 /* CookItemProtocol.swift */; };
 		DAFA62D32008191C0068EC17 /* CookItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA62D12008191C0068EC17 /* CookItemProtocol.swift */; };
+		DAFA62D5200819A70068EC17 /* Cook+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA62D4200819A70068EC17 /* Cook+Constants.swift */; };
+		DAFA62D6200819A70068EC17 /* Cook+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA62D4200819A70068EC17 /* Cook+Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1069,6 +1071,7 @@
 		DAF949F81FD8BCC6001BA32E /* ViewNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAdd.swift; sourceTree = "<group>"; };
 		DAF949FB1FD8BD13001BA32E /* NewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAdd.swift; sourceTree = "<group>"; };
 		DAFA62D12008191C0068EC17 /* CookItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookItemProtocol.swift; sourceTree = "<group>"; };
+		DAFA62D4200819A70068EC17 /* Cook+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cook+Constants.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1213,6 +1216,7 @@
 			isa = PBXGroup;
 			children = (
 				DA5761D42005884C00A5151C /* Cook.swift */,
+				DAFA62D4200819A70068EC17 /* Cook+Constants.swift */,
 				DAFA62D12008191C0068EC17 /* CookItemProtocol.swift */,
 			);
 			path = Cook;
@@ -2368,6 +2372,7 @@
 				DAE5E4891FE48F1D00CC40BA /* Home+Settings.swift in Sources */,
 				DA35DD201FFDB95B0047881F /* StorageError+Description.swift in Sources */,
 				DA5FFE661FE779C300A38154 /* FormatIngredientTypeSpoons+Constants.swift in Sources */,
+				DAFA62D5200819A70068EC17 /* Cook+Constants.swift in Sources */,
 				DAE7C36E1FE093D1003190FF /* Cloud+Load.swift in Sources */,
 				DA07501F2004528D002C428A /* Storage+Load.swift in Sources */,
 				DACF89E31FFDD46900F4FCF0 /* RecipeIngredient+Keys.swift in Sources */,
@@ -2484,6 +2489,7 @@
 				DA6042A31FE21C3000758A2F /* ViewNewAddIngredientAmount.swift in Sources */,
 				DA855E061FF367E600E1B69F /* PhotoCrop+Export.swift in Sources */,
 				DA6042A01FE21BE800758A2F /* NewAddIngredientAmount.swift in Sources */,
+				DAFA62D6200819A70068EC17 /* Cook+Constants.swift in Sources */,
 				DACF553C1FD7661E00069701 /* ExtensionMKAnnotationView.swift in Sources */,
 				DA6E805F1FF987F100175F70 /* CloudProviderFirebase.swift in Sources */,
 				DAE7C37A1FE0A2E1003190FF /* ControllerNewAddIngredient+Create.swift in Sources */,
