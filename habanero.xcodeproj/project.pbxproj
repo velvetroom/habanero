@@ -652,6 +652,8 @@
 		DAFA62D920081A020068EC17 /* CookItemTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA62D720081A020068EC17 /* CookItemTitle.swift */; };
 		DAFA62DB20081A6F0068EC17 /* CookItemIngredientsTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA62DA20081A6F0068EC17 /* CookItemIngredientsTitle.swift */; };
 		DAFA62DC20081A6F0068EC17 /* CookItemIngredientsTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA62DA20081A6F0068EC17 /* CookItemIngredientsTitle.swift */; };
+		DAFA62DE20081AA00068EC17 /* CookItemIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA62DD20081AA00068EC17 /* CookItemIngredient.swift */; };
+		DAFA62DF20081AA00068EC17 /* CookItemIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA62DD20081AA00068EC17 /* CookItemIngredient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1078,6 +1080,7 @@
 		DAFA62D4200819A70068EC17 /* Cook+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cook+Constants.swift"; sourceTree = "<group>"; };
 		DAFA62D720081A020068EC17 /* CookItemTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookItemTitle.swift; sourceTree = "<group>"; };
 		DAFA62DA20081A6F0068EC17 /* CookItemIngredientsTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookItemIngredientsTitle.swift; sourceTree = "<group>"; };
+		DAFA62DD20081AA00068EC17 /* CookItemIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookItemIngredient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1226,6 +1229,7 @@
 				DAFA62D12008191C0068EC17 /* CookItemProtocol.swift */,
 				DAFA62D720081A020068EC17 /* CookItemTitle.swift */,
 				DAFA62DA20081A6F0068EC17 /* CookItemIngredientsTitle.swift */,
+				DAFA62DD20081AA00068EC17 /* CookItemIngredient.swift */,
 			);
 			path = Cook;
 			sourceTree = "<group>";
@@ -2391,6 +2395,7 @@
 				DA74F0D31FE6158A00F45310 /* FormatIngredientTypeSpoons.swift in Sources */,
 				DA11BA0B1FD8F3DD0038F9B0 /* ViewBarBack.swift in Sources */,
 				DACF553B1FD7661E00069701 /* ExtensionMKAnnotationView.swift in Sources */,
+				DAFA62DE20081AA00068EC17 /* CookItemIngredient.swift in Sources */,
 				DACF55311FD7661E00069701 /* ExtensionCGImage.swift in Sources */,
 				DA4233E61FEDE60F0012A589 /* ViewPhotoCrop.swift in Sources */,
 				DA68359F20017C120087C77D /* RecipeStepImageBuilder.swift in Sources */,
@@ -2747,6 +2752,7 @@
 				DA11BA141FD8FFE30038F9B0 /* ViewNewAddListHeader+Constants.swift in Sources */,
 				DA2C17711FEF3C68001BDA54 /* ViewButtonContinue+Constants.swift in Sources */,
 				DA71D69C1FDA65AB003A33E1 /* ViewText.swift in Sources */,
+				DAFA62DF20081AA00068EC17 /* CookItemIngredient.swift in Sources */,
 				DA3F0EB81FD74FC400593B83 /* MenuItemNew.swift in Sources */,
 				DAA333E01FDB2694002D766C /* NewAdd+Load.swift in Sources */,
 				DA74F0AC1FE6084100F45310 /* IngredientAmountType.swift in Sources */,
