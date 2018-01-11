@@ -2,6 +2,7 @@ import UIKit
 
 final class ViewCook:ViewMain<ArchCook>
 {
+    private weak var viewList:ViewCookList!
     private weak var layoutHeaderHeight:NSLayoutConstraint!
     
     override func factoryViews()
@@ -11,7 +12,15 @@ final class ViewCook:ViewMain<ArchCook>
         
         let viewHeader:ViewCookHeader = ViewCookHeader(controller:self.controller)
         
+        let viewList:ViewCookList = ViewCookList(controller:self.controller)
+        self.viewList = viewList
+        
+        self.addSubview(viewList)
         self.addSubview(viewHeader)
+        
+        NSLayoutConstraint.equals(
+            view:viewList,
+            toView:self)
         
         NSLayoutConstraint.topToTop(
             view:viewHeader,
