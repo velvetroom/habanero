@@ -14,4 +14,12 @@ final class ViewCookList:ViewCollection<ArchCook, ViewCookListCell, ViewCollecti
         self.flow.minimumLineSpacing = ViewGlobal.Constants.interCellSpace
         self.flow.minimumInteritemSpacing = ViewGlobal.Constants.interCellSpace
     }
+    
+    override func collectionView(
+        _ collectionView:UICollectionView,
+        layout collectionViewLayout:UICollectionViewLayout,
+        insetForSectionAt section:Int) -> UIEdgeInsets
+    {
+        
+    }
 }
