@@ -1,6 +1,6 @@
 import UIKit
 
-final class ViewCookListCellTitle:ViewCookListCell
+final class ViewCookListCellIngredient:ViewCookListCell
 {
     
 }
