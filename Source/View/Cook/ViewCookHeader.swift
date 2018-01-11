@@ -16,7 +16,7 @@ final class ViewCookHeader:View<ArchCook>
         imageView.image = self.controller.model.homeItem?.image
         
         let viewShadow:ViewGradient = ViewGradient.vertical(
-            colourTop:UIColor(white:0, alpha:0.4),
+            colourTop:UIColor(white:0, alpha:0.5),
             colourBottom:UIColor(white:0, alpha:0))
         
         let viewBorder:ViewBorder = ViewBorder(colour:UIColor.colourBackgroundDark)

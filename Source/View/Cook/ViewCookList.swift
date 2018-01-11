@@ -15,6 +15,11 @@ final class ViewCookList:ViewCollection<ArchCook, ViewCookListCell, ViewCollecti
         self.flow.minimumInteritemSpacing = ViewGlobal.Constants.interCellSpace
     }
     
+    override func scrollViewDidScroll(_ scrollView:UIScrollView)
+    {
+        self.controller.viewMain.adjustHeaderHeight()
+    }
+    
     override func collectionView(
         _ collectionView:UICollectionView,
         layout collectionViewLayout:UICollectionViewLayout,
