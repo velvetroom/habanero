@@ -14,19 +14,21 @@ final class ViewCookListCellRecipe:ViewCookListCell
         labelText.backgroundColor = UIColor.clear
         labelText.font = UIFont.bold(size:ViewCookListCellRecipe.Constants.titleFontSize)
         labelText.textColor = UIColor.colourBackgroundDark
+        labelText.numberOfLines = 0
         self.labelText = labelText
         
         self.addSubview(labelText)
         
         NSLayoutConstraint.topToTop(
             view:labelText,
-            toView:self)
+            toView:self,
+            constant:ViewCookList.Constants.marginHorizontal)
         NSLayoutConstraint.heightGreaterOrEqual(
             view:labelText)
         NSLayoutConstraint.equalsHorizontal(
             view:labelText,
             toView:self,
-            margin:ViewCookListCellRecipe.Constants.titleHeight)
+            margin:ViewCookList.Constants.marginHorizontal)
     }
     
     override func config(model:CookItemProtocol)
@@ -78,7 +80,7 @@ final class ViewCookListCellRecipe:ViewCookListCell
     {
         let attributes:[NSAttributedStringKey:Any] = [
             NSAttributedStringKey.font:UIFont.regular(size:ViewCookListCellRecipe.Constants.subtitleFontSize),
-            NSAttributedStringKey.foregroundColor:UIColor(white:0, alpha:0.6)]
+            NSAttributedStringKey.foregroundColor:UIColor(white:0, alpha:0.5)]
         
         let subtitle:NSAttributedString = NSAttributedString(
             string:recipe.subtitle,
