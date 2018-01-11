@@ -44,7 +44,14 @@ final class ViewCook:ViewMain<ArchCook>
     func adjustHeaderHeight()
     {
         let width:CGFloat = self.bounds.width
+        let offsetY:CGFloat = self.viewList.collectionView.contentOffset.y
+        var headerHeight:CGFloat = width - offsetY
         
-        layoutHeaderHeight.constant = width
+        if headerHeight < ViewCook.Constants.headerMinHeight
+        {
+            headerHeight = ViewCook.Constants.headerMinHeight
+        }
+        
+        layoutHeaderHeight.constant = headerHeight
     }
 }
