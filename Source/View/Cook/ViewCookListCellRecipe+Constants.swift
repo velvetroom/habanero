@@ -1,6 +1,6 @@
 import UIKit
 
-extension ViewCookListCellTitle
+extension ViewCookListCellRecipe
 {
     struct Constants
     {

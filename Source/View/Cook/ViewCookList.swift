@@ -7,7 +7,7 @@ final class ViewCookList:ViewCollection<ArchCook, ViewCookListCell, ViewCollecti
         super.factoryViews()
         self.collectionView.alwaysBounceVertical = true
 
-        self.registerCell(cell:ViewCookListCellTitle.self)
+        self.registerCell(cell:ViewCookListCellRecipe.self)
         self.registerCell(cell:ViewCookListCellIngredientsTitle.self)
         self.registerCell(cell:ViewCookListCellIngredient.self)
         

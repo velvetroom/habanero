@@ -13,12 +13,12 @@ extension Cook
     
     class func factoryItems(recipe:Recipe) -> [CookItemProtocol]
     {
-        let itemTitle:CookItemTitle = CookItemTitle(recipe:recipe)
+        let itemRecipe:CookItemRecipe = CookItemRecipe(recipe:recipe)
         let itemIngredientsTitle:CookItemIngredientsTitle = CookItemIngredientsTitle()
         let itemsIngredient:[CookItemProtocol] = Cook.factoryIngredientItems(recipe:recipe)
         
         var items:[CookItemProtocol] = [
-            itemTitle,
+            itemRecipe,
             itemIngredientsTitle]
         
         items.append(contentsOf:itemsIngredient)
