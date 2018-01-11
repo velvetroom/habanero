@@ -42,6 +42,48 @@ final class ViewCookListCellRecipe:ViewCookListCell
             return
         }
         
-        self.labelText.text = model.recipe.title
+        let recipeText:NSAttributedString = ViewCookListCellRecipe.factoryRecipeText(recipe:model.recipe)
+        self.labelText.attributedText = recipeText
+    }
+    
+    //MARK: private
+    
+    private class func factoryRecipeText(recipe:Recipe) -> NSAttributedString
+    {
+        let title:NSAttributedString = ViewCookListCellRecipe.factoryRecipeTitle(recipe:recipe)
+        let subtitle:NSAttributedString = ViewCookListCellRecipe.factoryRecipeSubtitle(recipe:recipe)
+        
+        let text:NSMutableAttributedString = NSMutableAttributedString()
+        text.append(title)
+        text.appendNewLine()
+        text.append(subtitle)
+        
+        return text
+    }
+    
+    private class func factoryRecipeTitle(recipe:Recipe) -> NSAttributedString
+    {
+        let attributes:[NSAttributedStringKey:Any] = [
+            NSAttributedStringKey.font:UIFont.bold(size:ViewCookListCellRecipe.Constants.titleFontSize),
+            NSAttributedStringKey.foregroundColor:UIColor.colourBackgroundDark]
+        
+        let title:NSAttributedString = NSAttributedString(
+            string:recipe.title,
+            attributes:attributes)
+        
+        return title
+    }
+    
+    private class func factoryRecipeSubtitle(recipe:Recipe) -> NSAttributedString
+    {
+        let attributes:[NSAttributedStringKey:Any] = [
+            NSAttributedStringKey.font:UIFont.regular(size:ViewCookListCellRecipe.Constants.subtitleFontSize),
+            NSAttributedStringKey.foregroundColor:UIColor(white:0, alpha:0.6)]
+        
+        let subtitle:NSAttributedString = NSAttributedString(
+            string:recipe.subtitle,
+            attributes:attributes)
+        
+        return subtitle
     }
 }

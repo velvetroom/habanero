@@ -6,8 +6,6 @@ extension ViewNewListCell
     
     private func updateInfo(model:NewItem)
     {
-        let newLine:NSAttributedString = NSAttributedString(string:"\n")
-        
         let title:NSAttributedString = NSAttributedString(
             string:model.title,
             attributes:self.attributesTitle)
@@ -18,7 +16,7 @@ extension ViewNewListCell
         
         let mutableString:NSMutableAttributedString = NSMutableAttributedString()
         mutableString.append(title)
-        mutableString.append(newLine)
+        mutableString.appendNewLine()
         mutableString.append(duration)
         
         self.labelInfo.attributedText = mutableString

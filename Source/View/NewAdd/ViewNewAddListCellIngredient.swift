@@ -120,8 +120,6 @@ final class ViewNewAddListCellIngredient:ViewNewAddListCell
     
     private func showInfo(model:NewAddSectionItemIngredient)
     {
-        let newLine:NSAttributedString = NSAttributedString(string:"\n")
-        
         let name:NSAttributedString = NSAttributedString(
             string:model.name,
             attributes:self.attributesName)
@@ -132,7 +130,7 @@ final class ViewNewAddListCellIngredient:ViewNewAddListCell
         
         let mutableString:NSMutableAttributedString = NSMutableAttributedString()
         mutableString.append(name)
-        mutableString.append(newLine)
+        mutableString.appendNewLine()
         mutableString.append(amount)
         
         self.label.attributedText = mutableString
