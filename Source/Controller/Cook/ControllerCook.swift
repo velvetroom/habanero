@@ -14,7 +14,7 @@ final class ControllerCook:Controller<ArchCook>
     {
         super.init()
      
-        self.model.item = item
+        self.model.homeItem = item
     }
     
     required init?(coder:NSCoder)
