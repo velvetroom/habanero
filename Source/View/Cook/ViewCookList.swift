@@ -20,6 +20,14 @@ final class ViewCookList:ViewCollection<ArchCook, ViewCookListCell, ViewCollecti
         layout collectionViewLayout:UICollectionViewLayout,
         insetForSectionAt section:Int) -> UIEdgeInsets
     {
+        let width:CGFloat = collectionView.bounds.width
         
+        let insets:UIEdgeInsets = UIEdgeInsets(
+            top:width,
+            left:0,
+            bottom:ViewCookList.Constants.insetsBottom,
+            right:0)
+        
+        return insets
     }
 }
