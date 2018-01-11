@@ -1,6 +1,6 @@
 import UIKit
 
-final class ViewCookListCell:ViewCollectionCell
+class ViewCookListCell:ViewCollectionCell
 {
     
 }
