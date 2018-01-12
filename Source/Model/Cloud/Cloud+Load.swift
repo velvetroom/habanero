@@ -52,13 +52,11 @@ extension Cloud
     
     func loadRecipeIngredients(
         recipe:Recipe,
-        completion:@escaping(([RecipeIngredient]?, Error?) -> ()))
+        completion:@escaping((RecipeIngredientsList?, Error?) -> ()))
     {
         self.provider.loadList(
             listKey:Recipe.Keys.ingredients,
-            of:recipe)
-        { (<#CloudListProtocol?#>, <#Error?#>) in
-                <#code#>
-        }
+            of:recipe,
+            completion:completion)
     }
 }

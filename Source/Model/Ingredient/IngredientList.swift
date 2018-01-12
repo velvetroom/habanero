@@ -4,7 +4,7 @@ struct IngredientList:CloudListProtocol
 {
     typealias Item = Ingredient
     
-    var items:[Ingredient]
+    var items:[Item]
     let parentPath:String
     
     init(parentPath:String)

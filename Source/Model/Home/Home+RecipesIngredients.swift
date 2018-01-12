@@ -6,7 +6,21 @@ extension Home
     
     private func asyncLoadIngredientsFor(item:HomeItem)
     {
-        
+        self.cloud.loadRecipeIngredients(recipe:item.recipe)
+        { (ingredientList:RecipeIngredientsList?, error:Error?) in
+            
+            guard
+            
+                error == nil,
+                let ingredientList:RecipeIngredientsList = ingredientList
+            
+            else
+            {
+                return
+            }
+            
+            item.ingredients = ingredientList.items
+        }
     }
     
     //MARK: internal
