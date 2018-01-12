@@ -50,7 +50,7 @@ extension CloudProviderFirebase
             
             guard
                 
-                let item:T.Item = T.Item(
+                let item:T.Item = T.factoryItem(
                     identifier:identifier,
                     parentPath:collectionPath,
                     json:json)
