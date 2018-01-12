@@ -28,6 +28,26 @@ struct FormatIngredientTypeMililitres:FormatIngredientTypeProtocol
     
     //MARK: private
     
+    private static func factoryAmount(
+        mililitres:Int,
+        settings:Settings) -> String?
+    {
+        guard
+            
+            let router:((Int) -> (String?)) = FormatIngredientTypeMililitres.factoryRouter(
+                mililitres:mililitres,
+                metrics:settings.metrics)
+            
+        else
+        {
+            return nil
+        }
+        
+        let amount:String? = router(mililitres)
+        
+        return amount
+    }
+    
     private static func factoryRouter(
         mililitres:Int,
         metrics:SettingsMetrics) -> ((Int) -> (String?))?
@@ -120,19 +140,29 @@ struct FormatIngredientTypeMililitres:FormatIngredientTypeProtocol
         }
         
         let mililitres:Int = Int(buildIngredient.mililitres)
+        let amount:String? = FormatIngredientTypeMililitres.factoryAmount(
+            mililitres:mililitres,
+            settings:settings)
         
+        return amount
+    }
+    
+    static func factoryAmount(
+        recipeIngredient:RecipeIngredient,
+        settings:Settings) -> String?
+    {
         guard
             
-            let router:((Int) -> (String?)) = FormatIngredientTypeMililitres.factoryRouter(
-                mililitres:mililitres,
-                metrics:settings.metrics)
+            let recipeIngredient:RecipeIngredientMililitres = recipeIngredient as? RecipeIngredientMililitres
             
         else
         {
             return nil
         }
         
-        let amount:String? = router(mililitres)
+        let amount:String? = FormatIngredientTypeMililitres.factoryAmount(
+            mililitres:recipeIngredient.mililitres,
+            settings:settings)
         
         return amount
     }
