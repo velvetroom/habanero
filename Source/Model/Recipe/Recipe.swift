@@ -2,7 +2,6 @@ import Foundation
 
 final class Recipe:CloudItemProtocol
 {
-    let ingredients:[RecipeIngredient]
     let created:TimeInterval
     let duration:TimeInterval
     let syncstamp:TimeInterval
@@ -25,19 +24,12 @@ final class Recipe:CloudItemProtocol
             let duration:TimeInterval = json[Recipe.Keys.duration] as? TimeInterval,
             let syncstamp:TimeInterval = json[Recipe.Keys.syncstamp] as? TimeInterval,
             let title:String = json[Recipe.Keys.title] as? String,
-            let subtitle:String = json[Recipe.Keys.subtitle] as? String,
-            let rawIngredients:Any = json[Recipe.Keys.ingredients]
+            let subtitle:String = json[Recipe.Keys.subtitle] as? String
             
         else
         {
             return nil
         }
-        
-        let path:String = parentPath.appendingPathComponent(component:identifier)
-        
-        self.ingredients = RecipeIngredient.factoryIngredients(
-            json:rawIngredients,
-            parentPath:path)
         
         self.parentPath = parentPath
         self.identifier = identifier
