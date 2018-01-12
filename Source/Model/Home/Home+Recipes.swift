@@ -47,7 +47,6 @@ extension Home
             let item:HomeItem = HomeItem(recipe:recipe)
             
             self.recipesMap[recipe.identifier] = item
-            self.loadIngredientsFor(item:item)
         }
         
         self.sortItems(completion:completion)

@@ -20,9 +20,7 @@ extension ControllerHome
         cell.imageView.image = item.image
     }
     
-    //MARK: internal
-    
-    func loadRecipeImage(
+    private func loadRecipeImage(
         item:HomeItem,
         on cell:ViewHomeListCell)
     {
@@ -48,5 +46,32 @@ extension ControllerHome
                 item:item,
                 on:cell)
         }
+    }
+    
+    private func loadRecipeIngredients(item:HomeItem)
+    {
+        guard
+        
+            item.ingredients.count == 0
+        
+        else
+        {
+            return
+        }
+        
+        self.model.loadIngredientsFor(item:item)
+    }
+    
+    //MARK: internal
+    
+    func loadRecipeContents(
+        item:HomeItem,
+        on cell:ViewHomeListCell)
+    {
+        self.loadRecipeImage(
+            item:item,
+            on:cell)
+        
+        self.loadRecipeIngredients(item:item)
     }
 }

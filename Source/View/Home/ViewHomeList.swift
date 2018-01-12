@@ -63,7 +63,7 @@ final class ViewHomeList:ViewCollection<ArchHome, ViewHomeListCell, UICollection
         let cell:ViewHomeListCell = self.cellAtIndex(indexPath:indexPath)
         cell.config(model:item)
         
-        self.controller.loadRecipeImage(
+        self.controller.loadRecipeContents(
             item:item,
             on:cell)
         
