@@ -46,8 +46,6 @@ extension Cook
             homeItem:homeItem,
             settings:settings)
         
-        print(itemsIngredient)
-        
         var items:[CookItemProtocol] = [
             itemRecipe,
             itemIngredientsTitle]
