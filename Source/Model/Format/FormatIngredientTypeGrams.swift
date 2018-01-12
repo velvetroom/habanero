@@ -28,6 +28,26 @@ struct FormatIngredientTypeGrams:FormatIngredientTypeProtocol
     
     //MARK: private
     
+    private static func factoryAmount(
+        grams:Int,
+        settings:Settings) -> String?
+    {
+        guard
+            
+            let router:((Int) -> (String?)) = FormatIngredientTypeGrams.factoryRouter(
+                grams:grams,
+                metrics:settings.metrics)
+            
+        else
+        {
+            return nil
+        }
+        
+        let amount:String? = router(grams)
+        
+        return amount
+    }
+    
     private static func factoryRouter(
         grams:Int,
         metrics:SettingsMetrics) -> ((Int) -> (String?))?
@@ -120,19 +140,29 @@ struct FormatIngredientTypeGrams:FormatIngredientTypeProtocol
         }
         
         let grams:Int = Int(buildIngredient.grams)
+        let amount:String? = FormatIngredientTypeGrams.factoryAmount(
+            grams:grams,
+            settings:settings)
         
+        return amount
+    }
+    
+    static func factoryAmount(
+        recipeIngredient:RecipeIngredient,
+        settings:Settings) -> String?
+    {
         guard
             
-            let router:((Int) -> (String?)) = FormatIngredientTypeGrams.factoryRouter(
-                grams:grams,
-                metrics:settings.metrics)
-        
+            let recipeIngredient:RecipeIngredientGrams = recipeIngredient as? RecipeIngredientGrams
+            
         else
         {
             return nil
         }
         
-        let amount:String? = router(grams)
+        let amount:String? = FormatIngredientTypeGrams.factoryAmount(
+            grams:recipeIngredient.grams,
+            settings:settings)
         
         return amount
     }
