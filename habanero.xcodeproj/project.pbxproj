@@ -473,6 +473,8 @@
 		DAAE25952009509300BE3740 /* Home+RecipesIngredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE25932009509300BE3740 /* Home+RecipesIngredients.swift */; };
 		DAAE2597200954C600BE3740 /* RecipeIngredientsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE2596200954C600BE3740 /* RecipeIngredientsList.swift */; };
 		DAAE2598200954C600BE3740 /* RecipeIngredientsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE2596200954C600BE3740 /* RecipeIngredientsList.swift */; };
+		DAAE259A20096FC000BE3740 /* ViewCookListCellIngredient+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE259920096FC000BE3740 /* ViewCookListCellIngredient+Constants.swift */; };
+		DAAE259B20096FC000BE3740 /* ViewCookListCellIngredient+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE259920096FC000BE3740 /* ViewCookListCellIngredient+Constants.swift */; };
 		DAAE61F41FF636F500954EFC /* PhotoRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE61F31FF636F500954EFC /* PhotoRotation.swift */; };
 		DAAE61F51FF636F500954EFC /* PhotoRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE61F31FF636F500954EFC /* PhotoRotation.swift */; };
 		DAAE61F71FF637A700954EFC /* PhotoRotation+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE61F61FF637A700954EFC /* PhotoRotation+Factory.swift */; };
@@ -982,6 +984,7 @@
 		DAADC4AE1FFC883100862A90 /* NewAddValidateStrategyImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddValidateStrategyImage.swift; sourceTree = "<group>"; };
 		DAAE25932009509300BE3740 /* Home+RecipesIngredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home+RecipesIngredients.swift"; sourceTree = "<group>"; };
 		DAAE2596200954C600BE3740 /* RecipeIngredientsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeIngredientsList.swift; sourceTree = "<group>"; };
+		DAAE259920096FC000BE3740 /* ViewCookListCellIngredient+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookListCellIngredient+Constants.swift"; sourceTree = "<group>"; };
 		DAAE61F31FF636F500954EFC /* PhotoRotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRotation.swift; sourceTree = "<group>"; };
 		DAAE61F61FF637A700954EFC /* PhotoRotation+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoRotation+Factory.swift"; sourceTree = "<group>"; };
 		DAAE61F91FF6385300954EFC /* PhotoRotation+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoRotation+Constants.swift"; sourceTree = "<group>"; };
@@ -1276,6 +1279,7 @@
 				DA27794A20071F4600F15AE0 /* ViewCookListCellIngredientsTitle.swift */,
 				DAFA62EF200828310068EC17 /* ViewCookListCellIngredientsTitle+Constants.swift */,
 				DA27794720071EE900F15AE0 /* ViewCookListCellIngredient.swift */,
+				DAAE259920096FC000BE3740 /* ViewCookListCellIngredient+Constants.swift */,
 			);
 			path = Cook;
 			sourceTree = "<group>";
@@ -2430,6 +2434,7 @@
 				DAAE2597200954C600BE3740 /* RecipeIngredientsList.swift in Sources */,
 				DACF89E31FFDD46900F4FCF0 /* RecipeIngredient+Keys.swift in Sources */,
 				DA91EB1C1FD62C1F0063560D /* ViewSpinner.swift in Sources */,
+				DAAE259A20096FC000BE3740 /* ViewCookListCellIngredient+Constants.swift in Sources */,
 				DA91EB0E1FD62C1F0063560D /* ViewBlur.swift in Sources */,
 				DA683596200176BB0087C77D /* RecipeStepText.swift in Sources */,
 				DA74F0D31FE6158A00F45310 /* FormatIngredientTypeSpoons.swift in Sources */,
@@ -2634,6 +2639,7 @@
 				DA9089841FD4CE2E00C1208A /* ControllerParent+Transitions.swift in Sources */,
 				DA6E80741FF9A18A00175F70 /* CloudListProtocol+Default.swift in Sources */,
 				DA855E0F1FF3839000E1B69F /* PhotoCropMask.swift in Sources */,
+				DAAE259B20096FC000BE3740 /* ViewCookListCellIngredient+Constants.swift in Sources */,
 				DA91EB031FD62C1F0063560D /* ViewAlert+Constants.swift in Sources */,
 				DAE7C3801FE0A9B3003190FF /* Build+Computed.swift in Sources */,
 				DA71D67D1FDA4B91003A33E1 /* ViewNewAddListFooterInfo+Constants.swift in Sources */,
