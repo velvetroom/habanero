@@ -4,9 +4,7 @@ struct FormatIngredientTypeSpoons:FormatIngredientTypeProtocol
 {
     //MARK: private
     
-    private static func factoryAmount(
-        spoons:Int,
-        settings:Settings) -> String?
+    private static func factoryAmount(spoons:Int) -> String?
     {
         let formatter:NumberFormatter = Format.factoryFormatter(
             decimals:FormatIngredientTypeSpoons.Constants.maxDecimals)
@@ -35,9 +33,7 @@ struct FormatIngredientTypeSpoons:FormatIngredientTypeProtocol
         
         let spoons:Int = Int(buildIngredient.spoons)
         
-        let amount:String? = FormatIngredientTypeSpoons.factoryAmount(
-            spoons:spoons,
-            settings:settings)
+        let amount:String? = FormatIngredientTypeSpoons.factoryAmount(spoons:spoons)
         
         return amount
     }
@@ -55,9 +51,7 @@ struct FormatIngredientTypeSpoons:FormatIngredientTypeProtocol
             return nil
         }
         
-        let amount:String? = FormatIngredientTypeSpoons.factoryAmount(
-            spoons:recipeIngredient.spoons,
-            settings:settings)
+        let amount:String? = FormatIngredientTypeSpoons.factoryAmount(spoons:recipeIngredient.spoons)
         
         return amount
     }
