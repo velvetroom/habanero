@@ -4,6 +4,6 @@ extension ViewCookListCellIngredient
 {
     struct Constants
     {
-        static let squareSize:CGFloat = 20
+        static let squareSize:CGFloat = 14
     }
 }
