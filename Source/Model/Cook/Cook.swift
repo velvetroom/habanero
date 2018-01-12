@@ -10,14 +10,14 @@ final class Cook:Model<ArchCook>
         {
             guard
                 
-                let recipe:Recipe = self.homeItem?.recipe
+                let homeItem:HomeItem = self.homeItem
             
             else
             {
                 return
             }
             
-            self.items = Cook.factoryItems(recipe:recipe)
+            self.items = Cook.factoryItems(homeItem:homeItem)
         }
     }
     

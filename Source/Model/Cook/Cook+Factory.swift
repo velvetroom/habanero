@@ -4,9 +4,9 @@ extension Cook
 {
     //MARK: private
     
-    private class func factoryIngredientItems(recipe:Recipe) -> [CookItemProtocol]
+    private class func factoryIngredientItems(homeItem:HomeItem) -> [CookItemProtocol]
     {
-        for ingredient:RecipeIngredient in recipe.ingredients
+        for ingredient:RecipeIngredient in homeItem.ingredients
         {
             print("\(ingredient)")
         }
@@ -16,11 +16,11 @@ extension Cook
     
     //MARK: internal
     
-    class func factoryItems(recipe:Recipe) -> [CookItemProtocol]
+    class func factoryItems(homeItem:HomeItem) -> [CookItemProtocol]
     {
-        let itemRecipe:CookItemRecipe = CookItemRecipe(recipe:recipe)
+        let itemRecipe:CookItemRecipe = CookItemRecipe(recipe:homeItem.recipe)
         let itemIngredientsTitle:CookItemIngredientsTitle = CookItemIngredientsTitle()
-        let itemsIngredient:[CookItemProtocol] = Cook.factoryIngredientItems(recipe:recipe)
+        let itemsIngredient:[CookItemProtocol] = Cook.factoryIngredientItems(homeItem:homeItem)
         
         var items:[CookItemProtocol] = [
             itemRecipe,
