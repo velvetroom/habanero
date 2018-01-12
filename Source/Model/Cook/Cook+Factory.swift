@@ -6,6 +6,8 @@ extension Cook
     
     private class func factoryIngredientItems(homeItem:HomeItem) -> [CookItemProtocol]
     {
+        Format.
+        
         for ingredient:RecipeIngredient in homeItem.ingredients
         {
             print("\(ingredient)")
