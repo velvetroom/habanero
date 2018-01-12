@@ -43,7 +43,18 @@ final class ControllerHome:Controller<ArchHome>
     
     func transitionToRecipe(item:HomeItem)
     {
-        let controller:ControllerCook = ControllerCook(item:item)
+        guard
+            
+            let settings:Settings = self.model.settings
+        
+        else
+        {
+            return
+        }
+        
+        let controller:ControllerCook = ControllerCook(
+            item:item,
+            settings:settings)
         
         self.parentController?.push(
             controller:controller,

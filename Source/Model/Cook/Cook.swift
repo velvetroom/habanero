@@ -3,6 +3,7 @@ import Foundation
 final class Cook:Model<ArchCook>
 {
     var items:[CookItemProtocol]
+    weak var settings:Settings?
     
     var homeItem:HomeItem?
     {
@@ -10,14 +11,17 @@ final class Cook:Model<ArchCook>
         {
             guard
                 
-                let homeItem:HomeItem = self.homeItem
+                let homeItem:HomeItem = self.homeItem,
+                let settings:Settings = self.settings
             
             else
             {
                 return
             }
             
-            self.items = Cook.factoryItems(homeItem:homeItem)
+            self.items = Cook.factoryItems(
+                homeItem:homeItem,
+                settings:settings)
         }
     }
     

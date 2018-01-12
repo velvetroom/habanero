@@ -10,11 +10,14 @@ final class ControllerCook:Controller<ArchCook>
         }
     }
     
-    init(item:HomeItem)
+    init(
+        item:HomeItem,
+        settings:Settings)
     {
         super.init()
      
         self.model.homeItem = item
+        self.model.settings = settings
     }
     
     required init?(coder:NSCoder)
