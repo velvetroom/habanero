@@ -12,4 +12,26 @@ struct RecipeIngredientsList:CloudListProtocol
         self.items = []
         self.parentPath = parentPath
     }
+    
+    static func factoryItem(
+        identifier:String,
+        parentPath:String,
+        json:[String:Any]) -> Item?
+    {
+        guard
+            
+            let itemType:Item.Type = Item.factoryIngredientType(json:json)
+        
+        else
+        {
+            return nil
+        }
+        
+        let item:Item? = itemType.init(
+            identifier:identifier,
+            parentPath:parentPath,
+            json:json)
+        
+        return item
+    }
 }

@@ -17,9 +17,9 @@ extension RecipeIngredient
         }
     }
     
-    //MARK: private
+    //MARK: internal
     
-    private class func factoryIngredientType(json:[String:Any]) -> RecipeIngredient.Type?
+    class func factoryIngredientType(json:[String:Any]) -> RecipeIngredient.Type?
     {
         guard
         
@@ -34,45 +34,5 @@ extension RecipeIngredient
         let ingredientType:RecipeIngredient.Type? = RecipeIngredient.ingredientTypeForAmount[amountType]
         
         return ingredientType
-    }
-    
-    //MARK: internal
-    
-    class func factoryIngredients(
-        json:Any,
-        parentPath:String) -> [RecipeIngredient]
-    {
-        guard
-        
-            let ingredientsMap:[String:[String:Any]] = json as? [String:[String:Any]]
-        
-        else
-        {
-            return []
-        }
-        
-        let ingredientKeys:[String] = Array(ingredientsMap.keys)
-        var ingredients:[RecipeIngredient] = []
-        
-        for ingredientKey:String in ingredientKeys
-        {
-            guard
-            
-                let item:[String:Any] = ingredientsMap[ingredientKey],
-                let ingredientType:RecipeIngredient.Type = RecipeIngredient.factoryIngredientType(json:item),
-                let ingredient:RecipeIngredient = ingredientType.init(
-                    identifier:ingredientKey,
-                    parentPath:parentPath,
-                    json:item)
-            
-            else
-            {
-                continue
-            }
-            
-            ingredients.append(ingredient)
-        }
-        
-        return ingredients
     }
 }
