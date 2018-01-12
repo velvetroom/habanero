@@ -21,4 +21,17 @@ extension CloudListProtocol
             return listType.identifier
         }
     }
+    
+    static func factoryItem(
+        identifier:String,
+        parentPath:String,
+        json:[String:Any]) -> Item?
+    {
+        let item:Item? = Item(
+            identifier:identifier,
+            parentPath:parentPath,
+            json:json)
+        
+        return item
+    }
 }
