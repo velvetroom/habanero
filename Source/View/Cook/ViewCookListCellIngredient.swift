@@ -40,7 +40,7 @@ final class ViewCookListCellIngredient:ViewCookListCell
         NSLayoutConstraint.topToTop(
             view:labelText,
             toView:self,
-            constant:ViewCookList.Constants.marginHorizontal)
+            constant:ViewCookListCellIngredient.Constants.textTop)
         NSLayoutConstraint.heightGreaterOrEqual(
             view:labelText)
         NSLayoutConstraint.leftToRight(
@@ -88,7 +88,7 @@ final class ViewCookListCellIngredient:ViewCookListCell
     private class func factoryName(model:CookItemIngredient) -> NSAttributedString
     {
         let attributes:[NSAttributedStringKey:Any] = [
-            NSAttributedStringKey.font:UIFont.bold(size:ViewCookListCellIngredient.Constants.nameFontSize),
+            NSAttributedStringKey.font:UIFont.regular(size:ViewCookListCellIngredient.Constants.nameFontSize),
             NSAttributedStringKey.foregroundColor:UIColor.colourBackgroundDark]
         
         let name:NSAttributedString = NSAttributedString(

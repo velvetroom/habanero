@@ -6,6 +6,6 @@ extension Cook
     {
         static let recipeCellHeight:CGFloat = 200
         static let ingredientsTitleCellHeight:CGFloat = 40
-        static let ingredientCellHeight:CGFloat = 60
+        static let ingredientCellHeight:CGFloat = 50
     }
 }
