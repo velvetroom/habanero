@@ -52,4 +52,62 @@ final class ViewCookListCellIngredient:ViewCookListCell
             toView:self,
             constant:-ViewCookList.Constants.marginHorizontal)
     }
+    
+    override func config(model:CookItemProtocol)
+    {
+        super.config(model:model)
+        
+        guard
+            
+            let model:CookItemIngredient = model as? CookItemIngredient
+            
+        else
+        {
+            return
+        }
+        
+        let ingredientText:NSAttributedString = ViewCookListCellIngredient.factoryIngredientText(model:model)
+        self.labelText.attributedText = ingredientText
+    }
+    
+    //MARK: private
+    
+    private class func factoryIngredientText(model:CookItemIngredient) -> NSAttributedString
+    {
+        let name:NSAttributedString = ViewCookListCellIngredient.factoryName(model:model)
+        let amount:NSAttributedString = ViewCookListCellIngredient.factoryAmount(model:model)
+        
+        let text:NSMutableAttributedString = NSMutableAttributedString()
+        text.append(name)
+        text.appendNewLine()
+        text.append(amount)
+        
+        return text
+    }
+    
+    private class func factoryName(model:CookItemIngredient) -> NSAttributedString
+    {
+        let attributes:[NSAttributedStringKey:Any] = [
+            NSAttributedStringKey.font:UIFont.bold(size:ViewCookListCellIngredient.Constants.nameFontSize),
+            NSAttributedStringKey.foregroundColor:UIColor.colourBackgroundDark]
+        
+        let name:NSAttributedString = NSAttributedString(
+            string:model.ingredient,
+            attributes:attributes)
+        
+        return name
+    }
+    
+    private class func factoryAmount(model:CookItemIngredient) -> NSAttributedString
+    {
+        let attributes:[NSAttributedStringKey:Any] = [
+            NSAttributedStringKey.font:UIFont.regular(size:ViewCookListCellIngredient.Constants.amountFontSize),
+            NSAttributedStringKey.foregroundColor:UIColor(white:0, alpha:0.5)]
+        
+        let amount:NSAttributedString = NSAttributedString(
+            string:model.amount,
+            attributes:attributes)
+        
+        return amount
+    }
 }
