@@ -24,7 +24,7 @@ extension Cook
             }
             
             let item:CookItemIngredient = CookItemIngredient(
-                ingredient:ingredient.ingredientName,
+                ingredient:ingredient.ingredientName.localizedCapitalized,
                 amount:amount)
             
             items.append(item)
