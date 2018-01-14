@@ -300,6 +300,8 @@
 		DA74F0D41FE6158A00F45310 /* FormatIngredientTypeSpoons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74F0D21FE6158A00F45310 /* FormatIngredientTypeSpoons.swift */; };
 		DA753DAB1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA753DAC1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
+		DA80B54F200C1DB000797D61 /* ViewCookPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B54E200C1DB000797D61 /* ViewCookPlay.swift */; };
+		DA80B550200C1DB000797D61 /* ViewCookPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B54E200C1DB000797D61 /* ViewCookPlay.swift */; };
 		DA84C0EF1FD73F59008959EA /* ArchNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C0EE1FD73F59008959EA /* ArchNew.swift */; };
 		DA84C0F21FD73FCD008959EA /* ControllerNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C0F11FD73FCD008959EA /* ControllerNew.swift */; };
 		DA84C0F51FD74009008959EA /* New.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C0F41FD74009008959EA /* New.swift */; };
@@ -872,6 +874,7 @@
 		DA74F0D21FE6158A00F45310 /* FormatIngredientTypeSpoons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatIngredientTypeSpoons.swift; sourceTree = "<group>"; };
 		DA753DA91FD5EB96007E5BC5 /* Design */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Design; sourceTree = "<group>"; };
 		DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = generic.xcassets; sourceTree = "<group>"; };
+		DA80B54E200C1DB000797D61 /* ViewCookPlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookPlay.swift; sourceTree = "<group>"; };
 		DA84C0EE1FD73F59008959EA /* ArchNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNew.swift; sourceTree = "<group>"; };
 		DA84C0F11FD73FCD008959EA /* ControllerNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerNew.swift; sourceTree = "<group>"; };
 		DA84C0F41FD74009008959EA /* New.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New.swift; sourceTree = "<group>"; };
@@ -1280,6 +1283,7 @@
 				DAFA62EF200828310068EC17 /* ViewCookListCellIngredientsTitle+Constants.swift */,
 				DA27794720071EE900F15AE0 /* ViewCookListCellIngredient.swift */,
 				DAAE259920096FC000BE3740 /* ViewCookListCellIngredient+Constants.swift */,
+				DA80B54E200C1DB000797D61 /* ViewCookPlay.swift */,
 			);
 			path = Cook;
 			sourceTree = "<group>";
@@ -2502,6 +2506,7 @@
 				DA2C17701FEF3C68001BDA54 /* ViewButtonContinue+Constants.swift in Sources */,
 				DA936CF91FFF121200740BE8 /* RecipeIngredientSpoonsBuilder.swift in Sources */,
 				DA4233DE1FEDE56F0012A589 /* ArchPhotoCrop.swift in Sources */,
+				DA80B54F200C1DB000797D61 /* ViewCookPlay.swift in Sources */,
 				DACF55071FD7656F00069701 /* habanero.xcdatamodeld in Sources */,
 				DA71D6AA1FDA74D8003A33E1 /* ViewTextBar.swift in Sources */,
 				DACF55431FD7661E00069701 /* ExtensionData.swift in Sources */,
@@ -2712,6 +2717,7 @@
 				DA8752DD1FE3ABA700AE74F5 /* NewAddIngredientAmountTypeQuantity.swift in Sources */,
 				DACF89F01FFDD8A900F4FCF0 /* RecipeIngredientQuantity.swift in Sources */,
 				DAAE61FF1FF64E9700954EFC /* NewAdd+StepsUpdate.swift in Sources */,
+				DA80B550200C1DB000797D61 /* ViewCookPlay.swift in Sources */,
 				DA71D6901FDA633E003A33E1 /* ArchText.swift in Sources */,
 				DACF55461FD7661E00069701 /* ExtensionNSManagedObject.swift in Sources */,
 				DAB786291FF4B8E300579BB5 /* ViewNewAddListCellStepImage.swift in Sources */,
