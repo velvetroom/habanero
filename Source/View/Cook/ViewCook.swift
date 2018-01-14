@@ -4,6 +4,7 @@ final class ViewCook:ViewMain<ArchCook>
 {
     private weak var viewList:ViewCookList!
     private weak var layoutHeaderHeight:NSLayoutConstraint!
+    private weak var layoutPlayLeft:NSLayoutConstraint!
     
     override func factoryViews()
     {
@@ -15,8 +16,11 @@ final class ViewCook:ViewMain<ArchCook>
         let viewList:ViewCookList = ViewCookList(controller:self.controller)
         self.viewList = viewList
         
+        let viewPlay:ViewCookPlay = ViewCookPlay(controller:self.controller)
+        
         self.addSubview(viewList)
         self.addSubview(viewHeader)
+        self.addSubview(viewPlay)
         
         NSLayoutConstraint.equals(
             view:viewList,
@@ -30,11 +34,27 @@ final class ViewCook:ViewMain<ArchCook>
         NSLayoutConstraint.equalsHorizontal(
             view:viewHeader,
             toView:self)
+        
+        NSLayoutConstraint.bottomToBottom(
+            view:viewPlay,
+            toView:self,
+            constant:ViewCook.Constants.playBottom)
+        NSLayoutConstraint.size(
+            view:viewPlay,
+            constant:ViewCook.Constants.playSize)
+        self.layoutPlayLeft = NSLayoutConstraint.leftToLeft(
+            view:viewPlay,
+            toView:self)
     }
     
     override func layoutSubviews()
     {
         self.adjustHeaderHeight()
+        
+        let width:CGFloat = self.bounds.width
+        let playRemainLeft:CGFloat = width - ViewCook.Constants.playSize
+        let playLeft:CGFloat = playRemainLeft / 2.0
+        self.layoutPlayLeft.constant = playLeft
         
         super.layoutSubviews()
     }
@@ -52,6 +72,6 @@ final class ViewCook:ViewMain<ArchCook>
             headerHeight = ViewCook.Constants.headerMinHeight
         }
         
-        layoutHeaderHeight.constant = headerHeight
+        self.layoutHeaderHeight.constant = headerHeight
     }
 }
