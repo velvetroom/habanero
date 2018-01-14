@@ -302,6 +302,8 @@
 		DA753DAC1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA80B54F200C1DB000797D61 /* ViewCookPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B54E200C1DB000797D61 /* ViewCookPlay.swift */; };
 		DA80B550200C1DB000797D61 /* ViewCookPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B54E200C1DB000797D61 /* ViewCookPlay.swift */; };
+		DA80B552200C1DD300797D61 /* ViewCookBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B551200C1DD300797D61 /* ViewCookBack.swift */; };
+		DA80B553200C1DD300797D61 /* ViewCookBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B551200C1DD300797D61 /* ViewCookBack.swift */; };
 		DA84C0EF1FD73F59008959EA /* ArchNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C0EE1FD73F59008959EA /* ArchNew.swift */; };
 		DA84C0F21FD73FCD008959EA /* ControllerNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C0F11FD73FCD008959EA /* ControllerNew.swift */; };
 		DA84C0F51FD74009008959EA /* New.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C0F41FD74009008959EA /* New.swift */; };
@@ -875,6 +877,7 @@
 		DA753DA91FD5EB96007E5BC5 /* Design */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Design; sourceTree = "<group>"; };
 		DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = generic.xcassets; sourceTree = "<group>"; };
 		DA80B54E200C1DB000797D61 /* ViewCookPlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookPlay.swift; sourceTree = "<group>"; };
+		DA80B551200C1DD300797D61 /* ViewCookBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookBack.swift; sourceTree = "<group>"; };
 		DA84C0EE1FD73F59008959EA /* ArchNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNew.swift; sourceTree = "<group>"; };
 		DA84C0F11FD73FCD008959EA /* ControllerNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerNew.swift; sourceTree = "<group>"; };
 		DA84C0F41FD74009008959EA /* New.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New.swift; sourceTree = "<group>"; };
@@ -1284,6 +1287,7 @@
 				DA27794720071EE900F15AE0 /* ViewCookListCellIngredient.swift */,
 				DAAE259920096FC000BE3740 /* ViewCookListCellIngredient+Constants.swift */,
 				DA80B54E200C1DB000797D61 /* ViewCookPlay.swift */,
+				DA80B551200C1DD300797D61 /* ViewCookBack.swift */,
 			);
 			path = Cook;
 			sourceTree = "<group>";
@@ -2298,6 +2302,7 @@
 				DA70AFC21FD5AA980016B0DC /* ControllerHome.swift in Sources */,
 				DACF89EF1FFDD8A900F4FCF0 /* RecipeIngredientQuantity.swift in Sources */,
 				DACF552D1FD7661E00069701 /* ExtensionNotification.swift in Sources */,
+				DA80B552200C1DD300797D61 /* ViewCookBack.swift in Sources */,
 				DA3F0EBB1FD7505E00593B83 /* Menu+OrderUser.swift in Sources */,
 				DA35DD0B1FFDAADF0047881F /* RecipeStatus.swift in Sources */,
 				DA35DD1A1FFDB4A30047881F /* RecipeList.swift in Sources */,
@@ -2935,6 +2940,7 @@
 				DA2C176E1FEF3A91001BDA54 /* ViewButtonContinue.swift in Sources */,
 				DA60428E1FE1EC2300758A2F /* ViewNewAddListCellIngredient.swift in Sources */,
 				DAADC49D1FFC75A800862A90 /* ControllerNewAdd+Done.swift in Sources */,
+				DA80B553200C1DD300797D61 /* ViewCookBack.swift in Sources */,
 				DA2A94E71FF30089009D2FF9 /* ViewPhotoCropDisplayImage+Constants.swift in Sources */,
 				DA5D71C61FDB56AD00429F5D /* ViewNewAddListCellInfoDuration+Constants.swift in Sources */,
 				DACF554E1FD7661E00069701 /* ExtensionURL.swift in Sources */,
