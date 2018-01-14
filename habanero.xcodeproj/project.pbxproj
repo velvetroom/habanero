@@ -304,6 +304,8 @@
 		DA80B550200C1DB000797D61 /* ViewCookPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B54E200C1DB000797D61 /* ViewCookPlay.swift */; };
 		DA80B552200C1DD300797D61 /* ViewCookBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B551200C1DD300797D61 /* ViewCookBack.swift */; };
 		DA80B553200C1DD300797D61 /* ViewCookBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B551200C1DD300797D61 /* ViewCookBack.swift */; };
+		DA80B555200C23AC00797D61 /* cook.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA80B554200C23AC00797D61 /* cook.xcassets */; };
+		DA80B556200C23AC00797D61 /* cook.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA80B554200C23AC00797D61 /* cook.xcassets */; };
 		DA84C0EF1FD73F59008959EA /* ArchNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C0EE1FD73F59008959EA /* ArchNew.swift */; };
 		DA84C0F21FD73FCD008959EA /* ControllerNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C0F11FD73FCD008959EA /* ControllerNew.swift */; };
 		DA84C0F51FD74009008959EA /* New.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C0F41FD74009008959EA /* New.swift */; };
@@ -878,6 +880,7 @@
 		DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = generic.xcassets; sourceTree = "<group>"; };
 		DA80B54E200C1DB000797D61 /* ViewCookPlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookPlay.swift; sourceTree = "<group>"; };
 		DA80B551200C1DD300797D61 /* ViewCookBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookBack.swift; sourceTree = "<group>"; };
+		DA80B554200C23AC00797D61 /* cook.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = cook.xcassets; sourceTree = "<group>"; };
 		DA84C0EE1FD73F59008959EA /* ArchNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNew.swift; sourceTree = "<group>"; };
 		DA84C0F11FD73FCD008959EA /* ControllerNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerNew.swift; sourceTree = "<group>"; };
 		DA84C0F41FD74009008959EA /* New.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New.swift; sourceTree = "<group>"; };
@@ -1522,6 +1525,7 @@
 				DACEB3AD1FDCAF4F0089B3FE /* new.xcassets */,
 				DA16F1651FDFC05900EB6877 /* spinner.xcassets */,
 				DABA5EC61FEA3A230017F865 /* photo.xcassets */,
+				DA80B554200C23AC00797D61 /* cook.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -2094,6 +2098,7 @@
 				DA6BF0D91FDDFDDC0027C167 /* GoogleService-Info.plist in Resources */,
 				DA3F0EB11FD7480000593B83 /* menu.xcassets in Resources */,
 				DA9089071FD4C65F00C1208A /* LocalizableController.strings in Resources */,
+				DA80B555200C23AC00797D61 /* cook.xcassets in Resources */,
 				DA16F1661FDFC05900EB6877 /* spinner.xcassets in Resources */,
 				DA9089061FD4C65F00C1208A /* LocalizableView.strings in Resources */,
 				DA753DAB1FD5EBC8007E5BC5 /* generic.xcassets in Resources */,
@@ -2118,6 +2123,7 @@
 				DAE7C36C1FE08C9F003190FF /* LocalizableError.strings in Resources */,
 				DA6BF0DB1FDDFDE60027C167 /* GoogleService-Info.plist in Resources */,
 				DABA5EC81FEA3A230017F865 /* photo.xcassets in Resources */,
+				DA80B556200C23AC00797D61 /* cook.xcassets in Resources */,
 				DACEB3AE1FDCAF4F0089B3FE /* new.xcassets in Resources */,
 				DA9089B11FD4CE5F00C1208A /* LocalizableModel.strings in Resources */,
 			);
