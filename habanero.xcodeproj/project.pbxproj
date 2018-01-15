@@ -202,6 +202,8 @@
 		DA68359D200179940087C77D /* RecipeStepTextBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA68359B200179940087C77D /* RecipeStepTextBuilder.swift */; };
 		DA68359F20017C120087C77D /* RecipeStepImageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA68359E20017C120087C77D /* RecipeStepImageBuilder.swift */; };
 		DA6835A020017C120087C77D /* RecipeStepImageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA68359E20017C120087C77D /* RecipeStepImageBuilder.swift */; };
+		DA69EC68200D5F6700CF466B /* ArchCookStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69EC67200D5F6700CF466B /* ArchCookStep.swift */; };
+		DA69EC69200D5F6700CF466B /* ArchCookStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69EC67200D5F6700CF466B /* ArchCookStep.swift */; };
 		DA6BF0D91FDDFDDC0027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0D81FDDFDDC0027C167 /* GoogleService-Info.plist */; };
 		DA6BF0DB1FDDFDE60027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */; };
 		DA6E804D1FF96C0D00175F70 /* NewAdd+Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E804C1FF96C0D00175F70 /* NewAdd+Delete.swift */; };
@@ -815,6 +817,7 @@
 		DA68359B200179940087C77D /* RecipeStepTextBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepTextBuilder.swift; sourceTree = "<group>"; };
 		DA68359E20017C120087C77D /* RecipeStepImageBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepImageBuilder.swift; sourceTree = "<group>"; };
 		DA69BA7C1FDDF98D0062E194 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DA69EC67200D5F6700CF466B /* ArchCookStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchCookStep.swift; sourceTree = "<group>"; };
 		DA6BF0D81FDDFDDC0027C167 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "user/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "admin/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA6BF0DC1FDDFE430027C167 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = user/Info.plist; sourceTree = "<group>"; };
@@ -1606,6 +1609,7 @@
 				DABA5EA81FEA2DAB0017F865 /* ArchPhoto.swift */,
 				DA4233DD1FEDE56F0012A589 /* ArchPhotoCrop.swift */,
 				DA5761CD2005877600A5151C /* ArchCook.swift */,
+				DA69EC67200D5F6700CF466B /* ArchCookStep.swift */,
 			);
 			path = Architecture;
 			sourceTree = "<group>";
@@ -2496,6 +2500,7 @@
 				DA9089251FD4C66000C1208A /* Arch.swift in Sources */,
 				DAAE61F71FF637A700954EFC /* PhotoRotation+Factory.swift in Sources */,
 				DAA333D71FDB17EA002D766C /* Database.swift in Sources */,
+				DA69EC68200D5F6700CF466B /* ArchCookStep.swift in Sources */,
 				DA35DD0E1FFDAB280047881F /* Recipe+Keys.swift in Sources */,
 				DA855E0B1FF371D100E1B69F /* PhotoCropPoints+Factory.swift in Sources */,
 				DA6E80641FF98B3E00175F70 /* CloudProviderFirebase+Provider.swift in Sources */,
@@ -2717,6 +2722,7 @@
 				DAF949F41FD8BC38001BA32E /* ArchNewAdd.swift in Sources */,
 				DA936CF11FFF114900740BE8 /* RecipeIngredientGramsBuilder.swift in Sources */,
 				DA68359D200179940087C77D /* RecipeStepTextBuilder.swift in Sources */,
+				DA69EC69200D5F6700CF466B /* ArchCookStep.swift in Sources */,
 				DA683591200174D50087C77D /* RecipeStep+Keys.swift in Sources */,
 				DA91EAEF1FD62C1F0063560D /* ViewMenu+Synth.swift in Sources */,
 				DA16F1621FDFB09900EB6877 /* ViewNewAddListFooterIngredients+Constants.swift in Sources */,
