@@ -24,4 +24,11 @@ final class ControllerCook:Controller<ArchCook>
     {
         return nil
     }
+    
+    //MARK: internal
+    
+    func transitionBack()
+    {
+        self.parentController?.pop(horizontal:ControllerTransition.Horizontal.right)
+    }
 }

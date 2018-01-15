@@ -19,11 +19,23 @@ final class ViewCookBack:View<ArchCook>
             for:UIControlState.selected)
         button.imageView!.clipsToBounds = true
         button.imageView!.contentMode = UIViewContentMode.center
+        button.addTarget(
+            self,
+            action:#selector(self.selectorBack(sender:)),
+            for:UIControlEvents.touchUpInside)
         
         self.addSubview(button)
         
         NSLayoutConstraint.equals(
             view:button,
             toView:self)
+    }
+    
+    //MARK: selectors
+    
+    @objc
+    private func selectorBack(sender button:UIButton)
+    {
+        self.controller.transitionBack()
     }
 }
