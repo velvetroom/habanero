@@ -3,6 +3,7 @@ import UIKit
 final class ViewCookListCellRecipe:ViewCookListCell
 {
     private weak var labelText:UILabel!
+    private weak var labelDuration:UILabel!
     
     override func factoryViews()
     {
@@ -24,8 +25,17 @@ final class ViewCookListCellRecipe:ViewCookListCell
         imageDuration.contentMode = UIViewContentMode.center
         imageDuration.image = #imageLiteral(resourceName: "assetCookDuration")
         
+        let labelDuration:UILabel = UILabel()
+        labelDuration.translatesAutoresizingMaskIntoConstraints = false
+        labelDuration.backgroundColor = UIColor.clear
+        labelDuration.font = UIFont.regular(size:ViewCookListCellRecipe.Constants.durationFontSize)
+        labelDuration.textColor = UIColor.colourBackgroundDark
+        labelDuration.isUserInteractionEnabled = false
+        self.labelDuration = labelDuration
+        
         self.addSubview(labelText)
         self.addSubview(imageDuration)
+        self.addSubview(labelDuration)
         
         NSLayoutConstraint.topToTop(
             view:labelText,
@@ -49,6 +59,20 @@ final class ViewCookListCellRecipe:ViewCookListCell
             view:imageDuration,
             toView:self,
             constant:ViewCookList.Constants.marginHorizontal)
+        
+        NSLayoutConstraint.bottomToBottom(
+            view:labelDuration,
+            toView:self,
+            constant:ViewCookListCellRecipe.Constants.durationBottom)
+        NSLayoutConstraint.height(
+            view:labelDuration,
+            constant:ViewCookListCellRecipe.Constants.durationSize)
+        NSLayoutConstraint.leftToRight(
+            view:labelDuration,
+            toView:imageDuration,
+            constant:-ViewCookListCellRecipe.Constants.durationRight)
+        NSLayoutConstraint.widthGreaterOrEqual(
+            view:labelDuration)
     }
     
     override func config(model:CookItemProtocol)
@@ -66,6 +90,9 @@ final class ViewCookListCellRecipe:ViewCookListCell
         
         let recipeText:NSAttributedString = ViewCookListCellRecipe.factoryRecipeText(recipe:model.recipe)
         self.labelText.attributedText = recipeText
+        
+        let duration:String? = Format.factoryDuration(duration:model.recipe.duration)
+        self.labelDuration.text = duration
     }
     
     //MARK: private
