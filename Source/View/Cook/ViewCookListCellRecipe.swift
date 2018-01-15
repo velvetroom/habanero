@@ -17,7 +17,15 @@ final class ViewCookListCellRecipe:ViewCookListCell
         labelText.numberOfLines = 0
         self.labelText = labelText
         
+        let imageDuration:UIImageView = UIImageView()
+        imageDuration.isUserInteractionEnabled = false
+        imageDuration.translatesAutoresizingMaskIntoConstraints = false
+        imageDuration.clipsToBounds = true
+        imageDuration.contentMode = UIViewContentMode.center
+        imageDuration.image = #imageLiteral(resourceName: "assetCookDuration")
+        
         self.addSubview(labelText)
+        self.addSubview(imageDuration)
         
         NSLayoutConstraint.topToTop(
             view:labelText,
@@ -29,6 +37,18 @@ final class ViewCookListCellRecipe:ViewCookListCell
             view:labelText,
             toView:self,
             margin:ViewCookList.Constants.marginHorizontal)
+        
+        NSLayoutConstraint.bottomToBottom(
+            view:imageDuration,
+            toView:self,
+            constant:ViewCookListCellRecipe.Constants.durationBottom)
+        NSLayoutConstraint.size(
+            view:imageDuration,
+            constant:ViewCookListCellRecipe.Constants.durationSize)
+        NSLayoutConstraint.leftToLeft(
+            view:imageDuration,
+            toView:self,
+            constant:ViewCookList.Constants.marginHorizontal)
     }
     
     override func config(model:CookItemProtocol)
