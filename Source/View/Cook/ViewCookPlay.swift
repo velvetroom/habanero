@@ -2,8 +2,6 @@ import UIKit
 
 final class ViewCookPlay:View<ArchCook>
 {
-    private weak var button:UIButton!
-    
     override func factoryViews()
     {
         super.factoryViews()
