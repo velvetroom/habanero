@@ -16,10 +16,13 @@ final class ViewCook:ViewMain<ArchCook>
         let viewList:ViewCookList = ViewCookList(controller:self.controller)
         self.viewList = viewList
         
+        let viewBack:ViewCookBack = ViewCookBack(controller:self.controller)
+        
         let viewPlay:ViewCookPlay = ViewCookPlay(controller:self.controller)
         
         self.addSubview(viewList)
         self.addSubview(viewHeader)
+        self.addSubview(viewBack)
         self.addSubview(viewPlay)
         
         NSLayoutConstraint.equals(
@@ -45,6 +48,18 @@ final class ViewCook:ViewMain<ArchCook>
         self.layoutPlayLeft = NSLayoutConstraint.leftToLeft(
             view:viewPlay,
             toView:self)
+        
+        NSLayoutConstraint.bottomToBottom(
+            view:viewBack,
+            toView:self,
+            constant:ViewCook.Constants.backBottom)
+        NSLayoutConstraint.size(
+            view:viewBack,
+            constant:ViewCook.Constants.backSize)
+        NSLayoutConstraint.leftToLeft(
+            view:viewBack,
+            toView:self,
+            constant:ViewCook.Constants.backLeft)
     }
     
     override func layoutSubviews()
