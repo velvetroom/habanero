@@ -48,10 +48,10 @@ final class ViewCookListCellRecipe:ViewCookListCell
             toView:self,
             margin:ViewCookList.Constants.marginHorizontal)
         
-        NSLayoutConstraint.bottomToBottom(
+        NSLayoutConstraint.topToBottom(
             view:imageDuration,
-            toView:self,
-            constant:ViewCookListCellRecipe.Constants.durationBottom)
+            toView:labelText,
+            constant:ViewCookListCellRecipe.Constants.durationTop)
         NSLayoutConstraint.size(
             view:imageDuration,
             constant:ViewCookListCellRecipe.Constants.durationSize)
@@ -60,17 +60,17 @@ final class ViewCookListCellRecipe:ViewCookListCell
             toView:self,
             constant:ViewCookList.Constants.marginHorizontal)
         
-        NSLayoutConstraint.bottomToBottom(
+        NSLayoutConstraint.topToBottom(
             view:labelDuration,
-            toView:self,
-            constant:ViewCookListCellRecipe.Constants.durationBottom)
+            toView:labelText,
+            constant:ViewCookListCellRecipe.Constants.durationTop)
         NSLayoutConstraint.height(
             view:labelDuration,
             constant:ViewCookListCellRecipe.Constants.durationSize)
         NSLayoutConstraint.leftToRight(
             view:labelDuration,
             toView:imageDuration,
-            constant:-ViewCookListCellRecipe.Constants.durationRight)
+            constant:ViewCookListCellRecipe.Constants.durationRight)
         NSLayoutConstraint.widthGreaterOrEqual(
             view:labelDuration)
     }
