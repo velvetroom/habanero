@@ -20,7 +20,7 @@ final class ViewCookStepBar:View<ArchCookStep>
         
         self.addSubview(buttonClose)
         
-        NSLayoutConstraint.topToBottom(
+        NSLayoutConstraint.topToTop(
             view:buttonClose,
             toView:self,
             constant:ViewGlobal.Constants.contentTop)

@@ -4,6 +4,6 @@ extension ViewCookStepBar
 {
     struct Constants
     {
-        static let closeWidth:CGFloat = 70
+        static let closeWidth:CGFloat = 50
     }
 }
