@@ -37,6 +37,8 @@ extension ControllerHome
             return
         }
         
+        cell.imageView.image = nil
+        
         self.model.loadRecipeImage(recipe:item.recipe)
         { (image:UIImage) in
             
