@@ -20,5 +20,6 @@ final class HomeItem
     {
         self.recipe = recipe
         self.ingredients = []
+        self.steps = []
     }
 }
