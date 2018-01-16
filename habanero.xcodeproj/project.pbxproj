@@ -547,6 +547,8 @@
 		DAC104C0200EBD98004617FD /* CookStepItemText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104BE200EBD98004617FD /* CookStepItemText.swift */; };
 		DAC104C2200EBDB3004617FD /* CookStepItemImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104C1200EBDB3004617FD /* CookStepItemImage.swift */; };
 		DAC104C3200EBDB3004617FD /* CookStepItemImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104C1200EBDB3004617FD /* CookStepItemImage.swift */; };
+		DAC104C5200EBF13004617FD /* CookStep+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104C4200EBF13004617FD /* CookStep+Factory.swift */; };
+		DAC104C6200EBF13004617FD /* CookStep+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104C4200EBF13004617FD /* CookStep+Factory.swift */; };
 		DAC732C81FF7579800980854 /* NewAdd+StepsDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC732C71FF7579800980854 /* NewAdd+StepsDelete.swift */; };
 		DAC732CA1FF8502A00980854 /* ViewNewAddListCellText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC732C91FF8502A00980854 /* ViewNewAddListCellText.swift */; };
 		DAC732CC1FF8523900980854 /* ViewNewAddListCellText+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC732CB1FF8523900980854 /* ViewNewAddListCellText+Constants.swift */; };
@@ -1063,6 +1065,7 @@
 		DAC104BB200EB618004617FD /* CookStepItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookStepItemProtocol.swift; sourceTree = "<group>"; };
 		DAC104BE200EBD98004617FD /* CookStepItemText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookStepItemText.swift; sourceTree = "<group>"; };
 		DAC104C1200EBDB3004617FD /* CookStepItemImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookStepItemImage.swift; sourceTree = "<group>"; };
+		DAC104C4200EBF13004617FD /* CookStep+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CookStep+Factory.swift"; sourceTree = "<group>"; };
 		DAC732C71FF7579800980854 /* NewAdd+StepsDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+StepsDelete.swift"; sourceTree = "<group>"; };
 		DAC732C91FF8502A00980854 /* ViewNewAddListCellText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellText.swift; sourceTree = "<group>"; };
 		DAC732CB1FF8523900980854 /* ViewNewAddListCellText+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddListCellText+Constants.swift"; sourceTree = "<group>"; };
@@ -2074,6 +2077,7 @@
 			isa = PBXGroup;
 			children = (
 				DAF99F16200DAC710030866C /* CookStep.swift */,
+				DAC104C4200EBF13004617FD /* CookStep+Factory.swift */,
 				DAC104BB200EB618004617FD /* CookStepItemProtocol.swift */,
 				DAC104BE200EBD98004617FD /* CookStepItemText.swift */,
 				DAC104C1200EBDB3004617FD /* CookStepItemImage.swift */,
@@ -2535,6 +2539,7 @@
 				DACF89E31FFDD46900F4FCF0 /* RecipeIngredient+Keys.swift in Sources */,
 				DA91EB1C1FD62C1F0063560D /* ViewSpinner.swift in Sources */,
 				DAAE259A20096FC000BE3740 /* ViewCookListCellIngredient+Constants.swift in Sources */,
+				DAC104C5200EBF13004617FD /* CookStep+Factory.swift in Sources */,
 				DA91EB0E1FD62C1F0063560D /* ViewBlur.swift in Sources */,
 				DA683596200176BB0087C77D /* RecipeStepText.swift in Sources */,
 				DA74F0D31FE6158A00F45310 /* FormatIngredientTypeSpoons.swift in Sources */,
@@ -2710,6 +2715,7 @@
 				DA35DD1B1FFDB4A30047881F /* RecipeList.swift in Sources */,
 				DA8752CB1FE3863C00AE74F5 /* ViewNewAddIngredientAmountListCell.swift in Sources */,
 				DACF55361FD7661E00069701 /* ExtensionString+Constants.swift in Sources */,
+				DAC104C6200EBF13004617FD /* CookStep+Factory.swift in Sources */,
 				DA91EAFD1FD62C1F0063560D /* ViewParent+Transitions.swift in Sources */,
 				DACEB3A81FDCAA370089B3FE /* ViewNewListCell+Constants.swift in Sources */,
 				DACEB39D1FDC98820089B3FE /* ViewNewList+Actions.swift in Sources */,
