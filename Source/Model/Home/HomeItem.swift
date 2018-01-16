@@ -4,6 +4,7 @@ final class HomeItem
 {
     let recipe:Recipe
     var ingredients:[RecipeIngredient]
+    var steps:[RecipeStep]
     var onImageUpdated:((HomeItem) -> ())?
     
     var image:UIImage?
