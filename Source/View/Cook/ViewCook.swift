@@ -2,6 +2,7 @@ import UIKit
 
 final class ViewCook:ViewMain<ArchCook>
 {
+    private(set) weak var viewHeader:ViewCookHeader!
     private weak var viewList:ViewCookList!
     private weak var layoutHeaderHeight:NSLayoutConstraint!
     private weak var layoutPlayLeft:NSLayoutConstraint!
@@ -12,6 +13,7 @@ final class ViewCook:ViewMain<ArchCook>
         self.shouldPanBack = true
         
         let viewHeader:ViewCookHeader = ViewCookHeader(controller:self.controller)
+        self.viewHeader = viewHeader
         
         let viewList:ViewCookList = ViewCookList(controller:self.controller)
         self.viewList = viewList

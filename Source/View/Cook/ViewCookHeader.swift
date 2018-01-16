@@ -2,6 +2,8 @@ import UIKit
 
 final class ViewCookHeader:View<ArchCook>
 {
+    private(set) weak var imageView:UIImageView!
+    
     override func factoryViews()
     {
         super.factoryViews()
@@ -13,7 +15,7 @@ final class ViewCookHeader:View<ArchCook>
         imageView.isUserInteractionEnabled = false
         imageView.clipsToBounds = true
         imageView.contentMode = UIViewContentMode.scaleAspectFill
-        imageView.image = self.controller.model.homeItem?.image
+        self.imageView = imageView
         
         let viewShadow:ViewGradient = ViewGradient.vertical(
             colourTop:UIColor(white:0, alpha:0.5),

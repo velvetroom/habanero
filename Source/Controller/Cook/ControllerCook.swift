@@ -25,6 +25,33 @@ final class ControllerCook:Controller<ArchCook>
         return nil
     }
     
+    deinit
+    {
+        self.model.homeItem?.onImageUpdated = nil
+    }
+    
+    override func viewDidAppear(_ animated:Bool)
+    {
+        super.viewDidAppear(animated)
+        
+        guard
+        
+            let image:UIImage = self.model.homeItem?.image
+        
+        else
+        {
+            self.model.homeItem?.onImageUpdated =
+            { [weak self] (homeItem:HomeItem) in
+                
+                self?.viewMain.viewHeader.imageView.image = homeItem.image
+            }
+            
+            return
+        }
+        
+        self.viewMain.viewHeader.imageView.image = image
+    }
+    
     //MARK: internal
     
     func transitionBack()
