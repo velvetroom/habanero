@@ -2,6 +2,8 @@ import Foundation
 
 final class CookStep:Model<ArchCookStep>
 {
+    var items:[CookStepItemProtocol]
+    
     var homeItem:HomeItem?
     {
         didSet
@@ -15,9 +17,14 @@ final class CookStep:Model<ArchCookStep>
                 return
             }
             
-//            self.items = Cook.factoryItems(
-//                homeItem:homeItem,
-//                settings:settings)
+            self.items = CookStep.factoryItems(homeItem:homeItem)
         }
+    }
+    
+    required init()
+    {
+        self.items = []
+        
+        super.init()
     }
 }
