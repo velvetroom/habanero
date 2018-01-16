@@ -545,6 +545,8 @@
 		DAC104BD200EB618004617FD /* CookStepItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104BB200EB618004617FD /* CookStepItemProtocol.swift */; };
 		DAC104BF200EBD98004617FD /* CookStepItemText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104BE200EBD98004617FD /* CookStepItemText.swift */; };
 		DAC104C0200EBD98004617FD /* CookStepItemText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104BE200EBD98004617FD /* CookStepItemText.swift */; };
+		DAC104C2200EBDB3004617FD /* CookStepItemImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104C1200EBDB3004617FD /* CookStepItemImage.swift */; };
+		DAC104C3200EBDB3004617FD /* CookStepItemImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104C1200EBDB3004617FD /* CookStepItemImage.swift */; };
 		DAC732C81FF7579800980854 /* NewAdd+StepsDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC732C71FF7579800980854 /* NewAdd+StepsDelete.swift */; };
 		DAC732CA1FF8502A00980854 /* ViewNewAddListCellText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC732C91FF8502A00980854 /* ViewNewAddListCellText.swift */; };
 		DAC732CC1FF8523900980854 /* ViewNewAddListCellText+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC732CB1FF8523900980854 /* ViewNewAddListCellText+Constants.swift */; };
@@ -1060,6 +1062,7 @@
 		DAC104B8200EAC16004617FD /* ViewCookStepListCellImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookStepListCellImage.swift; sourceTree = "<group>"; };
 		DAC104BB200EB618004617FD /* CookStepItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookStepItemProtocol.swift; sourceTree = "<group>"; };
 		DAC104BE200EBD98004617FD /* CookStepItemText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookStepItemText.swift; sourceTree = "<group>"; };
+		DAC104C1200EBDB3004617FD /* CookStepItemImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookStepItemImage.swift; sourceTree = "<group>"; };
 		DAC732C71FF7579800980854 /* NewAdd+StepsDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+StepsDelete.swift"; sourceTree = "<group>"; };
 		DAC732C91FF8502A00980854 /* ViewNewAddListCellText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellText.swift; sourceTree = "<group>"; };
 		DAC732CB1FF8523900980854 /* ViewNewAddListCellText+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddListCellText+Constants.swift"; sourceTree = "<group>"; };
@@ -2073,6 +2076,7 @@
 				DAF99F16200DAC710030866C /* CookStep.swift */,
 				DAC104BB200EB618004617FD /* CookStepItemProtocol.swift */,
 				DAC104BE200EBD98004617FD /* CookStepItemText.swift */,
+				DAC104C1200EBDB3004617FD /* CookStepItemImage.swift */,
 			);
 			path = CookStep;
 			sourceTree = "<group>";
@@ -2606,6 +2610,7 @@
 				DA80B54F200C1DB000797D61 /* ViewCookPlay.swift in Sources */,
 				DACF55071FD7656F00069701 /* habanero.xcdatamodeld in Sources */,
 				DA71D6AA1FDA74D8003A33E1 /* ViewTextBar.swift in Sources */,
+				DAC104C2200EBDB3004617FD /* CookStepItemImage.swift in Sources */,
 				DACF55431FD7661E00069701 /* ExtensionData.swift in Sources */,
 				DA71D6A11FDA6C1A003A33E1 /* ViewTextInput+Constants.swift in Sources */,
 				DABA5EA91FEA2DAB0017F865 /* ArchPhoto.swift in Sources */,
@@ -2750,6 +2755,7 @@
 				DA91EB031FD62C1F0063560D /* ViewAlert+Constants.swift in Sources */,
 				DAE7C3801FE0A9B3003190FF /* Build+Computed.swift in Sources */,
 				DA71D67D1FDA4B91003A33E1 /* ViewNewAddListFooterInfo+Constants.swift in Sources */,
+				DAC104C3200EBDB3004617FD /* CookStepItemImage.swift in Sources */,
 				DA4233ED1FEDEBEC0012A589 /* ViewPhotoCrop+Constants.swift in Sources */,
 				DA74F0C81FE614BA00F45310 /* FormatIngredientTypeCups.swift in Sources */,
 				DA55E2251FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */,
