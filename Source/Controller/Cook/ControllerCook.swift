@@ -30,26 +30,24 @@ final class ControllerCook:Controller<ArchCook>
         self.model.homeItem?.onImageUpdated = nil
     }
     
-    override func viewDidAppear(_ animated:Bool)
+    override func viewDidLoad()
     {
-        super.viewDidAppear(animated)
+        super.viewDidLoad()
         
         guard
-        
-            let image:UIImage = self.model.homeItem?.image
+            
+            self.model.homeItem?.image == nil
         
         else
         {
-            self.model.homeItem?.onImageUpdated =
-            { [weak self] (homeItem:HomeItem) in
-                
-                self?.viewMain.viewHeader.imageView.image = homeItem.image
-            }
-            
             return
         }
         
-        self.viewMain.viewHeader.imageView.image = image
+        self.model.homeItem?.onImageUpdated =
+        { [weak self] (homeItem:HomeItem) in
+            
+            self?.viewMain.viewHeader.imageView.image = homeItem.image
+        }
     }
     
     //MARK: internal

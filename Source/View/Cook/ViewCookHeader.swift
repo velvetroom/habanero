@@ -15,6 +15,7 @@ final class ViewCookHeader:View<ArchCook>
         imageView.isUserInteractionEnabled = false
         imageView.clipsToBounds = true
         imageView.contentMode = UIViewContentMode.scaleAspectFill
+        imageView.image = self.controller.model.homeItem?.image
         self.imageView = imageView
         
         let viewShadow:ViewGradient = ViewGradient.vertical(
