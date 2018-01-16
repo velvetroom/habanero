@@ -64,6 +64,20 @@ extension ControllerHome
         self.model.loadIngredientsFor(item:item)
     }
     
+    private func loadRecipeSteps(item:HomeItem)
+    {
+        guard
+        
+            item.steps.count == 0
+        
+        else
+        {
+            return
+        }
+        
+        self.model.loadStepsFor(item:item)
+    }
+    
     //MARK: internal
     
     func loadRecipeContents(
