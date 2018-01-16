@@ -686,6 +686,10 @@
 		DAFA62EE200826660068EC17 /* ViewCook+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA62EC200826660068EC17 /* ViewCook+Constants.swift */; };
 		DAFA62F0200828310068EC17 /* ViewCookListCellIngredientsTitle+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA62EF200828310068EC17 /* ViewCookListCellIngredientsTitle+Constants.swift */; };
 		DAFA62F1200828310068EC17 /* ViewCookListCellIngredientsTitle+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA62EF200828310068EC17 /* ViewCookListCellIngredientsTitle+Constants.swift */; };
+		DAFCCA5B200DB688002377BC /* Home+RecipeSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCCA5A200DB688002377BC /* Home+RecipeSteps.swift */; };
+		DAFCCA5C200DB688002377BC /* Home+RecipeSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCCA5A200DB688002377BC /* Home+RecipeSteps.swift */; };
+		DAFCCA5E200DB805002377BC /* RecipeStepsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCCA5D200DB805002377BC /* RecipeStepsList.swift */; };
+		DAFCCA5F200DB805002377BC /* RecipeStepsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCCA5D200DB805002377BC /* RecipeStepsList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1129,6 +1133,8 @@
 		DAFA62E9200824C80068EC17 /* ExtensionNSMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionNSMutableAttributedString.swift; sourceTree = "<group>"; };
 		DAFA62EC200826660068EC17 /* ViewCook+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCook+Constants.swift"; sourceTree = "<group>"; };
 		DAFA62EF200828310068EC17 /* ViewCookListCellIngredientsTitle+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookListCellIngredientsTitle+Constants.swift"; sourceTree = "<group>"; };
+		DAFCCA5A200DB688002377BC /* Home+RecipeSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home+RecipeSteps.swift"; sourceTree = "<group>"; };
+		DAFCCA5D200DB805002377BC /* RecipeStepsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1205,6 +1211,7 @@
 				DA936CF51FFF11DD00740BE8 /* RecipeIngredientQuantityBuilder.swift */,
 				DACF89F11FFDD8F800F4FCF0 /* RecipeIngredientSpoons.swift */,
 				DA936CF81FFF121200740BE8 /* RecipeIngredientSpoonsBuilder.swift */,
+				DAFCCA5D200DB805002377BC /* RecipeStepsList.swift */,
 				DA280FC320006AE90016AD43 /* RecipeStep.swift */,
 				DA68358F200174D50087C77D /* RecipeStep+Keys.swift */,
 				DA683592200176130087C77D /* RecipeStep+Factory.swift */,
@@ -1669,6 +1676,7 @@
 				DA10589F2002E57100019445 /* Home+Recipes.swift */,
 				DA07501B200450F6002C428A /* Home+RecipesImage.swift */,
 				DAAE25932009509300BE3740 /* Home+RecipesIngredients.swift */,
+				DAFCCA5A200DB688002377BC /* Home+RecipeSteps.swift */,
 				DA07500F20042A36002C428A /* HomeItem.swift */,
 			);
 			path = Home;
@@ -2376,6 +2384,7 @@
 				DA35DD1D1FFDB91A0047881F /* StorageError.swift in Sources */,
 				DACF55351FD7661E00069701 /* ExtensionString+Constants.swift in Sources */,
 				DABA5EAD1FEA2E170017F865 /* ControllerPhoto.swift in Sources */,
+				DAFCCA5B200DB688002377BC /* Home+RecipeSteps.swift in Sources */,
 				DAE7C3711FE0971B003190FF /* CloudListProtocol.swift in Sources */,
 				DACF89E61FFDD6E600F4FCF0 /* RecipeIngredientCups.swift in Sources */,
 				DAF99F13200DAC410030866C /* ViewCookStep.swift in Sources */,
@@ -2549,6 +2558,7 @@
 				DA6E80791FF9A6A500175F70 /* CloudEntityProtocol+Default.swift in Sources */,
 				DA27794E200724EE00F15AE0 /* ViewCookList+Constants.swift in Sources */,
 				DAFA62D820081A020068EC17 /* CookItemRecipe.swift in Sources */,
+				DAFCCA5E200DB805002377BC /* RecipeStepsList.swift in Sources */,
 				DA855E051FF367E600E1B69F /* PhotoCrop+Export.swift in Sources */,
 				DA2C17701FEF3C68001BDA54 /* ViewButtonContinue+Constants.swift in Sources */,
 				DA936CF91FFF121200740BE8 /* RecipeIngredientSpoonsBuilder.swift in Sources */,
@@ -2819,6 +2829,7 @@
 				DA71D6A51FDA7107003A33E1 /* ViewText+Constants.swift in Sources */,
 				DACF55401FD7661E00069701 /* ExtensionUIFont.swift in Sources */,
 				DA6E806E1FF998FF00175F70 /* CloudProviderFirebase+Load.swift in Sources */,
+				DAFCCA5F200DB805002377BC /* RecipeStepsList.swift in Sources */,
 				DACF89ED1FFDD84700F4FCF0 /* RecipeIngredientMililitres.swift in Sources */,
 				DA9089861FD4CE2E00C1208A /* ControllerParent.swift in Sources */,
 				DAAE2598200954C600BE3740 /* RecipeIngredientsList.swift in Sources */,
@@ -2942,6 +2953,7 @@
 				DA07501420044518002C428A /* ViewHomeList+Constants.swift in Sources */,
 				DA91EB281FD630E80063560D /* ViewGlobal.swift in Sources */,
 				DA90898F1FD4CE3E00C1208A /* Menu.swift in Sources */,
+				DAFCCA5C200DB688002377BC /* Home+RecipeSteps.swift in Sources */,
 				DAB7862D1FF4BAA000579BB5 /* ViewNewAddListCellStep.swift in Sources */,
 				DA8752E31FE3B27100AE74F5 /* ViewNewAddIngredientAmountList+Actions.swift in Sources */,
 				DA35DD151FFDAF460047881F /* IngredientBuilder.swift in Sources */,
