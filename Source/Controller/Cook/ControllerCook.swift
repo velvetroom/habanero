@@ -56,4 +56,9 @@ final class ControllerCook:Controller<ArchCook>
     {
         self.parentController?.pop(horizontal:ControllerTransition.Horizontal.right)
     }
+    
+    func transitionPlay()
+    {
+        
+    }
 }

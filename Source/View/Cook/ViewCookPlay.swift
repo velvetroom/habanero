@@ -19,11 +19,23 @@ final class ViewCookPlay:View<ArchCook>
             for:UIControlState.selected)
         button.imageView!.clipsToBounds = true
         button.imageView!.contentMode = UIViewContentMode.center
+        button.addTarget(
+            self,
+            action:#selector(self.selectorButton(sender:)),
+            for:UIControlEvents.touchUpInside)
         
         self.addSubview(button)
         
         NSLayoutConstraint.equals(
             view:button,
             toView:self)
+    }
+    
+    //MARK: selectors
+    
+    @objc
+    private func selectorButton(sender button:UIButton)
+    {
+        self.controller.transitionPlay()
     }
 }
