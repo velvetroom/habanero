@@ -692,6 +692,8 @@
 		DAFCCA5F200DB805002377BC /* RecipeStepsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCCA5D200DB805002377BC /* RecipeStepsList.swift */; };
 		DAFCCA61200DC6BB002377BC /* ViewCookStepBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCCA60200DC6BB002377BC /* ViewCookStepBar.swift */; };
 		DAFCCA62200DC6BB002377BC /* ViewCookStepBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCCA60200DC6BB002377BC /* ViewCookStepBar.swift */; };
+		DAFCCA64200DD856002377BC /* ViewCookStepBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCCA63200DD856002377BC /* ViewCookStepBar+Constants.swift */; };
+		DAFCCA65200DD856002377BC /* ViewCookStepBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCCA63200DD856002377BC /* ViewCookStepBar+Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1138,6 +1140,7 @@
 		DAFCCA5A200DB688002377BC /* Home+RecipeSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home+RecipeSteps.swift"; sourceTree = "<group>"; };
 		DAFCCA5D200DB805002377BC /* RecipeStepsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepsList.swift; sourceTree = "<group>"; };
 		DAFCCA60200DC6BB002377BC /* ViewCookStepBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookStepBar.swift; sourceTree = "<group>"; };
+		DAFCCA63200DD856002377BC /* ViewCookStepBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStepBar+Constants.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2037,6 +2040,7 @@
 			children = (
 				DAF99F12200DAC410030866C /* ViewCookStep.swift */,
 				DAFCCA60200DC6BB002377BC /* ViewCookStepBar.swift */,
+				DAFCCA63200DD856002377BC /* ViewCookStepBar+Constants.swift */,
 			);
 			path = CookStep;
 			sourceTree = "<group>";
@@ -2485,6 +2489,7 @@
 				DA91EB141FD62C1F0063560D /* ViewGradient.swift in Sources */,
 				DA6E80841FF9B7A600175F70 /* StorageProviderFirebase.swift in Sources */,
 				DA6E807E1FF9B60B00175F70 /* Storage.swift in Sources */,
+				DAFCCA64200DD856002377BC /* ViewCookStepBar+Constants.swift in Sources */,
 				DA9089211FD4C66000C1208A /* ControllerParent+Transitions.swift in Sources */,
 				DAF99F17200DAC710030866C /* CookStep.swift in Sources */,
 				DAE5E4891FE48F1D00CC40BA /* Home+Settings.swift in Sources */,
@@ -2914,6 +2919,7 @@
 				DA35DD2D1FFDBF1C0047881F /* Storage+Save.swift in Sources */,
 				DAB786231FF4B3B400579BB5 /* NewAddError.swift in Sources */,
 				DA8752CD1FE3866700AE74F5 /* ViewNewAddIngredientAmountList+Constants.swift in Sources */,
+				DAFCCA65200DD856002377BC /* ViewCookStepBar+Constants.swift in Sources */,
 				DAE7C37E1FE0A835003190FF /* NewAddIngredient+Select.swift in Sources */,
 				DA1F04F81FE8DF3D00DF03A8 /* ViewNewAddListCellStepText+Constants.swift in Sources */,
 				DA91EAF31FD62C1F0063560D /* View.swift in Sources */,
