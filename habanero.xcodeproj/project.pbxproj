@@ -541,6 +541,8 @@
 		DAC104B7200EABF9004617FD /* ViewCookStepListCellText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104B5200EABF9004617FD /* ViewCookStepListCellText.swift */; };
 		DAC104B9200EAC16004617FD /* ViewCookStepListCellImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104B8200EAC16004617FD /* ViewCookStepListCellImage.swift */; };
 		DAC104BA200EAC16004617FD /* ViewCookStepListCellImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104B8200EAC16004617FD /* ViewCookStepListCellImage.swift */; };
+		DAC104BC200EB618004617FD /* CookStepItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104BB200EB618004617FD /* CookStepItemProtocol.swift */; };
+		DAC104BD200EB618004617FD /* CookStepItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104BB200EB618004617FD /* CookStepItemProtocol.swift */; };
 		DAC732C81FF7579800980854 /* NewAdd+StepsDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC732C71FF7579800980854 /* NewAdd+StepsDelete.swift */; };
 		DAC732CA1FF8502A00980854 /* ViewNewAddListCellText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC732C91FF8502A00980854 /* ViewNewAddListCellText.swift */; };
 		DAC732CC1FF8523900980854 /* ViewNewAddListCellText+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC732CB1FF8523900980854 /* ViewNewAddListCellText+Constants.swift */; };
@@ -1054,6 +1056,7 @@
 		DAC104B2200EA9BA004617FD /* ViewCookStepListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookStepListCell.swift; sourceTree = "<group>"; };
 		DAC104B5200EABF9004617FD /* ViewCookStepListCellText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookStepListCellText.swift; sourceTree = "<group>"; };
 		DAC104B8200EAC16004617FD /* ViewCookStepListCellImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookStepListCellImage.swift; sourceTree = "<group>"; };
+		DAC104BB200EB618004617FD /* CookStepItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookStepItemProtocol.swift; sourceTree = "<group>"; };
 		DAC732C71FF7579800980854 /* NewAdd+StepsDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+StepsDelete.swift"; sourceTree = "<group>"; };
 		DAC732C91FF8502A00980854 /* ViewNewAddListCellText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellText.swift; sourceTree = "<group>"; };
 		DAC732CB1FF8523900980854 /* ViewNewAddListCellText+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddListCellText+Constants.swift"; sourceTree = "<group>"; };
@@ -2065,6 +2068,7 @@
 			isa = PBXGroup;
 			children = (
 				DAF99F16200DAC710030866C /* CookStep.swift */,
+				DAC104BB200EB618004617FD /* CookStepItemProtocol.swift */,
 			);
 			path = CookStep;
 			sourceTree = "<group>";
@@ -2381,6 +2385,7 @@
 				DA177BF41FD7792C003B3836 /* ViewBar.swift in Sources */,
 				DAE7C3641FE0828C003190FF /* Analytics.swift in Sources */,
 				DA35DD231FFDBAC50047881F /* StorageContainer.swift in Sources */,
+				DAC104BC200EB618004617FD /* CookStepItemProtocol.swift in Sources */,
 				DA74F0C41FE6139F00F45310 /* Format+Duration.swift in Sources */,
 				DA9089281FD4C66000C1208A /* Menu+Constants.swift in Sources */,
 				DA91EB1E1FD62C1F0063560D /* ViewGradient+Constants.swift in Sources */,
@@ -2880,6 +2885,7 @@
 				DA1F04F21FE8C0BF00DF03A8 /* ControllerNewAdd+Steps.swift in Sources */,
 				DA6042901FE1EE4D00758A2F /* ViewNewAddListCellIngredient+Constants.swift in Sources */,
 				DA91EB0F1FD62C1F0063560D /* ViewBlur.swift in Sources */,
+				DAC104BD200EB618004617FD /* CookStepItemProtocol.swift in Sources */,
 				DA91EB251FD62D700063560D /* ViewControllableProtocol.swift in Sources */,
 				DAC732D01FF85AB400980854 /* NewAddSectionItemInfoSubtitle.swift in Sources */,
 				DA07501120042A36002C428A /* HomeItem.swift in Sources */,
