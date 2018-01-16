@@ -535,6 +535,8 @@
 		DABDF33C1FEB6BC8002EF842 /* PhotoOptionLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDF33A1FEB6BC8002EF842 /* PhotoOptionLibrary.swift */; };
 		DAC104B0200EA921004617FD /* ViewCookStepList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104AF200EA921004617FD /* ViewCookStepList.swift */; };
 		DAC104B1200EA921004617FD /* ViewCookStepList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104AF200EA921004617FD /* ViewCookStepList.swift */; };
+		DAC104B3200EA9BA004617FD /* ViewCookStepListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104B2200EA9BA004617FD /* ViewCookStepListCell.swift */; };
+		DAC104B4200EA9BA004617FD /* ViewCookStepListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104B2200EA9BA004617FD /* ViewCookStepListCell.swift */; };
 		DAC732C81FF7579800980854 /* NewAdd+StepsDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC732C71FF7579800980854 /* NewAdd+StepsDelete.swift */; };
 		DAC732CA1FF8502A00980854 /* ViewNewAddListCellText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC732C91FF8502A00980854 /* ViewNewAddListCellText.swift */; };
 		DAC732CC1FF8523900980854 /* ViewNewAddListCellText+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC732CB1FF8523900980854 /* ViewNewAddListCellText+Constants.swift */; };
@@ -1045,6 +1047,7 @@
 		DABDF3371FEB6B87002EF842 /* PhotoOptionCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoOptionCamera.swift; sourceTree = "<group>"; };
 		DABDF33A1FEB6BC8002EF842 /* PhotoOptionLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoOptionLibrary.swift; sourceTree = "<group>"; };
 		DAC104AF200EA921004617FD /* ViewCookStepList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookStepList.swift; sourceTree = "<group>"; };
+		DAC104B2200EA9BA004617FD /* ViewCookStepListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookStepListCell.swift; sourceTree = "<group>"; };
 		DAC732C71FF7579800980854 /* NewAdd+StepsDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+StepsDelete.swift"; sourceTree = "<group>"; };
 		DAC732C91FF8502A00980854 /* ViewNewAddListCellText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellText.swift; sourceTree = "<group>"; };
 		DAC732CB1FF8523900980854 /* ViewNewAddListCellText+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddListCellText+Constants.swift"; sourceTree = "<group>"; };
@@ -2045,6 +2048,7 @@
 				DAFCCA60200DC6BB002377BC /* ViewCookStepBar.swift */,
 				DAFCCA63200DD856002377BC /* ViewCookStepBar+Constants.swift */,
 				DAC104AF200EA921004617FD /* ViewCookStepList.swift */,
+				DAC104B2200EA9BA004617FD /* ViewCookStepListCell.swift */,
 			);
 			path = CookStep;
 			sourceTree = "<group>";
@@ -2521,6 +2525,7 @@
 				DAE7C3771FE0996B003190FF /* IngredientList.swift in Sources */,
 				DA9089201FD4C66000C1208A /* ControllerParent+Menu.swift in Sources */,
 				DA91EB241FD62D700063560D /* ViewControllableProtocol.swift in Sources */,
+				DAC104B3200EA9BA004617FD /* ViewCookStepListCell.swift in Sources */,
 				DA35DD171FFDB11E0047881F /* RecipeBuilder.swift in Sources */,
 				DA683599200176DC0087C77D /* RecipeStepImage.swift in Sources */,
 				DAE5E4861FE48CA700CC40BA /* Settings+Computed.swift in Sources */,
@@ -2847,6 +2852,7 @@
 				DA6E806E1FF998FF00175F70 /* CloudProviderFirebase+Load.swift in Sources */,
 				DAFCCA5F200DB805002377BC /* RecipeStepsList.swift in Sources */,
 				DACF89ED1FFDD84700F4FCF0 /* RecipeIngredientMililitres.swift in Sources */,
+				DAC104B4200EA9BA004617FD /* ViewCookStepListCell.swift in Sources */,
 				DA9089861FD4CE2E00C1208A /* ControllerParent.swift in Sources */,
 				DAAE2598200954C600BE3740 /* RecipeIngredientsList.swift in Sources */,
 				DA91EB151FD62C1F0063560D /* ViewGradient.swift in Sources */,
