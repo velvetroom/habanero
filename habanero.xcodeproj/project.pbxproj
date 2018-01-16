@@ -662,6 +662,8 @@
 		DAF949FC1FD8BD13001BA32E /* NewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949FB1FD8BD13001BA32E /* NewAdd.swift */; };
 		DAF99F13200DAC410030866C /* ViewCookStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF99F12200DAC410030866C /* ViewCookStep.swift */; };
 		DAF99F14200DAC410030866C /* ViewCookStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF99F12200DAC410030866C /* ViewCookStep.swift */; };
+		DAF99F17200DAC710030866C /* CookStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF99F16200DAC710030866C /* CookStep.swift */; };
+		DAF99F18200DAC710030866C /* CookStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF99F16200DAC710030866C /* CookStep.swift */; };
 		DAFA62D22008191C0068EC17 /* CookItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA62D12008191C0068EC17 /* CookItemProtocol.swift */; };
 		DAFA62D32008191C0068EC17 /* CookItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA62D12008191C0068EC17 /* CookItemProtocol.swift */; };
 		DAFA62D5200819A70068EC17 /* Cook+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA62D4200819A70068EC17 /* Cook+Constants.swift */; };
@@ -1115,6 +1117,7 @@
 		DAF949F81FD8BCC6001BA32E /* ViewNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAdd.swift; sourceTree = "<group>"; };
 		DAF949FB1FD8BD13001BA32E /* NewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAdd.swift; sourceTree = "<group>"; };
 		DAF99F12200DAC410030866C /* ViewCookStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookStep.swift; sourceTree = "<group>"; };
+		DAF99F16200DAC710030866C /* CookStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookStep.swift; sourceTree = "<group>"; };
 		DAFA62D12008191C0068EC17 /* CookItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookItemProtocol.swift; sourceTree = "<group>"; };
 		DAFA62D4200819A70068EC17 /* Cook+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cook+Constants.swift"; sourceTree = "<group>"; };
 		DAFA62D720081A020068EC17 /* CookItemRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookItemRecipe.swift; sourceTree = "<group>"; };
@@ -1624,6 +1627,7 @@
 		DA9088D11FD4C65F00C1208A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DAF99F15200DAC690030866C /* CookStep */,
 				DA5761D32005884200A5151C /* Cook */,
 				DA6E807B1FF9B5FD00175F70 /* Storage */,
 				DA6E807C1FF9B5FD00175F70 /* StorageProvider */,
@@ -2021,6 +2025,14 @@
 			isa = PBXGroup;
 			children = (
 				DAF99F12200DAC410030866C /* ViewCookStep.swift */,
+			);
+			path = CookStep;
+			sourceTree = "<group>";
+		};
+		DAF99F15200DAC690030866C /* CookStep */ = {
+			isa = PBXGroup;
+			children = (
+				DAF99F16200DAC710030866C /* CookStep.swift */,
 			);
 			path = CookStep;
 			sourceTree = "<group>";
@@ -2460,6 +2472,7 @@
 				DA6E80841FF9B7A600175F70 /* StorageProviderFirebase.swift in Sources */,
 				DA6E807E1FF9B60B00175F70 /* Storage.swift in Sources */,
 				DA9089211FD4C66000C1208A /* ControllerParent+Transitions.swift in Sources */,
+				DAF99F17200DAC710030866C /* CookStep.swift in Sources */,
 				DAE5E4891FE48F1D00CC40BA /* Home+Settings.swift in Sources */,
 				DA35DD201FFDB95B0047881F /* StorageError+Description.swift in Sources */,
 				DAFA62DB20081A6F0068EC17 /* CookItemIngredientsTitle.swift in Sources */,
@@ -2847,6 +2860,7 @@
 				DA2C17711FEF3C68001BDA54 /* ViewButtonContinue+Constants.swift in Sources */,
 				DA71D69C1FDA65AB003A33E1 /* ViewText.swift in Sources */,
 				DAFA62DF20081AA00068EC17 /* CookItemIngredient.swift in Sources */,
+				DAF99F18200DAC710030866C /* CookStep.swift in Sources */,
 				DA3F0EB81FD74FC400593B83 /* MenuItemNew.swift in Sources */,
 				DAFA62E220081AE40068EC17 /* Cook+Factory.swift in Sources */,
 				DAA333E01FDB2694002D766C /* NewAdd+Load.swift in Sources */,
