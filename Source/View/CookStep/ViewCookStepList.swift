@@ -1,6 +1,6 @@
 import UIKit
 
-final class ViewCookStepList:ViewCollection<ArchCookStep, ViewCollectionCell, ViewCollectionFlow>
+final class ViewCookStepList:ViewCollection<ArchCookStep, ViewCookStepListCell, ViewCollectionFlow>
 {
     
 }
