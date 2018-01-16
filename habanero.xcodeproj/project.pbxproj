@@ -533,6 +533,8 @@
 		DABDF3391FEB6B87002EF842 /* PhotoOptionCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDF3371FEB6B87002EF842 /* PhotoOptionCamera.swift */; };
 		DABDF33B1FEB6BC8002EF842 /* PhotoOptionLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDF33A1FEB6BC8002EF842 /* PhotoOptionLibrary.swift */; };
 		DABDF33C1FEB6BC8002EF842 /* PhotoOptionLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDF33A1FEB6BC8002EF842 /* PhotoOptionLibrary.swift */; };
+		DAC104B0200EA921004617FD /* ViewCookStepList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104AF200EA921004617FD /* ViewCookStepList.swift */; };
+		DAC104B1200EA921004617FD /* ViewCookStepList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104AF200EA921004617FD /* ViewCookStepList.swift */; };
 		DAC732C81FF7579800980854 /* NewAdd+StepsDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC732C71FF7579800980854 /* NewAdd+StepsDelete.swift */; };
 		DAC732CA1FF8502A00980854 /* ViewNewAddListCellText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC732C91FF8502A00980854 /* ViewNewAddListCellText.swift */; };
 		DAC732CC1FF8523900980854 /* ViewNewAddListCellText+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC732CB1FF8523900980854 /* ViewNewAddListCellText+Constants.swift */; };
@@ -1042,6 +1044,7 @@
 		DABA5ECF1FEA3CE60017F865 /* ViewPhotoList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewPhotoList+Actions.swift"; sourceTree = "<group>"; };
 		DABDF3371FEB6B87002EF842 /* PhotoOptionCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoOptionCamera.swift; sourceTree = "<group>"; };
 		DABDF33A1FEB6BC8002EF842 /* PhotoOptionLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoOptionLibrary.swift; sourceTree = "<group>"; };
+		DAC104AF200EA921004617FD /* ViewCookStepList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookStepList.swift; sourceTree = "<group>"; };
 		DAC732C71FF7579800980854 /* NewAdd+StepsDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+StepsDelete.swift"; sourceTree = "<group>"; };
 		DAC732C91FF8502A00980854 /* ViewNewAddListCellText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellText.swift; sourceTree = "<group>"; };
 		DAC732CB1FF8523900980854 /* ViewNewAddListCellText+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddListCellText+Constants.swift"; sourceTree = "<group>"; };
@@ -2041,6 +2044,7 @@
 				DAF99F12200DAC410030866C /* ViewCookStep.swift */,
 				DAFCCA60200DC6BB002377BC /* ViewCookStepBar.swift */,
 				DAFCCA63200DD856002377BC /* ViewCookStepBar+Constants.swift */,
+				DAC104AF200EA921004617FD /* ViewCookStepList.swift */,
 			);
 			path = CookStep;
 			sourceTree = "<group>";
@@ -2563,6 +2567,7 @@
 				DABDF3381FEB6B87002EF842 /* PhotoOptionCamera.swift in Sources */,
 				DA70AFC51FD5AABF0016B0DC /* Home.swift in Sources */,
 				DA91EB271FD630E80063560D /* ViewGlobal.swift in Sources */,
+				DAC104B0200EA921004617FD /* ViewCookStepList.swift in Sources */,
 				DABA5EB51FEA301D0017F865 /* ViewPhoto.swift in Sources */,
 				DABA5EB11FEA2FF40017F865 /* Photo.swift in Sources */,
 				DA6E80791FF9A6A500175F70 /* CloudEntityProtocol+Default.swift in Sources */,
@@ -2854,6 +2859,7 @@
 				DA91EB1D1FD62C1F0063560D /* ViewSpinner.swift in Sources */,
 				DAE7C3781FE0996B003190FF /* IngredientList.swift in Sources */,
 				DACF552C1FD7661E00069701 /* ExtensionDictionary.swift in Sources */,
+				DAC104B1200EA921004617FD /* ViewCookStepList.swift in Sources */,
 				DA1F04F21FE8C0BF00DF03A8 /* ControllerNewAdd+Steps.swift in Sources */,
 				DA6042901FE1EE4D00758A2F /* ViewNewAddListCellIngredient+Constants.swift in Sources */,
 				DA91EB0F1FD62C1F0063560D /* ViewBlur.swift in Sources */,
