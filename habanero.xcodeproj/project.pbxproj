@@ -543,6 +543,8 @@
 		DAC104BA200EAC16004617FD /* ViewCookStepListCellImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104B8200EAC16004617FD /* ViewCookStepListCellImage.swift */; };
 		DAC104BC200EB618004617FD /* CookStepItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104BB200EB618004617FD /* CookStepItemProtocol.swift */; };
 		DAC104BD200EB618004617FD /* CookStepItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104BB200EB618004617FD /* CookStepItemProtocol.swift */; };
+		DAC104BF200EBD98004617FD /* CookStepItemText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104BE200EBD98004617FD /* CookStepItemText.swift */; };
+		DAC104C0200EBD98004617FD /* CookStepItemText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104BE200EBD98004617FD /* CookStepItemText.swift */; };
 		DAC732C81FF7579800980854 /* NewAdd+StepsDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC732C71FF7579800980854 /* NewAdd+StepsDelete.swift */; };
 		DAC732CA1FF8502A00980854 /* ViewNewAddListCellText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC732C91FF8502A00980854 /* ViewNewAddListCellText.swift */; };
 		DAC732CC1FF8523900980854 /* ViewNewAddListCellText+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC732CB1FF8523900980854 /* ViewNewAddListCellText+Constants.swift */; };
@@ -1057,6 +1059,7 @@
 		DAC104B5200EABF9004617FD /* ViewCookStepListCellText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookStepListCellText.swift; sourceTree = "<group>"; };
 		DAC104B8200EAC16004617FD /* ViewCookStepListCellImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookStepListCellImage.swift; sourceTree = "<group>"; };
 		DAC104BB200EB618004617FD /* CookStepItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookStepItemProtocol.swift; sourceTree = "<group>"; };
+		DAC104BE200EBD98004617FD /* CookStepItemText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookStepItemText.swift; sourceTree = "<group>"; };
 		DAC732C71FF7579800980854 /* NewAdd+StepsDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+StepsDelete.swift"; sourceTree = "<group>"; };
 		DAC732C91FF8502A00980854 /* ViewNewAddListCellText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellText.swift; sourceTree = "<group>"; };
 		DAC732CB1FF8523900980854 /* ViewNewAddListCellText+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddListCellText+Constants.swift"; sourceTree = "<group>"; };
@@ -2069,6 +2072,7 @@
 			children = (
 				DAF99F16200DAC710030866C /* CookStep.swift */,
 				DAC104BB200EB618004617FD /* CookStepItemProtocol.swift */,
+				DAC104BE200EBD98004617FD /* CookStepItemText.swift */,
 			);
 			path = CookStep;
 			sourceTree = "<group>";
@@ -2392,6 +2396,7 @@
 				DA5761D12005879D00A5151C /* ControllerCook.swift in Sources */,
 				DAFA62F0200828310068EC17 /* ViewCookListCellIngredientsTitle+Constants.swift in Sources */,
 				DA936D031FFF19B300740BE8 /* Cloud+CreateRecipeIngredient.swift in Sources */,
+				DAC104BF200EBD98004617FD /* CookStepItemText.swift in Sources */,
 				DA35DD291FFDBDF70047881F /* StorageProviderFirebase+Constants.swift in Sources */,
 				DACF552F1FD7661E00069701 /* ExtensionUIColor.swift in Sources */,
 				DABA5EB81FEA32C60017F865 /* ViewPhotoList.swift in Sources */,
@@ -2714,6 +2719,7 @@
 				DA8752D71FE3AB8D00AE74F5 /* NewAddIngredientAmountTypeCups.swift in Sources */,
 				DA58C6E71FD9E216000E6F30 /* NewAdd+Factory.swift in Sources */,
 				DA07501D200450F6002C428A /* Home+RecipesImage.swift in Sources */,
+				DAC104C0200EBD98004617FD /* CookStepItemText.swift in Sources */,
 				DA4233EA1FEDEBE10012A589 /* ViewPhotoCropMenu.swift in Sources */,
 				DA2C17771FEF4305001BDA54 /* ViewPhotoCropDisplayImage.swift in Sources */,
 				DA71D66D1FDA43EF003A33E1 /* ViewNewAddListFooterInfo.swift in Sources */,
