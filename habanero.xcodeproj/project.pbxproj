@@ -660,6 +660,8 @@
 		DAF949F61FD8BC6F001BA32E /* ControllerNewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F51FD8BC6F001BA32E /* ControllerNewAdd.swift */; };
 		DAF949F91FD8BCC6001BA32E /* ViewNewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F81FD8BCC6001BA32E /* ViewNewAdd.swift */; };
 		DAF949FC1FD8BD13001BA32E /* NewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949FB1FD8BD13001BA32E /* NewAdd.swift */; };
+		DAF99F13200DAC410030866C /* ViewCookStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF99F12200DAC410030866C /* ViewCookStep.swift */; };
+		DAF99F14200DAC410030866C /* ViewCookStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF99F12200DAC410030866C /* ViewCookStep.swift */; };
 		DAFA62D22008191C0068EC17 /* CookItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA62D12008191C0068EC17 /* CookItemProtocol.swift */; };
 		DAFA62D32008191C0068EC17 /* CookItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA62D12008191C0068EC17 /* CookItemProtocol.swift */; };
 		DAFA62D5200819A70068EC17 /* Cook+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA62D4200819A70068EC17 /* Cook+Constants.swift */; };
@@ -1112,6 +1114,7 @@
 		DAF949F51FD8BC6F001BA32E /* ControllerNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerNewAdd.swift; sourceTree = "<group>"; };
 		DAF949F81FD8BCC6001BA32E /* ViewNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAdd.swift; sourceTree = "<group>"; };
 		DAF949FB1FD8BD13001BA32E /* NewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAdd.swift; sourceTree = "<group>"; };
+		DAF99F12200DAC410030866C /* ViewCookStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookStep.swift; sourceTree = "<group>"; };
 		DAFA62D12008191C0068EC17 /* CookItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookItemProtocol.swift; sourceTree = "<group>"; };
 		DAFA62D4200819A70068EC17 /* Cook+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cook+Constants.swift"; sourceTree = "<group>"; };
 		DAFA62D720081A020068EC17 /* CookItemRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookItemRecipe.swift; sourceTree = "<group>"; };
@@ -1690,6 +1693,7 @@
 		DA9088E01FD4C65F00C1208A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DAF99F11200DAC350030866C /* CookStep */,
 				DA5761D72005886E00A5151C /* Cook */,
 				DA91EAC81FD62C1F0063560D /* Global */,
 				DA91EAD81FD62C1F0063560D /* Generic */,
@@ -2011,6 +2015,14 @@
 				DAADC4AE1FFC883100862A90 /* NewAddValidateStrategyImage.swift */,
 			);
 			path = NewAdd;
+			sourceTree = "<group>";
+		};
+		DAF99F11200DAC350030866C /* CookStep */ = {
+			isa = PBXGroup;
+			children = (
+				DAF99F12200DAC410030866C /* ViewCookStep.swift */,
+			);
+			path = CookStep;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2354,6 +2366,7 @@
 				DABA5EAD1FEA2E170017F865 /* ControllerPhoto.swift in Sources */,
 				DAE7C3711FE0971B003190FF /* CloudListProtocol.swift in Sources */,
 				DACF89E61FFDD6E600F4FCF0 /* RecipeIngredientCups.swift in Sources */,
+				DAF99F13200DAC410030866C /* ViewCookStep.swift in Sources */,
 				DA71D69E1FDA6B13003A33E1 /* ViewTextInput.swift in Sources */,
 				DACF554D1FD7661E00069701 /* ExtensionURL.swift in Sources */,
 				DACF55451FD7661E00069701 /* ExtensionNSManagedObject.swift in Sources */,
@@ -2608,6 +2621,7 @@
 				DAB786311FF4BD3A00579BB5 /* ViewNewAddListCellStep+Constants.swift in Sources */,
 				DA74F0BF1FE6127100F45310 /* Format+Ingredient.swift in Sources */,
 				DA177BF51FD7792C003B3836 /* ViewBar.swift in Sources */,
+				DAF99F14200DAC410030866C /* ViewCookStep.swift in Sources */,
 				DA91EB011FD62C1F0063560D /* ViewParent+Gesture.swift in Sources */,
 				DAA333DA1FDB17EA002D766C /* Database+Factory.swift in Sources */,
 				DAAE61FD1FF6465C00954EFC /* ControllerNewAdd+StepsActions.swift in Sources */,
