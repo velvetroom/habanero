@@ -17,6 +17,10 @@ final class ViewCookStepBar:View<ArchCookStep>
         buttonClose.imageView!.tintColor = UIColor(white:0, alpha:0.2)
         buttonClose.imageView!.clipsToBounds = true
         buttonClose.imageView!.contentMode = UIViewContentMode.center
+        buttonClose.addTarget(
+            self,
+            action:#selector(self.selectorClose(sender:)),
+            for:UIControlEvents.touchUpInside)
         
         self.addSubview(buttonClose)
         
@@ -33,5 +37,13 @@ final class ViewCookStepBar:View<ArchCookStep>
         NSLayoutConstraint.width(
             view:buttonClose,
             constant:ViewCookStepBar.Constants.closeWidth)
+    }
+    
+    //MARK: selectors
+    
+    @objc
+    private func selectorClose(sender button:UIButton)
+    {
+        self.controller.transitionClose()
     }
 }

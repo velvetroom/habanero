@@ -13,4 +13,11 @@ final class ControllerCookStep:Controller<ArchCookStep>
     {
         return nil
     }
+    
+    //MARK: internal
+    
+    func transitionClose()
+    {
+        self.parentController?.pop(vertical:ControllerTransition.Vertical.bottom)
+    }
 }
