@@ -59,6 +59,19 @@ final class ControllerCook:Controller<ArchCook>
     
     func transitionPlay()
     {
+        guard
         
+            let item:HomeItem = self.model.homeItem
+        
+        else
+        {
+            return
+        }
+        
+        let controller:ControllerCookStep = ControllerCookStep(item:item)
+        
+        self.parentController?.push(
+            controller:controller,
+            vertical:ControllerTransition.Vertical.bottom)
     }
 }
