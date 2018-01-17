@@ -21,8 +21,7 @@ final class ViewCookStepListCellImage:ViewCookStepListCell
         
         NSLayoutConstraint.topToTop(
             view:imageView,
-            toView:self,
-            constant:ViewCookStepListCell.Constants.margin)
+            toView:self)
         layoutImageHeight = NSLayoutConstraint.height(
             view:imageView)
         NSLayoutConstraint.equalsHorizontal(
