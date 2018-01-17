@@ -14,6 +14,25 @@ final class ControllerCookStep:Controller<ArchCookStep>
         return nil
     }
     
+    //MARK: private
+    
+    private func updateProgress(
+        index:Int,
+        progressWidth:CGFloat)
+    {
+        let indexNum:Int = index + 1
+        let indexString:String = String(indexNum)
+        
+        self.viewMain.viewProgress.layoutBarForegroundWidth.constant = progressWidth
+        self.viewMain.viewProgress.viewIndicator.label.text = indexString
+        
+        UIView.animate(withDuration:ViewGlobal.Constants.animationDuration)
+        { [weak self] in
+            
+            self?.viewMain.viewProgress.layoutIfNeeded()
+        }
+    }
+    
     //MARK: internal
     
     func transitionClose()
@@ -45,6 +64,14 @@ final class ControllerCookStep:Controller<ArchCookStep>
     
     func updateProgress(indexPath:IndexPath)
     {
+        let index:Int = indexPath.item
+        let total:Int = self.model.items.count
+        let percent:CGFloat = CGFloat(index) / CGFloat(total)
+        let width:CGFloat = self.viewMain.bounds.width
+        let progressWidth:CGFloat = width * percent
         
+        self.updateProgress(
+            index:index,
+            progressWidth:progressWidth)
     }
 }
