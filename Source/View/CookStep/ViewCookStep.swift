@@ -8,6 +8,9 @@ final class ViewCookStep:ViewMain<ArchCookStep>
         
         let viewBar:ViewCookStepBar = ViewCookStepBar(controller:self.controller)
         
+        let viewList:ViewCookStepList = ViewCookStepList(controller:self.controller)
+        
+        self.addSubview(viewList)
         self.addSubview(viewBar)
         
         NSLayoutConstraint.topToTop(
@@ -18,6 +21,16 @@ final class ViewCookStep:ViewMain<ArchCookStep>
             constant:ViewGlobal.Constants.barHeight)
         NSLayoutConstraint.equalsHorizontal(
             view:viewBar,
+            toView:self)
+        
+        NSLayoutConstraint.topToBottom(
+            view:viewList,
+            toView:viewBar)
+        NSLayoutConstraint.bottomToBottom(
+            view:viewList,
+            toView:self)
+        NSLayoutConstraint.equalsHorizontal(
+            view:viewList,
             toView:self)
     }
 }
