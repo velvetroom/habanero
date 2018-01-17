@@ -9,6 +9,9 @@ final class ViewCookStepListCellText:ViewCookStepListCell
         NSLayoutConstraint.topToTop(
             view:self.labelText,
             toView:self)
+        NSLayoutConstraint.bottomToBottom(
+            view:self.labelText,
+            toView:self)
     }
     
     override func config(

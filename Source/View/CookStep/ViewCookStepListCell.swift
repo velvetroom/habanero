@@ -23,10 +23,7 @@ class ViewCookStepListCell:ViewCollectionCell
         NSLayoutConstraint.equalsHorizontal(
             view:labelText,
             toView:self,
-            margin:ViewCookStepListCell.Constants.marginHorizontal)
-        NSLayoutConstraint.bottomToBottom(
-            view:labelText,
-            toView:self)
+            margin:ViewCookStepListCell.Constants.margin)
     }
     
     //MARK: internal
