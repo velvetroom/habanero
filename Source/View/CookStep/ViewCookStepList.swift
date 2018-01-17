@@ -4,6 +4,23 @@ final class ViewCookStepList:ViewCollection<ArchCookStep, ViewCookStepListCell, 
 {
     private var cellSize:CGSize?
     
+    private var midPoint:CGPoint
+    {
+        get
+        {
+            let midX:CGFloat = self.collectionView.bounds.midX
+            let midY:CGFloat = self.collectionView.bounds.midY
+            let offsetX:CGFloat = self.collectionView.contentOffset.x
+            let pointX:CGFloat = midX + offsetX
+            
+            let point:CGPoint = CGPoint(
+                x:pointX,
+                y:midY)
+            
+            return point
+        }
+    }
+    
     override func factoryViews()
     {
         super.factoryViews()
@@ -11,6 +28,20 @@ final class ViewCookStepList:ViewCollection<ArchCookStep, ViewCookStepListCell, 
         self.collectionView.isPagingEnabled = true
         self.registerCell(cell:ViewCookStepListCellText.self)
         self.registerCell(cell:ViewCookStepListCellImage.self)
+    }
+    
+    override func scrollViewDidEndDecelerating(_ scrollView:UIScrollView)
+    {
+        guard
+        
+            let indexPath:IndexPath = self.collectionView.indexPathForItem(at:self.midPoint)
+        
+        else
+        {
+            return
+        }
+        
+        self.controller.updateProgress(indexPath:indexPath)
     }
     
     override func collectionView(

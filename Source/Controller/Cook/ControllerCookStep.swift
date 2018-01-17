@@ -42,4 +42,9 @@ final class ControllerCookStep:Controller<ArchCookStep>
             cell.imageView.image = image
         }
     }
+    
+    func updateProgress(indexPath:IndexPath)
+    {
+        
+    }
 }
