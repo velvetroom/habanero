@@ -99,6 +99,8 @@
 		DA33F323200FD1DE00F07E48 /* ViewCookStepProgress+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33F321200FD1DE00F07E48 /* ViewCookStepProgress+Constants.swift */; };
 		DA33F325200FD99D00F07E48 /* ViewCookStepProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33F324200FD99D00F07E48 /* ViewCookStepProgressIndicator.swift */; };
 		DA33F326200FD99D00F07E48 /* ViewCookStepProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33F324200FD99D00F07E48 /* ViewCookStepProgressIndicator.swift */; };
+		DA33F328200FDC1B00F07E48 /* ViewCookStepProgressIndicator+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33F327200FDC1B00F07E48 /* ViewCookStepProgressIndicator+Constants.swift */; };
+		DA33F329200FDC1B00F07E48 /* ViewCookStepProgressIndicator+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33F327200FDC1B00F07E48 /* ViewCookStepProgressIndicator+Constants.swift */; };
 		DA34213C1FE472E0002B23DA /* ViewNewAddIngredientAmountBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34213B1FE472E0002B23DA /* ViewNewAddIngredientAmountBar+Constants.swift */; };
 		DA34213E1FE476D3002B23DA /* NewAddIngredientAmount+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34213D1FE476D3002B23DA /* NewAddIngredientAmount+Create.swift */; };
 		DA3421401FE47B40002B23DA /* NewAddIngredientAmountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34213F1FE47B40002B23DA /* NewAddIngredientAmountType.swift */; };
@@ -791,6 +793,7 @@
 		DA33F31E200FCE4300F07E48 /* ViewCookStep+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStep+Constants.swift"; sourceTree = "<group>"; };
 		DA33F321200FD1DE00F07E48 /* ViewCookStepProgress+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStepProgress+Constants.swift"; sourceTree = "<group>"; };
 		DA33F324200FD99D00F07E48 /* ViewCookStepProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookStepProgressIndicator.swift; sourceTree = "<group>"; };
+		DA33F327200FDC1B00F07E48 /* ViewCookStepProgressIndicator+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStepProgressIndicator+Constants.swift"; sourceTree = "<group>"; };
 		DA34213B1FE472E0002B23DA /* ViewNewAddIngredientAmountBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientAmountBar+Constants.swift"; sourceTree = "<group>"; };
 		DA34213D1FE476D3002B23DA /* NewAddIngredientAmount+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddIngredientAmount+Create.swift"; sourceTree = "<group>"; };
 		DA34213F1FE47B40002B23DA /* NewAddIngredientAmountType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddIngredientAmountType.swift; sourceTree = "<group>"; };
@@ -2096,6 +2099,7 @@
 				DA33F31B200FCD5B00F07E48 /* ViewCookStepProgress.swift */,
 				DA33F321200FD1DE00F07E48 /* ViewCookStepProgress+Constants.swift */,
 				DA33F324200FD99D00F07E48 /* ViewCookStepProgressIndicator.swift */,
+				DA33F327200FDC1B00F07E48 /* ViewCookStepProgressIndicator+Constants.swift */,
 			);
 			path = CookStep;
 			sourceTree = "<group>";
@@ -2569,6 +2573,7 @@
 				DAFA62D5200819A70068EC17 /* Cook+Constants.swift in Sources */,
 				DAE7C36E1FE093D1003190FF /* Cloud+Load.swift in Sources */,
 				DA07501F2004528D002C428A /* Storage+Load.swift in Sources */,
+				DA33F328200FDC1B00F07E48 /* ViewCookStepProgressIndicator+Constants.swift in Sources */,
 				DAAE2597200954C600BE3740 /* RecipeIngredientsList.swift in Sources */,
 				DACF89E31FFDD46900F4FCF0 /* RecipeIngredient+Keys.swift in Sources */,
 				DA91EB1C1FD62C1F0063560D /* ViewSpinner.swift in Sources */,
@@ -2747,6 +2752,7 @@
 				DA91EAF51FD62C1F0063560D /* ViewParent.swift in Sources */,
 				DA178199200D7D76007AF4A4 /* ControllerCookStep.swift in Sources */,
 				DAF8068C200FC0C500E2F858 /* CookStep+Image.swift in Sources */,
+				DA33F329200FDC1B00F07E48 /* ViewCookStepProgressIndicator+Constants.swift in Sources */,
 				DA6042951FE20CDC00758A2F /* BuildIngredient+Computed.swift in Sources */,
 				DACF55421FD7661E00069701 /* ExtensionUIImage.swift in Sources */,
 				DA35DD1B1FFDB4A30047881F /* RecipeList.swift in Sources */,
