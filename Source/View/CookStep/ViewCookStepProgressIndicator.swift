@@ -12,7 +12,7 @@ final class ViewCookStepProgressIndicator:View<ArchCookStep>
         let imageView:UIImageView = UIImageView()
         imageView.isUserInteractionEnabled = false
         imageView.contentMode = UIViewContentMode.center
-        imageView.classForCoder = true
+        imageView.clipsToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.image = #imageLiteral(resourceName: "assetCookProgressIndicator")
         
