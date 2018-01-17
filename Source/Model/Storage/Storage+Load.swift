@@ -5,11 +5,15 @@ extension Storage
     //MARK: private
     
     private func dataReceived(
-        data:Data,
+        data:Data?,
+        error:Error?,
         completion:((UIImage?, Error?) -> ()))
     {
         guard
         
+            error == nil,
+            let data:Data = data,
+            data.count > 0,
             let image:UIImage = UIImage(data:data)
         
         else
@@ -32,21 +36,28 @@ extension Storage
             identifier:recipe.identifier,
             at:StorageContainer.recipe)
         { [weak self] (data:Data?, error:Error?) in
-        
-            guard
-            
-                error == nil,
-                let data:Data = data
-            
-            else
-            {
-                completion(nil, error)
-                
-                return
-            }
             
             self?.dataReceived(
                 data:data,
+                error:error,
+                completion:completion)
+        }
+    }
+    
+    func loadStepImage(
+        recipe:Recipe,
+        step:RecipeStepImage,
+        completion:@escaping((UIImage?, Error?) -> ()))
+    {
+        self.provider.load(
+            identifier:step.identifier,
+            at:recipe.identifier,
+            of:StorageContainer.recipeSteps)
+        { [weak self] (data:Data?, error:Error?) in
+            
+            self?.dataReceived(
+                data:data,
+                error:error,
                 completion:completion)
         }
     }
