@@ -4,6 +4,6 @@ extension ControllerCookStep
 {
     struct Constants
     {
-        static let indicatorWait:TimeInterval = 2
+        static let indicatorAnimationHide:TimeInterval = 1.5
     }
 }
