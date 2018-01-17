@@ -95,6 +95,8 @@
 		DA33F31D200FCD5B00F07E48 /* ViewCookStepProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33F31B200FCD5B00F07E48 /* ViewCookStepProgress.swift */; };
 		DA33F31F200FCE4300F07E48 /* ViewCookStep+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33F31E200FCE4300F07E48 /* ViewCookStep+Constants.swift */; };
 		DA33F320200FCE4300F07E48 /* ViewCookStep+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33F31E200FCE4300F07E48 /* ViewCookStep+Constants.swift */; };
+		DA33F322200FD1DE00F07E48 /* ViewCookStepProgress+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33F321200FD1DE00F07E48 /* ViewCookStepProgress+Constants.swift */; };
+		DA33F323200FD1DE00F07E48 /* ViewCookStepProgress+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33F321200FD1DE00F07E48 /* ViewCookStepProgress+Constants.swift */; };
 		DA34213C1FE472E0002B23DA /* ViewNewAddIngredientAmountBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34213B1FE472E0002B23DA /* ViewNewAddIngredientAmountBar+Constants.swift */; };
 		DA34213E1FE476D3002B23DA /* NewAddIngredientAmount+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34213D1FE476D3002B23DA /* NewAddIngredientAmount+Create.swift */; };
 		DA3421401FE47B40002B23DA /* NewAddIngredientAmountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34213F1FE47B40002B23DA /* NewAddIngredientAmountType.swift */; };
@@ -785,6 +787,7 @@
 		DA2C17751FEF4305001BDA54 /* ViewPhotoCropDisplayImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoCropDisplayImage.swift; sourceTree = "<group>"; };
 		DA33F31B200FCD5B00F07E48 /* ViewCookStepProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookStepProgress.swift; sourceTree = "<group>"; };
 		DA33F31E200FCE4300F07E48 /* ViewCookStep+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStep+Constants.swift"; sourceTree = "<group>"; };
+		DA33F321200FD1DE00F07E48 /* ViewCookStepProgress+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStepProgress+Constants.swift"; sourceTree = "<group>"; };
 		DA34213B1FE472E0002B23DA /* ViewNewAddIngredientAmountBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientAmountBar+Constants.swift"; sourceTree = "<group>"; };
 		DA34213D1FE476D3002B23DA /* NewAddIngredientAmount+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddIngredientAmount+Create.swift"; sourceTree = "<group>"; };
 		DA34213F1FE47B40002B23DA /* NewAddIngredientAmountType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddIngredientAmountType.swift; sourceTree = "<group>"; };
@@ -2088,6 +2091,7 @@
 				DAC104B5200EABF9004617FD /* ViewCookStepListCellText.swift */,
 				DAC104B8200EAC16004617FD /* ViewCookStepListCellImage.swift */,
 				DA33F31B200FCD5B00F07E48 /* ViewCookStepProgress.swift */,
+				DA33F321200FD1DE00F07E48 /* ViewCookStepProgress+Constants.swift */,
 			);
 			path = CookStep;
 			sourceTree = "<group>";
@@ -2414,6 +2418,7 @@
 				DA35DD1A1FFDB4A30047881F /* RecipeList.swift in Sources */,
 				DAFA62ED200826660068EC17 /* ViewCook+Constants.swift in Sources */,
 				DA683593200176130087C77D /* RecipeStep+Factory.swift in Sources */,
+				DA33F322200FD1DE00F07E48 /* ViewCookStepProgress+Constants.swift in Sources */,
 				DA177BF41FD7792C003B3836 /* ViewBar.swift in Sources */,
 				DAE7C3641FE0828C003190FF /* Analytics.swift in Sources */,
 				DA35DD231FFDBAC50047881F /* StorageContainer.swift in Sources */,
@@ -2911,6 +2916,7 @@
 				DA8752DF1FE3ABAF00AE74F5 /* NewAddIngredientAmountTypeSpoons.swift in Sources */,
 				DA71D6A51FDA7107003A33E1 /* ViewText+Constants.swift in Sources */,
 				DACF55401FD7661E00069701 /* ExtensionUIFont.swift in Sources */,
+				DA33F323200FD1DE00F07E48 /* ViewCookStepProgress+Constants.swift in Sources */,
 				DA6E806E1FF998FF00175F70 /* CloudProviderFirebase+Load.swift in Sources */,
 				DAFCCA5F200DB805002377BC /* RecipeStepsList.swift in Sources */,
 				DACF89ED1FFDD84700F4FCF0 /* RecipeIngredientMililitres.swift in Sources */,
