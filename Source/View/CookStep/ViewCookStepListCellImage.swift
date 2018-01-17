@@ -40,7 +40,8 @@ final class ViewCookStepListCellImage:ViewCookStepListCell
     override func layoutSubviews()
     {
         let width:CGFloat = self.bounds.width
-        layoutImageHeight.constant = width
+        let margin2:CGFloat = ViewCookStepListCell.Constants.margin * 2
+        layoutImageHeight.constant = width - margin2
         
         super.layoutSubviews()
     }

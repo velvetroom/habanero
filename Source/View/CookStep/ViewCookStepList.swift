@@ -8,8 +8,8 @@ final class ViewCookStepList:ViewCollection<ArchCookStep, ViewCookStepListCell, 
     {
         get
         {
-            let midX:CGFloat = self.collectionView.bounds.midX
-            let midY:CGFloat = self.collectionView.bounds.midY
+            let midX:CGFloat = self.bounds.midX
+            let midY:CGFloat = self.bounds.midY
             let offsetX:CGFloat = self.collectionView.contentOffset.x
             let pointX:CGFloat = midX + offsetX
             

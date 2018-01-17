@@ -39,6 +39,9 @@ final class ViewCookStepProgress:View<ArchCookStep>
         NSLayoutConstraint.height(
             view:barForeground,
             constant:ViewCookStepProgress.Constants.barHeight)
+        NSLayoutConstraint.leftToLeft(
+            view:barForeground,
+            toView:self)
         layoutBarForegroundWidth = NSLayoutConstraint.width(
             view:barForeground)
         
@@ -48,7 +51,7 @@ final class ViewCookStepProgress:View<ArchCookStep>
         NSLayoutConstraint.leftToRight(
             view:viewIndicator,
             toView:barForeground,
-            constant:indicatorSize_2)
+            constant:-indicatorSize_2)
         NSLayoutConstraint.size(
             view:viewIndicator,
             constant:ViewCookStepProgress.Constants.indicatorSize)

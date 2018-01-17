@@ -22,7 +22,7 @@ final class ViewCookStepProgressIndicator:View<ArchCookStep>
         label.backgroundColor = UIColor.clear
         label.textColor = UIColor.clear
         label.textAlignment = NSTextAlignment.center
-        label.font = UIFont.regular(size:ViewCookStepProgressIndicator.Constants.fontSize)
+        label.font = UIFont.medium(size:ViewCookStepProgressIndicator.Constants.fontSize)
         label.textColor = UIColor.white
         self.label = label
         
