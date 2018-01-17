@@ -17,6 +17,8 @@ final class ViewCookStepListCellImage:ViewCookStepListCell
         imageView.clipsToBounds = true
         self.imageView = imageView
         
+        self.addSubview(imageView)
+        
         NSLayoutConstraint.topToTop(
             view:imageView,
             toView:self,

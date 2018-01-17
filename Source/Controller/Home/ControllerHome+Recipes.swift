@@ -89,5 +89,6 @@ extension ControllerHome
             on:cell)
         
         self.loadRecipeIngredients(item:item)
+        self.loadRecipeSteps(item:item)
     }
 }
