@@ -4,14 +4,14 @@ final class CookStepItemImage:CookStepItemProtocol
 {
     let reusableIdentifier:String = ViewCookStepListCellImage.reusableIdentifier
     let text:String
-    let imageIdentifier:String
+    let stepIdentifier:String
     var image:UIImage?
     
     init(
         text:String,
-        imageIdentifier:String)
+        stepIdentifier:String)
     {
         self.text = text
-        self.imageIdentifier = imageIdentifier
+        self.stepIdentifier = stepIdentifier
     }
 }

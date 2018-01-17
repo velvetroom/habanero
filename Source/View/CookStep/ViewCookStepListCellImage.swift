@@ -2,7 +2,8 @@ import UIKit
 
 final class ViewCookStepListCellImage:ViewCookStepListCell
 {
-    private weak var imageView:UIImageView!
+    private(set) weak var item:CookStepItemImage?
+    private(set) weak var imageView:UIImageView!
     private weak var layoutImageHeight:NSLayoutConstraint!
     
     override func factoryViews()
@@ -60,6 +61,35 @@ final class ViewCookStepListCellImage:ViewCookStepListCell
             return
         }
         
+        self.item = item
         self.labelText.text = item.text
+        
+        self.updateImage(
+            controller:controller,
+            item:item)
+    }
+    
+    //MARK: private
+    
+    private func updateImage(
+        controller:ControllerCookStep,
+        item:CookStepItemImage)
+    {
+        guard
+        
+            let image:UIImage = item.image
+        
+        else
+        {
+            self.imageView.image = nil
+            
+            controller.loadStepImage(
+                item:item,
+                cell:self)
+            
+            return
+        }
+        
+        self.imageView.image = image
     }
 }

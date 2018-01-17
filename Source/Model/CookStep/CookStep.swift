@@ -3,6 +3,7 @@ import Foundation
 final class CookStep:Model<ArchCookStep>
 {
     var items:[CookStepItemProtocol]
+    let storage:Storage
     
     var homeItem:HomeItem?
     {
@@ -24,6 +25,7 @@ final class CookStep:Model<ArchCookStep>
     required init()
     {
         self.items = []
+        self.storage = Storage()
         
         super.init()
     }

@@ -46,11 +46,11 @@ extension Storage
     
     func loadStepImage(
         recipe:Recipe,
-        step:RecipeStepImage,
+        stepIdentifier:String,
         completion:@escaping((UIImage?, Error?) -> ()))
     {
         self.provider.load(
-            identifier:step.identifier,
+            identifier:stepIdentifier,
             at:recipe.identifier,
             of:StorageContainer.recipeSteps)
         { [weak self] (data:Data?, error:Error?) in

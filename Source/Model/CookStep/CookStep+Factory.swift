@@ -45,7 +45,7 @@ extension CookStep
         
         let item:CookStepItemImage = CookStepItemImage(
             text:step.text,
-            imageIdentifier:step.identifier)
+            stepIdentifier:step.identifier)
         
         return item
     }
