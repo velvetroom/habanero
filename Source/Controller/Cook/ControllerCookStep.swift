@@ -26,10 +26,15 @@ final class ControllerCookStep:Controller<ArchCookStep>
         self.viewMain.viewProgress.layoutBarForegroundWidth.constant = progressWidth
         self.viewMain.viewProgress.viewIndicator.label.text = indexString
         
-        UIView.animate(withDuration:ViewGlobal.Constants.animationDuration)
-        { [weak self] in
-            
+        UIView.animate(withDuration:ViewGlobal.Constants.animationDuration,
+        animations:
+        {  [weak self] in
+                
             self?.viewMain.viewProgress.layoutIfNeeded()
+            
+        })
+        { [weak self] (done:Bool) in
+            
         }
     }
     
@@ -65,7 +70,7 @@ final class ControllerCookStep:Controller<ArchCookStep>
     func updateProgress(indexPath:IndexPath)
     {
         let index:Int = indexPath.item
-        let total:Int = self.model.items.count
+        let total:Int = self.model.items.count - 1
         let percent:CGFloat = CGFloat(index) / CGFloat(total)
         let width:CGFloat = self.viewMain.bounds.width
         let progressWidth:CGFloat = width * percent

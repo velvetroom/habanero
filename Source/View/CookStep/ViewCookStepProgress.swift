@@ -10,13 +10,12 @@ final class ViewCookStepProgress:View<ArchCookStep>
         super.factoryViews()
         self.isUserInteractionEnabled = false
         
-        let indicatorSize_2:CGFloat = ViewCookStepProgress.Constants.indicatorSize / 2.0
-        
         let barBackground:ViewBorder = ViewBorder(colour:UIColor.colourHabaneroDark)
         
         let barForeground:ViewBorder = ViewBorder(colour:UIColor.colourHabanero)
         
         let viewIndicator:ViewCookStepProgressIndicator = ViewCookStepProgressIndicator(controller:self.controller)
+        viewIndicator.alpha = 0
         self.viewIndicator = viewIndicator
         
         self.addSubview(barBackground)
@@ -51,7 +50,7 @@ final class ViewCookStepProgress:View<ArchCookStep>
         NSLayoutConstraint.leftToRight(
             view:viewIndicator,
             toView:barForeground,
-            constant:-indicatorSize_2)
+            constant:ViewCookStepProgress.Constants.indicatorLeft)
         NSLayoutConstraint.size(
             view:viewIndicator,
             constant:ViewCookStepProgress.Constants.indicatorSize)
