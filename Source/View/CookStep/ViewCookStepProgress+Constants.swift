@@ -4,6 +4,6 @@ extension ViewCookStepProgress
 {
     struct Constants
     {
-        static let barHeight:CGFloat = 20
+        static let barHeight:CGFloat = 12
     }
 }
