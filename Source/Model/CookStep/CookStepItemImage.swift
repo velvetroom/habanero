@@ -1,6 +1,6 @@
 import UIKit
 
-struct CookStepItemImage:CookStepItemProtocol
+final class CookStepItemImage:CookStepItemProtocol
 {
     let reusableIdentifier:String = ViewCookStepListCellImage.reusableIdentifier
     let text:String

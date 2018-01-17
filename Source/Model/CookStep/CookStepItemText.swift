@@ -1,6 +1,6 @@
 import Foundation
 
-struct CookStepItemText:CookStepItemProtocol
+final class CookStepItemText:CookStepItemProtocol
 {
     let reusableIdentifier:String = ViewCookStepListCellText.reusableIdentifier
     let text:String
