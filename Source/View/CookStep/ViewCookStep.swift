@@ -2,6 +2,8 @@ import UIKit
 
 final class ViewCookStep:ViewMain<ArchCookStep>
 {
+    private(set) weak var viewProgress:ViewCookStepProgress!
+    
     override func factoryViews()
     {
         super.factoryViews()
@@ -10,7 +12,11 @@ final class ViewCookStep:ViewMain<ArchCookStep>
         
         let viewList:ViewCookStepList = ViewCookStepList(controller:self.controller)
         
+        let viewProgress:ViewCookStepProgress = ViewCookStepProgress(controller:self.controller)
+        self.viewProgress = viewProgress
+        
         self.addSubview(viewList)
+        self.addSubview(viewProgress)
         self.addSubview(viewBar)
         
         NSLayoutConstraint.topToTop(
@@ -31,6 +37,16 @@ final class ViewCookStep:ViewMain<ArchCookStep>
             toView:self)
         NSLayoutConstraint.equalsHorizontal(
             view:viewList,
+            toView:self)
+
+        NSLayoutConstraint.height(
+            view:viewProgress,
+            constant:ViewCookStep.Constants.progressHeight)
+        NSLayoutConstraint.bottomToBottom(
+            view:viewProgress,
+            toView:self)
+        NSLayoutConstraint.equalsHorizontal(
+            view:viewProgress,
             toView:self)
     }
 }
