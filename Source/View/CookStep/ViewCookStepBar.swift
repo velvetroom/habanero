@@ -22,6 +22,16 @@ final class ViewCookStepBar:View<ArchCookStep>
             action:#selector(self.selectorClose(sender:)),
             for:UIControlEvents.touchUpInside)
         
+        let labelTitle:UILabel = UILabel()
+        labelTitle.translatesAutoresizingMaskIntoConstraints = false
+        labelTitle.backgroundColor = UIColor.clear
+        labelTitle.textAlignment = NSTextAlignment.right
+        labelTitle.isUserInteractionEnabled = false
+        labelTitle.font = UIFont.regular(size:ViewCookStepBar.Constants.fontSize)
+        labelTitle.textColor = UIColor.colourBackgroundDark
+        labelTitle.text = self.controller.model.homeItem?.recipe.title
+        
+        self.addSubview(labelTitle)
         self.addSubview(buttonClose)
         
         NSLayoutConstraint.topToTop(
@@ -37,6 +47,20 @@ final class ViewCookStepBar:View<ArchCookStep>
         NSLayoutConstraint.width(
             view:buttonClose,
             constant:ViewCookStepBar.Constants.closeWidth)
+        
+        NSLayoutConstraint.topToTop(
+            view:labelTitle,
+            toView:self,
+            constant:ViewGlobal.Constants.contentTop)
+        NSLayoutConstraint.bottomToBottom(
+            view:labelTitle,
+            toView:self)
+        NSLayoutConstraint.rightToRight(
+            view:labelTitle,
+            toView:self,
+            constant:ViewCookStepBar.Constants.titleRight)
+        NSLayoutConstraint.widthGreaterOrEqual(
+            view:labelTitle)
     }
     
     //MARK: selectors
