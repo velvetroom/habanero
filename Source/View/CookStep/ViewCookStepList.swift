@@ -28,6 +28,8 @@ final class ViewCookStepList:ViewCollection<ArchCookStep, ViewCookStepListCell, 
         self.collectionView.isPagingEnabled = true
         self.registerCell(cell:ViewCookStepListCellText.self)
         self.registerCell(cell:ViewCookStepListCellImage.self)
+        
+        self.flow.scrollDirection = UICollectionViewScrollDirection.horizontal
     }
     
     override func scrollViewDidEndDecelerating(_ scrollView:UIScrollView)
