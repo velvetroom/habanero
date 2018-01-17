@@ -43,4 +43,10 @@ extension UIColor
         green:0.6666666666666667,
         blue:0.23529411764705888,
         alpha:1)
+    
+    static let colourHabaneroDark:UIColor = UIColor(
+        red:0.6980392156862745,
+        green:0.4627450980392157,
+        blue:0.16078431372549018,
+        alpha:1)
 }
