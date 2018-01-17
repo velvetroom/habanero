@@ -19,7 +19,13 @@ extension Home
                 return
             }
             
-            item.steps = stepList.items
+            let steps:[RecipeStep] = stepList.items.sorted
+            { (stepA:RecipeStep, stepB:RecipeStep) -> Bool in
+                
+                return stepA.order <= stepB.order
+            }
+            
+            item.steps = steps
         }
     }
     
