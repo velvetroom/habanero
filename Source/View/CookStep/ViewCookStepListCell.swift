@@ -4,5 +4,7 @@ class ViewCookStepListCell:ViewCollectionCell
 {
     //MARK: internal
     
-    func config(item:CookStepItemProtocol) { }
+    func config(
+        controller:ControllerCookStep,
+        item:CookStepItemProtocol) { }
 }

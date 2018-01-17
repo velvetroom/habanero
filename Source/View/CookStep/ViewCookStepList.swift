@@ -52,7 +52,9 @@ final class ViewCookStepList:ViewCollection<ArchCookStep, ViewCookStepListCell, 
             indexPath:indexPath,
             reusableIdentifier:item.reusableIdentifier)
         
-        cell.config(item:item)
+        cell.config(
+            controller:self.controller,
+            item:item)
         
         return cell
     }
