@@ -253,6 +253,8 @@
 		DA70AFC61FD5AABF0016B0DC /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70AFC41FD5AABF0016B0DC /* Home.swift */; };
 		DA70FD8C2010179B003AF6A6 /* ControllerCookStep+Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70FD8B2010179B003AF6A6 /* ControllerCookStep+Progress.swift */; };
 		DA70FD8D2010179F003AF6A6 /* ControllerCookStep+Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70FD8B2010179B003AF6A6 /* ControllerCookStep+Progress.swift */; };
+		DA70FD8F201017FF003AF6A6 /* ControllerCookStep+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70FD8E201017FF003AF6A6 /* ControllerCookStep+Constants.swift */; };
+		DA70FD90201017FF003AF6A6 /* ControllerCookStep+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70FD8E201017FF003AF6A6 /* ControllerCookStep+Constants.swift */; };
 		DA71D66D1FDA43EF003A33E1 /* ViewNewAddListFooterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D66C1FDA43EF003A33E1 /* ViewNewAddListFooterInfo.swift */; };
 		DA71D66F1FDA44A2003A33E1 /* ViewNewAddListFooterIngredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D66E1FDA44A2003A33E1 /* ViewNewAddListFooterIngredients.swift */; };
 		DA71D6711FDA44C0003A33E1 /* ViewNewAddListFooterSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6701FDA44C0003A33E1 /* ViewNewAddListFooterSteps.swift */; };
@@ -896,6 +898,7 @@
 		DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerHome.swift; sourceTree = "<group>"; };
 		DA70AFC41FD5AABF0016B0DC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		DA70FD8B2010179B003AF6A6 /* ControllerCookStep+Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerCookStep+Progress.swift"; sourceTree = "<group>"; };
+		DA70FD8E201017FF003AF6A6 /* ControllerCookStep+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerCookStep+Constants.swift"; sourceTree = "<group>"; };
 		DA71D66C1FDA43EF003A33E1 /* ViewNewAddListFooterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListFooterInfo.swift; sourceTree = "<group>"; };
 		DA71D66E1FDA44A2003A33E1 /* ViewNewAddListFooterIngredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListFooterIngredients.swift; sourceTree = "<group>"; };
 		DA71D6701FDA44C0003A33E1 /* ViewNewAddListFooterSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListFooterSteps.swift; sourceTree = "<group>"; };
@@ -1332,6 +1335,7 @@
 				DA5761D02005879D00A5151C /* ControllerCook.swift */,
 				DA178197200D7D76007AF4A4 /* ControllerCookStep.swift */,
 				DA70FD8B2010179B003AF6A6 /* ControllerCookStep+Progress.swift */,
+				DA70FD8E201017FF003AF6A6 /* ControllerCookStep+Constants.swift */,
 			);
 			path = Cook;
 			sourceTree = "<group>";
@@ -2582,6 +2586,7 @@
 				DAAE2597200954C600BE3740 /* RecipeIngredientsList.swift in Sources */,
 				DACF89E31FFDD46900F4FCF0 /* RecipeIngredient+Keys.swift in Sources */,
 				DA91EB1C1FD62C1F0063560D /* ViewSpinner.swift in Sources */,
+				DA70FD8F201017FF003AF6A6 /* ControllerCookStep+Constants.swift in Sources */,
 				DAAE259A20096FC000BE3740 /* ViewCookListCellIngredient+Constants.swift in Sources */,
 				DAC104C5200EBF13004617FD /* CookStep+Factory.swift in Sources */,
 				DA91EB0E1FD62C1F0063560D /* ViewBlur.swift in Sources */,
@@ -2828,6 +2833,7 @@
 				DACF55441FD7661E00069701 /* ExtensionData.swift in Sources */,
 				DA91EAF11FD62C1F0063560D /* ViewMenuCell.swift in Sources */,
 				DA16F15E1FDFAF3100EB6877 /* ViewNewAddIngredient+Constants.swift in Sources */,
+				DA70FD90201017FF003AF6A6 /* ControllerCookStep+Constants.swift in Sources */,
 				DAFA62D32008191C0068EC17 /* CookItemProtocol.swift in Sources */,
 				DAFA62E8200821640068EC17 /* ViewCookListCellRecipe+Constants.swift in Sources */,
 				DA91EAE91FD62C1F0063560D /* ViewMenu+Actions.swift in Sources */,
