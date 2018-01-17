@@ -549,6 +549,8 @@
 		DAC104C3200EBDB3004617FD /* CookStepItemImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104C1200EBDB3004617FD /* CookStepItemImage.swift */; };
 		DAC104C5200EBF13004617FD /* CookStep+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104C4200EBF13004617FD /* CookStep+Factory.swift */; };
 		DAC104C6200EBF13004617FD /* CookStep+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104C4200EBF13004617FD /* CookStep+Factory.swift */; };
+		DAC104C8200EC8C6004617FD /* ViewCookStepList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104C7200EC8C6004617FD /* ViewCookStepList+Actions.swift */; };
+		DAC104C9200EC8C6004617FD /* ViewCookStepList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104C7200EC8C6004617FD /* ViewCookStepList+Actions.swift */; };
 		DAC732C81FF7579800980854 /* NewAdd+StepsDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC732C71FF7579800980854 /* NewAdd+StepsDelete.swift */; };
 		DAC732CA1FF8502A00980854 /* ViewNewAddListCellText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC732C91FF8502A00980854 /* ViewNewAddListCellText.swift */; };
 		DAC732CC1FF8523900980854 /* ViewNewAddListCellText+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC732CB1FF8523900980854 /* ViewNewAddListCellText+Constants.swift */; };
@@ -1066,6 +1068,7 @@
 		DAC104BE200EBD98004617FD /* CookStepItemText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookStepItemText.swift; sourceTree = "<group>"; };
 		DAC104C1200EBDB3004617FD /* CookStepItemImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookStepItemImage.swift; sourceTree = "<group>"; };
 		DAC104C4200EBF13004617FD /* CookStep+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CookStep+Factory.swift"; sourceTree = "<group>"; };
+		DAC104C7200EC8C6004617FD /* ViewCookStepList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStepList+Actions.swift"; sourceTree = "<group>"; };
 		DAC732C71FF7579800980854 /* NewAdd+StepsDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+StepsDelete.swift"; sourceTree = "<group>"; };
 		DAC732C91FF8502A00980854 /* ViewNewAddListCellText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellText.swift; sourceTree = "<group>"; };
 		DAC732CB1FF8523900980854 /* ViewNewAddListCellText+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddListCellText+Constants.swift"; sourceTree = "<group>"; };
@@ -2066,6 +2069,7 @@
 				DAFCCA60200DC6BB002377BC /* ViewCookStepBar.swift */,
 				DAFCCA63200DD856002377BC /* ViewCookStepBar+Constants.swift */,
 				DAC104AF200EA921004617FD /* ViewCookStepList.swift */,
+				DAC104C7200EC8C6004617FD /* ViewCookStepList+Actions.swift */,
 				DAC104B2200EA9BA004617FD /* ViewCookStepListCell.swift */,
 				DAC104B5200EABF9004617FD /* ViewCookStepListCellText.swift */,
 				DAC104B8200EAC16004617FD /* ViewCookStepListCellImage.swift */,
@@ -2435,6 +2439,7 @@
 				DACF554D1FD7661E00069701 /* ExtensionURL.swift in Sources */,
 				DACF55451FD7661E00069701 /* ExtensionNSManagedObject.swift in Sources */,
 				DA91EAFC1FD62C1F0063560D /* ViewParent+Transitions.swift in Sources */,
+				DAC104C8200EC8C6004617FD /* ViewCookStepList+Actions.swift in Sources */,
 				DAE35C9D2005E57C002B1C9C /* ViewCookList.swift in Sources */,
 				DAE5E4801FE489C100CC40BA /* Settings.swift in Sources */,
 				DAFA62EA200824C80068EC17 /* ExtensionNSMutableAttributedString.swift in Sources */,
@@ -2646,6 +2651,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC104C9200EC8C6004617FD /* ViewCookStepList+Actions.swift in Sources */,
 				DA71D6891FDA5985003A33E1 /* NewAddSectionItemInfoTitle.swift in Sources */,
 				DA60429D1FE21BAF00758A2F /* ControllerNewAddIngredientAmount.swift in Sources */,
 				DAFCCA62200DC6BB002377BC /* ViewCookStepBar.swift in Sources */,
