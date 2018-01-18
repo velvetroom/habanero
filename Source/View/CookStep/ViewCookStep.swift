@@ -16,25 +16,26 @@ final class ViewCookStep:ViewMain<ArchCookStep>
         self.viewProgress = viewProgress
         
         self.addSubview(viewList)
-        self.addSubview(viewProgress)
         self.addSubview(viewBar)
+        self.addSubview(viewProgress)
         
-        NSLayoutConstraint.topToTop(
+        NSLayoutConstraint.bottomToBottom(
             view:viewBar,
-            toView:self)
+            toView:self,
+            constant:ViewCookStep.Constants.barBottom)
         NSLayoutConstraint.height(
             view:viewBar,
-            constant:ViewGlobal.Constants.barHeight)
+            constant:ViewCookStep.Constants.barHeight)
         NSLayoutConstraint.equalsHorizontal(
             view:viewBar,
             toView:self)
         
-        NSLayoutConstraint.topToBottom(
-            view:viewList,
-            toView:viewBar)
-        NSLayoutConstraint.bottomToBottom(
+        NSLayoutConstraint.topToTop(
             view:viewList,
             toView:self)
+        NSLayoutConstraint.bottomToTop(
+            view:viewList,
+            toView:viewBar)
         NSLayoutConstraint.equalsHorizontal(
             view:viewList,
             toView:self)
