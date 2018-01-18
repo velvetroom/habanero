@@ -26,8 +26,7 @@ final class ViewCookStepListCellImage:ViewCookStepListCell
             view:imageView)
         NSLayoutConstraint.equalsHorizontal(
             view:imageView,
-            toView:self,
-            margin:ViewCookStepListCell.Constants.margin)
+            toView:self)
         
         NSLayoutConstraint.topToBottom(
             view:self.labelText,
@@ -40,8 +39,7 @@ final class ViewCookStepListCellImage:ViewCookStepListCell
     override func layoutSubviews()
     {
         let width:CGFloat = self.bounds.width
-        let margin2:CGFloat = ViewCookStepListCell.Constants.margin * 2
-        layoutImageHeight.constant = width - margin2
+        layoutImageHeight.constant = width
         
         super.layoutSubviews()
     }
