@@ -15,7 +15,12 @@ final class ViewCookStep:ViewMain<ArchCookStep>
         let viewProgress:ViewCookStepProgress = ViewCookStepProgress(controller:self.controller)
         self.viewProgress = viewProgress
         
+        let viewShadow:ViewGradient = ViewGradient.vertical(
+            colourTop:UIColor(white:1, alpha:0.6),
+            colourBottom:UIColor(white:1, alpha:0))
+        
         self.addSubview(viewList)
+        self.addSubview(viewShadow)
         self.addSubview(viewBar)
         self.addSubview(viewProgress)
         
@@ -48,6 +53,16 @@ final class ViewCookStep:ViewMain<ArchCookStep>
             toView:self)
         NSLayoutConstraint.equalsHorizontal(
             view:viewProgress,
+            toView:self)
+        
+        NSLayoutConstraint.topToTop(
+            view:viewShadow,
+            toView:self)
+        NSLayoutConstraint.height(
+            view:viewShadow,
+            constant:ViewCookStep.Constants.shadowHeight)
+        NSLayoutConstraint.equalsHorizontal(
+            view:viewShadow,
             toView:self)
     }
 }
