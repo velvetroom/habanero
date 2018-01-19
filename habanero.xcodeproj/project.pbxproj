@@ -466,6 +466,8 @@
 		DA992D781FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA992D761FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift */; };
 		DA992D791FD61ED700A6CFEF /* MenuItemGenericProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA992D751FD61E7300A6CFEF /* MenuItemGenericProtocol.swift */; };
 		DA992D7A1FD61EE500A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA992D761FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift */; };
+		DAA1805120121E8000A5B834 /* ViewCookStepListCellImage+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA1805020121E8000A5B834 /* ViewCookStepListCellImage+Constants.swift */; };
+		DAA1805220121E8000A5B834 /* ViewCookStepListCellImage+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA1805020121E8000A5B834 /* ViewCookStepListCellImage+Constants.swift */; };
 		DAA26FB01FE96F74005855F6 /* ViewNewAddListCellDraggableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA26FAF1FE96F74005855F6 /* ViewNewAddListCellDraggableProtocol.swift */; };
 		DAA26FB21FE97AE6005855F6 /* NewAdd+Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA26FB11FE97AE6005855F6 /* NewAdd+Move.swift */; };
 		DAA333D21FDB1453002D766C /* New+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333D11FDB1453002D766C /* New+Load.swift */; };
@@ -1030,6 +1032,7 @@
 		DA936D011FFF19AF00740BE8 /* Cloud+CreateRecipeIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cloud+CreateRecipeIngredient.swift"; sourceTree = "<group>"; };
 		DA992D751FD61E7300A6CFEF /* MenuItemGenericProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemGenericProtocol.swift; sourceTree = "<group>"; };
 		DA992D761FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MenuItemGenericProtocol+Default.swift"; sourceTree = "<group>"; };
+		DAA1805020121E8000A5B834 /* ViewCookStepListCellImage+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStepListCellImage+Constants.swift"; sourceTree = "<group>"; };
 		DAA26FAF1FE96F74005855F6 /* ViewNewAddListCellDraggableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellDraggableProtocol.swift; sourceTree = "<group>"; };
 		DAA26FB11FE97AE6005855F6 /* NewAdd+Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Move.swift"; sourceTree = "<group>"; };
 		DAA333D11FDB1453002D766C /* New+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "New+Load.swift"; sourceTree = "<group>"; };
@@ -2104,6 +2107,7 @@
 				DAC104B5200EABF9004617FD /* ViewCookStepListCellText.swift */,
 				DAD64C102011307800E74F76 /* ViewCookStepListCellText+Constants.swift */,
 				DAC104B8200EAC16004617FD /* ViewCookStepListCellImage.swift */,
+				DAA1805020121E8000A5B834 /* ViewCookStepListCellImage+Constants.swift */,
 				DA33F31B200FCD5B00F07E48 /* ViewCookStepProgress.swift */,
 				DA33F321200FD1DE00F07E48 /* ViewCookStepProgress+Constants.swift */,
 				DA33F324200FD99D00F07E48 /* ViewCookStepProgressIndicator.swift */,
@@ -2564,6 +2568,7 @@
 				DA91EAFE1FD62C1F0063560D /* ViewParent+Constants.swift in Sources */,
 				DA91EB181FD62C1F0063560D /* ViewBorder.swift in Sources */,
 				DA9089311FD4C66000C1208A /* MenuItemProtocol.swift in Sources */,
+				DAA1805120121E8000A5B834 /* ViewCookStepListCellImage+Constants.swift in Sources */,
 				DA91EAEC1FD62C1F0063560D /* ViewMenu.swift in Sources */,
 				DA9089241FD4C66000C1208A /* ControllerParent.swift in Sources */,
 				DA35DD081FFDA8C20047881F /* Recipe.swift in Sources */,
@@ -2848,6 +2853,7 @@
 				DAADC4AD1FFC875600862A90 /* NewAddValidateStrategyMinIngredients.swift in Sources */,
 				DAAD4A731FF31F310044B1FE /* PhotoCrop+Rotate.swift in Sources */,
 				DAB7862F1FF4BC2D00579BB5 /* NewAddSectionItemStepProtocol.swift in Sources */,
+				DAA1805220121E8000A5B834 /* ViewCookStepListCellImage+Constants.swift in Sources */,
 				DACF55301FD7661E00069701 /* ExtensionUIColor.swift in Sources */,
 				DA683597200176BB0087C77D /* RecipeStepText.swift in Sources */,
 				DA855E091FF370F200E1B69F /* PhotoCropPoints.swift in Sources */,
