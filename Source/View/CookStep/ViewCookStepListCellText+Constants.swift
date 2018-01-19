@@ -4,6 +4,6 @@ extension ViewCookStepListCellText
 {
     struct Constants
     {
-        static let fontSize:CGFloat = 22
+        static let fontSize:CGFloat = 23
     }
 }
