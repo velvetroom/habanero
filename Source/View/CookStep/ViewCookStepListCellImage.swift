@@ -10,6 +10,8 @@ final class ViewCookStepListCellImage:ViewCookStepListCell
     {
         super.factoryViews()
         
+        self.labelText.font = UIFont.regular(size:ViewCookStepListCellImage.Constants.fontSize)
+        
         let imageView:UIImageView = UIImageView()
         imageView.isUserInteractionEnabled = false
         imageView.translatesAutoresizingMaskIntoConstraints = false

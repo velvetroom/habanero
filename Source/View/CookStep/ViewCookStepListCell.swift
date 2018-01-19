@@ -14,7 +14,6 @@ class ViewCookStepListCell:ViewCollectionCell
         labelText.isUserInteractionEnabled = false
         labelText.backgroundColor = UIColor.clear
         labelText.numberOfLines = 0
-        labelText.font = UIFont.regular(size:ViewCookStepListCell.Constants.textFontSize)
         labelText.textColor = UIColor.colourBackgroundDark
         self.labelText = labelText
         

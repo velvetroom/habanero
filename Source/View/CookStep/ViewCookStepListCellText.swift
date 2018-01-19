@@ -6,6 +6,8 @@ final class ViewCookStepListCellText:ViewCookStepListCell
     {
         super.factoryViews()
         
+        self.labelText.font = UIFont.regular(size:ViewCookStepListCellText.Constants.fontSize)
+        
         NSLayoutConstraint.topToTop(
             view:self.labelText,
             toView:self)
