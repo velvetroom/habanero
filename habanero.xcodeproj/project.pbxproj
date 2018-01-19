@@ -468,6 +468,8 @@
 		DA992D7A1FD61EE500A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA992D761FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift */; };
 		DAA1805120121E8000A5B834 /* ViewCookStepListCellImage+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA1805020121E8000A5B834 /* ViewCookStepListCellImage+Constants.swift */; };
 		DAA1805220121E8000A5B834 /* ViewCookStepListCellImage+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA1805020121E8000A5B834 /* ViewCookStepListCellImage+Constants.swift */; };
+		DAA1805420121F7700A5B834 /* ViewCookStepListCell+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA1805320121F7700A5B834 /* ViewCookStepListCell+Constants.swift */; };
+		DAA1805520121F7700A5B834 /* ViewCookStepListCell+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA1805320121F7700A5B834 /* ViewCookStepListCell+Constants.swift */; };
 		DAA26FB01FE96F74005855F6 /* ViewNewAddListCellDraggableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA26FAF1FE96F74005855F6 /* ViewNewAddListCellDraggableProtocol.swift */; };
 		DAA26FB21FE97AE6005855F6 /* NewAdd+Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA26FB11FE97AE6005855F6 /* NewAdd+Move.swift */; };
 		DAA333D21FDB1453002D766C /* New+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333D11FDB1453002D766C /* New+Load.swift */; };
@@ -1033,6 +1035,7 @@
 		DA992D751FD61E7300A6CFEF /* MenuItemGenericProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemGenericProtocol.swift; sourceTree = "<group>"; };
 		DA992D761FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MenuItemGenericProtocol+Default.swift"; sourceTree = "<group>"; };
 		DAA1805020121E8000A5B834 /* ViewCookStepListCellImage+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStepListCellImage+Constants.swift"; sourceTree = "<group>"; };
+		DAA1805320121F7700A5B834 /* ViewCookStepListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStepListCell+Constants.swift"; sourceTree = "<group>"; };
 		DAA26FAF1FE96F74005855F6 /* ViewNewAddListCellDraggableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellDraggableProtocol.swift; sourceTree = "<group>"; };
 		DAA26FB11FE97AE6005855F6 /* NewAdd+Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Move.swift"; sourceTree = "<group>"; };
 		DAA333D11FDB1453002D766C /* New+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "New+Load.swift"; sourceTree = "<group>"; };
@@ -2104,6 +2107,7 @@
 				DAC104AF200EA921004617FD /* ViewCookStepList.swift */,
 				DAC104C7200EC8C6004617FD /* ViewCookStepList+Actions.swift */,
 				DAC104B2200EA9BA004617FD /* ViewCookStepListCell.swift */,
+				DAA1805320121F7700A5B834 /* ViewCookStepListCell+Constants.swift */,
 				DAC104B5200EABF9004617FD /* ViewCookStepListCellText.swift */,
 				DAD64C102011307800E74F76 /* ViewCookStepListCellText+Constants.swift */,
 				DAC104B8200EAC16004617FD /* ViewCookStepListCellImage.swift */,
@@ -2609,6 +2613,7 @@
 				DA9089201FD4C66000C1208A /* ControllerParent+Menu.swift in Sources */,
 				DA91EB241FD62D700063560D /* ViewControllableProtocol.swift in Sources */,
 				DAC104B3200EA9BA004617FD /* ViewCookStepListCell.swift in Sources */,
+				DAA1805420121F7700A5B834 /* ViewCookStepListCell+Constants.swift in Sources */,
 				DA35DD171FFDB11E0047881F /* RecipeBuilder.swift in Sources */,
 				DA683599200176DC0087C77D /* RecipeStepImage.swift in Sources */,
 				DAE5E4861FE48CA700CC40BA /* Settings+Computed.swift in Sources */,
@@ -2966,6 +2971,7 @@
 				DA1F04F21FE8C0BF00DF03A8 /* ControllerNewAdd+Steps.swift in Sources */,
 				DA33F320200FCE4300F07E48 /* ViewCookStep+Constants.swift in Sources */,
 				DA6042901FE1EE4D00758A2F /* ViewNewAddListCellIngredient+Constants.swift in Sources */,
+				DAA1805520121F7700A5B834 /* ViewCookStepListCell+Constants.swift in Sources */,
 				DA91EB0F1FD62C1F0063560D /* ViewBlur.swift in Sources */,
 				DAC104BD200EB618004617FD /* CookStepItemProtocol.swift in Sources */,
 				DA91EB251FD62D700063560D /* ViewControllableProtocol.swift in Sources */,
