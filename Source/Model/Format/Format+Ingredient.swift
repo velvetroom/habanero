@@ -2,7 +2,7 @@ import Foundation
 
 extension Format
 {
-    private static var typeMap:[IngredientAmountType:FormatIngredientTypeProtocol.Type]
+    static var typeMap:[IngredientAmountType:FormatIngredientTypeProtocol.Type]
     {
         get
         {
@@ -15,47 +15,5 @@ extension Format
             
             return map
         }
-    }
-    
-    //MARK: internal
-    
-    static func factoryAmount(
-        buildIngredient:BuildIngredient,
-        settings:Settings) -> String?
-    {
-        guard
-            
-            let formatter:FormatIngredientTypeProtocol.Type = Format.typeMap[buildIngredient.ingredientAmountType]
-        
-        else
-        {
-            return nil
-        }
-        
-        let amount:String? = formatter.factoryAmount(
-            buildIngredient:buildIngredient,
-            settings:settings)
-        
-        return amount
-    }
-    
-    static func factoryAmount(
-        recipeIngredient:RecipeIngredient,
-        settings:Settings) -> String?
-    {
-        guard
-            
-            let formatter:FormatIngredientTypeProtocol.Type = Format.typeMap[recipeIngredient.amountType]
-            
-        else
-        {
-            return nil
-        }
-        
-        let amount:String? = formatter.factoryAmount(
-            recipeIngredient:recipeIngredient,
-            settings:settings)
-        
-        return amount
     }
 }
