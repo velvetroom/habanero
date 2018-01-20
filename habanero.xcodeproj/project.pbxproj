@@ -77,7 +77,6 @@
 		DA27794C20071F4600F15AE0 /* ViewCookListCellIngredientsTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA27794A20071F4600F15AE0 /* ViewCookListCellIngredientsTitle.swift */; };
 		DA27794E200724EE00F15AE0 /* ViewCookList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA27794D200724EE00F15AE0 /* ViewCookList+Constants.swift */; };
 		DA27794F200724EE00F15AE0 /* ViewCookList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA27794D200724EE00F15AE0 /* ViewCookList+Constants.swift */; };
-		DA280FC120006AA40016AD43 /* Cloud+CreateRecipeStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA280FC020006AA40016AD43 /* Cloud+CreateRecipeStep.swift */; };
 		DA280FC220006AA40016AD43 /* Cloud+CreateRecipeStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA280FC020006AA40016AD43 /* Cloud+CreateRecipeStep.swift */; };
 		DA280FC420006AE90016AD43 /* RecipeStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA280FC320006AE90016AD43 /* RecipeStep.swift */; };
 		DA280FC520006AE90016AD43 /* RecipeStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA280FC320006AE90016AD43 /* RecipeStep.swift */; };
@@ -2521,7 +2520,6 @@
 				DA90891E1FD4C66000C1208A /* ControllerParent+Orientation.swift in Sources */,
 				DA6E80811FF9B64400175F70 /* StorageProviderProtocol.swift in Sources */,
 				DA936CF61FFF11DD00740BE8 /* RecipeIngredientQuantityBuilder.swift in Sources */,
-				DA280FC120006AA40016AD43 /* Cloud+CreateRecipeStep.swift in Sources */,
 				DA4AA5061FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift in Sources */,
 				DA10589A2002E14600019445 /* ViewHomeList.swift in Sources */,
 				DA992D781FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */,
