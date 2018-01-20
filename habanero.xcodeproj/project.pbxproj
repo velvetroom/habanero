@@ -460,7 +460,6 @@
 		DA936CFE1FFF153900740BE8 /* NewAdd+SaveSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA936CFD1FFF153900740BE8 /* NewAdd+SaveSteps.swift */; };
 		DA936D001FFF165F00740BE8 /* NewAdd+SaveRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA936CFF1FFF165F00740BE8 /* NewAdd+SaveRecipe.swift */; };
 		DA936D021FFF19AF00740BE8 /* Cloud+CreateRecipeIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA936D011FFF19AF00740BE8 /* Cloud+CreateRecipeIngredient.swift */; };
-		DA936D031FFF19B300740BE8 /* Cloud+CreateRecipeIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA936D011FFF19AF00740BE8 /* Cloud+CreateRecipeIngredient.swift */; };
 		DA992D771FD61E7300A6CFEF /* MenuItemGenericProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA992D751FD61E7300A6CFEF /* MenuItemGenericProtocol.swift */; };
 		DA992D781FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA992D761FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift */; };
 		DA992D791FD61ED700A6CFEF /* MenuItemGenericProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA992D751FD61E7300A6CFEF /* MenuItemGenericProtocol.swift */; };
@@ -2464,7 +2463,6 @@
 				DA91EB1E1FD62C1F0063560D /* ViewGradient+Constants.swift in Sources */,
 				DA5761D12005879D00A5151C /* ControllerCook.swift in Sources */,
 				DAFA62F0200828310068EC17 /* ViewCookListCellIngredientsTitle+Constants.swift in Sources */,
-				DA936D031FFF19B300740BE8 /* Cloud+CreateRecipeIngredient.swift in Sources */,
 				DAC104BF200EBD98004617FD /* CookStepItemText.swift in Sources */,
 				DA35DD291FFDBDF70047881F /* StorageProviderFirebase+Constants.swift in Sources */,
 				DACF552F1FD7661E00069701 /* ExtensionUIColor.swift in Sources */,
