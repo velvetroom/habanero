@@ -695,6 +695,8 @@
 		DAEFB5F42013792D00CA840E /* Format+BuildIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEFB5F32013792D00CA840E /* Format+BuildIngredient.swift */; };
 		DAEFB5F62013794800CA840E /* Format+RecipeIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEFB5F52013794800CA840E /* Format+RecipeIngredient.swift */; };
 		DAEFB5F72013794800CA840E /* Format+RecipeIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEFB5F52013794800CA840E /* Format+RecipeIngredient.swift */; };
+		DAEFB5F9201382AE00CA840E /* MenuItemFavourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEFB5F8201382AE00CA840E /* MenuItemFavourites.swift */; };
+		DAEFB5FA201382AE00CA840E /* MenuItemFavourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEFB5F8201382AE00CA840E /* MenuItemFavourites.swift */; };
 		DAF8068B200FC0C500E2F858 /* CookStep+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8068A200FC0C500E2F858 /* CookStep+Image.swift */; };
 		DAF8068C200FC0C500E2F858 /* CookStep+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8068A200FC0C500E2F858 /* CookStep+Image.swift */; };
 		DAF949F21FD8B47D001BA32E /* ViewNewBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF949F11FD8B47D001BA32E /* ViewNewBar+Constants.swift */; };
@@ -1183,6 +1185,7 @@
 		DAEFB5F0201377A000CA840E /* RecipeFavourite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFavourite.swift; sourceTree = "<group>"; };
 		DAEFB5F32013792D00CA840E /* Format+BuildIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Format+BuildIngredient.swift"; sourceTree = "<group>"; };
 		DAEFB5F52013794800CA840E /* Format+RecipeIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Format+RecipeIngredient.swift"; sourceTree = "<group>"; };
+		DAEFB5F8201382AE00CA840E /* MenuItemFavourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemFavourites.swift; sourceTree = "<group>"; };
 		DAF8068A200FC0C500E2F858 /* CookStep+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CookStep+Image.swift"; sourceTree = "<group>"; };
 		DAF949F11FD8B47D001BA32E /* ViewNewBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewBar+Constants.swift"; sourceTree = "<group>"; };
 		DAF949F31FD8BC38001BA32E /* ArchNewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNewAdd.swift; sourceTree = "<group>"; };
@@ -1773,6 +1776,7 @@
 				DA992D751FD61E7300A6CFEF /* MenuItemGenericProtocol.swift */,
 				DA992D761FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift */,
 				DA9088D81FD4C65F00C1208A /* MenuItemHome.swift */,
+				DAEFB5F8201382AE00CA840E /* MenuItemFavourites.swift */,
 				DA3F0EB71FD74FC400593B83 /* MenuItemNew.swift */,
 			);
 			path = Menu;
@@ -2482,6 +2486,7 @@
 				DAE7C3541FE08281003190FF /* CloudError.swift in Sources */,
 				DA91EB001FD62C1F0063560D /* ViewParent+Gesture.swift in Sources */,
 				DA91EAF41FD62C1F0063560D /* ViewParent.swift in Sources */,
+				DAEFB5F9201382AE00CA840E /* MenuItemFavourites.swift in Sources */,
 				DA35DD1D1FFDB91A0047881F /* StorageError.swift in Sources */,
 				DACF55351FD7661E00069701 /* ExtensionString+Constants.swift in Sources */,
 				DABA5EAD1FEA2E170017F865 /* ControllerPhoto.swift in Sources */,
@@ -3087,6 +3092,7 @@
 				DA4AA50D1FE7374A00374B07 /* ViewNewAddIngredientListCell+Constants.swift in Sources */,
 				DA74F0B91FE611E500F45310 /* Format.swift in Sources */,
 				DA3F0E901FDF45C30037C94D /* ViewNewAddIngredient.swift in Sources */,
+				DAEFB5FA201382AE00CA840E /* MenuItemFavourites.swift in Sources */,
 				DA11BA091FD8F2200038F9B0 /* ViewNewAddListCell.swift in Sources */,
 				DA16F1601FDFAF7C00EB6877 /* ViewNewAddIngredientBar+Constants.swift in Sources */,
 				DAB7862B1FF4B92000579BB5 /* ViewNewAddListCellStepImage+Constants.swift in Sources */,
