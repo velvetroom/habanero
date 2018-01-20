@@ -40,7 +40,7 @@
         <attribute name="imageIdentifier" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="BuildStepText" representedClassName="BuildStepText" parentEntity="BuildStep" syncable="YES" codeGenerationType="class"/>
-    <entity name="Favourite" representedClassName="Favourite" syncable="YES" codeGenerationType="class">
+    <entity name="RecipeFavourite" representedClassName="RecipeFavourite" syncable="YES" codeGenerationType="class">
         <attribute name="created" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="recipeIdentifier" attributeType="String" syncable="YES"/>
     </entity>
@@ -59,6 +59,6 @@
         <element name="BuildStepImage" positionX="-9" positionY="54" width="128" height="60"/>
         <element name="BuildStepText" positionX="-18" positionY="45" width="128" height="45"/>
         <element name="Settings" positionX="-18" positionY="45" width="128" height="60"/>
-        <element name="Favourite" positionX="-9" positionY="54" width="128" height="75"/>
+        <element name="RecipeFavourite" positionX="-9" positionY="54" width="128" height="75"/>
     </elements>
 </model>
