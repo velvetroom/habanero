@@ -7,7 +7,8 @@ extension Menu
         get
         {
             let list:[MenuItemProtocol.Type] = [
-                MenuItemHome.self]
+                MenuItemHome.self,
+                MenuItemFavourites.self]
             
             return list
         }
