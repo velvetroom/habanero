@@ -59,7 +59,7 @@ final class ViewHomeList:ViewCollection<ArchHome, ViewHomeListCell, UICollection
         _ collectionView:UICollectionView,
         cellForItemAt indexPath:IndexPath) -> UICollectionViewCell
     {
-        let item:HomeItem = self.modelAtIndex(index:indexPath)
+        let item:CookItem = self.modelAtIndex(index:indexPath)
         let cell:ViewHomeListCell = self.cellAtIndex(indexPath:indexPath)
         cell.config(model:item)
         
@@ -83,7 +83,7 @@ final class ViewHomeList:ViewCollection<ArchHome, ViewHomeListCell, UICollection
             at:UICollectionViewScrollPosition.centeredVertically,
             animated:true)
         
-        let item:HomeItem = self.modelAtIndex(index:indexPath)
+        let item:CookItem = self.modelAtIndex(index:indexPath)
         self.controller.transitionToRecipe(item:item)
     }
 }

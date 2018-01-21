@@ -10,7 +10,7 @@ extension CookStep
     {
         guard
             
-            let recipe:Recipe = self.homeItem?.recipe
+            let recipe:Recipe = self.cookItem?.recipe
         
         else
         {

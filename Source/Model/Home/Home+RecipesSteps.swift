@@ -4,7 +4,7 @@ extension Home
 {
     //MARK: private
     
-    private func asyncLoadStepsFor(item:HomeItem)
+    private func asyncLoadStepsFor(item:CookItem)
     {
         self.cloud.loadRecipeSteps(recipe:item.recipe)
         { (stepList:RecipeStepsList?, error:Error?) in
@@ -31,7 +31,7 @@ extension Home
     
     //MARK: internal
     
-    func loadStepsFor(item:HomeItem)
+    func loadStepsFor(item:CookItem)
     {
         DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
         { [weak self] in

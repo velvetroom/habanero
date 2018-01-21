@@ -2,7 +2,7 @@ import UIKit
 
 final class ViewHomeListCell:ViewCollectionCell
 {
-    private(set) weak var model:HomeItem?
+    private(set) weak var model:CookItem?
     private(set) weak var imageView:UIImageView!
     private weak var labelTitle:UILabel!
     
@@ -138,7 +138,7 @@ final class ViewHomeListCell:ViewCollectionCell
     
     //MARK: internal
     
-    func config(model:HomeItem)
+    func config(model:CookItem)
     {
         self.model = model
         self.labelTitle.text = model.recipe.title

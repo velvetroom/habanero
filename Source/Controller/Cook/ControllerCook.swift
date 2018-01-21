@@ -11,13 +11,13 @@ final class ControllerCook:Controller<ArchCook>
     }
     
     init(
-        item:HomeItem,
+        item:CookItem,
         settings:Settings)
     {
         super.init()
      
         self.model.settings = settings
-        self.model.homeItem = item
+        self.model.cookItem = item
     }
     
     required init?(coder:NSCoder)
@@ -27,7 +27,7 @@ final class ControllerCook:Controller<ArchCook>
     
     deinit
     {
-        self.model.homeItem?.onImageUpdated = nil
+        self.model.cookItem?.onImageUpdated = nil
     }
     
     override func viewDidLoad()
@@ -36,17 +36,17 @@ final class ControllerCook:Controller<ArchCook>
         
         guard
             
-            self.model.homeItem?.image == nil
+            self.model.cookItem?.image == nil
         
         else
         {
             return
         }
         
-        self.model.homeItem?.onImageUpdated =
-        { [weak self] (homeItem:HomeItem) in
+        self.model.cookItem?.onImageUpdated =
+        { [weak self] (cookItem:CookItem) in
             
-            self?.viewMain.viewHeader.imageView.image = homeItem.image
+            self?.viewMain.viewHeader.imageView.image = cookItem.image
         }
     }
     
@@ -61,7 +61,7 @@ final class ControllerCook:Controller<ArchCook>
     {
         guard
         
-            let item:HomeItem = self.model.homeItem
+            let item:CookItem = self.model.cookItem
         
         else
         {

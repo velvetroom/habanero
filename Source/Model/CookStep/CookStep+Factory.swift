@@ -52,11 +52,11 @@ extension CookStep
     
     //MARK: internal
     
-    class func factoryItems(homeItem:HomeItem) -> [CookStepItemProtocol]
+    class func factoryItems(cookItem:CookItem) -> [CookStepItemProtocol]
     {
         var items:[CookStepItemProtocol] = []
         
-        for step:RecipeStep in homeItem.steps
+        for step:RecipeStep in cookItem.steps
         {
             guard
             

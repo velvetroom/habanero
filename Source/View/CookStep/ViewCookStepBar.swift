@@ -29,7 +29,7 @@ final class ViewCookStepBar:View<ArchCookStep>
         labelTitle.isUserInteractionEnabled = false
         labelTitle.font = UIFont.regular(size:ViewCookStepBar.Constants.fontSize)
         labelTitle.textColor = UIColor.colourBackgroundDark
-        labelTitle.text = self.controller.model.homeItem?.recipe.title
+        labelTitle.text = self.controller.model.cookItem?.recipe.title
         
         self.addSubview(labelTitle)
         self.addSubview(buttonClose)

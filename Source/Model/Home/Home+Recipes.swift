@@ -44,7 +44,7 @@ extension Home
                 continue
             }
             
-            let item:HomeItem = HomeItem(recipe:recipe)
+            let item:CookItem = CookItem(recipe:recipe)
             
             self.recipesMap[recipe.identifier] = item
         }
@@ -54,10 +54,10 @@ extension Home
     
     private func sortItems(completion:@escaping(() -> ()))
     {
-        var items:[HomeItem] = Array(self.recipesMap.values)
+        var items:[CookItem] = Array(self.recipesMap.values)
         
         items.sort
-        { (itemA:HomeItem, itemB:HomeItem) -> Bool in
+        { (itemA:CookItem, itemB:CookItem) -> Bool in
             
             return itemA.recipe.created > itemB.recipe.created
         }
@@ -68,7 +68,7 @@ extension Home
     }
     
     private func recipesLoaded(
-        items:[HomeItem],
+        items:[CookItem],
         completion:@escaping(() -> ()))
     {
         self.items = items

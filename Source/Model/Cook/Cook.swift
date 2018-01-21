@@ -5,13 +5,13 @@ final class Cook:Model<ArchCook>
     var items:[CookListItemProtocol]
     weak var settings:Settings?
     
-    var homeItem:HomeItem?
+    var cookItem:CookItem?
     {
         didSet
         {
             guard
                 
-                let homeItem:HomeItem = self.homeItem,
+                let cookItem:CookItem = self.cookItem,
                 let settings:Settings = self.settings
             
             else
@@ -20,7 +20,7 @@ final class Cook:Model<ArchCook>
             }
             
             self.items = Cook.factoryItems(
-                homeItem:homeItem,
+                cookItem:cookItem,
                 settings:settings)
         }
     }

@@ -5,20 +5,20 @@ final class CookStep:Model<ArchCookStep>
     var items:[CookStepItemProtocol]
     let storage:Storage
     
-    var homeItem:HomeItem?
+    var cookItem:CookItem?
     {
         didSet
         {
             guard
                 
-                let homeItem:HomeItem = self.homeItem
+                let cookItem:CookItem = self.cookItem
                 
             else
             {
                 return
             }
             
-            self.items = CookStep.factoryItems(homeItem:homeItem)
+            self.items = CookStep.factoryItems(cookItem:cookItem)
         }
     }
     

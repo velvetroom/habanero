@@ -4,8 +4,8 @@ final class Home:Model<ArchHome>
 {
     var settings:Settings?
     var database:Database?
-    var items:[HomeItem]
-    var recipesMap:[String:HomeItem]
+    var items:[CookItem]
+    var recipesMap:[String:CookItem]
     let cloud:Cloud
     let storage:Storage
     

@@ -2,11 +2,11 @@ import UIKit
 
 final class ControllerCookStep:Controller<ArchCookStep>
 {
-    init(item:HomeItem)
+    init(item:CookItem)
     {
         super.init()
         
-        self.model.homeItem = item
+        self.model.cookItem = item
     }
     
     required init?(coder:NSCoder)

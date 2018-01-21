@@ -41,7 +41,7 @@ final class ControllerHome:Controller<ArchHome>
     
     //MARK: internal
     
-    func transitionToRecipe(item:HomeItem)
+    func transitionToRecipe(item:CookItem)
     {
         guard
             

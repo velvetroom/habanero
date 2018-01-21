@@ -5,7 +5,7 @@ extension ControllerHome
     //MARK: private
     
     private func updateImage(
-        item:HomeItem,
+        item:CookItem,
         on cell:ViewHomeListCell)
     {
         guard
@@ -21,7 +21,7 @@ extension ControllerHome
     }
     
     private func loadRecipeImage(
-        item:HomeItem,
+        item:CookItem,
         on cell:ViewHomeListCell)
     {
         guard
@@ -50,7 +50,7 @@ extension ControllerHome
         }
     }
     
-    private func loadRecipeIngredients(item:HomeItem)
+    private func loadRecipeIngredients(item:CookItem)
     {
         guard
         
@@ -64,7 +64,7 @@ extension ControllerHome
         self.model.loadIngredientsFor(item:item)
     }
     
-    private func loadRecipeSteps(item:HomeItem)
+    private func loadRecipeSteps(item:CookItem)
     {
         guard
         
@@ -81,7 +81,7 @@ extension ControllerHome
     //MARK: internal
     
     func loadRecipeContents(
-        item:HomeItem,
+        item:CookItem,
         on cell:ViewHomeListCell)
     {
         self.loadRecipeImage(
