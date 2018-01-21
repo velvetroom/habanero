@@ -73,7 +73,7 @@ extension ControllerHome
             return
         }
         
-        self.model.loadStepsFor(item:item)
+        item.loadSteps(cloud:self.model.cloud)
     }
     
     //MARK: internal
