@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		43A11BCCBB0D1C292C1CEE83 /* Pods_admin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF6EEE1B276B4389C07938C /* Pods_admin.framework */; };
 		8F2E98EAEBD65E388FB5CB76 /* Pods_user.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34488D08B2947E1784847953 /* Pods_user.framework */; };
+		DA00624E201414170078A633 /* ControllerFavourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA00624D201414170078A633 /* ControllerFavourites.swift */; };
+		DA00624F201414170078A633 /* ControllerFavourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA00624D201414170078A633 /* ControllerFavourites.swift */; };
 		DA07501020042A36002C428A /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07500F20042A36002C428A /* HomeItem.swift */; };
 		DA07501120042A36002C428A /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07500F20042A36002C428A /* HomeItem.swift */; };
 		DA07501320044518002C428A /* ViewHomeList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07501220044518002C428A /* ViewHomeList+Constants.swift */; };
@@ -749,6 +751,7 @@
 		34488D08B2947E1784847953 /* Pods_user.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_user.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A96C209AACB2D78CA84704A /* Pods-user.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-user.debug.xcconfig"; path = "Pods/Target Support Files/Pods-user/Pods-user.debug.xcconfig"; sourceTree = "<group>"; };
 		A3BF40A8891C588AFE14AB30 /* Pods-admin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-admin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-admin/Pods-admin.debug.xcconfig"; sourceTree = "<group>"; };
+		DA00624D201414170078A633 /* ControllerFavourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFavourites.swift; sourceTree = "<group>"; };
 		DA07500F20042A36002C428A /* HomeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItem.swift; sourceTree = "<group>"; };
 		DA07501220044518002C428A /* ViewHomeList+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeList+Constants.swift"; sourceTree = "<group>"; };
 		DA075015200445DF002C428A /* ViewHomeListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeListCell+Constants.swift"; sourceTree = "<group>"; };
@@ -1254,6 +1257,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DA00624C2014140C0078A633 /* Favourites */ = {
+			isa = PBXGroup;
+			children = (
+				DA00624D201414170078A633 /* ControllerFavourites.swift */,
+			);
+			path = Favourites;
+			sourceTree = "<group>";
+		};
 		DA177BF21FD77915003B3836 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
@@ -1660,6 +1671,7 @@
 		DA9088C31FD4C65F00C1208A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DA00624C2014140C0078A633 /* Favourites */,
 				DA5761CC2005876700A5151C /* Cook */,
 				DA9088C41FD4C65F00C1208A /* Abstract */,
 				DA9088CD1FD4C65F00C1208A /* Home */,
@@ -2672,6 +2684,7 @@
 				DA91EB061FD62C1F0063560D /* ViewAlert.swift in Sources */,
 				DA6E80611FF98ABB00175F70 /* Cloud+Create.swift in Sources */,
 				DACF553D1FD7661E00069701 /* ExtensionNSLayoutConstraint.swift in Sources */,
+				DA00624E201414170078A633 /* ControllerFavourites.swift in Sources */,
 				DA5761CE2005877600A5151C /* ArchCook.swift in Sources */,
 				DABDF3381FEB6B87002EF842 /* PhotoOptionCamera.swift in Sources */,
 				DA70AFC51FD5AABF0016B0DC /* Home.swift in Sources */,
@@ -3107,6 +3120,7 @@
 				DA90898F1FD4CE3E00C1208A /* Menu.swift in Sources */,
 				DAFCCA5C200DB688002377BC /* Home+RecipesSteps.swift in Sources */,
 				DAB7862D1FF4BAA000579BB5 /* ViewNewAddListCellStep.swift in Sources */,
+				DA00624F201414170078A633 /* ControllerFavourites.swift in Sources */,
 				DA8752E31FE3B27100AE74F5 /* ViewNewAddIngredientAmountList+Actions.swift in Sources */,
 				DA35DD151FFDAF460047881F /* IngredientBuilder.swift in Sources */,
 				DAE7C33A1FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift in Sources */,
