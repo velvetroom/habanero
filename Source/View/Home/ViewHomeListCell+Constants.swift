@@ -10,6 +10,7 @@ extension ViewHomeListCell
         static let animateScale:CGFloat = 0.9
         static let cornerRadius:CGFloat = 6
         static let shadowRadius:CGFloat = 10
+        static let favouriteWidth:CGFloat = 50
         static let shadowOpacity:Float = 0.15
     }
 }

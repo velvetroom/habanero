@@ -4,6 +4,7 @@ final class ViewHomeListCell:ViewCollectionCell
 {
     private(set) weak var model:CookItem?
     private(set) weak var imageView:UIImageView!
+    private(set) weak var viewFavourite:ViewCookFavourite!
     private weak var labelTitle:UILabel!
     
     private var transformScale:CGAffineTransform
@@ -60,6 +61,9 @@ final class ViewHomeListCell:ViewCollectionCell
         
         let viewBlur:ViewBlur = ViewBlur.extraLight()
         
+        let viewFavourite:ViewCookFavourite = ViewCookFavourite()
+        self.viewFavourite = viewFavourite
+        
         let labelTitle:UILabel = UILabel()
         labelTitle.backgroundColor = UIColor.clear
         labelTitle.isUserInteractionEnabled = false
@@ -72,8 +76,10 @@ final class ViewHomeListCell:ViewCollectionCell
         containerView.addSubview(imageView)
         containerView.addSubview(viewBlur)
         containerView.addSubview(labelTitle)
+        
         self.addSubview(baseView)
         self.addSubview(containerView)
+        self.addSubview(viewFavourite)
         
         NSLayoutConstraint.equalsVertical(
             view:baseView,
@@ -104,10 +110,23 @@ final class ViewHomeListCell:ViewCollectionCell
         NSLayoutConstraint.equalsVertical(
             view:labelTitle,
             toView:viewBlur)
-        NSLayoutConstraint.equalsHorizontal(
+        NSLayoutConstraint.leftToLeft(
             view:labelTitle,
             toView:viewBlur,
-            margin:ViewHomeList.Constants.padding)
+            constant:ViewHomeList.Constants.padding)
+        NSLayoutConstraint.rightToLeft(
+            view:labelTitle,
+            toView:viewFavourite)
+        
+        NSLayoutConstraint.equalsVertical(
+            view:viewFavourite,
+            toView:viewBlur)
+        NSLayoutConstraint.rightToRight(
+            view:viewFavourite,
+            toView:viewBlur)
+        NSLayoutConstraint.width(
+            view:viewFavourite,
+            constant:ViewHomeListCell.Constants.favouriteWidth)
     }
     
     override func showHighlighted()
