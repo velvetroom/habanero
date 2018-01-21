@@ -126,14 +126,7 @@ final class ViewHomeListCell:ViewCollectionCell
     override func showReleased()
     {
         super.showReleased()
-        
-        let transform:CGAffineTransform = self.transformOriginal
-        
-        UIView.animate(withDuration:ViewHomeListCell.Constants.animationDuration)
-        { [weak self] in
-            
-            self?.transform = transform
-        }
+        self.transform = self.transformOriginal
     }
     
     //MARK: internal
@@ -142,5 +135,7 @@ final class ViewHomeListCell:ViewCollectionCell
     {
         self.model = model
         self.labelTitle.text = model.recipe.title
+        
+        self.showState()
     }
 }
