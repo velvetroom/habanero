@@ -473,6 +473,8 @@
 		DAA07FF620153E90006FFC76 /* CookItem+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA07FF220153E8F006FFC76 /* CookItem+Image.swift */; };
 		DAA07FF820153F25006FFC76 /* CookItem+Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA07FF720153F25006FFC76 /* CookItem+Ingredients.swift */; };
 		DAA07FF920153F25006FFC76 /* CookItem+Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA07FF720153F25006FFC76 /* CookItem+Ingredients.swift */; };
+		DAA07FFB2015439F006FFC76 /* CookItem+Steps.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA07FFA2015439F006FFC76 /* CookItem+Steps.swift */; };
+		DAA07FFC2015439F006FFC76 /* CookItem+Steps.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA07FFA2015439F006FFC76 /* CookItem+Steps.swift */; };
 		DAA1805120121E8000A5B834 /* ViewCookStepListCellImage+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA1805020121E8000A5B834 /* ViewCookStepListCellImage+Constants.swift */; };
 		DAA1805220121E8000A5B834 /* ViewCookStepListCellImage+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA1805020121E8000A5B834 /* ViewCookStepListCellImage+Constants.swift */; };
 		DAA1805420121F7700A5B834 /* ViewCookStepListCell+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA1805320121F7700A5B834 /* ViewCookStepListCell+Constants.swift */; };
@@ -1053,6 +1055,7 @@
 		DAA07FF120153E8F006FFC76 /* CookItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookItem.swift; sourceTree = "<group>"; };
 		DAA07FF220153E8F006FFC76 /* CookItem+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CookItem+Image.swift"; sourceTree = "<group>"; };
 		DAA07FF720153F25006FFC76 /* CookItem+Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CookItem+Ingredients.swift"; sourceTree = "<group>"; };
+		DAA07FFA2015439F006FFC76 /* CookItem+Steps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CookItem+Steps.swift"; sourceTree = "<group>"; };
 		DAA1805020121E8000A5B834 /* ViewCookStepListCellImage+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStepListCellImage+Constants.swift"; sourceTree = "<group>"; };
 		DAA1805320121F7700A5B834 /* ViewCookStepListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStepListCell+Constants.swift"; sourceTree = "<group>"; };
 		DAA26FAF1FE96F74005855F6 /* ViewNewAddListCellDraggableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellDraggableProtocol.swift; sourceTree = "<group>"; };
@@ -1920,6 +1923,7 @@
 				DAA07FF120153E8F006FFC76 /* CookItem.swift */,
 				DAA07FF220153E8F006FFC76 /* CookItem+Image.swift */,
 				DAA07FF720153F25006FFC76 /* CookItem+Ingredients.swift */,
+				DAA07FFA2015439F006FFC76 /* CookItem+Steps.swift */,
 			);
 			path = CookItem;
 			sourceTree = "<group>";
@@ -2661,6 +2665,7 @@
 				DACF89E31FFDD46900F4FCF0 /* RecipeIngredient+Keys.swift in Sources */,
 				DA91EB1C1FD62C1F0063560D /* ViewSpinner.swift in Sources */,
 				DA70FD8F201017FF003AF6A6 /* ControllerCookStep+Constants.swift in Sources */,
+				DAA07FFB2015439F006FFC76 /* CookItem+Steps.swift in Sources */,
 				DAAE259A20096FC000BE3740 /* ViewCookListCellIngredient+Constants.swift in Sources */,
 				DAC104C5200EBF13004617FD /* CookStep+Factory.swift in Sources */,
 				DA91EB0E1FD62C1F0063560D /* ViewBlur.swift in Sources */,
@@ -2847,6 +2852,7 @@
 				DAF8068C200FC0C500E2F858 /* CookStep+Image.swift in Sources */,
 				DA33F329200FDC1B00F07E48 /* ViewCookStepProgressIndicator+Constants.swift in Sources */,
 				DA6042951FE20CDC00758A2F /* BuildIngredient+Computed.swift in Sources */,
+				DAA07FFC2015439F006FFC76 /* CookItem+Steps.swift in Sources */,
 				DACF55421FD7661E00069701 /* ExtensionUIImage.swift in Sources */,
 				DA35DD1B1FFDB4A30047881F /* RecipeList.swift in Sources */,
 				DA8752CB1FE3863C00AE74F5 /* ViewNewAddIngredientAmountListCell.swift in Sources */,
