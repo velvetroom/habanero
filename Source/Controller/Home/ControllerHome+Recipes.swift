@@ -59,7 +59,7 @@ extension ControllerHome
             return
         }
         
-        self.model.loadIngredientsFor(item:item)
+        item.loadIngredients(cloud:self.model.cloud)
     }
     
     private func loadRecipeSteps(item:CookItem)

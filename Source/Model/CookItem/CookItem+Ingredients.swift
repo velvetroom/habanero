@@ -4,7 +4,7 @@ extension CookItem
 {
     //MARK: private
     
-    private func asyncLoadIngredientsFor(cloud:Cloud)
+    private func asyncLoadIngredients(cloud:Cloud)
     {
         cloud.loadRecipeIngredients(recipe:self.recipe)
         { [weak self] (ingredientList:RecipeIngredientsList?, error:Error?) in
@@ -25,12 +25,12 @@ extension CookItem
     
     //MARK: internal
     
-    func loadIngredientsFor(cloud:Cloud)
+    func loadIngredients(cloud:Cloud)
     {
         DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
         { [weak self] in
             
-            self?.asyncLoadIngredientsFor(cloud:cloud)
+            self?.asyncLoadIngredients(cloud:cloud)
         }
     }
 }
