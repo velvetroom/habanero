@@ -27,8 +27,6 @@
 		DA075017200445DF002C428A /* ViewHomeListCell+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA075015200445DF002C428A /* ViewHomeListCell+Constants.swift */; };
 		DA07501920044E21002C428A /* ControllerHome+Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07501820044E21002C428A /* ControllerHome+Recipes.swift */; };
 		DA07501A20044E21002C428A /* ControllerHome+Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07501820044E21002C428A /* ControllerHome+Recipes.swift */; };
-		DA07501C200450F6002C428A /* Home+RecipesImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07501B200450F6002C428A /* Home+RecipesImage.swift */; };
-		DA07501D200450F6002C428A /* Home+RecipesImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07501B200450F6002C428A /* Home+RecipesImage.swift */; };
 		DA07501F2004528D002C428A /* Storage+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07501E2004528D002C428A /* Storage+Load.swift */; };
 		DA0750202004528D002C428A /* Storage+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07501E2004528D002C428A /* Storage+Load.swift */; };
 		DA0750222004582E002C428A /* ViewHomeList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0750212004582E002C428A /* ViewHomeList+Actions.swift */; };
@@ -768,7 +766,6 @@
 		DA07501220044518002C428A /* ViewHomeList+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeList+Constants.swift"; sourceTree = "<group>"; };
 		DA075015200445DF002C428A /* ViewHomeListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeListCell+Constants.swift"; sourceTree = "<group>"; };
 		DA07501820044E21002C428A /* ControllerHome+Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerHome+Recipes.swift"; sourceTree = "<group>"; };
-		DA07501B200450F6002C428A /* Home+RecipesImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home+RecipesImage.swift"; sourceTree = "<group>"; };
 		DA07501E2004528D002C428A /* Storage+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storage+Load.swift"; sourceTree = "<group>"; };
 		DA0750212004582E002C428A /* ViewHomeList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeList+Actions.swift"; sourceTree = "<group>"; };
 		DA1058962002DD7800019445 /* ViewHomeBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeBar.swift; sourceTree = "<group>"; };
@@ -1801,7 +1798,6 @@
 				DA70AFC41FD5AABF0016B0DC /* Home.swift */,
 				DAE5E4881FE48F1D00CC40BA /* Home+Settings.swift */,
 				DA10589F2002E57100019445 /* Home+Recipes.swift */,
-				DA07501B200450F6002C428A /* Home+RecipesImage.swift */,
 				DAAE25932009509300BE3740 /* Home+RecipesIngredients.swift */,
 				DAFCCA5A200DB688002377BC /* Home+RecipesSteps.swift */,
 			);
@@ -2680,7 +2676,6 @@
 				DA35DD171FFDB11E0047881F /* RecipeBuilder.swift in Sources */,
 				DA683599200176DC0087C77D /* RecipeStepImage.swift in Sources */,
 				DAE5E4861FE48CA700CC40BA /* Settings+Computed.swift in Sources */,
-				DA07501C200450F6002C428A /* Home+RecipesImage.swift in Sources */,
 				DA10589D2002E17600019445 /* ViewHomeListCell.swift in Sources */,
 				DA27794820071EE900F15AE0 /* ViewCookListCellIngredient.swift in Sources */,
 				DAAE61F41FF636F500954EFC /* PhotoRotation.swift in Sources */,
@@ -2863,7 +2858,6 @@
 				DA84C0EF1FD73F59008959EA /* ArchNew.swift in Sources */,
 				DA8752D71FE3AB8D00AE74F5 /* NewAddIngredientAmountTypeCups.swift in Sources */,
 				DA58C6E71FD9E216000E6F30 /* NewAdd+Factory.swift in Sources */,
-				DA07501D200450F6002C428A /* Home+RecipesImage.swift in Sources */,
 				DAC104C0200EBD98004617FD /* CookStepItemText.swift in Sources */,
 				DA4233EA1FEDEBE10012A589 /* ViewPhotoCropMenu.swift in Sources */,
 				DA2C17771FEF4305001BDA54 /* ViewPhotoCropDisplayImage.swift in Sources */,

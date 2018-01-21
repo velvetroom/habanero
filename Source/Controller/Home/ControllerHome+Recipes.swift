@@ -39,10 +39,8 @@ extension ControllerHome
         
         cell.imageView.image = nil
         
-        self.model.loadRecipeImage(recipe:item.recipe)
+        item.loadImage(storage:self.model.storage)
         { (image:UIImage) in
-            
-            item.image = image
             
             self.updateImage(
                 item:item,
