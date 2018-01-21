@@ -75,13 +75,13 @@ final class ViewCookListCellRecipe:ViewCookListCell
             view:labelDuration)
     }
     
-    override func config(model:CookItemProtocol)
+    override func config(model:CookListItemProtocol)
     {
         super.config(model:model)
         
         guard
         
-            let model:CookItemRecipe = model as? CookItemRecipe
+            let model:CookListItemRecipe = model as? CookListItemRecipe
         
         else
         {

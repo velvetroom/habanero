@@ -2,7 +2,7 @@ import Foundation
 
 final class Cook:Model<ArchCook>
 {
-    var items:[CookItemProtocol]
+    var items:[CookListItemProtocol]
     weak var settings:Settings?
     
     var homeItem:HomeItem?

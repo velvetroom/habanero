@@ -1,6 +1,6 @@
 import UIKit
 
-struct CookItemIngredient:CookItemProtocol
+struct CookListItemIngredient:CookListItemProtocol
 {
     let reusableIdentifier:String = ViewCookListCellIngredient.reusableIdentifier
     let cellHeight:CGFloat = Cook.Constants.ingredientCellHeight

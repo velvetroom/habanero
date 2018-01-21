@@ -10,5 +10,5 @@ class ViewCookListCell:ViewCollectionCell
     
     //MARK: internal
     
-    func config(model:CookItemProtocol) { }
+    func config(model:CookListItemProtocol) { }
 }

@@ -6,9 +6,9 @@ extension Cook
     
     private class func factoryIngredientItems(
         homeItem:HomeItem,
-        settings:Settings) -> [CookItemProtocol]
+        settings:Settings) -> [CookListItemProtocol]
     {
-        var items:[CookItemIngredient] = []
+        var items:[CookListItemIngredient] = []
         
         for ingredient:RecipeIngredient in homeItem.ingredients
         {
@@ -23,7 +23,7 @@ extension Cook
                 continue
             }
             
-            let item:CookItemIngredient = CookItemIngredient(
+            let item:CookListItemIngredient = CookListItemIngredient(
                 ingredient:ingredient.ingredientName.localizedCapitalized,
                 amount:amount)
             
@@ -37,16 +37,16 @@ extension Cook
     
     class func factoryItems(
         homeItem:HomeItem,
-        settings:Settings) -> [CookItemProtocol]
+        settings:Settings) -> [CookListItemProtocol]
     {
-        let itemRecipe:CookItemRecipe = CookItemRecipe(recipe:homeItem.recipe)
-        let itemIngredientsTitle:CookItemIngredientsTitle = CookItemIngredientsTitle()
+        let itemRecipe:CookListItemRecipe = CookListItemRecipe(recipe:homeItem.recipe)
+        let itemIngredientsTitle:CookListItemIngredientsTitle = CookListItemIngredientsTitle()
         
-        let itemsIngredient:[CookItemProtocol] = Cook.factoryIngredientItems(
+        let itemsIngredient:[CookListItemProtocol] = Cook.factoryIngredientItems(
             homeItem:homeItem,
             settings:settings)
         
-        var items:[CookItemProtocol] = [
+        var items:[CookListItemProtocol] = [
             itemRecipe,
             itemIngredientsTitle]
         

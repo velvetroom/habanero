@@ -41,7 +41,7 @@ final class ViewCookList:ViewCollection<ArchCook, ViewCookListCell, ViewCollecti
         layout collectionViewLayout:UICollectionViewLayout,
         sizeForItemAt indexPath:IndexPath) -> CGSize
     {
-        let item:CookItemProtocol = self.modelAtIndex(index:indexPath)
+        let item:CookListItemProtocol = self.modelAtIndex(index:indexPath)
         let width:CGFloat = collectionView.bounds.width
         
         let size:CGSize = CGSize(
@@ -64,7 +64,7 @@ final class ViewCookList:ViewCollection<ArchCook, ViewCookListCell, ViewCollecti
         _ collectionView:UICollectionView,
         cellForItemAt indexPath:IndexPath) -> UICollectionViewCell
     {
-        let item:CookItemProtocol = self.modelAtIndex(index:indexPath)
+        let item:CookListItemProtocol = self.modelAtIndex(index:indexPath)
         
         let cell:ViewCookListCell = self.cellAtIndex(
             indexPath:indexPath,

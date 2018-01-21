@@ -4,9 +4,9 @@ extension ViewCookList
 {
     //MARK: internal
     
-    func modelAtIndex(index:IndexPath) -> CookItemProtocol
+    func modelAtIndex(index:IndexPath) -> CookListItemProtocol
     {
-        let item:CookItemProtocol = self.controller.model.items[index.item]
+        let item:CookListItemProtocol = self.controller.model.items[index.item]
         
         return item
     }

@@ -1,6 +1,6 @@
 import UIKit
 
-protocol CookItemProtocol
+protocol CookListItemProtocol
 {
     var reusableIdentifier:String { get }
     var cellHeight:CGFloat { get }

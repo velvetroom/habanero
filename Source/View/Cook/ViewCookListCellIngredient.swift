@@ -53,13 +53,13 @@ final class ViewCookListCellIngredient:ViewCookListCell
             constant:-ViewCookList.Constants.marginHorizontal)
     }
     
-    override func config(model:CookItemProtocol)
+    override func config(model:CookListItemProtocol)
     {
         super.config(model:model)
         
         guard
             
-            let model:CookItemIngredient = model as? CookItemIngredient
+            let model:CookListItemIngredient = model as? CookListItemIngredient
             
         else
         {
@@ -72,7 +72,7 @@ final class ViewCookListCellIngredient:ViewCookListCell
     
     //MARK: private
     
-    private class func factoryIngredientText(model:CookItemIngredient) -> NSAttributedString
+    private class func factoryIngredientText(model:CookListItemIngredient) -> NSAttributedString
     {
         let name:NSAttributedString = ViewCookListCellIngredient.factoryName(model:model)
         let amount:NSAttributedString = ViewCookListCellIngredient.factoryAmount(model:model)
@@ -85,7 +85,7 @@ final class ViewCookListCellIngredient:ViewCookListCell
         return text
     }
     
-    private class func factoryName(model:CookItemIngredient) -> NSAttributedString
+    private class func factoryName(model:CookListItemIngredient) -> NSAttributedString
     {
         let attributes:[NSAttributedStringKey:Any] = [
             NSAttributedStringKey.font:UIFont.regular(size:ViewCookListCellIngredient.Constants.nameFontSize),
@@ -98,7 +98,7 @@ final class ViewCookListCellIngredient:ViewCookListCell
         return name
     }
     
-    private class func factoryAmount(model:CookItemIngredient) -> NSAttributedString
+    private class func factoryAmount(model:CookListItemIngredient) -> NSAttributedString
     {
         let attributes:[NSAttributedStringKey:Any] = [
             NSAttributedStringKey.font:UIFont.regular(size:ViewCookListCellIngredient.Constants.amountFontSize),
