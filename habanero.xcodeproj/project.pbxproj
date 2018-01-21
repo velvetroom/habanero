@@ -19,6 +19,8 @@
 		DA00625A201421D30078A633 /* ViewFavouritesBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA006258201421D30078A633 /* ViewFavouritesBar.swift */; };
 		DA00625C2014325F0078A633 /* CookItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA00625B2014325F0078A633 /* CookItem.swift */; };
 		DA00625D2014325F0078A633 /* CookItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA00625B2014325F0078A633 /* CookItem.swift */; };
+		DA00625F201437B10078A633 /* CookItem+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA00625E201437B10078A633 /* CookItem+Image.swift */; };
+		DA006260201437B10078A633 /* CookItem+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA00625E201437B10078A633 /* CookItem+Image.swift */; };
 		DA07501320044518002C428A /* ViewHomeList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07501220044518002C428A /* ViewHomeList+Constants.swift */; };
 		DA07501420044518002C428A /* ViewHomeList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07501220044518002C428A /* ViewHomeList+Constants.swift */; };
 		DA075016200445DF002C428A /* ViewHomeListCell+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA075015200445DF002C428A /* ViewHomeListCell+Constants.swift */; };
@@ -762,6 +764,7 @@
 		DA006255201418CD0078A633 /* ViewFavourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFavourites.swift; sourceTree = "<group>"; };
 		DA006258201421D30078A633 /* ViewFavouritesBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFavouritesBar.swift; sourceTree = "<group>"; };
 		DA00625B2014325F0078A633 /* CookItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookItem.swift; sourceTree = "<group>"; };
+		DA00625E201437B10078A633 /* CookItem+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CookItem+Image.swift"; sourceTree = "<group>"; };
 		DA07501220044518002C428A /* ViewHomeList+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeList+Constants.swift"; sourceTree = "<group>"; };
 		DA075015200445DF002C428A /* ViewHomeListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeListCell+Constants.swift"; sourceTree = "<group>"; };
 		DA07501820044E21002C428A /* ControllerHome+Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerHome+Recipes.swift"; sourceTree = "<group>"; };
@@ -1402,6 +1405,7 @@
 				DAFA62D4200819A70068EC17 /* Cook+Constants.swift */,
 				DAFA62E020081AE40068EC17 /* Cook+Factory.swift */,
 				DA00625B2014325F0078A633 /* CookItem.swift */,
+				DA00625E201437B10078A633 /* CookItem+Image.swift */,
 				DAFA62D12008191C0068EC17 /* CookListItemProtocol.swift */,
 				DAFA62D720081A020068EC17 /* CookListItemRecipe.swift */,
 				DAFA62DA20081A6F0068EC17 /* CookListItemIngredientsTitle.swift */,
@@ -2497,6 +2501,7 @@
 				DA35DD0B1FFDAADF0047881F /* RecipeStatus.swift in Sources */,
 				DA35DD1A1FFDB4A30047881F /* RecipeList.swift in Sources */,
 				DAFA62ED200826660068EC17 /* ViewCook+Constants.swift in Sources */,
+				DA00625F201437B10078A633 /* CookItem+Image.swift in Sources */,
 				DA33F325200FD99D00F07E48 /* ViewCookStepProgressIndicator.swift in Sources */,
 				DA683593200176130087C77D /* RecipeStep+Factory.swift in Sources */,
 				DA33F322200FD1DE00F07E48 /* ViewCookStepProgress+Constants.swift in Sources */,
@@ -2792,6 +2797,7 @@
 				DAE7C37A1FE0A2E1003190FF /* ControllerNewAddIngredient+Create.swift in Sources */,
 				DA35DD0C1FFDAADF0047881F /* RecipeStatus.swift in Sources */,
 				DA70AFC31FD5AA980016B0DC /* ControllerHome.swift in Sources */,
+				DA006260201437B10078A633 /* CookItem+Image.swift in Sources */,
 				DA16F1641FDFB4C000EB6877 /* ControllerNewAdd+Ingredients.swift in Sources */,
 				DABA5EAA1FEA2DAC0017F865 /* ArchPhoto.swift in Sources */,
 				DA3F0E8A1FDF45350037C94D /* ControllerNewAddIngredient.swift in Sources */,
