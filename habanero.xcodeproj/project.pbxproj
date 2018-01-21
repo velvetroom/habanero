@@ -13,6 +13,8 @@
 		DA00624F201414170078A633 /* ControllerFavourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA00624D201414170078A633 /* ControllerFavourites.swift */; };
 		DA0062522014189C0078A633 /* Favourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0062512014189C0078A633 /* Favourites.swift */; };
 		DA0062532014189C0078A633 /* Favourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0062512014189C0078A633 /* Favourites.swift */; };
+		DA006256201418CD0078A633 /* ViewFavourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA006255201418CD0078A633 /* ViewFavourites.swift */; };
+		DA006257201418CD0078A633 /* ViewFavourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA006255201418CD0078A633 /* ViewFavourites.swift */; };
 		DA07501020042A36002C428A /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07500F20042A36002C428A /* HomeItem.swift */; };
 		DA07501120042A36002C428A /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07500F20042A36002C428A /* HomeItem.swift */; };
 		DA07501320044518002C428A /* ViewHomeList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07501220044518002C428A /* ViewHomeList+Constants.swift */; };
@@ -755,6 +757,7 @@
 		A3BF40A8891C588AFE14AB30 /* Pods-admin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-admin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-admin/Pods-admin.debug.xcconfig"; sourceTree = "<group>"; };
 		DA00624D201414170078A633 /* ControllerFavourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFavourites.swift; sourceTree = "<group>"; };
 		DA0062512014189C0078A633 /* Favourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourites.swift; sourceTree = "<group>"; };
+		DA006255201418CD0078A633 /* ViewFavourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFavourites.swift; sourceTree = "<group>"; };
 		DA07500F20042A36002C428A /* HomeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItem.swift; sourceTree = "<group>"; };
 		DA07501220044518002C428A /* ViewHomeList+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeList+Constants.swift"; sourceTree = "<group>"; };
 		DA075015200445DF002C428A /* ViewHomeListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeListCell+Constants.swift"; sourceTree = "<group>"; };
@@ -1272,6 +1275,14 @@
 			isa = PBXGroup;
 			children = (
 				DA0062512014189C0078A633 /* Favourites.swift */,
+			);
+			path = Favourites;
+			sourceTree = "<group>";
+		};
+		DA006254201418C00078A633 /* Favourites */ = {
+			isa = PBXGroup;
+			children = (
+				DA006255201418CD0078A633 /* ViewFavourites.swift */,
 			);
 			path = Favourites;
 			sourceTree = "<group>";
@@ -1813,6 +1824,7 @@
 		DA9088E01FD4C65F00C1208A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DA006254201418C00078A633 /* Favourites */,
 				DAF99F11200DAC350030866C /* CookStep */,
 				DA5761D72005886E00A5151C /* Cook */,
 				DA91EAC81FD62C1F0063560D /* Global */,
@@ -2713,6 +2725,7 @@
 				DA855E051FF367E600E1B69F /* PhotoCrop+Export.swift in Sources */,
 				DA2C17701FEF3C68001BDA54 /* ViewButtonContinue+Constants.swift in Sources */,
 				DA936CF91FFF121200740BE8 /* RecipeIngredientSpoonsBuilder.swift in Sources */,
+				DA006256201418CD0078A633 /* ViewFavourites.swift in Sources */,
 				DA4233DE1FEDE56F0012A589 /* ArchPhotoCrop.swift in Sources */,
 				DA80B54F200C1DB000797D61 /* ViewCookPlay.swift in Sources */,
 				DACF55071FD7656F00069701 /* habanero.xcdatamodeld in Sources */,
@@ -2791,6 +2804,7 @@
 				DA1F05061FE8E3CD00DF03A8 /* BuildStepImage+Computed.swift in Sources */,
 				DAFA62D920081A020068EC17 /* CookItemRecipe.swift in Sources */,
 				DAE7C3551FE08281003190FF /* CloudError.swift in Sources */,
+				DA006257201418CD0078A633 /* ViewFavourites.swift in Sources */,
 				DA9089871FD4CE3300C1208A /* Arch.swift in Sources */,
 				DA71D68D1FDA6262003A33E1 /* ControllerNewAdd+Info.swift in Sources */,
 				DAA333E21FDB29D8002D766C /* NewAdd+Info.swift in Sources */,
