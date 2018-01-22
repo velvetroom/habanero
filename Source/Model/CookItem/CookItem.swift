@@ -5,6 +5,7 @@ final class CookItem
     var ingredients:[RecipeIngredient]
     var steps:[RecipeStep]
     var onImageUpdated:((CookItem) -> ())?
+    var favourite:CookItemFavouriteProtocol.Type
     let recipe:Recipe
     
     var image:UIImage?
@@ -21,5 +22,6 @@ final class CookItem
         self.recipe = recipe
         self.ingredients = []
         self.steps = []
+        self.favourite = CookItemFavouriteOff.self
     }
 }
