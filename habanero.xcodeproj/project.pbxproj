@@ -21,6 +21,8 @@
 		DA0162282016AEE6009D7A65 /* CookItemFavouriteProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0162262016AEE6009D7A65 /* CookItemFavouriteProtocol.swift */; };
 		DA01622A2016B045009D7A65 /* CookItemFavouriteOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0162292016B045009D7A65 /* CookItemFavouriteOn.swift */; };
 		DA01622B2016B045009D7A65 /* CookItemFavouriteOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0162292016B045009D7A65 /* CookItemFavouriteOn.swift */; };
+		DA01622D2016B06A009D7A65 /* CookItemFavouriteOff.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA01622C2016B06A009D7A65 /* CookItemFavouriteOff.swift */; };
+		DA01622E2016B06A009D7A65 /* CookItemFavouriteOff.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA01622C2016B06A009D7A65 /* CookItemFavouriteOff.swift */; };
 		DA07501320044518002C428A /* ViewHomeList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07501220044518002C428A /* ViewHomeList+Constants.swift */; };
 		DA07501420044518002C428A /* ViewHomeList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07501220044518002C428A /* ViewHomeList+Constants.swift */; };
 		DA075016200445DF002C428A /* ViewHomeListCell+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA075015200445DF002C428A /* ViewHomeListCell+Constants.swift */; };
@@ -769,6 +771,7 @@
 		DA006258201421D30078A633 /* ViewFavouritesBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFavouritesBar.swift; sourceTree = "<group>"; };
 		DA0162262016AEE6009D7A65 /* CookItemFavouriteProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookItemFavouriteProtocol.swift; sourceTree = "<group>"; };
 		DA0162292016B045009D7A65 /* CookItemFavouriteOn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookItemFavouriteOn.swift; sourceTree = "<group>"; };
+		DA01622C2016B06A009D7A65 /* CookItemFavouriteOff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookItemFavouriteOff.swift; sourceTree = "<group>"; };
 		DA07501220044518002C428A /* ViewHomeList+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeList+Constants.swift"; sourceTree = "<group>"; };
 		DA075015200445DF002C428A /* ViewHomeListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeListCell+Constants.swift"; sourceTree = "<group>"; };
 		DA07501820044E21002C428A /* ControllerHome+Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerHome+Recipes.swift"; sourceTree = "<group>"; };
@@ -1932,6 +1935,7 @@
 				DAA07FFA2015439F006FFC76 /* CookItem+Steps.swift */,
 				DA0162262016AEE6009D7A65 /* CookItemFavouriteProtocol.swift */,
 				DA0162292016B045009D7A65 /* CookItemFavouriteOn.swift */,
+				DA01622C2016B06A009D7A65 /* CookItemFavouriteOff.swift */,
 			);
 			path = CookItem;
 			sourceTree = "<group>";
@@ -2618,6 +2622,7 @@
 				DA71D6931FDA63FD003A33E1 /* ControllerText.swift in Sources */,
 				DA5761D52005884C00A5151C /* Cook.swift in Sources */,
 				DA9089261FD4C66000C1208A /* ArchHome.swift in Sources */,
+				DA01622D2016B06A009D7A65 /* CookItemFavouriteOff.swift in Sources */,
 				DAE7C35C1FE08281003190FF /* CloudError+Description.swift in Sources */,
 				DA936CED1FFF10EB00740BE8 /* RecipeIngredientCupsBuilder.swift in Sources */,
 				DAE35CA02005E65F002B1C9C /* ViewCookListCell.swift in Sources */,
@@ -3058,6 +3063,7 @@
 				DAAE61FB1FF6385300954EFC /* PhotoRotation+Constants.swift in Sources */,
 				DA936CF71FFF11DD00740BE8 /* RecipeIngredientQuantityBuilder.swift in Sources */,
 				DA84C0F51FD74009008959EA /* New.swift in Sources */,
+				DA01622E2016B06A009D7A65 /* CookItemFavouriteOff.swift in Sources */,
 				DA91EB1D1FD62C1F0063560D /* ViewSpinner.swift in Sources */,
 				DAE7C3781FE0996B003190FF /* IngredientList.swift in Sources */,
 				DACF552C1FD7661E00069701 /* ExtensionDictionary.swift in Sources */,
