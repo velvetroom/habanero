@@ -62,6 +62,10 @@ final class ViewHomeListCell:ViewCollectionCell
         let viewBlur:ViewBlur = ViewBlur.extraLight()
         
         let viewFavourite:ViewCookFavourite = ViewCookFavourite()
+        viewFavourite.addTarget(
+            self,
+            action:#selector(self.selectorFavourite(sender:)),
+            for:UIControlEvents.touchUpInside)
         self.viewFavourite = viewFavourite
         
         let labelTitle:UILabel = UILabel()
@@ -146,6 +150,14 @@ final class ViewHomeListCell:ViewCollectionCell
     {
         super.showReleased()
         self.transform = self.transformOriginal
+    }
+    
+    //MARK: selectors
+    
+    @objc
+    private func selectorFavourite(sender button:UIButton)
+    {
+        
     }
     
     //MARK: internal
