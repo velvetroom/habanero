@@ -364,6 +364,8 @@
 		DA8752E31FE3B27100AE74F5 /* ViewNewAddIngredientAmountList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752E21FE3B27100AE74F5 /* ViewNewAddIngredientAmountList+Actions.swift */; };
 		DA8752E51FE3B74900AE74F5 /* ViewNewAddIngredientAmountListCell+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752E41FE3B74900AE74F5 /* ViewNewAddIngredientAmountListCell+Constants.swift */; };
 		DA8C6E3D1FDB2F4600C0AD69 /* Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C6E3B1FDB2F3B00C0AD69 /* Build.swift */; };
+		DA8E57B420172A4100EBF87F /* CloudProviderFirebase+Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E57B320172A4100EBF87F /* CloudProviderFirebase+Transaction.swift */; };
+		DA8E57B520172A4100EBF87F /* CloudProviderFirebase+Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E57B320172A4100EBF87F /* CloudProviderFirebase+Transaction.swift */; };
 		DA8E738C1FF88F3C005264F4 /* ViewNewAddListCellEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E738B1FF88F3C005264F4 /* ViewNewAddListCellEditable.swift */; };
 		DA9089031FD4C65F00C1208A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA90889E1FD4C65F00C1208A /* LaunchScreen.storyboard */; };
 		DA9089041FD4C65F00C1208A /* LocalizableModel.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A01FD4C65F00C1208A /* LocalizableModel.strings */; };
@@ -1002,6 +1004,7 @@
 		DA8752E21FE3B27100AE74F5 /* ViewNewAddIngredientAmountList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientAmountList+Actions.swift"; sourceTree = "<group>"; };
 		DA8752E41FE3B74900AE74F5 /* ViewNewAddIngredientAmountListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientAmountListCell+Constants.swift"; sourceTree = "<group>"; };
 		DA8C6E3B1FDB2F3B00C0AD69 /* Build.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Build.swift; sourceTree = "<group>"; };
+		DA8E57B320172A4100EBF87F /* CloudProviderFirebase+Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudProviderFirebase+Transaction.swift"; sourceTree = "<group>"; };
 		DA8E738B1FF88F3C005264F4 /* ViewNewAddListCellEditable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellEditable.swift; sourceTree = "<group>"; };
 		DA9088821FD4C38E00C1208A /* user.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = user.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9088981FD4C45600C1208A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -1489,6 +1492,7 @@
 				DA6E805A1FF9873100175F70 /* CloudProviderProtocol.swift */,
 				DA6E805D1FF987F100175F70 /* CloudProviderFirebase.swift */,
 				DA6E806C1FF998FF00175F70 /* CloudProviderFirebase+Load.swift */,
+				DA8E57B320172A4100EBF87F /* CloudProviderFirebase+Transaction.swift */,
 				DA6E80631FF98B3E00175F70 /* CloudProviderFirebase+Provider.swift */,
 			);
 			path = CloudProvider;
@@ -2778,6 +2782,7 @@
 				DA90892F1FD4C66000C1208A /* Menu+Factory.swift in Sources */,
 				DA2C17731FEF41AD001BDA54 /* ViewPhotoCropDisplay.swift in Sources */,
 				DA3F0EB41FD74C5F00593B83 /* Menu+FactoryUser.swift in Sources */,
+				DA8E57B420172A4100EBF87F /* CloudProviderFirebase+Transaction.swift in Sources */,
 				DA74F0BE1FE6127100F45310 /* Format+Ingredient.swift in Sources */,
 				DA4233E21FEDE5DD0012A589 /* PhotoCrop.swift in Sources */,
 				DA10A1E51FFB1FC700166CF7 /* Controller+Alert.swift in Sources */,
@@ -3078,6 +3083,7 @@
 				DA33F320200FCE4300F07E48 /* ViewCookStep+Constants.swift in Sources */,
 				DA6042901FE1EE4D00758A2F /* ViewNewAddListCellIngredient+Constants.swift in Sources */,
 				DAA1805520121F7700A5B834 /* ViewCookStepListCell+Constants.swift in Sources */,
+				DA8E57B520172A4100EBF87F /* CloudProviderFirebase+Transaction.swift in Sources */,
 				DA91EB0F1FD62C1F0063560D /* ViewBlur.swift in Sources */,
 				DAC104BD200EB618004617FD /* CookStepItemProtocol.swift in Sources */,
 				DA91EB251FD62D700063560D /* ViewControllableProtocol.swift in Sources */,
