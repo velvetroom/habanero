@@ -36,12 +36,12 @@ protocol CloudProviderProtocol
         of parentItem:CloudItemProtocol,
         completion:@escaping((T?, Error?) -> ()))
     
-    func transactionIncrease(
+    func increaseProperty(
         listKey:String,
         of item:CloudItemProtocol,
         completion:@escaping((Error?) -> ()))
     
-    func transactionDecrease(
+    func decreaseProperty(
         listKey:String,
         of item:CloudItemProtocol,
         completion:@escaping((Error?) -> ()))

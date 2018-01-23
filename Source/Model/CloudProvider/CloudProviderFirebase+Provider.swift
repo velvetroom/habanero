@@ -95,4 +95,20 @@ extension CloudProviderFirebase
             collectionPath:path,
             completion:completion)
     }
+    
+    func increaseProperty(
+        listKey:String,
+        of item:CloudItemProtocol,
+        completion:@escaping((Error?) -> ()))
+    {
+        
+    }
+    
+    func decreaseProperty(
+        listKey:String,
+        of item:CloudItemProtocol,
+        completion:@escaping((Error?) -> ()))
+    {
+        
+    }
 }
