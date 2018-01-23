@@ -168,6 +168,6 @@ final class ViewHomeListCell:ViewCollectionCell
         self.labelTitle.text = model.recipe.title
         
         self.showState()
-        model.favourite.configureFavourite(viewFavourite:self.viewFavourite)
+        model.favourite.configureView(self.viewFavourite)
     }
 }

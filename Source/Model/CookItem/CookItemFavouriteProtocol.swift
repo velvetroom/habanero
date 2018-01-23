@@ -2,6 +2,6 @@ import Foundation
 
 protocol CookItemFavouriteProtocol
 {
-    static func configureFavourite(viewFavourite:ViewCookFavourite)
-    static func selected()
+    static var configureView:((ViewCookFavourite) -> ()) { get }
+    static var selected:((CookItem, @escaping(() -> ())) -> ()) { get }
 }

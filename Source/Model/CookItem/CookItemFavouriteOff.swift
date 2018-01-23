@@ -2,8 +2,6 @@ import Foundation
 
 struct CookItemFavouriteOff:CookItemFavouriteProtocol
 {
-    static func configureFavourite(viewFavourite:ViewCookFavourite)
-    {
-        viewFavourite.isSelected = false
-    }
+    static var configureView:((ViewCookFavourite) -> ()) = CookItem.showFavouriteNotSelected
+    static var selected:((CookItem, @escaping(() -> ())) -> ()) = CookItem.addFavouriteItem
 }
