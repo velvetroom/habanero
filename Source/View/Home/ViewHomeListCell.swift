@@ -157,7 +157,27 @@ final class ViewHomeListCell:ViewCollectionCell
     @objc
     private func selectorFavourite(sender button:UIButton)
     {
+        guard
         
+            let model:CookItem = self.model
+        
+        else
+        {
+            return
+        }
+        
+        model.favourite.selected(model)
+        { [weak self] in
+            
+            self?.updateFavourite()
+        }
+    }
+    
+    //MARK: private
+    
+    private func updateFavourite()
+    {
+        self.model?.favourite.configureView(self.viewFavourite)
     }
     
     //MARK: internal
@@ -168,6 +188,6 @@ final class ViewHomeListCell:ViewCollectionCell
         self.labelTitle.text = model.recipe.title
         
         self.showState()
-        model.favourite.configureView(self.viewFavourite)
+        self.updateFavourite()
     }
 }
