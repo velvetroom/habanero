@@ -7,13 +7,11 @@ extension CloudProviderFirebase
     
     func transactionOnProperty(
         property:String,
-        documentIdentifier:String,
-        collectionPath:String,
+        documentPath:String,
         with deltaValue:Int,
         completion:@escaping((Error?) -> ()))
     {
-        let documentReference:DocumentReference = self.reference.collection(
-            collectionPath).document(documentIdentifier)
+        let documentReference:DocumentReference = self.reference.document(documentPath)
         
         self.reference.runTransaction(
         { (transaction:Transaction, error:NSErrorPointer) -> Any? in

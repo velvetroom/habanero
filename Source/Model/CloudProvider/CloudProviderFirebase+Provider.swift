@@ -97,18 +97,26 @@ extension CloudProviderFirebase
     }
     
     func increaseProperty(
-        listKey:String,
+        property:String,
         of item:CloudItemProtocol,
         completion:@escaping((Error?) -> ()))
     {
-        
+        self.transactionOnProperty(
+            property:property,
+            documentPath:item.path,
+            with:CloudProviderFirebase.Constants.increaseDelta,
+            completion:completion)
     }
     
     func decreaseProperty(
-        listKey:String,
+        property:String,
         of item:CloudItemProtocol,
         completion:@escaping((Error?) -> ()))
     {
-        
+        self.transactionOnProperty(
+            property:property,
+            documentPath:item.path,
+            with:CloudProviderFirebase.Constants.decreaseDelta,
+            completion:completion)
     }
 }
