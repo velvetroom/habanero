@@ -24,7 +24,8 @@ extension CookItem
             
             CookItem.createFavourite(
                 cookItem:cookItem,
-                database:database)
+                database:database,
+                completion:completion)
         }
     }
     
@@ -48,13 +49,15 @@ extension CookItem
             
             CookItem.removeFavourite(
                 cookItem:cookItem,
-                database:database)
+                database:database,
+                completion:completion)
         }
     }
     
     private class func createFavourite(
         cookItem:CookItem,
-        database:Database)
+        database:Database,
+        completion:@escaping(() -> ()))
     {
         database.create
         { (favourite:RecipeFavourite) in
@@ -71,7 +74,8 @@ extension CookItem
     
     private class func removeFavourite(
         cookItem:CookItem,
-        database:Database)
+        database:Database,
+        completion:@escaping(() -> ()))
     {
         favouriteItemUpdated(
             cookItem:cookItem,

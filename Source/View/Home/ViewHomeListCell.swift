@@ -5,6 +5,7 @@ final class ViewHomeListCell:ViewCollectionCell
     private(set) weak var model:CookItem?
     private(set) weak var imageView:UIImageView!
     private(set) weak var viewFavourite:ViewCookFavourite!
+    private weak var controller:ControllerHome?
     private weak var labelTitle:UILabel!
     
     private var transformScale:CGAffineTransform
@@ -166,7 +167,7 @@ final class ViewHomeListCell:ViewCollectionCell
             return
         }
         
-        model.favourite.selected(model)
+        self.controller?.favouriteItem(cookItem:model)
         { [weak self] in
             
             self?.updateFavourite()
@@ -182,8 +183,11 @@ final class ViewHomeListCell:ViewCollectionCell
     
     //MARK: internal
     
-    func config(model:CookItem)
+    func config(
+        controller:ControllerHome,
+        model:CookItem)
     {
+        self.controller = controller
         self.model = model
         self.labelTitle.text = model.recipe.title
         

@@ -61,7 +61,10 @@ final class ViewHomeList:ViewCollection<ArchHome, ViewHomeListCell, UICollection
     {
         let item:CookItem = self.modelAtIndex(index:indexPath)
         let cell:ViewHomeListCell = self.cellAtIndex(indexPath:indexPath)
-        cell.config(model:item)
+        
+        cell.config(
+            controller:self.controller,
+            model:item)
         
         self.controller.loadRecipeContents(
             item:item,
