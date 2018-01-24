@@ -55,7 +55,18 @@ extension CloudProviderFirebase
         })
         { (object:Any?, error:Error?) in
             
-            completion(error)
+            guard
+                
+                error == nil
+            
+            else
+            {
+                completion(CloudError.transactionFailed)
+                
+                return
+            }
+            
+            completion(nil)
         }
     }
 }

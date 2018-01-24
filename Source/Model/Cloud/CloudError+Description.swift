@@ -21,7 +21,8 @@ extension CloudError:LocalizedError
             CloudError.createFailed : String.localizedError(key:"CloudError_createFailed"),
             CloudError.loadItemFailed : String.localizedError(key:"CloudError_loadItemFailed"),
             CloudError.loadItemDataFailed : String.localizedError(key:"CloudError_loadItemDataFailed"),
-            CloudError.loadListFailed : String.localizedError(key:"CloudError_loadListFailed")]
+            CloudError.loadListFailed : String.localizedError(key:"CloudError_loadListFailed"),
+            CloudError.transactionFailed : String.localizedError(key:"CloudError_transactionFailed")]
         
         return map
     }

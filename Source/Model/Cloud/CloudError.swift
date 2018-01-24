@@ -6,4 +6,5 @@ enum CloudError:Error
     case loadItemFailed
     case loadItemDataFailed
     case loadListFailed
+    case transactionFailed
 }
