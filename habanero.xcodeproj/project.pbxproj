@@ -568,6 +568,8 @@
 		DABA5ED11FEA3CE60017F865 /* ViewPhotoList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA5ECF1FEA3CE60017F865 /* ViewPhotoList+Actions.swift */; };
 		DABC1D892018D586000EE4E6 /* CloudProviderFirebase+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABC1D882018D586000EE4E6 /* CloudProviderFirebase+Constants.swift */; };
 		DABC1D8A2018D586000EE4E6 /* CloudProviderFirebase+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABC1D882018D586000EE4E6 /* CloudProviderFirebase+Constants.swift */; };
+		DABC1D8C2018D6AA000EE4E6 /* Cloud+Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABC1D8B2018D6AA000EE4E6 /* Cloud+Transaction.swift */; };
+		DABC1D8D2018D6AA000EE4E6 /* Cloud+Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABC1D8B2018D6AA000EE4E6 /* Cloud+Transaction.swift */; };
 		DABDF3381FEB6B87002EF842 /* PhotoOptionCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDF3371FEB6B87002EF842 /* PhotoOptionCamera.swift */; };
 		DABDF3391FEB6B87002EF842 /* PhotoOptionCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDF3371FEB6B87002EF842 /* PhotoOptionCamera.swift */; };
 		DABDF33B1FEB6BC8002EF842 /* PhotoOptionLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDF33A1FEB6BC8002EF842 /* PhotoOptionLibrary.swift */; };
@@ -1129,6 +1131,7 @@
 		DABA5ECC1FEA3CA70017F865 /* ViewPhotoList+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewPhotoList+Constants.swift"; sourceTree = "<group>"; };
 		DABA5ECF1FEA3CE60017F865 /* ViewPhotoList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewPhotoList+Actions.swift"; sourceTree = "<group>"; };
 		DABC1D882018D586000EE4E6 /* CloudProviderFirebase+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudProviderFirebase+Constants.swift"; sourceTree = "<group>"; };
+		DABC1D8B2018D6AA000EE4E6 /* Cloud+Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cloud+Transaction.swift"; sourceTree = "<group>"; };
 		DABDF3371FEB6B87002EF842 /* PhotoOptionCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoOptionCamera.swift; sourceTree = "<group>"; };
 		DABDF33A1FEB6BC8002EF842 /* PhotoOptionLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoOptionLibrary.swift; sourceTree = "<group>"; };
 		DAC104AF200EA921004617FD /* ViewCookStepList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookStepList.swift; sourceTree = "<group>"; };
@@ -2078,6 +2081,7 @@
 				DA936D011FFF19AF00740BE8 /* Cloud+CreateRecipeIngredient.swift */,
 				DA280FC020006AA40016AD43 /* Cloud+CreateRecipeStep.swift */,
 				DAE7C36D1FE093D1003190FF /* Cloud+Load.swift */,
+				DABC1D8B2018D6AA000EE4E6 /* Cloud+Transaction.swift */,
 				DA6E80751FF9A1F400175F70 /* CloudEntityProtocol.swift */,
 				DA6E80781FF9A6A500175F70 /* CloudEntityProtocol+Default.swift */,
 				DAE7C3701FE0971B003190FF /* CloudListProtocol.swift */,
@@ -2596,6 +2600,7 @@
 				DA91EB081FD62C1F0063560D /* ViewPushBackground.swift in Sources */,
 				DACF89EC1FFDD84700F4FCF0 /* RecipeIngredientMililitres.swift in Sources */,
 				DA6E806D1FF998FF00175F70 /* CloudProviderFirebase+Load.swift in Sources */,
+				DABC1D8C2018D6AA000EE4E6 /* Cloud+Transaction.swift in Sources */,
 				DAEFB5FC2013858D00CA840E /* ArchFavourites.swift in Sources */,
 				DA9089231FD4C66000C1208A /* ControllerTransition.swift in Sources */,
 				DA1058A02002E57100019445 /* Home+Recipes.swift in Sources */,
@@ -2836,6 +2841,7 @@
 				DA35DD0C1FFDAADF0047881F /* RecipeStatus.swift in Sources */,
 				DA70AFC31FD5AA980016B0DC /* ControllerHome.swift in Sources */,
 				DA16F1641FDFB4C000EB6877 /* ControllerNewAdd+Ingredients.swift in Sources */,
+				DABC1D8D2018D6AA000EE4E6 /* Cloud+Transaction.swift in Sources */,
 				DABA5EAA1FEA2DAC0017F865 /* ArchPhoto.swift in Sources */,
 				DA3F0E8A1FDF45350037C94D /* ControllerNewAddIngredient.swift in Sources */,
 				DA35DD1E1FFDB91A0047881F /* StorageError.swift in Sources */,

@@ -12,5 +12,6 @@ extension Recipe
         static let subtitle:String = "subtitle"
         static let ingredients:String = "ingredients"
         static let steps:String = "steps"
+        static let favourites:String = "favourites"
     }
 }
