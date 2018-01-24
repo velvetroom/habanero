@@ -566,6 +566,8 @@
 		DABA5ECE1FEA3CA70017F865 /* ViewPhotoList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA5ECC1FEA3CA70017F865 /* ViewPhotoList+Constants.swift */; };
 		DABA5ED01FEA3CE60017F865 /* ViewPhotoList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA5ECF1FEA3CE60017F865 /* ViewPhotoList+Actions.swift */; };
 		DABA5ED11FEA3CE60017F865 /* ViewPhotoList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA5ECF1FEA3CE60017F865 /* ViewPhotoList+Actions.swift */; };
+		DABC1D892018D586000EE4E6 /* CloudProviderFirebase+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABC1D882018D586000EE4E6 /* CloudProviderFirebase+Constants.swift */; };
+		DABC1D8A2018D586000EE4E6 /* CloudProviderFirebase+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABC1D882018D586000EE4E6 /* CloudProviderFirebase+Constants.swift */; };
 		DABDF3381FEB6B87002EF842 /* PhotoOptionCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDF3371FEB6B87002EF842 /* PhotoOptionCamera.swift */; };
 		DABDF3391FEB6B87002EF842 /* PhotoOptionCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDF3371FEB6B87002EF842 /* PhotoOptionCamera.swift */; };
 		DABDF33B1FEB6BC8002EF842 /* PhotoOptionLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDF33A1FEB6BC8002EF842 /* PhotoOptionLibrary.swift */; };
@@ -1126,6 +1128,7 @@
 		DABA5EC91FEA3B090017F865 /* Photo+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photo+Factory.swift"; sourceTree = "<group>"; };
 		DABA5ECC1FEA3CA70017F865 /* ViewPhotoList+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewPhotoList+Constants.swift"; sourceTree = "<group>"; };
 		DABA5ECF1FEA3CE60017F865 /* ViewPhotoList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewPhotoList+Actions.swift"; sourceTree = "<group>"; };
+		DABC1D882018D586000EE4E6 /* CloudProviderFirebase+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudProviderFirebase+Constants.swift"; sourceTree = "<group>"; };
 		DABDF3371FEB6B87002EF842 /* PhotoOptionCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoOptionCamera.swift; sourceTree = "<group>"; };
 		DABDF33A1FEB6BC8002EF842 /* PhotoOptionLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoOptionLibrary.swift; sourceTree = "<group>"; };
 		DAC104AF200EA921004617FD /* ViewCookStepList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookStepList.swift; sourceTree = "<group>"; };
@@ -1494,6 +1497,7 @@
 				DA6E806C1FF998FF00175F70 /* CloudProviderFirebase+Load.swift */,
 				DA8E57B320172A4100EBF87F /* CloudProviderFirebase+Transaction.swift */,
 				DA6E80631FF98B3E00175F70 /* CloudProviderFirebase+Provider.swift */,
+				DABC1D882018D586000EE4E6 /* CloudProviderFirebase+Constants.swift */,
 			);
 			path = CloudProvider;
 			sourceTree = "<group>";
@@ -2602,6 +2606,7 @@
 				DAAD4A721FF31F310044B1FE /* PhotoCrop+Rotate.swift in Sources */,
 				DAFCCA61200DC6BB002377BC /* ViewCookStepBar.swift in Sources */,
 				DACF55331FD7661E00069701 /* ExtensionMKPolyline.swift in Sources */,
+				DABC1D892018D586000EE4E6 /* CloudProviderFirebase+Constants.swift in Sources */,
 				DA90891E1FD4C66000C1208A /* ControllerParent+Orientation.swift in Sources */,
 				DA6E80811FF9B64400175F70 /* StorageProviderProtocol.swift in Sources */,
 				DA936CF61FFF11DD00740BE8 /* RecipeIngredientQuantityBuilder.swift in Sources */,
@@ -3114,6 +3119,7 @@
 				DAF99F18200DAC710030866C /* CookStep.swift in Sources */,
 				DA3F0EB81FD74FC400593B83 /* MenuItemNew.swift in Sources */,
 				DAFA62E220081AE40068EC17 /* Cook+Factory.swift in Sources */,
+				DABC1D8A2018D586000EE4E6 /* CloudProviderFirebase+Constants.swift in Sources */,
 				DAA333E01FDB2694002D766C /* NewAdd+Load.swift in Sources */,
 				DA74F0AC1FE6084100F45310 /* IngredientAmountType.swift in Sources */,
 				DA70FD8D2010179F003AF6A6 /* ControllerCookStep+Progress.swift in Sources */,
