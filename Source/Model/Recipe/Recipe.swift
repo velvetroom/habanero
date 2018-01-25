@@ -10,6 +10,7 @@ final class Recipe:CloudItemProtocol
     let title:String
     let subtitle:String
     let status:RecipeStatus
+    var favourites:Int
     
     init?(
         identifier:String,
@@ -24,7 +25,8 @@ final class Recipe:CloudItemProtocol
             let duration:TimeInterval = json[Recipe.Keys.duration] as? TimeInterval,
             let syncstamp:TimeInterval = json[Recipe.Keys.syncstamp] as? TimeInterval,
             let title:String = json[Recipe.Keys.title] as? String,
-            let subtitle:String = json[Recipe.Keys.subtitle] as? String
+            let subtitle:String = json[Recipe.Keys.subtitle] as? String,
+            let favourites:Int = json[Recipe.Keys.favourites] as? Int
             
         else
         {
@@ -39,5 +41,6 @@ final class Recipe:CloudItemProtocol
         self.syncstamp = syncstamp
         self.title = title
         self.subtitle = subtitle
+        self.favourites = favourites
     }
 }
