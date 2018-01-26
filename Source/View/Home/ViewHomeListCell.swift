@@ -170,15 +170,17 @@ final class ViewHomeListCell:ViewCollectionCell
         self.controller?.favouriteItem(cookItem:model)
         { [weak self] in
             
-            self?.updateFavourite()
+            self?.updateFavourite(model:model)
         }
     }
     
     //MARK: private
     
-    private func updateFavourite()
+    private func updateFavourite(model:CookItem)
     {
-        self.model?.favourite.configureView(self.viewFavourite)
+        self.model?.favourite.configureView(
+            model,
+            self.viewFavourite)
     }
     
     //MARK: internal
@@ -192,6 +194,6 @@ final class ViewHomeListCell:ViewCollectionCell
         self.labelTitle.text = model.recipe.title
         
         self.showState()
-        self.updateFavourite()
+        self.updateFavourite(model:model)
     }
 }

@@ -96,16 +96,32 @@ extension CookItem
         }
     }
     
+    private class func configureFavourite(
+        cookItem:CookItem,
+        viewFavourite:ViewCookFavourite)
+    {
+        let amount:String = String(cookItem.recipe.favourites)
+        viewFavourite.labelAmount.text = amount
+    }
+    
     //MARK: internal
     
-    class func showFavouriteSelected(viewFavourite:ViewCookFavourite)
+    class func showFavouriteSelected(
+        cookItem:CookItem,
+        viewFavourite:ViewCookFavourite)
     {
         viewFavourite.isSelected = true
     }
     
-    class func showFavouriteNotSelected(viewFavourite:ViewCookFavourite)
+    class func showFavouriteNotSelected(
+        cookItem:CookItem,
+        viewFavourite:ViewCookFavourite)
     {
         viewFavourite.isSelected = false
+        
+        CookItem.configureFavourite(
+            cookItem:cookItem,
+            viewFavourite:viewFavourite)
     }
     
     class func addFavouriteItem(

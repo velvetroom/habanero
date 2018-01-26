@@ -2,7 +2,7 @@ import UIKit
 
 final class ViewCookFavourite:UIButton
 {
-    private weak var labelAmount:UILabel!
+    private(set) weak var labelAmount:UILabel!
     private weak var layoutAmountLeft:NSLayoutConstraint!
     
     init()
@@ -46,5 +46,14 @@ final class ViewCookFavourite:UIButton
     required init?(coder:NSCoder)
     {
         return nil
+    }
+    
+    override func layoutSubviews()
+    {
+        let width:CGFloat = self.bounds.width
+        let width_2:CGFloat = width / 2.0
+        layoutAmountLeft.constant = width_2
+        
+        super.layoutSubviews()
     }
 }
