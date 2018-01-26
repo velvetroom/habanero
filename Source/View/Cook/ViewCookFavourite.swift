@@ -3,7 +3,7 @@ import UIKit
 final class ViewCookFavourite:UIButton
 {
     private(set) weak var labelAmount:UILabel!
-    private weak var layoutAmountLeft:NSLayoutConstraint!
+    private weak var layoutAmountLeft:NSLayoutConstraint?
     
     init()
     {
@@ -28,6 +28,7 @@ final class ViewCookFavourite:UIButton
         labelAmount.backgroundColor = UIColor.clear
         labelAmount.font = UIFont.medium(size:ViewCookFavourite.Constants.fontSize)
         labelAmount.textColor = UIColor.colourBackgroundDark
+        labelAmount.textAlignment = NSTextAlignment.center
         self.labelAmount = labelAmount
         
         self.addSubview(labelAmount)
@@ -38,7 +39,7 @@ final class ViewCookFavourite:UIButton
         NSLayoutConstraint.rightToRight(
             view:labelAmount,
             toView:self)
-        layoutAmountLeft = NSLayoutConstraint.leftToLeft(
+        self.layoutAmountLeft = NSLayoutConstraint.leftToLeft(
             view:labelAmount,
             toView:self)
     }
@@ -52,7 +53,7 @@ final class ViewCookFavourite:UIButton
     {
         let width:CGFloat = self.bounds.width
         let width_2:CGFloat = width / 2.0
-        layoutAmountLeft.constant = width_2
+        self.layoutAmountLeft?.constant = width_2
         
         super.layoutSubviews()
     }
