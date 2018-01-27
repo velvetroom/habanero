@@ -21,13 +21,29 @@ extension Database
         completion:@escaping((BuildIngredientCups) -> ()))
     {
         self.provider.create
-        { [weak self] (buildIngredientCups:BuildIngredientCups) in
+        { [weak self] (ingredientCups:BuildIngredientCups) in
             
-            buildIngredientCups.cups = cups
+            ingredientCups.cups = cups
             
             self?.provider.save
             {
-                completion(build)
+                completion(ingredientCups)
+            }
+        }
+    }
+    
+    func createBuildIngredientGrams(
+        grams:Int32,
+        completion:@escaping((BuildIngredientGrams) -> ()))
+    {
+        self.provider.create
+        { [weak self] (ingredientGrams:BuildIngredientGrams) in
+            
+            ingredientGrams.grams = grams
+            
+            self?.provider.save
+            {
+                completion(ingredientGrams)
             }
         }
     }

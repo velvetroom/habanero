@@ -29,12 +29,8 @@ struct NewAddIngredientAmountTypeGrams:NewAddIngredientAmountTypeProtocol
     {
         let grams:Int32 = NewAddIngredientAmountTypeGrams.amountToGrams(amount:amount)
         
-        database.create
-        { (ingredient:BuildIngredientGrams) in
-            
-            ingredient.grams = grams
-            
-            completion(ingredient)
-        }
+        database.createBuildIngredientGrams(
+            grams:grams,
+            completion:completion)
     }
 }
