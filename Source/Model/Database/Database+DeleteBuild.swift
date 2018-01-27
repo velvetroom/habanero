@@ -21,7 +21,7 @@ extension Database
     {
         buildIngredient.build = nil
         
-        self.provider.delete(model:BuildIngredient)
+        self.provider.delete(model:buildIngredient)
         { [weak self] in
             
             self?.provider.save(completion:completion)
