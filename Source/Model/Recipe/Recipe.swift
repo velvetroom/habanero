@@ -26,11 +26,19 @@ final class Recipe:CloudItemProtocol
             let syncstamp:TimeInterval = json[Recipe.Keys.syncstamp] as? TimeInterval,
             let title:String = json[Recipe.Keys.title] as? String,
             let subtitle:String = json[Recipe.Keys.subtitle] as? String,
-            let favourites:Int = json[Recipe.Keys.favourites] as? Int
             
         else
         {
             return nil
+        }
+        
+        if let favourites:Int = json[Recipe.Keys.favourites] as? Int
+        {
+            self.favourites = favourites
+        }
+        else
+        {
+            self.favourites = 0
         }
         
         self.parentPath = parentPath
@@ -41,6 +49,5 @@ final class Recipe:CloudItemProtocol
         self.syncstamp = syncstamp
         self.title = title
         self.subtitle = subtitle
-        self.favourites = favourites
     }
 }
