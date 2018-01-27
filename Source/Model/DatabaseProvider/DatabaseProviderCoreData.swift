@@ -104,7 +104,9 @@ final class DatabaseProviderCoreData:DatabaseProviderProtocol
         }
     }
     
-    func delete(data:NSManagedObject, completion:(() -> ())?)
+    func delete(
+        data:NSManagedObject,
+        completion:(() -> ())?)
     {
         self.managedObjectContext?.perform
         {

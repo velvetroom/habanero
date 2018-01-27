@@ -114,6 +114,10 @@
 		DA2E72FF201C509000EC5B94 /* DatabaseProviderCoreData+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E72FD201C509000EC5B94 /* DatabaseProviderCoreData+Constants.swift */; };
 		DA2E7301201C50BB00EC5B94 /* DatabaseProviderCoreData+Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E7300201C50BB00EC5B94 /* DatabaseProviderCoreData+Provider.swift */; };
 		DA2E7302201C50BB00EC5B94 /* DatabaseProviderCoreData+Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E7300201C50BB00EC5B94 /* DatabaseProviderCoreData+Provider.swift */; };
+		DA2E7304201C554B00EC5B94 /* Database+Get.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E7303201C554B00EC5B94 /* Database+Get.swift */; };
+		DA2E7305201C554B00EC5B94 /* Database+Get.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E7303201C554B00EC5B94 /* Database+Get.swift */; };
+		DA2E7307201C555500EC5B94 /* Database+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E7306201C555500EC5B94 /* Database+Create.swift */; };
+		DA2E7308201C555500EC5B94 /* Database+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E7306201C555500EC5B94 /* Database+Create.swift */; };
 		DA33F31C200FCD5B00F07E48 /* ViewCookStepProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33F31B200FCD5B00F07E48 /* ViewCookStepProgress.swift */; };
 		DA33F31D200FCD5B00F07E48 /* ViewCookStepProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33F31B200FCD5B00F07E48 /* ViewCookStepProgress.swift */; };
 		DA33F31F200FCE4300F07E48 /* ViewCookStep+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33F31E200FCE4300F07E48 /* ViewCookStep+Constants.swift */; };
@@ -849,6 +853,8 @@
 		DA2E72FA201C503600EC5B94 /* DatabaseProviderCoreData+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatabaseProviderCoreData+Factory.swift"; sourceTree = "<group>"; };
 		DA2E72FD201C509000EC5B94 /* DatabaseProviderCoreData+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatabaseProviderCoreData+Constants.swift"; sourceTree = "<group>"; };
 		DA2E7300201C50BB00EC5B94 /* DatabaseProviderCoreData+Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatabaseProviderCoreData+Provider.swift"; sourceTree = "<group>"; };
+		DA2E7303201C554B00EC5B94 /* Database+Get.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Get.swift"; sourceTree = "<group>"; };
+		DA2E7306201C555500EC5B94 /* Database+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Create.swift"; sourceTree = "<group>"; };
 		DA33F31B200FCD5B00F07E48 /* ViewCookStepProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookStepProgress.swift; sourceTree = "<group>"; };
 		DA33F31E200FCE4300F07E48 /* ViewCookStep+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStep+Constants.swift"; sourceTree = "<group>"; };
 		DA33F321200FD1DE00F07E48 /* ViewCookStepProgress+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStepProgress+Constants.swift"; sourceTree = "<group>"; };
@@ -1988,6 +1994,8 @@
 			isa = PBXGroup;
 			children = (
 				DAA333D41FDB17EA002D766C /* Database.swift */,
+				DA2E7303201C554B00EC5B94 /* Database+Get.swift */,
+				DA2E7306201C555500EC5B94 /* Database+Create.swift */,
 				DA2E72F0201C4A0D00EC5B94 /* Database+Search.swift */,
 			);
 			path = Database;
@@ -2783,6 +2791,7 @@
 				DAA333D71FDB17EA002D766C /* Database.swift in Sources */,
 				DA69EC68200D5F6700CF466B /* ArchCookStep.swift in Sources */,
 				DA35DD0E1FFDAB280047881F /* Recipe+Keys.swift in Sources */,
+				DA2E7307201C555500EC5B94 /* Database+Create.swift in Sources */,
 				DA855E0B1FF371D100E1B69F /* PhotoCropPoints+Factory.swift in Sources */,
 				DA6E80641FF98B3E00175F70 /* CloudProviderFirebase+Provider.swift in Sources */,
 				DA178198200D7D76007AF4A4 /* ControllerCookStep.swift in Sources */,
@@ -2802,6 +2811,7 @@
 				DABA5EB11FEA2FF40017F865 /* Photo.swift in Sources */,
 				DAEFB5F1201377A000CA840E /* RecipeFavourite.swift in Sources */,
 				DA6E80791FF9A6A500175F70 /* CloudEntityProtocol+Default.swift in Sources */,
+				DA2E7304201C554B00EC5B94 /* Database+Get.swift in Sources */,
 				DA27794E200724EE00F15AE0 /* ViewCookList+Constants.swift in Sources */,
 				DAFA62D820081A020068EC17 /* CookListItemRecipe.swift in Sources */,
 				DA2E7301201C50BB00EC5B94 /* DatabaseProviderCoreData+Provider.swift in Sources */,
@@ -3181,6 +3191,7 @@
 				DA35DD181FFDB11E0047881F /* RecipeBuilder.swift in Sources */,
 				DA1F04F41FE8D26900DF03A8 /* NewAdd+Steps.swift in Sources */,
 				DA91EB0B1FD62C1F0063560D /* ViewCollectionFlow.swift in Sources */,
+				DA2E7305201C554B00EC5B94 /* Database+Get.swift in Sources */,
 				DA0062532014189C0078A633 /* Favourites.swift in Sources */,
 				DAFA62EB200824C80068EC17 /* ExtensionNSMutableAttributedString.swift in Sources */,
 				DABA5EC21FEA35EE0017F865 /* ControllerPhoto+Options.swift in Sources */,
@@ -3250,6 +3261,7 @@
 				DAB7862D1FF4BAA000579BB5 /* ViewNewAddListCellStep.swift in Sources */,
 				DA00624F201414170078A633 /* ControllerFavourites.swift in Sources */,
 				DA8752E31FE3B27100AE74F5 /* ViewNewAddIngredientAmountList+Actions.swift in Sources */,
+				DA2E7308201C555500EC5B94 /* Database+Create.swift in Sources */,
 				DA35DD151FFDAF460047881F /* IngredientBuilder.swift in Sources */,
 				DAE7C33A1FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift in Sources */,
 				DA35DD211FFDB95B0047881F /* StorageError+Description.swift in Sources */,

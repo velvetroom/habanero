@@ -6,18 +6,7 @@ extension Home
     
     private func asyncLoadSettings(completion:@escaping(() -> ()))
     {
-        guard
-        
-            let database:Database = Database(bundle:Bundle.main)
-        
-        else
-        {
-            return
-        }
-        
-        self.database = database
-        
-        database.fetch
+        self.database.fetch
         { [weak self] (settingsList:[Settings]) in
             
             guard
