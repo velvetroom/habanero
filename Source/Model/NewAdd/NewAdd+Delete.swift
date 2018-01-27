@@ -21,8 +21,7 @@ extension NewAdd
     {
         guard
             
-            let build:Build = self.build,
-            let database:Database = self.database
+            let build:Build = self.build
             
         else
         {
@@ -33,14 +32,12 @@ extension NewAdd
         
         self.delete(
             build:build,
-            database:database,
             strategies:strategies,
             completion:completion)
     }
     
     private func delete(
         build:Build,
-        database:Database,
         strategies:[NewAddDeleteStrategyProtocol.Type],
         completion:@escaping(() -> ()))
     {
@@ -59,12 +56,11 @@ extension NewAdd
         
         strategy.delete(
             build:build,
-            database:database)
+            database:self.database)
         { [weak self] in
             
             self?.delete(
                 build:build,
-                database:database,
                 strategies:remainStrategies,
                 completion:completion)
         }
