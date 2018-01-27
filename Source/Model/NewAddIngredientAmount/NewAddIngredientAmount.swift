@@ -4,9 +4,9 @@ final class NewAddIngredientAmount:Model<ArchNewAddIngredientAmount>
 {
     var ingredient:Ingredient?
     var build:Build?
-    var database:Database?
     var selectedType:NewAddIngredientAmountTypeProtocol?
     let types:[NewAddIngredientAmountTypeProtocol]
+    let database:Database
     
     var selectedIndex:IndexPath?
     {
@@ -20,6 +20,7 @@ final class NewAddIngredientAmount:Model<ArchNewAddIngredientAmount>
     
     required init()
     {
+        self.database = Database()
         self.types = NewAddIngredientAmount.factoryTypes()
         
         super.init()
