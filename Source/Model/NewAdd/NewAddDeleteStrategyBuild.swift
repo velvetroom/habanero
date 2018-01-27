@@ -7,11 +7,10 @@ struct NewAddDeleteStrategyBuild:NewAddDeleteStrategyProtocol
     static func delete(
         build:Build,
         database:Database,
-        completion:@escaping (() -> ()))
+        completion:@escaping(() -> ()))
     {
-        database.delete(data:build)
-        {
-            database.save(completion:completion)
-        }
+        database.deleteBuild(
+            build:build,
+            completion:completion)
     }
 }

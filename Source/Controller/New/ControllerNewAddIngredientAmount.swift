@@ -4,14 +4,12 @@ final class ControllerNewAddIngredientAmount:Controller<ArchNewAddIngredientAmou
 {
     init(
         ingredient:Ingredient,
-        build:Build,
-        database:Database)
+        build:Build)
     {
         super.init()
         
         self.model.ingredient = ingredient
         self.model.build = build
-        self.model.database = database
     }
     
     required init?(coder:NSCoder)
