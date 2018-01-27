@@ -63,4 +63,20 @@ extension Database
             }
         }
     }
+    
+    func createBuildIngredientQuantity(
+        quantity:Float,
+        completion:@escaping((BuildIngredientQuantity) -> ()))
+    {
+        self.provider.create
+        { [weak self] (ingredientQuantity:BuildIngredientQuantity) in
+            
+            ingredientQuantity.quantity = quantity
+            
+            self?.provider.save
+            {
+                completion(ingredientQuantity)
+            }
+        }
+    }
 }

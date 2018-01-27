@@ -29,12 +29,8 @@ struct NewAddIngredientAmountTypeQuantity:NewAddIngredientAmountTypeProtocol
     {
         let quantity:Float = NewAddIngredientAmountTypeQuantity.amountToQuantity(amount:amount)
         
-        database.create
-        { (ingredient:BuildIngredientQuantity) in
-            
-            ingredient.quantity = quantity
-            
-            completion(ingredient)
-        }
+        database.createBuildIngredientQuantity(
+            quantity:quantity,
+            completion:completion)
     }
 }
