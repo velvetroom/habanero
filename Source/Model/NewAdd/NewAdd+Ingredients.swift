@@ -10,23 +10,17 @@ extension NewAdd
     {
         guard
         
-            let ingredient:BuildIngredient = item.ingredient,
-            let database:Database = self.database
+            let ingredient:BuildIngredient = item.ingredient
         
         else
         {
             return
         }
         
-        ingredient.build = nil
-        
-        database.delete(data:ingredient)
-        {
-            database.save
-            { [weak self] in
-                
-                self?.ingredientRemoved(completion:completion)
-            }
+        self.database.deleteBuildIngredient(buildIngredient:ingredient)
+        { [weak self] in
+            
+            self?.ingredientRemoved(completion:completion)
         }
     }
     

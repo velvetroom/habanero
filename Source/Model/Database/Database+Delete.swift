@@ -14,4 +14,17 @@ extension Database
             self?.provider.save(completion:completion)
         }
     }
+    
+    func deleteBuildIngredient(
+        buildIngredient:BuildIngredient,
+        completion:@escaping(() -> ()))
+    {
+        buildIngredient.build = nil
+        
+        self.provider.delete(model:BuildIngredient)
+        { [weak self] in
+            
+            self?.provider.save(completion:completion)
+        }
+    }
 }
