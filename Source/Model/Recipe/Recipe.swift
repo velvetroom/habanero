@@ -25,7 +25,7 @@ final class Recipe:CloudItemProtocol
             let duration:TimeInterval = json[Recipe.Keys.duration] as? TimeInterval,
             let syncstamp:TimeInterval = json[Recipe.Keys.syncstamp] as? TimeInterval,
             let title:String = json[Recipe.Keys.title] as? String,
-            let subtitle:String = json[Recipe.Keys.subtitle] as? String,
+            let subtitle:String = json[Recipe.Keys.subtitle] as? String
             
         else
         {

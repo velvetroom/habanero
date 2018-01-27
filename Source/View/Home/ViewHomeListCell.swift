@@ -167,6 +167,7 @@ final class ViewHomeListCell:ViewCollectionCell
             return
         }
         
+        button.isSelected = !button.isSelected
         self.controller?.favouriteItem(cookItem:model)
         { [weak self] in
             
