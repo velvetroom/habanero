@@ -15,4 +15,20 @@ extension Database
             }
         }
     }
+    
+    func createBuildIngredientCups(
+        cups:Float,
+        completion:@escaping((BuildIngredientCups) -> ()))
+    {
+        self.provider.create
+        { [weak self] (buildIngredientCups:BuildIngredientCups) in
+            
+            buildIngredientCups.cups = cups
+            
+            self?.provider.save
+            {
+                completion(build)
+            }
+        }
+    }
 }

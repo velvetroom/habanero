@@ -29,12 +29,8 @@ struct NewAddIngredientAmountTypeCups:NewAddIngredientAmountTypeProtocol
     {
         let cups:Float = NewAddIngredientAmountTypeCups.amountToCups(amount:amount)
         
-        database.create
-        { (ingredient:BuildIngredientCups) in
-            
-            ingredient.cups = cups
-            
-            completion(ingredient)
-        }
+        database.createBuildIngredientCups(
+            cups:cups,
+            completion:completion)
     }
 }
