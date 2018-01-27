@@ -6,7 +6,7 @@ extension NewAdd
     
     private func infoUpdated(completion:@escaping(() -> ()))
     {
-        self.database?.save
+        self.database.save
         {
             DispatchQueue.main.async
             {
@@ -75,7 +75,6 @@ extension NewAdd
     {
         guard
             
-            let database:Database = self.database,
             let build:Build = self.build,
             let imageIdentifier:String = NewAdd.createIdentifierAndStoreLocally(image:image)
             
@@ -86,7 +85,7 @@ extension NewAdd
         
         build.imageIdentifier = imageIdentifier
         
-        database.save
+        self.database.save
         {
             DispatchQueue.main.async
             {
@@ -129,7 +128,7 @@ extension NewAdd
         { [weak self] in
             
             self?.build?.duration = duration
-            self?.database?.save
+            self?.database.save
             { [weak self] in
                 
                 self?.load{ }

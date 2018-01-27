@@ -11,7 +11,7 @@ extension New
             
             self?.settings = settings
             
-            self?.database.fetch
+            self?.database.getBuilds
             { [weak self] (builds:[Build]) in
                 
                 self?.buildsLoaded(

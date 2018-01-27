@@ -95,4 +95,20 @@ extension Database
             }
         }
     }
+    
+    func createBuildStepText(
+        text:String,
+        completion:@escaping((BuildStepText) -> ()))
+    {
+        self.provider.create
+        { [weak self] (stepText:BuildStepText) in
+            
+            stepText.text = text
+            
+            self?.provider.save
+            {
+                completion(stepText)
+            }
+        }
+    }
 }

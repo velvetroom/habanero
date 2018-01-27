@@ -24,22 +24,18 @@ extension NewAdd
     {
         guard
         
-            self.validateText(text:text) == true,
-            let database:Database = self.database
+            self.validateText(text:text) == true
         
         else
         {
             return
         }
         
-        database.create
+        self.database.createBuildStepText(text:text)
         { [weak self] (step:BuildStepText) in
-            
-            step.text = text
             
             self?.stepCreated(
                 step:step,
-                database:database,
                 completion:completion)
         }
     }
@@ -75,17 +71,13 @@ extension NewAdd
     
     private func stepCreated(
         step:BuildStep,
-        database:Database,
         completion:@escaping(() -> ()))
     {
         step.build = self.build
         
-        database.save
+        DispatchQueue.main.async
         {
-            DispatchQueue.main.async
-            {
-                completion()
-            }
+            completion()
         }
     }
     
