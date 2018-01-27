@@ -10,8 +10,8 @@ extension DatabaseProviderCoreData
         guard
             
             let modelURL:URL = Bundle.main.url(
-                forResource:Database.Constants.modelName,
-                withExtension:Database.Constants.modelExtension),
+                forResource:DatabaseProviderCoreData.Constants.modelName,
+                withExtension:DatabaseProviderCoreData.Constants.modelExtension),
             let managedObjectModel:NSManagedObjectModel = NSManagedObjectModel(contentsOf:modelURL)
             
         else
@@ -26,7 +26,7 @@ extension DatabaseProviderCoreData
         bundle:Bundle,
         managedObjectModel:NSManagedObjectModel) -> NSPersistentStoreCoordinator?
     {
-        let url:URL = Database.factoryCoordinatorUrl(bundle:bundle)
+        let url:URL = DatabaseProviderCoreData.factoryCoordinatorURL(bundle:bundle)
         let persistentStoreCoordinator:NSPersistentStoreCoordinator = NSPersistentStoreCoordinator(
             managedObjectModel:managedObjectModel)
         
@@ -46,7 +46,7 @@ extension DatabaseProviderCoreData
         return persistentStoreCoordinator
     }
     
-    private class func factoryCoordinatorUrl(bundle:Bundle) -> URL
+    private class func factoryCoordinatorURL(bundle:Bundle) -> URL
     {
         let bundleIdentifier:String
         
@@ -61,9 +61,9 @@ extension DatabaseProviderCoreData
         
         var sqliteFile:String = bundleIdentifier
         sqliteFile.append(".")
-        sqliteFile.append(Database.Constants.modelName)
+        sqliteFile.append(DatabaseProviderCoreData.Constants.modelName)
         sqliteFile.append(".")
-        sqliteFile.append(Database.Constants.sQLiteExtension)
+        sqliteFile.append(DatabaseProviderCoreData.Constants.sQLiteExtension)
         
         let url:URL = FileManager.default.appDirectory.appendingPathComponent(sqliteFile)
         
@@ -76,8 +76,8 @@ extension DatabaseProviderCoreData
     {
         guard
             
-            let managedObjectModel:NSManagedObjectModel = Database.factoryModel(),
-            let persistentStoreCoordinator:NSPersistentStoreCoordinator = Database.factoryCoordinator(
+            let managedObjectModel:NSManagedObjectModel = DatabaseProviderCoreData.factoryModel(),
+            let persistentStoreCoordinator:NSPersistentStoreCoordinator = DatabaseProviderCoreData.factoryCoordinator(
                 bundle:bundle,
                 managedObjectModel:managedObjectModel)
             
