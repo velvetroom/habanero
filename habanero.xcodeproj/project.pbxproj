@@ -108,6 +108,8 @@
 		DA2E72F6201C4AA900EC5B94 /* DatabaseProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E72F4201C4AA900EC5B94 /* DatabaseProviderProtocol.swift */; };
 		DA2E72F8201C4ADA00EC5B94 /* DatabaseProviderCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E72F7201C4ADA00EC5B94 /* DatabaseProviderCoreData.swift */; };
 		DA2E72F9201C4ADA00EC5B94 /* DatabaseProviderCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E72F7201C4ADA00EC5B94 /* DatabaseProviderCoreData.swift */; };
+		DA2E72FB201C503600EC5B94 /* DatabaseProviderCoreData+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E72FA201C503600EC5B94 /* DatabaseProviderCoreData+Factory.swift */; };
+		DA2E72FC201C503600EC5B94 /* DatabaseProviderCoreData+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E72FA201C503600EC5B94 /* DatabaseProviderCoreData+Factory.swift */; };
 		DA33F31C200FCD5B00F07E48 /* ViewCookStepProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33F31B200FCD5B00F07E48 /* ViewCookStepProgress.swift */; };
 		DA33F31D200FCD5B00F07E48 /* ViewCookStepProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33F31B200FCD5B00F07E48 /* ViewCookStepProgress.swift */; };
 		DA33F31F200FCE4300F07E48 /* ViewCookStep+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33F31E200FCE4300F07E48 /* ViewCookStep+Constants.swift */; };
@@ -844,6 +846,7 @@
 		DA2E72F0201C4A0D00EC5B94 /* Database+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Search.swift"; sourceTree = "<group>"; };
 		DA2E72F4201C4AA900EC5B94 /* DatabaseProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProviderProtocol.swift; sourceTree = "<group>"; };
 		DA2E72F7201C4ADA00EC5B94 /* DatabaseProviderCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProviderCoreData.swift; sourceTree = "<group>"; };
+		DA2E72FA201C503600EC5B94 /* DatabaseProviderCoreData+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatabaseProviderCoreData+Factory.swift"; sourceTree = "<group>"; };
 		DA33F31B200FCD5B00F07E48 /* ViewCookStepProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookStepProgress.swift; sourceTree = "<group>"; };
 		DA33F31E200FCE4300F07E48 /* ViewCookStep+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStep+Constants.swift"; sourceTree = "<group>"; };
 		DA33F321200FD1DE00F07E48 /* ViewCookStepProgress+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStepProgress+Constants.swift"; sourceTree = "<group>"; };
@@ -1379,6 +1382,7 @@
 			children = (
 				DA2E72F4201C4AA900EC5B94 /* DatabaseProviderProtocol.swift */,
 				DA2E72F7201C4ADA00EC5B94 /* DatabaseProviderCoreData.swift */,
+				DA2E72FA201C503600EC5B94 /* DatabaseProviderCoreData+Factory.swift */,
 			);
 			path = DatabaseProvider;
 			sourceTree = "<group>";
@@ -2676,6 +2680,7 @@
 				DABA5ECA1FEA3B090017F865 /* Photo+Factory.swift in Sources */,
 				DA71D6A41FDA7107003A33E1 /* ViewText+Constants.swift in Sources */,
 				DABA5EBB1FEA32D30017F865 /* ViewPhotoListCell.swift in Sources */,
+				DA2E72FB201C503600EC5B94 /* DatabaseProviderCoreData+Factory.swift in Sources */,
 				DAEFB5F62013794800CA840E /* Format+RecipeIngredient.swift in Sources */,
 				DA71D6971FDA657E003A33E1 /* Text.swift in Sources */,
 				DA91EB041FD62C1F0063560D /* ViewCollection.swift in Sources */,
@@ -3036,6 +3041,7 @@
 				DA936CF11FFF114900740BE8 /* RecipeIngredientGramsBuilder.swift in Sources */,
 				DA68359D200179940087C77D /* RecipeStepTextBuilder.swift in Sources */,
 				DA69EC69200D5F6700CF466B /* ArchCookStep.swift in Sources */,
+				DA2E72FC201C503600EC5B94 /* DatabaseProviderCoreData+Factory.swift in Sources */,
 				DA683591200174D50087C77D /* RecipeStep+Keys.swift in Sources */,
 				DA91EAEF1FD62C1F0063560D /* ViewMenu+Synth.swift in Sources */,
 				DA16F1621FDFB09900EB6877 /* ViewNewAddListFooterIngredients+Constants.swift in Sources */,
