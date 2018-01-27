@@ -104,6 +104,8 @@
 		DA2C17771FEF4305001BDA54 /* ViewPhotoCropDisplayImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C17751FEF4305001BDA54 /* ViewPhotoCropDisplayImage.swift */; };
 		DA2E72F1201C4A0D00EC5B94 /* Database+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E72F0201C4A0D00EC5B94 /* Database+Search.swift */; };
 		DA2E72F2201C4A0D00EC5B94 /* Database+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E72F0201C4A0D00EC5B94 /* Database+Search.swift */; };
+		DA2E72F5201C4AA900EC5B94 /* DatabaseProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E72F4201C4AA900EC5B94 /* DatabaseProviderProtocol.swift */; };
+		DA2E72F6201C4AA900EC5B94 /* DatabaseProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E72F4201C4AA900EC5B94 /* DatabaseProviderProtocol.swift */; };
 		DA33F31C200FCD5B00F07E48 /* ViewCookStepProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33F31B200FCD5B00F07E48 /* ViewCookStepProgress.swift */; };
 		DA33F31D200FCD5B00F07E48 /* ViewCookStepProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33F31B200FCD5B00F07E48 /* ViewCookStepProgress.swift */; };
 		DA33F31F200FCE4300F07E48 /* ViewCookStep+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33F31E200FCE4300F07E48 /* ViewCookStep+Constants.swift */; };
@@ -838,6 +840,7 @@
 		DA2C17721FEF41AD001BDA54 /* ViewPhotoCropDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoCropDisplay.swift; sourceTree = "<group>"; };
 		DA2C17751FEF4305001BDA54 /* ViewPhotoCropDisplayImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoCropDisplayImage.swift; sourceTree = "<group>"; };
 		DA2E72F0201C4A0D00EC5B94 /* Database+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Search.swift"; sourceTree = "<group>"; };
+		DA2E72F4201C4AA900EC5B94 /* DatabaseProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProviderProtocol.swift; sourceTree = "<group>"; };
 		DA33F31B200FCD5B00F07E48 /* ViewCookStepProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookStepProgress.swift; sourceTree = "<group>"; };
 		DA33F31E200FCE4300F07E48 /* ViewCookStep+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStep+Constants.swift"; sourceTree = "<group>"; };
 		DA33F321200FD1DE00F07E48 /* ViewCookStepProgress+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStepProgress+Constants.swift"; sourceTree = "<group>"; };
@@ -1368,6 +1371,14 @@
 			path = Recipe;
 			sourceTree = "<group>";
 		};
+		DA2E72F3201C4A7500EC5B94 /* DatabaseProvider */ = {
+			isa = PBXGroup;
+			children = (
+				DA2E72F4201C4AA900EC5B94 /* DatabaseProviderProtocol.swift */,
+			);
+			path = DatabaseProvider;
+			sourceTree = "<group>";
+		};
 		DA3F0E711FDF0BB80037C94D /* Ingredient */ = {
 			isa = PBXGroup;
 			children = (
@@ -1802,6 +1813,7 @@
 				DAE7C3431FE08281003190FF /* Cloud */,
 				DA6E80591FF9872400175F70 /* CloudProvider */,
 				DA3F0E711FDF0BB80037C94D /* Ingredient */,
+				DA2E72F3201C4A7500EC5B94 /* DatabaseProvider */,
 				DAA333D31FDB17EA002D766C /* Database */,
 				DABA5EAF1FEA2FE20017F865 /* Photo */,
 				DA8C6E3A1FDB2F3B00C0AD69 /* Build */,
@@ -2726,6 +2738,7 @@
 				DAD64C112011307800E74F76 /* ViewCookStepListCellText+Constants.swift in Sources */,
 				DA9089201FD4C66000C1208A /* ControllerParent+Menu.swift in Sources */,
 				DA91EB241FD62D700063560D /* ViewControllableProtocol.swift in Sources */,
+				DA2E72F5201C4AA900EC5B94 /* DatabaseProviderProtocol.swift in Sources */,
 				DAC104B3200EA9BA004617FD /* ViewCookStepListCell.swift in Sources */,
 				DAA1805420121F7700A5B834 /* ViewCookStepListCell+Constants.swift in Sources */,
 				DA35DD171FFDB11E0047881F /* RecipeBuilder.swift in Sources */,
@@ -2852,6 +2865,7 @@
 				DA70AFC31FD5AA980016B0DC /* ControllerHome.swift in Sources */,
 				DA16F1641FDFB4C000EB6877 /* ControllerNewAdd+Ingredients.swift in Sources */,
 				DABC1D8D2018D6AA000EE4E6 /* Cloud+Transaction.swift in Sources */,
+				DA2E72F6201C4AA900EC5B94 /* DatabaseProviderProtocol.swift in Sources */,
 				DABA5EAA1FEA2DAC0017F865 /* ArchPhoto.swift in Sources */,
 				DA3F0E8A1FDF45350037C94D /* ControllerNewAddIngredient.swift in Sources */,
 				DA35DD1E1FFDB91A0047881F /* StorageError.swift in Sources */,
