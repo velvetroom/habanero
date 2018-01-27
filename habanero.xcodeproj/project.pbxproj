@@ -158,6 +158,7 @@
 		DA35DD2A1FFDBDF70047881F /* StorageProviderFirebase+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35DD281FFDBDF70047881F /* StorageProviderFirebase+Constants.swift */; };
 		DA35DD2D1FFDBF1C0047881F /* Storage+Save.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35DD2B1FFDBF1C0047881F /* Storage+Save.swift */; };
 		DA3CA10E201CBD5600D50387 /* Database+DeleteBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CA10C201CBD5600D50387 /* Database+DeleteBuild.swift */; };
+		DA3CA110201CBFB700D50387 /* Database+GetBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CA10F201CBFB700D50387 /* Database+GetBuild.swift */; };
 		DA3F0E731FDF0BC50037C94D /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E721FDF0BC50037C94D /* Ingredient.swift */; };
 		DA3F0E741FDF0BC50037C94D /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E721FDF0BC50037C94D /* Ingredient.swift */; };
 		DA3F0E7C1FDF326A0037C94D /* Ingredient+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F0E7B1FDF326A0037C94D /* Ingredient+Keys.swift */; };
@@ -882,6 +883,7 @@
 		DA35DD281FFDBDF70047881F /* StorageProviderFirebase+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageProviderFirebase+Constants.swift"; sourceTree = "<group>"; };
 		DA35DD2B1FFDBF1C0047881F /* Storage+Save.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storage+Save.swift"; sourceTree = "<group>"; };
 		DA3CA10C201CBD5600D50387 /* Database+DeleteBuild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+DeleteBuild.swift"; sourceTree = "<group>"; };
+		DA3CA10F201CBFB700D50387 /* Database+GetBuild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+GetBuild.swift"; sourceTree = "<group>"; };
 		DA3F0E721FDF0BC50037C94D /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		DA3F0E7B1FDF326A0037C94D /* Ingredient+Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+Keys.swift"; sourceTree = "<group>"; };
 		DA3F0E871FDF44920037C94D /* ArchNewAddIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchNewAddIngredient.swift; sourceTree = "<group>"; };
@@ -2003,6 +2005,7 @@
 				DAA333D41FDB17EA002D766C /* Database.swift */,
 				DADA67DF201C5D160032C9C9 /* Database+Save.swift */,
 				DA2E7303201C554B00EC5B94 /* Database+Get.swift */,
+				DA3CA10F201CBFB700D50387 /* Database+GetBuild.swift */,
 				DA2E7306201C555500EC5B94 /* Database+Create.swift */,
 				DADA67E2201C5F550032C9C9 /* Database+CreateBuild.swift */,
 				DA2E72F0201C4A0D00EC5B94 /* Database+Search.swift */,
@@ -3301,6 +3304,7 @@
 				DA6E80531FF9758C00175F70 /* NewAddDeleteStrategyStepsImages.swift in Sources */,
 				DA177C041FD784AF003B3836 /* ViewNewList+Constants.swift in Sources */,
 				DA70AFC01FD5A8B10016B0DC /* ViewHome.swift in Sources */,
+				DA3CA110201CBFB700D50387 /* Database+GetBuild.swift in Sources */,
 				DA1058A12002E57100019445 /* Home+Recipes.swift in Sources */,
 				DA177BED1FD77713003B3836 /* ViewNewList.swift in Sources */,
 				DA90897F1FD4CE2E00C1208A /* AppDelegate.swift in Sources */,
