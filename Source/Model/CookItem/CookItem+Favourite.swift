@@ -100,6 +100,13 @@ extension CookItem
         cookItem:CookItem,
         viewFavourite:ViewCookFavourite)
     {
+        var numeric:Int = cookItem.recipe.favourites
+        
+        if numeric < 0
+        {
+            numeric = 0
+        }
+        
         let amount:String = String(cookItem.recipe.favourites)
         viewFavourite.labelAmount.text = amount
     }
@@ -130,6 +137,8 @@ extension CookItem
         database:Database,
         completion:@escaping(() -> ()))
     {
+        cookItem.recipe.favourites += 1
+        
         DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
         {
             CookItem.asyncAddFavouriteItem(
@@ -146,6 +155,8 @@ extension CookItem
         database:Database,
         completion:@escaping(() -> ()))
     {
+        cookItem.recipe.favourites -= 1
+        
         DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
         {
             CookItem.asyncRemoveFavouriteItem(
