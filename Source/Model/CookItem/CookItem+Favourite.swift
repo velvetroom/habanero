@@ -118,6 +118,10 @@ extension CookItem
         viewFavourite:ViewCookFavourite)
     {
         viewFavourite.isSelected = true
+        
+        CookItem.configureFavourite(
+            cookItem:cookItem,
+            viewFavourite:viewFavourite)
     }
     
     class func showFavouriteNotSelected(
