@@ -106,6 +106,8 @@
 		DA2E72F2201C4A0D00EC5B94 /* Database+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E72F0201C4A0D00EC5B94 /* Database+Search.swift */; };
 		DA2E72F5201C4AA900EC5B94 /* DatabaseProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E72F4201C4AA900EC5B94 /* DatabaseProviderProtocol.swift */; };
 		DA2E72F6201C4AA900EC5B94 /* DatabaseProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E72F4201C4AA900EC5B94 /* DatabaseProviderProtocol.swift */; };
+		DA2E72F8201C4ADA00EC5B94 /* DatabaseProviderCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E72F7201C4ADA00EC5B94 /* DatabaseProviderCoreData.swift */; };
+		DA2E72F9201C4ADA00EC5B94 /* DatabaseProviderCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E72F7201C4ADA00EC5B94 /* DatabaseProviderCoreData.swift */; };
 		DA33F31C200FCD5B00F07E48 /* ViewCookStepProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33F31B200FCD5B00F07E48 /* ViewCookStepProgress.swift */; };
 		DA33F31D200FCD5B00F07E48 /* ViewCookStepProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33F31B200FCD5B00F07E48 /* ViewCookStepProgress.swift */; };
 		DA33F31F200FCE4300F07E48 /* ViewCookStep+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33F31E200FCE4300F07E48 /* ViewCookStep+Constants.swift */; };
@@ -841,6 +843,7 @@
 		DA2C17751FEF4305001BDA54 /* ViewPhotoCropDisplayImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoCropDisplayImage.swift; sourceTree = "<group>"; };
 		DA2E72F0201C4A0D00EC5B94 /* Database+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Search.swift"; sourceTree = "<group>"; };
 		DA2E72F4201C4AA900EC5B94 /* DatabaseProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProviderProtocol.swift; sourceTree = "<group>"; };
+		DA2E72F7201C4ADA00EC5B94 /* DatabaseProviderCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProviderCoreData.swift; sourceTree = "<group>"; };
 		DA33F31B200FCD5B00F07E48 /* ViewCookStepProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookStepProgress.swift; sourceTree = "<group>"; };
 		DA33F31E200FCE4300F07E48 /* ViewCookStep+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStep+Constants.swift"; sourceTree = "<group>"; };
 		DA33F321200FD1DE00F07E48 /* ViewCookStepProgress+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStepProgress+Constants.swift"; sourceTree = "<group>"; };
@@ -1375,6 +1378,7 @@
 			isa = PBXGroup;
 			children = (
 				DA2E72F4201C4AA900EC5B94 /* DatabaseProviderProtocol.swift */,
+				DA2E72F7201C4ADA00EC5B94 /* DatabaseProviderCoreData.swift */,
 			);
 			path = DatabaseProvider;
 			sourceTree = "<group>";
@@ -2615,6 +2619,7 @@
 				DAFA62EA200824C80068EC17 /* ExtensionNSMutableAttributedString.swift in Sources */,
 				DA74F0B11FE60A4F00F45310 /* BuildIngredientQuantity+Computed.swift in Sources */,
 				DA74F0BB1FE6121B00F45310 /* Format+Constants.swift in Sources */,
+				DA2E72F8201C4ADA00EC5B94 /* DatabaseProviderCoreData.swift in Sources */,
 				DA90891F1FD4C66000C1208A /* ControllerParent+Constants.swift in Sources */,
 				DA74F0B81FE611E500F45310 /* Format.swift in Sources */,
 				DA91EB081FD62C1F0063560D /* ViewPushBackground.swift in Sources */,
@@ -3274,6 +3279,7 @@
 				DAFA62DC20081A6F0068EC17 /* CookListItemIngredientsTitle.swift in Sources */,
 				DAE35C9E2005E57C002B1C9C /* ViewCookList.swift in Sources */,
 				DAA333D81FDB17EA002D766C /* Database.swift in Sources */,
+				DA2E72F9201C4ADA00EC5B94 /* DatabaseProviderCoreData.swift in Sources */,
 				DA4AA5071FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift in Sources */,
 				DA74F0CB1FE6152700F45310 /* FormatIngredientTypeGrams.swift in Sources */,
 				DAADC49B1FFC751000862A90 /* ViewNewAddBar+Constants.swift in Sources */,
