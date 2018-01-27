@@ -21,7 +21,7 @@ extension NewAdd
     {
         self.deleteStepContents(step:step)
         
-        self.database.deleteBuildStep(
+        self.database?.deleteBuildStep(
             buildStep:step,
             completion:completion)
     }

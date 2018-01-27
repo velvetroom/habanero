@@ -35,7 +35,8 @@ final class ControllerNew:Controller<ArchNew>
         
         let controller:ControllerNewAdd = ControllerNewAdd(
             build:build,
-            settings:settings)
+            settings:settings,
+            database:self.model.database)
         
         self.parentController?.push(
             controller:controller,

@@ -17,7 +17,7 @@ extension NewAdd
             return
         }
         
-        self.database.deleteBuildIngredient(buildIngredient:ingredient)
+        self.database?.deleteBuildIngredient(buildIngredient:ingredient)
         { [weak self] in
             
             self?.ingredientRemoved(completion:completion)

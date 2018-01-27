@@ -15,7 +15,8 @@ extension ControllerNewAddIngredient
     {
         guard
         
-            let build:Build = self.model.build
+            let build:Build = self.model.build,
+            let database:Database = self.model.database
         
         else
         {
@@ -24,7 +25,8 @@ extension ControllerNewAddIngredient
         
         let controller:ControllerNewAddIngredientAmount = ControllerNewAddIngredientAmount(
             ingredient:ingredient,
-            build:build)
+            build:build,
+            database:database)
         
         self.parentController?.push(
             controller:controller,

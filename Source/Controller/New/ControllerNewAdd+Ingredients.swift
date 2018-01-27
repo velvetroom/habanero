@@ -43,14 +43,17 @@ extension ControllerNewAdd
     {
         guard
         
-            let build:Build = self.model.build
+            let build:Build = self.model.build,
+            let database:Database = self.model.database
         
         else
         {
             return
         }
         
-        let controller:ControllerNewAddIngredient = ControllerNewAddIngredient(build:build)
+        let controller:ControllerNewAddIngredient = ControllerNewAddIngredient(
+            build:build,
+            database:database)
         
         self.parentController?.push(
             controller:controller,

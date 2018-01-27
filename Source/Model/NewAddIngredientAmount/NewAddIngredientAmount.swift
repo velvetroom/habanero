@@ -2,11 +2,11 @@ import Foundation
 
 final class NewAddIngredientAmount:Model<ArchNewAddIngredientAmount>
 {
+    weak var database:Database?
     var ingredient:Ingredient?
     var build:Build?
     var selectedType:NewAddIngredientAmountTypeProtocol?
     let types:[NewAddIngredientAmountTypeProtocol]
-    let database:Database
     
     var selectedIndex:IndexPath?
     {
@@ -20,7 +20,6 @@ final class NewAddIngredientAmount:Model<ArchNewAddIngredientAmount>
     
     required init()
     {
-        self.database = Database()
         self.types = NewAddIngredientAmount.factoryTypes()
         
         super.init()

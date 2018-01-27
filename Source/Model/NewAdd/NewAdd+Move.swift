@@ -30,7 +30,7 @@ extension NewAdd
     
     private func moveCompleted(completion:@escaping(() -> ()))
     {
-        self.database.save
+        self.database?.save
         {
             DispatchQueue.main.async
             {

@@ -2,11 +2,14 @@ import Foundation
 
 final class ControllerNewAddIngredient:Controller<ArchNewAddIngredient>
 {
-    init(build:Build)
+    init(
+        build:Build,
+        database:Database)
     {
         super.init()
         
         self.model.build = build
+        self.model.database = database
     }
     
     required init?(coder:NSCoder)

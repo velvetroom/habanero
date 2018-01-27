@@ -31,7 +31,7 @@ extension NewAdd
             return
         }
         
-        self.database.createBuildStepText(text:text)
+        self.database?.createBuildStepText(text:text)
         { [weak self] (step:BuildStepText) in
             
             self?.stepCreated(
@@ -55,7 +55,7 @@ extension NewAdd
             return
         }
         
-        self.database.createBuildStepImage(
+        self.database?.createBuildStepImage(
             text:text,
             imageIdentifier:imageIdentifier)
         { [weak self] (step:BuildStepImage) in

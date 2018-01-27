@@ -45,7 +45,8 @@ extension NewAdd
         
         guard
         
-            let strategy:NewAddDeleteStrategyProtocol.Type = remainStrategies.popLast()
+            let strategy:NewAddDeleteStrategyProtocol.Type = remainStrategies.popLast(),
+            let database:Database = self.database
         
         else
         {
@@ -56,7 +57,7 @@ extension NewAdd
         
         strategy.delete(
             build:build,
-            database:self.database)
+            database:database)
         { [weak self] in
             
             self?.delete(
