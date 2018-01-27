@@ -43,15 +43,16 @@ final class DatabaseProviderCoreData:DatabaseProviderProtocol
         }
     }
     
-    func createObject<T:NSManagedObject>(completion:@escaping((T) -> ()))
+    func createObject<T>(completion:@escaping((T) -> ()))
     {
         self.managedObjectContext?.perform
         {
             guard
                 
+                let objectType:NSManagedObject.Type = T.self as? NSManagedObject.Type,
                 let managedObjectContext:NSManagedObjectContext = self.managedObjectContext,
                 let entityDescription:NSEntityDescription = NSEntityDescription.entity(
-                    forEntityName:T.entityName,
+                    forEntityName:objectType.entityName,
                     in:managedObjectContext),
                 let managedObject:T = NSManagedObject(
                     entity:entityDescription,
@@ -66,14 +67,23 @@ final class DatabaseProviderCoreData:DatabaseProviderProtocol
         }
     }
     
-    func fetchObjects<T:NSManagedObject>(
+    func fetchObjects<T>(
         limit:Int,
         predicate:NSPredicate?,
         sorters:[NSSortDescriptor]?,
         completion:@escaping(([T]) -> ()))
     {
+        guard
+            
+            let objectType:NSManagedObject.Type = T.self as? NSManagedObject.Type
+        
+        else
+        {
+            return
+        }
+        
         let fetchRequest:NSFetchRequest<NSManagedObject> = DatabaseProviderCoreData.factoryFetchRequest(
-            entityName:T.entityName,
+            entityName:objectType.entityName,
             limit:limit,
             predicate:predicate,
             sorters:sorters)

@@ -12,29 +12,11 @@ extension DatabaseProviderCoreData
     
     func create<T>(completion:@escaping((T) -> ()))
     {
-        guard
-            
-            let completion:((NSManagedObject) -> ()) = completion as? ((NSManagedObject) -> ())
-        
-        else
-        {
-            return
-        }
-        
         self.createObject(completion:completion)
     }
     
     func get<T>(completion:@escaping(([T]) -> ()))
     {
-        guard
-            
-            let completion:(([NSManagedObject]) -> ()) = completion as? (([NSManagedObject]) -> ())
-            
-        else
-        {
-            return
-        }
-        
         self.fetchObjects(
             limit:0,
             predicate:nil,
