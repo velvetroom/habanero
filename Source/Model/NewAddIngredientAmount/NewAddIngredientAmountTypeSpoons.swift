@@ -29,12 +29,8 @@ struct NewAddIngredientAmountTypeSpoons:NewAddIngredientAmountTypeProtocol
     {
         let spoons:Int16 = NewAddIngredientAmountTypeSpoons.amountToSpoons(amount:amount)
         
-        database.create
-        { (ingredient:BuildIngredientSpoons) in
-            
-            ingredient.spoons = spoons
-            
-            completion(ingredient)
-        }
+        database.createBuildIngredientSpoons(
+            spoons:spoons,
+            completion:completion)
     }
 }

@@ -79,4 +79,20 @@ extension Database
             }
         }
     }
+    
+    func createBuildIngredientSpoons(
+        spoons:Int16,
+        completion:@escaping((BuildIngredientSpoons) -> ()))
+    {
+        self.provider.create
+        { [weak self] (ingredientSpoons:BuildIngredientSpoons) in
+            
+            ingredientSpoons.spoons = spoons
+            
+            self?.provider.save
+            {
+                completion(ingredientSpoons)
+            }
+        }
+    }
 }
