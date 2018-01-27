@@ -5,7 +5,7 @@ final class DatabaseProviderCoreData:DatabaseProviderProtocol
 {
     let managedObjectContext:NSManagedObjectContext?
     
-    init(bundle:Bundle)
+    init(bundle:Bundle = Bundle.main)
     {
         self.managedObjectContext = Database.factoryContext(bundle:bundle)
     }

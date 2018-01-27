@@ -508,10 +508,6 @@
 		DAA333D21FDB1453002D766C /* New+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333D11FDB1453002D766C /* New+Load.swift */; };
 		DAA333D71FDB17EA002D766C /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333D41FDB17EA002D766C /* Database.swift */; };
 		DAA333D81FDB17EA002D766C /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333D41FDB17EA002D766C /* Database.swift */; };
-		DAA333D91FDB17EA002D766C /* Database+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333D51FDB17EA002D766C /* Database+Factory.swift */; };
-		DAA333DA1FDB17EA002D766C /* Database+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333D51FDB17EA002D766C /* Database+Factory.swift */; };
-		DAA333DB1FDB17EA002D766C /* Database+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333D61FDB17EA002D766C /* Database+Constants.swift */; };
-		DAA333DC1FDB17EA002D766C /* Database+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333D61FDB17EA002D766C /* Database+Constants.swift */; };
 		DAA333DE1FDB1D81002D766C /* New+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333DD1FDB1D81002D766C /* New+Create.swift */; };
 		DAA333E01FDB2694002D766C /* NewAdd+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333DF1FDB2694002D766C /* NewAdd+Load.swift */; };
 		DAA333E21FDB29D8002D766C /* NewAdd+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA333E11FDB29D8002D766C /* NewAdd+Info.swift */; };
@@ -1102,8 +1098,6 @@
 		DAA26FB11FE97AE6005855F6 /* NewAdd+Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Move.swift"; sourceTree = "<group>"; };
 		DAA333D11FDB1453002D766C /* New+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "New+Load.swift"; sourceTree = "<group>"; };
 		DAA333D41FDB17EA002D766C /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
-		DAA333D51FDB17EA002D766C /* Database+Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database+Factory.swift"; sourceTree = "<group>"; };
-		DAA333D61FDB17EA002D766C /* Database+Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database+Constants.swift"; sourceTree = "<group>"; };
 		DAA333DD1FDB1D81002D766C /* New+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "New+Create.swift"; sourceTree = "<group>"; };
 		DAA333DF1FDB2694002D766C /* NewAdd+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Load.swift"; sourceTree = "<group>"; };
 		DAA333E11FDB29D8002D766C /* NewAdd+Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Info.swift"; sourceTree = "<group>"; };
@@ -1994,8 +1988,6 @@
 			isa = PBXGroup;
 			children = (
 				DAA333D41FDB17EA002D766C /* Database.swift */,
-				DAA333D51FDB17EA002D766C /* Database+Factory.swift */,
-				DAA333D61FDB17EA002D766C /* Database+Constants.swift */,
 				DA2E72F0201C4A0D00EC5B94 /* Database+Search.swift */,
 			);
 			path = Database;
@@ -2605,7 +2597,6 @@
 				DA35DD261FFDBBF70047881F /* StorageProviderFirebase+Provider.swift in Sources */,
 				DA4233E91FEDEBE10012A589 /* ViewPhotoCropMenu.swift in Sources */,
 				DA74F0CD1FE6154800F45310 /* FormatIngredientTypeMililitres.swift in Sources */,
-				DAA333D91FDB17EA002D766C /* Database+Factory.swift in Sources */,
 				DA2A94E61FF30089009D2FF9 /* ViewPhotoCropDisplayImage+Constants.swift in Sources */,
 				DA74F0B41FE60F0D00F45310 /* BuildIngredientSpoons+Computed.swift in Sources */,
 				DAE7C3541FE08281003190FF /* CloudError.swift in Sources */,
@@ -2693,7 +2684,6 @@
 				DA71D6971FDA657E003A33E1 /* Text.swift in Sources */,
 				DA91EB041FD62C1F0063560D /* ViewCollection.swift in Sources */,
 				DA2E72FE201C509000EC5B94 /* DatabaseProviderCoreData+Constants.swift in Sources */,
-				DAA333DB1FDB17EA002D766C /* Database+Constants.swift in Sources */,
 				DAFA62E7200821640068EC17 /* ViewCookListCellRecipe+Constants.swift in Sources */,
 				DA68359C200179940087C77D /* RecipeStepTextBuilder.swift in Sources */,
 				DA4233EF1FEDF7D50012A589 /* ViewPhotoCropMenu+Constants.swift in Sources */,
@@ -2918,7 +2908,6 @@
 				DAF99F14200DAC410030866C /* ViewCookStep.swift in Sources */,
 				DA91EB011FD62C1F0063560D /* ViewParent+Gesture.swift in Sources */,
 				DAA07FF920153F25006FFC76 /* CookItem+Ingredients.swift in Sources */,
-				DAA333DA1FDB17EA002D766C /* Database+Factory.swift in Sources */,
 				DAAE61FD1FF6465C00954EFC /* ControllerNewAdd+StepsActions.swift in Sources */,
 				DA0162312016B570009D7A65 /* CookItem+Favourite.swift in Sources */,
 				DA74F0A91FE6031200F45310 /* BuildIngredientGrams+Computed.swift in Sources */,
@@ -3152,7 +3141,6 @@
 				DAADC4A71FFC826D00862A90 /* NewAddValidateStrategyMinSteps+Constants.swift in Sources */,
 				DA5761DA2005893C00A5151C /* ViewCook.swift in Sources */,
 				DA5FFE641FE7790000A38154 /* FormatIngredientTypeQuantity+Constants.swift in Sources */,
-				DAA333DC1FDB17EA002D766C /* Database+Constants.swift in Sources */,
 				DA5FFE6A1FE77A2F00A38154 /* FormatIngredientTypeMililitres+Constants.swift in Sources */,
 				DA9089931FD4CE3E00C1208A /* MenuItemProtocol.swift in Sources */,
 				DA4233DF1FEDE56F0012A589 /* ArchPhotoCrop.swift in Sources */,
