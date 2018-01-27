@@ -3,8 +3,8 @@ import Foundation
 final class NewAddIngredient:Model<ArchNewAddIngredient>
 {
     var build:Build?
-    var database:Database?
     let cloud:Cloud
+    let database:Database
     private(set) var searching:String
     private(set) var items:[Ingredient]
     private var ingredients:[Ingredient]
@@ -12,6 +12,7 @@ final class NewAddIngredient:Model<ArchNewAddIngredient>
     required init()
     {
         self.cloud = Cloud()
+        self.database = Database()
         self.items = []
         self.ingredients = []
         self.searching = String()

@@ -4,12 +4,10 @@ final class ControllerNewAdd:Controller<ArchNewAdd>, UIGestureRecognizerDelegate
 {
     init(
         build:Build,
-        settings:Settings,
-        database:Database)
+        settings:Settings)
     {
         super.init()
         
-        self.model.database = database
         self.model.settings = settings
         self.model.build = build
     }
