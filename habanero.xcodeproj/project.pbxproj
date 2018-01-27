@@ -112,6 +112,8 @@
 		DA2E72FC201C503600EC5B94 /* DatabaseProviderCoreData+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E72FA201C503600EC5B94 /* DatabaseProviderCoreData+Factory.swift */; };
 		DA2E72FE201C509000EC5B94 /* DatabaseProviderCoreData+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E72FD201C509000EC5B94 /* DatabaseProviderCoreData+Constants.swift */; };
 		DA2E72FF201C509000EC5B94 /* DatabaseProviderCoreData+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E72FD201C509000EC5B94 /* DatabaseProviderCoreData+Constants.swift */; };
+		DA2E7301201C50BB00EC5B94 /* DatabaseProviderCoreData+Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E7300201C50BB00EC5B94 /* DatabaseProviderCoreData+Provider.swift */; };
+		DA2E7302201C50BB00EC5B94 /* DatabaseProviderCoreData+Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E7300201C50BB00EC5B94 /* DatabaseProviderCoreData+Provider.swift */; };
 		DA33F31C200FCD5B00F07E48 /* ViewCookStepProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33F31B200FCD5B00F07E48 /* ViewCookStepProgress.swift */; };
 		DA33F31D200FCD5B00F07E48 /* ViewCookStepProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33F31B200FCD5B00F07E48 /* ViewCookStepProgress.swift */; };
 		DA33F31F200FCE4300F07E48 /* ViewCookStep+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA33F31E200FCE4300F07E48 /* ViewCookStep+Constants.swift */; };
@@ -850,6 +852,7 @@
 		DA2E72F7201C4ADA00EC5B94 /* DatabaseProviderCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProviderCoreData.swift; sourceTree = "<group>"; };
 		DA2E72FA201C503600EC5B94 /* DatabaseProviderCoreData+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatabaseProviderCoreData+Factory.swift"; sourceTree = "<group>"; };
 		DA2E72FD201C509000EC5B94 /* DatabaseProviderCoreData+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatabaseProviderCoreData+Constants.swift"; sourceTree = "<group>"; };
+		DA2E7300201C50BB00EC5B94 /* DatabaseProviderCoreData+Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatabaseProviderCoreData+Provider.swift"; sourceTree = "<group>"; };
 		DA33F31B200FCD5B00F07E48 /* ViewCookStepProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookStepProgress.swift; sourceTree = "<group>"; };
 		DA33F31E200FCE4300F07E48 /* ViewCookStep+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStep+Constants.swift"; sourceTree = "<group>"; };
 		DA33F321200FD1DE00F07E48 /* ViewCookStepProgress+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStepProgress+Constants.swift"; sourceTree = "<group>"; };
@@ -1387,6 +1390,7 @@
 				DA2E72F7201C4ADA00EC5B94 /* DatabaseProviderCoreData.swift */,
 				DA2E72FA201C503600EC5B94 /* DatabaseProviderCoreData+Factory.swift */,
 				DA2E72FD201C509000EC5B94 /* DatabaseProviderCoreData+Constants.swift */,
+				DA2E7300201C50BB00EC5B94 /* DatabaseProviderCoreData+Provider.swift */,
 			);
 			path = DatabaseProvider;
 			sourceTree = "<group>";
@@ -2810,6 +2814,7 @@
 				DA6E80791FF9A6A500175F70 /* CloudEntityProtocol+Default.swift in Sources */,
 				DA27794E200724EE00F15AE0 /* ViewCookList+Constants.swift in Sources */,
 				DAFA62D820081A020068EC17 /* CookListItemRecipe.swift in Sources */,
+				DA2E7301201C50BB00EC5B94 /* DatabaseProviderCoreData+Provider.swift in Sources */,
 				DAFCCA5E200DB805002377BC /* RecipeStepsList.swift in Sources */,
 				DA855E051FF367E600E1B69F /* PhotoCrop+Export.swift in Sources */,
 				DA2C17701FEF3C68001BDA54 /* ViewButtonContinue+Constants.swift in Sources */,
@@ -2981,6 +2986,7 @@
 				DA855E0F1FF3839000E1B69F /* PhotoCropMask.swift in Sources */,
 				DAAE259B20096FC000BE3740 /* ViewCookListCellIngredient+Constants.swift in Sources */,
 				DA91EB031FD62C1F0063560D /* ViewAlert+Constants.swift in Sources */,
+				DA2E7302201C50BB00EC5B94 /* DatabaseProviderCoreData+Provider.swift in Sources */,
 				DAE7C3801FE0A9B3003190FF /* Build+Computed.swift in Sources */,
 				DA71D67D1FDA4B91003A33E1 /* ViewNewAddListFooterInfo+Constants.swift in Sources */,
 				DAC104C3200EBDB3004617FD /* CookStepItemImage.swift in Sources */,
