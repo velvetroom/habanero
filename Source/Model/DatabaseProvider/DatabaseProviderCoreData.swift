@@ -12,7 +12,7 @@ final class DatabaseProviderCoreData:DatabaseProviderProtocol
     
     //MARK: internal
     
-    func save(completion:(() -> ())?)
+    func saveIfNeeded(completion:(() -> ())?)
     {
         guard
         
@@ -43,7 +43,7 @@ final class DatabaseProviderCoreData:DatabaseProviderProtocol
         }
     }
     
-    func create<T:NSManagedObject>(completion:@escaping((T) -> ()))
+    func createObject<T:NSManagedObject>(completion:@escaping((T) -> ()))
     {
         self.managedObjectContext?.perform
         {
@@ -66,10 +66,10 @@ final class DatabaseProviderCoreData:DatabaseProviderProtocol
         }
     }
     
-    func fetch<T:NSManagedObject>(
-        limit:Int = 0,
-        predicate:NSPredicate? = nil,
-        sorters:[NSSortDescriptor]? = nil,
+    func fetchObjects<T:NSManagedObject>(
+        limit:Int,
+        predicate:NSPredicate?,
+        sorters:[NSSortDescriptor]?,
         completion:@escaping(([T]) -> ()))
     {
         let fetchRequest:NSFetchRequest<NSManagedObject> = DatabaseProviderCoreData.factoryFetchRequest(
@@ -104,13 +104,13 @@ final class DatabaseProviderCoreData:DatabaseProviderProtocol
         }
     }
     
-    func delete(
-        data:NSManagedObject,
+    func deleteObject(
+        object:NSManagedObject,
         completion:(() -> ())?)
     {
         self.managedObjectContext?.perform
         {
-            self.managedObjectContext?.delete(data)
+            self.managedObjectContext?.delete(object)
             completion?()
         }
     }
