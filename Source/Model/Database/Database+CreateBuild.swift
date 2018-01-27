@@ -21,14 +21,11 @@ extension Database
         completion:@escaping((BuildIngredientCups) -> ()))
     {
         self.provider.create
-        { [weak self] (ingredientCups:BuildIngredientCups) in
+        { (ingredientCups:BuildIngredientCups) in
             
             ingredientCups.cups = cups
             
-            self?.provider.save
-            {
-                completion(ingredientCups)
-            }
+            completion(ingredientCups)
         }
     }
     
@@ -37,14 +34,11 @@ extension Database
         completion:@escaping((BuildIngredientGrams) -> ()))
     {
         self.provider.create
-        { [weak self] (ingredientGrams:BuildIngredientGrams) in
+        { (ingredientGrams:BuildIngredientGrams) in
             
             ingredientGrams.grams = grams
             
-            self?.provider.save
-            {
-                completion(ingredientGrams)
-            }
+            completion(ingredientGrams)
         }
     }
     
@@ -53,14 +47,11 @@ extension Database
         completion:@escaping((BuildIngredientMililitres) -> ()))
     {
         self.provider.create
-        { [weak self] (ingredientMililitres:BuildIngredientMililitres) in
+        { (ingredientMililitres:BuildIngredientMililitres) in
                 
             ingredientMililitres.mililitres = mililitres
                 
-            self?.provider.save
-            {
-                completion(ingredientMililitres)
-            }
+            completion(ingredientMililitres)
         }
     }
     
@@ -69,14 +60,11 @@ extension Database
         completion:@escaping((BuildIngredientQuantity) -> ()))
     {
         self.provider.create
-        { [weak self] (ingredientQuantity:BuildIngredientQuantity) in
+        { (ingredientQuantity:BuildIngredientQuantity) in
             
             ingredientQuantity.quantity = quantity
             
-            self?.provider.save
-            {
-                completion(ingredientQuantity)
-            }
+            completion(ingredientQuantity)
         }
     }
     
@@ -85,14 +73,11 @@ extension Database
         completion:@escaping((BuildIngredientSpoons) -> ()))
     {
         self.provider.create
-        { [weak self] (ingredientSpoons:BuildIngredientSpoons) in
+        { (ingredientSpoons:BuildIngredientSpoons) in
             
             ingredientSpoons.spoons = spoons
             
-            self?.provider.save
-            {
-                completion(ingredientSpoons)
-            }
+            completion(ingredientSpoons)
         }
     }
     
