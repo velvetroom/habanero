@@ -97,12 +97,14 @@ extension Database
     }
     
     func createBuildStepText(
+        build:Build,
         text:String,
         completion:@escaping((BuildStepText) -> ()))
     {
         self.provider.create
         { [weak self] (stepText:BuildStepText) in
             
+            stepText.build = build
             stepText.text = text
             
             self?.provider.save
@@ -113,6 +115,7 @@ extension Database
     }
     
     func createBuildStepImage(
+        build:Build,
         text:String,
         imageIdentifier:String,
         completion:@escaping((BuildStepImage) -> ()))
@@ -120,6 +123,7 @@ extension Database
         self.provider.create
         { [weak self] (stepImage:BuildStepImage) in
             
+            stepImage.build = build
             stepImage.text = text
             stepImage.imageIdentifier = imageIdentifier
             

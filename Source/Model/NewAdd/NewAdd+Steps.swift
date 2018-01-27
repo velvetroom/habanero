@@ -24,6 +24,7 @@ extension NewAdd
     {
         guard
         
+            let build:Build = self.build,
             self.validateText(text:text) == true
         
         else
@@ -31,7 +32,9 @@ extension NewAdd
             return
         }
         
-        self.database?.createBuildStepText(text:text)
+        self.database?.createBuildStepText(
+            build:build,
+            text:text)
         { [weak self] (step:BuildStepText) in
             
             self?.stepCreated(
@@ -47,6 +50,7 @@ extension NewAdd
     {
         guard
         
+            let build:Build = self.build,
             self.validateText(text:text) == true,
             let imageIdentifier:String = NewAdd.createIdentifierAndStoreLocally(image:image)
         
@@ -56,6 +60,7 @@ extension NewAdd
         }
         
         self.database?.createBuildStepImage(
+            build:build,
             text:text,
             imageIdentifier:imageIdentifier)
         { [weak self] (step:BuildStepImage) in
@@ -70,8 +75,6 @@ extension NewAdd
         step:BuildStep,
         completion:@escaping(() -> ()))
     {
-        step.build = self.build
-        
         DispatchQueue.main.async
         {
             completion()
