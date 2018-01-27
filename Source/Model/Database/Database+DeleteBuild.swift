@@ -15,6 +15,17 @@ extension Database
         }
     }
     
+    func deleteBuildStep(
+        buildStep:BuildStep,
+        completion:@escaping(() -> ()))
+    {
+        self.provider.delete(model:buildStep)
+        { [weak self] in
+            
+            self?.provider.save(completion:completion)
+        }
+    }
+    
     func deleteBuildIngredient(
         buildIngredient:BuildIngredient,
         completion:@escaping(() -> ()))

@@ -4,16 +4,7 @@ extension NewAdd
 {
     private func asyncUpdated(completion:@escaping(() -> ()))
     {
-        guard
-            
-            let database:Database = self.database
-        
-        else
-        {
-            return
-        }
-        
-        database.save
+        self.database.save
         {
             DispatchQueue.main.async
             {

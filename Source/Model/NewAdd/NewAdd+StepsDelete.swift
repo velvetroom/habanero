@@ -19,25 +19,11 @@ extension NewAdd
         step:BuildStep,
         completion:@escaping(() -> ()))
     {
-        guard
-            
-            let database:Database = self.database
-        
-        else
-        {
-            return
-        }
-        
         self.deleteStepContents(step:step)
         
-        database.delete(data:step)
-        {
-            database.save
-            { [weak self] in
-                
-                self?.stepDeleted(completion:completion)
-            }
-        }
+        self.database.deleteBuildStep(
+            buildStep:step,
+            completion:completion)
     }
     
     private func stepDeleted(completion:@escaping(() -> ()))
