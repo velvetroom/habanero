@@ -27,13 +27,9 @@ extension Home
         self.database.createSettings
         { [weak self] (settings:Settings) in
         
-            self?.database.save
-            { [weak self] in
-                
-                self?.settingsLoaded(
-                    settings:settings,
-                    completion:completion)
-            }
+            self?.settingsLoaded(
+                settings:settings,
+                completion:completion)
         }
     }
     

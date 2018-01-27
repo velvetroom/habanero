@@ -6,13 +6,12 @@ extension New
     
     private func asyncLoad(completion:@escaping(() -> ()))
     {
-        self.getOrInitDatabaseAndSettings
-        { [weak self] (database:Database, settings:Settings) in
+        self.getSettings
+        { [weak self] (settings:Settings) in
             
-            self?.database = database
             self?.settings = settings
             
-            database.fetch
+            self?.database.fetch
             { [weak self] (builds:[Build]) in
                 
                 self?.buildsLoaded(
@@ -34,47 +33,28 @@ extension New
         }
     }
     
-    private func getOrInitDatabaseAndSettings(completion:@escaping((Database, Settings) -> ()))
+    private func getSettings(completion:@escaping((Settings) -> ()))
     {
-        guard
-        
-            let database:Database = self.database,
-            let settings:Settings = self.settings
-        
+        if let settings:Settings = self.settings
+        {
+            completion(settings)
+        }
         else
         {
-            self.initDatabaseAndSettings(completion:completion)
-            
-            return
-        }
-        
-        completion(database, settings)
-    }
-    
-    private func initDatabaseAndSettings(completion:@escaping((Database, Settings) -> ()))
-    {
-        guard
-        
-            let database:Database = Database(bundle:Bundle.main)
-        
-        else
-        {
-            return
-        }
-        
-        database.fetch
-        { (settingsList:[Settings]) in
-            
-            guard
+            self.database.getSettings
+            { (settings:Settings?) in
                 
-                let settings:Settings = settingsList.first
-            
-            else
-            {
-                return
+                guard
+                
+                    let settings:Settings = settings
+                
+                else
+                {
+                    return
+                }
+                
+                completion(settings)
             }
-            
-            completion(database, settings)
         }
     }
     

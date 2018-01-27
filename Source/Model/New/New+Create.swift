@@ -6,16 +6,12 @@ extension New
     
     private func asyncCreateBuild(completion:@escaping((Build) -> ()))
     {
-        self.database?.create
+        self.database.createBuild
         { [weak self] (build:Build) in
             
-            self?.database?.save
-            { [weak self] in
-                
-                self?.buildCreated(
-                    build:build,
-                    completion:completion)
-            }
+            self?.buildCreated(
+                build:build,
+                completion:completion)
         }
     }
     
