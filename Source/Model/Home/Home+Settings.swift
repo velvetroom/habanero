@@ -6,36 +6,28 @@ extension Home
     
     private func asyncLoadSettings(completion:@escaping(() -> ()))
     {
-        self.database.fetch
-        { [weak self] (settingsList:[Settings]) in
+        self.database.getSettings
+        { [weak self] (settings:Settings?) in
             
-            guard
-            
-                let settings:Settings = settingsList.first
-            
+            if let settings:Settings = settings
+            {
+                self?.settingsLoaded(
+                    settings:settings,
+                    completion:completion)
+            }
             else
             {
-                self?.createSettings(
-                    database:database,
-                    completion:completion)
-                
-                return
+                self?.createSettings(completion:completion)
             }
-            
-            self?.settingsLoaded(
-                settings:settings,
-                completion:completion)
         }
     }
     
-    private func createSettings(
-        database:Database,
-        completion:@escaping(() -> ()))
+    private func createSettings(completion:@escaping(() -> ()))
     {
-        database.create
-        { (settings:Settings) in
-            
-            database.save
+        self.database.createSettings
+        { [weak self] (settings:Settings) in
+        
+            self?.database.save
             { [weak self] in
                 
                 self?.settingsLoaded(

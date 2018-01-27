@@ -59,11 +59,11 @@ extension CookItem
         database:Database,
         completion:@escaping(() -> ()))
     {
-        database.create
+        database.createRecipeFavourite
         { (favourite:RecipeFavourite) in
             
             favourite.recipeIdentifier = cookItem.recipe.identifier
-            database.save(completion:nil)
+            database.save()
             
             favouriteItemUpdated(
                 cookItem:cookItem,
