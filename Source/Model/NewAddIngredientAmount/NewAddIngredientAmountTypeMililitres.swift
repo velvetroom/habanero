@@ -29,12 +29,8 @@ struct NewAddIngredientAmountTypeMililitres:NewAddIngredientAmountTypeProtocol
     {
         let mililitres:Int32 = NewAddIngredientAmountTypeMililitres.amountToMililitres(amount:amount)
         
-        database.create
-        { (ingredient:BuildIngredientMililitres) in
-            
-            ingredient.mililitres = mililitres
-            
-            completion(ingredient)
-        }
+        database.createBuildIngredientMililitres(
+            mililitres:mililitres,
+            completion:completion)
     }
 }

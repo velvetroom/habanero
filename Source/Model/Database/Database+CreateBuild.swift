@@ -47,4 +47,20 @@ extension Database
             }
         }
     }
+    
+    func createBuildIngredientMililitres(
+        mililitres:Int32,
+        completion:@escaping((BuildIngredientMililitres) -> ()))
+    {
+        self.provider.create
+        { [weak self] (ingredientMililitres:BuildIngredientMililitres) in
+                
+            ingredientMililitres.mililitres = mililitres
+                
+            self?.provider.save
+            {
+                completion(ingredientMililitres)
+            }
+        }
+    }
 }
