@@ -77,6 +77,7 @@ extension CookItem
         database:Database,
         completion:@escaping(() -> ()))
     {
+        
         favouriteItemUpdated(
             cookItem:cookItem,
             favouriteType:CookItemFavouriteOff.self,
