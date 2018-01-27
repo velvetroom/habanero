@@ -48,7 +48,6 @@ extension NewAdd
         guard
         
             self.validateText(text:text) == true,
-            let database:Database = self.database,
             let imageIdentifier:String = NewAdd.createIdentifierAndStoreLocally(image:image)
         
         else
@@ -56,15 +55,13 @@ extension NewAdd
             return
         }
         
-        database.create
+        self.database.createBuildStepImage(
+            text:text,
+            imageIdentifier:imageIdentifier)
         { [weak self] (step:BuildStepImage) in
-            
-            step.text = text
-            step.imageIdentifier = imageIdentifier
             
             self?.stepCreated(
                 step:step,
-                database:database,
                 completion:completion)
         }
     }

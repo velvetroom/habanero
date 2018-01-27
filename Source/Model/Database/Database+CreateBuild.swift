@@ -111,4 +111,22 @@ extension Database
             }
         }
     }
+    
+    func createBuildStepImage(
+        text:String,
+        imageIdentifier:String,
+        completion:@escaping((BuildStepImage) -> ()))
+    {
+        self.provider.create
+        { [weak self] (stepImage:BuildStepImage) in
+            
+            stepImage.text = text
+            stepImage.imageIdentifier = imageIdentifier
+            
+            self?.provider.save
+            {
+                completion(stepImage)
+            }
+        }
+    }
 }
