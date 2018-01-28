@@ -102,8 +102,6 @@
 		DA2C17741FEF41AD001BDA54 /* ViewPhotoCropDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C17721FEF41AD001BDA54 /* ViewPhotoCropDisplay.swift */; };
 		DA2C17761FEF4305001BDA54 /* ViewPhotoCropDisplayImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C17751FEF4305001BDA54 /* ViewPhotoCropDisplayImage.swift */; };
 		DA2C17771FEF4305001BDA54 /* ViewPhotoCropDisplayImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C17751FEF4305001BDA54 /* ViewPhotoCropDisplayImage.swift */; };
-		DA2E72F1201C4A0D00EC5B94 /* Database+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E72F0201C4A0D00EC5B94 /* Database+Search.swift */; };
-		DA2E72F2201C4A0D00EC5B94 /* Database+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E72F0201C4A0D00EC5B94 /* Database+Search.swift */; };
 		DA2E72F5201C4AA900EC5B94 /* DatabaseProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E72F4201C4AA900EC5B94 /* DatabaseProviderProtocol.swift */; };
 		DA2E72F6201C4AA900EC5B94 /* DatabaseProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E72F4201C4AA900EC5B94 /* DatabaseProviderProtocol.swift */; };
 		DA2E72F8201C4ADA00EC5B94 /* DatabaseProviderCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E72F7201C4ADA00EC5B94 /* DatabaseProviderCoreData.swift */; };
@@ -853,7 +851,6 @@
 		DA2C176F1FEF3C68001BDA54 /* ViewButtonContinue+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewButtonContinue+Constants.swift"; sourceTree = "<group>"; };
 		DA2C17721FEF41AD001BDA54 /* ViewPhotoCropDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoCropDisplay.swift; sourceTree = "<group>"; };
 		DA2C17751FEF4305001BDA54 /* ViewPhotoCropDisplayImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoCropDisplayImage.swift; sourceTree = "<group>"; };
-		DA2E72F0201C4A0D00EC5B94 /* Database+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Search.swift"; sourceTree = "<group>"; };
 		DA2E72F4201C4AA900EC5B94 /* DatabaseProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProviderProtocol.swift; sourceTree = "<group>"; };
 		DA2E72F7201C4ADA00EC5B94 /* DatabaseProviderCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProviderCoreData.swift; sourceTree = "<group>"; };
 		DA2E72FA201C503600EC5B94 /* DatabaseProviderCoreData+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatabaseProviderCoreData+Factory.swift"; sourceTree = "<group>"; };
@@ -2009,7 +2006,6 @@
 				DA3CA10F201CBFB700D50387 /* Database+GetBuild.swift */,
 				DA2E7306201C555500EC5B94 /* Database+Create.swift */,
 				DADA67E2201C5F550032C9C9 /* Database+CreateBuild.swift */,
-				DA2E72F0201C4A0D00EC5B94 /* Database+Search.swift */,
 				DA3CA10C201CBD5600D50387 /* Database+DeleteBuild.swift */,
 			);
 			path = Database;
@@ -2721,7 +2717,6 @@
 				DA855E0E1FF3839000E1B69F /* PhotoCropMask.swift in Sources */,
 				DA5A97CC1FD605E1006223BA /* MenuItemGeneric.swift in Sources */,
 				DA936CF01FFF114900740BE8 /* RecipeIngredientGramsBuilder.swift in Sources */,
-				DA2E72F1201C4A0D00EC5B94 /* Database+Search.swift in Sources */,
 				DABA5EBE1FEA34D20017F865 /* PhotoOptionProtocol.swift in Sources */,
 				DAD97C9B201E22A60074490A /* Home+Favourites.swift in Sources */,
 				DA1F04FD1FE8E1DA00DF03A8 /* RecipeStepType.swift in Sources */,
@@ -3247,7 +3242,6 @@
 				DA6835A020017C120087C77D /* RecipeStepImageBuilder.swift in Sources */,
 				DAA333D21FDB1453002D766C /* New+Load.swift in Sources */,
 				DAE35C982005D0C5002B1C9C /* ViewCookHeader.swift in Sources */,
-				DA2E72F2201C4A0D00EC5B94 /* Database+Search.swift in Sources */,
 				DA91EAEB1FD62C1F0063560D /* ViewMenu+Collection.swift in Sources */,
 				DAB786331FF4C27600579BB5 /* ControllerNewAdd+Gesture.swift in Sources */,
 				DAADC4A11FFC7B8F00862A90 /* NewAdd+Save.swift in Sources */,
