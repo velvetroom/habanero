@@ -14,7 +14,7 @@ extension Database
         }
     }
     
-    func getFavourites(completion:@escaping(([Favourites]) -> ()))
+    func getFavourites(completion:@escaping(([RecipeFavourite]) -> ()))
     {
         self.provider.get(completion:completion)
     }

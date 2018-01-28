@@ -16,9 +16,7 @@ extension Home
             
             else
             {
-                self?.recipesLoaded(
-                    items:[],
-                    completion:completion)
+                self?.loadCompleted(completion:completion)
                 
                 return
             }
@@ -62,21 +60,8 @@ extension Home
             return itemA.recipe.created > itemB.recipe.created
         }
         
-        self.recipesLoaded(
-            items:items,
-            completion:completion)
-    }
-    
-    private func recipesLoaded(
-        items:[CookItem],
-        completion:@escaping(() -> ()))
-    {
         self.items = items
-        
-        DispatchQueue.main.async
-        {
-            completion()
-        }
+        self.loadFavourites(completion:completion)
     }
     
     //MARK: internal
@@ -87,6 +72,14 @@ extension Home
         { [weak self] in
             
             self?.asyncLoadRecipes(completion:completion)
+        }
+    }
+    
+    func loadCompleted(completion:@escaping(() -> ()))
+    {
+        DispatchQueue.main.async
+        {
+            completion()
         }
     }
 }
