@@ -13,4 +13,9 @@ extension Database
             completion(settings)
         }
     }
+    
+    func getFavourites(completion:@escaping(([Favourites]) -> ()))
+    {
+        self.provider.get(completion:completion)
+    }
 }

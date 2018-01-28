@@ -4,5 +4,8 @@ extension Home
 {
     //MARK: internal
     
-    
+    func loadFavourites(completion:@escaping(() -> ()))
+    {
+        
+    }
 }
