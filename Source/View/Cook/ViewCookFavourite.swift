@@ -28,7 +28,6 @@ final class ViewCookFavourite:UIButton
         labelAmount.backgroundColor = UIColor.clear
         labelAmount.font = UIFont.medium(size:ViewCookFavourite.Constants.fontSize)
         labelAmount.textColor = UIColor.colourBackgroundDark
-        labelAmount.textAlignment = NSTextAlignment.center
         self.labelAmount = labelAmount
         
         self.addSubview(labelAmount)
@@ -53,7 +52,7 @@ final class ViewCookFavourite:UIButton
     {
         let width:CGFloat = self.bounds.width
         let width_2:CGFloat = width / 2.0
-        self.layoutAmountLeft?.constant = width_2
+        self.layoutAmountLeft?.constant = width_2 + ViewCookFavourite.Constants.amountLeft
         
         super.layoutSubviews()
     }
