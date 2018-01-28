@@ -27,10 +27,6 @@ extension NewAddIngredientAmount
             database:database)
         { [weak self] (ingredient:BuildIngredient) in
             
-            self?.configureIngredient(
-                buildIngredient:ingredient,
-                completion:completion)
-            
             self?.ingredientCreated(completion:completion)
         }
     }

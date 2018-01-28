@@ -23,7 +23,10 @@ struct NewAddIngredientAmountTypeQuantity:NewAddIngredientAmountTypeProtocol
     //MARK: internal
     
     func createIngredient(
+        ingredientIdentifier:String,
+        name:String,
         amount:String,
+        build:Build,
         database:Database,
         completion:@escaping((BuildIngredient) -> ()))
     {
