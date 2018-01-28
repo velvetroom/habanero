@@ -10,7 +10,8 @@ extension NewAddIngredientAmount
     {
         guard
         
-            let type:NewAddIngredientAmountTypeProtocol = self.selectedType,
+            let cloudIngredient:Ingredient = self.ingredient,
+            let build:Build = self.build,
             let database:Database = self.database
         
         else
@@ -18,36 +19,17 @@ extension NewAddIngredientAmount
             return
         }
         
-        type.createIngredient(
+        self.selectedType?.createIngredient(
+            ingredientIdentifier:cloudIngredient.identifier,
+            name:cloudIngredient.name,
             amount:amount,
+            build:build,
             database:database)
         { [weak self] (ingredient:BuildIngredient) in
             
             self?.configureIngredient(
                 buildIngredient:ingredient,
                 completion:completion)
-        }
-    }
-    
-    private func configureIngredient(
-        buildIngredient:BuildIngredient,
-        completion:@escaping(() -> ()))
-    {
-        guard
-        
-            let cloudIngredient:Ingredient = self.ingredient
-        
-        else
-        {
-            return
-        }
-        
-        buildIngredient.ingredientIdentifier = cloudIngredient.identifier
-        buildIngredient.name = cloudIngredient.name
-        buildIngredient.build = self.build
-        
-        self.database?.save
-        { [weak self] in
             
             self?.ingredientCreated(completion:completion)
         }
