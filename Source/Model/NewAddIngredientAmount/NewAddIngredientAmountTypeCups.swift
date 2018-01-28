@@ -33,7 +33,10 @@ struct NewAddIngredientAmountTypeCups:NewAddIngredientAmountTypeProtocol
         let cups:Float = NewAddIngredientAmountTypeCups.amountToCups(amount:amount)
         
         database.createBuildIngredientCups(
+            ingredientIdentifier:ingredientIdentifier,
+            name:name,
             cups:cups,
+            build:build,
             completion:completion)
     }
 }

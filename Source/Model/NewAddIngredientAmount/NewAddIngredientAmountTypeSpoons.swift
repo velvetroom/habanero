@@ -33,7 +33,10 @@ struct NewAddIngredientAmountTypeSpoons:NewAddIngredientAmountTypeProtocol
         let spoons:Int16 = NewAddIngredientAmountTypeSpoons.amountToSpoons(amount:amount)
         
         database.createBuildIngredientSpoons(
+            ingredientIdentifier:ingredientIdentifier,
+            name:name,
             spoons:spoons,
+            build:build,
             completion:completion)
     }
 }

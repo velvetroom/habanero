@@ -31,7 +31,10 @@ extension Database
             ingredientCups.cups = cups
             ingredientCups.build = build
             
-            completion(ingredientCups)
+            self.provider.save
+            {
+                completion(ingredientCups)
+            }
         }
     }
     
@@ -50,7 +53,10 @@ extension Database
             ingredientGrams.grams = grams
             ingredientGrams.build = build
             
-            completion(ingredientGrams)
+            self.provider.save
+            {
+                completion(ingredientGrams)
+            }
         }
     }
     
@@ -69,7 +75,10 @@ extension Database
             ingredientMililitres.mililitres = mililitres
             ingredientMililitres.build = build
             
-            completion(ingredientMililitres)
+            self.provider.save
+            {
+                completion(ingredientMililitres)
+            }
         }
     }
     
@@ -88,7 +97,10 @@ extension Database
             ingredientQuantity.quantity = quantity
             ingredientQuantity.build = build
             
-            completion(ingredientQuantity)
+            self.provider.save
+            {
+                completion(ingredientQuantity)
+            }
         }
     }
     
@@ -107,7 +119,10 @@ extension Database
             ingredientSpoons.spoons = spoons
             ingredientSpoons.build = build
             
-            completion(ingredientSpoons)
+            self.provider.save
+            {
+                completion(ingredientSpoons)
+            }
         }
     }
     
