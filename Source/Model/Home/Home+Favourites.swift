@@ -8,11 +8,11 @@ extension Home
         favouritesList:[RecipeFavourite],
         completion:@escaping(() -> ()))
     {
-        for favourite:RecipeFavourite in favouritesList
+        for recipeFavourite:RecipeFavourite in favouritesList
         {
             guard
             
-                let recipeIdentifier:String = favourite.recipeIdentifier,
+                let recipeIdentifier:String = recipeFavourite.recipeIdentifier,
                 let cookItem:CookItem = self.recipesMap[recipeIdentifier]
                 
             else
@@ -20,8 +20,8 @@ extension Home
                 continue
             }
             
-            cookItem.favourite = CookItemFavouriteOn.self
-            cookItem.recipeFavourite = favourite
+            let favourite:CookItemFavouriteOn = CookItemFavouriteOn(recipeFavourite:recipeFavourite)
+            cookItem.favourite = favourite
         }
         
         self.loadCompleted(completion:completion)
