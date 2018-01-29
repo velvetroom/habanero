@@ -6,7 +6,7 @@ final class CookItem
     var steps:[RecipeStep]
     var recipeFavourite:RecipeFavourite?
     var onImageUpdated:((CookItem) -> ())?
-    var favourite:CookItemFavouriteProtocol.Type
+    var favourite:CookItemFavouriteProtocol
     let recipe:Recipe
     
     var image:UIImage?
