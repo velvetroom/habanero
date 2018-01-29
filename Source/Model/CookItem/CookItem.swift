@@ -23,6 +23,6 @@ final class CookItem
         self.recipe = recipe
         self.ingredients = []
         self.steps = []
-        self.favourite = CookItemFavouriteOff.self
+        self.favourite = CookItemFavouriteOff()
     }
 }
