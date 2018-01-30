@@ -2,7 +2,7 @@ import UIKit
 
 final class ViewOptionsListCellMetrics:ViewOptionsListCell
 {
-    private weak var viewSegmented:UISegmentedControl!
+    private(set) weak var viewSegmented:UISegmentedControl!
     
     override func factoryViews()
     {
@@ -49,5 +49,12 @@ final class ViewOptionsListCellMetrics:ViewOptionsListCell
             view:viewSegmented,
             toView:self,
             margin:ViewOptionsList.Constants.padding)
+    }
+    
+    override func config(
+        controller:ControllerOptions,
+        item:OptionsItemProtocol)
+    {
+        controller.configureMetrics(viewMetrics:self)
     }
 }

@@ -572,6 +572,8 @@
 		DAB773AD2020C918001E702E /* ViewOptionsListCellMetrics+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773AB2020C918001E702E /* ViewOptionsListCellMetrics+Constants.swift */; };
 		DAB773AF2020CBFC001E702E /* ViewOptionsListCellMetrics+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773AE2020CBFC001E702E /* ViewOptionsListCellMetrics+Factory.swift */; };
 		DAB773B02020CBFC001E702E /* ViewOptionsListCellMetrics+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773AE2020CBFC001E702E /* ViewOptionsListCellMetrics+Factory.swift */; };
+		DAB773B22020CEA4001E702E /* ControllerOptions+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773B12020CEA4001E702E /* ControllerOptions+Config.swift */; };
+		DAB773B32020CEA4001E702E /* ControllerOptions+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773B12020CEA4001E702E /* ControllerOptions+Config.swift */; };
 		DAB786211FF4AE9900579BB5 /* NewAdd+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */; };
 		DAB786231FF4B3B400579BB5 /* NewAddError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786221FF4B3B400579BB5 /* NewAddError.swift */; };
 		DAB786251FF4B3DF00579BB5 /* NewAddError+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */; };
@@ -1171,6 +1173,7 @@
 		DAB773A82020B955001E702E /* ViewOptionsList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewOptionsList+Actions.swift"; sourceTree = "<group>"; };
 		DAB773AB2020C918001E702E /* ViewOptionsListCellMetrics+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewOptionsListCellMetrics+Constants.swift"; sourceTree = "<group>"; };
 		DAB773AE2020CBFC001E702E /* ViewOptionsListCellMetrics+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewOptionsListCellMetrics+Factory.swift"; sourceTree = "<group>"; };
+		DAB773B12020CEA4001E702E /* ControllerOptions+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerOptions+Config.swift"; sourceTree = "<group>"; };
 		DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Images.swift"; sourceTree = "<group>"; };
 		DAB786221FF4B3B400579BB5 /* NewAddError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddError.swift; sourceTree = "<group>"; };
 		DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddError+Description.swift"; sourceTree = "<group>"; };
@@ -2027,6 +2030,7 @@
 			isa = PBXGroup;
 			children = (
 				DAB7737F2020897B001E702E /* ControllerOptions.swift */,
+				DAB773B12020CEA4001E702E /* ControllerOptions+Config.swift */,
 			);
 			path = Options;
 			sourceTree = "<group>";
@@ -2683,6 +2687,7 @@
 				DACF554D1FD7661E00069701 /* ExtensionURL.swift in Sources */,
 				DAA07FF820153F25006FFC76 /* CookItem+Ingredients.swift in Sources */,
 				DACF55451FD7661E00069701 /* ExtensionNSManagedObject.swift in Sources */,
+				DAB773B22020CEA4001E702E /* ControllerOptions+Config.swift in Sources */,
 				DA91EAFC1FD62C1F0063560D /* ViewParent+Transitions.swift in Sources */,
 				DAC104C8200EC8C6004617FD /* ViewCookStepList+Actions.swift in Sources */,
 				DAE35C9D2005E57C002B1C9C /* ViewCookList.swift in Sources */,
@@ -3227,6 +3232,7 @@
 				DA91EB0F1FD62C1F0063560D /* ViewBlur.swift in Sources */,
 				DAC104BD200EB618004617FD /* CookStepItemProtocol.swift in Sources */,
 				DA91EB251FD62D700063560D /* ViewControllableProtocol.swift in Sources */,
+				DAB773B32020CEA4001E702E /* ControllerOptions+Config.swift in Sources */,
 				DAC732D01FF85AB400980854 /* NewAddSectionItemInfoSubtitle.swift in Sources */,
 				DAB786211FF4AE9900579BB5 /* NewAdd+Images.swift in Sources */,
 				DA3421421FE47EB6002B23DA /* ControllerNewAddIngredientAmount+Constants.swift in Sources */,
