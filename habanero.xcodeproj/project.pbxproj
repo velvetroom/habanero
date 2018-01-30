@@ -552,6 +552,8 @@
 		DAB7738F2020915C001E702E /* ViewOptionsBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7738D2020915C001E702E /* ViewOptionsBar.swift */; };
 		DAB773912020950A001E702E /* OptionsItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773902020950A001E702E /* OptionsItemProtocol.swift */; };
 		DAB773922020950A001E702E /* OptionsItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773902020950A001E702E /* OptionsItemProtocol.swift */; };
+		DAB77394202095B8001E702E /* OptionsItemMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB77393202095B8001E702E /* OptionsItemMetrics.swift */; };
+		DAB77395202095B8001E702E /* OptionsItemMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB77393202095B8001E702E /* OptionsItemMetrics.swift */; };
 		DAB786211FF4AE9900579BB5 /* NewAdd+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */; };
 		DAB786231FF4B3B400579BB5 /* NewAddError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786221FF4B3B400579BB5 /* NewAddError.swift */; };
 		DAB786251FF4B3DF00579BB5 /* NewAddError+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */; };
@@ -1141,6 +1143,7 @@
 		DAB7738A20208F05001E702E /* MenuItemOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemOptions.swift; sourceTree = "<group>"; };
 		DAB7738D2020915C001E702E /* ViewOptionsBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOptionsBar.swift; sourceTree = "<group>"; };
 		DAB773902020950A001E702E /* OptionsItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsItemProtocol.swift; sourceTree = "<group>"; };
+		DAB77393202095B8001E702E /* OptionsItemMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsItemMetrics.swift; sourceTree = "<group>"; };
 		DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Images.swift"; sourceTree = "<group>"; };
 		DAB786221FF4B3B400579BB5 /* NewAddError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddError.swift; sourceTree = "<group>"; };
 		DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddError+Description.swift"; sourceTree = "<group>"; };
@@ -2006,6 +2009,7 @@
 			children = (
 				DAB7738320208ADB001E702E /* Options.swift */,
 				DAB773902020950A001E702E /* OptionsItemProtocol.swift */,
+				DAB77393202095B8001E702E /* OptionsItemMetrics.swift */,
 			);
 			path = Options;
 			sourceTree = "<group>";
@@ -2870,6 +2874,7 @@
 				DA70AFBF1FD5A8B10016B0DC /* ViewHome.swift in Sources */,
 				DA35DD111FFDAEEB0047881F /* CloudItemBuilderProtocol.swift in Sources */,
 				DA74F0AB1FE6084100F45310 /* IngredientAmountType.swift in Sources */,
+				DAB77394202095B8001E702E /* OptionsItemMetrics.swift in Sources */,
 				DA33F31F200FCE4300F07E48 /* ViewCookStep+Constants.swift in Sources */,
 				DA683590200174D50087C77D /* RecipeStep+Keys.swift in Sources */,
 			);
@@ -3203,6 +3208,7 @@
 				DA70FD8D2010179F003AF6A6 /* ControllerCookStep+Progress.swift in Sources */,
 				DA27794C20071F4600F15AE0 /* ViewCookListCellIngredientsTitle.swift in Sources */,
 				DAE7C3841FE0B0C5003190FF /* NewAddIngredientError+Description.swift in Sources */,
+				DAB77395202095B8001E702E /* OptionsItemMetrics.swift in Sources */,
 				DAD97C9C201E22A60074490A /* Home+Favourites.swift in Sources */,
 				DAE7C3571FE08281003190FF /* Cloud.swift in Sources */,
 				DABA5EBF1FEA34D20017F865 /* PhotoOptionProtocol.swift in Sources */,
