@@ -544,6 +544,8 @@
 		DAB773812020897B001E702E /* ControllerOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7737F2020897B001E702E /* ControllerOptions.swift */; };
 		DAB7738420208ADB001E702E /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7738320208ADB001E702E /* Options.swift */; };
 		DAB7738520208ADB001E702E /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7738320208ADB001E702E /* Options.swift */; };
+		DAB7738820208B4F001E702E /* ViewOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7738720208B4F001E702E /* ViewOptions.swift */; };
+		DAB7738920208B4F001E702E /* ViewOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7738720208B4F001E702E /* ViewOptions.swift */; };
 		DAB786211FF4AE9900579BB5 /* NewAdd+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */; };
 		DAB786231FF4B3B400579BB5 /* NewAddError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786221FF4B3B400579BB5 /* NewAddError.swift */; };
 		DAB786251FF4B3DF00579BB5 /* NewAddError+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */; };
@@ -1129,6 +1131,7 @@
 		DAAE61FE1FF64E9700954EFC /* NewAdd+StepsUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+StepsUpdate.swift"; sourceTree = "<group>"; };
 		DAB7737F2020897B001E702E /* ControllerOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerOptions.swift; sourceTree = "<group>"; };
 		DAB7738320208ADB001E702E /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		DAB7738720208B4F001E702E /* ViewOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOptions.swift; sourceTree = "<group>"; };
 		DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Images.swift"; sourceTree = "<group>"; };
 		DAB786221FF4B3B400579BB5 /* NewAddError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddError.swift; sourceTree = "<group>"; };
 		DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddError+Description.swift"; sourceTree = "<group>"; };
@@ -1862,6 +1865,7 @@
 		DA9088E01FD4C65F00C1208A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DAB7738620208B35001E702E /* Options */,
 				DAF99F11200DAC350030866C /* CookStep */,
 				DA5761D72005886E00A5151C /* Cook */,
 				DA91EAC81FD62C1F0063560D /* Global */,
@@ -1991,6 +1995,14 @@
 			isa = PBXGroup;
 			children = (
 				DAB7738320208ADB001E702E /* Options.swift */,
+			);
+			path = Options;
+			sourceTree = "<group>";
+		};
+		DAB7738620208B35001E702E /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7738720208B4F001E702E /* ViewOptions.swift */,
 			);
 			path = Options;
 			sourceTree = "<group>";
@@ -2832,6 +2844,7 @@
 				DA74F0BE1FE6127100F45310 /* Format+Ingredient.swift in Sources */,
 				DA4233E21FEDE5DD0012A589 /* PhotoCrop.swift in Sources */,
 				DA10A1E51FFB1FC700166CF7 /* Controller+Alert.swift in Sources */,
+				DAB7738820208B4F001E702E /* ViewOptions.swift in Sources */,
 				DA6E805E1FF987F100175F70 /* CloudProviderFirebase.swift in Sources */,
 				DACF89E01FFDD3F900F4FCF0 /* RecipeIngredient+Factory.swift in Sources */,
 				DA91EAFA1FD62C1F0063560D /* ViewMain.swift in Sources */,
@@ -3000,6 +3013,7 @@
 				DA91EAF11FD62C1F0063560D /* ViewMenuCell.swift in Sources */,
 				DA16F15E1FDFAF3100EB6877 /* ViewNewAddIngredient+Constants.swift in Sources */,
 				DA70FD90201017FF003AF6A6 /* ControllerCookStep+Constants.swift in Sources */,
+				DAB7738920208B4F001E702E /* ViewOptions.swift in Sources */,
 				DAFA62D32008191C0068EC17 /* CookListItemProtocol.swift in Sources */,
 				DAFA62E8200821640068EC17 /* ViewCookListCellRecipe+Constants.swift in Sources */,
 				DA91EAE91FD62C1F0063560D /* ViewMenu+Actions.swift in Sources */,
