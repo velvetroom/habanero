@@ -550,6 +550,8 @@
 		DAB7738C20208F05001E702E /* MenuItemOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7738A20208F05001E702E /* MenuItemOptions.swift */; };
 		DAB7738E2020915C001E702E /* ViewOptionsBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7738D2020915C001E702E /* ViewOptionsBar.swift */; };
 		DAB7738F2020915C001E702E /* ViewOptionsBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7738D2020915C001E702E /* ViewOptionsBar.swift */; };
+		DAB773912020950A001E702E /* OptionsItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773902020950A001E702E /* OptionsItemProtocol.swift */; };
+		DAB773922020950A001E702E /* OptionsItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773902020950A001E702E /* OptionsItemProtocol.swift */; };
 		DAB786211FF4AE9900579BB5 /* NewAdd+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */; };
 		DAB786231FF4B3B400579BB5 /* NewAddError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786221FF4B3B400579BB5 /* NewAddError.swift */; };
 		DAB786251FF4B3DF00579BB5 /* NewAddError+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */; };
@@ -1138,6 +1140,7 @@
 		DAB7738720208B4F001E702E /* ViewOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOptions.swift; sourceTree = "<group>"; };
 		DAB7738A20208F05001E702E /* MenuItemOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemOptions.swift; sourceTree = "<group>"; };
 		DAB7738D2020915C001E702E /* ViewOptionsBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOptionsBar.swift; sourceTree = "<group>"; };
+		DAB773902020950A001E702E /* OptionsItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsItemProtocol.swift; sourceTree = "<group>"; };
 		DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Images.swift"; sourceTree = "<group>"; };
 		DAB786221FF4B3B400579BB5 /* NewAddError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddError.swift; sourceTree = "<group>"; };
 		DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddError+Description.swift"; sourceTree = "<group>"; };
@@ -2002,6 +2005,7 @@
 			isa = PBXGroup;
 			children = (
 				DAB7738320208ADB001E702E /* Options.swift */,
+				DAB773902020950A001E702E /* OptionsItemProtocol.swift */,
 			);
 			path = Options;
 			sourceTree = "<group>";
@@ -2587,6 +2591,7 @@
 				DA3F0EBB1FD7505E00593B83 /* Menu+OrderUser.swift in Sources */,
 				DA35DD0B1FFDAADF0047881F /* RecipeStatus.swift in Sources */,
 				DA35DD1A1FFDB4A30047881F /* RecipeList.swift in Sources */,
+				DAB773912020950A001E702E /* OptionsItemProtocol.swift in Sources */,
 				DAFA62ED200826660068EC17 /* ViewCook+Constants.swift in Sources */,
 				DA33F325200FD99D00F07E48 /* ViewCookStepProgressIndicator.swift in Sources */,
 				DA683593200176130087C77D /* RecipeStep+Factory.swift in Sources */,
@@ -2875,6 +2880,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAC104C9200EC8C6004617FD /* ViewCookStepList+Actions.swift in Sources */,
+				DAB773922020950A001E702E /* OptionsItemProtocol.swift in Sources */,
 				DA71D6891FDA5985003A33E1 /* NewAddSectionItemInfoTitle.swift in Sources */,
 				DA60429D1FE21BAF00758A2F /* ControllerNewAddIngredientAmount.swift in Sources */,
 				DAFCCA62200DC6BB002377BC /* ViewCookStepBar.swift in Sources */,

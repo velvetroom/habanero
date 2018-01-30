@@ -5,6 +5,7 @@ final class ViewOptions:ViewMain<ArchOptions>
     override func factoryViews()
     {
         super.factoryViews()
+        self.backgroundColor = UIColor.colourBackgroundGray
         
         let viewBar:ViewOptionsBar = ViewOptionsBar(controller:self.controller)
         
