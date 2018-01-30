@@ -570,6 +570,8 @@
 		DAB773AA2020B955001E702E /* ViewOptionsList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773A82020B955001E702E /* ViewOptionsList+Actions.swift */; };
 		DAB773AC2020C918001E702E /* ViewOptionsListCellMetrics+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773AB2020C918001E702E /* ViewOptionsListCellMetrics+Constants.swift */; };
 		DAB773AD2020C918001E702E /* ViewOptionsListCellMetrics+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773AB2020C918001E702E /* ViewOptionsListCellMetrics+Constants.swift */; };
+		DAB773AF2020CBFC001E702E /* ViewOptionsListCellMetrics+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773AE2020CBFC001E702E /* ViewOptionsListCellMetrics+Factory.swift */; };
+		DAB773B02020CBFC001E702E /* ViewOptionsListCellMetrics+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773AE2020CBFC001E702E /* ViewOptionsListCellMetrics+Factory.swift */; };
 		DAB786211FF4AE9900579BB5 /* NewAdd+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */; };
 		DAB786231FF4B3B400579BB5 /* NewAddError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786221FF4B3B400579BB5 /* NewAddError.swift */; };
 		DAB786251FF4B3DF00579BB5 /* NewAddError+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */; };
@@ -1168,6 +1170,7 @@
 		DAB773A52020B0BC001E702E /* ViewOptionsList+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewOptionsList+Constants.swift"; sourceTree = "<group>"; };
 		DAB773A82020B955001E702E /* ViewOptionsList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewOptionsList+Actions.swift"; sourceTree = "<group>"; };
 		DAB773AB2020C918001E702E /* ViewOptionsListCellMetrics+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewOptionsListCellMetrics+Constants.swift"; sourceTree = "<group>"; };
+		DAB773AE2020CBFC001E702E /* ViewOptionsListCellMetrics+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewOptionsListCellMetrics+Factory.swift"; sourceTree = "<group>"; };
 		DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Images.swift"; sourceTree = "<group>"; };
 		DAB786221FF4B3B400579BB5 /* NewAddError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddError.swift; sourceTree = "<group>"; };
 		DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddError+Description.swift"; sourceTree = "<group>"; };
@@ -2051,6 +2054,7 @@
 				DAB773992020A0AD001E702E /* ViewOptionsListCell.swift */,
 				DAB7739C2020A32B001E702E /* ViewOptionsListCellMetrics.swift */,
 				DAB773AB2020C918001E702E /* ViewOptionsListCellMetrics+Constants.swift */,
+				DAB773AE2020CBFC001E702E /* ViewOptionsListCellMetrics+Factory.swift */,
 			);
 			path = Options;
 			sourceTree = "<group>";
@@ -2646,6 +2650,7 @@
 				DAA07FFE20155880006FFC76 /* ViewCookFavourite.swift in Sources */,
 				DA91EB1E1FD62C1F0063560D /* ViewGradient+Constants.swift in Sources */,
 				DA5761D12005879D00A5151C /* ControllerCook.swift in Sources */,
+				DAB773AF2020CBFC001E702E /* ViewOptionsListCellMetrics+Factory.swift in Sources */,
 				DAFA62F0200828310068EC17 /* ViewCookListCellIngredientsTitle+Constants.swift in Sources */,
 				DAC104BF200EBD98004617FD /* CookStepItemText.swift in Sources */,
 				DA35DD291FFDBDF70047881F /* StorageProviderFirebase+Constants.swift in Sources */,
@@ -3172,6 +3177,7 @@
 				DA0750232004582E002C428A /* ViewHomeList+Actions.swift in Sources */,
 				DA1F04F01FE8C05F00DF03A8 /* ViewNewAddListFooterSteps+Constants.swift in Sources */,
 				DA9089881FD4CE3300C1208A /* ArchHome.swift in Sources */,
+				DAB773B02020CBFC001E702E /* ViewOptionsListCellMetrics+Factory.swift in Sources */,
 				DA91EAED1FD62C1F0063560D /* ViewMenu.swift in Sources */,
 				DACF554C1FD7661E00069701 /* ExtensionUICollectionReusableView.swift in Sources */,
 				DABA5ED11FEA3CE60017F865 /* ViewPhotoList+Actions.swift in Sources */,
