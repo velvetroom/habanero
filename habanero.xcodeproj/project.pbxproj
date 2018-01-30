@@ -546,6 +546,8 @@
 		DAB7738520208ADB001E702E /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7738320208ADB001E702E /* Options.swift */; };
 		DAB7738820208B4F001E702E /* ViewOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7738720208B4F001E702E /* ViewOptions.swift */; };
 		DAB7738920208B4F001E702E /* ViewOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7738720208B4F001E702E /* ViewOptions.swift */; };
+		DAB7738B20208F05001E702E /* MenuItemOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7738A20208F05001E702E /* MenuItemOptions.swift */; };
+		DAB7738C20208F05001E702E /* MenuItemOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7738A20208F05001E702E /* MenuItemOptions.swift */; };
 		DAB786211FF4AE9900579BB5 /* NewAdd+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */; };
 		DAB786231FF4B3B400579BB5 /* NewAddError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786221FF4B3B400579BB5 /* NewAddError.swift */; };
 		DAB786251FF4B3DF00579BB5 /* NewAddError+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */; };
@@ -1132,6 +1134,7 @@
 		DAB7737F2020897B001E702E /* ControllerOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerOptions.swift; sourceTree = "<group>"; };
 		DAB7738320208ADB001E702E /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
 		DAB7738720208B4F001E702E /* ViewOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOptions.swift; sourceTree = "<group>"; };
+		DAB7738A20208F05001E702E /* MenuItemOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemOptions.swift; sourceTree = "<group>"; };
 		DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Images.swift"; sourceTree = "<group>"; };
 		DAB786221FF4B3B400579BB5 /* NewAddError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddError.swift; sourceTree = "<group>"; };
 		DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddError+Description.swift"; sourceTree = "<group>"; };
@@ -1858,6 +1861,7 @@
 				DA992D761FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift */,
 				DA9088D81FD4C65F00C1208A /* MenuItemHome.swift */,
 				DA3F0EB71FD74FC400593B83 /* MenuItemNew.swift */,
+				DAB7738A20208F05001E702E /* MenuItemOptions.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -2682,6 +2686,7 @@
 				DA5761D52005884C00A5151C /* Cook.swift in Sources */,
 				DA9089261FD4C66000C1208A /* ArchHome.swift in Sources */,
 				DA01622D2016B06A009D7A65 /* CookItemFavouriteOff.swift in Sources */,
+				DAB7738B20208F05001E702E /* MenuItemOptions.swift in Sources */,
 				DAE7C35C1FE08281003190FF /* CloudError+Description.swift in Sources */,
 				DA936CED1FFF10EB00740BE8 /* RecipeIngredientCupsBuilder.swift in Sources */,
 				DAE35CA02005E65F002B1C9C /* ViewCookListCell.swift in Sources */,
@@ -2880,6 +2885,7 @@
 				DA71D6771FDA4539003A33E1 /* NewAddSectionInfo.swift in Sources */,
 				DA6042A31FE21C3000758A2F /* ViewNewAddIngredientAmount.swift in Sources */,
 				DA855E061FF367E600E1B69F /* PhotoCrop+Export.swift in Sources */,
+				DAB7738C20208F05001E702E /* MenuItemOptions.swift in Sources */,
 				DA6042A01FE21BE800758A2F /* NewAddIngredientAmount.swift in Sources */,
 				DAEFB5F72013794800CA840E /* Format+RecipeIngredient.swift in Sources */,
 				DAFA62D6200819A70068EC17 /* Cook+Constants.swift in Sources */,
