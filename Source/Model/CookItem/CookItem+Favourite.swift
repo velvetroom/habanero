@@ -62,9 +62,11 @@ extension CookItem
         database.createRecipeFavourite(identifier:cookItem.recipe.identifier)
         { (favourite:RecipeFavourite) in
             
-            favouriteItemUpdated(
+            let favouriteOn:CookItemFavouriteOn = CookItemFavouriteOn(recipeFavourite:favourite)
+            
+            CookItem.favouriteItemUpdated(
                 cookItem:cookItem,
-                favouriteType:CookItemFavouriteOn.self,
+                favourite:favouriteOn,
                 completion:completion)
         }
     }
