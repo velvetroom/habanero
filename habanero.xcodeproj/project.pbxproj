@@ -574,6 +574,8 @@
 		DAB773B02020CBFC001E702E /* ViewOptionsListCellMetrics+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773AE2020CBFC001E702E /* ViewOptionsListCellMetrics+Factory.swift */; };
 		DAB773B22020CEA4001E702E /* ControllerOptions+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773B12020CEA4001E702E /* ControllerOptions+Config.swift */; };
 		DAB773B32020CEA4001E702E /* ControllerOptions+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773B12020CEA4001E702E /* ControllerOptions+Config.swift */; };
+		DAB773B52020CFDA001E702E /* Options+Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773B42020CFDA001E702E /* Options+Settings.swift */; };
+		DAB773B62020CFDA001E702E /* Options+Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773B42020CFDA001E702E /* Options+Settings.swift */; };
 		DAB786211FF4AE9900579BB5 /* NewAdd+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */; };
 		DAB786231FF4B3B400579BB5 /* NewAddError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786221FF4B3B400579BB5 /* NewAddError.swift */; };
 		DAB786251FF4B3DF00579BB5 /* NewAddError+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */; };
@@ -1174,6 +1176,7 @@
 		DAB773AB2020C918001E702E /* ViewOptionsListCellMetrics+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewOptionsListCellMetrics+Constants.swift"; sourceTree = "<group>"; };
 		DAB773AE2020CBFC001E702E /* ViewOptionsListCellMetrics+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewOptionsListCellMetrics+Factory.swift"; sourceTree = "<group>"; };
 		DAB773B12020CEA4001E702E /* ControllerOptions+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerOptions+Config.swift"; sourceTree = "<group>"; };
+		DAB773B42020CFDA001E702E /* Options+Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Options+Settings.swift"; sourceTree = "<group>"; };
 		DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Images.swift"; sourceTree = "<group>"; };
 		DAB786221FF4B3B400579BB5 /* NewAddError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddError.swift; sourceTree = "<group>"; };
 		DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddError+Description.swift"; sourceTree = "<group>"; };
@@ -2041,6 +2044,7 @@
 				DAB7738320208ADB001E702E /* Options.swift */,
 				DAB7739F2020AA42001E702E /* Options+Constants.swift */,
 				DAB773A22020AB9A001E702E /* Options+Factory.swift */,
+				DAB773B42020CFDA001E702E /* Options+Settings.swift */,
 				DAB773902020950A001E702E /* OptionsItemProtocol.swift */,
 				DAB77393202095B8001E702E /* OptionsItemMetrics.swift */,
 			);
@@ -2892,6 +2896,7 @@
 				DAB7739A2020A0AD001E702E /* ViewOptionsListCell.swift in Sources */,
 				DA2C17701FEF3C68001BDA54 /* ViewButtonContinue+Constants.swift in Sources */,
 				DA936CF91FFF121200740BE8 /* RecipeIngredientSpoonsBuilder.swift in Sources */,
+				DAB773B52020CFDA001E702E /* Options+Settings.swift in Sources */,
 				DA01622A2016B045009D7A65 /* CookItemFavouriteOn.swift in Sources */,
 				DA4233DE1FEDE56F0012A589 /* ArchPhotoCrop.swift in Sources */,
 				DA80B54F200C1DB000797D61 /* ViewCookPlay.swift in Sources */,
@@ -3367,6 +3372,7 @@
 				DA74F0D11FE6156D00F45310 /* FormatIngredientTypeQuantity.swift in Sources */,
 				DA74F0B21FE60A4F00F45310 /* BuildIngredientQuantity+Computed.swift in Sources */,
 				DA9089891FD4CE3700C1208A /* Model.swift in Sources */,
+				DAB773B62020CFDA001E702E /* Options+Settings.swift in Sources */,
 				DAF949F91FD8BCC6001BA32E /* ViewNewAdd.swift in Sources */,
 				DA91EAFB1FD62C1F0063560D /* ViewMain.swift in Sources */,
 				DACF55081FD7656F00069701 /* habanero.xcdatamodeld in Sources */,
