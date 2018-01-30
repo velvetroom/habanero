@@ -566,6 +566,8 @@
 		DAB773A42020AB9A001E702E /* Options+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773A22020AB9A001E702E /* Options+Factory.swift */; };
 		DAB773A62020B0BC001E702E /* ViewOptionsList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773A52020B0BC001E702E /* ViewOptionsList+Constants.swift */; };
 		DAB773A72020B0BC001E702E /* ViewOptionsList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773A52020B0BC001E702E /* ViewOptionsList+Constants.swift */; };
+		DAB773A92020B955001E702E /* ViewOptionsList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773A82020B955001E702E /* ViewOptionsList+Actions.swift */; };
+		DAB773AA2020B955001E702E /* ViewOptionsList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773A82020B955001E702E /* ViewOptionsList+Actions.swift */; };
 		DAB786211FF4AE9900579BB5 /* NewAdd+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */; };
 		DAB786231FF4B3B400579BB5 /* NewAddError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786221FF4B3B400579BB5 /* NewAddError.swift */; };
 		DAB786251FF4B3DF00579BB5 /* NewAddError+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */; };
@@ -1162,6 +1164,7 @@
 		DAB7739F2020AA42001E702E /* Options+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Options+Constants.swift"; sourceTree = "<group>"; };
 		DAB773A22020AB9A001E702E /* Options+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Options+Factory.swift"; sourceTree = "<group>"; };
 		DAB773A52020B0BC001E702E /* ViewOptionsList+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewOptionsList+Constants.swift"; sourceTree = "<group>"; };
+		DAB773A82020B955001E702E /* ViewOptionsList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewOptionsList+Actions.swift"; sourceTree = "<group>"; };
 		DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Images.swift"; sourceTree = "<group>"; };
 		DAB786221FF4B3B400579BB5 /* NewAddError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddError.swift; sourceTree = "<group>"; };
 		DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddError+Description.swift"; sourceTree = "<group>"; };
@@ -2041,6 +2044,7 @@
 				DAB7738D2020915C001E702E /* ViewOptionsBar.swift */,
 				DAB7739620209C98001E702E /* ViewOptionsList.swift */,
 				DAB773A52020B0BC001E702E /* ViewOptionsList+Constants.swift */,
+				DAB773A82020B955001E702E /* ViewOptionsList+Actions.swift */,
 				DAB773992020A0AD001E702E /* ViewOptionsListCell.swift */,
 				DAB7739C2020A32B001E702E /* ViewOptionsListCellMetrics.swift */,
 			);
@@ -2634,6 +2638,7 @@
 				DA74F0C41FE6139F00F45310 /* Format+Duration.swift in Sources */,
 				DA9089281FD4C66000C1208A /* Menu+Constants.swift in Sources */,
 				DA0162302016B570009D7A65 /* CookItem+Favourite.swift in Sources */,
+				DAB773A92020B955001E702E /* ViewOptionsList+Actions.swift in Sources */,
 				DAA07FFE20155880006FFC76 /* ViewCookFavourite.swift in Sources */,
 				DA91EB1E1FD62C1F0063560D /* ViewGradient+Constants.swift in Sources */,
 				DA5761D12005879D00A5151C /* ControllerCook.swift in Sources */,
@@ -3225,6 +3230,7 @@
 				DA3F0E7D1FDF326A0037C94D /* Ingredient+Keys.swift in Sources */,
 				DA6E807F1FF9B60B00175F70 /* Storage.swift in Sources */,
 				DA9089821FD4CE2E00C1208A /* ControllerParent+Constants.swift in Sources */,
+				DAB773AA2020B955001E702E /* ViewOptionsList+Actions.swift in Sources */,
 				DACF552E1FD7661E00069701 /* ExtensionNotification.swift in Sources */,
 				DA6E80851FF9B7A600175F70 /* StorageProviderFirebase.swift in Sources */,
 				DABA5EC51FEA36D60017F865 /* PhotoOptionCancel.swift in Sources */,
