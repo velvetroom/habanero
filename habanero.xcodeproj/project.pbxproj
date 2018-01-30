@@ -554,6 +554,8 @@
 		DAB773922020950A001E702E /* OptionsItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773902020950A001E702E /* OptionsItemProtocol.swift */; };
 		DAB77394202095B8001E702E /* OptionsItemMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB77393202095B8001E702E /* OptionsItemMetrics.swift */; };
 		DAB77395202095B8001E702E /* OptionsItemMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB77393202095B8001E702E /* OptionsItemMetrics.swift */; };
+		DAB7739720209C98001E702E /* ViewOptionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7739620209C98001E702E /* ViewOptionsList.swift */; };
+		DAB7739820209C98001E702E /* ViewOptionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7739620209C98001E702E /* ViewOptionsList.swift */; };
 		DAB786211FF4AE9900579BB5 /* NewAdd+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */; };
 		DAB786231FF4B3B400579BB5 /* NewAddError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786221FF4B3B400579BB5 /* NewAddError.swift */; };
 		DAB786251FF4B3DF00579BB5 /* NewAddError+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */; };
@@ -1144,6 +1146,7 @@
 		DAB7738D2020915C001E702E /* ViewOptionsBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOptionsBar.swift; sourceTree = "<group>"; };
 		DAB773902020950A001E702E /* OptionsItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsItemProtocol.swift; sourceTree = "<group>"; };
 		DAB77393202095B8001E702E /* OptionsItemMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsItemMetrics.swift; sourceTree = "<group>"; };
+		DAB7739620209C98001E702E /* ViewOptionsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOptionsList.swift; sourceTree = "<group>"; };
 		DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Images.swift"; sourceTree = "<group>"; };
 		DAB786221FF4B3B400579BB5 /* NewAddError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddError.swift; sourceTree = "<group>"; };
 		DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddError+Description.swift"; sourceTree = "<group>"; };
@@ -2019,6 +2022,7 @@
 			children = (
 				DAB7738720208B4F001E702E /* ViewOptions.swift */,
 				DAB7738D2020915C001E702E /* ViewOptionsBar.swift */,
+				DAB7739620209C98001E702E /* ViewOptionsList.swift */,
 			);
 			path = Options;
 			sourceTree = "<group>";
@@ -2822,6 +2826,7 @@
 				DA178198200D7D76007AF4A4 /* ControllerCookStep.swift in Sources */,
 				DA5FFE631FE7790000A38154 /* FormatIngredientTypeQuantity+Constants.swift in Sources */,
 				DA91EAEA1FD62C1F0063560D /* ViewMenu+Collection.swift in Sources */,
+				DAB7739720209C98001E702E /* ViewOptionsList.swift in Sources */,
 				DA91EB061FD62C1F0063560D /* ViewAlert.swift in Sources */,
 				DA6E80611FF98ABB00175F70 /* Cloud+Create.swift in Sources */,
 				DACF553D1FD7661E00069701 /* ExtensionNSLayoutConstraint.swift in Sources */,
@@ -2925,6 +2930,7 @@
 				DA90898A1FD4CE3E00C1208A /* Menu+Constants.swift in Sources */,
 				DA7B1FC7202069A40097202E /* Database+Delete.swift in Sources */,
 				DACEB3991FDC95480089B3FE /* NewItem.swift in Sources */,
+				DAB7739820209C98001E702E /* ViewOptionsList.swift in Sources */,
 				DACEB3AA1FDCAC0B0089B3FE /* ViewNewListCell+Config.swift in Sources */,
 				DA84C0F21FD73FCD008959EA /* ControllerNew.swift in Sources */,
 				DA91EB1F1FD62C1F0063560D /* ViewGradient+Constants.swift in Sources */,
