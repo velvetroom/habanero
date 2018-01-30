@@ -76,12 +76,24 @@ extension CookItem
         database:Database,
         completion:@escaping(() -> ()))
     {
-        let favouriteOff:CookItemFavouriteOff = CookItemFavouriteOff()
+        guard
+            
+            let favouriteOn:CookItemFavouriteOn = cookItem.favourite as? CookItemFavouriteOn
         
-        CookItem.favouriteItemUpdated(
-            cookItem:cookItem,
-            favourite:favouriteOff,
-            completion:completion)
+        else
+        {
+            return
+        }
+        
+        database.deleteFavourite(favourite:favouriteOn.recipeFavourite)
+        {
+            let favouriteOff:CookItemFavouriteOff = CookItemFavouriteOff()
+            
+            CookItem.favouriteItemUpdated(
+                cookItem:cookItem,
+                favourite:favouriteOff,
+                completion:completion)
+        }
     }
     
     private class func favouriteItemUpdated(
