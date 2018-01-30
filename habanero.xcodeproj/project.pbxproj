@@ -344,6 +344,8 @@
 		DA74F0D41FE6158A00F45310 /* FormatIngredientTypeSpoons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74F0D21FE6158A00F45310 /* FormatIngredientTypeSpoons.swift */; };
 		DA753DAB1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA753DAC1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
+		DA7B1FC6202069A40097202E /* Database+Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B1FC5202069A40097202E /* Database+Delete.swift */; };
+		DA7B1FC7202069A40097202E /* Database+Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B1FC5202069A40097202E /* Database+Delete.swift */; };
 		DA80B54F200C1DB000797D61 /* ViewCookPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B54E200C1DB000797D61 /* ViewCookPlay.swift */; };
 		DA80B550200C1DB000797D61 /* ViewCookPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B54E200C1DB000797D61 /* ViewCookPlay.swift */; };
 		DA80B552200C1DD300797D61 /* ViewCookBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B551200C1DD300797D61 /* ViewCookBack.swift */; };
@@ -1006,6 +1008,7 @@
 		DA74F0D21FE6158A00F45310 /* FormatIngredientTypeSpoons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatIngredientTypeSpoons.swift; sourceTree = "<group>"; };
 		DA753DA91FD5EB96007E5BC5 /* Design */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Design; sourceTree = "<group>"; };
 		DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = generic.xcassets; sourceTree = "<group>"; };
+		DA7B1FC5202069A40097202E /* Database+Delete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Delete.swift"; sourceTree = "<group>"; };
 		DA80B54E200C1DB000797D61 /* ViewCookPlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookPlay.swift; sourceTree = "<group>"; };
 		DA80B551200C1DD300797D61 /* ViewCookBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookBack.swift; sourceTree = "<group>"; };
 		DA80B554200C23AC00797D61 /* cook.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = cook.xcassets; sourceTree = "<group>"; };
@@ -2007,6 +2010,7 @@
 				DA2E7306201C555500EC5B94 /* Database+Create.swift */,
 				DADA67E2201C5F550032C9C9 /* Database+CreateBuild.swift */,
 				DA3CA10C201CBD5600D50387 /* Database+DeleteBuild.swift */,
+				DA7B1FC5202069A40097202E /* Database+Delete.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -2736,6 +2740,7 @@
 				DA9089211FD4C66000C1208A /* ControllerParent+Transitions.swift in Sources */,
 				DAF99F17200DAC710030866C /* CookStep.swift in Sources */,
 				DAE5E4891FE48F1D00CC40BA /* Home+Settings.swift in Sources */,
+				DA7B1FC6202069A40097202E /* Database+Delete.swift in Sources */,
 				DA35DD201FFDB95B0047881F /* StorageError+Description.swift in Sources */,
 				DAFA62DB20081A6F0068EC17 /* CookListItemIngredientsTitle.swift in Sources */,
 				DA5FFE661FE779C300A38154 /* FormatIngredientTypeSpoons+Constants.swift in Sources */,
@@ -2906,6 +2911,7 @@
 				DAFA62E520081EF30068EC17 /* ViewCookList+Actions.swift in Sources */,
 				DACEB39B1FDC96190089B3FE /* NewItem+Factory.swift in Sources */,
 				DA90898A1FD4CE3E00C1208A /* Menu+Constants.swift in Sources */,
+				DA7B1FC7202069A40097202E /* Database+Delete.swift in Sources */,
 				DACEB3991FDC95480089B3FE /* NewItem.swift in Sources */,
 				DACEB3AA1FDCAC0B0089B3FE /* ViewNewListCell+Config.swift in Sources */,
 				DA84C0F21FD73FCD008959EA /* ControllerNew.swift in Sources */,
