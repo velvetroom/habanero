@@ -556,6 +556,8 @@
 		DAB77395202095B8001E702E /* OptionsItemMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB77393202095B8001E702E /* OptionsItemMetrics.swift */; };
 		DAB7739720209C98001E702E /* ViewOptionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7739620209C98001E702E /* ViewOptionsList.swift */; };
 		DAB7739820209C98001E702E /* ViewOptionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7739620209C98001E702E /* ViewOptionsList.swift */; };
+		DAB7739A2020A0AD001E702E /* ViewOptionsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773992020A0AD001E702E /* ViewOptionsListCell.swift */; };
+		DAB7739B2020A0AD001E702E /* ViewOptionsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773992020A0AD001E702E /* ViewOptionsListCell.swift */; };
 		DAB786211FF4AE9900579BB5 /* NewAdd+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */; };
 		DAB786231FF4B3B400579BB5 /* NewAddError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786221FF4B3B400579BB5 /* NewAddError.swift */; };
 		DAB786251FF4B3DF00579BB5 /* NewAddError+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */; };
@@ -1147,6 +1149,7 @@
 		DAB773902020950A001E702E /* OptionsItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsItemProtocol.swift; sourceTree = "<group>"; };
 		DAB77393202095B8001E702E /* OptionsItemMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsItemMetrics.swift; sourceTree = "<group>"; };
 		DAB7739620209C98001E702E /* ViewOptionsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOptionsList.swift; sourceTree = "<group>"; };
+		DAB773992020A0AD001E702E /* ViewOptionsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOptionsListCell.swift; sourceTree = "<group>"; };
 		DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Images.swift"; sourceTree = "<group>"; };
 		DAB786221FF4B3B400579BB5 /* NewAddError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddError.swift; sourceTree = "<group>"; };
 		DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddError+Description.swift"; sourceTree = "<group>"; };
@@ -2023,6 +2026,7 @@
 				DAB7738720208B4F001E702E /* ViewOptions.swift */,
 				DAB7738D2020915C001E702E /* ViewOptionsBar.swift */,
 				DAB7739620209C98001E702E /* ViewOptionsList.swift */,
+				DAB773992020A0AD001E702E /* ViewOptionsListCell.swift */,
 			);
 			path = Options;
 			sourceTree = "<group>";
@@ -2846,6 +2850,7 @@
 				DA2E7301201C50BB00EC5B94 /* DatabaseProviderCoreData+Provider.swift in Sources */,
 				DAFCCA5E200DB805002377BC /* RecipeStepsList.swift in Sources */,
 				DA855E051FF367E600E1B69F /* PhotoCrop+Export.swift in Sources */,
+				DAB7739A2020A0AD001E702E /* ViewOptionsListCell.swift in Sources */,
 				DA2C17701FEF3C68001BDA54 /* ViewButtonContinue+Constants.swift in Sources */,
 				DA936CF91FFF121200740BE8 /* RecipeIngredientSpoonsBuilder.swift in Sources */,
 				DA01622A2016B045009D7A65 /* CookItemFavouriteOn.swift in Sources */,
@@ -3254,6 +3259,7 @@
 				DA35DD121FFDAEEB0047881F /* CloudItemBuilderProtocol.swift in Sources */,
 				DABDF3391FEB6B87002EF842 /* PhotoOptionCamera.swift in Sources */,
 				DACF553E1FD7661E00069701 /* ExtensionNSLayoutConstraint.swift in Sources */,
+				DAB7739B2020A0AD001E702E /* ViewOptionsListCell.swift in Sources */,
 				DA992D7A1FD61EE500A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */,
 				DAC732D41FF860F100980854 /* ViewNewAddListCellInfoImage.swift in Sources */,
 				DA8752E51FE3B74900AE74F5 /* ViewNewAddIngredientAmountListCell+Constants.swift in Sources */,
