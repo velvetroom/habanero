@@ -53,4 +53,13 @@ extension Options
             }
         }
     }
+    
+    func settingsUpdated()
+    {
+        DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
+        { [weak self] in
+        
+            self?.database.save()
+        }
+    }
 }

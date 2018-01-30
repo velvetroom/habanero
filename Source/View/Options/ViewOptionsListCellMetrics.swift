@@ -22,6 +22,10 @@ final class ViewOptionsListCellMetrics:ViewOptionsListCell
         viewSegmented.translatesAutoresizingMaskIntoConstraints = false
         viewSegmented.backgroundColor = UIColor.white
         viewSegmented.tintColor = UIColor.colourBackgroundDark
+        viewSegmented.addTarget(
+            self,
+            action:#selector(self.segementedUpdated(sender:)),
+            for:UIControlEvents.valueChanged)
         self.viewSegmented = viewSegmented
         
         self.addSubview(labelTitle)
@@ -55,6 +59,18 @@ final class ViewOptionsListCellMetrics:ViewOptionsListCell
         controller:ControllerOptions,
         item:OptionsItemProtocol)
     {
+        super.config(
+            controller:controller,
+            item:item)
+        
         controller.configureMetrics(viewMetrics:self)
+    }
+    
+    //MARK: selectors
+    
+    @objc
+    private func segementedUpdated(sender segmented:UISegmentedControl)
+    {
+        self.controller?.updateMetrics(viewMetrics:self)
     }
 }
