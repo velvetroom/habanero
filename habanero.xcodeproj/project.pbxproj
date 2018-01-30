@@ -540,6 +540,8 @@
 		DAAE61FB1FF6385300954EFC /* PhotoRotation+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE61F91FF6385300954EFC /* PhotoRotation+Constants.swift */; };
 		DAAE61FD1FF6465C00954EFC /* ControllerNewAdd+StepsActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE61FC1FF6465C00954EFC /* ControllerNewAdd+StepsActions.swift */; };
 		DAAE61FF1FF64E9700954EFC /* NewAdd+StepsUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE61FE1FF64E9700954EFC /* NewAdd+StepsUpdate.swift */; };
+		DAB773802020897B001E702E /* ControllerOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7737F2020897B001E702E /* ControllerOptions.swift */; };
+		DAB773812020897B001E702E /* ControllerOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7737F2020897B001E702E /* ControllerOptions.swift */; };
 		DAB786211FF4AE9900579BB5 /* NewAdd+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */; };
 		DAB786231FF4B3B400579BB5 /* NewAddError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786221FF4B3B400579BB5 /* NewAddError.swift */; };
 		DAB786251FF4B3DF00579BB5 /* NewAddError+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */; };
@@ -1123,6 +1125,7 @@
 		DAAE61F91FF6385300954EFC /* PhotoRotation+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoRotation+Constants.swift"; sourceTree = "<group>"; };
 		DAAE61FC1FF6465C00954EFC /* ControllerNewAdd+StepsActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerNewAdd+StepsActions.swift"; sourceTree = "<group>"; };
 		DAAE61FE1FF64E9700954EFC /* NewAdd+StepsUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+StepsUpdate.swift"; sourceTree = "<group>"; };
+		DAB7737F2020897B001E702E /* ControllerOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerOptions.swift; sourceTree = "<group>"; };
 		DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Images.swift"; sourceTree = "<group>"; };
 		DAB786221FF4B3B400579BB5 /* NewAddError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddError.swift; sourceTree = "<group>"; };
 		DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddError+Description.swift"; sourceTree = "<group>"; };
@@ -1727,6 +1730,7 @@
 		DA9088C31FD4C65F00C1208A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DAB7737E2020896E001E702E /* Options */,
 				DA5761CC2005876700A5151C /* Cook */,
 				DA9088C41FD4C65F00C1208A /* Abstract */,
 				DA9088CD1FD4C65F00C1208A /* Home */,
@@ -1969,6 +1973,14 @@
 				DA7B1FC5202069A40097202E /* Database+Delete.swift */,
 			);
 			path = Database;
+			sourceTree = "<group>";
+		};
+		DAB7737E2020896E001E702E /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7737F2020897B001E702E /* ControllerOptions.swift */,
+			);
+			path = Options;
 			sourceTree = "<group>";
 		};
 		DABA5EAB1FEA2E050017F865 /* Photo */ = {
@@ -2677,6 +2689,7 @@
 				DABA5EBE1FEA34D20017F865 /* PhotoOptionProtocol.swift in Sources */,
 				DAD97C9B201E22A60074490A /* Home+Favourites.swift in Sources */,
 				DA1F04FD1FE8E1DA00DF03A8 /* RecipeStepType.swift in Sources */,
+				DAB773802020897B001E702E /* ControllerOptions.swift in Sources */,
 				DACF553F1FD7661E00069701 /* ExtensionUIFont.swift in Sources */,
 				DA91EAFE1FD62C1F0063560D /* ViewParent+Constants.swift in Sources */,
 				DA91EB181FD62C1F0063560D /* ViewBorder.swift in Sources */,
@@ -3216,6 +3229,7 @@
 				DA70AFC61FD5AABF0016B0DC /* Home.swift in Sources */,
 				DA4AA50D1FE7374A00374B07 /* ViewNewAddIngredientListCell+Constants.swift in Sources */,
 				DA74F0B91FE611E500F45310 /* Format.swift in Sources */,
+				DAB773812020897B001E702E /* ControllerOptions.swift in Sources */,
 				DA3F0E901FDF45C30037C94D /* ViewNewAddIngredient.swift in Sources */,
 				DA11BA091FD8F2200038F9B0 /* ViewNewAddListCell.swift in Sources */,
 				DA16F1601FDFAF7C00EB6877 /* ViewNewAddIngredientBar+Constants.swift in Sources */,
