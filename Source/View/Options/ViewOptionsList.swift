@@ -6,6 +6,8 @@ final class ViewOptionsList:ViewCollection<ArchOptions, ViewCollectionCell, View
     {
         super.factoryViews()
         
+        self.collectionView.alwaysBounceVertical = true
+        
         self.flow.minimumLineSpacing = ViewOptionsList.Constants.interItemSpace
         self.flow.minimumInteritemSpacing = ViewOptionsList.Constants.interItemSpace
         self.flow.sectionInset = UIEdgeInsets(
@@ -13,6 +15,8 @@ final class ViewOptionsList:ViewCollection<ArchOptions, ViewCollectionCell, View
             left:0,
             bottom:ViewGlobal.Constants.menuHeight + ViewOptionsList.Constants.interItemSpace,
             right:0)
+        
+        self.registerCell(cell:ViewOptionsListCellMetrics.self)
     }
     
     override func collectionView(
