@@ -7,6 +7,7 @@ extension Menu
         get
         {
             let list:[MenuItemProtocol.Type] = [
+                MenuItemOptions.self,
                 MenuItemHome.self]
             
             return list
