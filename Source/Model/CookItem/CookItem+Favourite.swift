@@ -74,19 +74,20 @@ extension CookItem
         database:Database,
         completion:@escaping(() -> ()))
     {
+        let favouriteOff:CookItemFavouriteOff = CookItemFavouriteOff()
         
-        favouriteItemUpdated(
+        CookItem.favouriteItemUpdated(
             cookItem:cookItem,
-            favouriteType:CookItemFavouriteOff.self,
+            favourite:favouriteOff,
             completion:completion)
     }
     
     private class func favouriteItemUpdated(
         cookItem:CookItem,
-        favouriteType:CookItemFavouriteProtocol.Type,
+        favourite:CookItemFavouriteProtocol,
         completion:@escaping(() -> ()))
     {
-        cookItem.favourite = favouriteType
+        cookItem.favourite = favourite
         
         DispatchQueue.main.async
         {
