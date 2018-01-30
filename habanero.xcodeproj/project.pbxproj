@@ -564,6 +564,8 @@
 		DAB773A12020AA42001E702E /* Options+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7739F2020AA42001E702E /* Options+Constants.swift */; };
 		DAB773A32020AB9A001E702E /* Options+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773A22020AB9A001E702E /* Options+Factory.swift */; };
 		DAB773A42020AB9A001E702E /* Options+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773A22020AB9A001E702E /* Options+Factory.swift */; };
+		DAB773A62020B0BC001E702E /* ViewOptionsList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773A52020B0BC001E702E /* ViewOptionsList+Constants.swift */; };
+		DAB773A72020B0BC001E702E /* ViewOptionsList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773A52020B0BC001E702E /* ViewOptionsList+Constants.swift */; };
 		DAB786211FF4AE9900579BB5 /* NewAdd+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */; };
 		DAB786231FF4B3B400579BB5 /* NewAddError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786221FF4B3B400579BB5 /* NewAddError.swift */; };
 		DAB786251FF4B3DF00579BB5 /* NewAddError+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */; };
@@ -1159,6 +1161,7 @@
 		DAB7739C2020A32B001E702E /* ViewOptionsListCellMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOptionsListCellMetrics.swift; sourceTree = "<group>"; };
 		DAB7739F2020AA42001E702E /* Options+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Options+Constants.swift"; sourceTree = "<group>"; };
 		DAB773A22020AB9A001E702E /* Options+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Options+Factory.swift"; sourceTree = "<group>"; };
+		DAB773A52020B0BC001E702E /* ViewOptionsList+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewOptionsList+Constants.swift"; sourceTree = "<group>"; };
 		DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Images.swift"; sourceTree = "<group>"; };
 		DAB786221FF4B3B400579BB5 /* NewAddError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddError.swift; sourceTree = "<group>"; };
 		DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddError+Description.swift"; sourceTree = "<group>"; };
@@ -2037,6 +2040,7 @@
 				DAB7738720208B4F001E702E /* ViewOptions.swift */,
 				DAB7738D2020915C001E702E /* ViewOptionsBar.swift */,
 				DAB7739620209C98001E702E /* ViewOptionsList.swift */,
+				DAB773A52020B0BC001E702E /* ViewOptionsList+Constants.swift */,
 				DAB773992020A0AD001E702E /* ViewOptionsListCell.swift */,
 				DAB7739C2020A32B001E702E /* ViewOptionsListCellMetrics.swift */,
 			);
@@ -2750,6 +2754,7 @@
 				DA855E0E1FF3839000E1B69F /* PhotoCropMask.swift in Sources */,
 				DA5A97CC1FD605E1006223BA /* MenuItemGeneric.swift in Sources */,
 				DA936CF01FFF114900740BE8 /* RecipeIngredientGramsBuilder.swift in Sources */,
+				DAB773A62020B0BC001E702E /* ViewOptionsList+Constants.swift in Sources */,
 				DABA5EBE1FEA34D20017F865 /* PhotoOptionProtocol.swift in Sources */,
 				DAD97C9B201E22A60074490A /* Home+Favourites.swift in Sources */,
 				DA1F04FD1FE8E1DA00DF03A8 /* RecipeStepType.swift in Sources */,
@@ -3127,6 +3132,7 @@
 				DAA07FF420153E90006FFC76 /* CookItem.swift in Sources */,
 				DACF55461FD7661E00069701 /* ExtensionNSManagedObject.swift in Sources */,
 				DAB786291FF4B8E300579BB5 /* ViewNewAddListCellStepImage.swift in Sources */,
+				DAB773A72020B0BC001E702E /* ViewOptionsList+Constants.swift in Sources */,
 				DAB786251FF4B3DF00579BB5 /* NewAddError+Description.swift in Sources */,
 				DAE7C3821FE0B088003190FF /* NewAddIngredientError.swift in Sources */,
 				DA9089811FD4CE2E00C1208A /* ControllerParent+Orientation.swift in Sources */,
