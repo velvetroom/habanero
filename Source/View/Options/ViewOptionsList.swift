@@ -23,4 +23,49 @@ final class ViewOptionsList:ViewCollection<ArchOptions, ViewCollectionCell, View
         
         return count
     }
+    
+    override func collectionView(
+        _ collectionView:UICollectionView,
+        layout collectionViewLayout:UICollectionViewLayout,
+        sizeForItemAt indexPath:IndexPath) -> CGSize
+    {
+        let width:CGFloat = self.bounds.width
+        let item:OptionsItemProtocol = self.modelAtIndex(index:indexPath)
+        let size:CGSize = CGSize(
+            width:width,
+            height:item.cellHeight)
+        
+        return size
+    }
+    
+    override func collectionView(
+        _ collectionView:UICollectionView,
+        cellForItemAt indexPath:IndexPath) -> UICollectionViewCell
+    {
+        let item:OptionsItemProtocol = self.modelAtIndex(index:indexPath)
+        
+        let cell:ViewOptionsListCell = self.cellAtIndex(
+            indexPath:indexPath,
+            reusableIdentifier:item.reusableIdentifier)
+        
+        cell.config(
+            controller:self.controller,
+            item:item)
+        
+        return cell
+    }
+    
+    override func collectionView(
+        _ collectionView:UICollectionView,
+        shouldSelectItemAt indexPath:IndexPath) -> Bool
+    {
+        return false
+    }
+    
+    override func collectionView(
+        _ collectionView:UICollectionView,
+        shouldHighlightItemAt indexPath:IndexPath) -> Bool
+    {
+        return false
+    }
 }
