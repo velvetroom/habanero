@@ -1,6 +1,6 @@
 import UIKit
 
-final class ViewOptionsListCell:ViewCollectionCell
+class ViewOptionsListCell:ViewCollectionCell
 {
     
 }
