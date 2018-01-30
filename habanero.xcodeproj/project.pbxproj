@@ -548,6 +548,8 @@
 		DAB7738920208B4F001E702E /* ViewOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7738720208B4F001E702E /* ViewOptions.swift */; };
 		DAB7738B20208F05001E702E /* MenuItemOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7738A20208F05001E702E /* MenuItemOptions.swift */; };
 		DAB7738C20208F05001E702E /* MenuItemOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7738A20208F05001E702E /* MenuItemOptions.swift */; };
+		DAB7738E2020915C001E702E /* ViewOptionsBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7738D2020915C001E702E /* ViewOptionsBar.swift */; };
+		DAB7738F2020915C001E702E /* ViewOptionsBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7738D2020915C001E702E /* ViewOptionsBar.swift */; };
 		DAB786211FF4AE9900579BB5 /* NewAdd+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */; };
 		DAB786231FF4B3B400579BB5 /* NewAddError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786221FF4B3B400579BB5 /* NewAddError.swift */; };
 		DAB786251FF4B3DF00579BB5 /* NewAddError+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */; };
@@ -1135,6 +1137,7 @@
 		DAB7738320208ADB001E702E /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
 		DAB7738720208B4F001E702E /* ViewOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOptions.swift; sourceTree = "<group>"; };
 		DAB7738A20208F05001E702E /* MenuItemOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemOptions.swift; sourceTree = "<group>"; };
+		DAB7738D2020915C001E702E /* ViewOptionsBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOptionsBar.swift; sourceTree = "<group>"; };
 		DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Images.swift"; sourceTree = "<group>"; };
 		DAB786221FF4B3B400579BB5 /* NewAddError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddError.swift; sourceTree = "<group>"; };
 		DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddError+Description.swift"; sourceTree = "<group>"; };
@@ -2007,6 +2010,7 @@
 			isa = PBXGroup;
 			children = (
 				DAB7738720208B4F001E702E /* ViewOptions.swift */,
+				DAB7738D2020915C001E702E /* ViewOptionsBar.swift */,
 			);
 			path = Options;
 			sourceTree = "<group>";
@@ -2592,6 +2596,7 @@
 				DA35DD231FFDBAC50047881F /* StorageContainer.swift in Sources */,
 				DA70FD8C2010179B003AF6A6 /* ControllerCookStep+Progress.swift in Sources */,
 				DAC104BC200EB618004617FD /* CookStepItemProtocol.swift in Sources */,
+				DAB7738E2020915C001E702E /* ViewOptionsBar.swift in Sources */,
 				DA74F0C41FE6139F00F45310 /* Format+Duration.swift in Sources */,
 				DA9089281FD4C66000C1208A /* Menu+Constants.swift in Sources */,
 				DA0162302016B570009D7A65 /* CookItem+Favourite.swift in Sources */,
@@ -3165,6 +3170,7 @@
 				DAADC4A71FFC826D00862A90 /* NewAddValidateStrategyMinSteps+Constants.swift in Sources */,
 				DA5761DA2005893C00A5151C /* ViewCook.swift in Sources */,
 				DA5FFE641FE7790000A38154 /* FormatIngredientTypeQuantity+Constants.swift in Sources */,
+				DAB7738F2020915C001E702E /* ViewOptionsBar.swift in Sources */,
 				DA5FFE6A1FE77A2F00A38154 /* FormatIngredientTypeMililitres+Constants.swift in Sources */,
 				DA9089931FD4CE3E00C1208A /* MenuItemProtocol.swift in Sources */,
 				DA4233DF1FEDE56F0012A589 /* ArchPhotoCrop.swift in Sources */,
