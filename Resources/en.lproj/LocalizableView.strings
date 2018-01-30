@@ -15,6 +15,7 @@ ViewNewAddIngredientAmountInput_textField="0";
 ViewNewAddIngredientAmountBar_buttonAdd="Add";
 ViewCookListCellIngredientsTitle_labelTitle="Ingredients";
 ViewOptionsBar_labelTitle="Settings";
+ViewOptionsListCellMetrics_labelTitle="Metrics";
 ViewTextBar_button="Done";
 ViewPhotoCropMenu_buttonCancel="Cancel";
 ViewPhotoCropMenu_buttonAccept="Accept";

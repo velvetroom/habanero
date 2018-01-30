@@ -568,6 +568,8 @@
 		DAB773A72020B0BC001E702E /* ViewOptionsList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773A52020B0BC001E702E /* ViewOptionsList+Constants.swift */; };
 		DAB773A92020B955001E702E /* ViewOptionsList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773A82020B955001E702E /* ViewOptionsList+Actions.swift */; };
 		DAB773AA2020B955001E702E /* ViewOptionsList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773A82020B955001E702E /* ViewOptionsList+Actions.swift */; };
+		DAB773AC2020C918001E702E /* ViewOptionsListCellMetrics+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773AB2020C918001E702E /* ViewOptionsListCellMetrics+Constants.swift */; };
+		DAB773AD2020C918001E702E /* ViewOptionsListCellMetrics+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB773AB2020C918001E702E /* ViewOptionsListCellMetrics+Constants.swift */; };
 		DAB786211FF4AE9900579BB5 /* NewAdd+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */; };
 		DAB786231FF4B3B400579BB5 /* NewAddError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786221FF4B3B400579BB5 /* NewAddError.swift */; };
 		DAB786251FF4B3DF00579BB5 /* NewAddError+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */; };
@@ -1165,6 +1167,7 @@
 		DAB773A22020AB9A001E702E /* Options+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Options+Factory.swift"; sourceTree = "<group>"; };
 		DAB773A52020B0BC001E702E /* ViewOptionsList+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewOptionsList+Constants.swift"; sourceTree = "<group>"; };
 		DAB773A82020B955001E702E /* ViewOptionsList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewOptionsList+Actions.swift"; sourceTree = "<group>"; };
+		DAB773AB2020C918001E702E /* ViewOptionsListCellMetrics+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewOptionsListCellMetrics+Constants.swift"; sourceTree = "<group>"; };
 		DAB786201FF4AE9900579BB5 /* NewAdd+Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Images.swift"; sourceTree = "<group>"; };
 		DAB786221FF4B3B400579BB5 /* NewAddError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddError.swift; sourceTree = "<group>"; };
 		DAB786241FF4B3DF00579BB5 /* NewAddError+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddError+Description.swift"; sourceTree = "<group>"; };
@@ -2047,6 +2050,7 @@
 				DAB773A82020B955001E702E /* ViewOptionsList+Actions.swift */,
 				DAB773992020A0AD001E702E /* ViewOptionsListCell.swift */,
 				DAB7739C2020A32B001E702E /* ViewOptionsListCellMetrics.swift */,
+				DAB773AB2020C918001E702E /* ViewOptionsListCellMetrics+Constants.swift */,
 			);
 			path = Options;
 			sourceTree = "<group>";
@@ -2808,6 +2812,7 @@
 				DAE35C9A2005D34F002B1C9C /* ViewCookHeader+Constants.swift in Sources */,
 				DAE7C3771FE0996B003190FF /* IngredientList.swift in Sources */,
 				DAD64C112011307800E74F76 /* ViewCookStepListCellText+Constants.swift in Sources */,
+				DAB773AC2020C918001E702E /* ViewOptionsListCellMetrics+Constants.swift in Sources */,
 				DA9089201FD4C66000C1208A /* ControllerParent+Menu.swift in Sources */,
 				DA91EB241FD62D700063560D /* ViewControllableProtocol.swift in Sources */,
 				DA2E72F5201C4AA900EC5B94 /* DatabaseProviderProtocol.swift in Sources */,
@@ -3004,6 +3009,7 @@
 				DA8752CB1FE3863C00AE74F5 /* ViewNewAddIngredientAmountListCell.swift in Sources */,
 				DACF55361FD7661E00069701 /* ExtensionString+Constants.swift in Sources */,
 				DADA67E4201C5F550032C9C9 /* Database+CreateBuild.swift in Sources */,
+				DAB773AD2020C918001E702E /* ViewOptionsListCellMetrics+Constants.swift in Sources */,
 				DAC104C6200EBF13004617FD /* CookStep+Factory.swift in Sources */,
 				DA0162282016AEE6009D7A65 /* CookItemFavouriteProtocol.swift in Sources */,
 				DA91EAFD1FD62C1F0063560D /* ViewParent+Transitions.swift in Sources */,

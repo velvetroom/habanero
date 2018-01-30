@@ -4,6 +4,6 @@ extension Options
 {
     struct Constants
     {
-        static let metricsCellHeight:CGFloat = 60
+        static let metricsCellHeight:CGFloat = 180
     }
 }
