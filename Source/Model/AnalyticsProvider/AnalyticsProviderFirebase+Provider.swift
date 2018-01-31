@@ -2,6 +2,16 @@ import Foundation
 
 extension AnalyticsProviderFirebase
 {
+    //MARK: private
+    
+    private func parametersForRecipe(recipe:Recipe) -> [String:Any]
+    {
+        let parameters:[String:Any] = [
+            AnalyticsProviderFirebase.Constants.paramenterRecipeID : recipe.identifier]
+        
+        return parameters
+    }
+    
     //MARK: internal
     
     func start()
@@ -19,11 +29,19 @@ extension AnalyticsProviderFirebase
     
     func favouriteRecipe(recipe:Recipe)
     {
+        let parameters:[String:Any] = self.parametersForRecipe(recipe:recipe)
         
+        self.logEvent(
+            eventName:AnalyticsProviderFirebase.Constants.eventFavourite,
+            parameters:parameters)
     }
     
     func unfavouriteRecipe(recipe:Recipe)
     {
+        let parameters:[String:Any] = self.parametersForRecipe(recipe:recipe)
         
+        self.logEvent(
+            eventName:AnalyticsProviderFirebase.Constants.eventUnfavourite,
+            parameters:parameters)
     }
 }
