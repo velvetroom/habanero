@@ -59,6 +59,9 @@ extension CookItem
         database:Database,
         completion:@escaping(() -> ()))
     {
+        let analytics:Analytics = Analytics()
+        analytics.favouriteRecipe(recipe:cookItem.recipe)
+        
         database.createRecipeFavourite(identifier:cookItem.recipe.identifier)
         { (favourite:RecipeFavourite) in
             
@@ -76,6 +79,9 @@ extension CookItem
         database:Database,
         completion:@escaping(() -> ()))
     {
+        let analytics:Analytics = Analytics()
+        analytics.unfavouriteRecipe(recipe:cookItem.recipe)
+        
         guard
             
             let favouriteOn:CookItemFavouriteOn = cookItem.favourite as? CookItemFavouriteOn
