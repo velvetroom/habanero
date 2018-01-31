@@ -191,6 +191,8 @@
 		DA4E0C102021AB1B00F5AEE2 /* AnalyticsProviderFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E0C0E2021AB1B00F5AEE2 /* AnalyticsProviderFirebase.swift */; };
 		DA4E0C122021ADCF00F5AEE2 /* AnalyticsProviderFirebase+Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E0C112021ADCF00F5AEE2 /* AnalyticsProviderFirebase+Provider.swift */; };
 		DA4E0C132021ADCF00F5AEE2 /* AnalyticsProviderFirebase+Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E0C112021ADCF00F5AEE2 /* AnalyticsProviderFirebase+Provider.swift */; };
+		DA4E0C152021B0C700F5AEE2 /* AnalyticsProviderFirebase+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E0C142021B0C700F5AEE2 /* AnalyticsProviderFirebase+Constants.swift */; };
+		DA4E0C162021B0C700F5AEE2 /* AnalyticsProviderFirebase+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E0C142021B0C700F5AEE2 /* AnalyticsProviderFirebase+Constants.swift */; };
 		DA55E2241FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */; };
 		DA55E2251FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */; };
 		DA5761CE2005877600A5151C /* ArchCook.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5761CD2005877600A5151C /* ArchCook.swift */; };
@@ -939,6 +941,7 @@
 		DA4E0C0B2021AAFB00F5AEE2 /* AnalyticsProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsProviderProtocol.swift; sourceTree = "<group>"; };
 		DA4E0C0E2021AB1B00F5AEE2 /* AnalyticsProviderFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsProviderFirebase.swift; sourceTree = "<group>"; };
 		DA4E0C112021ADCF00F5AEE2 /* AnalyticsProviderFirebase+Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnalyticsProviderFirebase+Provider.swift"; sourceTree = "<group>"; };
+		DA4E0C142021B0C700F5AEE2 /* AnalyticsProviderFirebase+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnalyticsProviderFirebase+Constants.swift"; sourceTree = "<group>"; };
 		DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoCropDisplayShade.swift; sourceTree = "<group>"; };
 		DA5761CD2005877600A5151C /* ArchCook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchCook.swift; sourceTree = "<group>"; };
 		DA5761D02005879D00A5151C /* ControllerCook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerCook.swift; sourceTree = "<group>"; };
@@ -1478,6 +1481,7 @@
 			children = (
 				DA4E0C0B2021AAFB00F5AEE2 /* AnalyticsProviderProtocol.swift */,
 				DA4E0C0E2021AB1B00F5AEE2 /* AnalyticsProviderFirebase.swift */,
+				DA4E0C142021B0C700F5AEE2 /* AnalyticsProviderFirebase+Constants.swift */,
 				DA4E0C112021ADCF00F5AEE2 /* AnalyticsProviderFirebase+Provider.swift */,
 			);
 			path = AnalyticsProvider;
@@ -2840,6 +2844,7 @@
 				DA74F0D31FE6158A00F45310 /* FormatIngredientTypeSpoons.swift in Sources */,
 				DA11BA0B1FD8F3DD0038F9B0 /* ViewBarBack.swift in Sources */,
 				DACF553B1FD7661E00069701 /* ExtensionMKAnnotationView.swift in Sources */,
+				DA4E0C152021B0C700F5AEE2 /* AnalyticsProviderFirebase+Constants.swift in Sources */,
 				DAFA62DE20081AA00068EC17 /* CookListItemIngredient.swift in Sources */,
 				DACF55311FD7661E00069701 /* ExtensionCGImage.swift in Sources */,
 				DA4233E61FEDE60F0012A589 /* ViewPhotoCrop.swift in Sources */,
@@ -3066,6 +3071,7 @@
 				DA58C6E71FD9E216000E6F30 /* NewAdd+Factory.swift in Sources */,
 				DAC104C0200EBD98004617FD /* CookStepItemText.swift in Sources */,
 				DA4233EA1FEDEBE10012A589 /* ViewPhotoCropMenu.swift in Sources */,
+				DA4E0C162021B0C700F5AEE2 /* AnalyticsProviderFirebase+Constants.swift in Sources */,
 				DA2C17771FEF4305001BDA54 /* ViewPhotoCropDisplayImage.swift in Sources */,
 				DA71D66D1FDA43EF003A33E1 /* ViewNewAddListFooterInfo.swift in Sources */,
 				DA8E738C1FF88F3C005264F4 /* ViewNewAddListCellEditable.swift in Sources */,

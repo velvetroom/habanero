@@ -22,4 +22,9 @@ final class AnalyticsProviderFirebase:AnalyticsProviderProtocol
     {
         Firebase.Analytics.setScreenName(screenName, screenClass:screenName)
     }
+    
+    func event()
+    {
+        Firebase.Analytics.logEvent(<#T##name: String##String#>, parameters: <#T##[String : Any]?#>)
+    }
 }

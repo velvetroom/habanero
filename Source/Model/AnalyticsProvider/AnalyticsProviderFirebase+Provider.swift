@@ -16,4 +16,14 @@ extension AnalyticsProviderFirebase
         
         self.setScreen(screenName:controllerName)
     }
+    
+    func favouriteRecipe(recipe:Recipe)
+    {
+        
+    }
+    
+    func unfavouriteRecipe(recipe:Recipe)
+    {
+        
+    }
 }
