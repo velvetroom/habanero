@@ -185,6 +185,8 @@
 		DA4AA5091FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5081FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift */; };
 		DA4AA50A1FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5081FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift */; };
 		DA4AA50D1FE7374A00374B07 /* ViewNewAddIngredientListCell+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA50B1FE7374A00374B07 /* ViewNewAddIngredientListCell+Constants.swift */; };
+		DA4E0C0C2021AAFB00F5AEE2 /* AnalyticsProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E0C0B2021AAFB00F5AEE2 /* AnalyticsProviderProtocol.swift */; };
+		DA4E0C0D2021AAFB00F5AEE2 /* AnalyticsProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E0C0B2021AAFB00F5AEE2 /* AnalyticsProviderProtocol.swift */; };
 		DA55E2241FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */; };
 		DA55E2251FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */; };
 		DA5761CE2005877600A5151C /* ArchCook.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5761CD2005877600A5151C /* ArchCook.swift */; };
@@ -930,6 +932,7 @@
 		DA4AA5051FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormatIngredientTypeCups+Constants.swift"; sourceTree = "<group>"; };
 		DA4AA5081FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormatIngredientTypeGrams+Constants.swift"; sourceTree = "<group>"; };
 		DA4AA50B1FE7374A00374B07 /* ViewNewAddIngredientListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientListCell+Constants.swift"; sourceTree = "<group>"; };
+		DA4E0C0B2021AAFB00F5AEE2 /* AnalyticsProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsProviderProtocol.swift; sourceTree = "<group>"; };
 		DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoCropDisplayShade.swift; sourceTree = "<group>"; };
 		DA5761CD2005877600A5151C /* ArchCook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchCook.swift; sourceTree = "<group>"; };
 		DA5761D02005879D00A5151C /* ControllerCook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerCook.swift; sourceTree = "<group>"; };
@@ -1464,6 +1467,14 @@
 			path = NewAddIngredient;
 			sourceTree = "<group>";
 		};
+		DA4E0C0A2021AAEE00F5AEE2 /* AnalyticsProvider */ = {
+			isa = PBXGroup;
+			children = (
+				DA4E0C0B2021AAFB00F5AEE2 /* AnalyticsProviderProtocol.swift */,
+			);
+			path = AnalyticsProvider;
+			sourceTree = "<group>";
+		};
 		DA5761CC2005876700A5151C /* Cook */ = {
 			isa = PBXGroup;
 			children = (
@@ -1839,6 +1850,7 @@
 		DA9088D11FD4C65F00C1208A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DA4E0C0A2021AAEE00F5AEE2 /* AnalyticsProvider */,
 				DAB7738220208ACB001E702E /* Options */,
 				DAA07FF020153E8F006FFC76 /* CookItem */,
 				DAF99F15200DAC690030866C /* CookStep */,
@@ -2692,6 +2704,7 @@
 				DAA07FF820153F25006FFC76 /* CookItem+Ingredients.swift in Sources */,
 				DACF55451FD7661E00069701 /* ExtensionNSManagedObject.swift in Sources */,
 				DAB773B22020CEA4001E702E /* ControllerOptions+Config.swift in Sources */,
+				DA4E0C0C2021AAFB00F5AEE2 /* AnalyticsProviderProtocol.swift in Sources */,
 				DA91EAFC1FD62C1F0063560D /* ViewParent+Transitions.swift in Sources */,
 				DAC104C8200EC8C6004617FD /* ViewCookStepList+Actions.swift in Sources */,
 				DAE35C9D2005E57C002B1C9C /* ViewCookList.swift in Sources */,
@@ -3323,6 +3336,7 @@
 				DA6E804D1FF96C0D00175F70 /* NewAdd+Delete.swift in Sources */,
 				DA9089831FD4CE2E00C1208A /* ControllerParent+Menu.swift in Sources */,
 				DA6835A020017C120087C77D /* RecipeStepImageBuilder.swift in Sources */,
+				DA4E0C0D2021AAFB00F5AEE2 /* AnalyticsProviderProtocol.swift in Sources */,
 				DAA333D21FDB1453002D766C /* New+Load.swift in Sources */,
 				DAE35C982005D0C5002B1C9C /* ViewCookHeader.swift in Sources */,
 				DA91EAEB1FD62C1F0063560D /* ViewMenu+Collection.swift in Sources */,
