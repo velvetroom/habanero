@@ -10,7 +10,8 @@ final class AppDelegate:UIResponder, UIApplicationDelegate
         didFinishLaunchingWithOptions launchOptions:
         [UIApplicationLaunchOptionsKey:Any]?) -> Bool
     {
-        Analytics.start()
+        let analytics:Analytics = Analytics()
+        analytics.start()
         
         let window:UIWindow = UIWindow(frame:UIScreen.main.bounds)
         window.backgroundColor = UIColor.white

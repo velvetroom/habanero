@@ -103,6 +103,7 @@ class Controller<A>:UIViewController where A.M:Model<A>
     {
         super.viewDidAppear(animated)
         
-        Analytics.setScreenView(controller:self)
+        let analytics:Analytics = Analytics()
+        analytics.setScreen(controller:self)
     }
 }

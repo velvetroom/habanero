@@ -11,5 +11,13 @@ final class Analytics
     
     //MARK: internal
     
+    func start()
+    {
+        self.provider.start()
+    }
     
+    func setScreen<A>(controller:Controller<A>)
+    {
+        self.provider.setScreen(controller:controller)
+    }
 }
