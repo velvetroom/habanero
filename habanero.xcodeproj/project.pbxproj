@@ -187,6 +187,8 @@
 		DA4AA50D1FE7374A00374B07 /* ViewNewAddIngredientListCell+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA50B1FE7374A00374B07 /* ViewNewAddIngredientListCell+Constants.swift */; };
 		DA4E0C0C2021AAFB00F5AEE2 /* AnalyticsProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E0C0B2021AAFB00F5AEE2 /* AnalyticsProviderProtocol.swift */; };
 		DA4E0C0D2021AAFB00F5AEE2 /* AnalyticsProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E0C0B2021AAFB00F5AEE2 /* AnalyticsProviderProtocol.swift */; };
+		DA4E0C0F2021AB1B00F5AEE2 /* AnalyticsProviderFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E0C0E2021AB1B00F5AEE2 /* AnalyticsProviderFirebase.swift */; };
+		DA4E0C102021AB1B00F5AEE2 /* AnalyticsProviderFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E0C0E2021AB1B00F5AEE2 /* AnalyticsProviderFirebase.swift */; };
 		DA55E2241FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */; };
 		DA55E2251FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */; };
 		DA5761CE2005877600A5151C /* ArchCook.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5761CD2005877600A5151C /* ArchCook.swift */; };
@@ -933,6 +935,7 @@
 		DA4AA5081FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormatIngredientTypeGrams+Constants.swift"; sourceTree = "<group>"; };
 		DA4AA50B1FE7374A00374B07 /* ViewNewAddIngredientListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientListCell+Constants.swift"; sourceTree = "<group>"; };
 		DA4E0C0B2021AAFB00F5AEE2 /* AnalyticsProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsProviderProtocol.swift; sourceTree = "<group>"; };
+		DA4E0C0E2021AB1B00F5AEE2 /* AnalyticsProviderFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsProviderFirebase.swift; sourceTree = "<group>"; };
 		DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoCropDisplayShade.swift; sourceTree = "<group>"; };
 		DA5761CD2005877600A5151C /* ArchCook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchCook.swift; sourceTree = "<group>"; };
 		DA5761D02005879D00A5151C /* ControllerCook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerCook.swift; sourceTree = "<group>"; };
@@ -1471,6 +1474,7 @@
 			isa = PBXGroup;
 			children = (
 				DA4E0C0B2021AAFB00F5AEE2 /* AnalyticsProviderProtocol.swift */,
+				DA4E0C0E2021AB1B00F5AEE2 /* AnalyticsProviderFirebase.swift */,
 			);
 			path = AnalyticsProvider;
 			sourceTree = "<group>";
@@ -2652,6 +2656,7 @@
 				DA35DD0B1FFDAADF0047881F /* RecipeStatus.swift in Sources */,
 				DA35DD1A1FFDB4A30047881F /* RecipeList.swift in Sources */,
 				DAB773912020950A001E702E /* OptionsItemProtocol.swift in Sources */,
+				DA4E0C0F2021AB1B00F5AEE2 /* AnalyticsProviderFirebase.swift in Sources */,
 				DAFA62ED200826660068EC17 /* ViewCook+Constants.swift in Sources */,
 				DA33F325200FD99D00F07E48 /* ViewCookStepProgressIndicator.swift in Sources */,
 				DA683593200176130087C77D /* RecipeStep+Factory.swift in Sources */,
@@ -3072,6 +3077,7 @@
 				DA0750202004528D002C428A /* Storage+Load.swift in Sources */,
 				DAE7C37C1FE0A7F6003190FF /* ControllerNewAddIngredient+Select.swift in Sources */,
 				DA91EB091FD62C1F0063560D /* ViewPushBackground.swift in Sources */,
+				DA4E0C102021AB1B00F5AEE2 /* AnalyticsProviderFirebase.swift in Sources */,
 				DA3F0E881FDF44920037C94D /* ArchNewAddIngredient.swift in Sources */,
 				DA5D71C81FDB56E200429F5D /* NewAddSectionItemInfoDuration.swift in Sources */,
 				DA60429B1FE2190100758A2F /* ArchNewAddIngredientAmount.swift in Sources */,
