@@ -10,7 +10,7 @@ final class ViewCookStepProgress:View<ArchCookStep>
         super.factoryViews()
         self.isUserInteractionEnabled = false
         
-        let barBackground:ViewBorder = ViewBorder(colour:UIColor.colourHabaneroDark)
+        let barBackground:ViewBorder = ViewBorder(colour:UIColor.colourHabaneroDark.withAlphaComponent(0.3))
         
         let barForeground:ViewBorder = ViewBorder(colour:UIColor.colourHabanero)
         
