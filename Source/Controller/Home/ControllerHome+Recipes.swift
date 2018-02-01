@@ -94,14 +94,7 @@ extension ControllerHome
         cookItem:CookItem,
         completion:@escaping(() -> ()))
     {
-        guard
-            
-            let database:Database = self.model.database
-        
-        else
-        {
-            return
-        }
+        let database:Database = self.model.database
         
         cookItem.favourite.selected(
             cookItem,
