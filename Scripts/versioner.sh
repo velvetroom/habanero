@@ -1,8 +1,9 @@
 #!/bin/bash
 
 sleep 1
+
 build=$(git rev-list HEAD --count)
-version=$(agvtool what-marketing-version -terse1)
+version=$(git describe --tags $(git rev-list --tags --max-count=1))
 
 if [[ $version == *"."* ]]; then
 
@@ -27,5 +28,4 @@ fi
 
 new_version="$version_major.$version_minor.$build"
 
-agvtool new-version -all $build
-agvtool new-marketing-version $new_version
+echo $new_version
