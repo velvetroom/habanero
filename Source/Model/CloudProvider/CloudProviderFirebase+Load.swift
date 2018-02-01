@@ -46,10 +46,10 @@ extension CloudProviderFirebase
         for document:DocumentSnapshot in documents
         {
             let identifier:String = document.documentID
-            let json:[String:Any] = document.data()
             
             guard
                 
+                let json:[String:Any] = document.data(),
                 let item:T.Item = T.factoryItem(
                     identifier:identifier,
                     parentPath:collectionPath,

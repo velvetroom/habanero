@@ -31,7 +31,7 @@ extension CloudProviderFirebase
             
             let currentValue:Int
             
-            if let propertyValue:Int = snapshot.data()[property] as? Int
+            if let propertyValue:Int = snapshot.data()?[property] as? Int
             {
                 currentValue = propertyValue
             }
