@@ -628,6 +628,7 @@
 		DABDF3391FEB6B87002EF842 /* PhotoOptionCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDF3371FEB6B87002EF842 /* PhotoOptionCamera.swift */; };
 		DABDF33B1FEB6BC8002EF842 /* PhotoOptionLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDF33A1FEB6BC8002EF842 /* PhotoOptionLibrary.swift */; };
 		DABDF33C1FEB6BC8002EF842 /* PhotoOptionLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDF33A1FEB6BC8002EF842 /* PhotoOptionLibrary.swift */; };
+		DABE08772022FF03004D299E /* brand.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABE08762022FF03004D299E /* brand.xcassets */; };
 		DAC104B0200EA921004617FD /* ViewCookStepList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104AF200EA921004617FD /* ViewCookStepList.swift */; };
 		DAC104B1200EA921004617FD /* ViewCookStepList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104AF200EA921004617FD /* ViewCookStepList.swift */; };
 		DAC104B3200EA9BA004617FD /* ViewCookStepListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104B2200EA9BA004617FD /* ViewCookStepListCell.swift */; };
@@ -1216,6 +1217,7 @@
 		DABC1D8B2018D6AA000EE4E6 /* Cloud+Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cloud+Transaction.swift"; sourceTree = "<group>"; };
 		DABDF3371FEB6B87002EF842 /* PhotoOptionCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoOptionCamera.swift; sourceTree = "<group>"; };
 		DABDF33A1FEB6BC8002EF842 /* PhotoOptionLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoOptionLibrary.swift; sourceTree = "<group>"; };
+		DABE08762022FF03004D299E /* brand.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = brand.xcassets; sourceTree = "<group>"; };
 		DAC104AF200EA921004617FD /* ViewCookStepList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookStepList.swift; sourceTree = "<group>"; };
 		DAC104B2200EA9BA004617FD /* ViewCookStepListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookStepListCell.swift; sourceTree = "<group>"; };
 		DAC104B5200EABF9004617FD /* ViewCookStepListCellText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookStepListCellText.swift; sourceTree = "<group>"; };
@@ -1772,6 +1774,7 @@
 				DA16F1651FDFC05900EB6877 /* spinner.xcassets */,
 				DABA5EC61FEA3A230017F865 /* photo.xcassets */,
 				DA80B554200C23AC00797D61 /* cook.xcassets */,
+				DABE08762022FF03004D299E /* brand.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -2445,6 +2448,7 @@
 			files = (
 				DABA5EC71FEA3A230017F865 /* photo.xcassets in Resources */,
 				DA9089031FD4C65F00C1208A /* LaunchScreen.storyboard in Resources */,
+				DABE08772022FF03004D299E /* brand.xcassets in Resources */,
 				DA6BF0D91FDDFDDC0027C167 /* GoogleService-Info.plist in Resources */,
 				DA3F0EB11FD7480000593B83 /* menu.xcassets in Resources */,
 				DA9089071FD4C65F00C1208A /* LocalizableController.strings in Resources */,
@@ -3611,6 +3615,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9A96C209AACB2D78CA84704A /* Pods-user.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
 				INFOPLIST_FILE = "$(SRCROOT)/Info/user/Info.plist";
@@ -3626,6 +3631,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C5F85F39D418EA9DD4064B0 /* Pods-user.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
 				INFOPLIST_FILE = "$(SRCROOT)/Info/user/Info.plist";
