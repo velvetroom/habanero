@@ -23,10 +23,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgT-Yh-5ys" userLabel="Bar">
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fEH-e3-mWT">
+                                <rect key="frame" x="0.0" y="63" width="375" height="554"/>
+                                <color key="backgroundColor" red="0.95999999999999996" green="0.96999999999999997" blue="0.97999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgT-Yh-5ys" userLabel="Bar">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                 <subviews>
-                                    <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OTX-eH-Lcv" userLabel="Border">
+                                    <view userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OTX-eH-Lcv" userLabel="Border">
                                         <rect key="frame" x="0.0" y="64" width="375" height="1"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -52,13 +56,13 @@
                                     <constraint firstItem="OTX-eH-Lcv" firstAttribute="top" secondItem="8gd-uv-on5" secondAttribute="bottom" id="gso-bx-UXx"/>
                                 </constraints>
                             </view>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h0e-qG-HZi" userLabel="Menu">
+                            <view clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h0e-qG-HZi" userLabel="Menu">
                                 <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="assetMenuHome" translatesAutoresizingMaskIntoConstraints="NO" id="de1-h6-egd">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                     </imageView>
-                                    <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kN1-g9-ZV6" userLabel="Border">
+                                    <view userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kN1-g9-ZV6" userLabel="Border">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -81,8 +85,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="fEH-e3-mWT" firstAttribute="trailing" secondItem="Bcu-3y-fUS" secondAttribute="trailing" id="1Bt-xk-ltl"/>
+                            <constraint firstItem="fEH-e3-mWT" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="1Hj-jl-G3J"/>
+                            <constraint firstItem="fEH-e3-mWT" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="43" id="DUi-7t-JYH"/>
                             <constraint firstItem="h0e-qG-HZi" firstAttribute="bottom" secondItem="Bcu-3y-fUS" secondAttribute="bottom" id="Dz3-Iw-nJI"/>
                             <constraint firstItem="mgT-Yh-5ys" firstAttribute="trailing" secondItem="Bcu-3y-fUS" secondAttribute="trailing" id="IAC-hw-HZC"/>
+                            <constraint firstItem="h0e-qG-HZi" firstAttribute="top" secondItem="fEH-e3-mWT" secondAttribute="bottom" id="XwH-7A-7sB"/>
                             <constraint firstItem="h0e-qG-HZi" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="ZFm-YH-eAX"/>
                             <constraint firstItem="mgT-Yh-5ys" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="iLq-6s-i5D"/>
                             <constraint firstItem="h0e-qG-HZi" firstAttribute="trailing" secondItem="Bcu-3y-fUS" secondAttribute="trailing" id="iyC-6R-fXf"/>
