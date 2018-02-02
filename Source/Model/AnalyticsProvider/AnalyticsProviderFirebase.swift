@@ -14,8 +14,8 @@ final class AnalyticsProviderFirebase:AnalyticsProviderProtocol
             return
         }
         
-        FirebaseApp.configure()
         FirebaseConfiguration.shared.setLoggerLevel(FirebaseLoggerLevel.min)
+        FirebaseApp.configure()
     }
     
     func setScreen(screenName:String)
