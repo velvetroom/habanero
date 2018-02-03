@@ -726,6 +726,8 @@
 		DAD245F32025E82D0078A073 /* ViewHomeFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD245F12025E82D0078A073 /* ViewHomeFilter.swift */; };
 		DAD245F52025E8640078A073 /* HomeFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD245F42025E8640078A073 /* HomeFilter.swift */; };
 		DAD245F62025E8640078A073 /* HomeFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD245F42025E8640078A073 /* HomeFilter.swift */; };
+		DAD245F82025E8AD0078A073 /* HomeFilterShowProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD245F72025E8AD0078A073 /* HomeFilterShowProtocol.swift */; };
+		DAD245F92025E8AD0078A073 /* HomeFilterShowProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD245F72025E8AD0078A073 /* HomeFilterShowProtocol.swift */; };
 		DAD64C112011307800E74F76 /* ViewCookStepListCellText+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD64C102011307800E74F76 /* ViewCookStepListCellText+Constants.swift */; };
 		DAD64C122011307800E74F76 /* ViewCookStepListCellText+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD64C102011307800E74F76 /* ViewCookStepListCellText+Constants.swift */; };
 		DAD97C9B201E22A60074490A /* Home+Favourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD97C9A201E22A60074490A /* Home+Favourites.swift */; };
@@ -1280,6 +1282,7 @@
 		DACF89F11FFDD8F800F4FCF0 /* RecipeIngredientSpoons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeIngredientSpoons.swift; sourceTree = "<group>"; };
 		DAD245F12025E82D0078A073 /* ViewHomeFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeFilter.swift; sourceTree = "<group>"; };
 		DAD245F42025E8640078A073 /* HomeFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilter.swift; sourceTree = "<group>"; };
+		DAD245F72025E8AD0078A073 /* HomeFilterShowProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterShowProtocol.swift; sourceTree = "<group>"; };
 		DAD64C102011307800E74F76 /* ViewCookStepListCellText+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStepListCellText+Constants.swift"; sourceTree = "<group>"; };
 		DAD97C9A201E22A60074490A /* Home+Favourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home+Favourites.swift"; sourceTree = "<group>"; };
 		DADA67DF201C5D160032C9C9 /* Database+Save.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Save.swift"; sourceTree = "<group>"; };
@@ -1917,6 +1920,7 @@
 				DA10589F2002E57100019445 /* Home+Recipes.swift */,
 				DAD97C9A201E22A60074490A /* Home+Favourites.swift */,
 				DAD245F42025E8640078A073 /* HomeFilter.swift */,
+				DAD245F72025E8AD0078A073 /* HomeFilterShowProtocol.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -2766,6 +2770,7 @@
 				DA992D781FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */,
 				DA3F0E7C1FDF326A0037C94D /* Ingredient+Keys.swift in Sources */,
 				DA27794520071EB500F15AE0 /* ViewCookListCellRecipe.swift in Sources */,
+				DAD245F82025E8AD0078A073 /* HomeFilterShowProtocol.swift in Sources */,
 				DA0750222004582E002C428A /* ViewHomeList+Actions.swift in Sources */,
 				DA91EB021FD62C1F0063560D /* ViewAlert+Constants.swift in Sources */,
 				DAC104B9200EAC16004617FD /* ViewCookStepListCellImage.swift in Sources */,
@@ -3281,6 +3286,7 @@
 				DA8E57B520172A4100EBF87F /* CloudProviderFirebase+Transaction.swift in Sources */,
 				DA91EB0F1FD62C1F0063560D /* ViewBlur.swift in Sources */,
 				DAC104BD200EB618004617FD /* CookStepItemProtocol.swift in Sources */,
+				DAD245F92025E8AD0078A073 /* HomeFilterShowProtocol.swift in Sources */,
 				DA91EB251FD62D700063560D /* ViewControllableProtocol.swift in Sources */,
 				DAB773B32020CEA4001E702E /* ControllerOptions+Config.swift in Sources */,
 				DAC732D01FF85AB400980854 /* NewAddSectionItemInfoSubtitle.swift in Sources */,
