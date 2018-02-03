@@ -738,6 +738,8 @@
 		DAD246052025E93C0078A073 /* HomeFilterOrderDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD246032025E93C0078A073 /* HomeFilterOrderDate.swift */; };
 		DAD246072025E95A0078A073 /* HomeFilterOrderFavourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD246062025E95A0078A073 /* HomeFilterOrderFavourites.swift */; };
 		DAD246082025E95A0078A073 /* HomeFilterOrderFavourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD246062025E95A0078A073 /* HomeFilterOrderFavourites.swift */; };
+		DAD2460A2025E9A60078A073 /* Home+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD246092025E9A60078A073 /* Home+Factory.swift */; };
+		DAD2460B2025E9A60078A073 /* Home+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD246092025E9A60078A073 /* Home+Factory.swift */; };
 		DAD64C112011307800E74F76 /* ViewCookStepListCellText+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD64C102011307800E74F76 /* ViewCookStepListCellText+Constants.swift */; };
 		DAD64C122011307800E74F76 /* ViewCookStepListCellText+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD64C102011307800E74F76 /* ViewCookStepListCellText+Constants.swift */; };
 		DAD97C9B201E22A60074490A /* Home+Favourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD97C9A201E22A60074490A /* Home+Favourites.swift */; };
@@ -1298,6 +1300,7 @@
 		DAD246002025E91A0078A073 /* HomeFilterOrderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterOrderProtocol.swift; sourceTree = "<group>"; };
 		DAD246032025E93C0078A073 /* HomeFilterOrderDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterOrderDate.swift; sourceTree = "<group>"; };
 		DAD246062025E95A0078A073 /* HomeFilterOrderFavourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterOrderFavourites.swift; sourceTree = "<group>"; };
+		DAD246092025E9A60078A073 /* Home+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home+Factory.swift"; sourceTree = "<group>"; };
 		DAD64C102011307800E74F76 /* ViewCookStepListCellText+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStepListCellText+Constants.swift"; sourceTree = "<group>"; };
 		DAD97C9A201E22A60074490A /* Home+Favourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home+Favourites.swift"; sourceTree = "<group>"; };
 		DADA67DF201C5D160032C9C9 /* Database+Save.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Save.swift"; sourceTree = "<group>"; };
@@ -1934,6 +1937,7 @@
 				DAE5E4881FE48F1D00CC40BA /* Home+Settings.swift */,
 				DA10589F2002E57100019445 /* Home+Recipes.swift */,
 				DAD97C9A201E22A60074490A /* Home+Favourites.swift */,
+				DAD246092025E9A60078A073 /* Home+Factory.swift */,
 				DAD245F42025E8640078A073 /* HomeFilter.swift */,
 				DAD245F72025E8AD0078A073 /* HomeFilterShowProtocol.swift */,
 				DAD245FA2025E8D10078A073 /* HomeFilterShowAll.swift */,
@@ -2794,6 +2798,7 @@
 				DAD245F82025E8AD0078A073 /* HomeFilterShowProtocol.swift in Sources */,
 				DA0750222004582E002C428A /* ViewHomeList+Actions.swift in Sources */,
 				DA91EB021FD62C1F0063560D /* ViewAlert+Constants.swift in Sources */,
+				DAD2460A2025E9A60078A073 /* Home+Factory.swift in Sources */,
 				DAC104B9200EAC16004617FD /* ViewCookStepListCellImage.swift in Sources */,
 				DA07501320044518002C428A /* ViewHomeList+Constants.swift in Sources */,
 				DAFA62E420081EF30068EC17 /* ViewCookList+Actions.swift in Sources */,
@@ -3235,6 +3240,7 @@
 				DA80B550200C1DB000797D61 /* ViewCookPlay.swift in Sources */,
 				DA71D6901FDA633E003A33E1 /* ArchText.swift in Sources */,
 				DAD245FF2025E8F00078A073 /* HomeFilterShowFavourites.swift in Sources */,
+				DAD2460B2025E9A60078A073 /* Home+Factory.swift in Sources */,
 				DAA07FF420153E90006FFC76 /* CookItem.swift in Sources */,
 				DACF55461FD7661E00069701 /* ExtensionNSManagedObject.swift in Sources */,
 				DAB786291FF4B8E300579BB5 /* ViewNewAddListCellStepImage.swift in Sources */,
