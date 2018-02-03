@@ -736,6 +736,8 @@
 		DAD246022025E91A0078A073 /* HomeFilterOrderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD246002025E91A0078A073 /* HomeFilterOrderProtocol.swift */; };
 		DAD246042025E93C0078A073 /* HomeFilterOrderDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD246032025E93C0078A073 /* HomeFilterOrderDate.swift */; };
 		DAD246052025E93C0078A073 /* HomeFilterOrderDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD246032025E93C0078A073 /* HomeFilterOrderDate.swift */; };
+		DAD246072025E95A0078A073 /* HomeFilterOrderFavourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD246062025E95A0078A073 /* HomeFilterOrderFavourites.swift */; };
+		DAD246082025E95A0078A073 /* HomeFilterOrderFavourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD246062025E95A0078A073 /* HomeFilterOrderFavourites.swift */; };
 		DAD64C112011307800E74F76 /* ViewCookStepListCellText+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD64C102011307800E74F76 /* ViewCookStepListCellText+Constants.swift */; };
 		DAD64C122011307800E74F76 /* ViewCookStepListCellText+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD64C102011307800E74F76 /* ViewCookStepListCellText+Constants.swift */; };
 		DAD97C9B201E22A60074490A /* Home+Favourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD97C9A201E22A60074490A /* Home+Favourites.swift */; };
@@ -1295,6 +1297,7 @@
 		DAD245FD2025E8F00078A073 /* HomeFilterShowFavourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterShowFavourites.swift; sourceTree = "<group>"; };
 		DAD246002025E91A0078A073 /* HomeFilterOrderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterOrderProtocol.swift; sourceTree = "<group>"; };
 		DAD246032025E93C0078A073 /* HomeFilterOrderDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterOrderDate.swift; sourceTree = "<group>"; };
+		DAD246062025E95A0078A073 /* HomeFilterOrderFavourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterOrderFavourites.swift; sourceTree = "<group>"; };
 		DAD64C102011307800E74F76 /* ViewCookStepListCellText+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStepListCellText+Constants.swift"; sourceTree = "<group>"; };
 		DAD97C9A201E22A60074490A /* Home+Favourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home+Favourites.swift"; sourceTree = "<group>"; };
 		DADA67DF201C5D160032C9C9 /* Database+Save.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Save.swift"; sourceTree = "<group>"; };
@@ -1937,6 +1940,7 @@
 				DAD245FD2025E8F00078A073 /* HomeFilterShowFavourites.swift */,
 				DAD246002025E91A0078A073 /* HomeFilterOrderProtocol.swift */,
 				DAD246032025E93C0078A073 /* HomeFilterOrderDate.swift */,
+				DAD246062025E95A0078A073 /* HomeFilterOrderFavourites.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -2807,6 +2811,7 @@
 				DA91EB121FD62C1F0063560D /* ViewSpinner+Constants.swift in Sources */,
 				DA855E081FF370F200E1B69F /* PhotoCropPoints.swift in Sources */,
 				DA71D6931FDA63FD003A33E1 /* ControllerText.swift in Sources */,
+				DAD246072025E95A0078A073 /* HomeFilterOrderFavourites.swift in Sources */,
 				DA5761D52005884C00A5151C /* Cook.swift in Sources */,
 				DA9089261FD4C66000C1208A /* ArchHome.swift in Sources */,
 				DA01622D2016B06A009D7A65 /* CookItemFavouriteOff.swift in Sources */,
@@ -3067,6 +3072,7 @@
 				DA74F0BF1FE6127100F45310 /* Format+Ingredient.swift in Sources */,
 				DA177BF51FD7792C003B3836 /* ViewBar.swift in Sources */,
 				DAF99F14200DAC410030866C /* ViewCookStep.swift in Sources */,
+				DAD246082025E95A0078A073 /* HomeFilterOrderFavourites.swift in Sources */,
 				DA91EB011FD62C1F0063560D /* ViewParent+Gesture.swift in Sources */,
 				DAA07FF920153F25006FFC76 /* CookItem+Ingredients.swift in Sources */,
 				DAAE61FD1FF6465C00954EFC /* ControllerNewAdd+StepsActions.swift in Sources */,
