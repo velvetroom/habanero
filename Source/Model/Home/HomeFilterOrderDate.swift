@@ -1,6 +1,6 @@
 import Foundation
 
-struct HomeFilterOrderDate
+struct HomeFilterOrderDate:HomeFilterOrderProtocol
 {
     
 }
