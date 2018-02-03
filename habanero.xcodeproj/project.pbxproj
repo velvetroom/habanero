@@ -732,6 +732,8 @@
 		DAD245FC2025E8D10078A073 /* HomeFilterShowAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD245FA2025E8D10078A073 /* HomeFilterShowAll.swift */; };
 		DAD245FE2025E8F00078A073 /* HomeFilterShowFavourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD245FD2025E8F00078A073 /* HomeFilterShowFavourites.swift */; };
 		DAD245FF2025E8F00078A073 /* HomeFilterShowFavourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD245FD2025E8F00078A073 /* HomeFilterShowFavourites.swift */; };
+		DAD246012025E91A0078A073 /* HomeFilterOrderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD246002025E91A0078A073 /* HomeFilterOrderProtocol.swift */; };
+		DAD246022025E91A0078A073 /* HomeFilterOrderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD246002025E91A0078A073 /* HomeFilterOrderProtocol.swift */; };
 		DAD64C112011307800E74F76 /* ViewCookStepListCellText+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD64C102011307800E74F76 /* ViewCookStepListCellText+Constants.swift */; };
 		DAD64C122011307800E74F76 /* ViewCookStepListCellText+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD64C102011307800E74F76 /* ViewCookStepListCellText+Constants.swift */; };
 		DAD97C9B201E22A60074490A /* Home+Favourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD97C9A201E22A60074490A /* Home+Favourites.swift */; };
@@ -1289,6 +1291,7 @@
 		DAD245F72025E8AD0078A073 /* HomeFilterShowProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterShowProtocol.swift; sourceTree = "<group>"; };
 		DAD245FA2025E8D10078A073 /* HomeFilterShowAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterShowAll.swift; sourceTree = "<group>"; };
 		DAD245FD2025E8F00078A073 /* HomeFilterShowFavourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterShowFavourites.swift; sourceTree = "<group>"; };
+		DAD246002025E91A0078A073 /* HomeFilterOrderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterOrderProtocol.swift; sourceTree = "<group>"; };
 		DAD64C102011307800E74F76 /* ViewCookStepListCellText+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStepListCellText+Constants.swift"; sourceTree = "<group>"; };
 		DAD97C9A201E22A60074490A /* Home+Favourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home+Favourites.swift"; sourceTree = "<group>"; };
 		DADA67DF201C5D160032C9C9 /* Database+Save.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Save.swift"; sourceTree = "<group>"; };
@@ -1929,6 +1932,7 @@
 				DAD245F72025E8AD0078A073 /* HomeFilterShowProtocol.swift */,
 				DAD245FA2025E8D10078A073 /* HomeFilterShowAll.swift */,
 				DAD245FD2025E8F00078A073 /* HomeFilterShowFavourites.swift */,
+				DAD246002025E91A0078A073 /* HomeFilterOrderProtocol.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -2919,6 +2923,7 @@
 				DA5761D92005893C00A5151C /* ViewCook.swift in Sources */,
 				DA4AA5091FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift in Sources */,
 				DA9089251FD4C66000C1208A /* Arch.swift in Sources */,
+				DAD246012025E91A0078A073 /* HomeFilterOrderProtocol.swift in Sources */,
 				DAAE61F71FF637A700954EFC /* PhotoRotation+Factory.swift in Sources */,
 				DAA333D71FDB17EA002D766C /* Database.swift in Sources */,
 				DAB7739D2020A32B001E702E /* ViewOptionsListCellMetrics.swift in Sources */,
@@ -3085,6 +3090,7 @@
 				DAC104C6200EBF13004617FD /* CookStep+Factory.swift in Sources */,
 				DA0162282016AEE6009D7A65 /* CookItemFavouriteProtocol.swift in Sources */,
 				DA91EAFD1FD62C1F0063560D /* ViewParent+Transitions.swift in Sources */,
+				DAD246022025E91A0078A073 /* HomeFilterOrderProtocol.swift in Sources */,
 				DACEB3A81FDCAA370089B3FE /* ViewNewListCell+Constants.swift in Sources */,
 				DACEB39D1FDC98820089B3FE /* ViewNewList+Actions.swift in Sources */,
 				DAE7C35B1FE08281003190FF /* CloudItemProtocol.swift in Sources */,
