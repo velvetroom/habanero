@@ -728,6 +728,8 @@
 		DAD245F62025E8640078A073 /* HomeFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD245F42025E8640078A073 /* HomeFilter.swift */; };
 		DAD245F82025E8AD0078A073 /* HomeFilterShowProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD245F72025E8AD0078A073 /* HomeFilterShowProtocol.swift */; };
 		DAD245F92025E8AD0078A073 /* HomeFilterShowProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD245F72025E8AD0078A073 /* HomeFilterShowProtocol.swift */; };
+		DAD245FB2025E8D10078A073 /* HomeFilterShowAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD245FA2025E8D10078A073 /* HomeFilterShowAll.swift */; };
+		DAD245FC2025E8D10078A073 /* HomeFilterShowAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD245FA2025E8D10078A073 /* HomeFilterShowAll.swift */; };
 		DAD64C112011307800E74F76 /* ViewCookStepListCellText+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD64C102011307800E74F76 /* ViewCookStepListCellText+Constants.swift */; };
 		DAD64C122011307800E74F76 /* ViewCookStepListCellText+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD64C102011307800E74F76 /* ViewCookStepListCellText+Constants.swift */; };
 		DAD97C9B201E22A60074490A /* Home+Favourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD97C9A201E22A60074490A /* Home+Favourites.swift */; };
@@ -1283,6 +1285,7 @@
 		DAD245F12025E82D0078A073 /* ViewHomeFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeFilter.swift; sourceTree = "<group>"; };
 		DAD245F42025E8640078A073 /* HomeFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilter.swift; sourceTree = "<group>"; };
 		DAD245F72025E8AD0078A073 /* HomeFilterShowProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterShowProtocol.swift; sourceTree = "<group>"; };
+		DAD245FA2025E8D10078A073 /* HomeFilterShowAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterShowAll.swift; sourceTree = "<group>"; };
 		DAD64C102011307800E74F76 /* ViewCookStepListCellText+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStepListCellText+Constants.swift"; sourceTree = "<group>"; };
 		DAD97C9A201E22A60074490A /* Home+Favourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home+Favourites.swift"; sourceTree = "<group>"; };
 		DADA67DF201C5D160032C9C9 /* Database+Save.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Save.swift"; sourceTree = "<group>"; };
@@ -1921,6 +1924,7 @@
 				DAD97C9A201E22A60074490A /* Home+Favourites.swift */,
 				DAD245F42025E8640078A073 /* HomeFilter.swift */,
 				DAD245F72025E8AD0078A073 /* HomeFilterShowProtocol.swift */,
+				DAD245FA2025E8D10078A073 /* HomeFilterShowAll.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -2692,6 +2696,7 @@
 				DA70FD8C2010179B003AF6A6 /* ControllerCookStep+Progress.swift in Sources */,
 				DAC104BC200EB618004617FD /* CookStepItemProtocol.swift in Sources */,
 				DAB7738E2020915C001E702E /* ViewOptionsBar.swift in Sources */,
+				DAD245FB2025E8D10078A073 /* HomeFilterShowAll.swift in Sources */,
 				DA74F0C41FE6139F00F45310 /* Format+Duration.swift in Sources */,
 				DA9089281FD4C66000C1208A /* Menu+Constants.swift in Sources */,
 				DA0162302016B570009D7A65 /* CookItem+Favourite.swift in Sources */,
@@ -3173,6 +3178,7 @@
 				DA5FFE671FE779C300A38154 /* FormatIngredientTypeSpoons+Constants.swift in Sources */,
 				DAE7C3401FE076EC003190FF /* ViewNewAddIngredientList+Actions.swift in Sources */,
 				DA8752D31FE3888100AE74F5 /* NewAddIngredient+Validate.swift in Sources */,
+				DAD245FC2025E8D10078A073 /* HomeFilterShowAll.swift in Sources */,
 				DA5FFE611FE7701900A38154 /* NewAdd+Ingredients.swift in Sources */,
 				DA16F15A1FDFA78300EB6877 /* ViewNewAddIngredientListFooter.swift in Sources */,
 				DAB786271FF4B88C00579BB5 /* NewAddSectionItemStepImage.swift in Sources */,
