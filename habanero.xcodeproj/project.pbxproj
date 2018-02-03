@@ -722,6 +722,8 @@
 		DACF89F01FFDD8A900F4FCF0 /* RecipeIngredientQuantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF89EE1FFDD8A900F4FCF0 /* RecipeIngredientQuantity.swift */; };
 		DACF89F21FFDD8F800F4FCF0 /* RecipeIngredientSpoons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF89F11FFDD8F800F4FCF0 /* RecipeIngredientSpoons.swift */; };
 		DACF89F31FFDD8F800F4FCF0 /* RecipeIngredientSpoons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF89F11FFDD8F800F4FCF0 /* RecipeIngredientSpoons.swift */; };
+		DAD245F22025E82D0078A073 /* ViewHomeFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD245F12025E82D0078A073 /* ViewHomeFilter.swift */; };
+		DAD245F32025E82D0078A073 /* ViewHomeFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD245F12025E82D0078A073 /* ViewHomeFilter.swift */; };
 		DAD64C112011307800E74F76 /* ViewCookStepListCellText+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD64C102011307800E74F76 /* ViewCookStepListCellText+Constants.swift */; };
 		DAD64C122011307800E74F76 /* ViewCookStepListCellText+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD64C102011307800E74F76 /* ViewCookStepListCellText+Constants.swift */; };
 		DAD97C9B201E22A60074490A /* Home+Favourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD97C9A201E22A60074490A /* Home+Favourites.swift */; };
@@ -1274,6 +1276,7 @@
 		DACF89EB1FFDD84700F4FCF0 /* RecipeIngredientMililitres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeIngredientMililitres.swift; sourceTree = "<group>"; };
 		DACF89EE1FFDD8A900F4FCF0 /* RecipeIngredientQuantity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeIngredientQuantity.swift; sourceTree = "<group>"; };
 		DACF89F11FFDD8F800F4FCF0 /* RecipeIngredientSpoons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeIngredientSpoons.swift; sourceTree = "<group>"; };
+		DAD245F12025E82D0078A073 /* ViewHomeFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeFilter.swift; sourceTree = "<group>"; };
 		DAD64C102011307800E74F76 /* ViewCookStepListCellText+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStepListCellText+Constants.swift"; sourceTree = "<group>"; };
 		DAD97C9A201E22A60074490A /* Home+Favourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home+Favourites.swift"; sourceTree = "<group>"; };
 		DADA67DF201C5D160032C9C9 /* Database+Save.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Save.swift"; sourceTree = "<group>"; };
@@ -1965,6 +1968,7 @@
 				DA0750212004582E002C428A /* ViewHomeList+Actions.swift */,
 				DA10589C2002E17600019445 /* ViewHomeListCell.swift */,
 				DA075015200445DF002C428A /* ViewHomeListCell+Constants.swift */,
+				DAD245F12025E82D0078A073 /* ViewHomeFilter.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -2726,6 +2730,7 @@
 				DAC104C8200EC8C6004617FD /* ViewCookStepList+Actions.swift in Sources */,
 				DAE35C9D2005E57C002B1C9C /* ViewCookList.swift in Sources */,
 				DAE5E4801FE489C100CC40BA /* Settings.swift in Sources */,
+				DAD245F22025E82D0078A073 /* ViewHomeFilter.swift in Sources */,
 				DAFA62EA200824C80068EC17 /* ExtensionNSMutableAttributedString.swift in Sources */,
 				DAA7F7D0202075DF009D03AB /* ArchOptions.swift in Sources */,
 				DA74F0B11FE60A4F00F45310 /* BuildIngredientQuantity+Computed.swift in Sources */,
@@ -3391,6 +3396,7 @@
 				DA90898F1FD4CE3E00C1208A /* Menu.swift in Sources */,
 				DAB7862D1FF4BAA000579BB5 /* ViewNewAddListCellStep.swift in Sources */,
 				DA8752E31FE3B27100AE74F5 /* ViewNewAddIngredientAmountList+Actions.swift in Sources */,
+				DAD245F32025E82D0078A073 /* ViewHomeFilter.swift in Sources */,
 				DA2E7308201C555500EC5B94 /* Database+Create.swift in Sources */,
 				DA35DD151FFDAF460047881F /* IngredientBuilder.swift in Sources */,
 				DAE7C33A1FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift in Sources */,
