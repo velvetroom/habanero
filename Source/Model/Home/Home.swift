@@ -17,7 +17,7 @@ final class Home:Model<ArchHome>
         self.storage = Storage()
         self.items = []
         self.recipesMap = [:]
-        self.filter = HomeFilter()
+        self.filter = Home.factoryFilter()
         
         super.init()
     }
