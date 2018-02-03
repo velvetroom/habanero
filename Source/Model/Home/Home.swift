@@ -5,6 +5,7 @@ final class Home:Model<ArchHome>
     var settings:Settings?
     var items:[CookItem]
     var recipesMap:[String:CookItem]
+    var filter:HomeFilter
     let database:Database
     let cloud:Cloud
     let storage:Storage
@@ -16,6 +17,7 @@ final class Home:Model<ArchHome>
         self.storage = Storage()
         self.items = []
         self.recipesMap = [:]
+        self.filter = HomeFilter()
         
         super.init()
     }
