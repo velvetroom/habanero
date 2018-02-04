@@ -24,7 +24,7 @@ extension Home
             cookItem.favourite = favourite
         }
         
-        self.loadCompleted(completion:completion)
+        self.filterItems(completion:completion)
     }
     
     //MARK: internal
