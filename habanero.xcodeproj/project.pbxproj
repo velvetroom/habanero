@@ -747,6 +747,8 @@
 		DADA67E0201C5D160032C9C9 /* Database+Save.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA67DF201C5D160032C9C9 /* Database+Save.swift */; };
 		DADA67E1201C5D160032C9C9 /* Database+Save.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA67DF201C5D160032C9C9 /* Database+Save.swift */; };
 		DADA67E4201C5F550032C9C9 /* Database+CreateBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA67E2201C5F550032C9C9 /* Database+CreateBuild.swift */; };
+		DADB97852027860600B3D9CF /* Home+Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB97842027860600B3D9CF /* Home+Filter.swift */; };
+		DADB97862027860600B3D9CF /* Home+Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB97842027860600B3D9CF /* Home+Filter.swift */; };
 		DAE35C972005D0C5002B1C9C /* ViewCookHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE35C962005D0C5002B1C9C /* ViewCookHeader.swift */; };
 		DAE35C982005D0C5002B1C9C /* ViewCookHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE35C962005D0C5002B1C9C /* ViewCookHeader.swift */; };
 		DAE35C9A2005D34F002B1C9C /* ViewCookHeader+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE35C992005D34F002B1C9C /* ViewCookHeader+Constants.swift */; };
@@ -1305,6 +1307,7 @@
 		DAD97C9A201E22A60074490A /* Home+Favourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home+Favourites.swift"; sourceTree = "<group>"; };
 		DADA67DF201C5D160032C9C9 /* Database+Save.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Save.swift"; sourceTree = "<group>"; };
 		DADA67E2201C5F550032C9C9 /* Database+CreateBuild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+CreateBuild.swift"; sourceTree = "<group>"; };
+		DADB97842027860600B3D9CF /* Home+Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home+Filter.swift"; sourceTree = "<group>"; };
 		DAE35C962005D0C5002B1C9C /* ViewCookHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookHeader.swift; sourceTree = "<group>"; };
 		DAE35C992005D34F002B1C9C /* ViewCookHeader+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookHeader+Constants.swift"; sourceTree = "<group>"; };
 		DAE35C9C2005E57C002B1C9C /* ViewCookList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookList.swift; sourceTree = "<group>"; };
@@ -1936,6 +1939,7 @@
 				DA70AFC41FD5AABF0016B0DC /* Home.swift */,
 				DAE5E4881FE48F1D00CC40BA /* Home+Settings.swift */,
 				DA10589F2002E57100019445 /* Home+Recipes.swift */,
+				DADB97842027860600B3D9CF /* Home+Filter.swift */,
 				DAD97C9A201E22A60074490A /* Home+Favourites.swift */,
 				DAD246092025E9A60078A073 /* Home+Factory.swift */,
 				DAD245F42025E8640078A073 /* HomeFilter.swift */,
@@ -2780,6 +2784,7 @@
 				DA1058A02002E57100019445 /* Home+Recipes.swift in Sources */,
 				DAE5E4831FE48C6100CC40BA /* SettingsMetrics.swift in Sources */,
 				DABA5EC41FEA36D60017F865 /* PhotoOptionCancel.swift in Sources */,
+				DADB97852027860600B3D9CF /* Home+Filter.swift in Sources */,
 				DA936CF31FFF11A100740BE8 /* RecipeIngredientMililitresBuilder.swift in Sources */,
 				DAF8068B200FC0C500E2F858 /* CookStep+Image.swift in Sources */,
 				DAAD4A721FF31F310044B1FE /* PhotoCrop+Rotate.swift in Sources */,
@@ -3070,6 +3075,7 @@
 				DA71D68D1FDA6262003A33E1 /* ControllerNewAdd+Info.swift in Sources */,
 				DAA333E21FDB29D8002D766C /* NewAdd+Info.swift in Sources */,
 				DAC732D21FF8606500980854 /* NewAddSectionItemInfoImage.swift in Sources */,
+				DADB97862027860600B3D9CF /* Home+Filter.swift in Sources */,
 				DAF949F61FD8BC6F001BA32E /* ControllerNewAdd.swift in Sources */,
 				DA3F0E8D1FDF457D0037C94D /* NewAddIngredient.swift in Sources */,
 				DAE7C3381FE0605C003190FF /* ViewNewAddIngredientListHeader.swift in Sources */,
