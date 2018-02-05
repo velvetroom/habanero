@@ -4,7 +4,6 @@ final class CookItem
 {
     var ingredients:[RecipeIngredient]
     var steps:[RecipeStep]
-    var recipeFavourite:RecipeFavourite?
     var onImageUpdated:((CookItem) -> ())?
     var favourite:CookItemFavouriteProtocol
     let recipe:Recipe
