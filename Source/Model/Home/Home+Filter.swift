@@ -6,9 +6,11 @@ extension Home
     
     func filterItems(completion:@escaping(() -> ()))
     {
-        var items:[CookItem] = self.recipesMap.values
+        var items:[CookItem] = Array(self.recipesMap.values)
         items = self.filter.show.filter(items:items)
+        items = self.filter.order.filter(items:items)
         
+        self.items = items
         self.loadCompleted(completion:completion)
     }
 }
