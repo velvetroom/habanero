@@ -47,20 +47,6 @@ extension Home
             self.recipesMap[recipe.identifier] = item
         }
         
-        self.sortItems(completion:completion)
-    }
-    
-    private func sortItems(completion:@escaping(() -> ()))
-    {
-        var items:[CookItem] = Array(self.recipesMap.values)
-        
-        items.sort
-        { (itemA:CookItem, itemB:CookItem) -> Bool in
-            
-            return itemA.recipe.created > itemB.recipe.created
-        }
-        
-        self.items = items
         self.loadFavourites(completion:completion)
     }
     
