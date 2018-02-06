@@ -58,7 +58,7 @@ extension CookItem
         cookItem:CookItem,
         database:Database,
         completion:@escaping(() -> ()))
-    {   
+    {
         database.createRecipeFavourite(identifier:cookItem.recipe.identifier)
         { (favourite:RecipeFavourite) in
             

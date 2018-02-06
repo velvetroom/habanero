@@ -17,6 +17,8 @@
 		DA01622E2016B06A009D7A65 /* CookItemFavouriteOff.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA01622C2016B06A009D7A65 /* CookItemFavouriteOff.swift */; };
 		DA0162302016B570009D7A65 /* CookItem+Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA01622F2016B570009D7A65 /* CookItem+Favourite.swift */; };
 		DA0162312016B570009D7A65 /* CookItem+Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA01622F2016B570009D7A65 /* CookItem+Favourite.swift */; };
+		DA02D8FB20299F2A0026D7B4 /* CookItemFavouriteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02D8FA20299F2A0026D7B4 /* CookItemFavouriteType.swift */; };
+		DA02D8FC20299F2A0026D7B4 /* CookItemFavouriteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02D8FA20299F2A0026D7B4 /* CookItemFavouriteType.swift */; };
 		DA07501320044518002C428A /* ViewHomeList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07501220044518002C428A /* ViewHomeList+Constants.swift */; };
 		DA07501420044518002C428A /* ViewHomeList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07501220044518002C428A /* ViewHomeList+Constants.swift */; };
 		DA075016200445DF002C428A /* ViewHomeListCell+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA075015200445DF002C428A /* ViewHomeListCell+Constants.swift */; };
@@ -852,6 +854,7 @@
 		DA0162292016B045009D7A65 /* CookItemFavouriteOn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookItemFavouriteOn.swift; sourceTree = "<group>"; };
 		DA01622C2016B06A009D7A65 /* CookItemFavouriteOff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookItemFavouriteOff.swift; sourceTree = "<group>"; };
 		DA01622F2016B570009D7A65 /* CookItem+Favourite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CookItem+Favourite.swift"; sourceTree = "<group>"; };
+		DA02D8FA20299F2A0026D7B4 /* CookItemFavouriteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookItemFavouriteType.swift; sourceTree = "<group>"; };
 		DA07501220044518002C428A /* ViewHomeList+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeList+Constants.swift"; sourceTree = "<group>"; };
 		DA075015200445DF002C428A /* ViewHomeListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeListCell+Constants.swift"; sourceTree = "<group>"; };
 		DA07501820044E21002C428A /* ControllerHome+Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerHome+Recipes.swift"; sourceTree = "<group>"; };
@@ -2075,6 +2078,7 @@
 				DAA07FFA2015439F006FFC76 /* CookItem+Steps.swift */,
 				DA01622F2016B570009D7A65 /* CookItem+Favourite.swift */,
 				DA0162262016AEE6009D7A65 /* CookItemFavouriteProtocol.swift */,
+				DA02D8FA20299F2A0026D7B4 /* CookItemFavouriteType.swift */,
 				DA0162292016B045009D7A65 /* CookItemFavouriteOn.swift */,
 				DA01622C2016B06A009D7A65 /* CookItemFavouriteOff.swift */,
 			);
@@ -2955,6 +2959,7 @@
 				DA178198200D7D76007AF4A4 /* ControllerCookStep.swift in Sources */,
 				DA5FFE631FE7790000A38154 /* FormatIngredientTypeQuantity+Constants.swift in Sources */,
 				DA91EAEA1FD62C1F0063560D /* ViewMenu+Collection.swift in Sources */,
+				DA02D8FB20299F2A0026D7B4 /* CookItemFavouriteType.swift in Sources */,
 				DAB7739720209C98001E702E /* ViewOptionsList.swift in Sources */,
 				DA91EB061FD62C1F0063560D /* ViewAlert.swift in Sources */,
 				DA6E80611FF98ABB00175F70 /* Cloud+Create.swift in Sources */,
@@ -3166,6 +3171,7 @@
 				DA4233ED1FEDEBEC0012A589 /* ViewPhotoCrop+Constants.swift in Sources */,
 				DA74F0C81FE614BA00F45310 /* FormatIngredientTypeCups.swift in Sources */,
 				DA55E2251FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */,
+				DA02D8FC20299F2A0026D7B4 /* CookItemFavouriteType.swift in Sources */,
 				DA68359A200176DC0087C77D /* RecipeStepImage.swift in Sources */,
 				DA71D6831FDA50C4003A33E1 /* ViewNewAddList+Constants.swift in Sources */,
 				DA9089851FD4CE2E00C1208A /* ControllerTransition.swift in Sources */,
