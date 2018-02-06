@@ -19,6 +19,8 @@
 		DA0162312016B570009D7A65 /* CookItem+Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA01622F2016B570009D7A65 /* CookItem+Favourite.swift */; };
 		DA02D8FB20299F2A0026D7B4 /* CookItemFavouriteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02D8FA20299F2A0026D7B4 /* CookItemFavouriteType.swift */; };
 		DA02D8FC20299F2A0026D7B4 /* CookItemFavouriteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02D8FA20299F2A0026D7B4 /* CookItemFavouriteType.swift */; };
+		DA02D8FE2029A0AF0026D7B4 /* ControllerHome+Favourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02D8FD2029A0AF0026D7B4 /* ControllerHome+Favourites.swift */; };
+		DA02D8FF2029A0AF0026D7B4 /* ControllerHome+Favourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02D8FD2029A0AF0026D7B4 /* ControllerHome+Favourites.swift */; };
 		DA07501320044518002C428A /* ViewHomeList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07501220044518002C428A /* ViewHomeList+Constants.swift */; };
 		DA07501420044518002C428A /* ViewHomeList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07501220044518002C428A /* ViewHomeList+Constants.swift */; };
 		DA075016200445DF002C428A /* ViewHomeListCell+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA075015200445DF002C428A /* ViewHomeListCell+Constants.swift */; };
@@ -855,6 +857,7 @@
 		DA01622C2016B06A009D7A65 /* CookItemFavouriteOff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookItemFavouriteOff.swift; sourceTree = "<group>"; };
 		DA01622F2016B570009D7A65 /* CookItem+Favourite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CookItem+Favourite.swift"; sourceTree = "<group>"; };
 		DA02D8FA20299F2A0026D7B4 /* CookItemFavouriteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookItemFavouriteType.swift; sourceTree = "<group>"; };
+		DA02D8FD2029A0AF0026D7B4 /* ControllerHome+Favourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerHome+Favourites.swift"; sourceTree = "<group>"; };
 		DA07501220044518002C428A /* ViewHomeList+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeList+Constants.swift"; sourceTree = "<group>"; };
 		DA075015200445DF002C428A /* ViewHomeListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeListCell+Constants.swift"; sourceTree = "<group>"; };
 		DA07501820044E21002C428A /* ControllerHome+Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerHome+Recipes.swift"; sourceTree = "<group>"; };
@@ -1872,6 +1875,7 @@
 			children = (
 				DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */,
 				DA07501820044E21002C428A /* ControllerHome+Recipes.swift */,
+				DA02D8FD2029A0AF0026D7B4 /* ControllerHome+Favourites.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -2710,6 +2714,7 @@
 				DA80B552200C1DD300797D61 /* ViewCookBack.swift in Sources */,
 				DA3F0EBB1FD7505E00593B83 /* Menu+OrderUser.swift in Sources */,
 				DA35DD0B1FFDAADF0047881F /* RecipeStatus.swift in Sources */,
+				DA02D8FE2029A0AF0026D7B4 /* ControllerHome+Favourites.swift in Sources */,
 				DA35DD1A1FFDB4A30047881F /* RecipeList.swift in Sources */,
 				DAB773912020950A001E702E /* OptionsItemProtocol.swift in Sources */,
 				DA4E0C0F2021AB1B00F5AEE2 /* AnalyticsProviderFirebase.swift in Sources */,
@@ -3244,6 +3249,7 @@
 				DAE7C36F1FE093D1003190FF /* Cloud+Load.swift in Sources */,
 				DA936CFE1FFF153900740BE8 /* NewAdd+SaveSteps.swift in Sources */,
 				DAA26FB21FE97AE6005855F6 /* NewAdd+Move.swift in Sources */,
+				DA02D8FF2029A0AF0026D7B4 /* ControllerHome+Favourites.swift in Sources */,
 				DA936CFC1FFF135000740BE8 /* NewAdd+SaveIngredients.swift in Sources */,
 				DACEB3B01FDCB35A0089B3FE /* ViewNewListCellSteps+Constants.swift in Sources */,
 				DA8752DD1FE3ABA700AE74F5 /* NewAddIngredientAmountTypeQuantity.swift in Sources */,
