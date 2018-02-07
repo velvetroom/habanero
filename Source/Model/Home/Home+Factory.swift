@@ -31,4 +31,16 @@ extension Home
         
         return filter
     }
+    
+    class func factoryFilterOptions() -> [HomeFilterOptionsProtocol]
+    {
+        let optionShow:HomeFilterOptionsShow = HomeFilterOptionsShow()
+        let optionOrder:HomeFilterOptionsOrder = HomeFilterOptionsOrder()
+        
+        let options:[HomeFilterOptionsProtocol] = [
+            optionShow,
+            optionOrder]
+        
+        return options
+    }
 }

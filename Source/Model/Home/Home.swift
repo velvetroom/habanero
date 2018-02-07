@@ -9,6 +9,7 @@ final class Home:Model<ArchHome>
     let database:Database
     let cloud:Cloud
     let storage:Storage
+    let filterOptions:[HomeFilterOptionsProtocol]
     
     required init()
     {
@@ -18,6 +19,7 @@ final class Home:Model<ArchHome>
         self.items = []
         self.recipesMap = [:]
         self.filter = Home.factoryFilter()
+        self.filterOptions = Home.factoryFilterOptions()
         
         super.init()
     }
