@@ -1,6 +1,6 @@
 import UIKit
 
-final class ViewHomeFilterListCell:ViewCollectionCell
+class ViewHomeFilterListCell:ViewCollectionCell
 {
     override func factoryViews()
     {
