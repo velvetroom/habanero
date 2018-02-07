@@ -186,6 +186,8 @@
 		DA43ABCF202B6CDF006E9600 /* ViewHomeFilterListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABCD202B6CDF006E9600 /* ViewHomeFilterListCell.swift */; };
 		DA43ABD1202B6D9F006E9600 /* HomeFilterOptionsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABD0202B6D9F006E9600 /* HomeFilterOptionsProtocol.swift */; };
 		DA43ABD2202B6D9F006E9600 /* HomeFilterOptionsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABD0202B6D9F006E9600 /* HomeFilterOptionsProtocol.swift */; };
+		DA43ABD4202B6DCE006E9600 /* HomeFilterOptionsShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABD3202B6DCE006E9600 /* HomeFilterOptionsShow.swift */; };
+		DA43ABD5202B6DCE006E9600 /* HomeFilterOptionsShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABD3202B6DCE006E9600 /* HomeFilterOptionsShow.swift */; };
 		DA4AA5061FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5051FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift */; };
 		DA4AA5071FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5051FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift */; };
 		DA4AA5091FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5081FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift */; };
@@ -965,6 +967,7 @@
 		DA43ABCA202B6CB8006E9600 /* ViewHomeFilterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeFilterList.swift; sourceTree = "<group>"; };
 		DA43ABCD202B6CDF006E9600 /* ViewHomeFilterListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeFilterListCell.swift; sourceTree = "<group>"; };
 		DA43ABD0202B6D9F006E9600 /* HomeFilterOptionsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterOptionsProtocol.swift; sourceTree = "<group>"; };
+		DA43ABD3202B6DCE006E9600 /* HomeFilterOptionsShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterOptionsShow.swift; sourceTree = "<group>"; };
 		DA4AA5051FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormatIngredientTypeCups+Constants.swift"; sourceTree = "<group>"; };
 		DA4AA5081FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormatIngredientTypeGrams+Constants.swift"; sourceTree = "<group>"; };
 		DA4AA50B1FE7374A00374B07 /* ViewNewAddIngredientListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientListCell+Constants.swift"; sourceTree = "<group>"; };
@@ -1952,6 +1955,7 @@
 				DAD97C9A201E22A60074490A /* Home+Favourites.swift */,
 				DAD246092025E9A60078A073 /* Home+Factory.swift */,
 				DA43ABD0202B6D9F006E9600 /* HomeFilterOptionsProtocol.swift */,
+				DA43ABD3202B6DCE006E9600 /* HomeFilterOptionsShow.swift */,
 				DAD245F42025E8640078A073 /* HomeFilter.swift */,
 				DAD245F72025E8AD0078A073 /* HomeFilterShowProtocol.swift */,
 				DAD245FA2025E8D10078A073 /* HomeFilterShowAll.swift */,
@@ -2744,6 +2748,7 @@
 				DAB773AF2020CBFC001E702E /* ViewOptionsListCellMetrics+Factory.swift in Sources */,
 				DAFA62F0200828310068EC17 /* ViewCookListCellIngredientsTitle+Constants.swift in Sources */,
 				DAC104BF200EBD98004617FD /* CookStepItemText.swift in Sources */,
+				DA43ABD4202B6DCE006E9600 /* HomeFilterOptionsShow.swift in Sources */,
 				DA35DD291FFDBDF70047881F /* StorageProviderFirebase+Constants.swift in Sources */,
 				DACF552F1FD7661E00069701 /* ExtensionUIColor.swift in Sources */,
 				DAD245F52025E8640078A073 /* HomeFilter.swift in Sources */,
@@ -3420,6 +3425,7 @@
 				DA1F04F81FE8DF3D00DF03A8 /* ViewNewAddListCellStepText+Constants.swift in Sources */,
 				DA91EAF31FD62C1F0063560D /* View.swift in Sources */,
 				DA35DD121FFDAEEB0047881F /* CloudItemBuilderProtocol.swift in Sources */,
+				DA43ABD5202B6DCE006E9600 /* HomeFilterOptionsShow.swift in Sources */,
 				DABDF3391FEB6B87002EF842 /* PhotoOptionCamera.swift in Sources */,
 				DACF553E1FD7661E00069701 /* ExtensionNSLayoutConstraint.swift in Sources */,
 				DAB7739B2020A0AD001E702E /* ViewOptionsListCell.swift in Sources */,
