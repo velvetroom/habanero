@@ -188,6 +188,8 @@
 		DA43ABD2202B6D9F006E9600 /* HomeFilterOptionsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABD0202B6D9F006E9600 /* HomeFilterOptionsProtocol.swift */; };
 		DA43ABD4202B6DCE006E9600 /* HomeFilterOptionsShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABD3202B6DCE006E9600 /* HomeFilterOptionsShow.swift */; };
 		DA43ABD5202B6DCE006E9600 /* HomeFilterOptionsShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABD3202B6DCE006E9600 /* HomeFilterOptionsShow.swift */; };
+		DA43ABD7202B6DF2006E9600 /* HomeFilterOptionsOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABD6202B6DF2006E9600 /* HomeFilterOptionsOrder.swift */; };
+		DA43ABD8202B6DF2006E9600 /* HomeFilterOptionsOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABD6202B6DF2006E9600 /* HomeFilterOptionsOrder.swift */; };
 		DA4AA5061FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5051FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift */; };
 		DA4AA5071FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5051FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift */; };
 		DA4AA5091FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5081FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift */; };
@@ -968,6 +970,7 @@
 		DA43ABCD202B6CDF006E9600 /* ViewHomeFilterListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeFilterListCell.swift; sourceTree = "<group>"; };
 		DA43ABD0202B6D9F006E9600 /* HomeFilterOptionsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterOptionsProtocol.swift; sourceTree = "<group>"; };
 		DA43ABD3202B6DCE006E9600 /* HomeFilterOptionsShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterOptionsShow.swift; sourceTree = "<group>"; };
+		DA43ABD6202B6DF2006E9600 /* HomeFilterOptionsOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterOptionsOrder.swift; sourceTree = "<group>"; };
 		DA4AA5051FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormatIngredientTypeCups+Constants.swift"; sourceTree = "<group>"; };
 		DA4AA5081FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormatIngredientTypeGrams+Constants.swift"; sourceTree = "<group>"; };
 		DA4AA50B1FE7374A00374B07 /* ViewNewAddIngredientListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientListCell+Constants.swift"; sourceTree = "<group>"; };
@@ -1956,6 +1959,7 @@
 				DAD246092025E9A60078A073 /* Home+Factory.swift */,
 				DA43ABD0202B6D9F006E9600 /* HomeFilterOptionsProtocol.swift */,
 				DA43ABD3202B6DCE006E9600 /* HomeFilterOptionsShow.swift */,
+				DA43ABD6202B6DF2006E9600 /* HomeFilterOptionsOrder.swift */,
 				DAD245F42025E8640078A073 /* HomeFilter.swift */,
 				DAD245F72025E8AD0078A073 /* HomeFilterShowProtocol.swift */,
 				DAD245FA2025E8D10078A073 /* HomeFilterShowAll.swift */,
@@ -2763,6 +2767,7 @@
 				DA4233DB1FEDE4DF0012A589 /* ControllerPhotoCrop.swift in Sources */,
 				DA35DD261FFDBBF70047881F /* StorageProviderFirebase+Provider.swift in Sources */,
 				DA4233E91FEDEBE10012A589 /* ViewPhotoCropMenu.swift in Sources */,
+				DA43ABD7202B6DF2006E9600 /* HomeFilterOptionsOrder.swift in Sources */,
 				DA74F0CD1FE6154800F45310 /* FormatIngredientTypeMililitres.swift in Sources */,
 				DA2A94E61FF30089009D2FF9 /* ViewPhotoCropDisplayImage+Constants.swift in Sources */,
 				DA74F0B41FE60F0D00F45310 /* BuildIngredientSpoons+Computed.swift in Sources */,
@@ -3243,6 +3248,7 @@
 				DA91EB131FD62C1F0063560D /* ViewSpinner+Constants.swift in Sources */,
 				DA74F0AF1FE60A1300F45310 /* BuildIngredientMililitres+Computed.swift in Sources */,
 				DA4AA50A1FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift in Sources */,
+				DA43ABD8202B6DF2006E9600 /* HomeFilterOptionsOrder.swift in Sources */,
 				DA71D6791FDA4613003A33E1 /* NewAddSectionIngredients.swift in Sources */,
 				DA71D6AE1FDA7A01003A33E1 /* ViewTextBar+Constants.swift in Sources */,
 				DA71D6941FDA63FD003A33E1 /* ControllerText.swift in Sources */,
