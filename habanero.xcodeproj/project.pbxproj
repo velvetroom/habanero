@@ -180,6 +180,8 @@
 		DA4233ED1FEDEBEC0012A589 /* ViewPhotoCrop+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4233EB1FEDEBEC0012A589 /* ViewPhotoCrop+Constants.swift */; };
 		DA4233EF1FEDF7D50012A589 /* ViewPhotoCropMenu+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4233EE1FEDF7D50012A589 /* ViewPhotoCropMenu+Constants.swift */; };
 		DA4233F01FEDF7D50012A589 /* ViewPhotoCropMenu+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4233EE1FEDF7D50012A589 /* ViewPhotoCropMenu+Constants.swift */; };
+		DA43ABCB202B6CB8006E9600 /* ViewHomeFilterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABCA202B6CB8006E9600 /* ViewHomeFilterList.swift */; };
+		DA43ABCC202B6CB8006E9600 /* ViewHomeFilterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABCA202B6CB8006E9600 /* ViewHomeFilterList.swift */; };
 		DA4AA5061FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5051FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift */; };
 		DA4AA5071FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5051FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift */; };
 		DA4AA5091FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5081FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift */; };
@@ -956,6 +958,7 @@
 		DA4233E81FEDEBE10012A589 /* ViewPhotoCropMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoCropMenu.swift; sourceTree = "<group>"; };
 		DA4233EB1FEDEBEC0012A589 /* ViewPhotoCrop+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewPhotoCrop+Constants.swift"; sourceTree = "<group>"; };
 		DA4233EE1FEDF7D50012A589 /* ViewPhotoCropMenu+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewPhotoCropMenu+Constants.swift"; sourceTree = "<group>"; };
+		DA43ABCA202B6CB8006E9600 /* ViewHomeFilterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeFilterList.swift; sourceTree = "<group>"; };
 		DA4AA5051FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormatIngredientTypeCups+Constants.swift"; sourceTree = "<group>"; };
 		DA4AA5081FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormatIngredientTypeGrams+Constants.swift"; sourceTree = "<group>"; };
 		DA4AA50B1FE7374A00374B07 /* ViewNewAddIngredientListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientListCell+Constants.swift"; sourceTree = "<group>"; };
@@ -2005,6 +2008,7 @@
 				DA10589C2002E17600019445 /* ViewHomeListCell.swift */,
 				DA075015200445DF002C428A /* ViewHomeListCell+Constants.swift */,
 				DAD245F12025E82D0078A073 /* ViewHomeFilter.swift */,
+				DA43ABCA202B6CB8006E9600 /* ViewHomeFilterList.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -2698,6 +2702,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DACF554B1FD7661E00069701 /* ExtensionUICollectionReusableView.swift in Sources */,
+				DA43ABCB202B6CB8006E9600 /* ViewHomeFilterList.swift in Sources */,
 				DA55E2241FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */,
 				DA70AFC21FD5AA980016B0DC /* ControllerHome.swift in Sources */,
 				DACF89EF1FFDD8A900F4FCF0 /* RecipeIngredientQuantity.swift in Sources */,
@@ -3467,6 +3472,7 @@
 				DA6E80651FF98B3E00175F70 /* CloudProviderFirebase+Provider.swift in Sources */,
 				DA74F0D11FE6156D00F45310 /* FormatIngredientTypeQuantity.swift in Sources */,
 				DA74F0B21FE60A4F00F45310 /* BuildIngredientQuantity+Computed.swift in Sources */,
+				DA43ABCC202B6CB8006E9600 /* ViewHomeFilterList.swift in Sources */,
 				DA9089891FD4CE3700C1208A /* Model.swift in Sources */,
 				DAB773B62020CFDA001E702E /* Options+Settings.swift in Sources */,
 				DAF949F91FD8BCC6001BA32E /* ViewNewAdd.swift in Sources */,
