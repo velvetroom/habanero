@@ -196,6 +196,8 @@
 		DA43ABD8202B6DF2006E9600 /* HomeFilterOptionsOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABD6202B6DF2006E9600 /* HomeFilterOptionsOrder.swift */; };
 		DA43ABDA202B6FDC006E9600 /* ViewHomeFilterListCellShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABD9202B6FDC006E9600 /* ViewHomeFilterListCellShow.swift */; };
 		DA43ABDB202B6FDC006E9600 /* ViewHomeFilterListCellShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABD9202B6FDC006E9600 /* ViewHomeFilterListCellShow.swift */; };
+		DA43ABDD202B7009006E9600 /* ViewHomeFilterListCellOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABDC202B7009006E9600 /* ViewHomeFilterListCellOrder.swift */; };
+		DA43ABDE202B7009006E9600 /* ViewHomeFilterListCellOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABDC202B7009006E9600 /* ViewHomeFilterListCellOrder.swift */; };
 		DA4AA5061FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5051FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift */; };
 		DA4AA5071FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5051FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift */; };
 		DA4AA5091FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5081FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift */; };
@@ -980,6 +982,7 @@
 		DA43ABD3202B6DCE006E9600 /* HomeFilterOptionsShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterOptionsShow.swift; sourceTree = "<group>"; };
 		DA43ABD6202B6DF2006E9600 /* HomeFilterOptionsOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterOptionsOrder.swift; sourceTree = "<group>"; };
 		DA43ABD9202B6FDC006E9600 /* ViewHomeFilterListCellShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeFilterListCellShow.swift; sourceTree = "<group>"; };
+		DA43ABDC202B7009006E9600 /* ViewHomeFilterListCellOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeFilterListCellOrder.swift; sourceTree = "<group>"; };
 		DA4AA5051FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormatIngredientTypeCups+Constants.swift"; sourceTree = "<group>"; };
 		DA4AA5081FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormatIngredientTypeGrams+Constants.swift"; sourceTree = "<group>"; };
 		DA4AA50B1FE7374A00374B07 /* ViewNewAddIngredientListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientListCell+Constants.swift"; sourceTree = "<group>"; };
@@ -2036,6 +2039,7 @@
 				DA43ABCA202B6CB8006E9600 /* ViewHomeFilterList.swift */,
 				DA43ABCD202B6CDF006E9600 /* ViewHomeFilterListCell.swift */,
 				DA43ABD9202B6FDC006E9600 /* ViewHomeFilterListCellShow.swift */,
+				DA43ABDC202B7009006E9600 /* ViewHomeFilterListCellOrder.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -2763,6 +2767,7 @@
 				DA91EB1E1FD62C1F0063560D /* ViewGradient+Constants.swift in Sources */,
 				DA5761D12005879D00A5151C /* ControllerCook.swift in Sources */,
 				DAB773AF2020CBFC001E702E /* ViewOptionsListCellMetrics+Factory.swift in Sources */,
+				DA43ABDD202B7009006E9600 /* ViewHomeFilterListCellOrder.swift in Sources */,
 				DAFA62F0200828310068EC17 /* ViewCookListCellIngredientsTitle+Constants.swift in Sources */,
 				DAC104BF200EBD98004617FD /* CookStepItemText.swift in Sources */,
 				DA43ABD4202B6DCE006E9600 /* HomeFilterOptionsShow.swift in Sources */,
@@ -3394,6 +3399,7 @@
 				DAB773AA2020B955001E702E /* ViewOptionsList+Actions.swift in Sources */,
 				DACF552E1FD7661E00069701 /* ExtensionNotification.swift in Sources */,
 				DA6E80851FF9B7A600175F70 /* StorageProviderFirebase.swift in Sources */,
+				DA43ABDE202B7009006E9600 /* ViewHomeFilterListCellOrder.swift in Sources */,
 				DABA5EC51FEA36D60017F865 /* PhotoOptionCancel.swift in Sources */,
 				DA43ABDB202B6FDC006E9600 /* ViewHomeFilterListCellShow.swift in Sources */,
 				DA90898C1FD4CE3E00C1208A /* MenuItemHome.swift in Sources */,
