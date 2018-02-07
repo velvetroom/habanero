@@ -182,6 +182,8 @@
 		DA4233F01FEDF7D50012A589 /* ViewPhotoCropMenu+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4233EE1FEDF7D50012A589 /* ViewPhotoCropMenu+Constants.swift */; };
 		DA43ABCB202B6CB8006E9600 /* ViewHomeFilterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABCA202B6CB8006E9600 /* ViewHomeFilterList.swift */; };
 		DA43ABCC202B6CB8006E9600 /* ViewHomeFilterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABCA202B6CB8006E9600 /* ViewHomeFilterList.swift */; };
+		DA43ABCE202B6CDF006E9600 /* ViewHomeFilterListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABCD202B6CDF006E9600 /* ViewHomeFilterListCell.swift */; };
+		DA43ABCF202B6CDF006E9600 /* ViewHomeFilterListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABCD202B6CDF006E9600 /* ViewHomeFilterListCell.swift */; };
 		DA4AA5061FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5051FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift */; };
 		DA4AA5071FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5051FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift */; };
 		DA4AA5091FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5081FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift */; };
@@ -959,6 +961,7 @@
 		DA4233EB1FEDEBEC0012A589 /* ViewPhotoCrop+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewPhotoCrop+Constants.swift"; sourceTree = "<group>"; };
 		DA4233EE1FEDF7D50012A589 /* ViewPhotoCropMenu+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewPhotoCropMenu+Constants.swift"; sourceTree = "<group>"; };
 		DA43ABCA202B6CB8006E9600 /* ViewHomeFilterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeFilterList.swift; sourceTree = "<group>"; };
+		DA43ABCD202B6CDF006E9600 /* ViewHomeFilterListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeFilterListCell.swift; sourceTree = "<group>"; };
 		DA4AA5051FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormatIngredientTypeCups+Constants.swift"; sourceTree = "<group>"; };
 		DA4AA5081FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormatIngredientTypeGrams+Constants.swift"; sourceTree = "<group>"; };
 		DA4AA50B1FE7374A00374B07 /* ViewNewAddIngredientListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientListCell+Constants.swift"; sourceTree = "<group>"; };
@@ -2009,6 +2012,7 @@
 				DA075015200445DF002C428A /* ViewHomeListCell+Constants.swift */,
 				DAD245F12025E82D0078A073 /* ViewHomeFilter.swift */,
 				DA43ABCA202B6CB8006E9600 /* ViewHomeFilterList.swift */,
+				DA43ABCD202B6CDF006E9600 /* ViewHomeFilterListCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -2952,6 +2956,7 @@
 				DAAE61F71FF637A700954EFC /* PhotoRotation+Factory.swift in Sources */,
 				DAA333D71FDB17EA002D766C /* Database.swift in Sources */,
 				DAB7739D2020A32B001E702E /* ViewOptionsListCellMetrics.swift in Sources */,
+				DA43ABCE202B6CDF006E9600 /* ViewHomeFilterListCell.swift in Sources */,
 				DA69EC68200D5F6700CF466B /* ArchCookStep.swift in Sources */,
 				DA35DD0E1FFDAB280047881F /* Recipe+Keys.swift in Sources */,
 				DA2E7307201C555500EC5B94 /* Database+Create.swift in Sources */,
@@ -3047,6 +3052,7 @@
 				DA6042A01FE21BE800758A2F /* NewAddIngredientAmount.swift in Sources */,
 				DAEFB5F72013794800CA840E /* Format+RecipeIngredient.swift in Sources */,
 				DAFA62D6200819A70068EC17 /* Cook+Constants.swift in Sources */,
+				DA43ABCF202B6CDF006E9600 /* ViewHomeFilterListCell.swift in Sources */,
 				DACF553C1FD7661E00069701 /* ExtensionMKAnnotationView.swift in Sources */,
 				DA6E805F1FF987F100175F70 /* CloudProviderFirebase.swift in Sources */,
 				DAE7C37A1FE0A2E1003190FF /* ControllerNewAddIngredient+Create.swift in Sources */,
