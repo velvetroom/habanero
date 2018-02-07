@@ -89,17 +89,4 @@ extension ControllerHome
         self.loadRecipeIngredients(item:item)
         self.loadRecipeSteps(item:item)
     }
-    
-    func favouriteItem(
-        cookItem:CookItem,
-        completion:@escaping(() -> ()))
-    {
-        let database:Database = self.model.database
-        
-        cookItem.favourite.selected(
-            cookItem,
-            self.model.cloud,
-            database,
-            completion)
-    }
 }
