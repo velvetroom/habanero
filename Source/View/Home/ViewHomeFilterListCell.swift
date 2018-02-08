@@ -2,8 +2,14 @@ import UIKit
 
 class ViewHomeFilterListCell:ViewCollectionCell
 {
-    override func factoryViews()
+    private(set) weak var controller:ControllerHome?
+    
+    //MARK: internal
+    
+    func config(
+        controller:ControllerHome,
+        model:HomeFilterOptionsProtocol)
     {
-        super.factoryViews()
+        self.controller = controller
     }
 }
