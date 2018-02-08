@@ -211,6 +211,8 @@
 		DA4E0C132021ADCF00F5AEE2 /* AnalyticsProviderFirebase+Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E0C112021ADCF00F5AEE2 /* AnalyticsProviderFirebase+Provider.swift */; };
 		DA4E0C152021B0C700F5AEE2 /* AnalyticsProviderFirebase+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E0C142021B0C700F5AEE2 /* AnalyticsProviderFirebase+Constants.swift */; };
 		DA4E0C162021B0C700F5AEE2 /* AnalyticsProviderFirebase+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E0C142021B0C700F5AEE2 /* AnalyticsProviderFirebase+Constants.swift */; };
+		DA50D543202C3051007BA365 /* ViewHomeFilterList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA50D542202C3051007BA365 /* ViewHomeFilterList+Actions.swift */; };
+		DA50D544202C3051007BA365 /* ViewHomeFilterList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA50D542202C3051007BA365 /* ViewHomeFilterList+Actions.swift */; };
 		DA55E2241FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */; };
 		DA55E2251FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */; };
 		DA5761CE2005877600A5151C /* ArchCook.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5761CD2005877600A5151C /* ArchCook.swift */; };
@@ -990,6 +992,7 @@
 		DA4E0C0E2021AB1B00F5AEE2 /* AnalyticsProviderFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsProviderFirebase.swift; sourceTree = "<group>"; };
 		DA4E0C112021ADCF00F5AEE2 /* AnalyticsProviderFirebase+Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnalyticsProviderFirebase+Provider.swift"; sourceTree = "<group>"; };
 		DA4E0C142021B0C700F5AEE2 /* AnalyticsProviderFirebase+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnalyticsProviderFirebase+Constants.swift"; sourceTree = "<group>"; };
+		DA50D542202C3051007BA365 /* ViewHomeFilterList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeFilterList+Actions.swift"; sourceTree = "<group>"; };
 		DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoCropDisplayShade.swift; sourceTree = "<group>"; };
 		DA5761CD2005877600A5151C /* ArchCook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchCook.swift; sourceTree = "<group>"; };
 		DA5761D02005879D00A5151C /* ControllerCook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerCook.swift; sourceTree = "<group>"; };
@@ -2037,6 +2040,7 @@
 				DA075015200445DF002C428A /* ViewHomeListCell+Constants.swift */,
 				DAD245F12025E82D0078A073 /* ViewHomeFilter.swift */,
 				DA43ABCA202B6CB8006E9600 /* ViewHomeFilterList.swift */,
+				DA50D542202C3051007BA365 /* ViewHomeFilterList+Actions.swift */,
 				DA43ABCD202B6CDF006E9600 /* ViewHomeFilterListCell.swift */,
 				DA43ABD9202B6FDC006E9600 /* ViewHomeFilterListCellShow.swift */,
 				DA43ABDC202B7009006E9600 /* ViewHomeFilterListCellOrder.swift */,
@@ -3026,6 +3030,7 @@
 				DAB773B52020CFDA001E702E /* Options+Settings.swift in Sources */,
 				DA01622A2016B045009D7A65 /* CookItemFavouriteOn.swift in Sources */,
 				DA4233DE1FEDE56F0012A589 /* ArchPhotoCrop.swift in Sources */,
+				DA50D543202C3051007BA365 /* ViewHomeFilterList+Actions.swift in Sources */,
 				DA80B54F200C1DB000797D61 /* ViewCookPlay.swift in Sources */,
 				DACF55071FD7656F00069701 /* habanero.xcdatamodeld in Sources */,
 				DA71D6AA1FDA74D8003A33E1 /* ViewTextBar.swift in Sources */,
@@ -3348,6 +3353,7 @@
 				DAADC4A51FFC80E600862A90 /* NewAddValidateStrategyMinSteps.swift in Sources */,
 				DA280FC520006AE90016AD43 /* RecipeStep.swift in Sources */,
 				DAADC49F1FFC783600862A90 /* NewAdd+Validate.swift in Sources */,
+				DA50D544202C3051007BA365 /* ViewHomeFilterList+Actions.swift in Sources */,
 				DA8752DF1FE3ABAF00AE74F5 /* NewAddIngredientAmountTypeSpoons.swift in Sources */,
 				DA71D6A51FDA7107003A33E1 /* ViewText+Constants.swift in Sources */,
 				DACF55401FD7661E00069701 /* ExtensionUIFont.swift in Sources */,
