@@ -2,13 +2,16 @@ import UIKit
 
 final class ViewHomeFilterList:ViewCollection<ArchHome, ViewHomeFilterListCell, ViewCollectionFlow>
 {
-    private weak var cellSize:CGSize?
+    private var cellSize:CGSize?
     
     override func factoryViews()
     {
         super.factoryViews()
+        self.collectionView.bounces = false
+        self.collectionView.isScrollEnabled = false
         
-        
+        self.registerCell(cell:ViewHomeFilterListCellShow.self)
+        self.registerCell(cell:ViewHomeFilterListCellOrder.self)
     }
     
     override func collectionView(
