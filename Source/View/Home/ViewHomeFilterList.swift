@@ -50,7 +50,17 @@ final class ViewHomeFilterList:ViewCollection<ArchHome, ViewHomeFilterListCell, 
         _ collectionView:UICollectionView,
         cellForItemAt indexPath:IndexPath) -> UICollectionViewCell
     {
+        let item:HomeFilterOptionsProtocol = self.modelAtIndex(index:indexPath)
         
+        let cell:ViewHomeFilterListCell = self.cellAtIndex(
+            indexPath:indexPath,
+            reusableIdentifier:item.reusableIdentifier)
+        
+        cell.config(
+            controller:self.controller,
+            model:item)
+        
+        return cell
     }
     
     override func collectionView(
