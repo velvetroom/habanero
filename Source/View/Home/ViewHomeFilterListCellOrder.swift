@@ -12,7 +12,7 @@ final class ViewHomeFilterListCellOrder:ViewHomeFilterListCell
         
         guard
             
-            let model:HomeFilterOptionsOrder = model
+            let model:HomeFilterOptionsOrder = model as? HomeFilterOptionsOrder
             
         else
         {
