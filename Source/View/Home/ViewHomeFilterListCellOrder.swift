@@ -2,21 +2,9 @@ import UIKit
 
 final class ViewHomeFilterListCellOrder:ViewHomeFilterListCell
 {
-    override func config(
-        controller:ControllerHome,
-        model:HomeFilterOptionsProtocol)
+    override func config(controller:ControllerHome)
     {
-        super.config(
-            controller:controller,
-            model:model)
+        super.config(controller:controller)
         
-        guard
-            
-            let model:HomeFilterOptionsOrder = model as? HomeFilterOptionsOrder
-            
-        else
-        {
-            return
-        }
     }
 }

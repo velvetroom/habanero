@@ -6,9 +6,7 @@ class ViewHomeFilterListCell:ViewCollectionCell
     
     //MARK: internal
     
-    func config(
-        controller:ControllerHome,
-        model:HomeFilterOptionsProtocol)
+    func config(controller:ControllerHome)
     {
         self.controller = controller
     }
