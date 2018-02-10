@@ -59,9 +59,7 @@ final class ViewHomeFilterList:ViewCollection<ArchHome, ViewHomeFilterListCell, 
             indexPath:indexPath,
             reusableIdentifier:item.reusableIdentifier)
         
-        cell.config(
-            controller:self.controller,
-            model:item)
+        cell.config(controller:self.controller)
         
         return cell
     }
