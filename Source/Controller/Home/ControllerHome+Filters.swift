@@ -13,4 +13,14 @@ extension ControllerHome
     {
         
     }
+    
+    func filterOrderByDate()
+    {
+        
+    }
+    
+    func filterOrderByFavourites()
+    {
+        
+    }
 }
