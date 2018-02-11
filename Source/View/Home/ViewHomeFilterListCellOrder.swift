@@ -10,9 +10,17 @@ final class ViewHomeFilterListCellOrder:ViewHomeFilterListCell
         super.factoryViews()
         
         let buttonDate:UIButton = UIButton()
+        buttonDate.addTarget(
+            self,
+            action:#selector(self.selectorOrderByDate(sender:)),
+            for:UIControlEvents.touchUpInside)
         self.buttonDate = buttonDate
         
         let buttonFavourites:UIButton = UIButton()
+        buttonFavourites.addTarget(
+            self,
+            action:#selector(self.selectorOrderByFavourites(sender:)),
+            for:UIControlEvents.touchUpInside)
         self.buttonFavourites = buttonFavourites
         
         self.addSubview(buttonDate)
@@ -24,5 +32,33 @@ final class ViewHomeFilterListCellOrder:ViewHomeFilterListCell
         super.config(controller:controller)
         
         controller.configFilterOrder(viewCell:self)
+    }
+    
+    //MARK: Selectors
+    
+    @objc
+    private func selectorOrderByDate(sender button:UIButton)
+    {
+        guard
+        
+            let controller:ControllerHome = self.controller
+        
+        else
+        {
+            return
+        }
+    }
+    
+    @objc
+    private func selectorOrderByFavourites(sender button:UIButton)
+    {
+        guard
+        
+            let controller:ControllerHome = self.controller
+        
+        else
+        {
+            return
+        }
     }
 }
