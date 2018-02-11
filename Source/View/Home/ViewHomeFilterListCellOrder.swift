@@ -23,5 +23,6 @@ final class ViewHomeFilterListCellOrder:ViewHomeFilterListCell
     {
         super.config(controller:controller)
         
+        controller.configFilterOrder(viewCell:self)
     }
 }
