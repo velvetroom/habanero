@@ -61,4 +61,24 @@ final class ViewHomeFilterListCellOrder:ViewHomeFilterListCell
             return
         }
     }
+    
+    //MARK: internal
+    
+    func showOrderedByDate()
+    {
+        self.buttonDate.isEnabled = false
+        self.buttonFavourites.isEnabled = true
+        
+        self.buttonDate.isSelected = true
+        self.buttonFavourites.isSelected = false
+    }
+    
+    func showOrderedByFavourites()
+    {
+        self.buttonDate.isEnabled = true
+        self.buttonFavourites.isEnabled = false
+        
+        self.buttonDate.isSelected = false
+        self.buttonFavourites.isSelected = true
+    }
 }
