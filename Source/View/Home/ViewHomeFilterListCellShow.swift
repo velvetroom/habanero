@@ -23,5 +23,6 @@ final class ViewHomeFilterListCellShow:ViewHomeFilterListCell
     {
         super.config(controller:controller)
         
+        controller.configFilterShow(viewCell:self)
     }
 }
