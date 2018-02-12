@@ -10,6 +10,11 @@ final class ViewHomeBar:ViewBar<ArchHome>
         self.labelTitle.text = String.localizedView(key:"ViewHomeBar_labelTitle")
         
         let buttonFilters:UIButton = UIButton()
+        buttonFilters.translatesAutoresizingMaskIntoConstraints = false
+        buttonFilters.addTarget(
+            self,
+            action:#selector(self.selectorFilters(sender:)),
+            for:UIControlEvents.touchUpInside)
         self.buttonFilters = buttonFilters
         
         self.addSubview(buttonFilters)
@@ -24,5 +29,28 @@ final class ViewHomeBar:ViewBar<ArchHome>
         NSLayoutConstraint.rightToRight(
             view:buttonFilters,
             toView:self)
+        NSLayoutConstraint.width(
+            view:buttonFilters,
+            constant:ViewHomeBar.Constants.buttonFiltersWidth)
+    }
+    
+    //MARK: selectors
+    
+    @objc
+    private func selectorFilters(sender button:UIButton)
+    {
+        self.controller.toggleFilters()
+    }
+    
+    //MARK: internal
+    
+    func showFilters()
+    {
+        self.buttonFilters.isSelected = true
+    }
+    
+    func hideFilters()
+    {
+        self.buttonFilters.isSelected = false
     }
 }

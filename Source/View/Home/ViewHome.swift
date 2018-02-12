@@ -2,6 +2,7 @@ import UIKit
 
 final class ViewHome:ViewMain<ArchHome>
 {
+    private(set) weak var viewBar:ViewHomeBar!
     private(set) weak var viewSpinner:ViewSpinner!
     private(set) weak var viewList:ViewHomeList!
     
@@ -11,6 +12,7 @@ final class ViewHome:ViewMain<ArchHome>
         self.backgroundColor = UIColor.colourBackgroundGray
         
         let viewBar:ViewHomeBar = ViewHomeBar(controller:self.controller)
+        self.viewBar = viewBar
         
         let viewSpinner:ViewSpinner = ViewSpinner()
         self.viewSpinner = viewSpinner
