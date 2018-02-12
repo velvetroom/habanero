@@ -31,6 +31,8 @@
 		DA0750202004528D002C428A /* Storage+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07501E2004528D002C428A /* Storage+Load.swift */; };
 		DA0750222004582E002C428A /* ViewHomeList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0750212004582E002C428A /* ViewHomeList+Actions.swift */; };
 		DA0750232004582E002C428A /* ViewHomeList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0750212004582E002C428A /* ViewHomeList+Actions.swift */; };
+		DA0E79B32031AE32004B3C91 /* ViewHomeBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0E79B22031AE32004B3C91 /* ViewHomeBar+Constants.swift */; };
+		DA0E79B42031AE32004B3C91 /* ViewHomeBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0E79B22031AE32004B3C91 /* ViewHomeBar+Constants.swift */; };
 		DA1058972002DD7800019445 /* ViewHomeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1058962002DD7800019445 /* ViewHomeBar.swift */; };
 		DA1058982002DD7800019445 /* ViewHomeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1058962002DD7800019445 /* ViewHomeBar.swift */; };
 		DA10589A2002E14600019445 /* ViewHomeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1058992002E14600019445 /* ViewHomeList.swift */; };
@@ -881,6 +883,7 @@
 		DA07501820044E21002C428A /* ControllerHome+Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerHome+Recipes.swift"; sourceTree = "<group>"; };
 		DA07501E2004528D002C428A /* Storage+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storage+Load.swift"; sourceTree = "<group>"; };
 		DA0750212004582E002C428A /* ViewHomeList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeList+Actions.swift"; sourceTree = "<group>"; };
+		DA0E79B22031AE32004B3C91 /* ViewHomeBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeBar+Constants.swift"; sourceTree = "<group>"; };
 		DA1058962002DD7800019445 /* ViewHomeBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeBar.swift; sourceTree = "<group>"; };
 		DA1058992002E14600019445 /* ViewHomeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeList.swift; sourceTree = "<group>"; };
 		DA10589C2002E17600019445 /* ViewHomeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeListCell.swift; sourceTree = "<group>"; };
@@ -2037,6 +2040,7 @@
 			children = (
 				DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */,
 				DA1058962002DD7800019445 /* ViewHomeBar.swift */,
+				DA0E79B22031AE32004B3C91 /* ViewHomeBar+Constants.swift */,
 				DA1058992002E14600019445 /* ViewHomeList.swift */,
 				DA07501220044518002C428A /* ViewHomeList+Constants.swift */,
 				DA0750212004582E002C428A /* ViewHomeList+Actions.swift */,
@@ -2746,6 +2750,7 @@
 				DA55E2241FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */,
 				DA70AFC21FD5AA980016B0DC /* ControllerHome.swift in Sources */,
 				DACF89EF1FFDD8A900F4FCF0 /* RecipeIngredientQuantity.swift in Sources */,
+				DA0E79B32031AE32004B3C91 /* ViewHomeBar+Constants.swift in Sources */,
 				DAA07FF520153E90006FFC76 /* CookItem+Image.swift in Sources */,
 				DACF552D1FD7661E00069701 /* ExtensionNotification.swift in Sources */,
 				DA80B552200C1DD300797D61 /* ViewCookBack.swift in Sources */,
@@ -3303,6 +3308,7 @@
 				DA8752DD1FE3ABA700AE74F5 /* NewAddIngredientAmountTypeQuantity.swift in Sources */,
 				DACF89F01FFDD8A900F4FCF0 /* RecipeIngredientQuantity.swift in Sources */,
 				DAAE61FF1FF64E9700954EFC /* NewAdd+StepsUpdate.swift in Sources */,
+				DA0E79B42031AE32004B3C91 /* ViewHomeBar+Constants.swift in Sources */,
 				DA80B550200C1DB000797D61 /* ViewCookPlay.swift in Sources */,
 				DA71D6901FDA633E003A33E1 /* ArchText.swift in Sources */,
 				DAD245FF2025E8F00078A073 /* HomeFilterShowFavourites.swift in Sources */,
