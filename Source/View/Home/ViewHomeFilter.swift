@@ -29,27 +29,24 @@ final class ViewHomeFilter:View<ArchHome>
             view:viewBorder,
             toView:self)
         
-        NSLayoutConstraint.topToTop(
+        NSLayoutConstraint.equalsVertical(
             view:viewSearch,
             toView:self)
-        NSLayoutConstraint.height(
-            view:viewSearch,
-            constant:ViewHomeFilter.Constants.searchHeight)
         NSLayoutConstraint.rightToRight(
             view:viewSearch,
             toView:self)
-        self.layoutSearchWidth = NSLayoutConstraint.width(
+        layoutSearchWidth = NSLayoutConstraint.width(
             view:viewSearch,
             constant:ViewHomeFilter.Constants.searchMinWidth)
         
-        NSLayoutConstraint.topToBottom(
+        NSLayoutConstraint.equalsVertical(
+            view:viewList,
+            toView:self)
+        NSLayoutConstraint.leftToLeft(
+            view:viewList,
+            toView:self)
+        NSLayoutConstraint.rightToLeft(
             view:viewList,
             toView:viewSearch)
-        NSLayoutConstraint.bottomToBottom(
-            view:viewList,
-            toView:self)
-        NSLayoutConstraint.equalsHorizontal(
-            view:viewList,
-            toView:self)
     }
 }
