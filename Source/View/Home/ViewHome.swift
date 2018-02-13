@@ -49,7 +49,8 @@ final class ViewHome:ViewMain<ArchHome>
             toView:viewFilter)
         NSLayoutConstraint.bottomToBottom(
             view:viewList,
-            toView:self)
+            toView:self,
+            constant:-ViewGlobal.Constants.menuHeight)
         NSLayoutConstraint.equalsHorizontal(
             view:viewList,
             toView:self)
