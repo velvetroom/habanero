@@ -4,6 +4,6 @@ extension ViewHome
 {
     struct Constants
     {
-        
+        static let filterHeight:CGFloat = 120
     }
 }
