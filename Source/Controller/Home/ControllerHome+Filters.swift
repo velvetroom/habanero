@@ -8,6 +8,16 @@ extension ControllerHome
     {
     }
     
+    func showFilters()
+    {
+        
+    }
+    
+    func hideFilters()
+    {
+        
+    }
+    
     func configFilterShow(viewCell:ViewHomeFilterListCellShow)
     {
         
