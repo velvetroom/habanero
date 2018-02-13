@@ -13,4 +13,9 @@ extension Home
         self.items = items
         self.loadCompleted(completion:completion)
     }
+    
+    func updateFilterState(filterStateType:HomeFilterStateProtocol.Type)
+    {
+        self.filterState = filterStateType.init()
+    }
 }

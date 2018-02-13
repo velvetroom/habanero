@@ -21,6 +21,9 @@ final class ViewHomeBar:ViewBar<ArchHome>
         buttonFilters.setImage(
             #imageLiteral(resourceName: "assetGenericFilter").withRenderingMode(UIImageRenderingMode.alwaysTemplate),
             for:UIControlState.highlighted)
+        buttonFilters.setImage(
+            #imageLiteral(resourceName: "assetGenericFilter").withRenderingMode(UIImageRenderingMode.alwaysTemplate),
+            for:UIControlState.selected)
         buttonFilters.imageView!.tintColor = UIColor.colourHabanero
         buttonFilters.imageView!.clipsToBounds = true
         buttonFilters.imageView!.contentMode = UIViewContentMode.center
