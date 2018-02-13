@@ -2,7 +2,7 @@ import UIKit
 
 final class ViewHomeFilterSearch:View<ArchHome>
 {
-    private(set) weak var searchBar:UISearchBar!
+    private weak var searchBar:UISearchBar!
     
     override func factoryViews()
     {
@@ -14,7 +14,7 @@ final class ViewHomeFilterSearch:View<ArchHome>
         searchBar.searchBarStyle = UISearchBarStyle.minimal
         searchBar.showsCancelButton = true
         searchBar.tintColor = UIColor.colourBackgroundDark
-        searchBar.delegate = self
+        searchBar.delegate = self.controller
         self.searchBar = searchBar
         
         self.addSubview(searchBar)

@@ -11,8 +11,11 @@ final class ViewHomeFilter:View<ArchHome>
         
         let viewList:ViewHomeFilterList = ViewHomeFilterList(controller:self.controller)
         
+        let viewSearch:ViewHomeFilterSearch = ViewHomeFilterSearch(controller:self.controller)
+        
         self.addSubview(viewBorder)
         self.addSubview(viewList)
+        self.addSubview(viewSearch)
         
         NSLayoutConstraint.height(
             view:viewBorder,
@@ -24,7 +27,23 @@ final class ViewHomeFilter:View<ArchHome>
             view:viewBorder,
             toView:self)
         
-        NSLayoutConstraint.equals(
+        NSLayoutConstraint.topToTop(
+            view:viewSearch,
+            toView:self)
+        NSLayoutConstraint.height(
+            view:viewSearch,
+            constant:ViewHomeFilter.Constants.searchHeight)
+        NSLayoutConstraint.equalsHorizontal(
+            view:viewSearch,
+            toView:self)
+        
+        NSLayoutConstraint.topToBottom(
+            view:viewList,
+            toView:viewSearch)
+        NSLayoutConstraint.bottomToBottom(
+            view:viewList,
+            toView:self)
+        NSLayoutConstraint.equalsHorizontal(
             view:viewList,
             toView:self)
     }

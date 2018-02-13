@@ -217,6 +217,8 @@
 		DA4EAC252033052100444D86 /* ViewHomeFilterSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4EAC232033052100444D86 /* ViewHomeFilterSearch.swift */; };
 		DA4EAC27203309FD00444D86 /* ControllerHome+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4EAC26203309FD00444D86 /* ControllerHome+Search.swift */; };
 		DA4EAC28203309FD00444D86 /* ControllerHome+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4EAC26203309FD00444D86 /* ControllerHome+Search.swift */; };
+		DA4EAC2A20330D2500444D86 /* ViewHomeFilter+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4EAC2920330D2500444D86 /* ViewHomeFilter+Constants.swift */; };
+		DA4EAC2B20330D2500444D86 /* ViewHomeFilter+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4EAC2920330D2500444D86 /* ViewHomeFilter+Constants.swift */; };
 		DA50D543202C3051007BA365 /* ViewHomeFilterList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA50D542202C3051007BA365 /* ViewHomeFilterList+Actions.swift */; };
 		DA50D544202C3051007BA365 /* ViewHomeFilterList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA50D542202C3051007BA365 /* ViewHomeFilterList+Actions.swift */; };
 		DA55E2241FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */; };
@@ -1011,6 +1013,7 @@
 		DA4E0C142021B0C700F5AEE2 /* AnalyticsProviderFirebase+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnalyticsProviderFirebase+Constants.swift"; sourceTree = "<group>"; };
 		DA4EAC232033052100444D86 /* ViewHomeFilterSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeFilterSearch.swift; sourceTree = "<group>"; };
 		DA4EAC26203309FD00444D86 /* ControllerHome+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerHome+Search.swift"; sourceTree = "<group>"; };
+		DA4EAC2920330D2500444D86 /* ViewHomeFilter+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeFilter+Constants.swift"; sourceTree = "<group>"; };
 		DA50D542202C3051007BA365 /* ViewHomeFilterList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeFilterList+Actions.swift"; sourceTree = "<group>"; };
 		DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoCropDisplayShade.swift; sourceTree = "<group>"; };
 		DA5761CD2005877600A5151C /* ArchCook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchCook.swift; sourceTree = "<group>"; };
@@ -2070,6 +2073,7 @@
 				DA10589C2002E17600019445 /* ViewHomeListCell.swift */,
 				DA075015200445DF002C428A /* ViewHomeListCell+Constants.swift */,
 				DAD245F12025E82D0078A073 /* ViewHomeFilter.swift */,
+				DA4EAC2920330D2500444D86 /* ViewHomeFilter+Constants.swift */,
 				DA4EAC232033052100444D86 /* ViewHomeFilterSearch.swift */,
 				DA43ABCA202B6CB8006E9600 /* ViewHomeFilterList.swift */,
 				DA50D542202C3051007BA365 /* ViewHomeFilterList+Actions.swift */,
@@ -2796,6 +2800,7 @@
 				DAC104BC200EB618004617FD /* CookStepItemProtocol.swift in Sources */,
 				DAB7738E2020915C001E702E /* ViewOptionsBar.swift in Sources */,
 				DAD245FB2025E8D10078A073 /* HomeFilterShowAll.swift in Sources */,
+				DA4EAC2A20330D2500444D86 /* ViewHomeFilter+Constants.swift in Sources */,
 				DA74F0C41FE6139F00F45310 /* Format+Duration.swift in Sources */,
 				DA9089281FD4C66000C1208A /* Menu+Constants.swift in Sources */,
 				DA0162302016B570009D7A65 /* CookItem+Favourite.swift in Sources */,
@@ -3115,6 +3120,7 @@
 				DAB773922020950A001E702E /* OptionsItemProtocol.swift in Sources */,
 				DA71D6891FDA5985003A33E1 /* NewAddSectionItemInfoTitle.swift in Sources */,
 				DA60429D1FE21BAF00758A2F /* ControllerNewAddIngredientAmount.swift in Sources */,
+				DA4EAC2B20330D2500444D86 /* ViewHomeFilter+Constants.swift in Sources */,
 				DAFCCA62200DC6BB002377BC /* ViewCookStepBar.swift in Sources */,
 				DACF89DE1FFDD35600F4FCF0 /* RecipeIngredient.swift in Sources */,
 				DAADC4A91FFC85E600862A90 /* NewAddValidateStrategyTitle.swift in Sources */,
