@@ -213,6 +213,8 @@
 		DA4E0C132021ADCF00F5AEE2 /* AnalyticsProviderFirebase+Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E0C112021ADCF00F5AEE2 /* AnalyticsProviderFirebase+Provider.swift */; };
 		DA4E0C152021B0C700F5AEE2 /* AnalyticsProviderFirebase+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E0C142021B0C700F5AEE2 /* AnalyticsProviderFirebase+Constants.swift */; };
 		DA4E0C162021B0C700F5AEE2 /* AnalyticsProviderFirebase+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E0C142021B0C700F5AEE2 /* AnalyticsProviderFirebase+Constants.swift */; };
+		DA4EAC242033052100444D86 /* ViewHomeFilterSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4EAC232033052100444D86 /* ViewHomeFilterSearch.swift */; };
+		DA4EAC252033052100444D86 /* ViewHomeFilterSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4EAC232033052100444D86 /* ViewHomeFilterSearch.swift */; };
 		DA50D543202C3051007BA365 /* ViewHomeFilterList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA50D542202C3051007BA365 /* ViewHomeFilterList+Actions.swift */; };
 		DA50D544202C3051007BA365 /* ViewHomeFilterList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA50D542202C3051007BA365 /* ViewHomeFilterList+Actions.swift */; };
 		DA55E2241FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */; };
@@ -1005,6 +1007,7 @@
 		DA4E0C0E2021AB1B00F5AEE2 /* AnalyticsProviderFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsProviderFirebase.swift; sourceTree = "<group>"; };
 		DA4E0C112021ADCF00F5AEE2 /* AnalyticsProviderFirebase+Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnalyticsProviderFirebase+Provider.swift"; sourceTree = "<group>"; };
 		DA4E0C142021B0C700F5AEE2 /* AnalyticsProviderFirebase+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnalyticsProviderFirebase+Constants.swift"; sourceTree = "<group>"; };
+		DA4EAC232033052100444D86 /* ViewHomeFilterSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeFilterSearch.swift; sourceTree = "<group>"; };
 		DA50D542202C3051007BA365 /* ViewHomeFilterList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeFilterList+Actions.swift"; sourceTree = "<group>"; };
 		DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoCropDisplayShade.swift; sourceTree = "<group>"; };
 		DA5761CD2005877600A5151C /* ArchCook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchCook.swift; sourceTree = "<group>"; };
@@ -2063,6 +2066,7 @@
 				DA10589C2002E17600019445 /* ViewHomeListCell.swift */,
 				DA075015200445DF002C428A /* ViewHomeListCell+Constants.swift */,
 				DAD245F12025E82D0078A073 /* ViewHomeFilter.swift */,
+				DA4EAC232033052100444D86 /* ViewHomeFilterSearch.swift */,
 				DA43ABCA202B6CB8006E9600 /* ViewHomeFilterList.swift */,
 				DA50D542202C3051007BA365 /* ViewHomeFilterList+Actions.swift */,
 				DA43ABCD202B6CDF006E9600 /* ViewHomeFilterListCell.swift */,
@@ -2900,6 +2904,7 @@
 				DA9089261FD4C66000C1208A /* ArchHome.swift in Sources */,
 				DA01622D2016B06A009D7A65 /* CookItemFavouriteOff.swift in Sources */,
 				DAB7738B20208F05001E702E /* MenuItemOptions.swift in Sources */,
+				DA4EAC242033052100444D86 /* ViewHomeFilterSearch.swift in Sources */,
 				DAE7C35C1FE08281003190FF /* CloudError+Description.swift in Sources */,
 				DA936CED1FFF10EB00740BE8 /* RecipeIngredientCupsBuilder.swift in Sources */,
 				DAE35CA02005E65F002B1C9C /* ViewCookListCell.swift in Sources */,
@@ -3479,6 +3484,7 @@
 				DA74F0CE1FE6154800F45310 /* FormatIngredientTypeMililitres.swift in Sources */,
 				DACF55381FD7661E00069701 /* ExtensionFileManager.swift in Sources */,
 				DA71D6711FDA44C0003A33E1 /* ViewNewAddListFooterSteps.swift in Sources */,
+				DA4EAC252033052100444D86 /* ViewHomeFilterSearch.swift in Sources */,
 				DA8752D91FE3AB9400AE74F5 /* NewAddIngredientAmountTypeGrams.swift in Sources */,
 				DA01622B2016B045009D7A65 /* CookItemFavouriteOn.swift in Sources */,
 				DAE7C3421FE07F6C003190FF /* NewAddIngredient+Create.swift in Sources */,
