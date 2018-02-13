@@ -215,6 +215,8 @@
 		DA4E0C162021B0C700F5AEE2 /* AnalyticsProviderFirebase+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E0C142021B0C700F5AEE2 /* AnalyticsProviderFirebase+Constants.swift */; };
 		DA4EAC242033052100444D86 /* ViewHomeFilterSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4EAC232033052100444D86 /* ViewHomeFilterSearch.swift */; };
 		DA4EAC252033052100444D86 /* ViewHomeFilterSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4EAC232033052100444D86 /* ViewHomeFilterSearch.swift */; };
+		DA4EAC27203309FD00444D86 /* ControllerHome+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4EAC26203309FD00444D86 /* ControllerHome+Search.swift */; };
+		DA4EAC28203309FD00444D86 /* ControllerHome+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4EAC26203309FD00444D86 /* ControllerHome+Search.swift */; };
 		DA50D543202C3051007BA365 /* ViewHomeFilterList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA50D542202C3051007BA365 /* ViewHomeFilterList+Actions.swift */; };
 		DA50D544202C3051007BA365 /* ViewHomeFilterList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA50D542202C3051007BA365 /* ViewHomeFilterList+Actions.swift */; };
 		DA55E2241FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */; };
@@ -1008,6 +1010,7 @@
 		DA4E0C112021ADCF00F5AEE2 /* AnalyticsProviderFirebase+Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnalyticsProviderFirebase+Provider.swift"; sourceTree = "<group>"; };
 		DA4E0C142021B0C700F5AEE2 /* AnalyticsProviderFirebase+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnalyticsProviderFirebase+Constants.swift"; sourceTree = "<group>"; };
 		DA4EAC232033052100444D86 /* ViewHomeFilterSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeFilterSearch.swift; sourceTree = "<group>"; };
+		DA4EAC26203309FD00444D86 /* ControllerHome+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerHome+Search.swift"; sourceTree = "<group>"; };
 		DA50D542202C3051007BA365 /* ViewHomeFilterList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeFilterList+Actions.swift"; sourceTree = "<group>"; };
 		DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoCropDisplayShade.swift; sourceTree = "<group>"; };
 		DA5761CD2005877600A5151C /* ArchCook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchCook.swift; sourceTree = "<group>"; };
@@ -1922,6 +1925,7 @@
 				DA07501820044E21002C428A /* ControllerHome+Recipes.swift */,
 				DA02D8FD2029A0AF0026D7B4 /* ControllerHome+Favourites.swift */,
 				DAB87328202FA9B6007B7C3B /* ControllerHome+Filters.swift */,
+				DA4EAC26203309FD00444D86 /* ControllerHome+Search.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -3025,6 +3029,7 @@
 				DA5761D92005893C00A5151C /* ViewCook.swift in Sources */,
 				DA4AA5091FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift in Sources */,
 				DA9089251FD4C66000C1208A /* Arch.swift in Sources */,
+				DA4EAC27203309FD00444D86 /* ControllerHome+Search.swift in Sources */,
 				DAD246012025E91A0078A073 /* HomeFilterOrderProtocol.swift in Sources */,
 				DAAE61F71FF637A700954EFC /* PhotoRotation+Factory.swift in Sources */,
 				DAA333D71FDB17EA002D766C /* Database.swift in Sources */,
@@ -3414,6 +3419,7 @@
 				DA91EB1D1FD62C1F0063560D /* ViewSpinner.swift in Sources */,
 				DAE7C3781FE0996B003190FF /* IngredientList.swift in Sources */,
 				DACF552C1FD7661E00069701 /* ExtensionDictionary.swift in Sources */,
+				DA4EAC28203309FD00444D86 /* ControllerHome+Search.swift in Sources */,
 				DAC104B1200EA921004617FD /* ViewCookStepList.swift in Sources */,
 				DA1F04F21FE8C0BF00DF03A8 /* ControllerNewAdd+Steps.swift in Sources */,
 				DA33F320200FCE4300F07E48 /* ViewCookStep+Constants.swift in Sources */,
