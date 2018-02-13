@@ -12,7 +12,7 @@ final class ViewHomeFilterSearch:View<ArchHome>
         searchBar.translatesAutoresizingMaskIntoConstraints = false
         searchBar.backgroundColor = UIColor.clear
         searchBar.searchBarStyle = UISearchBarStyle.minimal
-        searchBar.showsCancelButton = true
+        searchBar.showsCancelButton = false
         searchBar.tintColor = UIColor.colourBackgroundDark
         searchBar.delegate = self.controller
         self.searchBar = searchBar

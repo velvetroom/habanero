@@ -2,6 +2,8 @@ import UIKit
 
 final class ViewHomeFilter:View<ArchHome>
 {
+    private(set) weak var layoutSearchWidth:NSLayoutConstraint!
+    
     override func factoryViews()
     {
         super.factoryViews()
@@ -33,9 +35,12 @@ final class ViewHomeFilter:View<ArchHome>
         NSLayoutConstraint.height(
             view:viewSearch,
             constant:ViewHomeFilter.Constants.searchHeight)
-        NSLayoutConstraint.equalsHorizontal(
+        NSLayoutConstraint.rightToRight(
             view:viewSearch,
             toView:self)
+        self.layoutSearchWidth = NSLayoutConstraint.width(
+            view:viewSearch,
+            constant:ViewHomeFilter.Constants.searchMinWidth)
         
         NSLayoutConstraint.topToBottom(
             view:viewList,

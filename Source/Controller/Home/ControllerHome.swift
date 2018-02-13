@@ -63,6 +63,16 @@ final class ControllerHome:Controller<ArchHome>, UISearchBarDelegate
     
     //MARK: search bar delegate
     
+    func searchBarTextDidBeginEditing(_ searchBar:UISearchBar)
+    {
+        self.animateShowSearch()
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar:UISearchBar)
+    {
+        self.animateHideSearch()
+    }
+    
     func searchBarCancelButtonClicked(_ searchBar:UISearchBar)
     {
         searchBar.resignFirstResponder()
