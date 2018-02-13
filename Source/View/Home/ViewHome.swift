@@ -29,6 +29,10 @@ final class ViewHome:ViewMain<ArchHome>
         self.addSubview(viewSpinner)
         self.addSubview(viewBar)
         
+        NSLayoutConstraint.equals(
+            view:viewSpinner,
+            toView:self)
+        
         layoutFilterTop = NSLayoutConstraint.topToBottom(
             view:viewFilter,
             toView:viewBar,
@@ -46,17 +50,6 @@ final class ViewHome:ViewMain<ArchHome>
         NSLayoutConstraint.bottomToBottom(
             view:viewList,
             toView:self)
-        NSLayoutConstraint.equalsHorizontal(
-            view:viewSpinner,
-            toView:self)
-        
-        NSLayoutConstraint.topToBottom(
-            view:viewList,
-            toView:viewBar)
-        NSLayoutConstraint.bottomToBottom(
-            view:viewList,
-            toView:self,
-            constant:-ViewGlobal.Constants.menuHeight)
         NSLayoutConstraint.equalsHorizontal(
             view:viewList,
             toView:self)

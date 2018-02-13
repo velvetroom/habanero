@@ -370,6 +370,8 @@
 		DA7B1FC7202069A40097202E /* Database+Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B1FC5202069A40097202E /* Database+Delete.swift */; };
 		DA7F7A5B2032D0AA001BED41 /* ViewHome+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F7A5A2032D0AA001BED41 /* ViewHome+Constants.swift */; };
 		DA7F7A5C2032D0AA001BED41 /* ViewHome+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F7A5A2032D0AA001BED41 /* ViewHome+Constants.swift */; };
+		DA7F7A5E2032D2CF001BED41 /* HomeFilterStateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F7A5D2032D2CF001BED41 /* HomeFilterStateProtocol.swift */; };
+		DA7F7A5F2032D2CF001BED41 /* HomeFilterStateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F7A5D2032D2CF001BED41 /* HomeFilterStateProtocol.swift */; };
 		DA80B54F200C1DB000797D61 /* ViewCookPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B54E200C1DB000797D61 /* ViewCookPlay.swift */; };
 		DA80B550200C1DB000797D61 /* ViewCookPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B54E200C1DB000797D61 /* ViewCookPlay.swift */; };
 		DA80B552200C1DD300797D61 /* ViewCookBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B551200C1DD300797D61 /* ViewCookBack.swift */; };
@@ -1102,6 +1104,7 @@
 		DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = generic.xcassets; sourceTree = "<group>"; };
 		DA7B1FC5202069A40097202E /* Database+Delete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Delete.swift"; sourceTree = "<group>"; };
 		DA7F7A5A2032D0AA001BED41 /* ViewHome+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHome+Constants.swift"; sourceTree = "<group>"; };
+		DA7F7A5D2032D2CF001BED41 /* HomeFilterStateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterStateProtocol.swift; sourceTree = "<group>"; };
 		DA80B54E200C1DB000797D61 /* ViewCookPlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookPlay.swift; sourceTree = "<group>"; };
 		DA80B551200C1DD300797D61 /* ViewCookBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookBack.swift; sourceTree = "<group>"; };
 		DA80B554200C23AC00797D61 /* cook.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = cook.xcassets; sourceTree = "<group>"; };
@@ -1993,6 +1996,7 @@
 				DAD246002025E91A0078A073 /* HomeFilterOrderProtocol.swift */,
 				DAD246032025E93C0078A073 /* HomeFilterOrderDate.swift */,
 				DAD246062025E95A0078A073 /* HomeFilterOrderFavourites.swift */,
+				DA7F7A5D2032D2CF001BED41 /* HomeFilterStateProtocol.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -2928,6 +2932,7 @@
 				DA91EAEC1FD62C1F0063560D /* ViewMenu.swift in Sources */,
 				DA9089241FD4C66000C1208A /* ControllerParent.swift in Sources */,
 				DA35DD081FFDA8C20047881F /* Recipe.swift in Sources */,
+				DA7F7A5E2032D2CF001BED41 /* HomeFilterStateProtocol.swift in Sources */,
 				DA90891D1FD4C66000C1208A /* Controller.swift in Sources */,
 				DA91EB141FD62C1F0063560D /* ViewGradient.swift in Sources */,
 				DA6E80841FF9B7A600175F70 /* StorageProviderFirebase.swift in Sources */,
@@ -3532,6 +3537,7 @@
 				DAE7C33A1FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift in Sources */,
 				DA35DD211FFDB95B0047881F /* StorageError+Description.swift in Sources */,
 				DA27794920071EE900F15AE0 /* ViewCookListCellIngredient.swift in Sources */,
+				DA7F7A5F2032D2CF001BED41 /* HomeFilterStateProtocol.swift in Sources */,
 				DAE35C9B2005D34F002B1C9C /* ViewCookHeader+Constants.swift in Sources */,
 				DAE5E4811FE489C100CC40BA /* Settings.swift in Sources */,
 				DA992D791FD61ED700A6CFEF /* MenuItemGenericProtocol.swift in Sources */,

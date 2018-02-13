@@ -6,7 +6,6 @@ extension ControllerHome
     
     func toggleFilters()
     {
-        
     }
     
     func configFilterShow(viewCell:ViewHomeFilterListCellShow)
