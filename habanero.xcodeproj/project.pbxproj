@@ -374,6 +374,8 @@
 		DA7F7A5F2032D2CF001BED41 /* HomeFilterStateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F7A5D2032D2CF001BED41 /* HomeFilterStateProtocol.swift */; };
 		DA7F7A612032D337001BED41 /* HomeFilterStateHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F7A602032D337001BED41 /* HomeFilterStateHidden.swift */; };
 		DA7F7A622032D337001BED41 /* HomeFilterStateHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F7A602032D337001BED41 /* HomeFilterStateHidden.swift */; };
+		DA7F7A642032D3A4001BED41 /* HomeFilterStateVisible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F7A632032D3A4001BED41 /* HomeFilterStateVisible.swift */; };
+		DA7F7A652032D3A4001BED41 /* HomeFilterStateVisible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F7A632032D3A4001BED41 /* HomeFilterStateVisible.swift */; };
 		DA80B54F200C1DB000797D61 /* ViewCookPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B54E200C1DB000797D61 /* ViewCookPlay.swift */; };
 		DA80B550200C1DB000797D61 /* ViewCookPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B54E200C1DB000797D61 /* ViewCookPlay.swift */; };
 		DA80B552200C1DD300797D61 /* ViewCookBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B551200C1DD300797D61 /* ViewCookBack.swift */; };
@@ -1108,6 +1110,7 @@
 		DA7F7A5A2032D0AA001BED41 /* ViewHome+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHome+Constants.swift"; sourceTree = "<group>"; };
 		DA7F7A5D2032D2CF001BED41 /* HomeFilterStateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterStateProtocol.swift; sourceTree = "<group>"; };
 		DA7F7A602032D337001BED41 /* HomeFilterStateHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterStateHidden.swift; sourceTree = "<group>"; };
+		DA7F7A632032D3A4001BED41 /* HomeFilterStateVisible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterStateVisible.swift; sourceTree = "<group>"; };
 		DA80B54E200C1DB000797D61 /* ViewCookPlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookPlay.swift; sourceTree = "<group>"; };
 		DA80B551200C1DD300797D61 /* ViewCookBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookBack.swift; sourceTree = "<group>"; };
 		DA80B554200C23AC00797D61 /* cook.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = cook.xcassets; sourceTree = "<group>"; };
@@ -2001,6 +2004,7 @@
 				DAD246062025E95A0078A073 /* HomeFilterOrderFavourites.swift */,
 				DA7F7A5D2032D2CF001BED41 /* HomeFilterStateProtocol.swift */,
 				DA7F7A602032D337001BED41 /* HomeFilterStateHidden.swift */,
+				DA7F7A632032D3A4001BED41 /* HomeFilterStateVisible.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -2982,6 +2986,7 @@
 				DAC104B3200EA9BA004617FD /* ViewCookStepListCell.swift in Sources */,
 				DAA1805420121F7700A5B834 /* ViewCookStepListCell+Constants.swift in Sources */,
 				DA35DD171FFDB11E0047881F /* RecipeBuilder.swift in Sources */,
+				DA7F7A642032D3A4001BED41 /* HomeFilterStateVisible.swift in Sources */,
 				DA683599200176DC0087C77D /* RecipeStepImage.swift in Sources */,
 				DAE5E4861FE48CA700CC40BA /* Settings+Computed.swift in Sources */,
 				DA10589D2002E17600019445 /* ViewHomeListCell.swift in Sources */,
@@ -3174,6 +3179,7 @@
 				DAAE61F51FF636F500954EFC /* PhotoRotation.swift in Sources */,
 				DA11BA071FD8F1DE0038F9B0 /* ViewNewAddList.swift in Sources */,
 				DA91EAF51FD62C1F0063560D /* ViewParent.swift in Sources */,
+				DA7F7A652032D3A4001BED41 /* HomeFilterStateVisible.swift in Sources */,
 				DA178199200D7D76007AF4A4 /* ControllerCookStep.swift in Sources */,
 				DAF8068C200FC0C500E2F858 /* CookStep+Image.swift in Sources */,
 				DA33F329200FDC1B00F07E48 /* ViewCookStepProgressIndicator+Constants.swift in Sources */,

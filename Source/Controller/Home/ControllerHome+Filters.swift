@@ -4,16 +4,16 @@ extension ControllerHome
 {
     //MARK: internal
     
-    func toggleFilters()
+    func toggleFilter()
     {
     }
     
-    func showFilters()
+    func showFilter()
     {
         
     }
     
-    func hideFilters()
+    func hideFilter()
     {
         
     }

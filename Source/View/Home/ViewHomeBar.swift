@@ -48,7 +48,7 @@ final class ViewHomeBar:ViewBar<ArchHome>
     @objc
     private func selectorFilters(sender button:UIButton)
     {
-        self.controller.toggleFilters()
+        self.controller.toggleFilter()
     }
     
     //MARK: internal
