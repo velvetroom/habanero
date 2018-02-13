@@ -6,6 +6,6 @@ extension ViewHomeBar
     
     struct Constants
     {
-        static let buttonFiltersWidth:CGFloat = 60
+        static let buttonFiltersWidth:CGFloat = 50
     }
 }

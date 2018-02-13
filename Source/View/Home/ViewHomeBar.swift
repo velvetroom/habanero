@@ -15,6 +15,15 @@ final class ViewHomeBar:ViewBar<ArchHome>
             self,
             action:#selector(self.selectorFilters(sender:)),
             for:UIControlEvents.touchUpInside)
+        buttonFilters.setImage(
+            #imageLiteral(resourceName: "assetGenericFilter").withRenderingMode(UIImageRenderingMode.alwaysOriginal),
+            for:UIControlState.normal)
+        buttonFilters.setImage(
+            #imageLiteral(resourceName: "assetGenericFilter").withRenderingMode(UIImageRenderingMode.alwaysTemplate),
+            for:UIControlState.highlighted)
+        buttonFilters.imageView!.tintColor = UIColor.colourHabanero
+        buttonFilters.imageView!.clipsToBounds = true
+        buttonFilters.imageView!.contentMode = UIViewContentMode.center
         self.buttonFilters = buttonFilters
         
         self.addSubview(buttonFilters)
