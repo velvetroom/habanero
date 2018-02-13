@@ -368,6 +368,8 @@
 		DA753DAC1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA7B1FC6202069A40097202E /* Database+Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B1FC5202069A40097202E /* Database+Delete.swift */; };
 		DA7B1FC7202069A40097202E /* Database+Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B1FC5202069A40097202E /* Database+Delete.swift */; };
+		DA7F7A5B2032D0AA001BED41 /* ViewHome+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F7A5A2032D0AA001BED41 /* ViewHome+Constants.swift */; };
+		DA7F7A5C2032D0AA001BED41 /* ViewHome+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F7A5A2032D0AA001BED41 /* ViewHome+Constants.swift */; };
 		DA80B54F200C1DB000797D61 /* ViewCookPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B54E200C1DB000797D61 /* ViewCookPlay.swift */; };
 		DA80B550200C1DB000797D61 /* ViewCookPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B54E200C1DB000797D61 /* ViewCookPlay.swift */; };
 		DA80B552200C1DD300797D61 /* ViewCookBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B551200C1DD300797D61 /* ViewCookBack.swift */; };
@@ -1099,6 +1101,7 @@
 		DA753DA91FD5EB96007E5BC5 /* Design */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Design; sourceTree = "<group>"; };
 		DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = generic.xcassets; sourceTree = "<group>"; };
 		DA7B1FC5202069A40097202E /* Database+Delete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Delete.swift"; sourceTree = "<group>"; };
+		DA7F7A5A2032D0AA001BED41 /* ViewHome+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHome+Constants.swift"; sourceTree = "<group>"; };
 		DA80B54E200C1DB000797D61 /* ViewCookPlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookPlay.swift; sourceTree = "<group>"; };
 		DA80B551200C1DD300797D61 /* ViewCookBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookBack.swift; sourceTree = "<group>"; };
 		DA80B554200C23AC00797D61 /* cook.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = cook.xcassets; sourceTree = "<group>"; };
@@ -2039,6 +2042,7 @@
 			isa = PBXGroup;
 			children = (
 				DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */,
+				DA7F7A5A2032D0AA001BED41 /* ViewHome+Constants.swift */,
 				DA1058962002DD7800019445 /* ViewHomeBar.swift */,
 				DA0E79B22031AE32004B3C91 /* ViewHomeBar+Constants.swift */,
 				DA1058992002E14600019445 /* ViewHomeList.swift */,
@@ -2848,6 +2852,7 @@
 				DACF55331FD7661E00069701 /* ExtensionMKPolyline.swift in Sources */,
 				DABC1D892018D586000EE4E6 /* CloudProviderFirebase+Constants.swift in Sources */,
 				DA90891E1FD4C66000C1208A /* ControllerParent+Orientation.swift in Sources */,
+				DA7F7A5B2032D0AA001BED41 /* ViewHome+Constants.swift in Sources */,
 				DA6E80811FF9B64400175F70 /* StorageProviderProtocol.swift in Sources */,
 				DA936CF61FFF11DD00740BE8 /* RecipeIngredientQuantityBuilder.swift in Sources */,
 				DA4AA5061FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift in Sources */,
@@ -3311,6 +3316,7 @@
 				DA0E79B42031AE32004B3C91 /* ViewHomeBar+Constants.swift in Sources */,
 				DA80B550200C1DB000797D61 /* ViewCookPlay.swift in Sources */,
 				DA71D6901FDA633E003A33E1 /* ArchText.swift in Sources */,
+				DA7F7A5C2032D0AA001BED41 /* ViewHome+Constants.swift in Sources */,
 				DAD245FF2025E8F00078A073 /* HomeFilterShowFavourites.swift in Sources */,
 				DAD2460B2025E9A60078A073 /* Home+Factory.swift in Sources */,
 				DAA07FF420153E90006FFC76 /* CookItem.swift in Sources */,
