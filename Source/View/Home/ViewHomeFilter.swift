@@ -2,6 +2,7 @@ import UIKit
 
 final class ViewHomeFilter:View<ArchHome>
 {
+    private(set) weak var viewSearch:ViewHomeFilterSearch!
     private(set) weak var layoutSearchWidth:NSLayoutConstraint!
     
     override func factoryViews()
@@ -14,6 +15,7 @@ final class ViewHomeFilter:View<ArchHome>
         let viewList:ViewHomeFilterList = ViewHomeFilterList(controller:self.controller)
         
         let viewSearch:ViewHomeFilterSearch = ViewHomeFilterSearch(controller:self.controller)
+        self.viewSearch = viewSearch
         
         self.addSubview(viewBorder)
         self.addSubview(viewList)

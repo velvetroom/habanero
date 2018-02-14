@@ -2,7 +2,7 @@ import UIKit
 
 final class ViewHomeFilterSearch:View<ArchHome>
 {
-    private weak var searchBar:UISearchBar!
+    private(set) weak var searchBar:UISearchBar!
     
     override func factoryViews()
     {

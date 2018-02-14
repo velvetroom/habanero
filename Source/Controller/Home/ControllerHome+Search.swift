@@ -28,13 +28,14 @@ extension ControllerHome
     func animateShowSearch()
     {
         self.viewMain.viewFilter.layoutSearchWidth.constant = self.searchMaxWidth
+        self.viewMain.viewFilter.viewSearch.searchBar.showsCancelButton = true
         self.animateSearchBar()
     }
     
     func animateHideSearch()
     {
         self.viewMain.viewFilter.layoutSearchWidth.constant = ViewHomeFilter.Constants.searchMinWidth
-        self.viewMain.viewFilter.views
+        self.viewMain.viewFilter.viewSearch.searchBar.showsCancelButton = false
         self.animateSearchBar()
     }
 }
