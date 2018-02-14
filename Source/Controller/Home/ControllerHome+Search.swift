@@ -36,6 +36,7 @@ extension ControllerHome
     {
         self.viewMain.viewFilter.layoutSearchWidth.constant = ViewHomeFilter.Constants.searchMinWidth
         self.viewMain.viewFilter.viewSearch.searchBar.showsCancelButton = false
+        self.viewMain.viewFilter.viewSearch.searchBar.text = String()
         self.animateSearchBar()
     }
 }
