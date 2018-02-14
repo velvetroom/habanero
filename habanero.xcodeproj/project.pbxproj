@@ -421,6 +421,8 @@
 		DA8E57B420172A4100EBF87F /* CloudProviderFirebase+Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E57B320172A4100EBF87F /* CloudProviderFirebase+Transaction.swift */; };
 		DA8E57B520172A4100EBF87F /* CloudProviderFirebase+Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E57B320172A4100EBF87F /* CloudProviderFirebase+Transaction.swift */; };
 		DA8E738C1FF88F3C005264F4 /* ViewNewAddListCellEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E738B1FF88F3C005264F4 /* ViewNewAddListCellEditable.swift */; };
+		DA8F74E52034278600A34A01 /* HomeFilterKeyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F74E42034278600A34A01 /* HomeFilterKeyword.swift */; };
+		DA8F74E62034278600A34A01 /* HomeFilterKeyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F74E42034278600A34A01 /* HomeFilterKeyword.swift */; };
 		DA9089031FD4C65F00C1208A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA90889E1FD4C65F00C1208A /* LaunchScreen.storyboard */; };
 		DA9089041FD4C65F00C1208A /* LocalizableModel.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A01FD4C65F00C1208A /* LocalizableModel.strings */; };
 		DA9089051FD4C65F00C1208A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A21FD4C65F00C1208A /* InfoPlist.strings */; };
@@ -1151,6 +1153,7 @@
 		DA8C6E3B1FDB2F3B00C0AD69 /* Build.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Build.swift; sourceTree = "<group>"; };
 		DA8E57B320172A4100EBF87F /* CloudProviderFirebase+Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudProviderFirebase+Transaction.swift"; sourceTree = "<group>"; };
 		DA8E738B1FF88F3C005264F4 /* ViewNewAddListCellEditable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellEditable.swift; sourceTree = "<group>"; };
+		DA8F74E42034278600A34A01 /* HomeFilterKeyword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterKeyword.swift; sourceTree = "<group>"; };
 		DA9088821FD4C38E00C1208A /* user.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = user.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9088981FD4C45600C1208A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DA90889B1FD4C4AF00C1208A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -2015,6 +2018,7 @@
 				DA7F7A5D2032D2CF001BED41 /* HomeFilterStateProtocol.swift */,
 				DA7F7A602032D337001BED41 /* HomeFilterStateHidden.swift */,
 				DA7F7A632032D3A4001BED41 /* HomeFilterStateVisible.swift */,
+				DA8F74E42034278600A34A01 /* HomeFilterKeyword.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -3037,6 +3041,7 @@
 				DA4EAC27203309FD00444D86 /* ControllerHome+Search.swift in Sources */,
 				DAD246012025E91A0078A073 /* HomeFilterOrderProtocol.swift in Sources */,
 				DAAE61F71FF637A700954EFC /* PhotoRotation+Factory.swift in Sources */,
+				DA8F74E52034278600A34A01 /* HomeFilterKeyword.swift in Sources */,
 				DAA333D71FDB17EA002D766C /* Database.swift in Sources */,
 				DAB7739D2020A32B001E702E /* ViewOptionsListCellMetrics.swift in Sources */,
 				DA43ABCE202B6CDF006E9600 /* ViewHomeFilterListCell.swift in Sources */,
@@ -3142,6 +3147,7 @@
 				DACF553C1FD7661E00069701 /* ExtensionMKAnnotationView.swift in Sources */,
 				DA6E805F1FF987F100175F70 /* CloudProviderFirebase.swift in Sources */,
 				DAE7C37A1FE0A2E1003190FF /* ControllerNewAddIngredient+Create.swift in Sources */,
+				DA8F74E62034278600A34A01 /* HomeFilterKeyword.swift in Sources */,
 				DA35DD0C1FFDAADF0047881F /* RecipeStatus.swift in Sources */,
 				DA70AFC31FD5AA980016B0DC /* ControllerHome.swift in Sources */,
 				DA16F1641FDFB4C000EB6877 /* ControllerNewAdd+Ingredients.swift in Sources */,
