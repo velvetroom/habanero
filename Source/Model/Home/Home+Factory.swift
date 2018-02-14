@@ -24,10 +24,12 @@ extension Home
     {
         let show:HomeFilterShowProtocol = Home.factoryFilterShow()
         let order:HomeFilterOrderProtocol = Home.factoryFilterOrder()
+        let keyword:HomeFilterKeyword = HomeFilterKeyword()
         
         let filter:HomeFilter = HomeFilter(
             show:show,
-            order:order)
+            order:order,
+            keyword:keyword)
         
         return filter
     }
