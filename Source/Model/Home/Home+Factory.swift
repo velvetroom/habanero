@@ -40,8 +40,8 @@ extension Home
         let optionOrder:HomeFilterOptionsOrder = HomeFilterOptionsOrder()
         
         let options:[HomeFilterOptionsProtocol] = [
-            optionShow,
-            optionOrder]
+            optionOrder,
+            optionShow]
         
         return options
     }
