@@ -68,19 +68,27 @@ final class ControllerHome:Controller<ArchHome>, UISearchBarDelegate
         self.animateShowSearch()
     }
     
-    func searchBarTextDidEndEditing(_ searchBar:UISearchBar)
-    {
-        self.animateHideSearch()
-    }
-    
     func searchBarCancelButtonClicked(_ searchBar:UISearchBar)
     {
+        self.animateHideSearch()
         searchBar.resignFirstResponder()
     }
     
     func searchBarSearchButtonClicked(_ searchBar:UISearchBar)
     {
         searchBar.resignFirstResponder()
+        
+        guard
+        
+            let search:String = searchBar.text,
+            search.isEmpty == true
+        
+        else
+        {
+            return
+        }
+        
+        self.animateHideSearch()
     }
     
     func searchBar(
