@@ -30,6 +30,19 @@ final class ViewHomeFilterListCellOrder:ViewHomeFilterListCell
         self.buttonDate = buttonDate
         
         let buttonFavourites:UIButton = UIButton()
+        buttonFavourites.translatesAutoresizingMaskIntoConstraints = false
+        buttonFavourites.setImage(
+            #imageLiteral(resourceName: "assetGenericFilterOrderDate").withRenderingMode(UIImageRenderingMode.alwaysOriginal),
+            for:UIControlState.normal)
+        buttonFavourites.setImage(
+            #imageLiteral(resourceName: "assetGenericFilterOrderDate").withRenderingMode(UIImageRenderingMode.alwaysTemplate),
+            for:UIControlState.highlighted)
+        buttonFavourites.setImage(
+            #imageLiteral(resourceName: "assetGenericFilterOrderDate").withRenderingMode(UIImageRenderingMode.alwaysTemplate),
+            for:UIControlState.selected)
+        buttonFavourites.imageView!.clipsToBounds = true
+        buttonFavourites.imageView!.contentMode = UIViewContentMode.center
+        buttonFavourites.imageView!.tintColor = UIColor.colourHabanero
         buttonFavourites.addTarget(
             self,
             action:#selector(self.selectorOrderByFavourites(sender:)),
@@ -47,6 +60,16 @@ final class ViewHomeFilterListCellOrder:ViewHomeFilterListCell
             toView:self)
         NSLayoutConstraint.width(
             view:buttonDate,
+            constant:ViewHomeFilterListCellOrder.Constants.buttonWidth)
+        
+        NSLayoutConstraint.equalsVertical(
+            view:buttonFavourites,
+            toView:self)
+        NSLayoutConstraint.leftToRight(
+            view:buttonFavourites,
+            toView:buttonDate)
+        NSLayoutConstraint.width(
+            view:buttonFavourites,
             constant:ViewHomeFilterListCellOrder.Constants.buttonWidth)
     }
     
@@ -70,6 +93,8 @@ final class ViewHomeFilterListCellOrder:ViewHomeFilterListCell
         {
             return
         }
+        
+        controller.filterOrderByDate()
     }
     
     @objc
@@ -83,6 +108,8 @@ final class ViewHomeFilterListCellOrder:ViewHomeFilterListCell
         {
             return
         }
+        
+        controller.filterOrderByFavourites()
     }
     
     //MARK: internal
