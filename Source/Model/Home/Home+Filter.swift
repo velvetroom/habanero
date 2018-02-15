@@ -19,4 +19,13 @@ extension Home
     {
         self.filterState = filterStateType.init()
     }
+    
+    func updateFilters(completion:@escaping(() -> ()))
+    {
+        DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
+        { [weak self] in
+            
+            self?.filterItems(completion:completion)
+        }
+    }
 }

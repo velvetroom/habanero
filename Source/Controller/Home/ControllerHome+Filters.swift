@@ -4,6 +4,21 @@ extension ControllerHome
 {
     //MARK: private
     
+    private func filtersUpdated()
+    {
+        let rect:CGRect = CGRect(
+            x:0,
+            y:0,
+            width:1,
+            height:1)
+        
+        self.viewMain.viewList.collectionView.reloadData()
+        
+        self.viewMain.viewList.collectionView.scrollRectToVisible(
+            rect,
+            animated:true)
+    }
+    
     private func animateFilterTo(position:CGFloat)
     {
         self.viewMain.layoutFilterTop.constant = position
@@ -16,6 +31,15 @@ extension ControllerHome
     }
     
     //MARK: internal
+    
+    func updateFilters()
+    {
+        self.model.updateFilters
+        { [weak self] in
+            
+            self?.filtersUpdated()
+        }
+    }
     
     func toggleFilter()
     {
