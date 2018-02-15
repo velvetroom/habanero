@@ -22,6 +22,10 @@ final class ViewHomeFilterListCellShow:ViewHomeFilterListCell
         button.imageView!.clipsToBounds = true
         button.imageView!.contentMode = UIViewContentMode.center
         button.imageView!.tintColor = UIColor.colourHabanero
+        button.addTarget(
+            self,
+            action:#selector(self.selectorButton(sender:)),
+            for:UIControlEvents.touchUpInside)
         self.button = button
         
         self.addSubview(button)

@@ -11,9 +11,13 @@ extension ControllerHome
     
     func filterShowAll(viewCell:ViewHomeFilterListCellShow)
     {
+        self.model.filter.show = HomeFilterShowAll()
+         viewCell.showAll()
     }
     
     func filterShowFavourites(viewCell:ViewHomeFilterListCellShow)
     {
+        self.model.filter.show = HomeFilterShowFavourites()
+        viewCell.showOnlyFavourites()
     }
 }
