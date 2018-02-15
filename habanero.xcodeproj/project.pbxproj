@@ -238,6 +238,8 @@
 		DA5A97CD1FD6061B006223BA /* MenuItemGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A97CB1FD605E1006223BA /* MenuItemGeneric.swift */; };
 		DA5B01242035741200320A9B /* ViewHomeFilterListCellShow+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B01232035741200320A9B /* ViewHomeFilterListCellShow+Constants.swift */; };
 		DA5B01252035741200320A9B /* ViewHomeFilterListCellShow+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B01232035741200320A9B /* ViewHomeFilterListCellShow+Constants.swift */; };
+		DA5B012720357ABF00320A9B /* ControllerHome+FilterShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B012620357ABF00320A9B /* ControllerHome+FilterShow.swift */; };
+		DA5B012820357ABF00320A9B /* ControllerHome+FilterShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B012620357ABF00320A9B /* ControllerHome+FilterShow.swift */; };
 		DA5D69801FDB521400429F5D /* Build+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D697F1FDB521400429F5D /* Build+Constants.swift */; };
 		DA5D71C41FDB566D00429F5D /* ViewNewAddListCellInfoDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D71C31FDB566D00429F5D /* ViewNewAddListCellInfoDuration.swift */; };
 		DA5D71C61FDB56AD00429F5D /* ViewNewAddListCellInfoDuration+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D71C51FDB56AD00429F5D /* ViewNewAddListCellInfoDuration+Constants.swift */; };
@@ -1029,6 +1031,7 @@
 		DA58C6E81FD9EAFB000E6F30 /* NewAdd+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Constants.swift"; sourceTree = "<group>"; };
 		DA5A97CB1FD605E1006223BA /* MenuItemGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemGeneric.swift; sourceTree = "<group>"; };
 		DA5B01232035741200320A9B /* ViewHomeFilterListCellShow+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeFilterListCellShow+Constants.swift"; sourceTree = "<group>"; };
+		DA5B012620357ABF00320A9B /* ControllerHome+FilterShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerHome+FilterShow.swift"; sourceTree = "<group>"; };
 		DA5D697F1FDB521400429F5D /* Build+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Build+Constants.swift"; sourceTree = "<group>"; };
 		DA5D71C21FDB52DE00429F5D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		DA5D71C31FDB566D00429F5D /* ViewNewAddListCellInfoDuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellInfoDuration.swift; sourceTree = "<group>"; };
@@ -1935,6 +1938,7 @@
 				DA02D8FD2029A0AF0026D7B4 /* ControllerHome+Favourites.swift */,
 				DAB87328202FA9B6007B7C3B /* ControllerHome+Filters.swift */,
 				DA4EAC26203309FD00444D86 /* ControllerHome+Search.swift */,
+				DA5B012620357ABF00320A9B /* ControllerHome+FilterShow.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -3050,6 +3054,7 @@
 				DAA333D71FDB17EA002D766C /* Database.swift in Sources */,
 				DAB7739D2020A32B001E702E /* ViewOptionsListCellMetrics.swift in Sources */,
 				DA43ABCE202B6CDF006E9600 /* ViewHomeFilterListCell.swift in Sources */,
+				DA5B012720357ABF00320A9B /* ControllerHome+FilterShow.swift in Sources */,
 				DA69EC68200D5F6700CF466B /* ArchCookStep.swift in Sources */,
 				DA35DD0E1FFDAB280047881F /* Recipe+Keys.swift in Sources */,
 				DA2E7307201C555500EC5B94 /* Database+Create.swift in Sources */,
@@ -3183,6 +3188,7 @@
 				DA71D68D1FDA6262003A33E1 /* ControllerNewAdd+Info.swift in Sources */,
 				DAA333E21FDB29D8002D766C /* NewAdd+Info.swift in Sources */,
 				DAC732D21FF8606500980854 /* NewAddSectionItemInfoImage.swift in Sources */,
+				DA5B012820357ABF00320A9B /* ControllerHome+FilterShow.swift in Sources */,
 				DADB97862027860600B3D9CF /* Home+Filter.swift in Sources */,
 				DAF949F61FD8BC6F001BA32E /* ControllerNewAdd.swift in Sources */,
 				DA3F0E8D1FDF457D0037C94D /* NewAddIngredient.swift in Sources */,
