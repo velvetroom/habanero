@@ -46,11 +46,6 @@ extension ControllerHome
         
     }
     
-    func filterToggleFavourites(viewCell:ViewHomeFilterListCellShow)
-    {
-        
-    }
-    
     func filterOrderByDate()
     {
         

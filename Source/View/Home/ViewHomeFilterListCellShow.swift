@@ -49,7 +49,7 @@ final class ViewHomeFilterListCellShow:ViewHomeFilterListCell
     @objc
     private func selectorButton(sender button:UIButton)
     {
-        self.controller?.filterToggleFavourites(viewCell:self)
+        self.controller?.filterShowToggle(viewCell:self)
     }
     
     //MARK: internal
