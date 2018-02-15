@@ -43,4 +43,24 @@ final class ViewHomeFilterListCellShow:ViewHomeFilterListCell
         
         controller.configFilterShow(viewCell:self)
     }
+    
+    //MARK: selectors
+    
+    @objc
+    private func selectorButton(sender button:UIButton)
+    {
+        self.controller?.filterToggleFavourites(viewCell:self)
+    }
+    
+    //MARK: internal
+    
+    func showAll()
+    {
+        self.button.isSelected = false
+    }
+    
+    func showOnlyFavourites()
+    {
+        self.button.isSelected = true
+    }
 }
