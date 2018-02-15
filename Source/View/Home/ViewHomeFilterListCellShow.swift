@@ -2,21 +2,36 @@ import UIKit
 
 final class ViewHomeFilterListCellShow:ViewHomeFilterListCell
 {
-    private weak var buttonAll:UIButton!
-    private weak var buttonFavourites:UIButton!
+    private weak var button:UIButton!
     
     override func factoryViews()
     {
         super.factoryViews()
         
-        let buttonAll:UIButton = UIButton()
-        self.buttonAll = buttonAll
+        let button:UIButton = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setImage(
+            #imageLiteral(resourceName: "assetGenericFilterFavorites").withRenderingMode(UIImageRenderingMode.alwaysOriginal),
+            for:UIControlState.normal)
+        button.setImage(
+            #imageLiteral(resourceName: "assetGenericFilterFavorites").withRenderingMode(UIImageRenderingMode.alwaysTemplate),
+            for:UIControlState.highlighted)
+        button.imageView!.clipsToBounds = true
+        button.imageView!.contentMode = UIViewContentMode.center
+        button.imageView!.tintColor = UIColor.colourHabanero
+        self.button = button
         
-        let buttonFavourites:UIButton = UIButton()
-        self.buttonFavourites = buttonFavourites
+        self.addSubview(button)
         
-        self.addSubview(buttonAll)
-        self.addSubview(buttonFavourites)
+        NSLayoutConstraint.equalsVertical(
+            view:button,
+            toView:self)
+        NSLayoutConstraint.rightToRight(
+            view:button,
+            toView:self)
+        NSLayoutConstraint.width(
+            view:button,
+            constant:ViewHomeFilterListCellShow.Constants.buttonWidth)
     }
     
     override func config(controller:ControllerHome)
