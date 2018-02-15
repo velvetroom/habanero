@@ -95,6 +95,7 @@ final class ControllerHome:Controller<ArchHome>, UISearchBarDelegate
         _ searchBar:UISearchBar,
         textDidChange searchText:String)
     {
-        
+        self.model.filter.keyword.keyword = searchText
+        self.updateFilters()
     }
 }
