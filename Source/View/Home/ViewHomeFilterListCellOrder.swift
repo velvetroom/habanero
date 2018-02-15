@@ -10,6 +10,19 @@ final class ViewHomeFilterListCellOrder:ViewHomeFilterListCell
         super.factoryViews()
         
         let buttonDate:UIButton = UIButton()
+        buttonDate.translatesAutoresizingMaskIntoConstraints = false
+        buttonDate.setImage(
+            #imageLiteral(resourceName: "assetGenericFilterOrderDate").withRenderingMode(UIImageRenderingMode.alwaysOriginal),
+            for:UIControlState.normal)
+        buttonDate.setImage(
+            #imageLiteral(resourceName: "assetGenericFilterOrderDate").withRenderingMode(UIImageRenderingMode.alwaysTemplate),
+            for:UIControlState.highlighted)
+        buttonDate.setImage(
+            #imageLiteral(resourceName: "assetGenericFilterOrderDate").withRenderingMode(UIImageRenderingMode.alwaysTemplate),
+            for:UIControlState.selected)
+        buttonDate.imageView!.clipsToBounds = true
+        buttonDate.imageView!.contentMode = UIViewContentMode.center
+        buttonDate.imageView!.tintColor = UIColor.colourHabanero
         buttonDate.addTarget(
             self,
             action:#selector(self.selectorOrderByDate(sender:)),
