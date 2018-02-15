@@ -691,6 +691,8 @@
 		DAC104C6200EBF13004617FD /* CookStep+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104C4200EBF13004617FD /* CookStep+Factory.swift */; };
 		DAC104C8200EC8C6004617FD /* ViewCookStepList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104C7200EC8C6004617FD /* ViewCookStepList+Actions.swift */; };
 		DAC104C9200EC8C6004617FD /* ViewCookStepList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104C7200EC8C6004617FD /* ViewCookStepList+Actions.swift */; };
+		DAC634452035B21F00D795B0 /* ViewHomeFilterListCellOrder+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC634442035B21F00D795B0 /* ViewHomeFilterListCellOrder+Constants.swift */; };
+		DAC634462035B21F00D795B0 /* ViewHomeFilterListCellOrder+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC634442035B21F00D795B0 /* ViewHomeFilterListCellOrder+Constants.swift */; };
 		DAC732C81FF7579800980854 /* NewAdd+StepsDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC732C71FF7579800980854 /* NewAdd+StepsDelete.swift */; };
 		DAC732CA1FF8502A00980854 /* ViewNewAddListCellText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC732C91FF8502A00980854 /* ViewNewAddListCellText.swift */; };
 		DAC732CC1FF8523900980854 /* ViewNewAddListCellText+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC732CB1FF8523900980854 /* ViewNewAddListCellText+Constants.swift */; };
@@ -1313,6 +1315,7 @@
 		DAC104C1200EBDB3004617FD /* CookStepItemImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookStepItemImage.swift; sourceTree = "<group>"; };
 		DAC104C4200EBF13004617FD /* CookStep+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CookStep+Factory.swift"; sourceTree = "<group>"; };
 		DAC104C7200EC8C6004617FD /* ViewCookStepList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStepList+Actions.swift"; sourceTree = "<group>"; };
+		DAC634442035B21F00D795B0 /* ViewHomeFilterListCellOrder+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeFilterListCellOrder+Constants.swift"; sourceTree = "<group>"; };
 		DAC732C71FF7579800980854 /* NewAdd+StepsDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+StepsDelete.swift"; sourceTree = "<group>"; };
 		DAC732C91FF8502A00980854 /* ViewNewAddListCellText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellText.swift; sourceTree = "<group>"; };
 		DAC732CB1FF8523900980854 /* ViewNewAddListCellText+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddListCellText+Constants.swift"; sourceTree = "<group>"; };
@@ -2092,6 +2095,7 @@
 				DA43ABD9202B6FDC006E9600 /* ViewHomeFilterListCellShow.swift */,
 				DA5B01232035741200320A9B /* ViewHomeFilterListCellShow+Constants.swift */,
 				DA43ABDC202B7009006E9600 /* ViewHomeFilterListCellOrder.swift */,
+				DAC634442035B21F00D795B0 /* ViewHomeFilterListCellOrder+Constants.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -3025,6 +3029,7 @@
 				DA5FFE691FE77A2F00A38154 /* FormatIngredientTypeMililitres+Constants.swift in Sources */,
 				DABA5ED01FEA3CE60017F865 /* ViewPhotoList+Actions.swift in Sources */,
 				DA3F0E731FDF0BC50037C94D /* Ingredient.swift in Sources */,
+				DAC634452035B21F00D795B0 /* ViewHomeFilterListCellOrder+Constants.swift in Sources */,
 				DA91EAF21FD62C1F0063560D /* View.swift in Sources */,
 				DAD246042025E93C0078A073 /* HomeFilterOrderDate.swift in Sources */,
 				DAFA62D22008191C0068EC17 /* CookListItemProtocol.swift in Sources */,
@@ -3472,6 +3477,7 @@
 				DAB773AA2020B955001E702E /* ViewOptionsList+Actions.swift in Sources */,
 				DACF552E1FD7661E00069701 /* ExtensionNotification.swift in Sources */,
 				DA6E80851FF9B7A600175F70 /* StorageProviderFirebase.swift in Sources */,
+				DAC634462035B21F00D795B0 /* ViewHomeFilterListCellOrder+Constants.swift in Sources */,
 				DA43ABDE202B7009006E9600 /* ViewHomeFilterListCellOrder.swift in Sources */,
 				DABA5EC51FEA36D60017F865 /* PhotoOptionCancel.swift in Sources */,
 				DA43ABDB202B6FDC006E9600 /* ViewHomeFilterListCellShow.swift in Sources */,
