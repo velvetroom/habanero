@@ -38,6 +38,16 @@ final class ViewHomeFilterListCellOrder:ViewHomeFilterListCell
         
         self.addSubview(buttonDate)
         self.addSubview(buttonFavourites)
+        
+        NSLayoutConstraint.equalsVertical(
+            view:buttonDate,
+            toView:self)
+        NSLayoutConstraint.leftToLeft(
+            view:buttonDate,
+            toView:self)
+        NSLayoutConstraint.width(
+            view:buttonDate,
+            constant:ViewHomeFilterListCellOrder.Constants.buttonWidth)
     }
     
     override func config(controller:ControllerHome)
