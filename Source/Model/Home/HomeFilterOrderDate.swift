@@ -2,6 +2,9 @@ import Foundation
 
 struct HomeFilterOrderDate:HomeFilterOrderProtocol
 {
+    let configFilter:((ControllerHome) -> (ViewHomeFilterListCellOrder) -> ()) =
+        ControllerHome.configFilterOrderByDate
+    
     //MARK: internal
     
     func filter(items:[CookItem]) -> [CookItem]

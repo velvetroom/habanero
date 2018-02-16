@@ -1945,8 +1945,8 @@
 				DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */,
 				DA07501820044E21002C428A /* ControllerHome+Recipes.swift */,
 				DA02D8FD2029A0AF0026D7B4 /* ControllerHome+Favourites.swift */,
-				DAB87328202FA9B6007B7C3B /* ControllerHome+Filters.swift */,
 				DA4EAC26203309FD00444D86 /* ControllerHome+Search.swift */,
+				DAB87328202FA9B6007B7C3B /* ControllerHome+Filters.swift */,
 				DA5B012620357ABF00320A9B /* ControllerHome+FilterShow.swift */,
 				DA87B90C2036E51900E23206 /* ControllerHome+FilterOrder.swift */,
 			);

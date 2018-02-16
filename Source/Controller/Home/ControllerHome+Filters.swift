@@ -59,19 +59,4 @@ extension ControllerHome
         self.animateFilterTo(position:-ViewHome.Constants.filterHeight)
         self.model.updateFilterState(filterStateType:HomeFilterStateHidden.self)
     }
-    
-    func configFilterOrder(viewCell:ViewHomeFilterListCellOrder)
-    {
-        
-    }
-    
-    func filterOrderByDate()
-    {
-        
-    }
-    
-    func filterOrderByFavourites()
-    {
-        
-    }
 }
