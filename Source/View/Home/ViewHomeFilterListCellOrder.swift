@@ -103,7 +103,7 @@ final class ViewHomeFilterListCellOrder:ViewHomeFilterListCell
             return
         }
         
-        controller.filterOrderByDate()
+        controller.filterOrderByDate(viewCell:self)
     }
     
     @objc
@@ -118,7 +118,7 @@ final class ViewHomeFilterListCellOrder:ViewHomeFilterListCell
             return
         }
         
-        controller.filterOrderByFavourites()
+        controller.filterOrderByFavourites(viewCell:self)
     }
     
     //MARK: internal

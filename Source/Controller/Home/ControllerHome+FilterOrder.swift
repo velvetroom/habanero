@@ -20,13 +20,19 @@ extension ControllerHome
         viewCell.showOrderedByFavourites()
     }
     
-    func filterOrderByDate()
+    func filterOrderByDate(viewCell:ViewHomeFilterListCellOrder)
     {
+        self.model.filter.order = HomeFilterOrderDate()
+        viewCell.showOrderedByDate()
         
+        self.updateFilters()
     }
     
-    func filterOrderByFavourites()
+    func filterOrderByFavourites(viewCell:ViewHomeFilterListCellOrder)
     {
+        self.model.filter.order = HomeFilterOrderFavourites()
+        viewCell.showOrderedByFavourites()
         
+        self.updateFilters()
     }
 }
