@@ -12,17 +12,16 @@ final class ViewHomeFilterListCellOrder:ViewHomeFilterListCell
         let buttonDate:UIButton = UIButton()
         buttonDate.translatesAutoresizingMaskIntoConstraints = false
         buttonDate.setImage(
-            #imageLiteral(resourceName: "assetGenericFilterOrderDate").withRenderingMode(UIImageRenderingMode.alwaysOriginal),
+            #imageLiteral(resourceName: "assetGenericFilterOrderDateOff"),
             for:UIControlState.normal)
         buttonDate.setImage(
-            #imageLiteral(resourceName: "assetGenericFilterOrderDate").withRenderingMode(UIImageRenderingMode.alwaysTemplate),
+            #imageLiteral(resourceName: "assetGenericFilterOrderDateOn"),
             for:UIControlState.highlighted)
         buttonDate.setImage(
-            #imageLiteral(resourceName: "assetGenericFilterOrderDate").withRenderingMode(UIImageRenderingMode.alwaysTemplate),
+            #imageLiteral(resourceName: "assetGenericFilterOrderDateOn"),
             for:UIControlState.selected)
         buttonDate.imageView!.clipsToBounds = true
         buttonDate.imageView!.contentMode = UIViewContentMode.center
-        buttonDate.imageView!.tintColor = UIColor.colourHabanero
         buttonDate.addTarget(
             self,
             action:#selector(self.selectorOrderByDate(sender:)),
@@ -32,17 +31,16 @@ final class ViewHomeFilterListCellOrder:ViewHomeFilterListCell
         let buttonFavourites:UIButton = UIButton()
         buttonFavourites.translatesAutoresizingMaskIntoConstraints = false
         buttonFavourites.setImage(
-            #imageLiteral(resourceName: "assetGenericFilterOrderDate").withRenderingMode(UIImageRenderingMode.alwaysOriginal),
+            #imageLiteral(resourceName: "assetGenericFilterOrderFavouritesOff"),
             for:UIControlState.normal)
         buttonFavourites.setImage(
-            #imageLiteral(resourceName: "assetGenericFilterOrderDate").withRenderingMode(UIImageRenderingMode.alwaysTemplate),
+            #imageLiteral(resourceName: "assetGenericFilterOrderFavouritesOn"),
             for:UIControlState.highlighted)
         buttonFavourites.setImage(
-            #imageLiteral(resourceName: "assetGenericFilterOrderDate").withRenderingMode(UIImageRenderingMode.alwaysTemplate),
+            #imageLiteral(resourceName: "assetGenericFilterOrderFavouritesOn"),
             for:UIControlState.selected)
         buttonFavourites.imageView!.clipsToBounds = true
         buttonFavourites.imageView!.contentMode = UIViewContentMode.center
-        buttonFavourites.imageView!.tintColor = UIColor.colourHabanero
         buttonFavourites.addTarget(
             self,
             action:#selector(self.selectorOrderByFavourites(sender:)),
