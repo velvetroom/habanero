@@ -3,7 +3,7 @@ import Foundation
 struct HomeFilterOrderFavourites:HomeFilterOrderProtocol
 {
     let configFilter:((ControllerHome) -> (ViewHomeFilterListCellOrder) -> ()) =
-        \ControllerHome.configFilterOrderByFavourites
+        ControllerHome.configFilterOrderByFavourites
     
     //MARK: internal
     
