@@ -14,7 +14,7 @@ final class ViewMenu:UIView
         self.translatesAutoresizingMaskIntoConstraints = false
         self.controller = controller
         
-        let border:ViewBorder = ViewBorder(colour:UIColor.colourBackgroundDark.withAlphaComponent(0.4))
+        let border:ViewBorder = ViewBorder(colour:UIColor.colourBackgroundDark)
         
         self.addSubview(border)
         

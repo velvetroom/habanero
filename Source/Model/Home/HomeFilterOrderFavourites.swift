@@ -2,6 +2,9 @@ import Foundation
 
 struct HomeFilterOrderFavourites:HomeFilterOrderProtocol
 {
+    let configFilter:((ControllerHome) -> (ViewHomeFilterListCellOrder) -> ()) =
+        ControllerHome.configFilterOrderByFavourites
+    
     //MARK: internal
     
     func filter(items:[CookItem]) -> [CookItem]

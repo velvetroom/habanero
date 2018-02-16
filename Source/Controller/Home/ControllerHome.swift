@@ -1,6 +1,6 @@
-import Foundation
+import UIKit
 
-final class ControllerHome:Controller<ArchHome>
+final class ControllerHome:Controller<ArchHome>, UISearchBarDelegate
 {
     override func viewDidLoad()
     {
@@ -59,5 +59,43 @@ final class ControllerHome:Controller<ArchHome>
         self.parentController?.push(
             controller:controller,
             horizontal:ControllerTransition.Horizontal.right)
+    }
+    
+    //MARK: search bar delegate
+    
+    func searchBarTextDidBeginEditing(_ searchBar:UISearchBar)
+    {
+        self.animateShowSearch()
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar:UISearchBar)
+    {
+        self.animateHideSearch()
+        searchBar.resignFirstResponder()
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar:UISearchBar)
+    {
+        searchBar.resignFirstResponder()
+        
+        guard
+        
+            let search:String = searchBar.text,
+            search.isEmpty == true
+        
+        else
+        {
+            return
+        }
+        
+        self.animateHideSearch()
+    }
+    
+    func searchBar(
+        _ searchBar:UISearchBar,
+        textDidChange searchText:String)
+    {
+        self.model.filter.keyword.keyword = searchText.lowercased()
+        self.updateFilters()
     }
 }

@@ -31,6 +31,8 @@
 		DA0750202004528D002C428A /* Storage+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07501E2004528D002C428A /* Storage+Load.swift */; };
 		DA0750222004582E002C428A /* ViewHomeList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0750212004582E002C428A /* ViewHomeList+Actions.swift */; };
 		DA0750232004582E002C428A /* ViewHomeList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0750212004582E002C428A /* ViewHomeList+Actions.swift */; };
+		DA0E79B32031AE32004B3C91 /* ViewHomeBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0E79B22031AE32004B3C91 /* ViewHomeBar+Constants.swift */; };
+		DA0E79B42031AE32004B3C91 /* ViewHomeBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0E79B22031AE32004B3C91 /* ViewHomeBar+Constants.swift */; };
 		DA1058972002DD7800019445 /* ViewHomeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1058962002DD7800019445 /* ViewHomeBar.swift */; };
 		DA1058982002DD7800019445 /* ViewHomeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1058962002DD7800019445 /* ViewHomeBar.swift */; };
 		DA10589A2002E14600019445 /* ViewHomeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1058992002E14600019445 /* ViewHomeList.swift */; };
@@ -194,6 +196,10 @@
 		DA43ABD5202B6DCE006E9600 /* HomeFilterOptionsShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABD3202B6DCE006E9600 /* HomeFilterOptionsShow.swift */; };
 		DA43ABD7202B6DF2006E9600 /* HomeFilterOptionsOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABD6202B6DF2006E9600 /* HomeFilterOptionsOrder.swift */; };
 		DA43ABD8202B6DF2006E9600 /* HomeFilterOptionsOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABD6202B6DF2006E9600 /* HomeFilterOptionsOrder.swift */; };
+		DA43ABDA202B6FDC006E9600 /* ViewHomeFilterListCellShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABD9202B6FDC006E9600 /* ViewHomeFilterListCellShow.swift */; };
+		DA43ABDB202B6FDC006E9600 /* ViewHomeFilterListCellShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABD9202B6FDC006E9600 /* ViewHomeFilterListCellShow.swift */; };
+		DA43ABDD202B7009006E9600 /* ViewHomeFilterListCellOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABDC202B7009006E9600 /* ViewHomeFilterListCellOrder.swift */; };
+		DA43ABDE202B7009006E9600 /* ViewHomeFilterListCellOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43ABDC202B7009006E9600 /* ViewHomeFilterListCellOrder.swift */; };
 		DA4AA5061FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5051FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift */; };
 		DA4AA5071FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5051FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift */; };
 		DA4AA5091FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA5081FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift */; };
@@ -207,6 +213,14 @@
 		DA4E0C132021ADCF00F5AEE2 /* AnalyticsProviderFirebase+Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E0C112021ADCF00F5AEE2 /* AnalyticsProviderFirebase+Provider.swift */; };
 		DA4E0C152021B0C700F5AEE2 /* AnalyticsProviderFirebase+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E0C142021B0C700F5AEE2 /* AnalyticsProviderFirebase+Constants.swift */; };
 		DA4E0C162021B0C700F5AEE2 /* AnalyticsProviderFirebase+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E0C142021B0C700F5AEE2 /* AnalyticsProviderFirebase+Constants.swift */; };
+		DA4EAC242033052100444D86 /* ViewHomeFilterSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4EAC232033052100444D86 /* ViewHomeFilterSearch.swift */; };
+		DA4EAC252033052100444D86 /* ViewHomeFilterSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4EAC232033052100444D86 /* ViewHomeFilterSearch.swift */; };
+		DA4EAC27203309FD00444D86 /* ControllerHome+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4EAC26203309FD00444D86 /* ControllerHome+Search.swift */; };
+		DA4EAC28203309FD00444D86 /* ControllerHome+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4EAC26203309FD00444D86 /* ControllerHome+Search.swift */; };
+		DA4EAC2A20330D2500444D86 /* ViewHomeFilter+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4EAC2920330D2500444D86 /* ViewHomeFilter+Constants.swift */; };
+		DA4EAC2B20330D2500444D86 /* ViewHomeFilter+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4EAC2920330D2500444D86 /* ViewHomeFilter+Constants.swift */; };
+		DA50D543202C3051007BA365 /* ViewHomeFilterList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA50D542202C3051007BA365 /* ViewHomeFilterList+Actions.swift */; };
+		DA50D544202C3051007BA365 /* ViewHomeFilterList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA50D542202C3051007BA365 /* ViewHomeFilterList+Actions.swift */; };
 		DA55E2241FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */; };
 		DA55E2251FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */; };
 		DA5761CE2005877600A5151C /* ArchCook.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5761CD2005877600A5151C /* ArchCook.swift */; };
@@ -222,6 +236,10 @@
 		DA58C6E91FD9EAFB000E6F30 /* NewAdd+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58C6E81FD9EAFB000E6F30 /* NewAdd+Constants.swift */; };
 		DA5A97CC1FD605E1006223BA /* MenuItemGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A97CB1FD605E1006223BA /* MenuItemGeneric.swift */; };
 		DA5A97CD1FD6061B006223BA /* MenuItemGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A97CB1FD605E1006223BA /* MenuItemGeneric.swift */; };
+		DA5B01242035741200320A9B /* ViewHomeFilterListCellShow+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B01232035741200320A9B /* ViewHomeFilterListCellShow+Constants.swift */; };
+		DA5B01252035741200320A9B /* ViewHomeFilterListCellShow+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B01232035741200320A9B /* ViewHomeFilterListCellShow+Constants.swift */; };
+		DA5B012720357ABF00320A9B /* ControllerHome+FilterShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B012620357ABF00320A9B /* ControllerHome+FilterShow.swift */; };
+		DA5B012820357ABF00320A9B /* ControllerHome+FilterShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B012620357ABF00320A9B /* ControllerHome+FilterShow.swift */; };
 		DA5D69801FDB521400429F5D /* Build+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D697F1FDB521400429F5D /* Build+Constants.swift */; };
 		DA5D71C41FDB566D00429F5D /* ViewNewAddListCellInfoDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D71C31FDB566D00429F5D /* ViewNewAddListCellInfoDuration.swift */; };
 		DA5D71C61FDB56AD00429F5D /* ViewNewAddListCellInfoDuration+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D71C51FDB56AD00429F5D /* ViewNewAddListCellInfoDuration+Constants.swift */; };
@@ -258,6 +276,8 @@
 		DA69EC69200D5F6700CF466B /* ArchCookStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69EC67200D5F6700CF466B /* ArchCookStep.swift */; };
 		DA6BF0D91FDDFDDC0027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0D81FDDFDDC0027C167 /* GoogleService-Info.plist */; };
 		DA6BF0DB1FDDFDE60027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */; };
+		DA6C239D2036C28F002C9271 /* ViewHomeFilterListCell+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6C239C2036C28E002C9271 /* ViewHomeFilterListCell+Constants.swift */; };
+		DA6C239E2036C28F002C9271 /* ViewHomeFilterListCell+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6C239C2036C28E002C9271 /* ViewHomeFilterListCell+Constants.swift */; };
 		DA6E804D1FF96C0D00175F70 /* NewAdd+Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E804C1FF96C0D00175F70 /* NewAdd+Delete.swift */; };
 		DA6E804F1FF96D3800175F70 /* NewAddDeleteStrategyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E804E1FF96D3800175F70 /* NewAddDeleteStrategyProtocol.swift */; };
 		DA6E80511FF9706A00175F70 /* NewAddDeleteStrategyInfoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80501FF9706A00175F70 /* NewAddDeleteStrategyInfoImage.swift */; };
@@ -360,6 +380,14 @@
 		DA753DAC1FD5EBC8007E5BC5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */; };
 		DA7B1FC6202069A40097202E /* Database+Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B1FC5202069A40097202E /* Database+Delete.swift */; };
 		DA7B1FC7202069A40097202E /* Database+Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B1FC5202069A40097202E /* Database+Delete.swift */; };
+		DA7F7A5B2032D0AA001BED41 /* ViewHome+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F7A5A2032D0AA001BED41 /* ViewHome+Constants.swift */; };
+		DA7F7A5C2032D0AA001BED41 /* ViewHome+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F7A5A2032D0AA001BED41 /* ViewHome+Constants.swift */; };
+		DA7F7A5E2032D2CF001BED41 /* HomeFilterStateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F7A5D2032D2CF001BED41 /* HomeFilterStateProtocol.swift */; };
+		DA7F7A5F2032D2CF001BED41 /* HomeFilterStateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F7A5D2032D2CF001BED41 /* HomeFilterStateProtocol.swift */; };
+		DA7F7A612032D337001BED41 /* HomeFilterStateHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F7A602032D337001BED41 /* HomeFilterStateHidden.swift */; };
+		DA7F7A622032D337001BED41 /* HomeFilterStateHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F7A602032D337001BED41 /* HomeFilterStateHidden.swift */; };
+		DA7F7A642032D3A4001BED41 /* HomeFilterStateVisible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F7A632032D3A4001BED41 /* HomeFilterStateVisible.swift */; };
+		DA7F7A652032D3A4001BED41 /* HomeFilterStateVisible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F7A632032D3A4001BED41 /* HomeFilterStateVisible.swift */; };
 		DA80B54F200C1DB000797D61 /* ViewCookPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B54E200C1DB000797D61 /* ViewCookPlay.swift */; };
 		DA80B550200C1DB000797D61 /* ViewCookPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B54E200C1DB000797D61 /* ViewCookPlay.swift */; };
 		DA80B552200C1DD300797D61 /* ViewCookBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B551200C1DD300797D61 /* ViewCookBack.swift */; };
@@ -395,10 +423,14 @@
 		DA8752E11FE3AFE800AE74F5 /* NewAddIngredientAmount+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752E01FE3AFE800AE74F5 /* NewAddIngredientAmount+Factory.swift */; };
 		DA8752E31FE3B27100AE74F5 /* ViewNewAddIngredientAmountList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752E21FE3B27100AE74F5 /* ViewNewAddIngredientAmountList+Actions.swift */; };
 		DA8752E51FE3B74900AE74F5 /* ViewNewAddIngredientAmountListCell+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752E41FE3B74900AE74F5 /* ViewNewAddIngredientAmountListCell+Constants.swift */; };
+		DA87B90D2036E51900E23206 /* ControllerHome+FilterOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA87B90C2036E51900E23206 /* ControllerHome+FilterOrder.swift */; };
+		DA87B90E2036E51900E23206 /* ControllerHome+FilterOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA87B90C2036E51900E23206 /* ControllerHome+FilterOrder.swift */; };
 		DA8C6E3D1FDB2F4600C0AD69 /* Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C6E3B1FDB2F3B00C0AD69 /* Build.swift */; };
 		DA8E57B420172A4100EBF87F /* CloudProviderFirebase+Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E57B320172A4100EBF87F /* CloudProviderFirebase+Transaction.swift */; };
 		DA8E57B520172A4100EBF87F /* CloudProviderFirebase+Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E57B320172A4100EBF87F /* CloudProviderFirebase+Transaction.swift */; };
 		DA8E738C1FF88F3C005264F4 /* ViewNewAddListCellEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E738B1FF88F3C005264F4 /* ViewNewAddListCellEditable.swift */; };
+		DA8F74E52034278600A34A01 /* HomeFilterKeyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F74E42034278600A34A01 /* HomeFilterKeyword.swift */; };
+		DA8F74E62034278600A34A01 /* HomeFilterKeyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F74E42034278600A34A01 /* HomeFilterKeyword.swift */; };
 		DA9089031FD4C65F00C1208A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA90889E1FD4C65F00C1208A /* LaunchScreen.storyboard */; };
 		DA9089041FD4C65F00C1208A /* LocalizableModel.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A01FD4C65F00C1208A /* LocalizableModel.strings */; };
 		DA9089051FD4C65F00C1208A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A21FD4C65F00C1208A /* InfoPlist.strings */; };
@@ -608,6 +640,8 @@
 		DAB7862F1FF4BC2D00579BB5 /* NewAddSectionItemStepProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7862E1FF4BC2C00579BB5 /* NewAddSectionItemStepProtocol.swift */; };
 		DAB786311FF4BD3A00579BB5 /* ViewNewAddListCellStep+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786301FF4BD3A00579BB5 /* ViewNewAddListCellStep+Constants.swift */; };
 		DAB786331FF4C27600579BB5 /* ControllerNewAdd+Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB786321FF4C27600579BB5 /* ControllerNewAdd+Gesture.swift */; };
+		DAB87329202FA9B6007B7C3B /* ControllerHome+Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB87328202FA9B6007B7C3B /* ControllerHome+Filters.swift */; };
+		DAB8732A202FA9B6007B7C3B /* ControllerHome+Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB87328202FA9B6007B7C3B /* ControllerHome+Filters.swift */; };
 		DABA5EA91FEA2DAB0017F865 /* ArchPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA5EA81FEA2DAB0017F865 /* ArchPhoto.swift */; };
 		DABA5EAA1FEA2DAC0017F865 /* ArchPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA5EA81FEA2DAB0017F865 /* ArchPhoto.swift */; };
 		DABA5EAD1FEA2E170017F865 /* ControllerPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA5EAC1FEA2E170017F865 /* ControllerPhoto.swift */; };
@@ -661,6 +695,8 @@
 		DAC104C6200EBF13004617FD /* CookStep+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104C4200EBF13004617FD /* CookStep+Factory.swift */; };
 		DAC104C8200EC8C6004617FD /* ViewCookStepList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104C7200EC8C6004617FD /* ViewCookStepList+Actions.swift */; };
 		DAC104C9200EC8C6004617FD /* ViewCookStepList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC104C7200EC8C6004617FD /* ViewCookStepList+Actions.swift */; };
+		DAC634452035B21F00D795B0 /* ViewHomeFilterListCellOrder+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC634442035B21F00D795B0 /* ViewHomeFilterListCellOrder+Constants.swift */; };
+		DAC634462035B21F00D795B0 /* ViewHomeFilterListCellOrder+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC634442035B21F00D795B0 /* ViewHomeFilterListCellOrder+Constants.swift */; };
 		DAC732C81FF7579800980854 /* NewAdd+StepsDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC732C71FF7579800980854 /* NewAdd+StepsDelete.swift */; };
 		DAC732CA1FF8502A00980854 /* ViewNewAddListCellText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC732C91FF8502A00980854 /* ViewNewAddListCellText.swift */; };
 		DAC732CC1FF8523900980854 /* ViewNewAddListCellText+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC732CB1FF8523900980854 /* ViewNewAddListCellText+Constants.swift */; };
@@ -873,6 +909,7 @@
 		DA07501820044E21002C428A /* ControllerHome+Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerHome+Recipes.swift"; sourceTree = "<group>"; };
 		DA07501E2004528D002C428A /* Storage+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storage+Load.swift"; sourceTree = "<group>"; };
 		DA0750212004582E002C428A /* ViewHomeList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeList+Actions.swift"; sourceTree = "<group>"; };
+		DA0E79B22031AE32004B3C91 /* ViewHomeBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeBar+Constants.swift"; sourceTree = "<group>"; };
 		DA1058962002DD7800019445 /* ViewHomeBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeBar.swift; sourceTree = "<group>"; };
 		DA1058992002E14600019445 /* ViewHomeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeList.swift; sourceTree = "<group>"; };
 		DA10589C2002E17600019445 /* ViewHomeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeListCell.swift; sourceTree = "<group>"; };
@@ -977,6 +1014,8 @@
 		DA43ABD0202B6D9F006E9600 /* HomeFilterOptionsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterOptionsProtocol.swift; sourceTree = "<group>"; };
 		DA43ABD3202B6DCE006E9600 /* HomeFilterOptionsShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterOptionsShow.swift; sourceTree = "<group>"; };
 		DA43ABD6202B6DF2006E9600 /* HomeFilterOptionsOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterOptionsOrder.swift; sourceTree = "<group>"; };
+		DA43ABD9202B6FDC006E9600 /* ViewHomeFilterListCellShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeFilterListCellShow.swift; sourceTree = "<group>"; };
+		DA43ABDC202B7009006E9600 /* ViewHomeFilterListCellOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeFilterListCellOrder.swift; sourceTree = "<group>"; };
 		DA4AA5051FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormatIngredientTypeCups+Constants.swift"; sourceTree = "<group>"; };
 		DA4AA5081FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormatIngredientTypeGrams+Constants.swift"; sourceTree = "<group>"; };
 		DA4AA50B1FE7374A00374B07 /* ViewNewAddIngredientListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientListCell+Constants.swift"; sourceTree = "<group>"; };
@@ -984,6 +1023,10 @@
 		DA4E0C0E2021AB1B00F5AEE2 /* AnalyticsProviderFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsProviderFirebase.swift; sourceTree = "<group>"; };
 		DA4E0C112021ADCF00F5AEE2 /* AnalyticsProviderFirebase+Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnalyticsProviderFirebase+Provider.swift"; sourceTree = "<group>"; };
 		DA4E0C142021B0C700F5AEE2 /* AnalyticsProviderFirebase+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnalyticsProviderFirebase+Constants.swift"; sourceTree = "<group>"; };
+		DA4EAC232033052100444D86 /* ViewHomeFilterSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeFilterSearch.swift; sourceTree = "<group>"; };
+		DA4EAC26203309FD00444D86 /* ControllerHome+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerHome+Search.swift"; sourceTree = "<group>"; };
+		DA4EAC2920330D2500444D86 /* ViewHomeFilter+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeFilter+Constants.swift"; sourceTree = "<group>"; };
+		DA50D542202C3051007BA365 /* ViewHomeFilterList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeFilterList+Actions.swift"; sourceTree = "<group>"; };
 		DA55E2231FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoCropDisplayShade.swift; sourceTree = "<group>"; };
 		DA5761CD2005877600A5151C /* ArchCook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchCook.swift; sourceTree = "<group>"; };
 		DA5761D02005879D00A5151C /* ControllerCook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerCook.swift; sourceTree = "<group>"; };
@@ -993,6 +1036,8 @@
 		DA58C6E61FD9E216000E6F30 /* NewAdd+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Factory.swift"; sourceTree = "<group>"; };
 		DA58C6E81FD9EAFB000E6F30 /* NewAdd+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Constants.swift"; sourceTree = "<group>"; };
 		DA5A97CB1FD605E1006223BA /* MenuItemGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemGeneric.swift; sourceTree = "<group>"; };
+		DA5B01232035741200320A9B /* ViewHomeFilterListCellShow+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeFilterListCellShow+Constants.swift"; sourceTree = "<group>"; };
+		DA5B012620357ABF00320A9B /* ControllerHome+FilterShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerHome+FilterShow.swift"; sourceTree = "<group>"; };
 		DA5D697F1FDB521400429F5D /* Build+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Build+Constants.swift"; sourceTree = "<group>"; };
 		DA5D71C21FDB52DE00429F5D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		DA5D71C31FDB566D00429F5D /* ViewNewAddListCellInfoDuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellInfoDuration.swift; sourceTree = "<group>"; };
@@ -1023,6 +1068,7 @@
 		DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "admin/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA6BF0DC1FDDFE430027C167 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = user/Info.plist; sourceTree = "<group>"; };
 		DA6BF0DE1FDDFE4E0027C167 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = admin/Info.plist; sourceTree = "<group>"; };
+		DA6C239C2036C28E002C9271 /* ViewHomeFilterListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeFilterListCell+Constants.swift"; sourceTree = "<group>"; };
 		DA6E804C1FF96C0D00175F70 /* NewAdd+Delete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Delete.swift"; sourceTree = "<group>"; };
 		DA6E804E1FF96D3800175F70 /* NewAddDeleteStrategyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddDeleteStrategyProtocol.swift; sourceTree = "<group>"; };
 		DA6E80501FF9706A00175F70 /* NewAddDeleteStrategyInfoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddDeleteStrategyInfoImage.swift; sourceTree = "<group>"; };
@@ -1085,6 +1131,10 @@
 		DA753DA91FD5EB96007E5BC5 /* Design */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Design; sourceTree = "<group>"; };
 		DA753DAA1FD5EBC8007E5BC5 /* generic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = generic.xcassets; sourceTree = "<group>"; };
 		DA7B1FC5202069A40097202E /* Database+Delete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Delete.swift"; sourceTree = "<group>"; };
+		DA7F7A5A2032D0AA001BED41 /* ViewHome+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHome+Constants.swift"; sourceTree = "<group>"; };
+		DA7F7A5D2032D2CF001BED41 /* HomeFilterStateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterStateProtocol.swift; sourceTree = "<group>"; };
+		DA7F7A602032D337001BED41 /* HomeFilterStateHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterStateHidden.swift; sourceTree = "<group>"; };
+		DA7F7A632032D3A4001BED41 /* HomeFilterStateVisible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterStateVisible.swift; sourceTree = "<group>"; };
 		DA80B54E200C1DB000797D61 /* ViewCookPlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookPlay.swift; sourceTree = "<group>"; };
 		DA80B551200C1DD300797D61 /* ViewCookBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCookBack.swift; sourceTree = "<group>"; };
 		DA80B554200C23AC00797D61 /* cook.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = cook.xcassets; sourceTree = "<group>"; };
@@ -1113,9 +1163,11 @@
 		DA8752E01FE3AFE800AE74F5 /* NewAddIngredientAmount+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddIngredientAmount+Factory.swift"; sourceTree = "<group>"; };
 		DA8752E21FE3B27100AE74F5 /* ViewNewAddIngredientAmountList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientAmountList+Actions.swift"; sourceTree = "<group>"; };
 		DA8752E41FE3B74900AE74F5 /* ViewNewAddIngredientAmountListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientAmountListCell+Constants.swift"; sourceTree = "<group>"; };
+		DA87B90C2036E51900E23206 /* ControllerHome+FilterOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerHome+FilterOrder.swift"; sourceTree = "<group>"; };
 		DA8C6E3B1FDB2F3B00C0AD69 /* Build.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Build.swift; sourceTree = "<group>"; };
 		DA8E57B320172A4100EBF87F /* CloudProviderFirebase+Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudProviderFirebase+Transaction.swift"; sourceTree = "<group>"; };
 		DA8E738B1FF88F3C005264F4 /* ViewNewAddListCellEditable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellEditable.swift; sourceTree = "<group>"; };
+		DA8F74E42034278600A34A01 /* HomeFilterKeyword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterKeyword.swift; sourceTree = "<group>"; };
 		DA9088821FD4C38E00C1208A /* user.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = user.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9088981FD4C45600C1208A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DA90889B1FD4C4AF00C1208A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -1241,6 +1293,7 @@
 		DAB7862E1FF4BC2C00579BB5 /* NewAddSectionItemStepProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddSectionItemStepProtocol.swift; sourceTree = "<group>"; };
 		DAB786301FF4BD3A00579BB5 /* ViewNewAddListCellStep+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddListCellStep+Constants.swift"; sourceTree = "<group>"; };
 		DAB786321FF4C27600579BB5 /* ControllerNewAdd+Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerNewAdd+Gesture.swift"; sourceTree = "<group>"; };
+		DAB87328202FA9B6007B7C3B /* ControllerHome+Filters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerHome+Filters.swift"; sourceTree = "<group>"; };
 		DABA5EA81FEA2DAB0017F865 /* ArchPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchPhoto.swift; sourceTree = "<group>"; };
 		DABA5EAC1FEA2E170017F865 /* ControllerPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerPhoto.swift; sourceTree = "<group>"; };
 		DABA5EB01FEA2FF40017F865 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
@@ -1268,6 +1321,7 @@
 		DAC104C1200EBDB3004617FD /* CookStepItemImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookStepItemImage.swift; sourceTree = "<group>"; };
 		DAC104C4200EBF13004617FD /* CookStep+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CookStep+Factory.swift"; sourceTree = "<group>"; };
 		DAC104C7200EC8C6004617FD /* ViewCookStepList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCookStepList+Actions.swift"; sourceTree = "<group>"; };
+		DAC634442035B21F00D795B0 /* ViewHomeFilterListCellOrder+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeFilterListCellOrder+Constants.swift"; sourceTree = "<group>"; };
 		DAC732C71FF7579800980854 /* NewAdd+StepsDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+StepsDelete.swift"; sourceTree = "<group>"; };
 		DAC732C91FF8502A00980854 /* ViewNewAddListCellText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellText.swift; sourceTree = "<group>"; };
 		DAC732CB1FF8523900980854 /* ViewNewAddListCellText+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddListCellText+Constants.swift"; sourceTree = "<group>"; };
@@ -1891,6 +1945,10 @@
 				DA70AFC11FD5AA980016B0DC /* ControllerHome.swift */,
 				DA07501820044E21002C428A /* ControllerHome+Recipes.swift */,
 				DA02D8FD2029A0AF0026D7B4 /* ControllerHome+Favourites.swift */,
+				DA4EAC26203309FD00444D86 /* ControllerHome+Search.swift */,
+				DAB87328202FA9B6007B7C3B /* ControllerHome+Filters.swift */,
+				DA5B012620357ABF00320A9B /* ControllerHome+FilterShow.swift */,
+				DA87B90C2036E51900E23206 /* ControllerHome+FilterOrder.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1974,6 +2032,10 @@
 				DAD246002025E91A0078A073 /* HomeFilterOrderProtocol.swift */,
 				DAD246032025E93C0078A073 /* HomeFilterOrderDate.swift */,
 				DAD246062025E95A0078A073 /* HomeFilterOrderFavourites.swift */,
+				DA7F7A5D2032D2CF001BED41 /* HomeFilterStateProtocol.swift */,
+				DA7F7A602032D337001BED41 /* HomeFilterStateHidden.swift */,
+				DA7F7A632032D3A4001BED41 /* HomeFilterStateVisible.swift */,
+				DA8F74E42034278600A34A01 /* HomeFilterKeyword.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -2023,15 +2085,25 @@
 			isa = PBXGroup;
 			children = (
 				DA70AFBE1FD5A8B10016B0DC /* ViewHome.swift */,
+				DA7F7A5A2032D0AA001BED41 /* ViewHome+Constants.swift */,
 				DA1058962002DD7800019445 /* ViewHomeBar.swift */,
+				DA0E79B22031AE32004B3C91 /* ViewHomeBar+Constants.swift */,
 				DA1058992002E14600019445 /* ViewHomeList.swift */,
 				DA07501220044518002C428A /* ViewHomeList+Constants.swift */,
 				DA0750212004582E002C428A /* ViewHomeList+Actions.swift */,
 				DA10589C2002E17600019445 /* ViewHomeListCell.swift */,
 				DA075015200445DF002C428A /* ViewHomeListCell+Constants.swift */,
 				DAD245F12025E82D0078A073 /* ViewHomeFilter.swift */,
+				DA4EAC2920330D2500444D86 /* ViewHomeFilter+Constants.swift */,
+				DA4EAC232033052100444D86 /* ViewHomeFilterSearch.swift */,
 				DA43ABCA202B6CB8006E9600 /* ViewHomeFilterList.swift */,
+				DA50D542202C3051007BA365 /* ViewHomeFilterList+Actions.swift */,
 				DA43ABCD202B6CDF006E9600 /* ViewHomeFilterListCell.swift */,
+				DA6C239C2036C28E002C9271 /* ViewHomeFilterListCell+Constants.swift */,
+				DA43ABD9202B6FDC006E9600 /* ViewHomeFilterListCellShow.swift */,
+				DA5B01232035741200320A9B /* ViewHomeFilterListCellShow+Constants.swift */,
+				DA43ABDC202B7009006E9600 /* ViewHomeFilterListCellOrder.swift */,
+				DAC634442035B21F00D795B0 /* ViewHomeFilterListCellOrder+Constants.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -2730,6 +2802,7 @@
 				DA55E2241FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */,
 				DA70AFC21FD5AA980016B0DC /* ControllerHome.swift in Sources */,
 				DACF89EF1FFDD8A900F4FCF0 /* RecipeIngredientQuantity.swift in Sources */,
+				DA0E79B32031AE32004B3C91 /* ViewHomeBar+Constants.swift in Sources */,
 				DAA07FF520153E90006FFC76 /* CookItem+Image.swift in Sources */,
 				DACF552D1FD7661E00069701 /* ExtensionNotification.swift in Sources */,
 				DA80B552200C1DD300797D61 /* ViewCookBack.swift in Sources */,
@@ -2751,6 +2824,7 @@
 				DAC104BC200EB618004617FD /* CookStepItemProtocol.swift in Sources */,
 				DAB7738E2020915C001E702E /* ViewOptionsBar.swift in Sources */,
 				DAD245FB2025E8D10078A073 /* HomeFilterShowAll.swift in Sources */,
+				DA4EAC2A20330D2500444D86 /* ViewHomeFilter+Constants.swift in Sources */,
 				DA74F0C41FE6139F00F45310 /* Format+Duration.swift in Sources */,
 				DA9089281FD4C66000C1208A /* Menu+Constants.swift in Sources */,
 				DA0162302016B570009D7A65 /* CookItem+Favourite.swift in Sources */,
@@ -2759,6 +2833,7 @@
 				DA91EB1E1FD62C1F0063560D /* ViewGradient+Constants.swift in Sources */,
 				DA5761D12005879D00A5151C /* ControllerCook.swift in Sources */,
 				DAB773AF2020CBFC001E702E /* ViewOptionsListCellMetrics+Factory.swift in Sources */,
+				DA43ABDD202B7009006E9600 /* ViewHomeFilterListCellOrder.swift in Sources */,
 				DAFA62F0200828310068EC17 /* ViewCookListCellIngredientsTitle+Constants.swift in Sources */,
 				DAC104BF200EBD98004617FD /* CookStepItemText.swift in Sources */,
 				DA43ABD4202B6DCE006E9600 /* HomeFilterOptionsShow.swift in Sources */,
@@ -2773,9 +2848,11 @@
 				DAFA62E120081AE40068EC17 /* Cook+Factory.swift in Sources */,
 				DACF55471FD7661E00069701 /* ExtensionString.swift in Sources */,
 				DA075016200445DF002C428A /* ViewHomeListCell+Constants.swift in Sources */,
+				DA43ABDA202B6FDC006E9600 /* ViewHomeFilterListCellShow.swift in Sources */,
 				DA4233DB1FEDE4DF0012A589 /* ControllerPhotoCrop.swift in Sources */,
 				DA35DD261FFDBBF70047881F /* StorageProviderFirebase+Provider.swift in Sources */,
 				DA4233E91FEDEBE10012A589 /* ViewPhotoCropMenu.swift in Sources */,
+				DA7F7A612032D337001BED41 /* HomeFilterStateHidden.swift in Sources */,
 				DA43ABD7202B6DF2006E9600 /* HomeFilterOptionsOrder.swift in Sources */,
 				DA74F0CD1FE6154800F45310 /* FormatIngredientTypeMililitres.swift in Sources */,
 				DA2A94E61FF30089009D2FF9 /* ViewPhotoCropDisplayImage+Constants.swift in Sources */,
@@ -2825,6 +2902,7 @@
 				DACF55331FD7661E00069701 /* ExtensionMKPolyline.swift in Sources */,
 				DABC1D892018D586000EE4E6 /* CloudProviderFirebase+Constants.swift in Sources */,
 				DA90891E1FD4C66000C1208A /* ControllerParent+Orientation.swift in Sources */,
+				DA7F7A5B2032D0AA001BED41 /* ViewHome+Constants.swift in Sources */,
 				DA6E80811FF9B64400175F70 /* StorageProviderProtocol.swift in Sources */,
 				DA936CF61FFF11DD00740BE8 /* RecipeIngredientQuantityBuilder.swift in Sources */,
 				DA4AA5061FE72DB800374B07 /* FormatIngredientTypeCups+Constants.swift in Sources */,
@@ -2833,6 +2911,7 @@
 				DA3F0E7C1FDF326A0037C94D /* Ingredient+Keys.swift in Sources */,
 				DA43ABD1202B6D9F006E9600 /* HomeFilterOptionsProtocol.swift in Sources */,
 				DA27794520071EB500F15AE0 /* ViewCookListCellRecipe.swift in Sources */,
+				DA5B01242035741200320A9B /* ViewHomeFilterListCellShow+Constants.swift in Sources */,
 				DAD245F82025E8AD0078A073 /* HomeFilterShowProtocol.swift in Sources */,
 				DA0750222004582E002C428A /* ViewHomeList+Actions.swift in Sources */,
 				DA91EB021FD62C1F0063560D /* ViewAlert+Constants.swift in Sources */,
@@ -2859,6 +2938,7 @@
 				DA9089261FD4C66000C1208A /* ArchHome.swift in Sources */,
 				DA01622D2016B06A009D7A65 /* CookItemFavouriteOff.swift in Sources */,
 				DAB7738B20208F05001E702E /* MenuItemOptions.swift in Sources */,
+				DA4EAC242033052100444D86 /* ViewHomeFilterSearch.swift in Sources */,
 				DAE7C35C1FE08281003190FF /* CloudError+Description.swift in Sources */,
 				DA936CED1FFF10EB00740BE8 /* RecipeIngredientCupsBuilder.swift in Sources */,
 				DAE35CA02005E65F002B1C9C /* ViewCookListCell.swift in Sources */,
@@ -2887,6 +2967,7 @@
 				DA855E0E1FF3839000E1B69F /* PhotoCropMask.swift in Sources */,
 				DA5A97CC1FD605E1006223BA /* MenuItemGeneric.swift in Sources */,
 				DA936CF01FFF114900740BE8 /* RecipeIngredientGramsBuilder.swift in Sources */,
+				DA6C239D2036C28F002C9271 /* ViewHomeFilterListCell+Constants.swift in Sources */,
 				DAB773A62020B0BC001E702E /* ViewOptionsList+Constants.swift in Sources */,
 				DABA5EBE1FEA34D20017F865 /* PhotoOptionProtocol.swift in Sources */,
 				DAD97C9B201E22A60074490A /* Home+Favourites.swift in Sources */,
@@ -2900,6 +2981,7 @@
 				DA91EAEC1FD62C1F0063560D /* ViewMenu.swift in Sources */,
 				DA9089241FD4C66000C1208A /* ControllerParent.swift in Sources */,
 				DA35DD081FFDA8C20047881F /* Recipe.swift in Sources */,
+				DA7F7A5E2032D2CF001BED41 /* HomeFilterStateProtocol.swift in Sources */,
 				DA90891D1FD4C66000C1208A /* Controller.swift in Sources */,
 				DA91EB141FD62C1F0063560D /* ViewGradient.swift in Sources */,
 				DA6E80841FF9B7A600175F70 /* StorageProviderFirebase.swift in Sources */,
@@ -2944,6 +3026,7 @@
 				DAC104B3200EA9BA004617FD /* ViewCookStepListCell.swift in Sources */,
 				DAA1805420121F7700A5B834 /* ViewCookStepListCell+Constants.swift in Sources */,
 				DA35DD171FFDB11E0047881F /* RecipeBuilder.swift in Sources */,
+				DA7F7A642032D3A4001BED41 /* HomeFilterStateVisible.swift in Sources */,
 				DA683599200176DC0087C77D /* RecipeStepImage.swift in Sources */,
 				DAE5E4861FE48CA700CC40BA /* Settings+Computed.swift in Sources */,
 				DA10589D2002E17600019445 /* ViewHomeListCell.swift in Sources */,
@@ -2955,6 +3038,7 @@
 				DA5FFE691FE77A2F00A38154 /* FormatIngredientTypeMililitres+Constants.swift in Sources */,
 				DABA5ED01FEA3CE60017F865 /* ViewPhotoList+Actions.swift in Sources */,
 				DA3F0E731FDF0BC50037C94D /* Ingredient.swift in Sources */,
+				DAC634452035B21F00D795B0 /* ViewHomeFilterListCellOrder+Constants.swift in Sources */,
 				DA91EAF21FD62C1F0063560D /* View.swift in Sources */,
 				DAD246042025E93C0078A073 /* HomeFilterOrderDate.swift in Sources */,
 				DAFA62D22008191C0068EC17 /* CookListItemProtocol.swift in Sources */,
@@ -2963,6 +3047,7 @@
 				DABDF33B1FEB6BC8002EF842 /* PhotoOptionLibrary.swift in Sources */,
 				DACF55491FD7661E00069701 /* ExtensionUIFont+Constants.swift in Sources */,
 				DA9089221FD4C66000C1208A /* AppDelegate.swift in Sources */,
+				DAB87329202FA9B6007B7C3B /* ControllerHome+Filters.swift in Sources */,
 				DA74F0C11FE612E200F45310 /* FormatIngredientTypeProtocol.swift in Sources */,
 				DA6E80731FF9A18A00175F70 /* CloudListProtocol+Default.swift in Sources */,
 				DA4233EC1FEDEBEC0012A589 /* ViewPhotoCrop+Constants.swift in Sources */,
@@ -2976,11 +3061,14 @@
 				DA5761D92005893C00A5151C /* ViewCook.swift in Sources */,
 				DA4AA5091FE72FEB00374B07 /* FormatIngredientTypeGrams+Constants.swift in Sources */,
 				DA9089251FD4C66000C1208A /* Arch.swift in Sources */,
+				DA4EAC27203309FD00444D86 /* ControllerHome+Search.swift in Sources */,
 				DAD246012025E91A0078A073 /* HomeFilterOrderProtocol.swift in Sources */,
 				DAAE61F71FF637A700954EFC /* PhotoRotation+Factory.swift in Sources */,
+				DA8F74E52034278600A34A01 /* HomeFilterKeyword.swift in Sources */,
 				DAA333D71FDB17EA002D766C /* Database.swift in Sources */,
 				DAB7739D2020A32B001E702E /* ViewOptionsListCellMetrics.swift in Sources */,
 				DA43ABCE202B6CDF006E9600 /* ViewHomeFilterListCell.swift in Sources */,
+				DA5B012720357ABF00320A9B /* ControllerHome+FilterShow.swift in Sources */,
 				DA69EC68200D5F6700CF466B /* ArchCookStep.swift in Sources */,
 				DA35DD0E1FFDAB280047881F /* Recipe+Keys.swift in Sources */,
 				DA2E7307201C555500EC5B94 /* Database+Create.swift in Sources */,
@@ -3016,6 +3104,7 @@
 				DAB773B52020CFDA001E702E /* Options+Settings.swift in Sources */,
 				DA01622A2016B045009D7A65 /* CookItemFavouriteOn.swift in Sources */,
 				DA4233DE1FEDE56F0012A589 /* ArchPhotoCrop.swift in Sources */,
+				DA50D543202C3051007BA365 /* ViewHomeFilterList+Actions.swift in Sources */,
 				DA80B54F200C1DB000797D61 /* ViewCookPlay.swift in Sources */,
 				DACF55071FD7656F00069701 /* habanero.xcdatamodeld in Sources */,
 				DA71D6AA1FDA74D8003A33E1 /* ViewTextBar.swift in Sources */,
@@ -3030,6 +3119,7 @@
 				DA90892F1FD4C66000C1208A /* Menu+Factory.swift in Sources */,
 				DA2C17731FEF41AD001BDA54 /* ViewPhotoCropDisplay.swift in Sources */,
 				DA3F0EB41FD74C5F00593B83 /* Menu+FactoryUser.swift in Sources */,
+				DA87B90D2036E51900E23206 /* ControllerHome+FilterOrder.swift in Sources */,
 				DA8E57B420172A4100EBF87F /* CloudProviderFirebase+Transaction.swift in Sources */,
 				DA74F0BE1FE6127100F45310 /* Format+Ingredient.swift in Sources */,
 				DA4233E21FEDE5DD0012A589 /* PhotoCrop.swift in Sources */,
@@ -3060,6 +3150,7 @@
 				DAB773922020950A001E702E /* OptionsItemProtocol.swift in Sources */,
 				DA71D6891FDA5985003A33E1 /* NewAddSectionItemInfoTitle.swift in Sources */,
 				DA60429D1FE21BAF00758A2F /* ControllerNewAddIngredientAmount.swift in Sources */,
+				DA4EAC2B20330D2500444D86 /* ViewHomeFilter+Constants.swift in Sources */,
 				DAFCCA62200DC6BB002377BC /* ViewCookStepBar.swift in Sources */,
 				DACF89DE1FFDD35600F4FCF0 /* RecipeIngredient.swift in Sources */,
 				DAADC4A91FFC85E600862A90 /* NewAddValidateStrategyTitle.swift in Sources */,
@@ -3081,6 +3172,7 @@
 				DACF553C1FD7661E00069701 /* ExtensionMKAnnotationView.swift in Sources */,
 				DA6E805F1FF987F100175F70 /* CloudProviderFirebase.swift in Sources */,
 				DAE7C37A1FE0A2E1003190FF /* ControllerNewAddIngredient+Create.swift in Sources */,
+				DA8F74E62034278600A34A01 /* HomeFilterKeyword.swift in Sources */,
 				DA35DD0C1FFDAADF0047881F /* RecipeStatus.swift in Sources */,
 				DA70AFC31FD5AA980016B0DC /* ControllerHome.swift in Sources */,
 				DA16F1641FDFB4C000EB6877 /* ControllerNewAdd+Ingredients.swift in Sources */,
@@ -3105,12 +3197,14 @@
 				DA1F05061FE8E3CD00DF03A8 /* BuildStepImage+Computed.swift in Sources */,
 				DAFA62D920081A020068EC17 /* CookListItemRecipe.swift in Sources */,
 				DAAC7C38201B1F4F001C680B /* ViewCookFavourite+Constants.swift in Sources */,
+				DA6C239E2036C28F002C9271 /* ViewHomeFilterListCell+Constants.swift in Sources */,
 				DAE7C3551FE08281003190FF /* CloudError.swift in Sources */,
 				DA2E72FF201C509000EC5B94 /* DatabaseProviderCoreData+Constants.swift in Sources */,
 				DA9089871FD4CE3300C1208A /* Arch.swift in Sources */,
 				DA71D68D1FDA6262003A33E1 /* ControllerNewAdd+Info.swift in Sources */,
 				DAA333E21FDB29D8002D766C /* NewAdd+Info.swift in Sources */,
 				DAC732D21FF8606500980854 /* NewAddSectionItemInfoImage.swift in Sources */,
+				DA5B012820357ABF00320A9B /* ControllerHome+FilterShow.swift in Sources */,
 				DADB97862027860600B3D9CF /* Home+Filter.swift in Sources */,
 				DAF949F61FD8BC6F001BA32E /* ControllerNewAdd.swift in Sources */,
 				DA3F0E8D1FDF457D0037C94D /* NewAddIngredient.swift in Sources */,
@@ -3134,6 +3228,7 @@
 				DAAE61F51FF636F500954EFC /* PhotoRotation.swift in Sources */,
 				DA11BA071FD8F1DE0038F9B0 /* ViewNewAddList.swift in Sources */,
 				DA91EAF51FD62C1F0063560D /* ViewParent.swift in Sources */,
+				DA7F7A652032D3A4001BED41 /* HomeFilterStateVisible.swift in Sources */,
 				DA178199200D7D76007AF4A4 /* ControllerCookStep.swift in Sources */,
 				DAF8068C200FC0C500E2F858 /* CookStep+Image.swift in Sources */,
 				DA33F329200FDC1B00F07E48 /* ViewCookStepProgressIndicator+Constants.swift in Sources */,
@@ -3283,8 +3378,10 @@
 				DA8752DD1FE3ABA700AE74F5 /* NewAddIngredientAmountTypeQuantity.swift in Sources */,
 				DACF89F01FFDD8A900F4FCF0 /* RecipeIngredientQuantity.swift in Sources */,
 				DAAE61FF1FF64E9700954EFC /* NewAdd+StepsUpdate.swift in Sources */,
+				DA0E79B42031AE32004B3C91 /* ViewHomeBar+Constants.swift in Sources */,
 				DA80B550200C1DB000797D61 /* ViewCookPlay.swift in Sources */,
 				DA71D6901FDA633E003A33E1 /* ArchText.swift in Sources */,
+				DA7F7A5C2032D0AA001BED41 /* ViewHome+Constants.swift in Sources */,
 				DAD245FF2025E8F00078A073 /* HomeFilterShowFavourites.swift in Sources */,
 				DAD2460B2025E9A60078A073 /* Home+Factory.swift in Sources */,
 				DAA07FF420153E90006FFC76 /* CookItem.swift in Sources */,
@@ -3338,6 +3435,7 @@
 				DAADC4A51FFC80E600862A90 /* NewAddValidateStrategyMinSteps.swift in Sources */,
 				DA280FC520006AE90016AD43 /* RecipeStep.swift in Sources */,
 				DAADC49F1FFC783600862A90 /* NewAdd+Validate.swift in Sources */,
+				DA50D544202C3051007BA365 /* ViewHomeFilterList+Actions.swift in Sources */,
 				DA8752DF1FE3ABAF00AE74F5 /* NewAddIngredientAmountTypeSpoons.swift in Sources */,
 				DA71D6A51FDA7107003A33E1 /* ViewText+Constants.swift in Sources */,
 				DACF55401FD7661E00069701 /* ExtensionUIFont.swift in Sources */,
@@ -3360,6 +3458,7 @@
 				DA91EB1D1FD62C1F0063560D /* ViewSpinner.swift in Sources */,
 				DAE7C3781FE0996B003190FF /* IngredientList.swift in Sources */,
 				DACF552C1FD7661E00069701 /* ExtensionDictionary.swift in Sources */,
+				DA4EAC28203309FD00444D86 /* ControllerHome+Search.swift in Sources */,
 				DAC104B1200EA921004617FD /* ViewCookStepList.swift in Sources */,
 				DA1F04F21FE8C0BF00DF03A8 /* ControllerNewAdd+Steps.swift in Sources */,
 				DA33F320200FCE4300F07E48 /* ViewCookStep+Constants.swift in Sources */,
@@ -3377,6 +3476,7 @@
 				DAADC4A71FFC826D00862A90 /* NewAddValidateStrategyMinSteps+Constants.swift in Sources */,
 				DA5761DA2005893C00A5151C /* ViewCook.swift in Sources */,
 				DA5FFE641FE7790000A38154 /* FormatIngredientTypeQuantity+Constants.swift in Sources */,
+				DA87B90E2036E51900E23206 /* ControllerHome+FilterOrder.swift in Sources */,
 				DAB7738F2020915C001E702E /* ViewOptionsBar.swift in Sources */,
 				DA5FFE6A1FE77A2F00A38154 /* FormatIngredientTypeMililitres+Constants.swift in Sources */,
 				DA9089931FD4CE3E00C1208A /* MenuItemProtocol.swift in Sources */,
@@ -3389,7 +3489,10 @@
 				DAB773AA2020B955001E702E /* ViewOptionsList+Actions.swift in Sources */,
 				DACF552E1FD7661E00069701 /* ExtensionNotification.swift in Sources */,
 				DA6E80851FF9B7A600175F70 /* StorageProviderFirebase.swift in Sources */,
+				DAC634462035B21F00D795B0 /* ViewHomeFilterListCellOrder+Constants.swift in Sources */,
+				DA43ABDE202B7009006E9600 /* ViewHomeFilterListCellOrder.swift in Sources */,
 				DABA5EC51FEA36D60017F865 /* PhotoOptionCancel.swift in Sources */,
+				DA43ABDB202B6FDC006E9600 /* ViewHomeFilterListCellShow.swift in Sources */,
 				DA90898C1FD4CE3E00C1208A /* MenuItemHome.swift in Sources */,
 				DA11BA141FD8FFE30038F9B0 /* ViewNewAddListHeader+Constants.swift in Sources */,
 				DAC104BA200EAC16004617FD /* ViewCookStepListCellImage.swift in Sources */,
@@ -3428,6 +3531,7 @@
 				DA74F0CE1FE6154800F45310 /* FormatIngredientTypeMililitres.swift in Sources */,
 				DACF55381FD7661E00069701 /* ExtensionFileManager.swift in Sources */,
 				DA71D6711FDA44C0003A33E1 /* ViewNewAddListFooterSteps.swift in Sources */,
+				DA4EAC252033052100444D86 /* ViewHomeFilterSearch.swift in Sources */,
 				DA8752D91FE3AB9400AE74F5 /* NewAddIngredientAmountTypeGrams.swift in Sources */,
 				DA01622B2016B045009D7A65 /* CookItemFavouriteOn.swift in Sources */,
 				DAE7C3421FE07F6C003190FF /* NewAddIngredient+Create.swift in Sources */,
@@ -3458,6 +3562,7 @@
 				DA9089831FD4CE2E00C1208A /* ControllerParent+Menu.swift in Sources */,
 				DA6835A020017C120087C77D /* RecipeStepImageBuilder.swift in Sources */,
 				DA4E0C0D2021AAFB00F5AEE2 /* AnalyticsProviderProtocol.swift in Sources */,
+				DAB8732A202FA9B6007B7C3B /* ControllerHome+Filters.swift in Sources */,
 				DAA333D21FDB1453002D766C /* New+Load.swift in Sources */,
 				DAE35C982005D0C5002B1C9C /* ViewCookHeader.swift in Sources */,
 				DA91EAEB1FD62C1F0063560D /* ViewMenu+Collection.swift in Sources */,
@@ -3496,6 +3601,8 @@
 				DAE7C33A1FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift in Sources */,
 				DA35DD211FFDB95B0047881F /* StorageError+Description.swift in Sources */,
 				DA27794920071EE900F15AE0 /* ViewCookListCellIngredient.swift in Sources */,
+				DA7F7A5F2032D2CF001BED41 /* HomeFilterStateProtocol.swift in Sources */,
+				DA5B01252035741200320A9B /* ViewHomeFilterListCellShow+Constants.swift in Sources */,
 				DAE35C9B2005D34F002B1C9C /* ViewCookHeader+Constants.swift in Sources */,
 				DAE5E4811FE489C100CC40BA /* Settings.swift in Sources */,
 				DA992D791FD61ED700A6CFEF /* MenuItemGenericProtocol.swift in Sources */,
@@ -3528,6 +3635,7 @@
 				DA90897F1FD4CE2E00C1208A /* AppDelegate.swift in Sources */,
 				DA1F04F61FE8DB5700DF03A8 /* ViewNewAddListCellStepText.swift in Sources */,
 				DACF554A1FD7661E00069701 /* ExtensionUIFont+Constants.swift in Sources */,
+				DA7F7A622032D337001BED41 /* HomeFilterStateHidden.swift in Sources */,
 				DAD64C122011307800E74F76 /* ViewCookStepListCellText+Constants.swift in Sources */,
 				DAEFB5F2201377A000CA840E /* RecipeFavourite.swift in Sources */,
 				DAFA62DC20081A6F0068EC17 /* CookListItemIngredientsTitle.swift in Sources */,

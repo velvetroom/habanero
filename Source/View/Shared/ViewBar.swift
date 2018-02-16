@@ -10,14 +10,14 @@ class ViewBar<A>:View<A> where A.C:Controller<A>
         
         self.backgroundColor = UIColor.white
         
-        let viewBorder:ViewBorder = ViewBorder(colour:UIColor(white:0, alpha:0.2))
+        let viewBorder:ViewBorder = ViewBorder(colour:UIColor.colourBackgroundDark)
         
         let labelTitle:UILabel = UILabel()
         labelTitle.translatesAutoresizingMaskIntoConstraints = false
         labelTitle.backgroundColor = UIColor.clear
         labelTitle.isUserInteractionEnabled = false
         labelTitle.textAlignment = NSTextAlignment.center
-        labelTitle.font = UIFont.regular(size:ViewGlobal.Constants.barTitleFontSize)
+        labelTitle.font = UIFont.bold(size:ViewGlobal.Constants.barTitleFontSize)
         labelTitle.textColor = UIColor.colourBackgroundDark
         self.labelTitle = labelTitle
         

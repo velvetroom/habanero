@@ -1,8 +1,7 @@
 #!/bin/bash
 
-sleep 1
 
-build=$(git rev-list HEAD --count)
+build=$(($(git rev-list HEAD --count) + 1))
 version=$(git describe --tags $(git rev-list --tags --max-count=1))
 
 if [[ $version == *"."* ]]; then
@@ -18,14 +17,9 @@ if [[ $version == *"."* ]]; then
 
         version_minor="0"
     fi
-
-else
-
-    version_major="1"
-    version_minor="0"
-
 fi
 
 new_version="$version_major.$version_minor.$build"
 
-echo $new_version
+echo "Version: $new_version"
+echo "Build: $build"

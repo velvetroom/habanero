@@ -2,8 +2,11 @@ import UIKit
 
 final class ViewHome:ViewMain<ArchHome>
 {
+    private(set) weak var viewBar:ViewHomeBar!
     private(set) weak var viewSpinner:ViewSpinner!
     private(set) weak var viewList:ViewHomeList!
+    private(set) weak var viewFilter:ViewHomeFilter!
+    private(set) weak var layoutFilterTop:NSLayoutConstraint!
     
     override func factoryViews()
     {
@@ -11,6 +14,7 @@ final class ViewHome:ViewMain<ArchHome>
         self.backgroundColor = UIColor.colourBackgroundGray
         
         let viewBar:ViewHomeBar = ViewHomeBar(controller:self.controller)
+        self.viewBar = viewBar
         
         let viewSpinner:ViewSpinner = ViewSpinner()
         self.viewSpinner = viewSpinner
@@ -19,7 +23,11 @@ final class ViewHome:ViewMain<ArchHome>
         viewList.isHidden = true
         self.viewList = viewList
         
+        let viewFilter:ViewHomeFilter = ViewHomeFilter(controller:self.controller)
+        self.viewFilter = viewFilter
+        
         self.addSubview(viewList)
+        self.addSubview(viewFilter)
         self.addSubview(viewSpinner)
         self.addSubview(viewBar)
         
@@ -27,9 +35,20 @@ final class ViewHome:ViewMain<ArchHome>
             view:viewSpinner,
             toView:self)
         
+        layoutFilterTop = NSLayoutConstraint.topToBottom(
+            view:viewFilter,
+            toView:viewBar,
+            constant:-ViewHome.Constants.filterHeight)
+        NSLayoutConstraint.height(
+            view:viewFilter,
+            constant:ViewHome.Constants.filterHeight)
+        NSLayoutConstraint.equalsHorizontal(
+            view:viewFilter,
+            toView:self)
+        
         NSLayoutConstraint.topToBottom(
             view:viewList,
-            toView:viewBar)
+            toView:viewFilter)
         NSLayoutConstraint.bottomToBottom(
             view:viewList,
             toView:self,
