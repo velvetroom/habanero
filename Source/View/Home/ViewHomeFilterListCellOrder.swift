@@ -134,8 +134,8 @@ final class ViewHomeFilterListCellOrder:ViewHomeFilterListCell
     
     func showOrderedByFavourites()
     {
-        self.buttonDate.isEnabled = true
-        self.buttonFavourites.isEnabled = false
+        self.buttonDate.isUserInteractionEnabled = true
+        self.buttonFavourites.isUserInteractionEnabled = false
         
         self.buttonDate.isSelected = false
         self.buttonFavourites.isSelected = true
