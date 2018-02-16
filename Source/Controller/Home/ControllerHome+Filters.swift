@@ -60,11 +60,6 @@ extension ControllerHome
         self.model.updateFilterState(filterStateType:HomeFilterStateHidden.self)
     }
     
-    func configFilterShow(viewCell:ViewHomeFilterListCellShow)
-    {
-        
-    }
-    
     func configFilterOrder(viewCell:ViewHomeFilterListCellOrder)
     {
         

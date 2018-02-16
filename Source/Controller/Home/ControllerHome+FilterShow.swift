@@ -4,6 +4,21 @@ extension ControllerHome
 {
     //MARK: internal
     
+    func configFilterShow(viewCell:ViewHomeFilterListCellShow)
+    {
+        
+    }
+    
+    func configFilterShowAll(viewCell:ViewHomeFilterListCellShow)
+    {
+        
+    }
+    
+    func configFilterShowFavourites(viewCell:ViewHomeFilterListCellShow)
+    {
+        
+    }
+    
     func filterShowToggle(viewCell:ViewHomeFilterListCellShow)
     {
         self.model.filter.show.toggleFilter(self)(viewCell)
