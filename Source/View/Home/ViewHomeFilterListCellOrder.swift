@@ -53,7 +53,11 @@ final class ViewHomeFilterListCellOrder:ViewHomeFilterListCell
         self.addSubview(buttonDate)
         self.addSubview(buttonFavourites)
         
-        NSLayoutConstraint.equalsVertical(
+        NSLayoutConstraint.topToTop(
+            view:buttonDate,
+            toView:self,
+            constant:ViewHomeFilterListCell.Constants.contentTop)
+        NSLayoutConstraint.bottomToBottom(
             view:buttonDate,
             toView:self)
         NSLayoutConstraint.leftToLeft(
@@ -63,7 +67,11 @@ final class ViewHomeFilterListCellOrder:ViewHomeFilterListCell
             view:buttonDate,
             constant:ViewHomeFilterListCellOrder.Constants.buttonWidth)
         
-        NSLayoutConstraint.equalsVertical(
+        NSLayoutConstraint.topToTop(
+            view:buttonFavourites,
+            toView:self,
+            constant:ViewHomeFilterListCell.Constants.contentTop)
+        NSLayoutConstraint.bottomToBottom(
             view:buttonFavourites,
             toView:self)
         NSLayoutConstraint.leftToRight(

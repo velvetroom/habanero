@@ -33,7 +33,11 @@ final class ViewHomeFilterListCellShow:ViewHomeFilterListCell
         
         self.addSubview(button)
         
-        NSLayoutConstraint.equalsVertical(
+        NSLayoutConstraint.topToTop(
+            view:button,
+            toView:self,
+            constant:ViewHomeFilterListCell.Constants.contentTop)
+        NSLayoutConstraint.bottomToBottom(
             view:button,
             toView:self)
         NSLayoutConstraint.rightToRight(
