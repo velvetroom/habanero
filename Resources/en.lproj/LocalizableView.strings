@@ -21,3 +21,5 @@ ViewOptionsListCellMetrics_itemUS="US";
 ViewTextBar_button="Done";
 ViewPhotoCropMenu_buttonCancel="Cancel";
 ViewPhotoCropMenu_buttonAccept="Accept";
+ViewHomeFilterListCellOrder_labelTitle="Sort order";
+ViewHomeFilterListCellShow_labelTitle="Filter";
