@@ -9,6 +9,9 @@ final class ViewHomeFilterListCellOrder:ViewHomeFilterListCell
     {
         super.factoryViews()
         
+        self.labelTitle.textAlignment = NSTextAlignment.left
+        self.labelTitle.text = String.localizedView(key:"ViewHomeFilterListCellOrder_labelTitle")
+        
         let buttonDate:UIButton = UIButton()
         buttonDate.translatesAutoresizingMaskIntoConstraints = false
         buttonDate.setImage(

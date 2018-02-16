@@ -25,11 +25,10 @@ class ViewHomeFilterListCell:ViewCollectionCell
         NSLayoutConstraint.height(
             view:labelTitle,
             constant:ViewHomeFilterListCell.Constants.titleHeight)
-        NSLayoutConstraint.leftToLeft(
+        NSLayoutConstraint.equalsHorizontal(
             view:labelTitle,
-            toView:self)
-        NSLayoutConstraint.widthGreaterOrEqual(
-            view:labelTitle)
+            toView:self,
+            margin:ViewHomeFilterListCell.Constants.titlePadding)
     }
     
     //MARK: internal
