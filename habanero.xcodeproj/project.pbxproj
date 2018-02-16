@@ -423,6 +423,8 @@
 		DA8752E11FE3AFE800AE74F5 /* NewAddIngredientAmount+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752E01FE3AFE800AE74F5 /* NewAddIngredientAmount+Factory.swift */; };
 		DA8752E31FE3B27100AE74F5 /* ViewNewAddIngredientAmountList+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752E21FE3B27100AE74F5 /* ViewNewAddIngredientAmountList+Actions.swift */; };
 		DA8752E51FE3B74900AE74F5 /* ViewNewAddIngredientAmountListCell+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8752E41FE3B74900AE74F5 /* ViewNewAddIngredientAmountListCell+Constants.swift */; };
+		DA87B90D2036E51900E23206 /* ControllerHome+FilterOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA87B90C2036E51900E23206 /* ControllerHome+FilterOrder.swift */; };
+		DA87B90E2036E51900E23206 /* ControllerHome+FilterOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA87B90C2036E51900E23206 /* ControllerHome+FilterOrder.swift */; };
 		DA8C6E3D1FDB2F4600C0AD69 /* Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C6E3B1FDB2F3B00C0AD69 /* Build.swift */; };
 		DA8E57B420172A4100EBF87F /* CloudProviderFirebase+Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E57B320172A4100EBF87F /* CloudProviderFirebase+Transaction.swift */; };
 		DA8E57B520172A4100EBF87F /* CloudProviderFirebase+Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E57B320172A4100EBF87F /* CloudProviderFirebase+Transaction.swift */; };
@@ -1161,6 +1163,7 @@
 		DA8752E01FE3AFE800AE74F5 /* NewAddIngredientAmount+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddIngredientAmount+Factory.swift"; sourceTree = "<group>"; };
 		DA8752E21FE3B27100AE74F5 /* ViewNewAddIngredientAmountList+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientAmountList+Actions.swift"; sourceTree = "<group>"; };
 		DA8752E41FE3B74900AE74F5 /* ViewNewAddIngredientAmountListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientAmountListCell+Constants.swift"; sourceTree = "<group>"; };
+		DA87B90C2036E51900E23206 /* ControllerHome+FilterOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerHome+FilterOrder.swift"; sourceTree = "<group>"; };
 		DA8C6E3B1FDB2F3B00C0AD69 /* Build.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Build.swift; sourceTree = "<group>"; };
 		DA8E57B320172A4100EBF87F /* CloudProviderFirebase+Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudProviderFirebase+Transaction.swift"; sourceTree = "<group>"; };
 		DA8E738B1FF88F3C005264F4 /* ViewNewAddListCellEditable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellEditable.swift; sourceTree = "<group>"; };
@@ -1945,6 +1948,7 @@
 				DAB87328202FA9B6007B7C3B /* ControllerHome+Filters.swift */,
 				DA4EAC26203309FD00444D86 /* ControllerHome+Search.swift */,
 				DA5B012620357ABF00320A9B /* ControllerHome+FilterShow.swift */,
+				DA87B90C2036E51900E23206 /* ControllerHome+FilterOrder.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -3115,6 +3119,7 @@
 				DA90892F1FD4C66000C1208A /* Menu+Factory.swift in Sources */,
 				DA2C17731FEF41AD001BDA54 /* ViewPhotoCropDisplay.swift in Sources */,
 				DA3F0EB41FD74C5F00593B83 /* Menu+FactoryUser.swift in Sources */,
+				DA87B90D2036E51900E23206 /* ControllerHome+FilterOrder.swift in Sources */,
 				DA8E57B420172A4100EBF87F /* CloudProviderFirebase+Transaction.swift in Sources */,
 				DA74F0BE1FE6127100F45310 /* Format+Ingredient.swift in Sources */,
 				DA4233E21FEDE5DD0012A589 /* PhotoCrop.swift in Sources */,
@@ -3471,6 +3476,7 @@
 				DAADC4A71FFC826D00862A90 /* NewAddValidateStrategyMinSteps+Constants.swift in Sources */,
 				DA5761DA2005893C00A5151C /* ViewCook.swift in Sources */,
 				DA5FFE641FE7790000A38154 /* FormatIngredientTypeQuantity+Constants.swift in Sources */,
+				DA87B90E2036E51900E23206 /* ControllerHome+FilterOrder.swift in Sources */,
 				DAB7738F2020915C001E702E /* ViewOptionsBar.swift in Sources */,
 				DA5FFE6A1FE77A2F00A38154 /* FormatIngredientTypeMililitres+Constants.swift in Sources */,
 				DA9089931FD4CE3E00C1208A /* MenuItemProtocol.swift in Sources */,
