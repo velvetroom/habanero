@@ -276,6 +276,8 @@
 		DA69EC69200D5F6700CF466B /* ArchCookStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69EC67200D5F6700CF466B /* ArchCookStep.swift */; };
 		DA6BF0D91FDDFDDC0027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0D81FDDFDDC0027C167 /* GoogleService-Info.plist */; };
 		DA6BF0DB1FDDFDE60027C167 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */; };
+		DA6C239D2036C28F002C9271 /* ViewHomeFilterListCell+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6C239C2036C28E002C9271 /* ViewHomeFilterListCell+Constants.swift */; };
+		DA6C239E2036C28F002C9271 /* ViewHomeFilterListCell+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6C239C2036C28E002C9271 /* ViewHomeFilterListCell+Constants.swift */; };
 		DA6E804D1FF96C0D00175F70 /* NewAdd+Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E804C1FF96C0D00175F70 /* NewAdd+Delete.swift */; };
 		DA6E804F1FF96D3800175F70 /* NewAddDeleteStrategyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E804E1FF96D3800175F70 /* NewAddDeleteStrategyProtocol.swift */; };
 		DA6E80511FF9706A00175F70 /* NewAddDeleteStrategyInfoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E80501FF9706A00175F70 /* NewAddDeleteStrategyInfoImage.swift */; };
@@ -1064,6 +1066,7 @@
 		DA6BF0DA1FDDFDE60027C167 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "admin/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA6BF0DC1FDDFE430027C167 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = user/Info.plist; sourceTree = "<group>"; };
 		DA6BF0DE1FDDFE4E0027C167 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = admin/Info.plist; sourceTree = "<group>"; };
+		DA6C239C2036C28E002C9271 /* ViewHomeFilterListCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewHomeFilterListCell+Constants.swift"; sourceTree = "<group>"; };
 		DA6E804C1FF96C0D00175F70 /* NewAdd+Delete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAdd+Delete.swift"; sourceTree = "<group>"; };
 		DA6E804E1FF96D3800175F70 /* NewAddDeleteStrategyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddDeleteStrategyProtocol.swift; sourceTree = "<group>"; };
 		DA6E80501FF9706A00175F70 /* NewAddDeleteStrategyInfoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddDeleteStrategyInfoImage.swift; sourceTree = "<group>"; };
@@ -2092,6 +2095,7 @@
 				DA43ABCA202B6CB8006E9600 /* ViewHomeFilterList.swift */,
 				DA50D542202C3051007BA365 /* ViewHomeFilterList+Actions.swift */,
 				DA43ABCD202B6CDF006E9600 /* ViewHomeFilterListCell.swift */,
+				DA6C239C2036C28E002C9271 /* ViewHomeFilterListCell+Constants.swift */,
 				DA43ABD9202B6FDC006E9600 /* ViewHomeFilterListCellShow.swift */,
 				DA5B01232035741200320A9B /* ViewHomeFilterListCellShow+Constants.swift */,
 				DA43ABDC202B7009006E9600 /* ViewHomeFilterListCellOrder.swift */,
@@ -2959,6 +2963,7 @@
 				DA855E0E1FF3839000E1B69F /* PhotoCropMask.swift in Sources */,
 				DA5A97CC1FD605E1006223BA /* MenuItemGeneric.swift in Sources */,
 				DA936CF01FFF114900740BE8 /* RecipeIngredientGramsBuilder.swift in Sources */,
+				DA6C239D2036C28F002C9271 /* ViewHomeFilterListCell+Constants.swift in Sources */,
 				DAB773A62020B0BC001E702E /* ViewOptionsList+Constants.swift in Sources */,
 				DABA5EBE1FEA34D20017F865 /* PhotoOptionProtocol.swift in Sources */,
 				DAD97C9B201E22A60074490A /* Home+Favourites.swift in Sources */,
@@ -3187,6 +3192,7 @@
 				DA1F05061FE8E3CD00DF03A8 /* BuildStepImage+Computed.swift in Sources */,
 				DAFA62D920081A020068EC17 /* CookListItemRecipe.swift in Sources */,
 				DAAC7C38201B1F4F001C680B /* ViewCookFavourite+Constants.swift in Sources */,
+				DA6C239E2036C28F002C9271 /* ViewHomeFilterListCell+Constants.swift in Sources */,
 				DAE7C3551FE08281003190FF /* CloudError.swift in Sources */,
 				DA2E72FF201C509000EC5B94 /* DatabaseProviderCoreData+Constants.swift in Sources */,
 				DA9089871FD4CE3300C1208A /* Arch.swift in Sources */,
