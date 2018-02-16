@@ -10,7 +10,7 @@ class ViewBar<A>:View<A> where A.C:Controller<A>
         
         self.backgroundColor = UIColor.white
         
-        let viewBorder:ViewBorder = ViewBorder(colour:UIColor(white:0, alpha:0.2))
+        let viewBorder:ViewBorder = ViewBorder(colour:UIColor.colourBackgroundDark)
         
         let labelTitle:UILabel = UILabel()
         labelTitle.translatesAutoresizingMaskIntoConstraints = false
