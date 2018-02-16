@@ -11,12 +11,12 @@ extension ControllerHome
     
     func configFilterShowAll(viewCell:ViewHomeFilterListCellShow)
     {
-        
+        viewCell.showAll()
     }
     
     func configFilterShowFavourites(viewCell:ViewHomeFilterListCellShow)
     {
-        
+        viewCell.showOnlyFavourites()
     }
     
     func filterShowToggle(viewCell:ViewHomeFilterListCellShow)
