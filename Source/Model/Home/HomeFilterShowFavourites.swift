@@ -2,6 +2,8 @@ import Foundation
 
 struct HomeFilterShowFavourites:HomeFilterShowProtocol
 {
+    let configFilter:((ControllerHome) -> (ViewHomeFilterListCellShow) -> ()) =
+        ControllerHome.configFilterShowFavourites
     let toggleFilter:((ControllerHome) -> (ViewHomeFilterListCellShow) -> ()) = ControllerHome.filterShowAll
     
     func filter(items:[CookItem]) -> [CookItem]

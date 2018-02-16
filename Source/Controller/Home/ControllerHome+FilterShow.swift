@@ -6,7 +6,7 @@ extension ControllerHome
     
     func configFilterShow(viewCell:ViewHomeFilterListCellShow)
     {
-        
+        self.model.filter.show.configFilter(self)(viewCell)
     }
     
     func configFilterShowAll(viewCell:ViewHomeFilterListCellShow)
