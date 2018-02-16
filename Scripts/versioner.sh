@@ -18,12 +18,6 @@ if [[ $version == *"."* ]]; then
 
         version_minor="0"
     fi
-
-else
-
-    version_major="1"
-    version_minor="0"
-
 fi
 
 new_version="$version_major.$version_minor.$build"
