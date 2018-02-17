@@ -1,6 +1,6 @@
 struct ArchCalendar:Arch
 {
-    typealias M = Options
-    typealias V = ViewOptions
-    typealias C = ControllerOptions
+    typealias M = Calendar
+    typealias V = ViewCalendar
+    typealias C = ControllerCalendar
 }
