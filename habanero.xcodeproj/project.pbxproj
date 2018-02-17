@@ -819,6 +819,8 @@
 		DAE5F66F2038A8D90023E75B /* ArchCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F66D2038A8D90023E75B /* ArchCalendar.swift */; };
 		DAE5F6722038AB3F0023E75B /* ControllerCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F6712038AB3F0023E75B /* ControllerCalendar.swift */; };
 		DAE5F6732038AB3F0023E75B /* ControllerCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F6712038AB3F0023E75B /* ControllerCalendar.swift */; };
+		DAE5F6762038ACB00023E75B /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F6752038ACB00023E75B /* Calendar.swift */; };
+		DAE5F6772038ACB00023E75B /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F6752038ACB00023E75B /* Calendar.swift */; };
 		DAE7C3361FE03BE7003190FF /* NewAddIngredient+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3351FE03BE7003190FF /* NewAddIngredient+Load.swift */; };
 		DAE7C3381FE0605C003190FF /* ViewNewAddIngredientListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3371FE0605C003190FF /* ViewNewAddIngredientListHeader.swift */; };
 		DAE7C33A1FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3391FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift */; };
@@ -1397,6 +1399,7 @@
 		DAE5E4881FE48F1D00CC40BA /* Home+Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home+Settings.swift"; sourceTree = "<group>"; };
 		DAE5F66D2038A8D90023E75B /* ArchCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchCalendar.swift; sourceTree = "<group>"; };
 		DAE5F6712038AB3F0023E75B /* ControllerCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerCalendar.swift; sourceTree = "<group>"; };
+		DAE5F6752038ACB00023E75B /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		DAE7C3351FE03BE7003190FF /* NewAddIngredient+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddIngredient+Load.swift"; sourceTree = "<group>"; };
 		DAE7C3371FE0605C003190FF /* ViewNewAddIngredientListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddIngredientListHeader.swift; sourceTree = "<group>"; };
 		DAE7C3391FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientList+Constants.swift"; sourceTree = "<group>"; };
@@ -1983,6 +1986,7 @@
 		DA9088D11FD4C65F00C1208A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DAE5F6742038ACA70023E75B /* Calendar */,
 				DAE7C3621FE0828C003190FF /* Analytics */,
 				DA4E0C0A2021AAEE00F5AEE2 /* AnalyticsProvider */,
 				DAB7738220208ACB001E702E /* Options */,
@@ -2354,6 +2358,14 @@
 			isa = PBXGroup;
 			children = (
 				DAE5F6712038AB3F0023E75B /* ControllerCalendar.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		DAE5F6742038ACA70023E75B /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				DAE5F6752038ACB00023E75B /* Calendar.swift */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -3147,6 +3159,7 @@
 				DACF89E01FFDD3F900F4FCF0 /* RecipeIngredient+Factory.swift in Sources */,
 				DA91EAFA1FD62C1F0063560D /* ViewMain.swift in Sources */,
 				DA71D68F1FDA633E003A33E1 /* ArchText.swift in Sources */,
+				DAE5F6762038ACB00023E75B /* Calendar.swift in Sources */,
 				DA35DD141FFDAF460047881F /* IngredientBuilder.swift in Sources */,
 				DA71D6AD1FDA7A01003A33E1 /* ViewTextBar+Constants.swift in Sources */,
 				DACF55391FD7661E00069701 /* ExtensionURLResponse.swift in Sources */,
@@ -3307,6 +3320,7 @@
 				DAC732CE1FF853F600980854 /* ViewNewAddListCellInfoSubtitle.swift in Sources */,
 				DA9089841FD4CE2E00C1208A /* ControllerParent+Transitions.swift in Sources */,
 				DA6E80741FF9A18A00175F70 /* CloudListProtocol+Default.swift in Sources */,
+				DAE5F6772038ACB00023E75B /* Calendar.swift in Sources */,
 				DA855E0F1FF3839000E1B69F /* PhotoCropMask.swift in Sources */,
 				DAAE259B20096FC000BE3740 /* ViewCookListCellIngredient+Constants.swift in Sources */,
 				DA91EB031FD62C1F0063560D /* ViewAlert+Constants.swift in Sources */,
