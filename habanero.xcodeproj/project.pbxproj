@@ -817,6 +817,8 @@
 		DAE5E48A1FE48F1D00CC40BA /* Home+Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5E4881FE48F1D00CC40BA /* Home+Settings.swift */; };
 		DAE5F66E2038A8D90023E75B /* ArchCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F66D2038A8D90023E75B /* ArchCalendar.swift */; };
 		DAE5F66F2038A8D90023E75B /* ArchCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F66D2038A8D90023E75B /* ArchCalendar.swift */; };
+		DAE5F6722038AB3F0023E75B /* ControllerCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F6712038AB3F0023E75B /* ControllerCalendar.swift */; };
+		DAE5F6732038AB3F0023E75B /* ControllerCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F6712038AB3F0023E75B /* ControllerCalendar.swift */; };
 		DAE7C3361FE03BE7003190FF /* NewAddIngredient+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3351FE03BE7003190FF /* NewAddIngredient+Load.swift */; };
 		DAE7C3381FE0605C003190FF /* ViewNewAddIngredientListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3371FE0605C003190FF /* ViewNewAddIngredientListHeader.swift */; };
 		DAE7C33A1FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3391FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift */; };
@@ -1394,6 +1396,7 @@
 		DAE5E4851FE48CA700CC40BA /* Settings+Computed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings+Computed.swift"; sourceTree = "<group>"; };
 		DAE5E4881FE48F1D00CC40BA /* Home+Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home+Settings.swift"; sourceTree = "<group>"; };
 		DAE5F66D2038A8D90023E75B /* ArchCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchCalendar.swift; sourceTree = "<group>"; };
+		DAE5F6712038AB3F0023E75B /* ControllerCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerCalendar.swift; sourceTree = "<group>"; };
 		DAE7C3351FE03BE7003190FF /* NewAddIngredient+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddIngredient+Load.swift"; sourceTree = "<group>"; };
 		DAE7C3371FE0605C003190FF /* ViewNewAddIngredientListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddIngredientListHeader.swift; sourceTree = "<group>"; };
 		DAE7C3391FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientList+Constants.swift"; sourceTree = "<group>"; };
@@ -1915,6 +1918,7 @@
 		DA9088C31FD4C65F00C1208A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DAE5F6702038AB2C0023E75B /* Calendar */,
 				DAB7737E2020896E001E702E /* Options */,
 				DA5761CC2005876700A5151C /* Cook */,
 				DA9088C41FD4C65F00C1208A /* Abstract */,
@@ -2344,6 +2348,14 @@
 				DAE5E4821FE48C6100CC40BA /* SettingsMetrics.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		DAE5F6702038AB2C0023E75B /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				DAE5F6712038AB3F0023E75B /* ControllerCalendar.swift */,
+			);
+			path = Calendar;
 			sourceTree = "<group>";
 		};
 		DAE7C3431FE08281003190FF /* Cloud */ = {
@@ -2914,6 +2926,7 @@
 				DA992D781FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */,
 				DA3F0E7C1FDF326A0037C94D /* Ingredient+Keys.swift in Sources */,
 				DA43ABD1202B6D9F006E9600 /* HomeFilterOptionsProtocol.swift in Sources */,
+				DAE5F6722038AB3F0023E75B /* ControllerCalendar.swift in Sources */,
 				DA27794520071EB500F15AE0 /* ViewCookListCellRecipe.swift in Sources */,
 				DA5B01242035741200320A9B /* ViewHomeFilterListCellShow+Constants.swift in Sources */,
 				DAD245F82025E8AD0078A073 /* HomeFilterShowProtocol.swift in Sources */,
@@ -3196,6 +3209,7 @@
 				DA90898A1FD4CE3E00C1208A /* Menu+Constants.swift in Sources */,
 				DA7B1FC7202069A40097202E /* Database+Delete.swift in Sources */,
 				DACEB3991FDC95480089B3FE /* NewItem.swift in Sources */,
+				DAE5F6732038AB3F0023E75B /* ControllerCalendar.swift in Sources */,
 				DAB7739820209C98001E702E /* ViewOptionsList.swift in Sources */,
 				DACEB3AA1FDCAC0B0089B3FE /* ViewNewListCell+Config.swift in Sources */,
 				DA84C0F21FD73FCD008959EA /* ControllerNew.swift in Sources */,
