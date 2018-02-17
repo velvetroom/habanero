@@ -815,6 +815,8 @@
 		DAE5E4871FE48CA700CC40BA /* Settings+Computed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5E4851FE48CA700CC40BA /* Settings+Computed.swift */; };
 		DAE5E4891FE48F1D00CC40BA /* Home+Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5E4881FE48F1D00CC40BA /* Home+Settings.swift */; };
 		DAE5E48A1FE48F1D00CC40BA /* Home+Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5E4881FE48F1D00CC40BA /* Home+Settings.swift */; };
+		DAE5F66E2038A8D90023E75B /* ArchCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F66D2038A8D90023E75B /* ArchCalendar.swift */; };
+		DAE5F66F2038A8D90023E75B /* ArchCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F66D2038A8D90023E75B /* ArchCalendar.swift */; };
 		DAE7C3361FE03BE7003190FF /* NewAddIngredient+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3351FE03BE7003190FF /* NewAddIngredient+Load.swift */; };
 		DAE7C3381FE0605C003190FF /* ViewNewAddIngredientListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3371FE0605C003190FF /* ViewNewAddIngredientListHeader.swift */; };
 		DAE7C33A1FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3391FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift */; };
@@ -1391,6 +1393,7 @@
 		DAE5E4821FE48C6100CC40BA /* SettingsMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMetrics.swift; sourceTree = "<group>"; };
 		DAE5E4851FE48CA700CC40BA /* Settings+Computed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings+Computed.swift"; sourceTree = "<group>"; };
 		DAE5E4881FE48F1D00CC40BA /* Home+Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home+Settings.swift"; sourceTree = "<group>"; };
+		DAE5F66D2038A8D90023E75B /* ArchCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchCalendar.swift; sourceTree = "<group>"; };
 		DAE7C3351FE03BE7003190FF /* NewAddIngredient+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddIngredient+Load.swift"; sourceTree = "<group>"; };
 		DAE7C3371FE0605C003190FF /* ViewNewAddIngredientListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddIngredientListHeader.swift; sourceTree = "<group>"; };
 		DAE7C3391FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientList+Constants.swift"; sourceTree = "<group>"; };
@@ -1968,6 +1971,7 @@
 				DA5761CD2005877600A5151C /* ArchCook.swift */,
 				DA69EC67200D5F6700CF466B /* ArchCookStep.swift */,
 				DAA7F7CF202075DF009D03AB /* ArchOptions.swift */,
+				DAE5F66D2038A8D90023E75B /* ArchCalendar.swift */,
 			);
 			path = Architecture;
 			sourceTree = "<group>";
@@ -2974,6 +2978,7 @@
 				DA1F04FD1FE8E1DA00DF03A8 /* RecipeStepType.swift in Sources */,
 				DAB773802020897B001E702E /* ControllerOptions.swift in Sources */,
 				DACF553F1FD7661E00069701 /* ExtensionUIFont.swift in Sources */,
+				DAE5F66E2038A8D90023E75B /* ArchCalendar.swift in Sources */,
 				DA91EAFE1FD62C1F0063560D /* ViewParent+Constants.swift in Sources */,
 				DA91EB181FD62C1F0063560D /* ViewBorder.swift in Sources */,
 				DA9089311FD4C66000C1208A /* MenuItemProtocol.swift in Sources */,
@@ -3151,6 +3156,7 @@
 				DA71D6891FDA5985003A33E1 /* NewAddSectionItemInfoTitle.swift in Sources */,
 				DA60429D1FE21BAF00758A2F /* ControllerNewAddIngredientAmount.swift in Sources */,
 				DA4EAC2B20330D2500444D86 /* ViewHomeFilter+Constants.swift in Sources */,
+				DAE5F66F2038A8D90023E75B /* ArchCalendar.swift in Sources */,
 				DAFCCA62200DC6BB002377BC /* ViewCookStepBar.swift in Sources */,
 				DACF89DE1FFDD35600F4FCF0 /* RecipeIngredient.swift in Sources */,
 				DAADC4A91FFC85E600862A90 /* NewAddValidateStrategyTitle.swift in Sources */,
