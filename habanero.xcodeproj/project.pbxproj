@@ -825,6 +825,8 @@
 		DAE5F67B2039B5660023E75B /* ViewCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F6792039B5660023E75B /* ViewCalendar.swift */; };
 		DAE5F67D2039BB360023E75B /* MenuItemCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F67C2039BB360023E75B /* MenuItemCalendar.swift */; };
 		DAE5F67E2039BB360023E75B /* MenuItemCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F67C2039BB360023E75B /* MenuItemCalendar.swift */; };
+		DAE5F6802039C3A70023E75B /* ViewCalendarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F67F2039C3A70023E75B /* ViewCalendarList.swift */; };
+		DAE5F6812039C3A70023E75B /* ViewCalendarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F67F2039C3A70023E75B /* ViewCalendarList.swift */; };
 		DAE7C3361FE03BE7003190FF /* NewAddIngredient+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3351FE03BE7003190FF /* NewAddIngredient+Load.swift */; };
 		DAE7C3381FE0605C003190FF /* ViewNewAddIngredientListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3371FE0605C003190FF /* ViewNewAddIngredientListHeader.swift */; };
 		DAE7C33A1FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3391FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift */; };
@@ -1406,6 +1408,7 @@
 		DAE5F6752038ACB00023E75B /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		DAE5F6792039B5660023E75B /* ViewCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCalendar.swift; sourceTree = "<group>"; };
 		DAE5F67C2039BB360023E75B /* MenuItemCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCalendar.swift; sourceTree = "<group>"; };
+		DAE5F67F2039C3A70023E75B /* ViewCalendarList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCalendarList.swift; sourceTree = "<group>"; };
 		DAE7C3351FE03BE7003190FF /* NewAddIngredient+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddIngredient+Load.swift"; sourceTree = "<group>"; };
 		DAE7C3371FE0605C003190FF /* ViewNewAddIngredientListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddIngredientListHeader.swift; sourceTree = "<group>"; };
 		DAE7C3391FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientList+Constants.swift"; sourceTree = "<group>"; };
@@ -2382,6 +2385,7 @@
 			isa = PBXGroup;
 			children = (
 				DAE5F6792039B5660023E75B /* ViewCalendar.swift */,
+				DAE5F67F2039C3A70023E75B /* ViewCalendarList.swift */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -2971,6 +2975,7 @@
 				DA992D771FD61E7300A6CFEF /* MenuItemGenericProtocol.swift in Sources */,
 				DA27794B20071F4600F15AE0 /* ViewCookListCellIngredientsTitle.swift in Sources */,
 				DA6E805B1FF9873100175F70 /* CloudProviderProtocol.swift in Sources */,
+				DAE5F6802039C3A70023E75B /* ViewCalendarList.swift in Sources */,
 				DA91EAF01FD62C1F0063560D /* ViewMenuCell.swift in Sources */,
 				DA91EAE81FD62C1F0063560D /* ViewMenu+Actions.swift in Sources */,
 				DA74F0CA1FE6152700F45310 /* FormatIngredientTypeGrams.swift in Sources */,
@@ -3613,6 +3618,7 @@
 				DA71D6981FDA657E003A33E1 /* Text.swift in Sources */,
 				DA1F04FA1FE8DF8800DF03A8 /* NewAddSectionItemStepText.swift in Sources */,
 				DA6E804D1FF96C0D00175F70 /* NewAdd+Delete.swift in Sources */,
+				DAE5F6812039C3A70023E75B /* ViewCalendarList.swift in Sources */,
 				DA9089831FD4CE2E00C1208A /* ControllerParent+Menu.swift in Sources */,
 				DA6835A020017C120087C77D /* RecipeStepImageBuilder.swift in Sources */,
 				DA4E0C0D2021AAFB00F5AEE2 /* AnalyticsProviderProtocol.swift in Sources */,
