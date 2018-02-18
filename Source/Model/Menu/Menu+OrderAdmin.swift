@@ -7,5 +7,6 @@ extension Menu
         case options
         case home
         case new
+        case calendar
     }
 }
