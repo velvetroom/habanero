@@ -435,6 +435,8 @@
 		DA8F9F4C203AB4C400BEA495 /* ViewCalendarBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F9F4A203AB4C400BEA495 /* ViewCalendarBar.swift */; };
 		DA8F9F4E203AB67500BEA495 /* ViewCalendarBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F9F4D203AB67500BEA495 /* ViewCalendarBar+Constants.swift */; };
 		DA8F9F4F203AB67500BEA495 /* ViewCalendarBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F9F4D203AB67500BEA495 /* ViewCalendarBar+Constants.swift */; };
+		DA8F9F51203AB9CA00BEA495 /* ViewCalendar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F9F50203AB9CA00BEA495 /* ViewCalendar+Constants.swift */; };
+		DA8F9F52203AB9CA00BEA495 /* ViewCalendar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F9F50203AB9CA00BEA495 /* ViewCalendar+Constants.swift */; };
 		DA9089031FD4C65F00C1208A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA90889E1FD4C65F00C1208A /* LaunchScreen.storyboard */; };
 		DA9089041FD4C65F00C1208A /* LocalizableModel.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A01FD4C65F00C1208A /* LocalizableModel.strings */; };
 		DA9089051FD4C65F00C1208A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A21FD4C65F00C1208A /* InfoPlist.strings */; };
@@ -1188,6 +1190,7 @@
 		DA8F74E42034278600A34A01 /* HomeFilterKeyword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterKeyword.swift; sourceTree = "<group>"; };
 		DA8F9F4A203AB4C400BEA495 /* ViewCalendarBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCalendarBar.swift; sourceTree = "<group>"; };
 		DA8F9F4D203AB67500BEA495 /* ViewCalendarBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCalendarBar+Constants.swift"; sourceTree = "<group>"; };
+		DA8F9F50203AB9CA00BEA495 /* ViewCalendar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCalendar+Constants.swift"; sourceTree = "<group>"; };
 		DA9088821FD4C38E00C1208A /* user.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = user.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9088981FD4C45600C1208A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DA90889B1FD4C4AF00C1208A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -2394,6 +2397,7 @@
 			isa = PBXGroup;
 			children = (
 				DAE5F6792039B5660023E75B /* ViewCalendar.swift */,
+				DA8F9F50203AB9CA00BEA495 /* ViewCalendar+Constants.swift */,
 				DA8F9F4A203AB4C400BEA495 /* ViewCalendarBar.swift */,
 				DA8F9F4D203AB67500BEA495 /* ViewCalendarBar+Constants.swift */,
 				DAE5F67F2039C3A70023E75B /* ViewCalendarList.swift */,
@@ -3005,6 +3009,7 @@
 				DAB7738B20208F05001E702E /* MenuItemOptions.swift in Sources */,
 				DA4EAC242033052100444D86 /* ViewHomeFilterSearch.swift in Sources */,
 				DAE7C35C1FE08281003190FF /* CloudError+Description.swift in Sources */,
+				DA8F9F51203AB9CA00BEA495 /* ViewCalendar+Constants.swift in Sources */,
 				DA936CED1FFF10EB00740BE8 /* RecipeIngredientCupsBuilder.swift in Sources */,
 				DAE35CA02005E65F002B1C9C /* ViewCookListCell.swift in Sources */,
 				DA1058972002DD7800019445 /* ViewHomeBar.swift in Sources */,
@@ -3501,6 +3506,7 @@
 				DA11BA121FD8FEEB0038F9B0 /* ViewNewAddListHeader.swift in Sources */,
 				DA8F9F4F203AB67500BEA495 /* ViewCalendarBar+Constants.swift in Sources */,
 				DA8752C71FE384B200AE74F5 /* ViewNewAddIngredientAmount+Constants.swift in Sources */,
+				DA8F9F52203AB9CA00BEA495 /* ViewCalendar+Constants.swift in Sources */,
 				DA936CEE1FFF10EB00740BE8 /* RecipeIngredientCupsBuilder.swift in Sources */,
 				DA8752C51FE3846D00AE74F5 /* ViewNewAddIngredientAmountInput+Constants.swift in Sources */,
 				DA8752D11FE3874400AE74F5 /* ViewNewAddIngredientAmountBar.swift in Sources */,
