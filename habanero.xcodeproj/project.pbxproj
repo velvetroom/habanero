@@ -433,6 +433,8 @@
 		DA8F74E62034278600A34A01 /* HomeFilterKeyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F74E42034278600A34A01 /* HomeFilterKeyword.swift */; };
 		DA8F9F4B203AB4C400BEA495 /* ViewCalendarBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F9F4A203AB4C400BEA495 /* ViewCalendarBar.swift */; };
 		DA8F9F4C203AB4C400BEA495 /* ViewCalendarBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F9F4A203AB4C400BEA495 /* ViewCalendarBar.swift */; };
+		DA8F9F4E203AB67500BEA495 /* ViewCalendarBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F9F4D203AB67500BEA495 /* ViewCalendarBar+Constants.swift */; };
+		DA8F9F4F203AB67500BEA495 /* ViewCalendarBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F9F4D203AB67500BEA495 /* ViewCalendarBar+Constants.swift */; };
 		DA9089031FD4C65F00C1208A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA90889E1FD4C65F00C1208A /* LaunchScreen.storyboard */; };
 		DA9089041FD4C65F00C1208A /* LocalizableModel.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A01FD4C65F00C1208A /* LocalizableModel.strings */; };
 		DA9089051FD4C65F00C1208A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A21FD4C65F00C1208A /* InfoPlist.strings */; };
@@ -1185,6 +1187,7 @@
 		DA8E738B1FF88F3C005264F4 /* ViewNewAddListCellEditable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellEditable.swift; sourceTree = "<group>"; };
 		DA8F74E42034278600A34A01 /* HomeFilterKeyword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterKeyword.swift; sourceTree = "<group>"; };
 		DA8F9F4A203AB4C400BEA495 /* ViewCalendarBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCalendarBar.swift; sourceTree = "<group>"; };
+		DA8F9F4D203AB67500BEA495 /* ViewCalendarBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCalendarBar+Constants.swift"; sourceTree = "<group>"; };
 		DA9088821FD4C38E00C1208A /* user.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = user.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9088981FD4C45600C1208A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DA90889B1FD4C4AF00C1208A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -2392,6 +2395,7 @@
 			children = (
 				DAE5F6792039B5660023E75B /* ViewCalendar.swift */,
 				DA8F9F4A203AB4C400BEA495 /* ViewCalendarBar.swift */,
+				DA8F9F4D203AB67500BEA495 /* ViewCalendarBar+Constants.swift */,
 				DAE5F67F2039C3A70023E75B /* ViewCalendarList.swift */,
 				DAE5F6822039C6630023E75B /* ViewCalendarListCell.swift */,
 			);
@@ -3046,6 +3050,7 @@
 				DA7F7A5E2032D2CF001BED41 /* HomeFilterStateProtocol.swift in Sources */,
 				DA90891D1FD4C66000C1208A /* Controller.swift in Sources */,
 				DA91EB141FD62C1F0063560D /* ViewGradient.swift in Sources */,
+				DA8F9F4E203AB67500BEA495 /* ViewCalendarBar+Constants.swift in Sources */,
 				DA6E80841FF9B7A600175F70 /* StorageProviderFirebase.swift in Sources */,
 				DA6E807E1FF9B60B00175F70 /* Storage.swift in Sources */,
 				DAFCCA64200DD856002377BC /* ViewCookStepBar+Constants.swift in Sources */,
@@ -3494,6 +3499,7 @@
 				DAE7C33C1FE061BD003190FF /* ViewNewAddIngredientListHeader+Constants.swift in Sources */,
 				DA9089801FD4CE2E00C1208A /* Controller.swift in Sources */,
 				DA11BA121FD8FEEB0038F9B0 /* ViewNewAddListHeader.swift in Sources */,
+				DA8F9F4F203AB67500BEA495 /* ViewCalendarBar+Constants.swift in Sources */,
 				DA8752C71FE384B200AE74F5 /* ViewNewAddIngredientAmount+Constants.swift in Sources */,
 				DA936CEE1FFF10EB00740BE8 /* RecipeIngredientCupsBuilder.swift in Sources */,
 				DA8752C51FE3846D00AE74F5 /* ViewNewAddIngredientAmountInput+Constants.swift in Sources */,
