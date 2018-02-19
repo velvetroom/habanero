@@ -431,6 +431,8 @@
 		DA8E738C1FF88F3C005264F4 /* ViewNewAddListCellEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E738B1FF88F3C005264F4 /* ViewNewAddListCellEditable.swift */; };
 		DA8F74E52034278600A34A01 /* HomeFilterKeyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F74E42034278600A34A01 /* HomeFilterKeyword.swift */; };
 		DA8F74E62034278600A34A01 /* HomeFilterKeyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F74E42034278600A34A01 /* HomeFilterKeyword.swift */; };
+		DA8F9F4B203AB4C400BEA495 /* ViewCalendarBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F9F4A203AB4C400BEA495 /* ViewCalendarBar.swift */; };
+		DA8F9F4C203AB4C400BEA495 /* ViewCalendarBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F9F4A203AB4C400BEA495 /* ViewCalendarBar.swift */; };
 		DA9089031FD4C65F00C1208A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA90889E1FD4C65F00C1208A /* LaunchScreen.storyboard */; };
 		DA9089041FD4C65F00C1208A /* LocalizableModel.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A01FD4C65F00C1208A /* LocalizableModel.strings */; };
 		DA9089051FD4C65F00C1208A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A21FD4C65F00C1208A /* InfoPlist.strings */; };
@@ -1182,6 +1184,7 @@
 		DA8E57B320172A4100EBF87F /* CloudProviderFirebase+Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudProviderFirebase+Transaction.swift"; sourceTree = "<group>"; };
 		DA8E738B1FF88F3C005264F4 /* ViewNewAddListCellEditable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellEditable.swift; sourceTree = "<group>"; };
 		DA8F74E42034278600A34A01 /* HomeFilterKeyword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterKeyword.swift; sourceTree = "<group>"; };
+		DA8F9F4A203AB4C400BEA495 /* ViewCalendarBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCalendarBar.swift; sourceTree = "<group>"; };
 		DA9088821FD4C38E00C1208A /* user.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = user.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9088981FD4C45600C1208A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DA90889B1FD4C4AF00C1208A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -2388,6 +2391,7 @@
 			isa = PBXGroup;
 			children = (
 				DAE5F6792039B5660023E75B /* ViewCalendar.swift */,
+				DA8F9F4A203AB4C400BEA495 /* ViewCalendarBar.swift */,
 				DAE5F67F2039C3A70023E75B /* ViewCalendarList.swift */,
 				DAE5F6822039C6630023E75B /* ViewCalendarListCell.swift */,
 			);
@@ -3111,6 +3115,7 @@
 				DA4233EC1FEDEBEC0012A589 /* ViewPhotoCrop+Constants.swift in Sources */,
 				DAE7C35A1FE08281003190FF /* CloudItemProtocol.swift in Sources */,
 				DAD245FE2025E8F00078A073 /* HomeFilterShowFavourites.swift in Sources */,
+				DA8F9F4B203AB4C400BEA495 /* ViewCalendarBar.swift in Sources */,
 				DAB7738420208ADB001E702E /* Options.swift in Sources */,
 				DA74F0C71FE614BA00F45310 /* FormatIngredientTypeCups.swift in Sources */,
 				DA90892D1FD4C66000C1208A /* Menu.swift in Sources */,
@@ -3364,6 +3369,7 @@
 				DA02D8FC20299F2A0026D7B4 /* CookItemFavouriteType.swift in Sources */,
 				DA68359A200176DC0087C77D /* RecipeStepImage.swift in Sources */,
 				DA71D6831FDA50C4003A33E1 /* ViewNewAddList+Constants.swift in Sources */,
+				DA8F9F4C203AB4C400BEA495 /* ViewCalendarBar.swift in Sources */,
 				DA9089851FD4CE2E00C1208A /* ControllerTransition.swift in Sources */,
 				DA71D66F1FDA44A2003A33E1 /* ViewNewAddListFooterIngredients.swift in Sources */,
 				DAE7C3721FE0971B003190FF /* CloudListProtocol.swift in Sources */,
