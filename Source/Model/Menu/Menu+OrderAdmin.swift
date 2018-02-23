@@ -6,6 +6,7 @@ extension Menu
     {
         case options
         case home
+        case calendar
         case new
     }
 }

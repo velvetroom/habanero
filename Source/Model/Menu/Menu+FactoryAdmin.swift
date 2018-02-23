@@ -9,6 +9,7 @@ extension Menu
             let list:[MenuItemProtocol.Type] = [
                 MenuItemOptions.self,
                 MenuItemHome.self,
+                MenuItemCalendar.self,
                 MenuItemNew.self]
             
             return list

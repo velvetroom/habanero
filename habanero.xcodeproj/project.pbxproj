@@ -431,6 +431,12 @@
 		DA8E738C1FF88F3C005264F4 /* ViewNewAddListCellEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E738B1FF88F3C005264F4 /* ViewNewAddListCellEditable.swift */; };
 		DA8F74E52034278600A34A01 /* HomeFilterKeyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F74E42034278600A34A01 /* HomeFilterKeyword.swift */; };
 		DA8F74E62034278600A34A01 /* HomeFilterKeyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F74E42034278600A34A01 /* HomeFilterKeyword.swift */; };
+		DA8F9F4B203AB4C400BEA495 /* ViewCalendarBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F9F4A203AB4C400BEA495 /* ViewCalendarBar.swift */; };
+		DA8F9F4C203AB4C400BEA495 /* ViewCalendarBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F9F4A203AB4C400BEA495 /* ViewCalendarBar.swift */; };
+		DA8F9F4E203AB67500BEA495 /* ViewCalendarBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F9F4D203AB67500BEA495 /* ViewCalendarBar+Constants.swift */; };
+		DA8F9F4F203AB67500BEA495 /* ViewCalendarBar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F9F4D203AB67500BEA495 /* ViewCalendarBar+Constants.swift */; };
+		DA8F9F51203AB9CA00BEA495 /* ViewCalendar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F9F50203AB9CA00BEA495 /* ViewCalendar+Constants.swift */; };
+		DA8F9F52203AB9CA00BEA495 /* ViewCalendar+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F9F50203AB9CA00BEA495 /* ViewCalendar+Constants.swift */; };
 		DA9089031FD4C65F00C1208A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA90889E1FD4C65F00C1208A /* LaunchScreen.storyboard */; };
 		DA9089041FD4C65F00C1208A /* LocalizableModel.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A01FD4C65F00C1208A /* LocalizableModel.strings */; };
 		DA9089051FD4C65F00C1208A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9088A21FD4C65F00C1208A /* InfoPlist.strings */; };
@@ -815,6 +821,20 @@
 		DAE5E4871FE48CA700CC40BA /* Settings+Computed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5E4851FE48CA700CC40BA /* Settings+Computed.swift */; };
 		DAE5E4891FE48F1D00CC40BA /* Home+Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5E4881FE48F1D00CC40BA /* Home+Settings.swift */; };
 		DAE5E48A1FE48F1D00CC40BA /* Home+Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5E4881FE48F1D00CC40BA /* Home+Settings.swift */; };
+		DAE5F66E2038A8D90023E75B /* ArchCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F66D2038A8D90023E75B /* ArchCalendar.swift */; };
+		DAE5F66F2038A8D90023E75B /* ArchCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F66D2038A8D90023E75B /* ArchCalendar.swift */; };
+		DAE5F6722038AB3F0023E75B /* ControllerCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F6712038AB3F0023E75B /* ControllerCalendar.swift */; };
+		DAE5F6732038AB3F0023E75B /* ControllerCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F6712038AB3F0023E75B /* ControllerCalendar.swift */; };
+		DAE5F6762038ACB00023E75B /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F6752038ACB00023E75B /* Calendar.swift */; };
+		DAE5F6772038ACB00023E75B /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F6752038ACB00023E75B /* Calendar.swift */; };
+		DAE5F67A2039B5660023E75B /* ViewCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F6792039B5660023E75B /* ViewCalendar.swift */; };
+		DAE5F67B2039B5660023E75B /* ViewCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F6792039B5660023E75B /* ViewCalendar.swift */; };
+		DAE5F67D2039BB360023E75B /* MenuItemCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F67C2039BB360023E75B /* MenuItemCalendar.swift */; };
+		DAE5F67E2039BB360023E75B /* MenuItemCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F67C2039BB360023E75B /* MenuItemCalendar.swift */; };
+		DAE5F6802039C3A70023E75B /* ViewCalendarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F67F2039C3A70023E75B /* ViewCalendarList.swift */; };
+		DAE5F6812039C3A70023E75B /* ViewCalendarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F67F2039C3A70023E75B /* ViewCalendarList.swift */; };
+		DAE5F6832039C6630023E75B /* ViewCalendarListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F6822039C6630023E75B /* ViewCalendarListCell.swift */; };
+		DAE5F6842039C6630023E75B /* ViewCalendarListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5F6822039C6630023E75B /* ViewCalendarListCell.swift */; };
 		DAE7C3361FE03BE7003190FF /* NewAddIngredient+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3351FE03BE7003190FF /* NewAddIngredient+Load.swift */; };
 		DAE7C3381FE0605C003190FF /* ViewNewAddIngredientListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3371FE0605C003190FF /* ViewNewAddIngredientListHeader.swift */; };
 		DAE7C33A1FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7C3391FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift */; };
@@ -1168,6 +1188,9 @@
 		DA8E57B320172A4100EBF87F /* CloudProviderFirebase+Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudProviderFirebase+Transaction.swift"; sourceTree = "<group>"; };
 		DA8E738B1FF88F3C005264F4 /* ViewNewAddListCellEditable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddListCellEditable.swift; sourceTree = "<group>"; };
 		DA8F74E42034278600A34A01 /* HomeFilterKeyword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterKeyword.swift; sourceTree = "<group>"; };
+		DA8F9F4A203AB4C400BEA495 /* ViewCalendarBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCalendarBar.swift; sourceTree = "<group>"; };
+		DA8F9F4D203AB67500BEA495 /* ViewCalendarBar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCalendarBar+Constants.swift"; sourceTree = "<group>"; };
+		DA8F9F50203AB9CA00BEA495 /* ViewCalendar+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCalendar+Constants.swift"; sourceTree = "<group>"; };
 		DA9088821FD4C38E00C1208A /* user.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = user.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9088981FD4C45600C1208A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DA90889B1FD4C4AF00C1208A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -1391,6 +1414,13 @@
 		DAE5E4821FE48C6100CC40BA /* SettingsMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMetrics.swift; sourceTree = "<group>"; };
 		DAE5E4851FE48CA700CC40BA /* Settings+Computed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings+Computed.swift"; sourceTree = "<group>"; };
 		DAE5E4881FE48F1D00CC40BA /* Home+Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home+Settings.swift"; sourceTree = "<group>"; };
+		DAE5F66D2038A8D90023E75B /* ArchCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchCalendar.swift; sourceTree = "<group>"; };
+		DAE5F6712038AB3F0023E75B /* ControllerCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerCalendar.swift; sourceTree = "<group>"; };
+		DAE5F6752038ACB00023E75B /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		DAE5F6792039B5660023E75B /* ViewCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCalendar.swift; sourceTree = "<group>"; };
+		DAE5F67C2039BB360023E75B /* MenuItemCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCalendar.swift; sourceTree = "<group>"; };
+		DAE5F67F2039C3A70023E75B /* ViewCalendarList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCalendarList.swift; sourceTree = "<group>"; };
+		DAE5F6822039C6630023E75B /* ViewCalendarListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCalendarListCell.swift; sourceTree = "<group>"; };
 		DAE7C3351FE03BE7003190FF /* NewAddIngredient+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAddIngredient+Load.swift"; sourceTree = "<group>"; };
 		DAE7C3371FE0605C003190FF /* ViewNewAddIngredientListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewAddIngredientListHeader.swift; sourceTree = "<group>"; };
 		DAE7C3391FE060C3003190FF /* ViewNewAddIngredientList+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewNewAddIngredientList+Constants.swift"; sourceTree = "<group>"; };
@@ -1912,6 +1942,7 @@
 		DA9088C31FD4C65F00C1208A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DAE5F6702038AB2C0023E75B /* Calendar */,
 				DAB7737E2020896E001E702E /* Options */,
 				DA5761CC2005876700A5151C /* Cook */,
 				DA9088C41FD4C65F00C1208A /* Abstract */,
@@ -1968,6 +1999,7 @@
 				DA5761CD2005877600A5151C /* ArchCook.swift */,
 				DA69EC67200D5F6700CF466B /* ArchCookStep.swift */,
 				DAA7F7CF202075DF009D03AB /* ArchOptions.swift */,
+				DAE5F66D2038A8D90023E75B /* ArchCalendar.swift */,
 			);
 			path = Architecture;
 			sourceTree = "<group>";
@@ -1975,6 +2007,7 @@
 		DA9088D11FD4C65F00C1208A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DAE5F6742038ACA70023E75B /* Calendar */,
 				DAE7C3621FE0828C003190FF /* Analytics */,
 				DA4E0C0A2021AAEE00F5AEE2 /* AnalyticsProvider */,
 				DAB7738220208ACB001E702E /* Options */,
@@ -2057,6 +2090,7 @@
 				DA9088D81FD4C65F00C1208A /* MenuItemHome.swift */,
 				DA3F0EB71FD74FC400593B83 /* MenuItemNew.swift */,
 				DAB7738A20208F05001E702E /* MenuItemOptions.swift */,
+				DAE5F67C2039BB360023E75B /* MenuItemCalendar.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -2064,6 +2098,7 @@
 		DA9088E01FD4C65F00C1208A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DAE5F6782039B5590023E75B /* Calendar */,
 				DAB7738620208B35001E702E /* Options */,
 				DAF99F11200DAC350030866C /* CookStep */,
 				DA5761D72005886E00A5151C /* Cook */,
@@ -2340,6 +2375,35 @@
 				DAE5E4821FE48C6100CC40BA /* SettingsMetrics.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		DAE5F6702038AB2C0023E75B /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				DAE5F6712038AB3F0023E75B /* ControllerCalendar.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		DAE5F6742038ACA70023E75B /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				DAE5F6752038ACB00023E75B /* Calendar.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		DAE5F6782039B5590023E75B /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				DAE5F6792039B5660023E75B /* ViewCalendar.swift */,
+				DA8F9F50203AB9CA00BEA495 /* ViewCalendar+Constants.swift */,
+				DA8F9F4A203AB4C400BEA495 /* ViewCalendarBar.swift */,
+				DA8F9F4D203AB67500BEA495 /* ViewCalendarBar+Constants.swift */,
+				DAE5F67F2039C3A70023E75B /* ViewCalendarList.swift */,
+				DAE5F6822039C6630023E75B /* ViewCalendarListCell.swift */,
+			);
+			path = Calendar;
 			sourceTree = "<group>";
 		};
 		DAE7C3431FE08281003190FF /* Cloud */ = {
@@ -2799,10 +2863,12 @@
 			files = (
 				DACF554B1FD7661E00069701 /* ExtensionUICollectionReusableView.swift in Sources */,
 				DA43ABCB202B6CB8006E9600 /* ViewHomeFilterList.swift in Sources */,
+				DAE5F6832039C6630023E75B /* ViewCalendarListCell.swift in Sources */,
 				DA55E2241FF0AE9E0098C7BD /* ViewPhotoCropDisplayShade.swift in Sources */,
 				DA70AFC21FD5AA980016B0DC /* ControllerHome.swift in Sources */,
 				DACF89EF1FFDD8A900F4FCF0 /* RecipeIngredientQuantity.swift in Sources */,
 				DA0E79B32031AE32004B3C91 /* ViewHomeBar+Constants.swift in Sources */,
+				DAE5F67A2039B5660023E75B /* ViewCalendar.swift in Sources */,
 				DAA07FF520153E90006FFC76 /* CookItem+Image.swift in Sources */,
 				DACF552D1FD7661E00069701 /* ExtensionNotification.swift in Sources */,
 				DA80B552200C1DD300797D61 /* ViewCookBack.swift in Sources */,
@@ -2887,6 +2953,7 @@
 				DA74F0B81FE611E500F45310 /* Format.swift in Sources */,
 				DA91EB081FD62C1F0063560D /* ViewPushBackground.swift in Sources */,
 				DACF89EC1FFDD84700F4FCF0 /* RecipeIngredientMililitres.swift in Sources */,
+				DAE5F67D2039BB360023E75B /* MenuItemCalendar.swift in Sources */,
 				DA6E806D1FF998FF00175F70 /* CloudProviderFirebase+Load.swift in Sources */,
 				DABC1D8C2018D6AA000EE4E6 /* Cloud+Transaction.swift in Sources */,
 				DA9089231FD4C66000C1208A /* ControllerTransition.swift in Sources */,
@@ -2910,6 +2977,7 @@
 				DA992D781FD61E7300A6CFEF /* MenuItemGenericProtocol+Default.swift in Sources */,
 				DA3F0E7C1FDF326A0037C94D /* Ingredient+Keys.swift in Sources */,
 				DA43ABD1202B6D9F006E9600 /* HomeFilterOptionsProtocol.swift in Sources */,
+				DAE5F6722038AB3F0023E75B /* ControllerCalendar.swift in Sources */,
 				DA27794520071EB500F15AE0 /* ViewCookListCellRecipe.swift in Sources */,
 				DA5B01242035741200320A9B /* ViewHomeFilterListCellShow+Constants.swift in Sources */,
 				DAD245F82025E8AD0078A073 /* HomeFilterShowProtocol.swift in Sources */,
@@ -2924,6 +2992,7 @@
 				DA992D771FD61E7300A6CFEF /* MenuItemGenericProtocol.swift in Sources */,
 				DA27794B20071F4600F15AE0 /* ViewCookListCellIngredientsTitle.swift in Sources */,
 				DA6E805B1FF9873100175F70 /* CloudProviderProtocol.swift in Sources */,
+				DAE5F6802039C3A70023E75B /* ViewCalendarList.swift in Sources */,
 				DA91EAF01FD62C1F0063560D /* ViewMenuCell.swift in Sources */,
 				DA91EAE81FD62C1F0063560D /* ViewMenu+Actions.swift in Sources */,
 				DA74F0CA1FE6152700F45310 /* FormatIngredientTypeGrams.swift in Sources */,
@@ -2940,6 +3009,7 @@
 				DAB7738B20208F05001E702E /* MenuItemOptions.swift in Sources */,
 				DA4EAC242033052100444D86 /* ViewHomeFilterSearch.swift in Sources */,
 				DAE7C35C1FE08281003190FF /* CloudError+Description.swift in Sources */,
+				DA8F9F51203AB9CA00BEA495 /* ViewCalendar+Constants.swift in Sources */,
 				DA936CED1FFF10EB00740BE8 /* RecipeIngredientCupsBuilder.swift in Sources */,
 				DAE35CA02005E65F002B1C9C /* ViewCookListCell.swift in Sources */,
 				DA1058972002DD7800019445 /* ViewHomeBar.swift in Sources */,
@@ -2974,6 +3044,7 @@
 				DA1F04FD1FE8E1DA00DF03A8 /* RecipeStepType.swift in Sources */,
 				DAB773802020897B001E702E /* ControllerOptions.swift in Sources */,
 				DACF553F1FD7661E00069701 /* ExtensionUIFont.swift in Sources */,
+				DAE5F66E2038A8D90023E75B /* ArchCalendar.swift in Sources */,
 				DA91EAFE1FD62C1F0063560D /* ViewParent+Constants.swift in Sources */,
 				DA91EB181FD62C1F0063560D /* ViewBorder.swift in Sources */,
 				DA9089311FD4C66000C1208A /* MenuItemProtocol.swift in Sources */,
@@ -2984,6 +3055,7 @@
 				DA7F7A5E2032D2CF001BED41 /* HomeFilterStateProtocol.swift in Sources */,
 				DA90891D1FD4C66000C1208A /* Controller.swift in Sources */,
 				DA91EB141FD62C1F0063560D /* ViewGradient.swift in Sources */,
+				DA8F9F4E203AB67500BEA495 /* ViewCalendarBar+Constants.swift in Sources */,
 				DA6E80841FF9B7A600175F70 /* StorageProviderFirebase.swift in Sources */,
 				DA6E807E1FF9B60B00175F70 /* Storage.swift in Sources */,
 				DAFCCA64200DD856002377BC /* ViewCookStepBar+Constants.swift in Sources */,
@@ -3053,6 +3125,7 @@
 				DA4233EC1FEDEBEC0012A589 /* ViewPhotoCrop+Constants.swift in Sources */,
 				DAE7C35A1FE08281003190FF /* CloudItemProtocol.swift in Sources */,
 				DAD245FE2025E8F00078A073 /* HomeFilterShowFavourites.swift in Sources */,
+				DA8F9F4B203AB4C400BEA495 /* ViewCalendarBar.swift in Sources */,
 				DAB7738420208ADB001E702E /* Options.swift in Sources */,
 				DA74F0C71FE614BA00F45310 /* FormatIngredientTypeCups.swift in Sources */,
 				DA90892D1FD4C66000C1208A /* Menu.swift in Sources */,
@@ -3129,6 +3202,7 @@
 				DACF89E01FFDD3F900F4FCF0 /* RecipeIngredient+Factory.swift in Sources */,
 				DA91EAFA1FD62C1F0063560D /* ViewMain.swift in Sources */,
 				DA71D68F1FDA633E003A33E1 /* ArchText.swift in Sources */,
+				DAE5F6762038ACB00023E75B /* Calendar.swift in Sources */,
 				DA35DD141FFDAF460047881F /* IngredientBuilder.swift in Sources */,
 				DA71D6AD1FDA7A01003A33E1 /* ViewTextBar+Constants.swift in Sources */,
 				DACF55391FD7661E00069701 /* ExtensionURLResponse.swift in Sources */,
@@ -3151,6 +3225,7 @@
 				DA71D6891FDA5985003A33E1 /* NewAddSectionItemInfoTitle.swift in Sources */,
 				DA60429D1FE21BAF00758A2F /* ControllerNewAddIngredientAmount.swift in Sources */,
 				DA4EAC2B20330D2500444D86 /* ViewHomeFilter+Constants.swift in Sources */,
+				DAE5F66F2038A8D90023E75B /* ArchCalendar.swift in Sources */,
 				DAFCCA62200DC6BB002377BC /* ViewCookStepBar.swift in Sources */,
 				DACF89DE1FFDD35600F4FCF0 /* RecipeIngredient.swift in Sources */,
 				DAADC4A91FFC85E600862A90 /* NewAddValidateStrategyTitle.swift in Sources */,
@@ -3190,6 +3265,7 @@
 				DA90898A1FD4CE3E00C1208A /* Menu+Constants.swift in Sources */,
 				DA7B1FC7202069A40097202E /* Database+Delete.swift in Sources */,
 				DACEB3991FDC95480089B3FE /* NewItem.swift in Sources */,
+				DAE5F6732038AB3F0023E75B /* ControllerCalendar.swift in Sources */,
 				DAB7739820209C98001E702E /* ViewOptionsList.swift in Sources */,
 				DACEB3AA1FDCAC0B0089B3FE /* ViewNewListCell+Config.swift in Sources */,
 				DA84C0F21FD73FCD008959EA /* ControllerNew.swift in Sources */,
@@ -3226,6 +3302,7 @@
 				DA3F0EBD1FD7509500593B83 /* Menu+OrderAdmin.swift in Sources */,
 				DACF22151FDB5D8A00D6B192 /* NewAddSectionItemInfoDuration+Constants.swift in Sources */,
 				DAAE61F51FF636F500954EFC /* PhotoRotation.swift in Sources */,
+				DAE5F6842039C6630023E75B /* ViewCalendarListCell.swift in Sources */,
 				DA11BA071FD8F1DE0038F9B0 /* ViewNewAddList.swift in Sources */,
 				DA91EAF51FD62C1F0063560D /* ViewParent.swift in Sources */,
 				DA7F7A652032D3A4001BED41 /* HomeFilterStateVisible.swift in Sources */,
@@ -3271,6 +3348,7 @@
 				DA71D6A21FDA6C1A003A33E1 /* ViewTextInput+Constants.swift in Sources */,
 				DAC732CC1FF8523900980854 /* ViewNewAddListCellText+Constants.swift in Sources */,
 				DABA5EB91FEA32C60017F865 /* ViewPhotoList.swift in Sources */,
+				DAE5F67E2039BB360023E75B /* MenuItemCalendar.swift in Sources */,
 				DA35DD2A1FFDBDF70047881F /* StorageProviderFirebase+Constants.swift in Sources */,
 				DABA5ECB1FEA3B090017F865 /* Photo+Factory.swift in Sources */,
 				DA0750202004528D002C428A /* Storage+Load.swift in Sources */,
@@ -3287,6 +3365,7 @@
 				DAC732CE1FF853F600980854 /* ViewNewAddListCellInfoSubtitle.swift in Sources */,
 				DA9089841FD4CE2E00C1208A /* ControllerParent+Transitions.swift in Sources */,
 				DA6E80741FF9A18A00175F70 /* CloudListProtocol+Default.swift in Sources */,
+				DAE5F6772038ACB00023E75B /* Calendar.swift in Sources */,
 				DA855E0F1FF3839000E1B69F /* PhotoCropMask.swift in Sources */,
 				DAAE259B20096FC000BE3740 /* ViewCookListCellIngredient+Constants.swift in Sources */,
 				DA91EB031FD62C1F0063560D /* ViewAlert+Constants.swift in Sources */,
@@ -3300,6 +3379,7 @@
 				DA02D8FC20299F2A0026D7B4 /* CookItemFavouriteType.swift in Sources */,
 				DA68359A200176DC0087C77D /* RecipeStepImage.swift in Sources */,
 				DA71D6831FDA50C4003A33E1 /* ViewNewAddList+Constants.swift in Sources */,
+				DA8F9F4C203AB4C400BEA495 /* ViewCalendarBar.swift in Sources */,
 				DA9089851FD4CE2E00C1208A /* ControllerTransition.swift in Sources */,
 				DA71D66F1FDA44A2003A33E1 /* ViewNewAddListFooterIngredients.swift in Sources */,
 				DAE7C3721FE0971B003190FF /* CloudListProtocol.swift in Sources */,
@@ -3337,6 +3417,7 @@
 				DA6E80551FF97AE400175F70 /* NewAddDeleteStrategyBuild.swift in Sources */,
 				DA71D6871FDA58E3003A33E1 /* ViewNewAddListCellInfoTitle.swift in Sources */,
 				DA8752C31FE3844300AE74F5 /* ViewNewAddIngredientAmountInput.swift in Sources */,
+				DAE5F67B2039B5660023E75B /* ViewCalendar.swift in Sources */,
 				DA6E80771FF9A1F400175F70 /* CloudEntityProtocol.swift in Sources */,
 				DA43ABD2202B6D9F006E9600 /* HomeFilterOptionsProtocol.swift in Sources */,
 				DA6E807A1FF9A6A500175F70 /* CloudEntityProtocol+Default.swift in Sources */,
@@ -3423,7 +3504,9 @@
 				DAE7C33C1FE061BD003190FF /* ViewNewAddIngredientListHeader+Constants.swift in Sources */,
 				DA9089801FD4CE2E00C1208A /* Controller.swift in Sources */,
 				DA11BA121FD8FEEB0038F9B0 /* ViewNewAddListHeader.swift in Sources */,
+				DA8F9F4F203AB67500BEA495 /* ViewCalendarBar+Constants.swift in Sources */,
 				DA8752C71FE384B200AE74F5 /* ViewNewAddIngredientAmount+Constants.swift in Sources */,
+				DA8F9F52203AB9CA00BEA495 /* ViewCalendar+Constants.swift in Sources */,
 				DA936CEE1FFF10EB00740BE8 /* RecipeIngredientCupsBuilder.swift in Sources */,
 				DA8752C51FE3846D00AE74F5 /* ViewNewAddIngredientAmountInput+Constants.swift in Sources */,
 				DA8752D11FE3874400AE74F5 /* ViewNewAddIngredientAmountBar.swift in Sources */,
@@ -3559,6 +3642,7 @@
 				DA71D6981FDA657E003A33E1 /* Text.swift in Sources */,
 				DA1F04FA1FE8DF8800DF03A8 /* NewAddSectionItemStepText.swift in Sources */,
 				DA6E804D1FF96C0D00175F70 /* NewAdd+Delete.swift in Sources */,
+				DAE5F6812039C3A70023E75B /* ViewCalendarList.swift in Sources */,
 				DA9089831FD4CE2E00C1208A /* ControllerParent+Menu.swift in Sources */,
 				DA6835A020017C120087C77D /* RecipeStepImageBuilder.swift in Sources */,
 				DA4E0C0D2021AAFB00F5AEE2 /* AnalyticsProviderProtocol.swift in Sources */,
